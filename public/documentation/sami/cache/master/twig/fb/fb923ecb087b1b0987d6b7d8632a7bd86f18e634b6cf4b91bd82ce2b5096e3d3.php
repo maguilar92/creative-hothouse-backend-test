@@ -7,40 +7,44 @@ class __TwigTemplate_4192b7935bb29d8ee72093452ebc21ab708346e37fb4dacda050fa861d6
     {
         parent::__construct($env);
 
-        $this->blocks = array(
-            'body_class' => array($this, 'block_body_class'),
-        );
+        $this->blocks = [
+            'body_class' => [$this, 'block_body_class'],
+        ];
     }
 
     protected function doGetParent(array $context)
     {
         // line 7
-        return $this->loadTemplate((isset($context["extension"]) || array_key_exists("extension", $context) ? $context["extension"] : (function () { throw new Twig_Error_Runtime('Variable "extension" does not exist.', 7, $this->getSourceContext()); })()), "index.twig", 7);
+        return $this->loadTemplate((isset($context['extension']) || array_key_exists('extension', $context) ? $context['extension'] : (function () {
+            throw new Twig_Error_Runtime('Variable "extension" does not exist.', 7, $this->getSourceContext());
+        })()), 'index.twig', 7);
     }
 
-    protected function doDisplay(array $context, array $blocks = array())
+    protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        if ((isset($context["has_namespaces"]) || array_key_exists("has_namespaces", $context) ? $context["has_namespaces"] : (function () { throw new Twig_Error_Runtime('Variable "has_namespaces" does not exist.', 1, $this->getSourceContext()); })())) {
+        if ((isset($context['has_namespaces']) || array_key_exists('has_namespaces', $context) ? $context['has_namespaces'] : (function () {
+            throw new Twig_Error_Runtime('Variable "has_namespaces" does not exist.', 1, $this->getSourceContext());
+        })())) {
             // line 2
-            $context["extension"] = "namespaces.twig";
+            $context['extension'] = 'namespaces.twig';
         } else {
             // line 4
-            $context["extension"] = "classes.twig";
+            $context['extension'] = 'classes.twig';
         }
         // line 7
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
     }
 
     // line 9
-    public function block_body_class($context, array $blocks = array())
+    public function block_body_class($context, array $blocks = [])
     {
-        echo "index";
+        echo 'index';
     }
 
     public function getTemplateName()
     {
-        return "index.twig";
+        return 'index.twig';
     }
 
     public function isTraitable()
@@ -50,7 +54,7 @@ class __TwigTemplate_4192b7935bb29d8ee72093452ebc21ab708346e37fb4dacda050fa861d6
 
     public function getDebugInfo()
     {
-        return array (  36 => 9,  32 => 7,  29 => 4,  26 => 2,  24 => 1,  18 => 7,);
+        return [36 => 9,  32 => 7,  29 => 4,  26 => 2,  24 => 1,  18 => 7];
     }
 
     public function getSourceContext()
@@ -64,6 +68,6 @@ class __TwigTemplate_4192b7935bb29d8ee72093452ebc21ab708346e37fb4dacda050fa861d6
 {% extends extension %}
 
 {% block body_class 'index' %}
-", "index.twig", "phar:///var/www/html/sami.phar/Sami/Resources/themes/default/index.twig");
+", 'index.twig', 'phar:///var/www/html/sami.phar/Sami/Resources/themes/default/index.twig');
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-require('/etc/phpmyadmin/config.secret.inc.php');
+require '/etc/phpmyadmin/config.secret.inc.php';
 
 /* Ensure we got the environment */
-$vars = array(
+$vars = [
     'PMA_ARBITRARY',
     'PMA_HOST',
     'PMA_HOSTS',
@@ -13,8 +13,8 @@ $vars = array(
     'PMA_PORTS',
     'PMA_USER',
     'PMA_PASSWORD',
-    'PMA_ABSOLUTE_URI'
-);
+    'PMA_ABSOLUTE_URI',
+];
 foreach ($vars as $var) {
     $env = getenv($var);
     if (!isset($_ENV[$var]) && $env !== false) {
@@ -35,13 +35,13 @@ if (isset($_ENV['PMA_ABSOLUTE_URI'])) {
 /* Figure out hosts */
 
 /* Fallback to default linked */
-$hosts = array('db');
+$hosts = ['db'];
 
 /* Set by environment */
 if (!empty($_ENV['PMA_HOST'])) {
-    $hosts = array($_ENV['PMA_HOST']);
-    $verbose = array($_ENV['PMA_VERBOSE']);
-    $ports = array($_ENV['PMA_PORT']);
+    $hosts = [$_ENV['PMA_HOST']];
+    $verbose = [$_ENV['PMA_VERBOSE']];
+    $ports = [$_ENV['PMA_PORT']];
 } elseif (!empty($_ENV['PMA_HOSTS'])) {
     $hosts = explode(',', $_ENV['PMA_HOSTS']);
     $verbose = explode(',', $_ENV['PMA_VERBOSES']);
@@ -79,5 +79,5 @@ $cfg['SaveDir'] = '';
 
 /* Include User Defined Settings Hook */
 if (file_exists('/etc/phpmyadmin/config.user.inc.php')) {
-    include('/etc/phpmyadmin/config.user.inc.php');
+    include '/etc/phpmyadmin/config.user.inc.php';
 }

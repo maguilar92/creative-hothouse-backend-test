@@ -1,6 +1,6 @@
 <?php
 
-if (! function_exists('locale')) {
+if (!function_exists('locale')) {
     function locale($locale = null)
     {
         if (is_null($locale)) {

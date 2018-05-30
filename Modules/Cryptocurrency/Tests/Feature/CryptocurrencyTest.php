@@ -4,7 +4,6 @@ namespace Modules\User\Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Modules\Cryptocurrency\Entities\Cryptocurrency;
-use Modules\User\Entities\User;
 use Tests\TestCase;
 
 class CryptocurrencyTest extends TestCase
@@ -12,19 +11,19 @@ class CryptocurrencyTest extends TestCase
     use DatabaseMigrations;
 
     /**
-     * Test cryptocurrency index
+     * Test cryptocurrency index.
      *
      * @return void
      */
     public function testCryptocurrencyIndex()
-	{
-	    $cryptocurrencies = factory(Cryptocurrency::class, 25)->create();
+    {
+        $cryptocurrencies = factory(Cryptocurrency::class, 25)->create();
 
-	    $response = $this->get(route('api.coins.index'));
+        $response = $this->get(route('api.coins.index'));
 
-	    $response->assertStatus(200);
+        $response->assertStatus(200);
         $response->assertJson([
-            'total' => 25
+            'total' => 25,
         ]);
         $response->assertJsonStructure([
             'current_page',
@@ -40,10 +39,10 @@ class CryptocurrencyTest extends TestCase
             'to',
             'total',
         ]);
-	}
+    }
 
     /**
-     * Test existing cryptocurrency show
+     * Test existing cryptocurrency show.
      *
      * @return void
      */
@@ -61,7 +60,7 @@ class CryptocurrencyTest extends TestCase
     }
 
     /**
-     * Test unexisting cryptocurrency show
+     * Test unexisting cryptocurrency show.
      *
      * @return void
      */

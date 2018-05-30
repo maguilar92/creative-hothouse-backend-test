@@ -8,144 +8,168 @@ class __TwigTemplate_5e90b3d535d1b90b8c01062c6e53523c7eee6adfa6c0f6e7dc8018d06b2
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("layout/layout.twig", "namespace.twig", 1);
-        $this->blocks = array(
-            'title' => array($this, 'block_title'),
-            'body_class' => array($this, 'block_body_class'),
-            'page_id' => array($this, 'block_page_id'),
-            'below_menu' => array($this, 'block_below_menu'),
-            'page_content' => array($this, 'block_page_content'),
-        );
+        $this->parent = $this->loadTemplate('layout/layout.twig', 'namespace.twig', 1);
+        $this->blocks = [
+            'title'        => [$this, 'block_title'],
+            'body_class'   => [$this, 'block_body_class'],
+            'page_id'      => [$this, 'block_page_id'],
+            'below_menu'   => [$this, 'block_below_menu'],
+            'page_content' => [$this, 'block_page_content'],
+        ];
     }
 
     protected function doGetParent(array $context)
     {
-        return "layout/layout.twig";
+        return 'layout/layout.twig';
     }
 
-    protected function doDisplay(array $context, array $blocks = array())
+    protected function doDisplay(array $context, array $blocks = [])
     {
         // line 2
-        $context["__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6"] = $this->loadTemplate("macros.twig", "namespace.twig", 2);
+        $context['__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6'] = $this->loadTemplate('macros.twig', 'namespace.twig', 2);
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
     // line 3
-    public function block_title($context, array $blocks = array())
+    public function block_title($context, array $blocks = [])
     {
-        echo (isset($context["namespace"]) || array_key_exists("namespace", $context) ? $context["namespace"] : (function () { throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 3, $this->getSourceContext()); })());
-        echo " | ";
-        $this->displayParentBlock("title", $context, $blocks);
+        echo isset($context['namespace']) || array_key_exists('namespace', $context) ? $context['namespace'] : (function () {
+            throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 3, $this->getSourceContext());
+        })();
+        echo ' | ';
+        $this->displayParentBlock('title', $context, $blocks);
     }
 
     // line 4
-    public function block_body_class($context, array $blocks = array())
+    public function block_body_class($context, array $blocks = [])
     {
-        echo "namespace";
+        echo 'namespace';
     }
 
     // line 5
-    public function block_page_id($context, array $blocks = array())
+    public function block_page_id($context, array $blocks = [])
     {
-        echo twig_escape_filter($this->env, ("namespace:" . twig_replace_filter((isset($context["namespace"]) || array_key_exists("namespace", $context) ? $context["namespace"] : (function () { throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 5, $this->getSourceContext()); })()), array("\\" => "_"))), "html", null, true);
+        echo twig_escape_filter($this->env, ('namespace:'.twig_replace_filter((isset($context['namespace']) || array_key_exists('namespace', $context) ? $context['namespace'] : (function () {
+            throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 5, $this->getSourceContext());
+        })()), ['\\' => '_'])), 'html', null, true);
     }
 
     // line 7
-    public function block_below_menu($context, array $blocks = array())
+    public function block_below_menu($context, array $blocks = [])
     {
         // line 8
-        echo "    <div class=\"namespace-breadcrumbs\">
-        <ol class=\"breadcrumb\">
-            <li><span class=\"label label-default\">Namespace</span></li>
-            ";
+        echo '    <div class="namespace-breadcrumbs">
+        <ol class="breadcrumb">
+            <li><span class="label label-default">Namespace</span></li>
+            ';
         // line 11
-        echo $context["__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6"]->macro_breadcrumbs((isset($context["namespace"]) || array_key_exists("namespace", $context) ? $context["namespace"] : (function () { throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 11, $this->getSourceContext()); })()));
-        echo "
+        echo $context['__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6']->macro_breadcrumbs((isset($context['namespace']) || array_key_exists('namespace', $context) ? $context['namespace'] : (function () {
+            throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 11, $this->getSourceContext());
+        })()));
+        echo '
         </ol>
     </div>
-";
+';
     }
 
     // line 16
-    public function block_page_content($context, array $blocks = array())
+    public function block_page_content($context, array $blocks = [])
     {
         // line 17
-        echo "
-    <div class=\"page-header\">
-        <h1>";
+        echo '
+    <div class="page-header">
+        <h1>';
         // line 19
-        echo (isset($context["namespace"]) || array_key_exists("namespace", $context) ? $context["namespace"] : (function () { throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 19, $this->getSourceContext()); })());
-        echo "</h1>
+        echo isset($context['namespace']) || array_key_exists('namespace', $context) ? $context['namespace'] : (function () {
+            throw new Twig_Error_Runtime('Variable "namespace" does not exist.', 19, $this->getSourceContext());
+        })();
+        echo '</h1>
     </div>
 
-    ";
+    ';
         // line 22
-        if ((isset($context["subnamespaces"]) || array_key_exists("subnamespaces", $context) ? $context["subnamespaces"] : (function () { throw new Twig_Error_Runtime('Variable "subnamespaces" does not exist.', 22, $this->getSourceContext()); })())) {
+        if ((isset($context['subnamespaces']) || array_key_exists('subnamespaces', $context) ? $context['subnamespaces'] : (function () {
+            throw new Twig_Error_Runtime('Variable "subnamespaces" does not exist.', 22, $this->getSourceContext());
+        })())) {
             // line 23
-            echo "        <h2>Namespaces</h2>
-        <div class=\"namespace-list\">
-            ";
+            echo '        <h2>Namespaces</h2>
+        <div class="namespace-list">
+            ';
             // line 25
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["subnamespaces"]) || array_key_exists("subnamespaces", $context) ? $context["subnamespaces"] : (function () { throw new Twig_Error_Runtime('Variable "subnamespaces" does not exist.', 25, $this->getSourceContext()); })()));
-            foreach ($context['_seq'] as $context["_key"] => $context["ns"]) {
-                echo $context["__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6"]->macro_namespace_link($context["ns"]);
+            $context['_seq'] = twig_ensure_traversable((isset($context['subnamespaces']) || array_key_exists('subnamespaces', $context) ? $context['subnamespaces'] : (function () {
+                throw new Twig_Error_Runtime('Variable "subnamespaces" does not exist.', 25, $this->getSourceContext());
+            })()));
+            foreach ($context['_seq'] as $context['_key'] => $context['ns']) {
+                echo $context['__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6']->macro_namespace_link($context['ns']);
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ns'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
             // line 26
-            echo "        </div>
-    ";
+            echo '        </div>
+    ';
         }
         // line 28
-        echo "
-    ";
+        echo '
+    ';
         // line 29
-        if ((isset($context["classes"]) || array_key_exists("classes", $context) ? $context["classes"] : (function () { throw new Twig_Error_Runtime('Variable "classes" does not exist.', 29, $this->getSourceContext()); })())) {
+        if ((isset($context['classes']) || array_key_exists('classes', $context) ? $context['classes'] : (function () {
+            throw new Twig_Error_Runtime('Variable "classes" does not exist.', 29, $this->getSourceContext());
+        })())) {
             // line 30
-            echo "        <h2>Classes</h2>
-        ";
+            echo '        <h2>Classes</h2>
+        ';
             // line 31
-            echo $context["__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6"]->macro_render_classes((isset($context["classes"]) || array_key_exists("classes", $context) ? $context["classes"] : (function () { throw new Twig_Error_Runtime('Variable "classes" does not exist.', 31, $this->getSourceContext()); })()));
-            echo "
-    ";
+            echo $context['__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6']->macro_render_classes((isset($context['classes']) || array_key_exists('classes', $context) ? $context['classes'] : (function () {
+                throw new Twig_Error_Runtime('Variable "classes" does not exist.', 31, $this->getSourceContext());
+            })()));
+            echo '
+    ';
         }
         // line 33
-        echo "
-    ";
+        echo '
+    ';
         // line 34
-        if ((isset($context["interfaces"]) || array_key_exists("interfaces", $context) ? $context["interfaces"] : (function () { throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 34, $this->getSourceContext()); })())) {
+        if ((isset($context['interfaces']) || array_key_exists('interfaces', $context) ? $context['interfaces'] : (function () {
+            throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 34, $this->getSourceContext());
+        })())) {
             // line 35
-            echo "        <h2>Interfaces</h2>
-        ";
+            echo '        <h2>Interfaces</h2>
+        ';
             // line 36
-            echo $context["__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6"]->macro_render_classes((isset($context["interfaces"]) || array_key_exists("interfaces", $context) ? $context["interfaces"] : (function () { throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 36, $this->getSourceContext()); })()));
-            echo "
-    ";
+            echo $context['__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6']->macro_render_classes((isset($context['interfaces']) || array_key_exists('interfaces', $context) ? $context['interfaces'] : (function () {
+                throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 36, $this->getSourceContext());
+            })()));
+            echo '
+    ';
         }
         // line 38
-        echo "
-    ";
+        echo '
+    ';
         // line 39
-        if ((isset($context["exceptions"]) || array_key_exists("exceptions", $context) ? $context["exceptions"] : (function () { throw new Twig_Error_Runtime('Variable "exceptions" does not exist.', 39, $this->getSourceContext()); })())) {
+        if ((isset($context['exceptions']) || array_key_exists('exceptions', $context) ? $context['exceptions'] : (function () {
+            throw new Twig_Error_Runtime('Variable "exceptions" does not exist.', 39, $this->getSourceContext());
+        })())) {
             // line 40
-            echo "        <h2>Exceptions</h2>
-        ";
+            echo '        <h2>Exceptions</h2>
+        ';
             // line 41
-            echo $context["__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6"]->macro_render_classes((isset($context["exceptions"]) || array_key_exists("exceptions", $context) ? $context["exceptions"] : (function () { throw new Twig_Error_Runtime('Variable "exceptions" does not exist.', 41, $this->getSourceContext()); })()));
-            echo "
-    ";
+            echo $context['__internal_fbac0b7dd3028dfbf852515729a6ce0a2135f0e149709ba4f51a8ba8e30566a6']->macro_render_classes((isset($context['exceptions']) || array_key_exists('exceptions', $context) ? $context['exceptions'] : (function () {
+                throw new Twig_Error_Runtime('Variable "exceptions" does not exist.', 41, $this->getSourceContext());
+            })()));
+            echo '
+    ';
         }
         // line 43
-        echo "
-";
+        echo '
+';
     }
 
     public function getTemplateName()
     {
-        return "namespace.twig";
+        return 'namespace.twig';
     }
 
     public function isTraitable()
@@ -155,7 +179,7 @@ class __TwigTemplate_5e90b3d535d1b90b8c01062c6e53523c7eee6adfa6c0f6e7dc8018d06b2
 
     public function getDebugInfo()
     {
-        return array (  142 => 43,  137 => 41,  134 => 40,  132 => 39,  129 => 38,  124 => 36,  121 => 35,  119 => 34,  116 => 33,  111 => 31,  108 => 30,  106 => 29,  103 => 28,  99 => 26,  90 => 25,  86 => 23,  84 => 22,  78 => 19,  74 => 17,  71 => 16,  63 => 11,  58 => 8,  55 => 7,  49 => 5,  43 => 4,  35 => 3,  31 => 1,  29 => 2,  11 => 1,);
+        return [142 => 43,  137 => 41,  134 => 40,  132 => 39,  129 => 38,  124 => 36,  121 => 35,  119 => 34,  116 => 33,  111 => 31,  108 => 30,  106 => 29,  103 => 28,  99 => 26,  90 => 25,  86 => 23,  84 => 22,  78 => 19,  74 => 17,  71 => 16,  63 => 11,  58 => 8,  55 => 7,  49 => 5,  43 => 4,  35 => 3,  31 => 1,  29 => 2,  11 => 1];
     }
 
     public function getSourceContext()
@@ -204,6 +228,6 @@ class __TwigTemplate_5e90b3d535d1b90b8c01062c6e53523c7eee6adfa6c0f6e7dc8018d06b2
     {% endif %}
 
 {% endblock %}
-", "namespace.twig", "phar:///var/www/html/sami.phar/Sami/Resources/themes/default/namespace.twig");
+", 'namespace.twig', 'phar:///var/www/html/sami.phar/Sami/Resources/themes/default/namespace.twig');
     }
 }

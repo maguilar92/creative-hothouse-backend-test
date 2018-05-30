@@ -28,6 +28,7 @@ class InstallCommand extends Command
      * Create a new command instance.
      *
      * @param Installer $installer
+     *
      * @return void
      */
     public function __construct(Installer $installer)

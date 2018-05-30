@@ -8,28 +8,28 @@ use Modules\Core\Support\Repository\Src\Contracts\RepositoryInterface;
 abstract class RepositoryEventBase
 {
     /**
-     * Model executed
+     * Model executed.
      *
      * @var Model
      */
     protected $model;
 
     /**
-     * Repository executed
+     * Repository executed.
      *
      * @var RepositoryInterface
      */
     protected $repository;
 
     /**
-     * Action executed
+     * Action executed.
      *
      * @var string
      */
     protected $action;
 
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @param RepositoryInterface $repository
      * @param Model               $model
@@ -41,7 +41,7 @@ abstract class RepositoryEventBase
     }
 
     /**
-     * Get model executed
+     * Get model executed.
      *
      * @return Model
      */
@@ -51,7 +51,7 @@ abstract class RepositoryEventBase
     }
 
     /**
-     * Get repository executed
+     * Get repository executed.
      *
      * @return RepositoryInterface
      */
@@ -61,7 +61,7 @@ abstract class RepositoryEventBase
     }
 
     /**
-     * Get action executed
+     * Get action executed.
      *
      * @return string
      */

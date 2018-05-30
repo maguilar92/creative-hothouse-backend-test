@@ -25,11 +25,11 @@ class UserTrade extends Model
      *
      * @var array
      */
-    protected $guarded = ['id','created_at','updated_at'];
+    protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**
      * Get cryptocurrency.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function cryptocurrency()
@@ -39,7 +39,7 @@ class UserTrade extends Model
 
     /**
      * Get user.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function user()

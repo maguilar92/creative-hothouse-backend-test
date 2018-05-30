@@ -8,7 +8,7 @@ class CoreAdminController extends Controller
 {
     public function index()
     {
-    	// dd(request()->todos);
+        // dd(request()->todos);
         return view('layouts.master');
     }
 }

@@ -4,38 +4,37 @@ namespace Modules\User\Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Hash;
 use Modules\Cryptocurrency\Entities\Cryptocurrency;
 use Modules\Cryptocurrency\Entities\UserTrade;
 use Modules\User\Entities\User;
 use Tests\TestCase;
 
-class Portfolio extends TestCase
+class PortfolioTest extends TestCase
 {
     use DatabaseMigrations;
 
     /**
-     * Test cryptocurrency index
+     * Test cryptocurrency index.
      *
      * @return void
      */
     public function testPortfolioIndex()
-	{
+    {
         $user = factory(User::class)->create();
         $cryptocurrency = factory(Cryptocurrency::class)->create();
         $userTrades = factory(UserTrade::class, 25)->create([
-            'user_id' => $user->id,
-            'cryptocurrency_id' => $cryptocurrency->id
+            'user_id'           => $user->id,
+            'cryptocurrency_id' => $cryptocurrency->id,
         ]);
 
-	    $response = $this->actingAs($user, 'api')->get(route('api.portfolio.index'));
+        $response = $this->actingAs($user, 'api')->get(route('api.portfolio.index'));
 
-	    $response->assertStatus(200);
+        $response->assertStatus(200);
         $response->assertJsonCount(25);
-	}
+    }
 
     /**
-     * Test valid portfolio store
+     * Test valid portfolio store.
      *
      * @return void
      */
@@ -44,8 +43,8 @@ class Portfolio extends TestCase
         $user = factory(User::class)->create();
         $cryptocurrency = factory(Cryptocurrency::class)->create();
         $userTrade = factory(UserTrade::class)->make([
-            'user_id' => $user->id,
-            'cryptocurrency_id' => $cryptocurrency->id
+            'user_id'           => $user->id,
+            'cryptocurrency_id' => $cryptocurrency->id,
         ])->toArray();
         $userTrade['traded_at'] = $userTrade['traded_at']->format('Y-m-d H:i:s');
 
@@ -56,7 +55,7 @@ class Portfolio extends TestCase
     }
 
     /**
-     * Test requireds portfolio store
+     * Test requireds portfolio store.
      *
      * @return void
      */
@@ -69,25 +68,25 @@ class Portfolio extends TestCase
         $response->assertStatus(422);
         $response->assertJson([
             'message' => 'The given data was invalid.',
-            'errors' => [
+            'errors'  => [
                 'cryptocurrency_id' => [
-                    'The cryptocurrency id field is required.'
+                    'The cryptocurrency id field is required.',
                 ],
                 'amount' => [
-                    'The amount field is required.'
+                    'The amount field is required.',
                 ],
                 'price_usd' => [
-                    'The price usd field is required.'
+                    'The price usd field is required.',
                 ],
                 'traded_at' => [
-                    'The traded at field is required.'
+                    'The traded at field is required.',
                 ],
             ],
         ]);
     }
 
     /**
-     * Test numerics portfolio store
+     * Test numerics portfolio store.
      *
      * @return void
      */
@@ -96,26 +95,26 @@ class Portfolio extends TestCase
         $user = factory(User::class)->create();
 
         $response = $this->actingAs($user, 'api')->json('POST', route('api.portfolio.store'), [
-            'amount' => 'aaa',
+            'amount'    => 'aaa',
             'price_usd' => 'aaa',
         ]);
 
         $response->assertStatus(422);
         $response->assertJson([
             'message' => 'The given data was invalid.',
-            'errors' => [
+            'errors'  => [
                 'amount' => [
-                    'The amount must be a number.'
+                    'The amount must be a number.',
                 ],
                 'price_usd' => [
-                    'The price usd must be a number.'
+                    'The price usd must be a number.',
                 ],
             ],
         ]);
     }
 
     /**
-     * Test mins portfolio store
+     * Test mins portfolio store.
      *
      * @return void
      */
@@ -130,16 +129,16 @@ class Portfolio extends TestCase
         $response->assertStatus(422);
         $response->assertJson([
             'message' => 'The given data was invalid.',
-            'errors' => [
+            'errors'  => [
                 'price_usd' => [
-                    'The price usd must be at least 0.'
+                    'The price usd must be at least 0.',
                 ],
             ],
         ]);
     }
 
     /**
-     * Test date formats portfolio store
+     * Test date formats portfolio store.
      *
      * @return void
      */
@@ -154,16 +153,16 @@ class Portfolio extends TestCase
         $response->assertStatus(422);
         $response->assertJson([
             'message' => 'The given data was invalid.',
-            'errors' => [
+            'errors'  => [
                 'traded_at' => [
-                    'The traded at does not match the format Y-m-d H:i:s.'
+                    'The traded at does not match the format Y-m-d H:i:s.',
                 ],
             ],
         ]);
     }
 
     /**
-     * Test before or equal portfolio store
+     * Test before or equal portfolio store.
      *
      * @return void
      */
@@ -177,13 +176,13 @@ class Portfolio extends TestCase
 
         $response->assertStatus(422);
         $response->assertJson([
-            'message' => 'The given data was invalid.'
+            'message' => 'The given data was invalid.',
         ]);
         $response->assertJsonValidationErrors('traded_at');
     }
 
     /**
-     * Test exists on portfolio store
+     * Test exists on portfolio store.
      *
      * @return void
      */
@@ -198,9 +197,9 @@ class Portfolio extends TestCase
         $response->assertStatus(422);
         $response->assertJson([
             'message' => 'The given data was invalid.',
-            'errors' => [
+            'errors'  => [
                 'cryptocurrency_id' => [
-                    'The selected cryptocurrency id is invalid.'
+                    'The selected cryptocurrency id is invalid.',
                 ],
             ],
         ]);

@@ -8,58 +8,60 @@ class __TwigTemplate_c7aa0984b1e9ea22a77f1204d2a15834b1a7a1b83c01a881bedb86b277b
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("layout/layout.twig", "interfaces.twig", 1);
-        $this->blocks = array(
-            'title' => array($this, 'block_title'),
-            'body_class' => array($this, 'block_body_class'),
-            'page_content' => array($this, 'block_page_content'),
-        );
+        $this->parent = $this->loadTemplate('layout/layout.twig', 'interfaces.twig', 1);
+        $this->blocks = [
+            'title'        => [$this, 'block_title'],
+            'body_class'   => [$this, 'block_body_class'],
+            'page_content' => [$this, 'block_page_content'],
+        ];
     }
 
     protected function doGetParent(array $context)
     {
-        return "layout/layout.twig";
+        return 'layout/layout.twig';
     }
 
-    protected function doDisplay(array $context, array $blocks = array())
+    protected function doDisplay(array $context, array $blocks = [])
     {
         // line 2
-        $context["__internal_183c788f262c15601a940c68f0416c2bfa3d43aa6a15fe31d9419fc3640ef651"] = $this->loadTemplate("macros.twig", "interfaces.twig", 2);
+        $context['__internal_183c788f262c15601a940c68f0416c2bfa3d43aa6a15fe31d9419fc3640ef651'] = $this->loadTemplate('macros.twig', 'interfaces.twig', 2);
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
     // line 3
-    public function block_title($context, array $blocks = array())
+    public function block_title($context, array $blocks = [])
     {
-        echo "Interfaces | ";
-        $this->displayParentBlock("title", $context, $blocks);
+        echo 'Interfaces | ';
+        $this->displayParentBlock('title', $context, $blocks);
     }
 
     // line 4
-    public function block_body_class($context, array $blocks = array())
+    public function block_body_class($context, array $blocks = [])
     {
-        echo "interfaces";
+        echo 'interfaces';
     }
 
     // line 6
-    public function block_page_content($context, array $blocks = array())
+    public function block_page_content($context, array $blocks = [])
     {
         // line 7
-        echo "    <div class=\"page-header\">
+        echo '    <div class="page-header">
         <h1>Interfaces</h1>
     </div>
 
-    ";
+    ';
         // line 11
-        echo $context["__internal_183c788f262c15601a940c68f0416c2bfa3d43aa6a15fe31d9419fc3640ef651"]->macro_render_classes((isset($context["interfaces"]) || array_key_exists("interfaces", $context) ? $context["interfaces"] : (function () { throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 11, $this->getSourceContext()); })()));
-        echo "
-";
+        echo $context['__internal_183c788f262c15601a940c68f0416c2bfa3d43aa6a15fe31d9419fc3640ef651']->macro_render_classes((isset($context['interfaces']) || array_key_exists('interfaces', $context) ? $context['interfaces'] : (function () {
+            throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 11, $this->getSourceContext());
+        })()));
+        echo '
+';
     }
 
     public function getTemplateName()
     {
-        return "interfaces.twig";
+        return 'interfaces.twig';
     }
 
     public function isTraitable()
@@ -69,7 +71,7 @@ class __TwigTemplate_c7aa0984b1e9ea22a77f1204d2a15834b1a7a1b83c01a881bedb86b277b
 
     public function getDebugInfo()
     {
-        return array (  55 => 11,  49 => 7,  46 => 6,  40 => 4,  33 => 3,  29 => 1,  27 => 2,  11 => 1,);
+        return [55 => 11,  49 => 7,  46 => 6,  40 => 4,  33 => 3,  29 => 1,  27 => 2,  11 => 1];
     }
 
     public function getSourceContext()
@@ -86,6 +88,6 @@ class __TwigTemplate_c7aa0984b1e9ea22a77f1204d2a15834b1a7a1b83c01a881bedb86b277b
 
     {{ render_classes(interfaces) }}
 {% endblock %}
-", "interfaces.twig", "phar:///var/www/html/sami.phar/Sami/Resources/themes/default/interfaces.twig");
+", 'interfaces.twig', 'phar:///var/www/html/sami.phar/Sami/Resources/themes/default/interfaces.twig');
     }
 }
