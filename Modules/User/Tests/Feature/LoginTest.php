@@ -38,13 +38,13 @@ class LoginTest extends TestCase
     public function testLoginsUnsuccessfully()
     {
         $client = OauthClient::create([
-            'id' => config('auth.auth.api_client_id'),
-            'name' => config('app.name').' Password Grant Client',
-            'secret' => config('auth.auth.api_client_secret'),
-            'redirect' => config('app.url'),
+            'id'                     => config('auth.auth.api_client_id'),
+            'name'                   => config('app.name').' Password Grant Client',
+            'secret'                 => config('auth.auth.api_client_secret'),
+            'redirect'               => config('app.url'),
             'personal_access_client' => 0,
-            'password_client' => 1,
-            'revoked' => 0
+            'password_client'        => 1,
+            'revoked'                => 0,
         ]);
 
         $user = factory(User::class)->create([
