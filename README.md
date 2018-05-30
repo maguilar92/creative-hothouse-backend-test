@@ -38,7 +38,7 @@ exit
 
 # Documentation links
 
-When project is installed you can access to project documentation from these links.
+When the project is installed you can access to project documentation from these links.
 
 [Sphinx](https://localhost/documentation/sphinx/build/html/index.html)
 
