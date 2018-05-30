@@ -22,7 +22,7 @@ Start docker and execute this command on project root:
 
 > ./dcp up
 
-> ./dcp composer install
+> ./dcp composer install --no-autoloader
 
 > ./dcp composer update
 
