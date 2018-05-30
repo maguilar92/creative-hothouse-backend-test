@@ -22,7 +22,7 @@ class PortfolioTest extends TestCase
     {
         $user = factory(User::class)->create();
         $cryptocurrency = factory(Cryptocurrency::class)->create();
-        $userTrades = factory(UserTrade::class, 25)->create([
+        factory(UserTrade::class, 25)->create([
             'user_id'           => $user->id,
             'cryptocurrency_id' => $cryptocurrency->id,
         ]);

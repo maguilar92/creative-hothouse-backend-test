@@ -37,7 +37,7 @@ class LoginTest extends TestCase
      */
     public function testLoginsUnsuccessfully()
     {
-        $client = OauthClient::create([
+        OauthClient::create([
             'id'                     => config('auth.auth.api_client_id'),
             'name'                   => config('app.name').' Password Grant Client',
             'secret'                 => config('auth.auth.api_client_secret'),

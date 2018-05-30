@@ -17,7 +17,7 @@ class CryptocurrencyTest extends TestCase
      */
     public function testCryptocurrencyIndex()
     {
-        $cryptocurrencies = factory(Cryptocurrency::class, 25)->create();
+        factory(Cryptocurrency::class, 25)->create();
 
         $response = $this->get(route('api.coins.index'));
 

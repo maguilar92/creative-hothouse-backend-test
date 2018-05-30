@@ -31,7 +31,7 @@ class ConfigureUser implements SetupScript
         $email = $this->askUserEmail();
         $password = $this->askUserPassword();
 
-        $user = User::create([
+        User::create([
                 'name'     => $name,
                 'email'    => $email,
                 'password' => Hash::make($password),
