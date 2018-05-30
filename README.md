@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/maguilar92/creative-hothouse-backend-test.svg?branch=master)](https://travis-ci.org/maguilar92/creative-hothouse-backend-test)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5d5452b310e64219b0e07777de27b69a)](https://www.codacy.com/app/mario-hoyvoy/creative-hothouse-backend-test?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=maguilar92/creative-hothouse-backend-test&amp;utm_campaign=Badge_Grade)
+[![StyleCI](https://github.styleci.io/repos/134744980/shield?branch=master)](https://github.styleci.io/repos/134744980)
 
 # Requirements
 
