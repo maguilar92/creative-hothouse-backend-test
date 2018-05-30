@@ -14,9 +14,13 @@ Docker client
 Start docker and execute this command on project root:
 
 > cp .env.example .env
+
 > ./dcp composer install
+
 > ./dcp composer update
+
 > ./dcp mysql
+
 ````sql
 CREATE SCHEMA IF NOT EXISTS gcastings
 DEFAULT CHARACTER SET utf8mb4 
@@ -24,4 +28,5 @@ DEFAULT COLLATE utf8mb4_unicode_ci;
 exit
 ````
 > ./dcp artisan project:install
+
 > ./dcp artcc
