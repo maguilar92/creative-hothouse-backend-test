@@ -8,7 +8,7 @@ trait SectionMessage
     {
         $formatter = $this->getHelperSet()->get('formatter');
         $formattedLine = $formatter->formatSection($messages);
-        
+
         $this->line($formattedLine);
     }
 }

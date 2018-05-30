@@ -7,18 +7,18 @@ use Modules\Core\Support\Repository\Src\Helpers\CacheKeys;
 
 trait CacheableRepository
 {
-
     /**
-     * Instance of Illuminate\Contracts\Cache\Repository
+     * Instance of Illuminate\Contracts\Cache\Repository.
      *
      * @var CacheRepository
      */
     protected $cacheRepository = null;
 
     /**
-     * Set Cache Repository
+     * Set Cache Repository.
      *
      * @param CacheRepository $repository
+     *
      * @return $this
      */
     public function setCacheRepository(CacheRepository $repository)
@@ -29,7 +29,7 @@ trait CacheableRepository
     }
 
     /**
-     * Return instance of Cache Repository
+     * Return instance of Cache Repository.
      *
      * @return CacheRepository
      */
@@ -43,9 +43,10 @@ trait CacheableRepository
     }
 
     /**
-     * Skip Cache
+     * Skip Cache.
      *
      * @param bool $status
+     *
      * @return $this
      */
     public function skipCache($status = true)
@@ -56,7 +57,7 @@ trait CacheableRepository
     }
 
     /**
-     * Return is cache is skipped
+     * Return is cache is skipped.
      *
      * @return bool
      */
@@ -74,9 +75,10 @@ trait CacheableRepository
     }
 
     /**
-     * Return if cache is allowed
+     * Return if cache is allowed.
      *
      * @param $method
+     *
      * @return bool
      */
     protected function allowedCache($method)
@@ -106,7 +108,7 @@ trait CacheableRepository
     }
 
     /**
-     * Flush cache of repository
+     * Flush cache of repository.
      *
      * @return $this
      */
@@ -120,9 +122,10 @@ trait CacheableRepository
     }
 
     /**
-     * Get model relation hashes
+     * Get model relation hashes.
      *
      * @param mixed $model
+     *
      * @return string
      */
     protected function getModelRelationHashes($model)
@@ -145,11 +148,12 @@ trait CacheableRepository
                 }
             }
         }
+
         return $hashReturn;
     }
 
     /**
-     * Get Cache key for the method
+     * Get Cache key for the method.
      *
      * @param $method
      * @param $args
@@ -174,7 +178,7 @@ trait CacheableRepository
     }
 
     /**
-     * Get cache minutes
+     * Get cache minutes.
      *
      * @return int
      */
@@ -186,10 +190,11 @@ trait CacheableRepository
     }
 
     /**
-     * Get data for table
+     * Get data for table.
      *
      * @param string|null $search
-     * @param bool|bool $paginate
+     * @param bool|bool   $paginate
+     *
      * @return type
      */
     public function getDataForTable(string $search = null, bool $paginate = false)
@@ -212,7 +217,7 @@ trait CacheableRepository
     }
 
     /**
-     * Retrieve all data of repository
+     * Retrieve all data of repository.
      *
      * @param array|array $columns
      *
@@ -236,7 +241,7 @@ trait CacheableRepository
     }
 
     /**
-     * Retrieve get data of repository
+     * Retrieve get data of repository.
      *
      * @param array|array $columns
      *
@@ -262,8 +267,9 @@ trait CacheableRepository
     /**
      * Get an array with the values of a given column.
      *
-     * @param  string  $column
-     * @param  string|null  $key
+     * @param string      $column
+     * @param string|null $key
+     *
      * @return mixed
      */
     public function pluck($column, $key = null)
@@ -332,7 +338,8 @@ trait CacheableRepository
     /**
      * Retrieve the minimum value of a given column.
      *
-     * @param  string  $column
+     * @param string $column
+     *
      * @return mixed
      */
     public function min($column)
@@ -355,7 +362,8 @@ trait CacheableRepository
     /**
      * Retrieve the maximum value of a given column.
      *
-     * @param  string  $column
+     * @param string $column
+     *
      * @return mixed
      */
     public function max($column)
@@ -378,7 +386,8 @@ trait CacheableRepository
     /**
      * Retrieve the sum of the values of a given column.
      *
-     * @param  string  $column
+     * @param string $column
+     *
      * @return mixed
      */
     public function sum($column)
@@ -401,7 +410,8 @@ trait CacheableRepository
     /**
      * Retrieve the average of the values of a given column.
      *
-     * @param  string  $column
+     * @param string $column
+     *
      * @return mixed
      */
     public function avg($column)
@@ -422,10 +432,11 @@ trait CacheableRepository
     }
 
     /**
-     * Retrieve all data of repository, paginated
+     * Retrieve all data of repository, paginated.
      *
-     * @param int|null $limit
+     * @param int|null    $limit
      * @param array|array $columns
+     *
      * @return mixed
      */
     public function paginate(int $limit = null, array $columns = ['*'])
@@ -448,10 +459,11 @@ trait CacheableRepository
     }
 
     /**
-     * Find data by id
+     * Find data by id.
      *
-     * @param int $id
+     * @param int         $id
      * @param array|array $columns
+     *
      * @return mixed
      */
     public function find(int $id, array $columns = ['*'])
@@ -472,10 +484,11 @@ trait CacheableRepository
     }
 
     /**
-     * Find or fail data by id
+     * Find or fail data by id.
      *
-     * @param int $id
+     * @param int         $id
      * @param array|array $columns
+     *
      * @return mixed
      */
     public function findOrFail(int $id, array $columns = ['*'])
@@ -496,9 +509,10 @@ trait CacheableRepository
     }
 
     /**
-     * Get first data by id
+     * Get first data by id.
      *
      * @param array|array $columns
+     *
      * @return mixed
      */
     public function first(array $columns = ['*'])
@@ -511,6 +525,7 @@ trait CacheableRepository
         $minutes = $this->getCacheMinutes();
         $value = $this->getCacheRepository()->tags([get_called_class()])->remember($cachekey, $minutes, function () use ($columns) {
             $return = parent::first($columns);
+
             return (is_null($return)) ? 'null' : $return;
         });
         $value = ($value === 'null') ? null : $value;
@@ -521,9 +536,10 @@ trait CacheableRepository
     }
 
     /**
-     * Get or fail first data by id
+     * Get or fail first data by id.
      *
      * @param array|array $columns
+     *
      * @return mixed
      */
     public function firstOrFail(array $columns = ['*'])

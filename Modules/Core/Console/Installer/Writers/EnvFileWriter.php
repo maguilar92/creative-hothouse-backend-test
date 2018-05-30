@@ -2,7 +2,6 @@
 
 namespace Modules\Core\Console\Installer\Writers;
 
-use Dotenv\Dotenv;
 use Illuminate\Filesystem\Filesystem;
 
 class EnvFileWriter
@@ -31,12 +30,14 @@ class EnvFileWriter
     }
 
     /**
-     * Write in env file
+     * Write in env file.
      *
      * @param string $envKey
      * @param string $envValue
-     * @return void
+     *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     *
+     * @return void
      */
     public function write(string $envKey, string $envValue)
     {

@@ -3,7 +3,6 @@
 namespace Modules\Core\Support\Repository\Src\Listeners;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 use Modules\Core\Support\Repository\Src\Contracts\RepositoryInterface;
@@ -12,37 +11,36 @@ use Modules\Core\Support\Repository\Src\Helpers\CacheKeys;
 
 class CleanCacheRepository
 {
-
     /**
-     * Cache config param
+     * Cache config param.
      *
      * @var CacheRepository
      */
     protected $cache = null;
 
     /**
-     * Repository executed
+     * Repository executed.
      *
      * @var RepositoryInterface
      */
     protected $repository = null;
 
     /**
-     * Model executed
+     * Model executed.
      *
      * @var Model
      */
     protected $model = null;
 
     /**
-     * Action executed
+     * Action executed.
      *
      * @var string
      */
     protected $action = null;
 
     /**
-     * Class constructo
+     * Class constructo.
      *
      * @return void
      */
@@ -52,15 +50,16 @@ class CleanCacheRepository
     }
 
     /**
-     * Event handle
+     * Event handle.
      *
      * @param RepositoryEventBase $event
+     *
      * @return void
      */
     public function handle(RepositoryEventBase $event)
     {
         try {
-            $cleanEnabled = config("repository.cache.clean.enabled", true);
+            $cleanEnabled = config('repository.cache.clean.enabled', true);
 
             if ($cleanEnabled) {
                 $this->repository = $event->getRepository();

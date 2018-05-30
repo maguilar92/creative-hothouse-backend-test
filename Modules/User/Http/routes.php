@@ -1,9 +1,9 @@
 <?php
 
-Route::group(['middleware' => ['api','guest:api'], 'prefix' => 'api', 'namespace' => 'Modules\User\Http\Controllers\Api', 'as' => 'api.'], function () {
+Route::group(['middleware' => ['api', 'guest:api'], 'prefix' => 'api', 'namespace' => 'Modules\User\Http\Controllers\Api', 'as' => 'api.'], function () {
     Route::post('users/login', [
-        'as' => 'users.login',
-        'uses' => 'UsersController@login'
+        'as'   => 'users.login',
+        'uses' => 'UsersController@login',
     ]);
 });
 

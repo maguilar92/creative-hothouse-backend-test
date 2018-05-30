@@ -4,7 +4,6 @@ namespace Modules\User\Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Modules\Cryptocurrency\Entities\Cryptocurrency;
-use Modules\User\Entities\User;
 use Tests\TestCase;
 
 class CryptocurrencyTest extends TestCase
@@ -12,7 +11,7 @@ class CryptocurrencyTest extends TestCase
     use DatabaseMigrations;
 
     /**
-     * Test cryptocurrency index
+     * Test cryptocurrency index.
      *
      * @return void
      */
@@ -24,7 +23,7 @@ class CryptocurrencyTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertJson([
-            'total' => 25
+            'total' => 25,
         ]);
         $response->assertJsonStructure([
             'current_page',
@@ -43,7 +42,7 @@ class CryptocurrencyTest extends TestCase
     }
 
     /**
-     * Test existing cryptocurrency show
+     * Test existing cryptocurrency show.
      *
      * @return void
      */
@@ -61,7 +60,7 @@ class CryptocurrencyTest extends TestCase
     }
 
     /**
-     * Test unexisting cryptocurrency show
+     * Test unexisting cryptocurrency show.
      *
      * @return void
      */

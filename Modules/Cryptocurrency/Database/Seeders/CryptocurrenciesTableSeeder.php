@@ -3,21 +3,20 @@
 namespace Modules\Cryptocurrency\Database\Seeders;
 
 use GuzzleHttp\Exception\RequestException;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\App;
 
 class CryptocurrenciesTableSeeder extends Seeder
 {
     /**
-     * Worker role repository
+     * Worker role repository.
      *
      * @var \Modules\Worker\Repositories\WorkerRoleRepository
      */
     protected $cryptocurrencyRepository;
-    
+
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @return void
      */
@@ -27,10 +26,11 @@ class CryptocurrenciesTableSeeder extends Seeder
     }
 
     /**
-     * Get CoinMarketCap tickets
+     * Get CoinMarketCap tickets.
      *
      * @param int $start
      * @param int $limit
+     *
      * @return array
      */
     protected function getCoinMarketCapTickers(int $start, int $limit): array
@@ -41,14 +41,15 @@ class CryptocurrenciesTableSeeder extends Seeder
             $response = $http->get('https://api.coinmarketcap.com/v2/ticker/?convert=BTC&start='.$start.'&limit='.$limit);
             $body = $response->getBody();
             $body = json_decode($body, true);
+
             return [
                 'content' => collect($body['data']),
-                'code' => $response->getStatusCode()
+                'code'    => $response->getStatusCode(),
             ];
         } catch (RequestException $e) {
             return [
                 'content' => $e->getResponse()->getBody()->getContents(),
-                'code' => $e->getResponse()->getStatusCode()
+                'code'    => $e->getResponse()->getStatusCode(),
             ];
         }
     }
@@ -68,18 +69,18 @@ class CryptocurrenciesTableSeeder extends Seeder
             $cryptocurrencies['content']->each(function ($cryptocurrency) {
                 try {
                     $this->cryptocurrencyRepository->create([
-                        'name' => $cryptocurrency['name'],
-                        'symbol' => $cryptocurrency['symbol'],
-                        'rank' => $cryptocurrency['rank'],
-                        'price_usd' => $cryptocurrency['quotes']['USD']['price'],
-                        'price_btc' => $cryptocurrency['quotes']['BTC']['price'],
-                        '24h_volume_usd' => $cryptocurrency['quotes']['USD']['volume_24h'],
-                        'market_cap_usd' => $cryptocurrency['quotes']['USD']['market_cap'],
-                        'available_supply' => $cryptocurrency['circulating_supply'],
-                        'total_supply' => $cryptocurrency['total_supply'],
-                        'percent_change_1h' => $cryptocurrency['quotes']['USD']['percent_change_1h'],
+                        'name'               => $cryptocurrency['name'],
+                        'symbol'             => $cryptocurrency['symbol'],
+                        'rank'               => $cryptocurrency['rank'],
+                        'price_usd'          => $cryptocurrency['quotes']['USD']['price'],
+                        'price_btc'          => $cryptocurrency['quotes']['BTC']['price'],
+                        '24h_volume_usd'     => $cryptocurrency['quotes']['USD']['volume_24h'],
+                        'market_cap_usd'     => $cryptocurrency['quotes']['USD']['market_cap'],
+                        'available_supply'   => $cryptocurrency['circulating_supply'],
+                        'total_supply'       => $cryptocurrency['total_supply'],
+                        'percent_change_1h'  => $cryptocurrency['quotes']['USD']['percent_change_1h'],
                         'percent_change_24h' => $cryptocurrency['quotes']['USD']['percent_change_24h'],
-                        'percent_change_7d' => $cryptocurrency['quotes']['USD']['percent_change_7d'],
+                        'percent_change_7d'  => $cryptocurrency['quotes']['USD']['percent_change_7d'],
                     ]);
                 } catch (\Exception $e) {
                     dd($cryptocurrency);

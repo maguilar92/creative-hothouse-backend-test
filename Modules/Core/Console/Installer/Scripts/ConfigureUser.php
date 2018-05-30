@@ -15,15 +15,16 @@ class ConfigureUser implements SetupScript
     protected $command;
 
     /**
-     * Fire the install script
+     * Fire the install script.
      *
-     * @param  Command $command
+     * @param Command $command
+     *
      * @return mixed
      */
     public function fire(Command $command)
     {
         $this->command = $command;
-        
+
         $this->command->info('User creation');
 
         $name = $this->askUserName();
@@ -31,16 +32,16 @@ class ConfigureUser implements SetupScript
         $password = $this->askUserPassword();
 
         $user = User::create([
-                'name' => $name,
-                'email' => $email,
-                'password' => Hash::make($password)
+                'name'     => $name,
+                'email'    => $email,
+                'password' => Hash::make($password),
             ]);
 
         $command->info('User successfully created');
     }
 
     /**
-     * Ask user admin name
+     * Ask user admin name.
      *
      * @return string
      */
@@ -57,7 +58,7 @@ class ConfigureUser implements SetupScript
     }
 
     /**
-     * Ask user admin email
+     * Ask user admin email.
      *
      * @return string
      */
@@ -74,7 +75,7 @@ class ConfigureUser implements SetupScript
     }
 
     /**
-     * Ask user admnin password
+     * Ask user admnin password.
      *
      * @return string
      */

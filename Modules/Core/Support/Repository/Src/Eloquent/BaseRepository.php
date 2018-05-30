@@ -2,34 +2,32 @@
 
 namespace Modules\Core\Support\Repository\Src\Eloquent;
 
-use Closure;
-use Exception;
+use Illuminate\Container\Container as Application;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Core\Support\Repository\Src\Contracts\RepositoryInterface;
 use Modules\Core\Support\Repository\Src\Exceptions\RepositoryException;
 use Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead;
 use Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite;
-use Illuminate\Container\Container as Application;
-use Illuminate\Database\Eloquent\Model;
 
 abstract class BaseRepository implements RepositoryInterface
 {
     use BaseRepositoryRead, BaseRepositoryWrite;
     /**
-     * Laravel Application
+     * Laravel Application.
      *
      * @var Application
      */
     protected $app;
-    
+
     /**
-     * Model
+     * Model.
      *
      * @var Model
      */
     protected $model;
 
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @param Application $app
      */
@@ -41,7 +39,7 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
     /**
-     * Flush cache of repository
+     * Flush cache of repository.
      *
      * @return $this
      */
@@ -51,9 +49,10 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
     /**
-     * Skip Cache
+     * Skip Cache.
      *
      * @param bool $status
+     *
      * @return $this
      */
     public function skipCache($status = true)
@@ -62,7 +61,7 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
     /**
-     * Get model
+     * Get model.
      *
      * @return mixed
      */
@@ -72,7 +71,7 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
     /**
-     * Boot repository
+     * Boot repository.
      *
      * @return void
      */
@@ -81,28 +80,30 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
     /**
-     * Reset model
+     * Reset model.
      *
      * @return void
      */
     public function resetModel()
     {
         $this->makeModel();
+
         return $this;
     }
 
     /**
-     * Specify Model class name
+     * Specify Model class name.
      *
      * @return string
      */
     abstract public function model();
 
     /**
-     * Make app model
+     * Make app model.
+     *
+     * @throws RepositoryException
      *
      * @return Model
-     * @throws RepositoryException
      */
     public function makeModel()
     {
@@ -116,19 +117,22 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
     /**
-     * Overloading __call
+     * Overloading __call.
      *
      * @param mixed $method
      * @param mixed $arguments
+     *
      * @return mixed
      */
     public function __call($method, $arguments)
     {
         if (empty($arguments)) {
             $this->model = call_user_func([$this->model, $method]);
+
             return $this;
         }
         $this->model = call_user_func_array([$this->model, $method], $arguments);
+
         return $this;
     }
 }
