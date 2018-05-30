@@ -14,7 +14,7 @@ class Installer
 
     /**
      * Class constructor
-     * 
+     *
      * @param Application $app
      */
     public function __construct(Application $app)
@@ -24,7 +24,7 @@ class Installer
 
     /**
      * Stack
-     * 
+     *
      * @param  array $scripts
      * @return $this
      */
@@ -37,7 +37,7 @@ class Installer
 
     /**
      * Fire install scripts
-     * 
+     *
      * @param  Command $command
      * @return bool
      */

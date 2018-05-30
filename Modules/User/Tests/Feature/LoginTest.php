@@ -35,8 +35,8 @@ class LoginTest extends TestCase
      * @return void
      */
     public function testLoginsUnsuccessfully()
-	{
-	    $user = factory(User::class)->create([
+    {
+        $user = factory(User::class)->create([
             'email' => 'test@login.com',
             'password' => Hash::make('secret'),
         ]);
@@ -48,6 +48,7 @@ class LoginTest extends TestCase
             ->assertJson([
                 'error' => 'invalid_credentials',
                 'message' => 'The user credentials were incorrect.',
-            ]);;
-	}
+            ]);
+        ;
+    }
 }

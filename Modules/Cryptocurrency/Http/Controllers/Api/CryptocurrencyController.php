@@ -32,7 +32,7 @@ class CryptocurrencyController extends Controller
     /**
      * Get cryptocurrencies paginated
      *
-     * @param Request $request 
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
@@ -58,8 +58,8 @@ class CryptocurrencyController extends Controller
 
     /**
      * Get cryptocurrency historical
-     * 
-     * @param type $coinId 
+     *
+     * @param type $coinId
      * @return type
      */
     public function historical($coinId)

@@ -28,9 +28,9 @@ class CryptocurrenciesTableSeeder extends Seeder
 
     /**
      * Get CoinMarketCap tickets
-     * 
-     * @param int $start 
-     * @param int $limit 
+     *
+     * @param int $start
+     * @param int $limit
      * @return array
      */
     protected function getCoinMarketCapTickers(int $start, int $limit): array
@@ -64,8 +64,8 @@ class CryptocurrenciesTableSeeder extends Seeder
         $limit = 100;
         $cryptocurrencies = $this->getCoinMarketCapTickers($start, $limit);
 
-        while($cryptocurrencies['code'] == 200) {
-            $cryptocurrencies['content']->each(function($cryptocurrency) {
+        while ($cryptocurrencies['code'] == 200) {
+            $cryptocurrencies['content']->each(function ($cryptocurrency) {
                 try {
                     $this->cryptocurrencyRepository->create([
                         'name' => $cryptocurrency['name'],
@@ -80,8 +80,8 @@ class CryptocurrenciesTableSeeder extends Seeder
                         'percent_change_1h' => $cryptocurrency['quotes']['USD']['percent_change_1h'],
                         'percent_change_24h' => $cryptocurrency['quotes']['USD']['percent_change_24h'],
                         'percent_change_7d' => $cryptocurrency['quotes']['USD']['percent_change_7d'],
-                    ]); 
-                } catch(\Exception $e) {
+                    ]);
+                } catch (\Exception $e) {
                     dd($cryptocurrency);
                 }
             });

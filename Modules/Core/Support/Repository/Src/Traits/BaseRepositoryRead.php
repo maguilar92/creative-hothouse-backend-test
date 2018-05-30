@@ -31,7 +31,6 @@ trait BaseRepositoryRead
      */
     public function get(array $columns = ['*'])
     {
-
         if ($this->model instanceof Builder) {
             $results = $this->model->get($columns);
         } else {
@@ -52,7 +51,6 @@ trait BaseRepositoryRead
      */
     public function pluck($column, $key = null)
     {
-
         $results = $this->model->pluck($column, $key);
 
         $this->resetModel();
@@ -67,7 +65,6 @@ trait BaseRepositoryRead
      */
     public function exists()
     {
-
         $results = $this->model->exists();
 
         $this->resetModel();
@@ -83,7 +80,6 @@ trait BaseRepositoryRead
      */
     public function count(array $columns = ['*'])
     {
-
         $results = $this->model->count($columns);
 
         $this->resetModel();
@@ -99,7 +95,6 @@ trait BaseRepositoryRead
      */
     public function min($column)
     {
-
         $results = $this->model->min($column);
 
         $this->resetModel();
@@ -115,7 +110,6 @@ trait BaseRepositoryRead
      */
     public function max($column)
     {
-
         $results = $this->model->max($column);
 
         $this->resetModel();
@@ -131,7 +125,6 @@ trait BaseRepositoryRead
      */
     public function sum($column)
     {
-
         $results = $this->model->sum($column);
 
         $this->resetModel();
@@ -147,7 +140,6 @@ trait BaseRepositoryRead
      */
     public function avg($column)
     {
-
         $results = $this->model->count($column);
 
         $this->resetModel();

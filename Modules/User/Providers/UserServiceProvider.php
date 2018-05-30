@@ -51,9 +51,12 @@ class UserServiceProvider extends ServiceProvider
             __DIR__.'/../Config/permission.php' => config_path('permission.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'modules.user.user',
-            __DIR__.'/../Config/auth.php', 'auth',
-            __DIR__.'/../Config/permission.php', 'permission'
+            __DIR__.'/../Config/config.php',
+            'modules.user.user',
+            __DIR__.'/../Config/auth.php',
+            'auth',
+            __DIR__.'/../Config/permission.php',
+            'permission'
         );
     }
 
@@ -70,7 +73,7 @@ class UserServiceProvider extends ServiceProvider
 
         $this->publishes([
             $sourcePath => $viewPath
-        ],'views');
+        ], 'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
             return $path . '/modules/user';

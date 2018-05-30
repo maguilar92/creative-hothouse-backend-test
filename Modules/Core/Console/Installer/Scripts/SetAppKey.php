@@ -9,7 +9,7 @@ class SetAppKey implements SetupScript
 {
     /**
      * Fire the install script
-     * 
+     *
      * @param  Command $command
      * @return mixed
      */

@@ -33,8 +33,8 @@ class UsersController extends Controller
 
     /**
      * Login user
-     * 
-     * @param UserLoginRequest $request 
+     *
+     * @param UserLoginRequest $request
      * @return string JSON
      */
     public function login(UserLoginRequest $request)

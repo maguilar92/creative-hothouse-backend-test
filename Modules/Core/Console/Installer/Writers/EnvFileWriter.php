@@ -32,9 +32,9 @@ class EnvFileWriter
 
     /**
      * Write in env file
-     * 
-     * @param string $envKey 
-     * @param string $envValue 
+     *
+     * @param string $envKey
+     * @param string $envValue
      * @return void
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */

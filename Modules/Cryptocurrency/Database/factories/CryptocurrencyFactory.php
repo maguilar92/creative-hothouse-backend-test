@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 use Modules\Cryptocurrency\Entities\Cryptocurrency;
 
 $factory->define(Cryptocurrency::class, function (Faker $faker) {
-	static $rank = 1;
+    static $rank = 1;
 
     return [
         'name' => $faker->name,

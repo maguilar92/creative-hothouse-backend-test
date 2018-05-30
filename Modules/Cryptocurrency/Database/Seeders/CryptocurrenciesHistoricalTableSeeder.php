@@ -29,23 +29,24 @@ class CryptocurrenciesHistoricalTableSeeder extends Seeder
 
     /**
      * Generate decimal random
-     * 
-     * @param float $min 
-     * @param float $max 
-     * @param int $decimals 
+     *
+     * @param float $min
+     * @param float $max
+     * @param int $decimals
      * @return type
      */
-    protected function random(float $min, float $max, int $decimals = 8){
+    protected function random(float $min, float $max, int $decimals = 8)
+    {
         $scale = pow(10, $decimals);
         return mt_rand($min * $scale, $max * $scale) / $scale;
     }
 
     /**
      * Add new snapshop
-     * 
-     * @param Cryptocurrency $cryptocurrency 
-     * @param float $lastSnapshotPriceUsd 
-     * @param type $dateFake 
+     *
+     * @param Cryptocurrency $cryptocurrency
+     * @param float $lastSnapshotPriceUsd
+     * @param type $dateFake
      * @return float
      */
     protected function addSnapshot(Cryptocurrency $cryptocurrency, float $lastSnapshotPriceUsd, Carbon $dateFake)
@@ -74,12 +75,12 @@ class CryptocurrenciesHistoricalTableSeeder extends Seeder
     public function run()
     {
         //For each cryptocurrency generate fake data
-        $this->cryptocurrencyRepository->all()->each(function($cryptocurrency) {
+        $this->cryptocurrencyRepository->all()->each(function ($cryptocurrency) {
             $dateFake = $cryptocurrency->updated_at->subHour();
             $dateEndFake = $cryptocurrency->updated_at->subMonths(6);
             $lastSnapshotPriceUsd = $cryptocurrency->price_usd;
 
-            while($dateFake->gte($dateEndFake)) {
+            while ($dateFake->gte($dateEndFake)) {
                 $lastSnapshotPriceUsd = $this->addSnapshot($cryptocurrency, $lastSnapshotPriceUsd, $dateFake);
                 $dateFake->subHour();
             }

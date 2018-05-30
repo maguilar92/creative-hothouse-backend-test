@@ -13,7 +13,7 @@ class SeedDatabase implements SetupScript
     ];
     /**
      * Fire the install script
-     * 
+     *
      * @param  Command $command
      * @return mixed
      */
@@ -21,7 +21,7 @@ class SeedDatabase implements SetupScript
     {
         $command->info('Database seeding');
 
-        collect($this->seeders)->each(function($seederClass, $seederName) use ($command) {
+        collect($this->seeders)->each(function ($seederClass, $seederName) use ($command) {
             if ($command->confirm('Do you wish to execute '.$seederName.'?', true)) {
                 if ($command->option('verbose')) {
                     $command->call('db:seed', [

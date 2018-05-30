@@ -16,7 +16,7 @@ class ConfigureUser implements SetupScript
 
     /**
      * Fire the install script
-     * 
+     *
      * @param  Command $command
      * @return mixed
      */
@@ -41,7 +41,7 @@ class ConfigureUser implements SetupScript
 
     /**
      * Ask user admin name
-     * 
+     *
      * @return string
      */
     protected function askUserName()
@@ -58,7 +58,7 @@ class ConfigureUser implements SetupScript
 
     /**
      * Ask user admin email
-     * 
+     *
      * @return string
      */
     protected function askUserEmail()
@@ -75,7 +75,7 @@ class ConfigureUser implements SetupScript
 
     /**
      * Ask user admnin password
-     * 
+     *
      * @return string
      */
     protected function askUserPassword()

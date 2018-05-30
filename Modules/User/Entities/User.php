@@ -33,7 +33,7 @@ class User extends Authenticatable
 
     /**
      * Get user trades.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function trades()

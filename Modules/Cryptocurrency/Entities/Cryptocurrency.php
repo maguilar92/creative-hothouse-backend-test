@@ -29,7 +29,7 @@ class Cryptocurrency extends Model
 
     /**
      * Get cryptocurrency historical.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function historical()

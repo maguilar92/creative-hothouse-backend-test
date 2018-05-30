@@ -20,7 +20,7 @@ class Portfolio extends TestCase
      * @return void
      */
     public function testPortfolioIndex()
-	{
+    {
         $user = factory(User::class)->create();
         $cryptocurrency = factory(Cryptocurrency::class)->create();
         $userTrades = factory(UserTrade::class, 25)->create([
@@ -28,11 +28,11 @@ class Portfolio extends TestCase
             'cryptocurrency_id' => $cryptocurrency->id
         ]);
 
-	    $response = $this->actingAs($user, 'api')->get(route('api.portfolio.index'));
+        $response = $this->actingAs($user, 'api')->get(route('api.portfolio.index'));
 
-	    $response->assertStatus(200);
+        $response->assertStatus(200);
         $response->assertJsonCount(25);
-	}
+    }
 
     /**
      * Test valid portfolio store

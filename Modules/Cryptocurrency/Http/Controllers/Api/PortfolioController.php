@@ -42,8 +42,8 @@ class PortfolioController extends Controller
 
     /**
      * Store new user trade
-     * 
-     * @param PortfolioStoreRequest $request 
+     *
+     * @param PortfolioStoreRequest $request
      * @return string JSON
      */
     public function store(PortfolioStoreRequest $request)

@@ -17,12 +17,12 @@ class CryptocurrencyTest extends TestCase
      * @return void
      */
     public function testCryptocurrencyIndex()
-	{
-	    $cryptocurrencies = factory(Cryptocurrency::class, 25)->create();
+    {
+        $cryptocurrencies = factory(Cryptocurrency::class, 25)->create();
 
-	    $response = $this->get(route('api.coins.index'));
+        $response = $this->get(route('api.coins.index'));
 
-	    $response->assertStatus(200);
+        $response->assertStatus(200);
         $response->assertJson([
             'total' => 25
         ]);
@@ -40,7 +40,7 @@ class CryptocurrencyTest extends TestCase
             'to',
             'total',
         ]);
-	}
+    }
 
     /**
      * Test existing cryptocurrency show
