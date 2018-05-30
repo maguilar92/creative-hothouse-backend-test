@@ -22,10 +22,10 @@ class SetPassport implements SetupScript
     protected $clients;
 
     /**
-     * Class constructor
-     * 
-     * @param EnvFileWriter $env
-     * @param ClientModelRepository $clients 
+     * Class constructor.
+     *
+     * @param EnvFileWriter         $env
+     * @param ClientModelRepository $clients
      */
     public function __construct(EnvFileWriter $env, ClientModelRepository $clients)
     {
@@ -34,10 +34,10 @@ class SetPassport implements SetupScript
     }
 
     /**
-     * Fire the install script
-     * 
-     * @param  Command $command
-     * 
+     * Fire the install script.
+     *
+     * @param Command $command
+     *
      * @return void
      */
     public function fire(Command $command)
@@ -57,8 +57,8 @@ class SetPassport implements SetupScript
     }
 
     /**
-     * Set environment passport
-     * 
+     * Set environment passport.
+     *
      * @return void
      */
     protected function setEnvironmentClient()

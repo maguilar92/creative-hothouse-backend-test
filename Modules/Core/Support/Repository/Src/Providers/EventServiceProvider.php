@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {
-
     /**
      * The event handler mappings for the application.
      *
@@ -14,29 +13,29 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntityInserted' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
         ],
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntityCreated' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
         ],
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntityUpdated' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
         ],
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntitiesUpdated' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
         ],
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntityDeleted' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
         ],
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntitiesDeleted' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
         ],
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntityRestored' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
         ],
         'Modules\Core\Support\Repository\Src\Events\RepositoryEntitiesRestored' => [
-            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository'
-        ]
+            'Modules\Core\Support\Repository\Src\Listeners\CleanCacheRepository',
+        ],
     ];
 
     /**

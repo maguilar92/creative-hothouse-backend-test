@@ -1,2 +1,3 @@
 <?php
+
 $cfg['AllowArbitraryServer'] = true;

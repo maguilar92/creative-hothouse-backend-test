@@ -29,11 +29,11 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $guarded = ['id','created_at','updated_at'];
+    protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**
      * Get user trades.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function trades()

@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Modules\Core\Console\InstallCommand;
-use Modules\Core\Console\ThemeScaffoldCommand;
 
 class CoreServiceProvider extends ServiceProvider
 {
@@ -38,14 +37,15 @@ class CoreServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->registerFactories();
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
         $this->registerCommands();
     }
 
     /**
      * Register the filters.
      *
-     * @param  Router $router
+     * @param Router $router
+     *
      * @return void
      */
     public function registerMiddleware(Router $router)
@@ -95,11 +95,11 @@ class CoreServiceProvider extends ServiceProvider
         $sourcePath = __DIR__.'/../Resources/views';
 
         $this->publishes([
-            $sourcePath => $viewPath
-        ],'views');
+            $sourcePath => $viewPath,
+        ], 'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/core';
+            return $path.'/modules/core';
         }, \Config::get('view.paths')), [$sourcePath]), 'core');
     }
 
@@ -115,23 +115,24 @@ class CoreServiceProvider extends ServiceProvider
         if (is_dir($langPath)) {
             $this->loadTranslationsFrom($langPath, 'core');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'core');
+            $this->loadTranslationsFrom(__DIR__.'/../Resources/lang', 'core');
         }
     }
 
     /**
      * Register an additional directory of factories.
+     *
      * @source https://github.com/sebastiaanluca/laravel-resource-flow/blob/develop/src/Modules/ModuleServiceProvider.php#L66
      */
     public function registerFactories()
     {
-        if (! app()->environment('production')) {
-            app(Factory::class)->load(__DIR__ . '/../Database/factories');
+        if (!app()->environment('production')) {
+            app(Factory::class)->load(__DIR__.'/../Database/factories');
         }
     }
 
     /**
-     * Register the console commands
+     * Register the console commands.
      */
     private function registerCommands()
     {

@@ -8,17 +8,17 @@ use Modules\Core\Support\Repository\Src\Contracts\RepositoryInterface;
 class RepositoryEntitiesRestored extends RepositoryEventBase
 {
     /**
-     * Action executed
+     * Action executed.
      *
      * @var string
      */
-    protected $action = "restore";
+    protected $action = 'restore';
 
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @param RepositoryInterface $repository
-     * @param Collection               $model
+     * @param Collection          $model
      */
     public function __construct(RepositoryInterface $repository, Collection $model)
     {

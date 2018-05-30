@@ -1,7 +1,6 @@
 <?php
 
 use Sami\Sami;
-use Sami\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
 
 $iterator = Finder::create()
@@ -10,12 +9,12 @@ $iterator = Finder::create()
     ->in($dir = __DIR__.'/app')
     ->in($dir = __DIR__.'/modules');
 
-return new Sami($iterator, array(
+return new Sami($iterator, [
     'theme'                => 'custom',
     'title'                => 'Creativehothouse',
     'build_dir'            => __DIR__.'/public/documentation/sami/build/%version%',
     'cache_dir'            => __DIR__.'/public/documentation/sami/cache/%version%',
     // use a custom theme directory
-    'template_dirs'        => array(__DIR__.'/sami_themes/custom'),
+    'template_dirs'        => [__DIR__.'/sami_themes/custom'],
     'default_opened_level' => 2,
-));
+]);

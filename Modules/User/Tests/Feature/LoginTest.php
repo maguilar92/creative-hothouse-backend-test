@@ -22,8 +22,8 @@ class LoginTest extends TestCase
             ->assertStatus(422)
             ->assertJson([
                 'message' => 'The given data was invalid.',
-                'errors' => [
-                    'email' => ['The email field is required.'],
+                'errors'  => [
+                    'email'    => ['The email field is required.'],
                     'password' => ['The password field is required.'],
                 ],
             ]);
@@ -35,9 +35,9 @@ class LoginTest extends TestCase
      * @return void
      */
     public function testLoginsUnsuccessfully()
-	{
-	    $user = factory(User::class)->create([
-            'email' => 'test@login.com',
+    {
+        $user = factory(User::class)->create([
+            'email'    => 'test@login.com',
             'password' => Hash::make('secret'),
         ]);
 
@@ -46,8 +46,8 @@ class LoginTest extends TestCase
         $this->json('POST', route('api.users.login'), $payload)
             ->assertStatus(401)
             ->assertJson([
-                'error' => 'invalid_credentials',
+                'error'   => 'invalid_credentials',
                 'message' => 'The user credentials were incorrect.',
-            ]);;
-	}
+            ]);
+    }
 }

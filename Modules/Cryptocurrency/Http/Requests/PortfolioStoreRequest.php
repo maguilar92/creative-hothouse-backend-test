@@ -15,9 +15,9 @@ class PortfolioStoreRequest extends FormRequest
     {
         return [
             'cryptocurrency_id' => 'required|exists:cryptocurrencies,id',
-            'amount' => 'required|numeric',
-            'price_usd' => 'required|numeric|min:0',
-            'traded_at' => 'required|date_format:Y-m-d H:i:s|before_or_equal:'.date('Y-m-d: H:i:s'),
+            'amount'            => 'required|numeric',
+            'price_usd'         => 'required|numeric|min:0',
+            'traded_at'         => 'required|date_format:Y-m-d H:i:s|before_or_equal:'.date('Y-m-d: H:i:s'),
         ];
     }
 

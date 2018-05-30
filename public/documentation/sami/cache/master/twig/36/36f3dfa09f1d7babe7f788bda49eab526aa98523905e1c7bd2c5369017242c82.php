@@ -9,22 +9,24 @@ class __TwigTemplate_11722a8da34973450a2138d2ca6e78811b45440796a9e37b340e28565f9
 
         $this->parent = false;
 
-        $this->blocks = array(
-            'search_index' => array($this, 'block_search_index'),
-            'search_index_extra' => array($this, 'block_search_index_extra'),
-            'treejs' => array($this, 'block_treejs'),
-        );
+        $this->blocks = [
+            'search_index'       => [$this, 'block_search_index'],
+            'search_index_extra' => [$this, 'block_search_index_extra'],
+            'treejs'             => [$this, 'block_treejs'],
+        ];
     }
 
-    protected function doDisplay(array $context, array $blocks = array())
+    protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        $context["__internal_32ee2e02314d62008b084fcbe4137b2d6efd17ad8459e2653e180cec6a40f160"] = $this;
+        $context['__internal_32ee2e02314d62008b084fcbe4137b2d6efd17ad8459e2653e180cec6a40f160'] = $this;
         // line 2
         echo "
 window.projectVersion = '";
         // line 3
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["project"]) || array_key_exists("project", $context) ? $context["project"] : (function () { throw new Twig_Error_Runtime('Variable "project" does not exist.', 3, $this->getSourceContext()); })()), "version", array()), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context['project']) || array_key_exists('project', $context) ? $context['project'] : (function () {
+            throw new Twig_Error_Runtime('Variable "project" does not exist.', 3, $this->getSourceContext());
+        })()), 'version', []), 'html', null, true);
         echo "';
 
 (function(root) {
@@ -33,8 +35,12 @@ window.projectVersion = '";
     var rootPath = '';
     var treeHtml = '";
         // line 9
-        echo twig_replace_filter($context["__internal_32ee2e02314d62008b084fcbe4137b2d6efd17ad8459e2653e180cec6a40f160"]->macro_element((isset($context["tree"]) || array_key_exists("tree", $context) ? $context["tree"] : (function () { throw new Twig_Error_Runtime('Variable "tree" does not exist.', 9, $this->getSourceContext()); })()), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["project"]) || array_key_exists("project", $context) ? $context["project"] : (function () { throw new Twig_Error_Runtime('Variable "project" does not exist.', 9, $this->getSourceContext()); })()), "config", array(0 => "default_opened_level"), "method"), 0), array("'" => "\\'", "
-" => ""));
+        echo twig_replace_filter($context['__internal_32ee2e02314d62008b084fcbe4137b2d6efd17ad8459e2653e180cec6a40f160']->macro_element((isset($context['tree']) || array_key_exists('tree', $context) ? $context['tree'] : (function () {
+            throw new Twig_Error_Runtime('Variable "tree" does not exist.', 9, $this->getSourceContext());
+        })()), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context['project']) || array_key_exists('project', $context) ? $context['project'] : (function () {
+            throw new Twig_Error_Runtime('Variable "project" does not exist.', 9, $this->getSourceContext());
+        })()), 'config', [0 => 'default_opened_level'], 'method'), 0), ["'" => "\\'", '
+'                                                                           => '']);
         echo "';
 
     var searchTypeClasses = {
@@ -172,8 +178,8 @@ window.projectVersion = '";
         // line 158
         $this->displayBlock('treejs', $context, $blocks);
         // line 184
-        echo "
-    ";
+        echo '
+    ';
         // line 212
         echo "
         var form = \$('#search-form .typeahead');
@@ -203,128 +209,134 @@ window.projectVersion = '";
         });
 
     ";
-        echo "
+        echo '
 });
 
-";
+';
         // line 224
-        echo "
-";
+        echo '
+';
     }
 
     // line 21
-    public function block_search_index($context, array $blocks = array())
+    public function block_search_index($context, array $blocks = [])
     {
         // line 22
-        echo "            ";
-        $context["__internal_1d4dc775ee0a748a588c2c961f2532bac3b49a95be8f5002d7cd7f3a29a0e6b6"] = $this;
+        echo '            ';
+        $context['__internal_1d4dc775ee0a748a588c2c961f2532bac3b49a95be8f5002d7cd7f3a29a0e6b6'] = $this;
         // line 23
-        echo "
-            ";
+        echo '
+            ';
         // line 24
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["namespaces"]) || array_key_exists("namespaces", $context) ? $context["namespaces"] : (function () { throw new Twig_Error_Runtime('Variable "namespaces" does not exist.', 24, $this->getSourceContext()); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["ns"]) {
+        $context['_seq'] = twig_ensure_traversable((isset($context['namespaces']) || array_key_exists('namespaces', $context) ? $context['namespaces'] : (function () {
+            throw new Twig_Error_Runtime('Variable "namespaces" does not exist.', 24, $this->getSourceContext());
+        })()));
+        foreach ($context['_seq'] as $context['_key'] => $context['ns']) {
             // line 25
-            echo "{\"type\": \"Namespace\", \"link\": \"";
-            echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, $context["ns"]);
-            echo "\", \"name\": \"";
-            echo twig_replace_filter($context["ns"], array("\\" => "\\\\"));
-            echo "\", \"doc\": \"Namespace ";
-            echo twig_replace_filter($context["ns"], array("\\" => "\\\\"));
-            echo "\"},";
+            echo '{"type": "Namespace", "link": "';
+            echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, $context['ns']);
+            echo '", "name": "';
+            echo twig_replace_filter($context['ns'], ['\\' => '\\\\']);
+            echo '", "doc": "Namespace ';
+            echo twig_replace_filter($context['ns'], ['\\' => '\\\\']);
+            echo '"},';
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ns'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 27
-        echo "
-            ";
+        echo '
+            ';
         // line 28
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["interfaces"]) || array_key_exists("interfaces", $context) ? $context["interfaces"] : (function () { throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 28, $this->getSourceContext()); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["class"]) {
+        $context['_seq'] = twig_ensure_traversable((isset($context['interfaces']) || array_key_exists('interfaces', $context) ? $context['interfaces'] : (function () {
+            throw new Twig_Error_Runtime('Variable "interfaces" does not exist.', 28, $this->getSourceContext());
+        })()));
+        foreach ($context['_seq'] as $context['_key'] => $context['class']) {
             // line 29
-            echo "{\"type\": \"Interface\", ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "namespace", array())) {
-                echo "\"fromName\": \"";
-                echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "namespace", array()), array("\\" => "\\\\"));
-                echo "\", \"fromLink\": \"";
-                echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "namespace", array()));
-                echo "\",";
+            echo '{"type": "Interface", ';
+            if (twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'namespace', [])) {
+                echo '"fromName": "';
+                echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'namespace', []), ['\\' => '\\\\']);
+                echo '", "fromLink": "';
+                echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'namespace', []));
+                echo '",';
             }
-            echo " \"link\": \"";
-            echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, $context["class"]);
-            echo "\", \"name\": \"";
-            echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "name", array()), array("\\" => "\\\\"));
-            echo "\", \"doc\": \"";
-            echo twig_escape_filter($this->env, json_encode($this->env->getExtension('Sami\Renderer\TwigExtension')->parseDesc($context, twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "shortdesc", array()), $context["class"])), "html", null, true);
-            echo "\"},
-                ";
+            echo ' "link": "';
+            echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, $context['class']);
+            echo '", "name": "';
+            echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'name', []), ['\\' => '\\\\']);
+            echo '", "doc": "';
+            echo twig_escape_filter($this->env, json_encode($this->env->getExtension('Sami\Renderer\TwigExtension')->parseDesc($context, twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'shortdesc', []), $context['class'])), 'html', null, true);
+            echo '"},
+                ';
             // line 30
-            echo $context["__internal_1d4dc775ee0a748a588c2c961f2532bac3b49a95be8f5002d7cd7f3a29a0e6b6"]->macro_add_class_methods_index($context["class"]);
-            echo "
-            ";
+            echo $context['__internal_1d4dc775ee0a748a588c2c961f2532bac3b49a95be8f5002d7cd7f3a29a0e6b6']->macro_add_class_methods_index($context['class']);
+            echo '
+            ';
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['class'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 32
-        echo "
-            ";
+        echo '
+            ';
         // line 33
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["classes"]) || array_key_exists("classes", $context) ? $context["classes"] : (function () { throw new Twig_Error_Runtime('Variable "classes" does not exist.', 33, $this->getSourceContext()); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["class"]) {
+        $context['_seq'] = twig_ensure_traversable((isset($context['classes']) || array_key_exists('classes', $context) ? $context['classes'] : (function () {
+            throw new Twig_Error_Runtime('Variable "classes" does not exist.', 33, $this->getSourceContext());
+        })()));
+        foreach ($context['_seq'] as $context['_key'] => $context['class']) {
             // line 34
-            echo "{\"type\": ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "isTrait", array())) {
-                echo "\"Trait\"";
+            echo '{"type": ';
+            if (twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'isTrait', [])) {
+                echo '"Trait"';
             } else {
-                echo "\"Class\"";
+                echo '"Class"';
             }
-            echo ", ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "namespace", array())) {
-                echo "\"fromName\": \"";
-                echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "namespace", array()), array("\\" => "\\\\"));
-                echo "\", \"fromLink\": \"";
-                echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "namespace", array()));
-                echo "\",";
+            echo ', ';
+            if (twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'namespace', [])) {
+                echo '"fromName": "';
+                echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'namespace', []), ['\\' => '\\\\']);
+                echo '", "fromLink": "';
+                echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'namespace', []));
+                echo '",';
             }
-            echo " \"link\": \"";
-            echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, $context["class"]);
-            echo "\", \"name\": \"";
-            echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "name", array()), array("\\" => "\\\\"));
-            echo "\", \"doc\": \"";
-            echo twig_escape_filter($this->env, json_encode($this->env->getExtension('Sami\Renderer\TwigExtension')->parseDesc($context, twig_get_attribute($this->env, $this->getSourceContext(), $context["class"], "shortdesc", array()), $context["class"])), "html", null, true);
-            echo "\"},
-                ";
+            echo ' "link": "';
+            echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, $context['class']);
+            echo '", "name": "';
+            echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'name', []), ['\\' => '\\\\']);
+            echo '", "doc": "';
+            echo twig_escape_filter($this->env, json_encode($this->env->getExtension('Sami\Renderer\TwigExtension')->parseDesc($context, twig_get_attribute($this->env, $this->getSourceContext(), $context['class'], 'shortdesc', []), $context['class'])), 'html', null, true);
+            echo '"},
+                ';
             // line 35
-            echo $context["__internal_1d4dc775ee0a748a588c2c961f2532bac3b49a95be8f5002d7cd7f3a29a0e6b6"]->macro_add_class_methods_index($context["class"]);
-            echo "
-            ";
+            echo $context['__internal_1d4dc775ee0a748a588c2c961f2532bac3b49a95be8f5002d7cd7f3a29a0e6b6']->macro_add_class_methods_index($context['class']);
+            echo '
+            ';
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['class'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 37
-        echo "
-            ";
+        echo '
+            ';
         // line 39
-        echo "            ";
+        echo '            ';
         $this->displayBlock('search_index_extra', $context, $blocks);
         // line 40
-        echo "        ";
+        echo '        ';
     }
 
     // line 39
-    public function block_search_index_extra($context, array $blocks = array())
+    public function block_search_index_extra($context, array $blocks = [])
     {
-        echo "";
+        echo '';
     }
 
     // line 158
-    public function block_treejs($context, array $blocks = array())
+    public function block_treejs($context, array $blocks = [])
     {
         // line 159
         echo "
@@ -357,48 +369,63 @@ window.projectVersion = '";
     // line 215
     public function macro_add_class_methods_index($__class__ = null, ...$__varargs__)
     {
-        $context = $this->env->mergeGlobals(array(
-            "class" => $__class__,
-            "varargs" => $__varargs__,
-        ));
+        $context = $this->env->mergeGlobals([
+            'class'   => $__class__,
+            'varargs' => $__varargs__,
+        ]);
 
-        $blocks = array();
+        $blocks = [];
 
         ob_start();
+
         try {
             // line 216
-            echo "    ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["class"]) || array_key_exists("class", $context) ? $context["class"] : (function () { throw new Twig_Error_Runtime('Variable "class" does not exist.', 216, $this->getSourceContext()); })()), "methods", array())) {
+            echo '    ';
+            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context['class']) || array_key_exists('class', $context) ? $context['class'] : (function () {
+                throw new Twig_Error_Runtime('Variable "class" does not exist.', 216, $this->getSourceContext());
+            })()), 'methods', [])) {
                 // line 217
-                echo "        ";
-                $context["from_name"] = twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["class"]) || array_key_exists("class", $context) ? $context["class"] : (function () { throw new Twig_Error_Runtime('Variable "class" does not exist.', 217, $this->getSourceContext()); })()), "name", array()), array("\\" => "\\\\"));
+                echo '        ';
+                $context['from_name'] = twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context['class']) || array_key_exists('class', $context) ? $context['class'] : (function () {
+                    throw new Twig_Error_Runtime('Variable "class" does not exist.', 217, $this->getSourceContext());
+                })()), 'name', []), ['\\' => '\\\\']);
                 // line 218
-                echo "        ";
-                $context["from_link"] = $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, (isset($context["class"]) || array_key_exists("class", $context) ? $context["class"] : (function () { throw new Twig_Error_Runtime('Variable "class" does not exist.', 218, $this->getSourceContext()); })()));
+                echo '        ';
+                $context['from_link'] = $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, (isset($context['class']) || array_key_exists('class', $context) ? $context['class'] : (function () {
+                    throw new Twig_Error_Runtime('Variable "class" does not exist.', 218, $this->getSourceContext());
+                })()));
                 // line 219
-                echo "        ";
+                echo '        ';
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["class"]) || array_key_exists("class", $context) ? $context["class"] : (function () { throw new Twig_Error_Runtime('Variable "class" does not exist.', 219, $this->getSourceContext()); })()), "methods", array()));
-                foreach ($context['_seq'] as $context["_key"] => $context["meth"]) {
+                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context['class']) || array_key_exists('class', $context) ? $context['class'] : (function () {
+                    throw new Twig_Error_Runtime('Variable "class" does not exist.', 219, $this->getSourceContext());
+                })()), 'methods', []));
+                foreach ($context['_seq'] as $context['_key'] => $context['meth']) {
                     // line 220
-                    echo "            {\"type\": \"Method\", \"fromName\": \"";
-                    echo (isset($context["from_name"]) || array_key_exists("from_name", $context) ? $context["from_name"] : (function () { throw new Twig_Error_Runtime('Variable "from_name" does not exist.', 220, $this->getSourceContext()); })());
-                    echo "\", \"fromLink\": \"";
-                    echo (isset($context["from_link"]) || array_key_exists("from_link", $context) ? $context["from_link"] : (function () { throw new Twig_Error_Runtime('Variable "from_link" does not exist.', 220, $this->getSourceContext()); })());
-                    echo "\", \"link\": \"";
-                    echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForMethod($context, $context["meth"]);
-                    echo "\", \"name\": \"";
-                    echo twig_replace_filter($context["meth"], array("\\" => "\\\\"));
-                    echo "\", \"doc\": \"";
-                    echo twig_escape_filter($this->env, json_encode($this->env->getExtension('Sami\Renderer\TwigExtension')->parseDesc($context, twig_get_attribute($this->env, $this->getSourceContext(), $context["meth"], "shortdesc", array()), (isset($context["class"]) || array_key_exists("class", $context) ? $context["class"] : (function () { throw new Twig_Error_Runtime('Variable "class" does not exist.', 220, $this->getSourceContext()); })()))), "html", null, true);
-                    echo "\"},
-        ";
+                    echo '            {"type": "Method", "fromName": "';
+                    echo isset($context['from_name']) || array_key_exists('from_name', $context) ? $context['from_name'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "from_name" does not exist.', 220, $this->getSourceContext());
+                    })();
+                    echo '", "fromLink": "';
+                    echo isset($context['from_link']) || array_key_exists('from_link', $context) ? $context['from_link'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "from_link" does not exist.', 220, $this->getSourceContext());
+                    })();
+                    echo '", "link": "';
+                    echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForMethod($context, $context['meth']);
+                    echo '", "name": "';
+                    echo twig_replace_filter($context['meth'], ['\\' => '\\\\']);
+                    echo '", "doc": "';
+                    echo twig_escape_filter($this->env, json_encode($this->env->getExtension('Sami\Renderer\TwigExtension')->parseDesc($context, twig_get_attribute($this->env, $this->getSourceContext(), $context['meth'], 'shortdesc', []), (isset($context['class']) || array_key_exists('class', $context) ? $context['class'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "class" does not exist.', 220, $this->getSourceContext());
+                    })()))), 'html', null, true);
+                    echo '"},
+        ';
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['meth'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
                 // line 222
-                echo "    ";
+                echo '    ';
             }
 
             return ('' === $tmp = ob_get_contents()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
@@ -410,92 +437,115 @@ window.projectVersion = '";
     // line 225
     public function macro_element($__tree__ = null, $__opened__ = null, $__depth__ = null, ...$__varargs__)
     {
-        $context = $this->env->mergeGlobals(array(
-            "tree" => $__tree__,
-            "opened" => $__opened__,
-            "depth" => $__depth__,
-            "varargs" => $__varargs__,
-        ));
+        $context = $this->env->mergeGlobals([
+            'tree'    => $__tree__,
+            'opened'  => $__opened__,
+            'depth'   => $__depth__,
+            'varargs' => $__varargs__,
+        ]);
 
-        $blocks = array();
+        $blocks = [];
 
         ob_start();
+
         try {
             // line 226
-            echo "    ";
-            $context["__internal_d2a09309ee0c7adcb46a1c56614b08918f575430ba589a44711914019c7005ca"] = $this;
+            echo '    ';
+            $context['__internal_d2a09309ee0c7adcb46a1c56614b08918f575430ba589a44711914019c7005ca'] = $this;
             // line 227
-            echo "
-    <ul>";
+            echo '
+    <ul>';
             // line 229
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["tree"]) || array_key_exists("tree", $context) ? $context["tree"] : (function () { throw new Twig_Error_Runtime('Variable "tree" does not exist.', 229, $this->getSourceContext()); })()));
-            foreach ($context['_seq'] as $context["_key"] => $context["element"]) {
+            $context['_seq'] = twig_ensure_traversable((isset($context['tree']) || array_key_exists('tree', $context) ? $context['tree'] : (function () {
+                throw new Twig_Error_Runtime('Variable "tree" does not exist.', 229, $this->getSourceContext());
+            })()));
+            foreach ($context['_seq'] as $context['_key'] => $context['element']) {
                 // line 230
-                if (twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 2, array(), "array")) {
+                if (twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 2, [], 'array')) {
                     // line 231
-                    echo "                <li data-name=\"namespace:";
-                    echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 1, array(), "array"), array("\\" => "_"));
-                    echo "\" ";
-                    if (((isset($context["depth"]) || array_key_exists("depth", $context) ? $context["depth"] : (function () { throw new Twig_Error_Runtime('Variable "depth" does not exist.', 231, $this->getSourceContext()); })()) < (isset($context["opened"]) || array_key_exists("opened", $context) ? $context["opened"] : (function () { throw new Twig_Error_Runtime('Variable "opened" does not exist.', 231, $this->getSourceContext()); })()))) {
-                        echo "class=\"opened\"";
+                    echo '                <li data-name="namespace:';
+                    echo twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 1, [], 'array'), ['\\' => '_']);
+                    echo '" ';
+                    if (((isset($context['depth']) || array_key_exists('depth', $context) ? $context['depth'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "depth" does not exist.', 231, $this->getSourceContext());
+                    })()) < (isset($context['opened']) || array_key_exists('opened', $context) ? $context['opened'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "opened" does not exist.', 231, $this->getSourceContext());
+                    })()))) {
+                        echo 'class="opened"';
                     }
-                    echo ">
-                    <div style=\"padding-left:";
+                    echo '>
+                    <div style="padding-left:';
                     // line 232
-                    echo ((isset($context["depth"]) || array_key_exists("depth", $context) ? $context["depth"] : (function () { throw new Twig_Error_Runtime('Variable "depth" does not exist.', 232, $this->getSourceContext()); })()) * 18);
-                    echo "px\" class=\"hd\">
-                        <span class=\"glyphicon glyphicon-play\"></span>";
+                    echo(isset($context['depth']) || array_key_exists('depth', $context) ? $context['depth'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "depth" does not exist.', 232, $this->getSourceContext());
+                    })()) * 18;
+                    echo 'px" class="hd">
+                        <span class="glyphicon glyphicon-play"></span>';
                     // line 233
-                    if ( !twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["project"]) || array_key_exists("project", $context) ? $context["project"] : (function () { throw new Twig_Error_Runtime('Variable "project" does not exist.', 233, $this->getSourceContext()); })()), "config", array(0 => "simulate_namespaces"), "method")) {
-                        echo "<a href=\"";
-                        echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 1, array(), "array"));
-                        echo "\">";
+                    if (!twig_get_attribute($this->env, $this->getSourceContext(), (isset($context['project']) || array_key_exists('project', $context) ? $context['project'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "project" does not exist.', 233, $this->getSourceContext());
+                    })()), 'config', [0 => 'simulate_namespaces'], 'method')) {
+                        echo '<a href="';
+                        echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForNamespace($context, twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 1, [], 'array'));
+                        echo '">';
                     }
-                    echo twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 0, array(), "array");
-                    if ( !twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["project"]) || array_key_exists("project", $context) ? $context["project"] : (function () { throw new Twig_Error_Runtime('Variable "project" does not exist.', 233, $this->getSourceContext()); })()), "config", array(0 => "simulate_namespaces"), "method")) {
-                        echo "</a>";
+                    echo twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 0, [], 'array');
+                    if (!twig_get_attribute($this->env, $this->getSourceContext(), (isset($context['project']) || array_key_exists('project', $context) ? $context['project'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "project" does not exist.', 233, $this->getSourceContext());
+                    })()), 'config', [0 => 'simulate_namespaces'], 'method')) {
+                        echo '</a>';
                     }
                     // line 234
-                    echo "                    </div>
-                    <div class=\"bd\">
-                        ";
+                    echo '                    </div>
+                    <div class="bd">
+                        ';
                     // line 236
-                    echo $context["__internal_d2a09309ee0c7adcb46a1c56614b08918f575430ba589a44711914019c7005ca"]->macro_element(twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 2, array(), "array"), (isset($context["opened"]) || array_key_exists("opened", $context) ? $context["opened"] : (function () { throw new Twig_Error_Runtime('Variable "opened" does not exist.', 236, $this->getSourceContext()); })()), ((isset($context["depth"]) || array_key_exists("depth", $context) ? $context["depth"] : (function () { throw new Twig_Error_Runtime('Variable "depth" does not exist.', 236, $this->getSourceContext()); })()) + 1));
+                    echo $context['__internal_d2a09309ee0c7adcb46a1c56614b08918f575430ba589a44711914019c7005ca']->macro_element(twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 2, [], 'array'), (isset($context['opened']) || array_key_exists('opened', $context) ? $context['opened'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "opened" does not exist.', 236, $this->getSourceContext());
+                    })()), ((isset($context['depth']) || array_key_exists('depth', $context) ? $context['depth'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "depth" does not exist.', 236, $this->getSourceContext());
+                    })()) + 1));
                     // line 237
-                    echo "</div>
+                    echo '</div>
                 </li>
-            ";
+            ';
                 } else {
                     // line 240
-                    echo "                <li data-name=\"class:";
-                    echo twig_escape_filter($this->env, twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 1, array(), "array"), "name", array()), array("\\" => "_")), "html", null, true);
-                    echo "\" ";
-                    if (((isset($context["depth"]) || array_key_exists("depth", $context) ? $context["depth"] : (function () { throw new Twig_Error_Runtime('Variable "depth" does not exist.', 240, $this->getSourceContext()); })()) < (isset($context["opened"]) || array_key_exists("opened", $context) ? $context["opened"] : (function () { throw new Twig_Error_Runtime('Variable "opened" does not exist.', 240, $this->getSourceContext()); })()))) {
-                        echo "class=\"opened\"";
+                    echo '                <li data-name="class:';
+                    echo twig_escape_filter($this->env, twig_replace_filter(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 1, [], 'array'), 'name', []), ['\\' => '_']), 'html', null, true);
+                    echo '" ';
+                    if (((isset($context['depth']) || array_key_exists('depth', $context) ? $context['depth'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "depth" does not exist.', 240, $this->getSourceContext());
+                    })()) < (isset($context['opened']) || array_key_exists('opened', $context) ? $context['opened'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "opened" does not exist.', 240, $this->getSourceContext());
+                    })()))) {
+                        echo 'class="opened"';
                     }
-                    echo ">
-                    <div style=\"padding-left:";
+                    echo '>
+                    <div style="padding-left:';
                     // line 241
-                    echo twig_escape_filter($this->env, (8 + ((isset($context["depth"]) || array_key_exists("depth", $context) ? $context["depth"] : (function () { throw new Twig_Error_Runtime('Variable "depth" does not exist.', 241, $this->getSourceContext()); })()) * 18)), "html", null, true);
-                    echo "px\" class=\"hd leaf\">
-                        <a href=\"";
+                    echo twig_escape_filter($this->env, (8 + ((isset($context['depth']) || array_key_exists('depth', $context) ? $context['depth'] : (function () {
+                        throw new Twig_Error_Runtime('Variable "depth" does not exist.', 241, $this->getSourceContext());
+                    })()) * 18)), 'html', null, true);
+                    echo 'px" class="hd leaf">
+                        <a href="';
                     // line 242
-                    echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 1, array(), "array"));
-                    echo "\">";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["element"], 0, array(), "array"), "html", null, true);
-                    echo "</a>
+                    echo $this->env->getExtension('Sami\Renderer\TwigExtension')->pathForClass($context, twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 1, [], 'array'));
+                    echo '">';
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context['element'], 0, [], 'array'), 'html', null, true);
+                    echo '</a>
                     </div>
                 </li>
-            ";
+            ';
                 }
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['element'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
             // line 247
-            echo "    </ul>
-";
+            echo '    </ul>
+';
 
             return ('' === $tmp = ob_get_contents()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
         } finally {
@@ -505,7 +555,7 @@ window.projectVersion = '";
 
     public function getTemplateName()
     {
-        return "sami.js.twig";
+        return 'sami.js.twig';
     }
 
     public function isTraitable()
@@ -515,7 +565,7 @@ window.projectVersion = '";
 
     public function getDebugInfo()
     {
-        return array (  497 => 247,  484 => 242,  480 => 241,  471 => 240,  466 => 237,  464 => 236,  460 => 234,  450 => 233,  446 => 232,  437 => 231,  435 => 230,  431 => 229,  428 => 227,  425 => 226,  411 => 225,  401 => 222,  384 => 220,  379 => 219,  376 => 218,  373 => 217,  370 => 216,  358 => 215,  330 => 159,  327 => 158,  321 => 39,  317 => 40,  314 => 39,  311 => 37,  303 => 35,  280 => 34,  276 => 33,  273 => 32,  265 => 30,  248 => 29,  244 => 28,  241 => 27,  229 => 25,  225 => 24,  222 => 23,  219 => 22,  216 => 21,  211 => 224,  178 => 212,  175 => 184,  173 => 158,  54 => 41,  52 => 21,  36 => 9,  27 => 3,  24 => 2,  22 => 1,);
+        return [497 => 247,  484 => 242,  480 => 241,  471 => 240,  466 => 237,  464 => 236,  460 => 234,  450 => 233,  446 => 232,  437 => 231,  435 => 230,  431 => 229,  428 => 227,  425 => 226,  411 => 225,  401 => 222,  384 => 220,  379 => 219,  376 => 218,  373 => 217,  370 => 216,  358 => 215,  330 => 159,  327 => 158,  321 => 39,  317 => 40,  314 => 39,  311 => 37,  303 => 35,  280 => 34,  276 => 33,  273 => 32,  265 => 30,  248 => 29,  244 => 28,  241 => 27,  229 => 25,  225 => 24,  222 => 23,  219 => 22,  216 => 21,  211 => 224,  178 => 212,  175 => 184,  173 => 158,  54 => 41,  52 => 21,  36 => 9,  27 => 3,  24 => 2,  22 => 1];
     }
 
     public function getSourceContext()
@@ -768,6 +818,6 @@ window.projectVersion = '{{ project.version }}';
         {%- endfor %}
     </ul>
 {% endmacro %}
-", "sami.js.twig", "phar:///var/www/html/sami.phar/Sami/Resources/themes/default/sami.js.twig");
+", 'sami.js.twig', 'phar:///var/www/html/sami.phar/Sami/Resources/themes/default/sami.js.twig');
     }
 }

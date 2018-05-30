@@ -3,7 +3,6 @@
 namespace Modules\Cryptocurrency\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\App;
 
@@ -13,14 +12,14 @@ use Illuminate\Support\Facades\App;
 class CryptocurrencyController extends Controller
 {
     /**
-     * Cryptocurrency repository
+     * Cryptocurrency repository.
      *
      * @var Modules\Cryptocurrency\Repositories\CryptocurrencyRepository
      */
     protected $cryptocurrencyRepository;
 
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @return void
      */
@@ -30,9 +29,10 @@ class CryptocurrencyController extends Controller
     }
 
     /**
-     * Get cryptocurrencies paginated
+     * Get cryptocurrencies paginated.
      *
-     * @param Request $request 
+     * @param Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
@@ -46,9 +46,10 @@ class CryptocurrencyController extends Controller
     }
 
     /**
-     * Get cryptocurrency information
+     * Get cryptocurrency information.
      *
-     * @param  int  $id
+     * @param int $id
+     *
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -57,15 +58,16 @@ class CryptocurrencyController extends Controller
     }
 
     /**
-     * Get cryptocurrency historical
-     * 
-     * @param type $coinId 
+     * Get cryptocurrency historical.
+     *
+     * @param type $coinId
+     *
      * @return type
      */
     public function historical($coinId)
     {
         $coin = $this->cryptocurrencyRepository->with('historical')->findOrFail($coinId);
-        
+
         return $coin->historical;
     }
 }
