@@ -1,0 +1,133 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Providers\\RepositoryServiceProvider",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Providers",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Providers\/RepositoryServiceProvider.php",
+    "relative_file": null,
+    "hash": "d9092fe5ca683e8a9f80b65bb2f677137fdbe663",
+    "parent": "Illuminate\\Support\\ServiceProvider",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ServiceProvider": "Illuminate\\Support\\ServiceProvider"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "defer": {
+            "name": "defer",
+            "line": 15,
+            "short_desc": "Indicates if loading of the provider is deferred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "false"
+                    ],
+                    "attributes": {
+                        "startLine": 15,
+                        "endLine": 15,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Core",
+                                "Support",
+                                "Repository",
+                                "Src",
+                                "Providers",
+                                "false"
+                            ],
+                            "attributes": {
+                                "startLine": 15,
+                                "endLine": 15
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 15,
+                    "endLine": 15
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "boot": {
+            "name": "boot",
+            "line": 23,
+            "short_desc": "Boot the application.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "register": {
+            "name": "register",
+            "line": 38,
+            "short_desc": "Register the service provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "provides": {
+            "name": "provides",
+            "line": 49,
+            "short_desc": "Get the services provided by the provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

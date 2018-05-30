@@ -1,0 +1,32 @@
+{
+    "name": "CreativeHotHouse\\Http\\Controllers\\Controller",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "CreativeHotHouse\\Http\\Controllers",
+    "file": "\/var\/www\/html\/app\/Http\/Controllers\/Controller.php",
+    "relative_file": null,
+    "hash": "81839edc58cd6722ed3308f8e8ef05436b679265",
+    "parent": "Illuminate\\Routing\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DispatchesJobs": "Illuminate\\Foundation\\Bus\\DispatchesJobs",
+        "BaseController": "Illuminate\\Routing\\Controller",
+        "ValidatesRequests": "Illuminate\\Foundation\\Validation\\ValidatesRequests",
+        "AuthorizesRequests": "Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests": "Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests",
+        "Illuminate\\Foundation\\Bus\\DispatchesJobs": "Illuminate\\Foundation\\Bus\\DispatchesJobs",
+        "Illuminate\\Foundation\\Validation\\ValidatesRequests": "Illuminate\\Foundation\\Validation\\ValidatesRequests"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

@@ -1,0 +1,82 @@
+#!/bin/bash
+
+COMPOSE="docker-compose"
+SCRIPT=""
+DIRECTORY=""
+
+for i in "$@"
+do
+case $i in
+    -d=*|--directory=*)
+        DIRECTORY="${i#*=}"
+    ;;
+    *)
+        if [ $1 != $i ]
+        then
+            SCRIPT=$SCRIPT" "$i
+        fi
+    ;;
+esac
+done
+
+if [ $# -gt 0 ]; then
+    if [ "$1" == "up" ]; then
+        $COMPOSE up -d
+    elif [ "$1" == "reload" ] || [ "$1" == "restart" ] || [ "$1" == "rs" ] || [ "$1" == "rl" ]; then
+        $COMPOSE down && $COMPOSE up -d
+    elif [ "$1" == "rebuild" ]; then
+        shift 1
+        $COMPOSE build --no-cache $SCRIPT
+    elif [ "$1" == "php" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html/$DIRECTORY && php $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "doc" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html && php artisan api:generate --header='Authorization : Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRkMmFiYWM5Y2ZjNWI4MGJjZjBjZWZiMDI1N2E4YzBhZjRkMDE3MjM1ZWI0NWZiZTE1ZjFhNWE2NmM5YmEzYzNjMDMwOWE5YzUwZjlhMzFlIn0.eyJhdWQiOiIxIiwianRpIjoiZGQyYWJhYzljZmM1YjgwYmNmMGNlZmIwMjU3YThjMGFmNGQwMTcyMzVlYjQ1ZmJlMTVmMWE1YTY2YzliYTNjM2MwMzA5YTljNTBmOWEzMWUiLCJpYXQiOjE1Mjc2MjI1NjQsIm5iZiI6MTUyNzYyMjU2NCwiZXhwIjoxNTI4OTE4NTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.AkAY1FZFNapy91QahcTeyXvzW-j_QhY1PqyDR_oDVsZ49uzKIiNo_GaAyz6rfof1LE-n12TvIsN8PWvEb9xxCu4CFVqLmM1LPe0Thng-ZjNc8JwjKMYTy-KRo-rOiiAB4z5NrNniKW_aB9wesWTS5Z6z9NOckVg1IZTra81Q_pnpP76gs201Rwvlp33foh9tP7I81Xnd7HT9DpjjLZ-wnlgnl3oiG-obQ38uHb9lh_J8rZDHPv7Y0PRDbN4t3jNM2Y-erh0J15rSE5aPstCQfnlIk_VVLncsXWNpUzND5cSBLKGu0PUUW1tZUvEi9sq1n_ckI5WIB4YCBPC5LsPTrI29GVq80f95j4FXRZpKodA1JT8-TP0oOqRGk36Q__bxG7AMnvOrRwyuZiPsYFUjEdo8MjTHVz_meuNO-OvZBzyy-JgCbZk_F4xtJOZAZRTHtlL6b7houzfymMlNfsOBWLCpeobyPvkN_yH2JvLUsPtrW1ylqFrjon546r0oUhjzHwOtqoNpshAHUYFkhARm2ze2TIKumN_DoRWgajQPyCSk6gnGqrj-TpGEfEOprYlvA0skNNvCqoHsRulaEZzC9D8z2fktrVXfn55Qc9prcRqAdZzI0eZvEf7-zS5vwP-cvIh2PqahIxp4aXvwzpXuEel4VV_-GSQS8H_WRqbS3FU' --routePrefix='api/*' --output='public/documentation/api' && php sami.phar update sami.php -v && make --directory=sphinx_source html $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "docsphinx" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html && make --directory=sphinx_source html $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "artisan" ] || [ "$1" == "art" ] || [ "$1" == "a" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html && php artisan $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "artcc" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html php artisan clear-compiled && php artisan view:clear && php artisan route:clear && php artisan config:clear && php artisan debugbar:clear && composer dump && php artisan route:cache && php artisan config:cache $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "bin/console" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html/$DIRECTORY && php bin/console $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "app/console" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html/$DIRECTORY && php app/console $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "t" ]; then
+        shift 1
+        $COMPOSE exec app bash -c "cd /var/www/html/$DIRECTORY && ./vendor/bin/phpunit $SCRIPT"
+    elif [ "$1" == "composer" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html/$DIRECTORY && composer $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "npm" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html/$DIRECTORY && npm $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "node" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www/html/$DIRECTORY && node $SCRIPT"
+        $COMPOSE exec app bash -c "$EXEC_CMD"
+    elif [ "$1" == "mysql" ]; then
+        shift 1
+        EXEC_CMD="mysql -uroot -proot $SCRIPT"
+        docker exec -i mysql bash -c "$EXEC_CMD"
+    else
+        $COMPOSE $@
+    fi
+else
+    $COMPOSE ps
+fi

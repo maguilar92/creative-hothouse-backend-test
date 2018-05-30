@@ -1,0 +1,20 @@
+{
+    "name": "Core",
+    "alias": "core",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "FloatingPoint\\Stylist\\StylistServiceProvider",
+        "Modules\\Core\\Providers\\CoreServiceProvider",
+        "Modules\\Core\\Providers\\ThemeServiceProvider",
+        "Mpociot\\ApiDoc\\ApiDocGeneratorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php",
+        "Support/helpers.php"
+    ],
+    "requires": []
+}

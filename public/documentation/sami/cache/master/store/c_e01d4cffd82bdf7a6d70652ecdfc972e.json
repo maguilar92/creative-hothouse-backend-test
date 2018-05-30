@@ -1,0 +1,322 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Eloquent\\BaseRepository",
+    "line": 14,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Eloquent",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Eloquent\/BaseRepository.php",
+    "relative_file": null,
+    "hash": "2de2bd1472f0c7d5ff52e157f29d30eeaca49580",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Closure": "Closure",
+        "Exception": "Exception",
+        "RepositoryInterface": "Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface",
+        "RepositoryException": "Modules\\Core\\Support\\Repository\\Src\\Exceptions\\RepositoryException",
+        "BaseRepositoryRead": "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryRead",
+        "BaseRepositoryWrite": "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryWrite",
+        "Application": "Illuminate\\Container\\Container",
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": {
+        "Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface": "Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface"
+    },
+    "traits": {
+        "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryRead": "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryRead",
+        "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryWrite": "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryWrite"
+    },
+    "properties": {
+        "app": {
+            "name": "app",
+            "line": 22,
+            "short_desc": "Laravel Application",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Container\\Container",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        },
+        "model": {
+            "name": "model",
+            "line": 29,
+            "short_desc": "Model",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Model",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 36,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "app": {
+                    "name": "app",
+                    "line": 36,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Container\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Container",
+                            "Container"
+                        ],
+                        "attributes": {
+                            "startLine": 36,
+                            "endLine": 36
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "flushCache": {
+            "name": "flushCache",
+            "line": 48,
+            "short_desc": "Flush cache of repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Modules\\Core\\Support\\Repository\\Src\\Contracts\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "skipCache": {
+            "name": "skipCache",
+            "line": 59,
+            "short_desc": "Skip Cache",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Modules\\Core\\Support\\Repository\\Src\\Contracts\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "status": {
+                    "name": "status",
+                    "line": 59,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "true",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getModel": {
+            "name": "getModel",
+            "line": 69,
+            "short_desc": "Get model",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "boot": {
+            "name": "boot",
+            "line": 79,
+            "short_desc": "Boot repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "resetModel": {
+            "name": "resetModel",
+            "line": 88,
+            "short_desc": "Reset model",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "model": {
+            "name": "model",
+            "line": 99,
+            "short_desc": "Specify Model class name",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 17,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "makeModel": {
+            "name": "makeModel",
+            "line": 107,
+            "short_desc": "Make app model",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Model",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Modules\\Core\\Support\\Repository\\Src\\Exceptions\\RepositoryException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "__call": {
+            "name": "__call",
+            "line": 125,
+            "short_desc": "Overloading __call",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "method": {
+                    "name": "method",
+                    "line": 125,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "arguments": {
+                    "name": "arguments",
+                    "line": 125,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

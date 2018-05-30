@@ -1,0 +1,148 @@
+{
+    "name": "CreativeHotHouse\\Http\\Controllers\\Auth\\RegisterController",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "CreativeHotHouse\\Http\\Controllers\\Auth",
+    "file": "\/var\/www\/html\/app\/Http\/Controllers\/Auth\/RegisterController.php",
+    "relative_file": null,
+    "hash": "2cff56df3c33dd14ad5e844f964afc2e6e26fbfc",
+    "parent": "CreativeHotHouse\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "User": "Modules\\User\\Entities\\User",
+        "Controller": "CreativeHotHouse\\Http\\Controllers\\Controller",
+        "Validator": "Illuminate\\Support\\Facades\\Validator",
+        "RegistersUsers": "Illuminate\\Foundation\\Auth\\RegistersUsers"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\RegistersUsers": "Illuminate\\Foundation\\Auth\\RegistersUsers"
+    },
+    "properties": {
+        "redirectTo": {
+            "name": "redirectTo",
+            "line": 30,
+            "short_desc": "Where to redirect users after registration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "\/home",
+                "attributes": {
+                    "startLine": 30,
+                    "endLine": 30,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 37,
+            "short_desc": "Create a new controller instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "validator": {
+            "name": "validator",
+            "line": 48,
+            "short_desc": "Get a validator for an incoming registration request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Contracts\\Validation\\Validator",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 48,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "create": {
+            "name": "create",
+            "line": 63,
+            "short_desc": "Create a new user instance after a valid registration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\CreativeHotHouse\\User",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 63,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

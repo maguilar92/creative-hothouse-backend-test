@@ -1,0 +1,222 @@
+{
+    "name": "CreativeHotHouse\\Exceptions\\Handler",
+    "line": 9,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "CreativeHotHouse\\Exceptions",
+    "file": "\/var\/www\/html\/app\/Exceptions\/Handler.php",
+    "relative_file": null,
+    "hash": "805b7b8a00eff9ebb82d7b7248a1aa95f2ebeac4",
+    "parent": "Illuminate\\Foundation\\Exceptions\\Handler",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Exception": "Exception",
+        "ModelNotFoundException": "Illuminate\\Database\\Eloquent\\ModelNotFoundException",
+        "ExceptionHandler": "Illuminate\\Foundation\\Exceptions\\Handler"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "dontReport": {
+            "name": "dontReport",
+            "line": 16,
+            "short_desc": "A list of the exception types that are not reported.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [],
+                "attributes": {
+                    "startLine": 16,
+                    "endLine": 18,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "dontFlash": {
+            "name": "dontFlash",
+            "line": 25,
+            "short_desc": "A list of the inputs that are never flashed for validation exceptions.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "password",
+                            "attributes": {
+                                "startLine": 26,
+                                "endLine": 26,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 26,
+                            "endLine": 26
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "password_confirmation",
+                            "attributes": {
+                                "startLine": 27,
+                                "endLine": 27,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 27,
+                            "endLine": 27
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 25,
+                    "endLine": 28,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "report": {
+            "name": "report",
+            "line": 38,
+            "short_desc": "Report or log an exception.",
+            "long_desc": "This is a great spot to send exceptions to Sentry, Bugsnag, etc.",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "exception": {
+                    "name": "exception",
+                    "line": 38,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Exception",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Exception"
+                        ],
+                        "attributes": {
+                            "startLine": 38,
+                            "endLine": 38
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "render": {
+            "name": "render",
+            "line": 50,
+            "short_desc": "Render an exception into an HTTP response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 50,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "exception": {
+                    "name": "exception",
+                    "line": 50,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Exception",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Exception"
+                        ],
+                        "attributes": {
+                            "startLine": 50,
+                            "endLine": 50
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

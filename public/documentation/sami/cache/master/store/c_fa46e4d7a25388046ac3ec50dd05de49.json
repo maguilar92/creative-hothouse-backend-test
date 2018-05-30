@@ -1,0 +1,177 @@
+{
+    "name": "Modules\\Core\\Console\\Installer\\Writers\\EnvFileWriter",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console\\Installer\\Writers",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/Installer\/Writers\/EnvFileWriter.php",
+    "relative_file": null,
+    "hash": "3caf2f4e61c59790132afe5f16c8d664e8f3f6d1",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Dotenv": "Dotenv\\Dotenv",
+        "Filesystem": "Illuminate\\Filesystem\\Filesystem"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "template": {
+            "name": "template",
+            "line": 18,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": ".env.example",
+                "attributes": {
+                    "startLine": 18,
+                    "endLine": 18,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "file": {
+            "name": "file",
+            "line": 23,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": ".env",
+                "attributes": {
+                    "startLine": 23,
+                    "endLine": 23,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "finder": {
+                    "name": "finder",
+                    "line": 28,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Filesystem\\Filesystem",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Filesystem",
+                            "Filesystem"
+                        ],
+                        "attributes": {
+                            "startLine": 28,
+                            "endLine": 28
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "write": {
+            "name": "write",
+            "line": 41,
+            "short_desc": "Write in env file",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Illuminate\\Contracts\\Filesystem\\FileNotFoundException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "envKey": {
+                    "name": "envKey",
+                    "line": 41,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "envValue": {
+                    "name": "envValue",
+                    "line": 41,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

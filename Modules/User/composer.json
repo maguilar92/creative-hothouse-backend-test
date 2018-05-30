@@ -1,0 +1,29 @@
+{
+    "name": "nwidart/user",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/passport": "~6.0",
+        "guzzlehttp/guzzle": "~6.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\User\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\User\\": ""
+        }
+    }
+}

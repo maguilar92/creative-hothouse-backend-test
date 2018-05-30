@@ -1,0 +1,66 @@
+{
+    "name": "CreateUsersTradesTable",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Database\/Migrations\/2018_05_28_154154_create_users_trades_table.php",
+    "relative_file": null,
+    "hash": "ff3dbdea278197ee5b6441653e45af2857f58ae4",
+    "parent": "Illuminate\\Database\\Migrations\\Migration",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Schema": "Illuminate\\Support\\Facades\\Schema",
+        "Blueprint": "Illuminate\\Database\\Schema\\Blueprint",
+        "Migration": "Illuminate\\Database\\Migrations\\Migration"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "up": {
+            "name": "up",
+            "line": 14,
+            "short_desc": "Run the migrations.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "down": {
+            "name": "down",
+            "line": 35,
+            "short_desc": "Reverse the migrations.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

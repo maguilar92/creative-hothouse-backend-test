@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/cryptocurrency",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Cryptocurrency\\Providers\\CryptocurrencyServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Cryptocurrency\\": ""
+        }
+    }
+}

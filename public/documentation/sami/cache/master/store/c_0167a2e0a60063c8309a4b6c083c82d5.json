@@ -1,0 +1,210 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEventBase",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Events",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Events\/RepositoryEventBase.php",
+    "relative_file": null,
+    "hash": "bbdd807093d7a3e2b2a441df3c958a11c8ae116f",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "RepositoryInterface": "Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "model": {
+            "name": "model",
+            "line": 15,
+            "short_desc": "Model executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Model",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        },
+        "repository": {
+            "name": "repository",
+            "line": 22,
+            "short_desc": "Repository executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        },
+        "action": {
+            "name": "action",
+            "line": 29,
+            "short_desc": "Action executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 37,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "repository": {
+                    "name": "repository",
+                    "line": 37,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "Core",
+                            "Support",
+                            "Repository",
+                            "Src",
+                            "Contracts",
+                            "RepositoryInterface"
+                        ],
+                        "attributes": {
+                            "startLine": 37,
+                            "endLine": 37
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "model": {
+                    "name": "model",
+                    "line": 37,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Database\\Eloquent\\Model",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Database",
+                            "Eloquent",
+                            "Model"
+                        ],
+                        "attributes": {
+                            "startLine": 37,
+                            "endLine": 37
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getModel": {
+            "name": "getModel",
+            "line": 48,
+            "short_desc": "Get model executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Model",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getRepository": {
+            "name": "getRepository",
+            "line": 58,
+            "short_desc": "Get repository executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getAction": {
+            "name": "getAction",
+            "line": 68,
+            "short_desc": "Get action executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

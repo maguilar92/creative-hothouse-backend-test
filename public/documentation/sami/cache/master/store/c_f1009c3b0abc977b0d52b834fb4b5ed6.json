@@ -1,0 +1,470 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Providers\\EventServiceProvider",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Providers",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Providers\/EventServiceProvider.php",
+    "relative_file": null,
+    "hash": "9b41654cd790c8507ca751fbf4f5d5cc036efbe5",
+    "parent": "Illuminate\\Support\\ServiceProvider",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ServiceProvider": "Illuminate\\Support\\ServiceProvider"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "listen": {
+            "name": "listen",
+            "line": 15,
+            "short_desc": "The event handler mappings for the application.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityInserted",
+                            "attributes": {
+                                "startLine": 16,
+                                "endLine": 16,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 17,
+                                            "endLine": 17,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 17,
+                                        "endLine": 17
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 16,
+                                "endLine": 18,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 16,
+                            "endLine": 18
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityCreated",
+                            "attributes": {
+                                "startLine": 19,
+                                "endLine": 19,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 20,
+                                            "endLine": 20,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 20,
+                                        "endLine": 20
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 19,
+                                "endLine": 21,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 19,
+                            "endLine": 21
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityUpdated",
+                            "attributes": {
+                                "startLine": 22,
+                                "endLine": 22,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 23,
+                                        "endLine": 23
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 22,
+                                "endLine": 24,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 22,
+                            "endLine": 24
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntitiesUpdated",
+                            "attributes": {
+                                "startLine": 25,
+                                "endLine": 25,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 26,
+                                        "endLine": 26
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 25,
+                                "endLine": 27,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 25,
+                            "endLine": 27
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityDeleted",
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 29,
+                                            "endLine": 29,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 29,
+                                        "endLine": 29
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 30,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 28,
+                            "endLine": 30
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntitiesDeleted",
+                            "attributes": {
+                                "startLine": 31,
+                                "endLine": 31,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 32,
+                                            "endLine": 32,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 32,
+                                        "endLine": 32
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 31,
+                                "endLine": 33,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 31,
+                            "endLine": 33
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityRestored",
+                            "attributes": {
+                                "startLine": 34,
+                                "endLine": 34,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 35,
+                                            "endLine": 35,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 35,
+                                        "endLine": 35
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 34,
+                                "endLine": 36,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 34,
+                            "endLine": 36
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntitiesRestored",
+                            "attributes": {
+                                "startLine": 37,
+                                "endLine": 37,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+                                        "attributes": {
+                                            "startLine": 38,
+                                            "endLine": 38,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 38,
+                                        "endLine": 38
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 37,
+                                "endLine": 39,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 37,
+                            "endLine": 39
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 15,
+                    "endLine": 40,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "boot": {
+            "name": "boot",
+            "line": 47,
+            "short_desc": "Register the application's event listeners.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "register": {
+            "name": "register",
+            "line": 63,
+            "short_desc": "Register the service provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "listens": {
+            "name": "listens",
+            "line": 73,
+            "short_desc": "Get the events and handlers.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

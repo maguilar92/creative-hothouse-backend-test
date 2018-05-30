@@ -1,0 +1,299 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Listeners\\CleanCacheRepository",
+    "line": 13,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Listeners",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Listeners\/CleanCacheRepository.php",
+    "relative_file": null,
+    "hash": "16a2d4e27b87194bbf0b40126898a0da752a8dca",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "CacheRepository": "Illuminate\\Contracts\\Cache\\Repository",
+        "ShouldQueue": "Illuminate\\Contracts\\Queue\\ShouldQueue",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "Log": "Illuminate\\Support\\Facades\\Log",
+        "RepositoryInterface": "Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface",
+        "RepositoryEventBase": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEventBase",
+        "CacheKeys": "Modules\\Core\\Support\\Repository\\Src\\Helpers\\CacheKeys"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "cache": {
+            "name": "cache",
+            "line": 21,
+            "short_desc": "Cache config param",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Contracts\\Cache\\Repository",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "null"
+                    ],
+                    "attributes": {
+                        "startLine": 21,
+                        "endLine": 21,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Core",
+                                "Support",
+                                "Repository",
+                                "Src",
+                                "Listeners",
+                                "null"
+                            ],
+                            "attributes": {
+                                "startLine": 21,
+                                "endLine": 21
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 21,
+                    "endLine": 21
+                }
+            },
+            "errors": []
+        },
+        "repository": {
+            "name": "repository",
+            "line": 28,
+            "short_desc": "Repository executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "null"
+                    ],
+                    "attributes": {
+                        "startLine": 28,
+                        "endLine": 28,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Core",
+                                "Support",
+                                "Repository",
+                                "Src",
+                                "Listeners",
+                                "null"
+                            ],
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28
+                }
+            },
+            "errors": []
+        },
+        "model": {
+            "name": "model",
+            "line": 35,
+            "short_desc": "Model executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Model",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "null"
+                    ],
+                    "attributes": {
+                        "startLine": 35,
+                        "endLine": 35,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Core",
+                                "Support",
+                                "Repository",
+                                "Src",
+                                "Listeners",
+                                "null"
+                            ],
+                            "attributes": {
+                                "startLine": 35,
+                                "endLine": 35
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 35,
+                    "endLine": 35
+                }
+            },
+            "errors": []
+        },
+        "action": {
+            "name": "action",
+            "line": 42,
+            "short_desc": "Action executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "null"
+                    ],
+                    "attributes": {
+                        "startLine": 42,
+                        "endLine": 42,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Core",
+                                "Support",
+                                "Repository",
+                                "Src",
+                                "Listeners",
+                                "null"
+                            ],
+                            "attributes": {
+                                "startLine": 42,
+                                "endLine": 42
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 42,
+                    "endLine": 42
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 49,
+            "short_desc": "Class constructo",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "handle": {
+            "name": "handle",
+            "line": 60,
+            "short_desc": "Event handle",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "event": {
+                    "name": "event",
+                    "line": 60,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEventBase",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "Core",
+                            "Support",
+                            "Repository",
+                            "Src",
+                            "Events",
+                            "RepositoryEventBase"
+                        ],
+                        "attributes": {
+                            "startLine": 60,
+                            "endLine": 60
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

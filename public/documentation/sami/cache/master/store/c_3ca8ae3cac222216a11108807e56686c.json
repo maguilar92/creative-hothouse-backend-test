@@ -1,0 +1,46 @@
+{
+    "name": "Modules\\Core\\Database\\Seeders\\CoreDatabaseSeeder",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Database\\Seeders",
+    "file": "\/var\/www\/html\/modules\/Core\/Database\/Seeders\/CoreDatabaseSeeder.php",
+    "relative_file": null,
+    "hash": "c700fc3b40d3d83c836faa10d9e691a7bbc58846",
+    "parent": "Illuminate\\Database\\Seeder",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Seeder": "Illuminate\\Database\\Seeder",
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "run": {
+            "name": "run",
+            "line": 15,
+            "short_desc": "Run the database seeds.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

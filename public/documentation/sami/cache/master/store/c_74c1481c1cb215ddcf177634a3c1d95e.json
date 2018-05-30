@@ -1,0 +1,633 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryRead",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Traits",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Traits\/BaseRepositoryRead.php",
+    "relative_file": null,
+    "hash": "cc29cba3bc3ac13dff702b7222e99bddaaf6f770",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "Builder": "Illuminate\\Database\\Eloquent\\Builder"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "all": {
+            "name": "all",
+            "line": 15,
+            "short_desc": "Retrieve all data of repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "columns": {
+                    "name": "columns",
+                    "line": 15,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "get": {
+            "name": "get",
+            "line": 32,
+            "short_desc": "Get data of repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "columns": {
+                    "name": "columns",
+                    "line": 32,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "pluck": {
+            "name": "pluck",
+            "line": 53,
+            "short_desc": "Get an array with the values of a given column.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "column": {
+                    "name": "column",
+                    "line": 53,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "key": {
+                    "name": "key",
+                    "line": 53,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "exists": {
+            "name": "exists",
+            "line": 68,
+            "short_desc": "Determine if any rows exist for the current query.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "count": {
+            "name": "count",
+            "line": 84,
+            "short_desc": "Retrieve the \"count\" result of the query",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "columns": {
+                    "name": "columns",
+                    "line": 84,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "min": {
+            "name": "min",
+            "line": 100,
+            "short_desc": "Retrieve the minimum value of a given column.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "column": {
+                    "name": "column",
+                    "line": 100,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "max": {
+            "name": "max",
+            "line": 116,
+            "short_desc": "Retrieve the maximum value of a given column.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "column": {
+                    "name": "column",
+                    "line": 116,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sum": {
+            "name": "sum",
+            "line": 132,
+            "short_desc": "Retrieve the sum of the values of a given column.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "column": {
+                    "name": "column",
+                    "line": 132,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "avg": {
+            "name": "avg",
+            "line": 148,
+            "short_desc": "Retrieve the average of the values of a given column.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "column": {
+                    "name": "column",
+                    "line": 148,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "paginate": {
+            "name": "paginate",
+            "line": 165,
+            "short_desc": "Retrieve all data of repository, paginated",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "limit": {
+                    "name": "limit",
+                    "line": 165,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "columns": {
+                    "name": "columns",
+                    "line": 165,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "simplePaginate": {
+            "name": "simplePaginate",
+            "line": 182,
+            "short_desc": "Retrieve all data of repository, simple paginated",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "limit": {
+                    "name": "limit",
+                    "line": 182,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "columns": {
+                    "name": "columns",
+                    "line": 182,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "find": {
+            "name": "find",
+            "line": 194,
+            "short_desc": "Find data by id",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 194,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "columns": {
+                    "name": "columns",
+                    "line": 194,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "findOrFail": {
+            "name": "findOrFail",
+            "line": 210,
+            "short_desc": "Find or fail data by id",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 210,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "columns": {
+                    "name": "columns",
+                    "line": 210,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "first": {
+            "name": "first",
+            "line": 225,
+            "short_desc": "Get first data by id",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "columns": {
+                    "name": "columns",
+                    "line": 225,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "firstOrFail": {
+            "name": "firstOrFail",
+            "line": 240,
+            "short_desc": "Get or fail first data by id",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "columns": {
+                    "name": "columns",
+                    "line": 240,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "['*']",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

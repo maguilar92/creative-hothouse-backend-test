@@ -1,0 +1,69 @@
+{
+    "name": "Modules\\User\\Tests\\Feature\\LoginTest",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\User\\Tests\\Feature",
+    "file": "\/var\/www\/html\/modules\/User\/Tests\/Feature\/LoginTest.php",
+    "relative_file": null,
+    "hash": "97c2ac9644af46cae70a930948d326e190e87deb",
+    "parent": "Tests\\TestCase",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DatabaseMigrations": "Illuminate\\Foundation\\Testing\\DatabaseMigrations",
+        "Hash": "Illuminate\\Support\\Facades\\Hash",
+        "User": "Modules\\User\\Entities\\User",
+        "TestCase": "Tests\\TestCase"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Testing\\DatabaseMigrations": "Illuminate\\Foundation\\Testing\\DatabaseMigrations"
+    },
+    "properties": [],
+    "methods": {
+        "testLoginRequiresEmailAndPassword": {
+            "name": "testLoginRequiresEmailAndPassword",
+            "line": 19,
+            "short_desc": "Test user login requires email and password.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testLoginsUnsuccessfully": {
+            "name": "testLoginsUnsuccessfully",
+            "line": 37,
+            "short_desc": "Test user login unsuccessfully.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

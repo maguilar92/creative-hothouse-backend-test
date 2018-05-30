@@ -1,0 +1,64 @@
+version: '3'
+services:
+  app:
+    build:
+      context: ./docker/app
+    image: app:latest
+    container_name: app
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - .:/var/www/html:cached
+    networks:
+      - creativehothouse_net
+  redis:
+    build:
+      context: ./docker/redis
+    image: redis:latest
+    container_name: redis
+    volumes:
+      - redisdata:/data
+    networks:
+      - creativehothouse_net
+
+  mysql:
+    build:
+      context: ./docker/mysql
+    image: mysql:latest
+    container_name: mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: creativehothouse
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - mysqldata:/var/lib/mysql
+    networks:
+      - creativehothouse_net
+
+  phpmyadmin:
+    build:
+      context: ./docker/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+     - PMA_ARBITRARY=1
+    restart: always
+    ports:
+     - 8081:80
+    volumes:
+      - .:/var/www/phpmyadmin
+    networks:
+      - creativehothouse_net
+
+volumes:
+  redisdata:
+    driver: local
+  mysqldata:
+    driver: local
+
+networks:
+  creativehothouse_net:
+    driver: bridge

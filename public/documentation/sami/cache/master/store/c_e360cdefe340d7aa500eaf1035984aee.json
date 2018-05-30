@@ -1,0 +1,74 @@
+{
+    "name": "CreativeHotHouse\\Http\\Controllers\\Auth\\LoginController",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "CreativeHotHouse\\Http\\Controllers\\Auth",
+    "file": "\/var\/www\/html\/app\/Http\/Controllers\/Auth\/LoginController.php",
+    "relative_file": null,
+    "hash": "9d164c769656e4ab52eadfeee5bb32e0105d89e7",
+    "parent": "CreativeHotHouse\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Controller": "CreativeHotHouse\\Http\\Controllers\\Controller",
+        "AuthenticatesUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesUsers"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\AuthenticatesUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesUsers"
+    },
+    "properties": {
+        "redirectTo": {
+            "name": "redirectTo",
+            "line": 28,
+            "short_desc": "Where to redirect users after login.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "\/home",
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 35,
+            "short_desc": "Create a new controller instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

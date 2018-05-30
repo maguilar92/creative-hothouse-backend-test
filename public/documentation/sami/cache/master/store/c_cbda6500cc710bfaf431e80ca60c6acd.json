@@ -1,0 +1,245 @@
+{
+    "name": "Modules\\Cryptocurrency\\Database\\Seeders\\CryptocurrenciesHistoricalTableSeeder",
+    "line": 11,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Cryptocurrency\\Database\\Seeders",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Database\/Seeders\/CryptocurrenciesHistoricalTableSeeder.php",
+    "relative_file": null,
+    "hash": "847b9bf2871fb310fd6c6c6473667756f83489a7",
+    "parent": "Illuminate\\Database\\Seeder",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "Seeder": "Illuminate\\Database\\Seeder",
+        "Carbon": "Illuminate\\Support\\Carbon",
+        "App": "Illuminate\\Support\\Facades\\App",
+        "Cryptocurrency": "Modules\\Cryptocurrency\\Entities\\Cryptocurrency"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "cryptocurrencyRepository": {
+            "name": "cryptocurrencyRepository",
+            "line": 18,
+            "short_desc": "Worker role repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Worker\\Repositories\\WorkerRoleRepository",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 25,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "random": {
+            "name": "random",
+            "line": 38,
+            "short_desc": "Generate decimal random",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Cryptocurrency\\Database\\Seeders\\type",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "min": {
+                    "name": "min",
+                    "line": 38,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "float",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "float",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "max": {
+                    "name": "max",
+                    "line": 38,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "float",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "float",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "decimals": {
+                    "name": "decimals",
+                    "line": 38,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "8",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addSnapshot": {
+            "name": "addSnapshot",
+            "line": 51,
+            "short_desc": "Add new snapshop",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "cryptocurrency": {
+                    "name": "cryptocurrency",
+                    "line": 51,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Cryptocurrency\\Entities\\Cryptocurrency",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "Cryptocurrency",
+                            "Entities",
+                            "Cryptocurrency"
+                        ],
+                        "attributes": {
+                            "startLine": 51,
+                            "endLine": 51
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "lastSnapshotPriceUsd": {
+                    "name": "lastSnapshotPriceUsd",
+                    "line": 51,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "float",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "float",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "dateFake": {
+                    "name": "dateFake",
+                    "line": 51,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Support\\Carbon",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Support",
+                            "Carbon"
+                        ],
+                        "attributes": {
+                            "startLine": 51,
+                            "endLine": 51
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "run": {
+            "name": "run",
+            "line": 74,
+            "short_desc": "Run the database seeds.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

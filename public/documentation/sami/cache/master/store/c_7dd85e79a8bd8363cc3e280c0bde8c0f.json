@@ -1,0 +1,150 @@
+{
+    "name": "Modules\\Core\\Console\\Installer\\Scripts\\SeedDatabase",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console\\Installer\\Scripts",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/Installer\/Scripts\/SeedDatabase.php",
+    "relative_file": null,
+    "hash": "309e7b369c0e3113119016392012f352dccfeab4",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command",
+        "SetupScript": "Modules\\Core\\Console\\Installer\\SetupScript"
+    },
+    "errors": [],
+    "interfaces": {
+        "Modules\\Core\\Console\\Installer\\SetupScript": "Modules\\Core\\Console\\Installer\\SetupScript"
+    },
+    "traits": [],
+    "properties": {
+        "seeders": {
+            "name": "seeders",
+            "line": 10,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Cryptocurrencies",
+                            "attributes": {
+                                "startLine": 11,
+                                "endLine": 11,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Cryptocurrency\\Database\\Seeders\\CryptocurrenciesTableSeeder",
+                            "attributes": {
+                                "startLine": 11,
+                                "endLine": 11,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 11,
+                            "endLine": 11
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "CryptocurrenciesHistorical [will take hours]",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "Modules\\Cryptocurrency\\Database\\Seeders\\CryptocurrenciesHistoricalTableSeeder",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 12,
+                            "endLine": 12
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 10,
+                    "endLine": 13,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "fire": {
+            "name": "fire",
+            "line": 20,
+            "short_desc": "Fire the install script",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "command": {
+                    "name": "command",
+                    "line": 20,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Console\\Command",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Console",
+                            "Command"
+                        ],
+                        "attributes": {
+                            "startLine": 20,
+                            "endLine": 20
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

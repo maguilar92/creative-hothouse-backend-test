@@ -1,0 +1,179 @@
+{
+    "name": "Modules\\Core\\Console\\Installer\\Installer",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console\\Installer",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/Installer\/Installer.php",
+    "relative_file": null,
+    "hash": "3b51df086ab6a12b6084906cd467d6cd3e42ae43",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command",
+        "Application": "Illuminate\\Contracts\\Foundation\\Application"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "scripts": {
+            "name": "scripts",
+            "line": 13,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [],
+                "attributes": {
+                    "startLine": 13,
+                    "endLine": 13,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 20,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "app": {
+                    "name": "app",
+                    "line": 20,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Contracts\\Foundation\\Application",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Contracts",
+                            "Foundation",
+                            "Application"
+                        ],
+                        "attributes": {
+                            "startLine": 20,
+                            "endLine": 20
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stack": {
+            "name": "stack",
+            "line": 31,
+            "short_desc": "Stack",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Modules\\Core\\Console\\Installer\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "scripts": {
+                    "name": "scripts",
+                    "line": 31,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "install": {
+            "name": "install",
+            "line": 44,
+            "short_desc": "Fire install scripts",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "command": {
+                    "name": "command",
+                    "line": 44,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Console\\Command",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Console",
+                            "Command"
+                        ],
+                        "attributes": {
+                            "startLine": 44,
+                            "endLine": 44
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

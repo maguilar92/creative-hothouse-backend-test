@@ -1,0 +1,317 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Traits\\BaseRepositoryWrite",
+    "line": 14,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Traits",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Traits\/BaseRepositoryWrite.php",
+    "relative_file": null,
+    "hash": "db457665d1466a2efc214500bc83f0af0c17f81a",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "RepositoryEntitiesDeleted": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntitiesDeleted",
+        "RepositoryEntitiesRestored": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntitiesRestored",
+        "RepositoryEntitiesUpdated": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntitiesUpdated",
+        "RepositoryEntityCreated": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityCreated",
+        "RepositoryEntityDeleted": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityDeleted",
+        "RepositoryEntityInserted": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityInserted",
+        "RepositoryEntityRestored": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityRestored",
+        "RepositoryEntityUpdated": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityUpdated"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "create": {
+            "name": "create",
+            "line": 22,
+            "short_desc": "Save a new entity in repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 22,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "insert": {
+            "name": "insert",
+            "line": 40,
+            "short_desc": "Save a new\/news entities in repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 40,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "update": {
+            "name": "update",
+            "line": 63,
+            "short_desc": "Update a entity in repository by id or entities by conditionals",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 63,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "id": {
+                    "name": "id",
+                    "line": 63,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "updateOrCreate": {
+            "name": "updateOrCreate",
+            "line": 94,
+            "short_desc": "Update or Create an entity in repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 94,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "values": {
+                    "name": "values",
+                    "line": 94,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "[]",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "restore": {
+            "name": "restore",
+            "line": 111,
+            "short_desc": "Restore a entity in repository by id or entities by conditionals",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 111,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "forceDelete": {
+            "name": "forceDelete",
+            "line": 142,
+            "short_desc": "Force delete a entity in repository by id or entities by conditionals",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 142,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "delete": {
+            "name": "delete",
+            "line": 172,
+            "short_desc": "Delete a entity in repository by id or entities by conditionals",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 172,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

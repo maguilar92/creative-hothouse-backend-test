@@ -1,0 +1,123 @@
+{
+    "name": "Modules\\User\\Http\\Controllers\\Api\\UsersController",
+    "line": 15,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "resource": [
+            [
+                "Users"
+            ]
+        ]
+    },
+    "namespace": "Modules\\User\\Http\\Controllers\\Api",
+    "file": "\/var\/www\/html\/modules\/User\/Http\/Controllers\/Api\/UsersController.php",
+    "relative_file": null,
+    "hash": "a7f13fe33fd44c1888d4679ab19e474cee9b3dd3",
+    "parent": "CreativeHotHouse\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Controller": "CreativeHotHouse\\Http\\Controllers\\Controller",
+        "RequestException": "GuzzleHttp\\Exception\\RequestException",
+        "Request": "Illuminate\\Http\\Request",
+        "App": "Illuminate\\Support\\Facades\\App",
+        "User": "Modules\\User\\Entities\\User",
+        "UserLoginRequest": "Modules\\User\\Http\\Requests\\UserLoginRequest"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "userRepository": {
+            "name": "userRepository",
+            "line": 22,
+            "short_desc": "User repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\User\\Http\\Controllers\\Api\\Modules\\User\\Repositories\\UserRepository",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 29,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "login": {
+            "name": "login",
+            "line": 40,
+            "short_desc": "Login user",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "JSON",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 40,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\User\\Http\\Requests\\UserLoginRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "User",
+                            "Http",
+                            "Requests",
+                            "UserLoginRequest"
+                        ],
+                        "attributes": {
+                            "startLine": 40,
+                            "endLine": 40
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

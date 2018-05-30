@@ -1,0 +1,52 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityRestored",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Events",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Events\/RepositoryEntityRestored.php",
+    "relative_file": null,
+    "hash": "6f38710e9089f0df013784d23aa8595b5244cad3",
+    "parent": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEventBase",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Collection": "Illuminate\\Database\\Eloquent\\Collection",
+        "RepositoryInterface": "Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "action": {
+            "name": "action",
+            "line": 15,
+            "short_desc": "Action executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "restore",
+                "attributes": {
+                    "startLine": 15,
+                    "endLine": 15,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": [],
+    "constants": []
+}

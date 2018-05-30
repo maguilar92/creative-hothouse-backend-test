@@ -1,0 +1,89 @@
+Header unset ETag
+FileETag None
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# AÑADE EL CONTENT-TYPE CORRECTO PARA FUENTES
+# -------------------------
+<IfModule mod_mime.c>
+    AddType application/font-woff2 .woff2
+    AddType application/vnd.ms-fontobject .eot
+    AddType font/ttf .ttf
+    AddType font/otf .otf
+    AddType font/x-woff .woff
+    AddType image/svg+xml .svg
+</IfModule>
+
+# HABILITAR COMPRESIÓN GZIP
+# -------------------------
+<IfModule mod_gzip.c>
+    mod_gzip_on Yes
+    mod_gzip_dechunk Yes
+    mod_gzip_item_include file .(html?|txt|css|js|php|pl|svg|ttf|woff2)$
+    mod_gzip_item_include handler ^cgi-script$
+    mod_gzip_item_include mime ^text/.*
+    mod_gzip_item_include mime ^application/x-javascript.*
+    mod_gzip_item_exclude mime ^image/.*
+    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+# CACHÉ SEGÚN TIPO DE ARCHIVO
+# ---------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/x-woff "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/jpg "access 1 year"
+    ExpiresByType image/jpeg "access 1 year"
+    ExpiresByType image/gif "access 1 year"
+    ExpiresByType image/png "access 1 year"
+    ExpiresByType text/css "access 1 month"
+    ExpiresByType application/pdf "access 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access 1 month"
+    ExpiresByType image/x-icon "access 1 year"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresDefault "access plus 0 seconds"
+</IfModule>
+
+<FilesMatch "\.(?i:gif|jpe?g|png|ico|css|js|swf)$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "max-age=31536000, public, must-revalidate"
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
+    AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml appli$
+    AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml a$
+    AddOutputFilterByType DEFLATE text/javascript application/javascript ap$
+    AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font$
+    AddOutputFilterByType DEFLATE font/truetype font/opentype
+    AddOutputFilterByType DEFLATE font/ttf font/otf
+</IfModule>

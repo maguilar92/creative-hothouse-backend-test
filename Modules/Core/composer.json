@@ -1,0 +1,37 @@
+{
+    "name": "creative-hothouse-backend-tests/core",
+    "description": "",
+    "authors": [
+        {
+            "name": "Mario Aguilar Alves",
+            "email": "mario.22792@gmail.com"
+        }
+    ],
+    "require": {
+        "nwidart/laravel-modules": "^3.2",
+        "floatingpoint/stylist": "~0.5",
+        "barryvdh/laravel-debugbar": "~3.1",
+        "tightenco/ziggy": "~0.6",
+        "mpociot/laravel-apidoc-generator": "^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.7",
+        "predis/predis": "^1.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Core\\Providers\\CoreServiceProvider",
+                "Barryvdh\\Debugbar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Core\\": ""
+        }
+    }
+}

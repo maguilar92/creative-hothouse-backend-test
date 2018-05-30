@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: CreativeHotHouse
+        psr4_prefix: CreativeHotHouse
+        src_path: app

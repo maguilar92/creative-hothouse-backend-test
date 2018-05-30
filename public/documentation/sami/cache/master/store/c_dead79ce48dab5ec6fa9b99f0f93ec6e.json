@@ -1,0 +1,45 @@
+{
+    "name": "Modules\\Cryptocurrency\\Repositories\\UserTradeRepository",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Cryptocurrency\\Repositories",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Repositories\/UserTradeRepository.php",
+    "relative_file": null,
+    "hash": "0a874aa7abdef5b64128796d7c2ecbbabd6f8649",
+    "parent": "Modules\\Core\\Support\\Repository\\Src\\Eloquent\\BaseRepository",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "BaseRepository": "Modules\\Core\\Support\\Repository\\Src\\Eloquent\\BaseRepository"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "model": {
+            "name": "model",
+            "line": 14,
+            "short_desc": "Specify Model class name",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,191 @@
+{
+    "name": "Modules\\Cryptocurrency\\Http\\Controllers\\Api\\CryptocurrencyController",
+    "line": 13,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "resource": [
+            [
+                "Cryptocurrencies"
+            ]
+        ]
+    },
+    "namespace": "Modules\\Cryptocurrency\\Http\\Controllers\\Api",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Http\/Controllers\/Api\/CryptocurrencyController.php",
+    "relative_file": null,
+    "hash": "25d3f6cdeb624ab5bc7c3651a3b5e4046a4563ca",
+    "parent": "Illuminate\\Routing\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Request": "Illuminate\\Http\\Request",
+        "Response": "Illuminate\\Http\\Response",
+        "Controller": "Illuminate\\Routing\\Controller",
+        "App": "Illuminate\\Support\\Facades\\App"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "cryptocurrencyRepository": {
+            "name": "cryptocurrencyRepository",
+            "line": 20,
+            "short_desc": "Cryptocurrency repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Cryptocurrency\\Http\\Controllers\\Api\\Modules\\Cryptocurrency\\Repositories\\CryptocurrencyRepository",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 27,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "index": {
+            "name": "index",
+            "line": 38,
+            "short_desc": "Get cryptocurrencies paginated",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 38,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Http",
+                            "Request"
+                        ],
+                        "attributes": {
+                            "startLine": 38,
+                            "endLine": 38
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "show": {
+            "name": "show",
+            "line": 54,
+            "short_desc": "Get cryptocurrency information",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 54,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "historical": {
+            "name": "historical",
+            "line": 65,
+            "short_desc": "Get cryptocurrency historical",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Cryptocurrency\\Http\\Controllers\\Api\\type",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "coinId": {
+                    "name": "coinId",
+                    "line": 65,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Cryptocurrency\\Http\\Controllers\\Api\\type",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

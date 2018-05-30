@@ -1,0 +1,73 @@
+{
+    "name": "Modules\\Core\\Console\\Installer\\SetupScript",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console\\Installer",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/Installer\/SetupScript.php",
+    "relative_file": null,
+    "hash": "134fdefed51121a1183aaaf587d743b6c5753582",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "fire": {
+            "name": "fire",
+            "line": 14,
+            "short_desc": "Fire the install script",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "command": {
+                    "name": "command",
+                    "line": 14,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Console\\Command",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Console",
+                            "Command"
+                        ],
+                        "attributes": {
+                            "startLine": 14,
+                            "endLine": 14
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

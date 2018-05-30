@@ -1,0 +1,40 @@
+{
+    "name": "Modules\\Core\\Http\\Controllers\\CoreAdminController",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Http\\Controllers",
+    "file": "\/var\/www\/html\/modules\/Core\/Http\/Controllers\/CoreAdminController.php",
+    "relative_file": null,
+    "hash": "44d6f2b1392ab75c47447f26a0676a017d9e8973",
+    "parent": "Illuminate\\Routing\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Controller": "Illuminate\\Routing\\Controller"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "index": {
+            "name": "index",
+            "line": 9,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

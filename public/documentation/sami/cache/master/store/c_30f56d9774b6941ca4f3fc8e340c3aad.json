@@ -1,0 +1,388 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Helpers\\CacheKeys",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Helpers",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Helpers\/CacheKeys.php",
+    "relative_file": null,
+    "hash": "b495efac01b42bcca2fe90b50f86999c34f947a7",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "storeFile": {
+            "name": "storeFile",
+            "line": 13,
+            "short_desc": "File name for store cache keys",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 10,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "repository-cache-keys.json",
+                "attributes": {
+                    "startLine": 13,
+                    "endLine": 13,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "keys": {
+            "name": "keys",
+            "line": 20,
+            "short_desc": "Property with repositories keys",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 10,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "null"
+                    ],
+                    "attributes": {
+                        "startLine": 20,
+                        "endLine": 20,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Core",
+                                "Support",
+                                "Repository",
+                                "Src",
+                                "Helpers",
+                                "null"
+                            ],
+                            "attributes": {
+                                "startLine": 20,
+                                "endLine": 20
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 20,
+                    "endLine": 20
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "putKey": {
+            "name": "putKey",
+            "line": 29,
+            "short_desc": "Put new key",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "group": {
+                    "name": "group",
+                    "line": 29,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "key": {
+                    "name": "key",
+                    "line": 29,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "removeGroupKeys": {
+            "name": "removeGroupKeys",
+            "line": 48,
+            "short_desc": "Remove group keys",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "group": {
+                    "name": "group",
+                    "line": 48,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "loadKeys": {
+            "name": "loadKeys",
+            "line": 62,
+            "short_desc": "Load existing keys",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getFileKeys": {
+            "name": "getFileKeys",
+            "line": 85,
+            "short_desc": "Get file keys",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "storeKeys": {
+            "name": "storeKeys",
+            "line": 97,
+            "short_desc": "Store keys",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getKeys": {
+            "name": "getKeys",
+            "line": 112,
+            "short_desc": "Get key from group",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ],
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "group": {
+                    "name": "group",
+                    "line": 112,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__callStatic": {
+            "name": "__callStatic",
+            "line": 127,
+            "short_desc": "Overloading __callStatic",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "method": {
+                    "name": "method",
+                    "line": 127,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "parameters": {
+                    "name": "parameters",
+                    "line": 127,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__call": {
+            "name": "__call",
+            "line": 144,
+            "short_desc": "Overloading __call",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "method": {
+                    "name": "method",
+                    "line": 144,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "parameters": {
+                    "name": "parameters",
+                    "line": 144,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

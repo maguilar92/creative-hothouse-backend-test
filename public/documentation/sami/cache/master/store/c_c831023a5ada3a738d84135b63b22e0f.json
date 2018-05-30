@@ -1,0 +1,45 @@
+{
+    "name": "Modules\\User\\Repositories\\UserRepository",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\User\\Repositories",
+    "file": "\/var\/www\/html\/modules\/User\/Repositories\/UserRepository.php",
+    "relative_file": null,
+    "hash": "c7d1975525fe9b6e9a7d8a8fb5f05445fd1967da",
+    "parent": "Modules\\Core\\Support\\Repository\\Src\\Eloquent\\BaseRepository",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "BaseRepository": "Modules\\Core\\Support\\Repository\\Src\\Eloquent\\BaseRepository"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "model": {
+            "name": "model",
+            "line": 14,
+            "short_desc": "Specify Model class name",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

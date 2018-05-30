@@ -1,0 +1,207 @@
+{
+    "name": "Modules\\Cryptocurrency\\Providers\\CryptocurrencyServiceProvider",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Cryptocurrency\\Providers",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Providers\/CryptocurrencyServiceProvider.php",
+    "relative_file": null,
+    "hash": "77dfaf07734c32905a13563f63d8e9364d15e050",
+    "parent": "Illuminate\\Support\\ServiceProvider",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ServiceProvider": "Illuminate\\Support\\ServiceProvider",
+        "Factory": "Illuminate\\Database\\Eloquent\\Factory"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "defer": {
+            "name": "defer",
+            "line": 15,
+            "short_desc": "Indicates if loading of the provider is deferred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "false"
+                    ],
+                    "attributes": {
+                        "startLine": 15,
+                        "endLine": 15,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Cryptocurrency",
+                                "Providers",
+                                "false"
+                            ],
+                            "attributes": {
+                                "startLine": 15,
+                                "endLine": 15
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 15,
+                    "endLine": 15
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "boot": {
+            "name": "boot",
+            "line": 22,
+            "short_desc": "Boot the application events.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "register": {
+            "name": "register",
+            "line": 36,
+            "short_desc": "Register the service provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerConfig": {
+            "name": "registerConfig",
+            "line": 46,
+            "short_desc": "Register config.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerViews": {
+            "name": "registerViews",
+            "line": 61,
+            "short_desc": "Register views.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerTranslations": {
+            "name": "registerTranslations",
+            "line": 81,
+            "short_desc": "Register translations.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerFactories": {
+            "name": "registerFactories",
+            "line": 97,
+            "short_desc": "Register an additional directory of factories.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "provides": {
+            "name": "provides",
+            "line": 109,
+            "short_desc": "Get the services provided by the provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

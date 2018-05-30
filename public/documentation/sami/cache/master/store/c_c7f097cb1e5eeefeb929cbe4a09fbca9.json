@@ -1,0 +1,149 @@
+{
+    "name": "Modules\\Core\\Console\\InstallCommand",
+    "line": 9,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/InstallCommand.php",
+    "relative_file": null,
+    "hash": "b0d5b97bac970c16a80a0dfe91b1896df0d88c7b",
+    "parent": "Illuminate\\Console\\Command",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command",
+        "Installer": "Modules\\Core\\Console\\Installer\\Installer",
+        "BlockMessage": "Modules\\Core\\Console\\Installer\\Traits\\BlockMessage"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Modules\\Core\\Console\\Installer\\Traits\\BlockMessage": "Modules\\Core\\Console\\Installer\\Traits\\BlockMessage"
+    },
+    "properties": {
+        "name": {
+            "name": "name",
+            "line": 18,
+            "short_desc": "The console command name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "project:install",
+                "attributes": {
+                    "startLine": 18,
+                    "endLine": 18,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "description": {
+            "name": "description",
+            "line": 25,
+            "short_desc": "The console command description.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "Install project to start workings",
+                "attributes": {
+                    "startLine": 25,
+                    "endLine": 25,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 33,
+            "short_desc": "Create a new command instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "installer": {
+                    "name": "installer",
+                    "line": 33,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Core\\Console\\Installer\\Installer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "Core",
+                            "Console",
+                            "Installer",
+                            "Installer"
+                        ],
+                        "attributes": {
+                            "startLine": 33,
+                            "endLine": 33
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "handle": {
+            "name": "handle",
+            "line": 44,
+            "short_desc": "Execute the console command.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

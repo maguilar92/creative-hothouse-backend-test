@@ -1,0 +1,46 @@
+{
+    "name": "Modules\\Cryptocurrency\\Database\\Seeders\\CryptocurrencyDatabaseSeeder",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Cryptocurrency\\Database\\Seeders",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Database\/Seeders\/CryptocurrencyDatabaseSeeder.php",
+    "relative_file": null,
+    "hash": "7992e69cfc21b89ff89041ba521e7ef67337d3b3",
+    "parent": "Illuminate\\Database\\Seeder",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Seeder": "Illuminate\\Database\\Seeder",
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "run": {
+            "name": "run",
+            "line": 15,
+            "short_desc": "Run the database seeds.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,127 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEntityInserted",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Events",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Events\/RepositoryEntityInserted.php",
+    "relative_file": null,
+    "hash": "5055c8e9c940885d9d57feaeb9ec09b434c65eb2",
+    "parent": "Modules\\Core\\Support\\Repository\\Src\\Events\\RepositoryEventBase",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Collection": "Illuminate\\Database\\Eloquent\\Collection",
+        "RepositoryInterface": "Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "action": {
+            "name": "action",
+            "line": 15,
+            "short_desc": "Action executed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "insert",
+                "attributes": {
+                    "startLine": 15,
+                    "endLine": 15,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 23,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "repository": {
+                    "name": "repository",
+                    "line": 23,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Core\\Support\\Repository\\Src\\Contracts\\RepositoryInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "Core",
+                            "Support",
+                            "Repository",
+                            "Src",
+                            "Contracts",
+                            "RepositoryInterface"
+                        ],
+                        "attributes": {
+                            "startLine": 23,
+                            "endLine": 23
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "model": {
+                    "name": "model",
+                    "line": 23,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Database\\Eloquent\\Model",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Database",
+                            "Eloquent",
+                            "Collection"
+                        ],
+                        "attributes": {
+                            "startLine": 23,
+                            "endLine": 23
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

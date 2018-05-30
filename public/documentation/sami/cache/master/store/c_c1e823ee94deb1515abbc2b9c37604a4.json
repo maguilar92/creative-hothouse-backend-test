@@ -1,0 +1,25 @@
+{
+    "name": "Modules\\Core\\Support\\Repository\\Src\\Exceptions\\RepositoryException",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Support\\Repository\\Src\\Exceptions",
+    "file": "\/var\/www\/html\/modules\/Core\/Support\/Repository\/Src\/Exceptions\/RepositoryException.php",
+    "relative_file": null,
+    "hash": "622c7b1b8de932311caa22cae1b6ea71c1b4fc60",
+    "parent": "Exception",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Exception": "Exception"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

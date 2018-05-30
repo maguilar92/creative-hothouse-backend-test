@@ -1,0 +1,26740 @@
+---
+title: API Reference
+
+language_tabs:
+- bash
+- javascript
+
+includes:
+
+search: true
+
+toc_footers:
+- <a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a>
+---
+<!-- START_INFO -->
+# Info
+
+Welcome to the generated API reference.
+[Get Postman Collection](http://localhost/documentation/api/collection.json)
+<!-- END_INFO -->
+
+#Cryptocurrencies
+<!-- START_9229828c3f008c8a89cc3cf4bba1ae1c -->
+## Get cryptocurrencies paginated
+
+> Example request:
+
+```bash
+curl -X GET "http://localhost/api/coins" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/coins",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Bitcoin",
+            "symbol": "BTC",
+            "logo": null,
+            "rank": 1,
+            "price_usd": "7350.53000000",
+            "price_btc": "1.00000000",
+            "24h_volume_usd": 4111030000,
+            "market_cap_usd": 125386075793,
+            "available_supply": 17058100,
+            "total_supply": 17058100,
+            "percent_change_1h": "0.05000000",
+            "percent_change_24h": "-2.62000000",
+            "percent_change_7d": "-12.11000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 2,
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "logo": null,
+            "rank": 2,
+            "price_usd": "578.98700000",
+            "price_btc": "0.07876806",
+            "24h_volume_usd": 1702380000,
+            "market_cap_usd": 57723376892,
+            "available_supply": 99697190,
+            "total_supply": 99697190,
+            "percent_change_1h": "0.22000000",
+            "percent_change_24h": "-3.83000000",
+            "percent_change_7d": "-18.83000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 3,
+            "name": "Ripple",
+            "symbol": "XRP",
+            "logo": null,
+            "rank": 3,
+            "price_usd": "0.60961100",
+            "price_btc": "0.00008293",
+            "24h_volume_usd": 202113000,
+            "market_cap_usd": 23890635728,
+            "available_supply": 39189968239,
+            "total_supply": 99992233977,
+            "percent_change_1h": "-0.02000000",
+            "percent_change_24h": "-1.66000000",
+            "percent_change_7d": "-11.37000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 4,
+            "name": "Bitcoin Cash",
+            "symbol": "BCH",
+            "logo": null,
+            "rank": 4,
+            "price_usd": "1005.28000000",
+            "price_btc": "0.13676293",
+            "24h_volume_usd": 495830000,
+            "market_cap_usd": 17240979244,
+            "available_supply": 17150425,
+            "total_supply": 17150425,
+            "percent_change_1h": "-0.24000000",
+            "percent_change_24h": "-2.47000000",
+            "percent_change_7d": "-19.15000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 5,
+            "name": "EOS",
+            "symbol": "EOS",
+            "logo": null,
+            "rank": 5,
+            "price_usd": "12.49080000",
+            "price_btc": "0.00169931",
+            "24h_volume_usd": 969670000,
+            "market_cap_usd": 11030904152,
+            "available_supply": 883122310,
+            "total_supply": 900000000,
+            "percent_change_1h": "-0.41000000",
+            "percent_change_24h": "-0.73000000",
+            "percent_change_7d": "-8.85000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 6,
+            "name": "Litecoin",
+            "symbol": "LTC",
+            "logo": null,
+            "rank": 6,
+            "price_usd": "117.81600000",
+            "price_btc": "0.01602823",
+            "24h_volume_usd": 266608000,
+            "market_cap_usd": 6682190465,
+            "available_supply": 56717173,
+            "total_supply": 56717173,
+            "percent_change_1h": "-0.07000000",
+            "percent_change_24h": "-2.64000000",
+            "percent_change_7d": "-14.09000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 7,
+            "name": "Stellar",
+            "symbol": "XLM",
+            "logo": null,
+            "rank": 7,
+            "price_usd": "0.27757500",
+            "price_btc": "0.00003776",
+            "24h_volume_usd": 44229000,
+            "market_cap_usd": 5156797314,
+            "available_supply": 18578032293,
+            "total_supply": 103966327161,
+            "percent_change_1h": "-0.21000000",
+            "percent_change_24h": "-4.81000000",
+            "percent_change_7d": "-14.53000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 8,
+            "name": "Cardano",
+            "symbol": "ADA",
+            "logo": null,
+            "rank": 8,
+            "price_usd": "0.19523400",
+            "price_btc": "0.00002656",
+            "24h_volume_usd": 63038300,
+            "market_cap_usd": 5061845689,
+            "available_supply": 25927070538,
+            "total_supply": 31112483745,
+            "percent_change_1h": "-0.03000000",
+            "percent_change_24h": "-3.54000000",
+            "percent_change_7d": "-21.19000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 9,
+            "name": "TRON",
+            "symbol": "TRX",
+            "logo": null,
+            "rank": 9,
+            "price_usd": "0.07262220",
+            "price_btc": "0.00000988",
+            "24h_volume_usd": 363507000,
+            "market_cap_usd": 4774772514,
+            "available_supply": 65748111645,
+            "total_supply": 100000000000,
+            "percent_change_1h": "-0.29000000",
+            "percent_change_24h": "0.25000000",
+            "percent_change_7d": "-1.67000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 10,
+            "name": "IOTA",
+            "symbol": "MIOTA",
+            "logo": null,
+            "rank": 10,
+            "price_usd": "1.45521000",
+            "price_btc": "0.00019797",
+            "24h_volume_usd": 53254700,
+            "market_cap_usd": 4044800263,
+            "available_supply": 2779530283,
+            "total_supply": 2779530283,
+            "percent_change_1h": "0.11000000",
+            "percent_change_24h": "-4.61000000",
+            "percent_change_7d": "-18.67000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 11,
+            "name": "NEO",
+            "symbol": "NEO",
+            "logo": null,
+            "rank": 11,
+            "price_usd": "52.04280000",
+            "price_btc": "0.00708014",
+            "24h_volume_usd": 78992200,
+            "market_cap_usd": 3382782000,
+            "available_supply": 65000000,
+            "total_supply": 100000000,
+            "percent_change_1h": "-0.05000000",
+            "percent_change_24h": "-2.87000000",
+            "percent_change_7d": "-14.38000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 12,
+            "name": "Monero",
+            "symbol": "XMR",
+            "logo": null,
+            "rank": 12,
+            "price_usd": "163.78400000",
+            "price_btc": "0.02228193",
+            "24h_volume_usd": 23386700,
+            "market_cap_usd": 2632402781,
+            "available_supply": 16072405,
+            "total_supply": 16072405,
+            "percent_change_1h": "-0.34000000",
+            "percent_change_24h": "-1.66000000",
+            "percent_change_7d": "-18.06000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 13,
+            "name": "Dash",
+            "symbol": "DASH",
+            "logo": null,
+            "rank": 13,
+            "price_usd": "320.22300000",
+            "price_btc": "0.04356461",
+            "24h_volume_usd": 90259500,
+            "market_cap_usd": 2591856491,
+            "available_supply": 8093911,
+            "total_supply": 8093911,
+            "percent_change_1h": "0.27000000",
+            "percent_change_24h": "-5.09000000",
+            "percent_change_7d": "-18.61000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 14,
+            "name": "Tether",
+            "symbol": "USDT",
+            "logo": null,
+            "rank": 14,
+            "price_usd": "1.00098000",
+            "price_btc": "0.00013618",
+            "24h_volume_usd": 1901500000,
+            "market_cap_usd": 2509597812,
+            "available_supply": 2507140814,
+            "total_supply": 2830109970,
+            "percent_change_1h": "0.08000000",
+            "percent_change_24h": "0.01000000",
+            "percent_change_7d": "0.10000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        },
+        {
+            "id": 15,
+            "name": "NEM",
+            "symbol": "XEM",
+            "logo": null,
+            "rank": 15,
+            "price_usd": "0.25700700",
+            "price_btc": "0.00003496",
+            "24h_volume_usd": 9219430,
+            "market_cap_usd": 2313063000,
+            "available_supply": 8999999999,
+            "total_supply": 8999999999,
+            "percent_change_1h": "0.30000000",
+            "percent_change_24h": "-3.44000000",
+            "percent_change_7d": "-18.47000000",
+            "created_at": "2018-05-27 12:32:33",
+            "updated_at": "2018-05-27 12:32:33"
+        }
+    ],
+    "first_page_url": "http:\/\/localhost\/api\/coins?page=1",
+    "from": 1,
+    "last_page": 109,
+    "last_page_url": "http:\/\/localhost\/api\/coins?page=109",
+    "next_page_url": "http:\/\/localhost\/api\/coins?page=2",
+    "path": "http:\/\/localhost\/api\/coins",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 15,
+    "total": 1624
+}
+```
+
+### HTTP Request
+`GET api/coins`
+
+`HEAD api/coins`
+
+
+<!-- END_9229828c3f008c8a89cc3cf4bba1ae1c -->
+
+<!-- START_81d44033c06162f4a3b45493311cc2bd -->
+## Get cryptocurrency information
+
+> Example request:
+
+```bash
+curl -X GET "http://localhost/api/coins/{coin}" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/coins/{coin}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+{
+    "id": 1,
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "logo": null,
+    "rank": 1,
+    "price_usd": "7350.53000000",
+    "price_btc": "1.00000000",
+    "24h_volume_usd": 4111030000,
+    "market_cap_usd": 125386075793,
+    "available_supply": 17058100,
+    "total_supply": 17058100,
+    "percent_change_1h": "0.05000000",
+    "percent_change_24h": "-2.62000000",
+    "percent_change_7d": "-12.11000000",
+    "created_at": "2018-05-27 12:32:33",
+    "updated_at": "2018-05-27 12:32:33"
+}
+```
+
+### HTTP Request
+`GET api/coins/{coin}`
+
+`HEAD api/coins/{coin}`
+
+
+<!-- END_81d44033c06162f4a3b45493311cc2bd -->
+
+<!-- START_58f2a86460279494610417ab322ff1f9 -->
+## Get cryptocurrency historical
+
+> Example request:
+
+```bash
+curl -X GET "http://localhost/api/coins/{coin}/historical" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/coins/{coin}/historical",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+[
+    {
+        "id": 1,
+        "cryptocurrency_id": 1,
+        "price_usd": "7589.39492161",
+        "snapshot_at": "2018-05-27 11:32:33"
+    },
+    {
+        "id": 2,
+        "cryptocurrency_id": 1,
+        "price_usd": "7696.87267384",
+        "snapshot_at": "2018-05-27 10:32:33"
+    },
+    {
+        "id": 3,
+        "cryptocurrency_id": 1,
+        "price_usd": "7941.46220821",
+        "snapshot_at": "2018-05-27 09:32:33"
+    },
+    {
+        "id": 4,
+        "cryptocurrency_id": 1,
+        "price_usd": "7590.00616294",
+        "snapshot_at": "2018-05-27 08:32:33"
+    },
+    {
+        "id": 5,
+        "cryptocurrency_id": 1,
+        "price_usd": "7667.01562770",
+        "snapshot_at": "2018-05-27 07:32:33"
+    },
+    {
+        "id": 6,
+        "cryptocurrency_id": 1,
+        "price_usd": "7960.17671262",
+        "snapshot_at": "2018-05-27 06:32:33"
+    },
+    {
+        "id": 7,
+        "cryptocurrency_id": 1,
+        "price_usd": "7832.83260803",
+        "snapshot_at": "2018-05-27 05:32:33"
+    },
+    {
+        "id": 8,
+        "cryptocurrency_id": 1,
+        "price_usd": "7807.46547140",
+        "snapshot_at": "2018-05-27 04:32:33"
+    },
+    {
+        "id": 9,
+        "cryptocurrency_id": 1,
+        "price_usd": "7519.44341108",
+        "snapshot_at": "2018-05-27 03:32:33"
+    },
+    {
+        "id": 10,
+        "cryptocurrency_id": 1,
+        "price_usd": "7268.92172595",
+        "snapshot_at": "2018-05-27 02:32:33"
+    },
+    {
+        "id": 11,
+        "cryptocurrency_id": 1,
+        "price_usd": "7223.75652870",
+        "snapshot_at": "2018-05-27 01:32:33"
+    },
+    {
+        "id": 12,
+        "cryptocurrency_id": 1,
+        "price_usd": "6962.45680678",
+        "snapshot_at": "2018-05-27 00:32:33"
+    },
+    {
+        "id": 13,
+        "cryptocurrency_id": 1,
+        "price_usd": "7246.88593510",
+        "snapshot_at": "2018-05-26 23:32:33"
+    },
+    {
+        "id": 14,
+        "cryptocurrency_id": 1,
+        "price_usd": "7555.75229357",
+        "snapshot_at": "2018-05-26 22:32:33"
+    },
+    {
+        "id": 15,
+        "cryptocurrency_id": 1,
+        "price_usd": "7716.18696788",
+        "snapshot_at": "2018-05-26 21:32:33"
+    },
+    {
+        "id": 16,
+        "cryptocurrency_id": 1,
+        "price_usd": "7765.94481447",
+        "snapshot_at": "2018-05-26 20:32:33"
+    },
+    {
+        "id": 17,
+        "cryptocurrency_id": 1,
+        "price_usd": "7502.07530736",
+        "snapshot_at": "2018-05-26 19:32:33"
+    },
+    {
+        "id": 18,
+        "cryptocurrency_id": 1,
+        "price_usd": "7237.36401241",
+        "snapshot_at": "2018-05-26 18:32:33"
+    },
+    {
+        "id": 19,
+        "cryptocurrency_id": 1,
+        "price_usd": "7492.62788122",
+        "snapshot_at": "2018-05-26 17:32:33"
+    },
+    {
+        "id": 20,
+        "cryptocurrency_id": 1,
+        "price_usd": "7169.46227738",
+        "snapshot_at": "2018-05-26 16:32:33"
+    },
+    {
+        "id": 21,
+        "cryptocurrency_id": 1,
+        "price_usd": "7461.01041541",
+        "snapshot_at": "2018-05-26 15:32:33"
+    },
+    {
+        "id": 22,
+        "cryptocurrency_id": 1,
+        "price_usd": "7277.00029792",
+        "snapshot_at": "2018-05-26 14:32:33"
+    },
+    {
+        "id": 23,
+        "cryptocurrency_id": 1,
+        "price_usd": "7353.14003691",
+        "snapshot_at": "2018-05-26 13:32:33"
+    },
+    {
+        "id": 24,
+        "cryptocurrency_id": 1,
+        "price_usd": "7199.05641735",
+        "snapshot_at": "2018-05-26 12:32:33"
+    },
+    {
+        "id": 25,
+        "cryptocurrency_id": 1,
+        "price_usd": "7218.15717040",
+        "snapshot_at": "2018-05-26 11:32:33"
+    },
+    {
+        "id": 26,
+        "cryptocurrency_id": 1,
+        "price_usd": "7053.58583359",
+        "snapshot_at": "2018-05-26 10:32:33"
+    },
+    {
+        "id": 27,
+        "cryptocurrency_id": 1,
+        "price_usd": "7174.82382976",
+        "snapshot_at": "2018-05-26 09:32:33"
+    },
+    {
+        "id": 28,
+        "cryptocurrency_id": 1,
+        "price_usd": "6935.49290730",
+        "snapshot_at": "2018-05-26 08:32:33"
+    },
+    {
+        "id": 29,
+        "cryptocurrency_id": 1,
+        "price_usd": "7076.33073731",
+        "snapshot_at": "2018-05-26 07:32:33"
+    },
+    {
+        "id": 30,
+        "cryptocurrency_id": 1,
+        "price_usd": "6730.03573509",
+        "snapshot_at": "2018-05-26 06:32:33"
+    },
+    {
+        "id": 31,
+        "cryptocurrency_id": 1,
+        "price_usd": "6749.53392232",
+        "snapshot_at": "2018-05-26 05:32:33"
+    },
+    {
+        "id": 32,
+        "cryptocurrency_id": 1,
+        "price_usd": "6497.02472610",
+        "snapshot_at": "2018-05-26 04:32:33"
+    },
+    {
+        "id": 33,
+        "cryptocurrency_id": 1,
+        "price_usd": "6573.83275968",
+        "snapshot_at": "2018-05-26 03:32:33"
+    },
+    {
+        "id": 34,
+        "cryptocurrency_id": 1,
+        "price_usd": "6767.37934491",
+        "snapshot_at": "2018-05-26 02:32:33"
+    },
+    {
+        "id": 35,
+        "cryptocurrency_id": 1,
+        "price_usd": "6475.23562203",
+        "snapshot_at": "2018-05-26 01:32:33"
+    },
+    {
+        "id": 36,
+        "cryptocurrency_id": 1,
+        "price_usd": "6302.79326376",
+        "snapshot_at": "2018-05-26 00:32:33"
+    },
+    {
+        "id": 37,
+        "cryptocurrency_id": 1,
+        "price_usd": "6347.42393304",
+        "snapshot_at": "2018-05-25 23:32:33"
+    },
+    {
+        "id": 38,
+        "cryptocurrency_id": 1,
+        "price_usd": "6172.76108482",
+        "snapshot_at": "2018-05-25 22:32:33"
+    },
+    {
+        "id": 39,
+        "cryptocurrency_id": 1,
+        "price_usd": "5886.80834342",
+        "snapshot_at": "2018-05-25 21:32:33"
+    },
+    {
+        "id": 40,
+        "cryptocurrency_id": 1,
+        "price_usd": "5761.58759402",
+        "snapshot_at": "2018-05-25 20:32:33"
+    },
+    {
+        "id": 41,
+        "cryptocurrency_id": 1,
+        "price_usd": "5577.62592366",
+        "snapshot_at": "2018-05-25 19:32:33"
+    },
+    {
+        "id": 42,
+        "cryptocurrency_id": 1,
+        "price_usd": "5649.26204429",
+        "snapshot_at": "2018-05-25 18:32:33"
+    },
+    {
+        "id": 43,
+        "cryptocurrency_id": 1,
+        "price_usd": "5825.92366842",
+        "snapshot_at": "2018-05-25 17:32:33"
+    },
+    {
+        "id": 44,
+        "cryptocurrency_id": 1,
+        "price_usd": "5789.81039164",
+        "snapshot_at": "2018-05-25 16:32:33"
+    },
+    {
+        "id": 45,
+        "cryptocurrency_id": 1,
+        "price_usd": "5837.22613094",
+        "snapshot_at": "2018-05-25 15:32:33"
+    },
+    {
+        "id": 46,
+        "cryptocurrency_id": 1,
+        "price_usd": "5810.02388823",
+        "snapshot_at": "2018-05-25 14:32:33"
+    },
+    {
+        "id": 47,
+        "cryptocurrency_id": 1,
+        "price_usd": "6075.40811414",
+        "snapshot_at": "2018-05-25 13:32:33"
+    },
+    {
+        "id": 48,
+        "cryptocurrency_id": 1,
+        "price_usd": "5891.26760350",
+        "snapshot_at": "2018-05-25 12:32:33"
+    },
+    {
+        "id": 49,
+        "cryptocurrency_id": 1,
+        "price_usd": "6072.50119681",
+        "snapshot_at": "2018-05-25 11:32:33"
+    },
+    {
+        "id": 50,
+        "cryptocurrency_id": 1,
+        "price_usd": "5970.09778908",
+        "snapshot_at": "2018-05-25 10:32:33"
+    },
+    {
+        "id": 51,
+        "cryptocurrency_id": 1,
+        "price_usd": "6049.01407364",
+        "snapshot_at": "2018-05-25 09:32:33"
+    },
+    {
+        "id": 52,
+        "cryptocurrency_id": 1,
+        "price_usd": "5904.68598425",
+        "snapshot_at": "2018-05-25 08:32:33"
+    },
+    {
+        "id": 53,
+        "cryptocurrency_id": 1,
+        "price_usd": "6107.79512687",
+        "snapshot_at": "2018-05-25 07:32:33"
+    },
+    {
+        "id": 54,
+        "cryptocurrency_id": 1,
+        "price_usd": "6152.68445006",
+        "snapshot_at": "2018-05-25 06:32:33"
+    },
+    {
+        "id": 55,
+        "cryptocurrency_id": 1,
+        "price_usd": "5969.14448477",
+        "snapshot_at": "2018-05-25 05:32:33"
+    },
+    {
+        "id": 56,
+        "cryptocurrency_id": 1,
+        "price_usd": "5865.48130898",
+        "snapshot_at": "2018-05-25 04:32:33"
+    },
+    {
+        "id": 57,
+        "cryptocurrency_id": 1,
+        "price_usd": "6079.83532019",
+        "snapshot_at": "2018-05-25 03:32:33"
+    },
+    {
+        "id": 58,
+        "cryptocurrency_id": 1,
+        "price_usd": "6248.47885255",
+        "snapshot_at": "2018-05-25 02:32:33"
+    },
+    {
+        "id": 59,
+        "cryptocurrency_id": 1,
+        "price_usd": "6482.22181468",
+        "snapshot_at": "2018-05-25 01:32:33"
+    },
+    {
+        "id": 60,
+        "cryptocurrency_id": 1,
+        "price_usd": "6375.49483455",
+        "snapshot_at": "2018-05-25 00:32:33"
+    },
+    {
+        "id": 61,
+        "cryptocurrency_id": 1,
+        "price_usd": "6359.09417972",
+        "snapshot_at": "2018-05-24 23:32:33"
+    },
+    {
+        "id": 62,
+        "cryptocurrency_id": 1,
+        "price_usd": "6238.39944137",
+        "snapshot_at": "2018-05-24 22:32:33"
+    },
+    {
+        "id": 63,
+        "cryptocurrency_id": 1,
+        "price_usd": "6401.61642356",
+        "snapshot_at": "2018-05-24 21:32:33"
+    },
+    {
+        "id": 64,
+        "cryptocurrency_id": 1,
+        "price_usd": "6641.58745078",
+        "snapshot_at": "2018-05-24 20:32:33"
+    },
+    {
+        "id": 65,
+        "cryptocurrency_id": 1,
+        "price_usd": "6868.08361579",
+        "snapshot_at": "2018-05-24 19:32:33"
+    },
+    {
+        "id": 66,
+        "cryptocurrency_id": 1,
+        "price_usd": "7173.82245908",
+        "snapshot_at": "2018-05-24 18:32:33"
+    },
+    {
+        "id": 67,
+        "cryptocurrency_id": 1,
+        "price_usd": "7521.50234436",
+        "snapshot_at": "2018-05-24 17:32:33"
+    },
+    {
+        "id": 68,
+        "cryptocurrency_id": 1,
+        "price_usd": "7152.70509409",
+        "snapshot_at": "2018-05-24 16:32:33"
+    },
+    {
+        "id": 69,
+        "cryptocurrency_id": 1,
+        "price_usd": "7237.07609702",
+        "snapshot_at": "2018-05-24 15:32:33"
+    },
+    {
+        "id": 70,
+        "cryptocurrency_id": 1,
+        "price_usd": "7085.55528489",
+        "snapshot_at": "2018-05-24 14:32:33"
+    },
+    {
+        "id": 71,
+        "cryptocurrency_id": 1,
+        "price_usd": "7245.71479846",
+        "snapshot_at": "2018-05-24 13:32:33"
+    },
+    {
+        "id": 72,
+        "cryptocurrency_id": 1,
+        "price_usd": "7127.15527314",
+        "snapshot_at": "2018-05-24 12:32:33"
+    },
+    {
+        "id": 73,
+        "cryptocurrency_id": 1,
+        "price_usd": "7246.85117969",
+        "snapshot_at": "2018-05-24 11:32:33"
+    },
+    {
+        "id": 74,
+        "cryptocurrency_id": 1,
+        "price_usd": "7057.05608599",
+        "snapshot_at": "2018-05-24 10:32:33"
+    },
+    {
+        "id": 75,
+        "cryptocurrency_id": 1,
+        "price_usd": "7271.59591883",
+        "snapshot_at": "2018-05-24 09:32:33"
+    },
+    {
+        "id": 76,
+        "cryptocurrency_id": 1,
+        "price_usd": "7256.25074841",
+        "snapshot_at": "2018-05-24 08:32:33"
+    },
+    {
+        "id": 77,
+        "cryptocurrency_id": 1,
+        "price_usd": "7178.36807040",
+        "snapshot_at": "2018-05-24 07:32:33"
+    },
+    {
+        "id": 78,
+        "cryptocurrency_id": 1,
+        "price_usd": "7508.82179782",
+        "snapshot_at": "2018-05-24 06:32:33"
+    },
+    {
+        "id": 79,
+        "cryptocurrency_id": 1,
+        "price_usd": "7154.78520609",
+        "snapshot_at": "2018-05-24 05:32:33"
+    },
+    {
+        "id": 80,
+        "cryptocurrency_id": 1,
+        "price_usd": "7235.43331938",
+        "snapshot_at": "2018-05-24 04:32:33"
+    },
+    {
+        "id": 81,
+        "cryptocurrency_id": 1,
+        "price_usd": "7335.44677265",
+        "snapshot_at": "2018-05-24 03:32:33"
+    },
+    {
+        "id": 82,
+        "cryptocurrency_id": 1,
+        "price_usd": "7216.92247154",
+        "snapshot_at": "2018-05-24 02:32:33"
+    },
+    {
+        "id": 83,
+        "cryptocurrency_id": 1,
+        "price_usd": "7031.43201233",
+        "snapshot_at": "2018-05-24 01:32:33"
+    },
+    {
+        "id": 84,
+        "cryptocurrency_id": 1,
+        "price_usd": "7224.68348368",
+        "snapshot_at": "2018-05-24 00:32:33"
+    },
+    {
+        "id": 85,
+        "cryptocurrency_id": 1,
+        "price_usd": "7174.18304482",
+        "snapshot_at": "2018-05-23 23:32:33"
+    },
+    {
+        "id": 86,
+        "cryptocurrency_id": 1,
+        "price_usd": "6991.55846016",
+        "snapshot_at": "2018-05-23 22:32:33"
+    },
+    {
+        "id": 87,
+        "cryptocurrency_id": 1,
+        "price_usd": "7154.84223945",
+        "snapshot_at": "2018-05-23 21:32:33"
+    },
+    {
+        "id": 88,
+        "cryptocurrency_id": 1,
+        "price_usd": "6975.17544628",
+        "snapshot_at": "2018-05-23 20:32:33"
+    },
+    {
+        "id": 89,
+        "cryptocurrency_id": 1,
+        "price_usd": "7112.93829765",
+        "snapshot_at": "2018-05-23 19:32:33"
+    },
+    {
+        "id": 90,
+        "cryptocurrency_id": 1,
+        "price_usd": "6948.25972869",
+        "snapshot_at": "2018-05-23 18:32:33"
+    },
+    {
+        "id": 91,
+        "cryptocurrency_id": 1,
+        "price_usd": "6790.86555846",
+        "snapshot_at": "2018-05-23 17:32:33"
+    },
+    {
+        "id": 92,
+        "cryptocurrency_id": 1,
+        "price_usd": "6719.77983924",
+        "snapshot_at": "2018-05-23 16:32:33"
+    },
+    {
+        "id": 93,
+        "cryptocurrency_id": 1,
+        "price_usd": "6838.75944323",
+        "snapshot_at": "2018-05-23 15:32:33"
+    },
+    {
+        "id": 94,
+        "cryptocurrency_id": 1,
+        "price_usd": "6793.29636966",
+        "snapshot_at": "2018-05-23 14:32:33"
+    },
+    {
+        "id": 95,
+        "cryptocurrency_id": 1,
+        "price_usd": "6622.02256512",
+        "snapshot_at": "2018-05-23 13:32:33"
+    },
+    {
+        "id": 96,
+        "cryptocurrency_id": 1,
+        "price_usd": "6325.92741892",
+        "snapshot_at": "2018-05-23 12:32:33"
+    },
+    {
+        "id": 97,
+        "cryptocurrency_id": 1,
+        "price_usd": "6200.46712010",
+        "snapshot_at": "2018-05-23 11:32:33"
+    },
+    {
+        "id": 98,
+        "cryptocurrency_id": 1,
+        "price_usd": "6134.65755155",
+        "snapshot_at": "2018-05-23 10:32:33"
+    },
+    {
+        "id": 99,
+        "cryptocurrency_id": 1,
+        "price_usd": "6150.42993825",
+        "snapshot_at": "2018-05-23 09:32:33"
+    },
+    {
+        "id": 100,
+        "cryptocurrency_id": 1,
+        "price_usd": "6087.64834729",
+        "snapshot_at": "2018-05-23 08:32:33"
+    },
+    {
+        "id": 101,
+        "cryptocurrency_id": 1,
+        "price_usd": "6153.25671357",
+        "snapshot_at": "2018-05-23 07:32:33"
+    },
+    {
+        "id": 102,
+        "cryptocurrency_id": 1,
+        "price_usd": "6111.71264255",
+        "snapshot_at": "2018-05-23 06:32:33"
+    },
+    {
+        "id": 103,
+        "cryptocurrency_id": 1,
+        "price_usd": "5998.70900889",
+        "snapshot_at": "2018-05-23 05:32:33"
+    },
+    {
+        "id": 104,
+        "cryptocurrency_id": 1,
+        "price_usd": "5814.46146256",
+        "snapshot_at": "2018-05-23 04:32:33"
+    },
+    {
+        "id": 105,
+        "cryptocurrency_id": 1,
+        "price_usd": "5947.02995251",
+        "snapshot_at": "2018-05-23 03:32:33"
+    },
+    {
+        "id": 106,
+        "cryptocurrency_id": 1,
+        "price_usd": "5973.09240526",
+        "snapshot_at": "2018-05-23 02:32:33"
+    },
+    {
+        "id": 107,
+        "cryptocurrency_id": 1,
+        "price_usd": "5905.86063202",
+        "snapshot_at": "2018-05-23 01:32:33"
+    },
+    {
+        "id": 108,
+        "cryptocurrency_id": 1,
+        "price_usd": "6081.27948624",
+        "snapshot_at": "2018-05-23 00:32:33"
+    },
+    {
+        "id": 109,
+        "cryptocurrency_id": 1,
+        "price_usd": "5800.33325168",
+        "snapshot_at": "2018-05-22 23:32:33"
+    },
+    {
+        "id": 110,
+        "cryptocurrency_id": 1,
+        "price_usd": "5905.38050149",
+        "snapshot_at": "2018-05-22 22:32:33"
+    },
+    {
+        "id": 111,
+        "cryptocurrency_id": 1,
+        "price_usd": "5700.84256727",
+        "snapshot_at": "2018-05-22 21:32:33"
+    },
+    {
+        "id": 112,
+        "cryptocurrency_id": 1,
+        "price_usd": "5688.97175428",
+        "snapshot_at": "2018-05-22 20:32:33"
+    },
+    {
+        "id": 113,
+        "cryptocurrency_id": 1,
+        "price_usd": "5834.68592922",
+        "snapshot_at": "2018-05-22 19:32:33"
+    },
+    {
+        "id": 114,
+        "cryptocurrency_id": 1,
+        "price_usd": "6035.90935812",
+        "snapshot_at": "2018-05-22 18:32:33"
+    },
+    {
+        "id": 115,
+        "cryptocurrency_id": 1,
+        "price_usd": "6013.07708692",
+        "snapshot_at": "2018-05-22 17:32:33"
+    },
+    {
+        "id": 116,
+        "cryptocurrency_id": 1,
+        "price_usd": "5808.38604194",
+        "snapshot_at": "2018-05-22 16:32:33"
+    },
+    {
+        "id": 117,
+        "cryptocurrency_id": 1,
+        "price_usd": "5652.01733818",
+        "snapshot_at": "2018-05-22 15:32:33"
+    },
+    {
+        "id": 118,
+        "cryptocurrency_id": 1,
+        "price_usd": "5576.49903630",
+        "snapshot_at": "2018-05-22 14:32:33"
+    },
+    {
+        "id": 119,
+        "cryptocurrency_id": 1,
+        "price_usd": "5682.88849681",
+        "snapshot_at": "2018-05-22 13:32:33"
+    },
+    {
+        "id": 120,
+        "cryptocurrency_id": 1,
+        "price_usd": "5892.15289915",
+        "snapshot_at": "2018-05-22 12:32:33"
+    },
+    {
+        "id": 121,
+        "cryptocurrency_id": 1,
+        "price_usd": "5673.17344018",
+        "snapshot_at": "2018-05-22 11:32:33"
+    },
+    {
+        "id": 122,
+        "cryptocurrency_id": 1,
+        "price_usd": "5690.00291432",
+        "snapshot_at": "2018-05-22 10:32:33"
+    },
+    {
+        "id": 123,
+        "cryptocurrency_id": 1,
+        "price_usd": "5791.42574107",
+        "snapshot_at": "2018-05-22 09:32:33"
+    },
+    {
+        "id": 124,
+        "cryptocurrency_id": 1,
+        "price_usd": "6053.18225146",
+        "snapshot_at": "2018-05-22 08:32:33"
+    },
+    {
+        "id": 125,
+        "cryptocurrency_id": 1,
+        "price_usd": "5834.48771972",
+        "snapshot_at": "2018-05-22 07:32:33"
+    },
+    {
+        "id": 126,
+        "cryptocurrency_id": 1,
+        "price_usd": "6085.12890924",
+        "snapshot_at": "2018-05-22 06:32:33"
+    },
+    {
+        "id": 127,
+        "cryptocurrency_id": 1,
+        "price_usd": "6348.49329023",
+        "snapshot_at": "2018-05-22 05:32:33"
+    },
+    {
+        "id": 128,
+        "cryptocurrency_id": 1,
+        "price_usd": "6346.20302940",
+        "snapshot_at": "2018-05-22 04:32:33"
+    },
+    {
+        "id": 129,
+        "cryptocurrency_id": 1,
+        "price_usd": "6426.00115927",
+        "snapshot_at": "2018-05-22 03:32:33"
+    },
+    {
+        "id": 130,
+        "cryptocurrency_id": 1,
+        "price_usd": "6667.21826760",
+        "snapshot_at": "2018-05-22 02:32:33"
+    },
+    {
+        "id": 131,
+        "cryptocurrency_id": 1,
+        "price_usd": "6644.10799819",
+        "snapshot_at": "2018-05-22 01:32:33"
+    },
+    {
+        "id": 132,
+        "cryptocurrency_id": 1,
+        "price_usd": "6346.16663670",
+        "snapshot_at": "2018-05-22 00:32:33"
+    },
+    {
+        "id": 133,
+        "cryptocurrency_id": 1,
+        "price_usd": "6074.19797623",
+        "snapshot_at": "2018-05-21 23:32:33"
+    },
+    {
+        "id": 134,
+        "cryptocurrency_id": 1,
+        "price_usd": "5845.24204830",
+        "snapshot_at": "2018-05-21 22:32:33"
+    },
+    {
+        "id": 135,
+        "cryptocurrency_id": 1,
+        "price_usd": "5570.25540471",
+        "snapshot_at": "2018-05-21 21:32:33"
+    },
+    {
+        "id": 136,
+        "cryptocurrency_id": 1,
+        "price_usd": "5814.77895181",
+        "snapshot_at": "2018-05-21 20:32:33"
+    },
+    {
+        "id": 137,
+        "cryptocurrency_id": 1,
+        "price_usd": "5551.53470796",
+        "snapshot_at": "2018-05-21 19:32:33"
+    },
+    {
+        "id": 138,
+        "cryptocurrency_id": 1,
+        "price_usd": "5603.12205853",
+        "snapshot_at": "2018-05-21 18:32:33"
+    },
+    {
+        "id": 139,
+        "cryptocurrency_id": 1,
+        "price_usd": "5458.95268113",
+        "snapshot_at": "2018-05-21 17:32:33"
+    },
+    {
+        "id": 140,
+        "cryptocurrency_id": 1,
+        "price_usd": "5545.76851812",
+        "snapshot_at": "2018-05-21 16:32:33"
+    },
+    {
+        "id": 141,
+        "cryptocurrency_id": 1,
+        "price_usd": "5535.44164691",
+        "snapshot_at": "2018-05-21 15:32:33"
+    },
+    {
+        "id": 142,
+        "cryptocurrency_id": 1,
+        "price_usd": "5416.94562674",
+        "snapshot_at": "2018-05-21 14:32:33"
+    },
+    {
+        "id": 143,
+        "cryptocurrency_id": 1,
+        "price_usd": "5266.67092146",
+        "snapshot_at": "2018-05-21 13:32:33"
+    },
+    {
+        "id": 144,
+        "cryptocurrency_id": 1,
+        "price_usd": "5477.50491489",
+        "snapshot_at": "2018-05-21 12:32:33"
+    },
+    {
+        "id": 145,
+        "cryptocurrency_id": 1,
+        "price_usd": "5527.84166434",
+        "snapshot_at": "2018-05-21 11:32:33"
+    },
+    {
+        "id": 146,
+        "cryptocurrency_id": 1,
+        "price_usd": "5754.27153778",
+        "snapshot_at": "2018-05-21 10:32:33"
+    },
+    {
+        "id": 147,
+        "cryptocurrency_id": 1,
+        "price_usd": "5756.46203678",
+        "snapshot_at": "2018-05-21 09:32:33"
+    },
+    {
+        "id": 148,
+        "cryptocurrency_id": 1,
+        "price_usd": "5555.78326413",
+        "snapshot_at": "2018-05-21 08:32:33"
+    },
+    {
+        "id": 149,
+        "cryptocurrency_id": 1,
+        "price_usd": "5620.85450286",
+        "snapshot_at": "2018-05-21 07:32:33"
+    },
+    {
+        "id": 150,
+        "cryptocurrency_id": 1,
+        "price_usd": "5701.23777714",
+        "snapshot_at": "2018-05-21 06:32:33"
+    },
+    {
+        "id": 151,
+        "cryptocurrency_id": 1,
+        "price_usd": "5759.97730234",
+        "snapshot_at": "2018-05-21 05:32:33"
+    },
+    {
+        "id": 152,
+        "cryptocurrency_id": 1,
+        "price_usd": "5971.46105529",
+        "snapshot_at": "2018-05-21 04:32:33"
+    },
+    {
+        "id": 153,
+        "cryptocurrency_id": 1,
+        "price_usd": "6145.87225996",
+        "snapshot_at": "2018-05-21 03:32:33"
+    },
+    {
+        "id": 154,
+        "cryptocurrency_id": 1,
+        "price_usd": "6043.93166226",
+        "snapshot_at": "2018-05-21 02:32:33"
+    },
+    {
+        "id": 155,
+        "cryptocurrency_id": 1,
+        "price_usd": "5746.81888517",
+        "snapshot_at": "2018-05-21 01:32:33"
+    },
+    {
+        "id": 156,
+        "cryptocurrency_id": 1,
+        "price_usd": "5990.07582497",
+        "snapshot_at": "2018-05-21 00:32:33"
+    },
+    {
+        "id": 157,
+        "cryptocurrency_id": 1,
+        "price_usd": "6186.73246864",
+        "snapshot_at": "2018-05-20 23:32:33"
+    },
+    {
+        "id": 158,
+        "cryptocurrency_id": 1,
+        "price_usd": "6212.33371493",
+        "snapshot_at": "2018-05-20 22:32:33"
+    },
+    {
+        "id": 159,
+        "cryptocurrency_id": 1,
+        "price_usd": "6213.00167016",
+        "snapshot_at": "2018-05-20 21:32:33"
+    },
+    {
+        "id": 160,
+        "cryptocurrency_id": 1,
+        "price_usd": "5986.34732513",
+        "snapshot_at": "2018-05-20 20:32:33"
+    },
+    {
+        "id": 161,
+        "cryptocurrency_id": 1,
+        "price_usd": "5908.51569055",
+        "snapshot_at": "2018-05-20 19:32:33"
+    },
+    {
+        "id": 162,
+        "cryptocurrency_id": 1,
+        "price_usd": "5903.04072438",
+        "snapshot_at": "2018-05-20 18:32:33"
+    },
+    {
+        "id": 163,
+        "cryptocurrency_id": 1,
+        "price_usd": "5780.96674903",
+        "snapshot_at": "2018-05-20 17:32:33"
+    },
+    {
+        "id": 164,
+        "cryptocurrency_id": 1,
+        "price_usd": "5925.55932029",
+        "snapshot_at": "2018-05-20 16:32:33"
+    },
+    {
+        "id": 165,
+        "cryptocurrency_id": 1,
+        "price_usd": "6119.93901511",
+        "snapshot_at": "2018-05-20 15:32:33"
+    },
+    {
+        "id": 166,
+        "cryptocurrency_id": 1,
+        "price_usd": "6398.20093943",
+        "snapshot_at": "2018-05-20 14:32:33"
+    },
+    {
+        "id": 167,
+        "cryptocurrency_id": 1,
+        "price_usd": "6141.66955398",
+        "snapshot_at": "2018-05-20 13:32:33"
+    },
+    {
+        "id": 168,
+        "cryptocurrency_id": 1,
+        "price_usd": "5914.62445897",
+        "snapshot_at": "2018-05-20 12:32:33"
+    },
+    {
+        "id": 169,
+        "cryptocurrency_id": 1,
+        "price_usd": "5633.05079020",
+        "snapshot_at": "2018-05-20 11:32:33"
+    },
+    {
+        "id": 170,
+        "cryptocurrency_id": 1,
+        "price_usd": "5779.20146739",
+        "snapshot_at": "2018-05-20 10:32:33"
+    },
+    {
+        "id": 171,
+        "cryptocurrency_id": 1,
+        "price_usd": "5739.40972860",
+        "snapshot_at": "2018-05-20 09:32:33"
+    },
+    {
+        "id": 172,
+        "cryptocurrency_id": 1,
+        "price_usd": "5820.83677989",
+        "snapshot_at": "2018-05-20 08:32:33"
+    },
+    {
+        "id": 173,
+        "cryptocurrency_id": 1,
+        "price_usd": "5665.26041932",
+        "snapshot_at": "2018-05-20 07:32:33"
+    },
+    {
+        "id": 174,
+        "cryptocurrency_id": 1,
+        "price_usd": "5758.32159833",
+        "snapshot_at": "2018-05-20 06:32:33"
+    },
+    {
+        "id": 175,
+        "cryptocurrency_id": 1,
+        "price_usd": "5712.19572259",
+        "snapshot_at": "2018-05-20 05:32:33"
+    },
+    {
+        "id": 176,
+        "cryptocurrency_id": 1,
+        "price_usd": "5596.01302955",
+        "snapshot_at": "2018-05-20 04:32:33"
+    },
+    {
+        "id": 177,
+        "cryptocurrency_id": 1,
+        "price_usd": "5437.06228536",
+        "snapshot_at": "2018-05-20 03:32:33"
+    },
+    {
+        "id": 178,
+        "cryptocurrency_id": 1,
+        "price_usd": "5296.79671447",
+        "snapshot_at": "2018-05-20 02:32:33"
+    },
+    {
+        "id": 179,
+        "cryptocurrency_id": 1,
+        "price_usd": "5319.03625937",
+        "snapshot_at": "2018-05-20 01:32:33"
+    },
+    {
+        "id": 180,
+        "cryptocurrency_id": 1,
+        "price_usd": "5325.00780477",
+        "snapshot_at": "2018-05-20 00:32:33"
+    },
+    {
+        "id": 181,
+        "cryptocurrency_id": 1,
+        "price_usd": "5205.16420344",
+        "snapshot_at": "2018-05-19 23:32:33"
+    },
+    {
+        "id": 182,
+        "cryptocurrency_id": 1,
+        "price_usd": "5319.77357048",
+        "snapshot_at": "2018-05-19 22:32:33"
+    },
+    {
+        "id": 183,
+        "cryptocurrency_id": 1,
+        "price_usd": "5096.45079831",
+        "snapshot_at": "2018-05-19 21:32:33"
+    },
+    {
+        "id": 184,
+        "cryptocurrency_id": 1,
+        "price_usd": "4894.47052154",
+        "snapshot_at": "2018-05-19 20:32:33"
+    },
+    {
+        "id": 185,
+        "cryptocurrency_id": 1,
+        "price_usd": "4758.12979299",
+        "snapshot_at": "2018-05-19 19:32:33"
+    },
+    {
+        "id": 186,
+        "cryptocurrency_id": 1,
+        "price_usd": "4829.37166514",
+        "snapshot_at": "2018-05-19 18:32:33"
+    },
+    {
+        "id": 187,
+        "cryptocurrency_id": 1,
+        "price_usd": "4991.28147873",
+        "snapshot_at": "2018-05-19 17:32:33"
+    },
+    {
+        "id": 188,
+        "cryptocurrency_id": 1,
+        "price_usd": "5087.17889603",
+        "snapshot_at": "2018-05-19 16:32:33"
+    },
+    {
+        "id": 189,
+        "cryptocurrency_id": 1,
+        "price_usd": "5338.87083394",
+        "snapshot_at": "2018-05-19 15:32:33"
+    },
+    {
+        "id": 190,
+        "cryptocurrency_id": 1,
+        "price_usd": "5508.35386621",
+        "snapshot_at": "2018-05-19 14:32:33"
+    },
+    {
+        "id": 191,
+        "cryptocurrency_id": 1,
+        "price_usd": "5344.96619137",
+        "snapshot_at": "2018-05-19 13:32:33"
+    },
+    {
+        "id": 192,
+        "cryptocurrency_id": 1,
+        "price_usd": "5591.16990582",
+        "snapshot_at": "2018-05-19 12:32:33"
+    },
+    {
+        "id": 193,
+        "cryptocurrency_id": 1,
+        "price_usd": "5341.34879875",
+        "snapshot_at": "2018-05-19 11:32:33"
+    },
+    {
+        "id": 194,
+        "cryptocurrency_id": 1,
+        "price_usd": "5295.58668492",
+        "snapshot_at": "2018-05-19 10:32:33"
+    },
+    {
+        "id": 195,
+        "cryptocurrency_id": 1,
+        "price_usd": "5379.80103605",
+        "snapshot_at": "2018-05-19 09:32:33"
+    },
+    {
+        "id": 196,
+        "cryptocurrency_id": 1,
+        "price_usd": "5221.41996221",
+        "snapshot_at": "2018-05-19 08:32:33"
+    },
+    {
+        "id": 197,
+        "cryptocurrency_id": 1,
+        "price_usd": "5211.56667501",
+        "snapshot_at": "2018-05-19 07:32:33"
+    },
+    {
+        "id": 198,
+        "cryptocurrency_id": 1,
+        "price_usd": "5192.30012784",
+        "snapshot_at": "2018-05-19 06:32:33"
+    },
+    {
+        "id": 199,
+        "cryptocurrency_id": 1,
+        "price_usd": "5233.85093667",
+        "snapshot_at": "2018-05-19 05:32:33"
+    },
+    {
+        "id": 200,
+        "cryptocurrency_id": 1,
+        "price_usd": "5037.18395432",
+        "snapshot_at": "2018-05-19 04:32:33"
+    },
+    {
+        "id": 201,
+        "cryptocurrency_id": 1,
+        "price_usd": "5187.51416032",
+        "snapshot_at": "2018-05-19 03:32:33"
+    },
+    {
+        "id": 202,
+        "cryptocurrency_id": 1,
+        "price_usd": "5193.07810493",
+        "snapshot_at": "2018-05-19 02:32:33"
+    },
+    {
+        "id": 203,
+        "cryptocurrency_id": 1,
+        "price_usd": "5299.53988624",
+        "snapshot_at": "2018-05-19 01:32:33"
+    },
+    {
+        "id": 204,
+        "cryptocurrency_id": 1,
+        "price_usd": "5166.16821953",
+        "snapshot_at": "2018-05-19 00:32:33"
+    },
+    {
+        "id": 205,
+        "cryptocurrency_id": 1,
+        "price_usd": "4923.54108004",
+        "snapshot_at": "2018-05-18 23:32:33"
+    },
+    {
+        "id": 206,
+        "cryptocurrency_id": 1,
+        "price_usd": "4732.10178958",
+        "snapshot_at": "2018-05-18 22:32:33"
+    },
+    {
+        "id": 207,
+        "cryptocurrency_id": 1,
+        "price_usd": "4522.87860085",
+        "snapshot_at": "2018-05-18 21:32:33"
+    },
+    {
+        "id": 208,
+        "cryptocurrency_id": 1,
+        "price_usd": "4509.66266763",
+        "snapshot_at": "2018-05-18 20:32:33"
+    },
+    {
+        "id": 209,
+        "cryptocurrency_id": 1,
+        "price_usd": "4633.31110505",
+        "snapshot_at": "2018-05-18 19:32:33"
+    },
+    {
+        "id": 210,
+        "cryptocurrency_id": 1,
+        "price_usd": "4853.46884933",
+        "snapshot_at": "2018-05-18 18:32:33"
+    },
+    {
+        "id": 211,
+        "cryptocurrency_id": 1,
+        "price_usd": "4830.47174646",
+        "snapshot_at": "2018-05-18 17:32:33"
+    },
+    {
+        "id": 212,
+        "cryptocurrency_id": 1,
+        "price_usd": "5040.75218241",
+        "snapshot_at": "2018-05-18 16:32:33"
+    },
+    {
+        "id": 213,
+        "cryptocurrency_id": 1,
+        "price_usd": "4790.26131779",
+        "snapshot_at": "2018-05-18 15:32:33"
+    },
+    {
+        "id": 214,
+        "cryptocurrency_id": 1,
+        "price_usd": "4713.96287610",
+        "snapshot_at": "2018-05-18 14:32:33"
+    },
+    {
+        "id": 215,
+        "cryptocurrency_id": 1,
+        "price_usd": "4571.08279766",
+        "snapshot_at": "2018-05-18 13:32:33"
+    },
+    {
+        "id": 216,
+        "cryptocurrency_id": 1,
+        "price_usd": "4664.05964669",
+        "snapshot_at": "2018-05-18 12:32:33"
+    },
+    {
+        "id": 217,
+        "cryptocurrency_id": 1,
+        "price_usd": "4693.86499999",
+        "snapshot_at": "2018-05-18 11:32:33"
+    },
+    {
+        "id": 218,
+        "cryptocurrency_id": 1,
+        "price_usd": "4523.56797606",
+        "snapshot_at": "2018-05-18 10:32:33"
+    },
+    {
+        "id": 219,
+        "cryptocurrency_id": 1,
+        "price_usd": "4510.76217571",
+        "snapshot_at": "2018-05-18 09:32:33"
+    },
+    {
+        "id": 220,
+        "cryptocurrency_id": 1,
+        "price_usd": "4364.22817156",
+        "snapshot_at": "2018-05-18 08:32:33"
+    },
+    {
+        "id": 221,
+        "cryptocurrency_id": 1,
+        "price_usd": "4148.76254610",
+        "snapshot_at": "2018-05-18 07:32:33"
+    },
+    {
+        "id": 222,
+        "cryptocurrency_id": 1,
+        "price_usd": "4240.73240012",
+        "snapshot_at": "2018-05-18 06:32:33"
+    },
+    {
+        "id": 223,
+        "cryptocurrency_id": 1,
+        "price_usd": "4060.03147004",
+        "snapshot_at": "2018-05-18 05:32:33"
+    },
+    {
+        "id": 224,
+        "cryptocurrency_id": 1,
+        "price_usd": "3867.26575679",
+        "snapshot_at": "2018-05-18 04:32:33"
+    },
+    {
+        "id": 225,
+        "cryptocurrency_id": 1,
+        "price_usd": "3712.87146015",
+        "snapshot_at": "2018-05-18 03:32:33"
+    },
+    {
+        "id": 226,
+        "cryptocurrency_id": 1,
+        "price_usd": "3600.93686094",
+        "snapshot_at": "2018-05-18 02:32:33"
+    },
+    {
+        "id": 227,
+        "cryptocurrency_id": 1,
+        "price_usd": "3470.31295339",
+        "snapshot_at": "2018-05-18 01:32:33"
+    },
+    {
+        "id": 228,
+        "cryptocurrency_id": 1,
+        "price_usd": "3568.53616361",
+        "snapshot_at": "2018-05-18 00:32:33"
+    },
+    {
+        "id": 229,
+        "cryptocurrency_id": 1,
+        "price_usd": "3671.45266446",
+        "snapshot_at": "2018-05-17 23:32:33"
+    },
+    {
+        "id": 230,
+        "cryptocurrency_id": 1,
+        "price_usd": "3830.16205499",
+        "snapshot_at": "2018-05-17 22:32:33"
+    },
+    {
+        "id": 231,
+        "cryptocurrency_id": 1,
+        "price_usd": "3660.56678870",
+        "snapshot_at": "2018-05-17 21:32:33"
+    },
+    {
+        "id": 232,
+        "cryptocurrency_id": 1,
+        "price_usd": "3835.43709994",
+        "snapshot_at": "2018-05-17 20:32:33"
+    },
+    {
+        "id": 233,
+        "cryptocurrency_id": 1,
+        "price_usd": "3939.54414794",
+        "snapshot_at": "2018-05-17 19:32:33"
+    },
+    {
+        "id": 234,
+        "cryptocurrency_id": 1,
+        "price_usd": "3841.35021198",
+        "snapshot_at": "2018-05-17 18:32:33"
+    },
+    {
+        "id": 235,
+        "cryptocurrency_id": 1,
+        "price_usd": "3991.06936178",
+        "snapshot_at": "2018-05-17 17:32:33"
+    },
+    {
+        "id": 236,
+        "cryptocurrency_id": 1,
+        "price_usd": "3948.63962040",
+        "snapshot_at": "2018-05-17 16:32:33"
+    },
+    {
+        "id": 237,
+        "cryptocurrency_id": 1,
+        "price_usd": "4106.83607890",
+        "snapshot_at": "2018-05-17 15:32:33"
+    },
+    {
+        "id": 238,
+        "cryptocurrency_id": 1,
+        "price_usd": "3924.20820326",
+        "snapshot_at": "2018-05-17 14:32:33"
+    },
+    {
+        "id": 239,
+        "cryptocurrency_id": 1,
+        "price_usd": "3926.07014811",
+        "snapshot_at": "2018-05-17 13:32:33"
+    },
+    {
+        "id": 240,
+        "cryptocurrency_id": 1,
+        "price_usd": "3978.57493713",
+        "snapshot_at": "2018-05-17 12:32:33"
+    },
+    {
+        "id": 241,
+        "cryptocurrency_id": 1,
+        "price_usd": "4031.48937190",
+        "snapshot_at": "2018-05-17 11:32:33"
+    },
+    {
+        "id": 242,
+        "cryptocurrency_id": 1,
+        "price_usd": "3982.41207327",
+        "snapshot_at": "2018-05-17 10:32:33"
+    },
+    {
+        "id": 243,
+        "cryptocurrency_id": 1,
+        "price_usd": "3811.99854429",
+        "snapshot_at": "2018-05-17 09:32:33"
+    },
+    {
+        "id": 244,
+        "cryptocurrency_id": 1,
+        "price_usd": "3803.51838033",
+        "snapshot_at": "2018-05-17 08:32:33"
+    },
+    {
+        "id": 245,
+        "cryptocurrency_id": 1,
+        "price_usd": "3889.35601540",
+        "snapshot_at": "2018-05-17 07:32:33"
+    },
+    {
+        "id": 246,
+        "cryptocurrency_id": 1,
+        "price_usd": "4076.76505106",
+        "snapshot_at": "2018-05-17 06:32:33"
+    },
+    {
+        "id": 247,
+        "cryptocurrency_id": 1,
+        "price_usd": "3967.06417751",
+        "snapshot_at": "2018-05-17 05:32:33"
+    },
+    {
+        "id": 248,
+        "cryptocurrency_id": 1,
+        "price_usd": "4074.92032819",
+        "snapshot_at": "2018-05-17 04:32:33"
+    },
+    {
+        "id": 249,
+        "cryptocurrency_id": 1,
+        "price_usd": "4032.75015721",
+        "snapshot_at": "2018-05-17 03:32:33"
+    },
+    {
+        "id": 250,
+        "cryptocurrency_id": 1,
+        "price_usd": "4233.50780264",
+        "snapshot_at": "2018-05-17 02:32:33"
+    },
+    {
+        "id": 251,
+        "cryptocurrency_id": 1,
+        "price_usd": "4436.80826359",
+        "snapshot_at": "2018-05-17 01:32:33"
+    },
+    {
+        "id": 252,
+        "cryptocurrency_id": 1,
+        "price_usd": "4525.61253839",
+        "snapshot_at": "2018-05-17 00:32:33"
+    },
+    {
+        "id": 253,
+        "cryptocurrency_id": 1,
+        "price_usd": "4640.69400981",
+        "snapshot_at": "2018-05-16 23:32:33"
+    },
+    {
+        "id": 254,
+        "cryptocurrency_id": 1,
+        "price_usd": "4559.62822365",
+        "snapshot_at": "2018-05-16 22:32:33"
+    },
+    {
+        "id": 255,
+        "cryptocurrency_id": 1,
+        "price_usd": "4444.68615074",
+        "snapshot_at": "2018-05-16 21:32:33"
+    },
+    {
+        "id": 256,
+        "cryptocurrency_id": 1,
+        "price_usd": "4280.53905812",
+        "snapshot_at": "2018-05-16 20:32:33"
+    },
+    {
+        "id": 257,
+        "cryptocurrency_id": 1,
+        "price_usd": "4472.58992415",
+        "snapshot_at": "2018-05-16 19:32:33"
+    },
+    {
+        "id": 258,
+        "cryptocurrency_id": 1,
+        "price_usd": "4639.93883898",
+        "snapshot_at": "2018-05-16 18:32:33"
+    },
+    {
+        "id": 259,
+        "cryptocurrency_id": 1,
+        "price_usd": "4831.39506578",
+        "snapshot_at": "2018-05-16 17:32:33"
+    },
+    {
+        "id": 260,
+        "cryptocurrency_id": 1,
+        "price_usd": "4975.55023915",
+        "snapshot_at": "2018-05-16 16:32:33"
+    },
+    {
+        "id": 261,
+        "cryptocurrency_id": 1,
+        "price_usd": "5046.32138707",
+        "snapshot_at": "2018-05-16 15:32:33"
+    },
+    {
+        "id": 262,
+        "cryptocurrency_id": 1,
+        "price_usd": "4934.41237509",
+        "snapshot_at": "2018-05-16 14:32:33"
+    },
+    {
+        "id": 263,
+        "cryptocurrency_id": 1,
+        "price_usd": "4850.51627176",
+        "snapshot_at": "2018-05-16 13:32:33"
+    },
+    {
+        "id": 264,
+        "cryptocurrency_id": 1,
+        "price_usd": "5040.08343526",
+        "snapshot_at": "2018-05-16 12:32:33"
+    },
+    {
+        "id": 265,
+        "cryptocurrency_id": 1,
+        "price_usd": "5254.82734448",
+        "snapshot_at": "2018-05-16 11:32:33"
+    },
+    {
+        "id": 266,
+        "cryptocurrency_id": 1,
+        "price_usd": "5151.16789724",
+        "snapshot_at": "2018-05-16 10:32:33"
+    },
+    {
+        "id": 267,
+        "cryptocurrency_id": 1,
+        "price_usd": "5048.05938306",
+        "snapshot_at": "2018-05-16 09:32:33"
+    },
+    {
+        "id": 268,
+        "cryptocurrency_id": 1,
+        "price_usd": "5209.01435409",
+        "snapshot_at": "2018-05-16 08:32:33"
+    },
+    {
+        "id": 269,
+        "cryptocurrency_id": 1,
+        "price_usd": "5144.89586702",
+        "snapshot_at": "2018-05-16 07:32:33"
+    },
+    {
+        "id": 270,
+        "cryptocurrency_id": 1,
+        "price_usd": "5277.27373353",
+        "snapshot_at": "2018-05-16 06:32:33"
+    },
+    {
+        "id": 271,
+        "cryptocurrency_id": 1,
+        "price_usd": "5323.04014874",
+        "snapshot_at": "2018-05-16 05:32:33"
+    },
+    {
+        "id": 272,
+        "cryptocurrency_id": 1,
+        "price_usd": "5281.93666493",
+        "snapshot_at": "2018-05-16 04:32:33"
+    },
+    {
+        "id": 273,
+        "cryptocurrency_id": 1,
+        "price_usd": "5193.14973364",
+        "snapshot_at": "2018-05-16 03:32:33"
+    },
+    {
+        "id": 274,
+        "cryptocurrency_id": 1,
+        "price_usd": "5430.17752462",
+        "snapshot_at": "2018-05-16 02:32:33"
+    },
+    {
+        "id": 275,
+        "cryptocurrency_id": 1,
+        "price_usd": "5504.09712076",
+        "snapshot_at": "2018-05-16 01:32:33"
+    },
+    {
+        "id": 276,
+        "cryptocurrency_id": 1,
+        "price_usd": "5382.06910586",
+        "snapshot_at": "2018-05-16 00:32:33"
+    },
+    {
+        "id": 277,
+        "cryptocurrency_id": 1,
+        "price_usd": "5272.83041171",
+        "snapshot_at": "2018-05-15 23:32:33"
+    },
+    {
+        "id": 278,
+        "cryptocurrency_id": 1,
+        "price_usd": "5535.40714340",
+        "snapshot_at": "2018-05-15 22:32:33"
+    },
+    {
+        "id": 279,
+        "cryptocurrency_id": 1,
+        "price_usd": "5482.28349053",
+        "snapshot_at": "2018-05-15 21:32:33"
+    },
+    {
+        "id": 280,
+        "cryptocurrency_id": 1,
+        "price_usd": "5273.84403766",
+        "snapshot_at": "2018-05-15 20:32:33"
+    },
+    {
+        "id": 281,
+        "cryptocurrency_id": 1,
+        "price_usd": "5518.71549284",
+        "snapshot_at": "2018-05-15 19:32:33"
+    },
+    {
+        "id": 282,
+        "cryptocurrency_id": 1,
+        "price_usd": "5712.87601461",
+        "snapshot_at": "2018-05-15 18:32:33"
+    },
+    {
+        "id": 283,
+        "cryptocurrency_id": 1,
+        "price_usd": "5517.29765420",
+        "snapshot_at": "2018-05-15 17:32:33"
+    },
+    {
+        "id": 284,
+        "cryptocurrency_id": 1,
+        "price_usd": "5574.55639702",
+        "snapshot_at": "2018-05-15 16:32:33"
+    },
+    {
+        "id": 285,
+        "cryptocurrency_id": 1,
+        "price_usd": "5476.22163879",
+        "snapshot_at": "2018-05-15 15:32:33"
+    },
+    {
+        "id": 286,
+        "cryptocurrency_id": 1,
+        "price_usd": "5694.95817713",
+        "snapshot_at": "2018-05-15 14:32:33"
+    },
+    {
+        "id": 287,
+        "cryptocurrency_id": 1,
+        "price_usd": "5479.84708392",
+        "snapshot_at": "2018-05-15 13:32:33"
+    },
+    {
+        "id": 288,
+        "cryptocurrency_id": 1,
+        "price_usd": "5212.24248830",
+        "snapshot_at": "2018-05-15 12:32:33"
+    },
+    {
+        "id": 289,
+        "cryptocurrency_id": 1,
+        "price_usd": "5064.71564365",
+        "snapshot_at": "2018-05-15 11:32:33"
+    },
+    {
+        "id": 290,
+        "cryptocurrency_id": 1,
+        "price_usd": "5152.14300986",
+        "snapshot_at": "2018-05-15 10:32:33"
+    },
+    {
+        "id": 291,
+        "cryptocurrency_id": 1,
+        "price_usd": "5037.30068483",
+        "snapshot_at": "2018-05-15 09:32:33"
+    },
+    {
+        "id": 292,
+        "cryptocurrency_id": 1,
+        "price_usd": "5226.11080128",
+        "snapshot_at": "2018-05-15 08:32:33"
+    },
+    {
+        "id": 293,
+        "cryptocurrency_id": 1,
+        "price_usd": "5309.21213172",
+        "snapshot_at": "2018-05-15 07:32:33"
+    },
+    {
+        "id": 294,
+        "cryptocurrency_id": 1,
+        "price_usd": "5524.64368785",
+        "snapshot_at": "2018-05-15 06:32:33"
+    },
+    {
+        "id": 295,
+        "cryptocurrency_id": 1,
+        "price_usd": "5686.51257626",
+        "snapshot_at": "2018-05-15 05:32:33"
+    },
+    {
+        "id": 296,
+        "cryptocurrency_id": 1,
+        "price_usd": "5700.04131900",
+        "snapshot_at": "2018-05-15 04:32:33"
+    },
+    {
+        "id": 297,
+        "cryptocurrency_id": 1,
+        "price_usd": "5885.21219141",
+        "snapshot_at": "2018-05-15 03:32:33"
+    },
+    {
+        "id": 298,
+        "cryptocurrency_id": 1,
+        "price_usd": "5870.89316844",
+        "snapshot_at": "2018-05-15 02:32:33"
+    },
+    {
+        "id": 299,
+        "cryptocurrency_id": 1,
+        "price_usd": "5929.72514204",
+        "snapshot_at": "2018-05-15 01:32:33"
+    },
+    {
+        "id": 300,
+        "cryptocurrency_id": 1,
+        "price_usd": "5722.62790765",
+        "snapshot_at": "2018-05-15 00:32:33"
+    },
+    {
+        "id": 301,
+        "cryptocurrency_id": 1,
+        "price_usd": "5643.73504147",
+        "snapshot_at": "2018-05-14 23:32:33"
+    },
+    {
+        "id": 302,
+        "cryptocurrency_id": 1,
+        "price_usd": "5603.99404880",
+        "snapshot_at": "2018-05-14 22:32:33"
+    },
+    {
+        "id": 303,
+        "cryptocurrency_id": 1,
+        "price_usd": "5755.61673136",
+        "snapshot_at": "2018-05-14 21:32:33"
+    },
+    {
+        "id": 304,
+        "cryptocurrency_id": 1,
+        "price_usd": "5963.90192170",
+        "snapshot_at": "2018-05-14 20:32:33"
+    },
+    {
+        "id": 305,
+        "cryptocurrency_id": 1,
+        "price_usd": "5929.06458908",
+        "snapshot_at": "2018-05-14 19:32:33"
+    },
+    {
+        "id": 306,
+        "cryptocurrency_id": 1,
+        "price_usd": "5718.47964706",
+        "snapshot_at": "2018-05-14 18:32:33"
+    },
+    {
+        "id": 307,
+        "cryptocurrency_id": 1,
+        "price_usd": "5580.16018833",
+        "snapshot_at": "2018-05-14 17:32:33"
+    },
+    {
+        "id": 308,
+        "cryptocurrency_id": 1,
+        "price_usd": "5357.88352316",
+        "snapshot_at": "2018-05-14 16:32:33"
+    },
+    {
+        "id": 309,
+        "cryptocurrency_id": 1,
+        "price_usd": "5165.34157238",
+        "snapshot_at": "2018-05-14 15:32:33"
+    },
+    {
+        "id": 310,
+        "cryptocurrency_id": 1,
+        "price_usd": "5038.48635434",
+        "snapshot_at": "2018-05-14 14:32:33"
+    },
+    {
+        "id": 311,
+        "cryptocurrency_id": 1,
+        "price_usd": "4808.42463652",
+        "snapshot_at": "2018-05-14 13:32:33"
+    },
+    {
+        "id": 312,
+        "cryptocurrency_id": 1,
+        "price_usd": "4973.57032704",
+        "snapshot_at": "2018-05-14 12:32:33"
+    },
+    {
+        "id": 313,
+        "cryptocurrency_id": 1,
+        "price_usd": "5194.64919593",
+        "snapshot_at": "2018-05-14 11:32:33"
+    },
+    {
+        "id": 314,
+        "cryptocurrency_id": 1,
+        "price_usd": "5146.18899277",
+        "snapshot_at": "2018-05-14 10:32:33"
+    },
+    {
+        "id": 315,
+        "cryptocurrency_id": 1,
+        "price_usd": "5083.51057921",
+        "snapshot_at": "2018-05-14 09:32:33"
+    },
+    {
+        "id": 316,
+        "cryptocurrency_id": 1,
+        "price_usd": "5008.67896591",
+        "snapshot_at": "2018-05-14 08:32:33"
+    },
+    {
+        "id": 317,
+        "cryptocurrency_id": 1,
+        "price_usd": "5217.39389799",
+        "snapshot_at": "2018-05-14 07:32:33"
+    },
+    {
+        "id": 318,
+        "cryptocurrency_id": 1,
+        "price_usd": "5102.96900604",
+        "snapshot_at": "2018-05-14 06:32:33"
+    },
+    {
+        "id": 319,
+        "cryptocurrency_id": 1,
+        "price_usd": "4955.73876588",
+        "snapshot_at": "2018-05-14 05:32:33"
+    },
+    {
+        "id": 320,
+        "cryptocurrency_id": 1,
+        "price_usd": "5090.97774502",
+        "snapshot_at": "2018-05-14 04:32:33"
+    },
+    {
+        "id": 321,
+        "cryptocurrency_id": 1,
+        "price_usd": "5223.42078416",
+        "snapshot_at": "2018-05-14 03:32:33"
+    },
+    {
+        "id": 322,
+        "cryptocurrency_id": 1,
+        "price_usd": "5031.23524916",
+        "snapshot_at": "2018-05-14 02:32:33"
+    },
+    {
+        "id": 323,
+        "cryptocurrency_id": 1,
+        "price_usd": "5066.78898217",
+        "snapshot_at": "2018-05-14 01:32:33"
+    },
+    {
+        "id": 324,
+        "cryptocurrency_id": 1,
+        "price_usd": "5315.35692541",
+        "snapshot_at": "2018-05-14 00:32:33"
+    },
+    {
+        "id": 325,
+        "cryptocurrency_id": 1,
+        "price_usd": "5276.61594228",
+        "snapshot_at": "2018-05-13 23:32:33"
+    },
+    {
+        "id": 326,
+        "cryptocurrency_id": 1,
+        "price_usd": "5073.81849311",
+        "snapshot_at": "2018-05-13 22:32:33"
+    },
+    {
+        "id": 327,
+        "cryptocurrency_id": 1,
+        "price_usd": "5270.55290110",
+        "snapshot_at": "2018-05-13 21:32:33"
+    },
+    {
+        "id": 328,
+        "cryptocurrency_id": 1,
+        "price_usd": "5390.00844033",
+        "snapshot_at": "2018-05-13 20:32:33"
+    },
+    {
+        "id": 329,
+        "cryptocurrency_id": 1,
+        "price_usd": "5208.08417266",
+        "snapshot_at": "2018-05-13 19:32:33"
+    },
+    {
+        "id": 330,
+        "cryptocurrency_id": 1,
+        "price_usd": "5117.66687620",
+        "snapshot_at": "2018-05-13 18:32:33"
+    },
+    {
+        "id": 331,
+        "cryptocurrency_id": 1,
+        "price_usd": "5195.53050027",
+        "snapshot_at": "2018-05-13 17:32:33"
+    },
+    {
+        "id": 332,
+        "cryptocurrency_id": 1,
+        "price_usd": "5214.48803293",
+        "snapshot_at": "2018-05-13 16:32:33"
+    },
+    {
+        "id": 333,
+        "cryptocurrency_id": 1,
+        "price_usd": "5158.64432432",
+        "snapshot_at": "2018-05-13 15:32:33"
+    },
+    {
+        "id": 334,
+        "cryptocurrency_id": 1,
+        "price_usd": "5226.65342322",
+        "snapshot_at": "2018-05-13 14:32:33"
+    },
+    {
+        "id": 335,
+        "cryptocurrency_id": 1,
+        "price_usd": "5080.78321239",
+        "snapshot_at": "2018-05-13 13:32:33"
+    },
+    {
+        "id": 336,
+        "cryptocurrency_id": 1,
+        "price_usd": "5000.31232217",
+        "snapshot_at": "2018-05-13 12:32:33"
+    },
+    {
+        "id": 337,
+        "cryptocurrency_id": 1,
+        "price_usd": "4879.82753279",
+        "snapshot_at": "2018-05-13 11:32:33"
+    },
+    {
+        "id": 338,
+        "cryptocurrency_id": 1,
+        "price_usd": "5106.10977646",
+        "snapshot_at": "2018-05-13 10:32:33"
+    },
+    {
+        "id": 339,
+        "cryptocurrency_id": 1,
+        "price_usd": "5094.36328475",
+        "snapshot_at": "2018-05-13 09:32:33"
+    },
+    {
+        "id": 340,
+        "cryptocurrency_id": 1,
+        "price_usd": "5062.61422032",
+        "snapshot_at": "2018-05-13 08:32:33"
+    },
+    {
+        "id": 341,
+        "cryptocurrency_id": 1,
+        "price_usd": "4943.78369807",
+        "snapshot_at": "2018-05-13 07:32:33"
+    },
+    {
+        "id": 342,
+        "cryptocurrency_id": 1,
+        "price_usd": "5115.20271897",
+        "snapshot_at": "2018-05-13 06:32:33"
+    },
+    {
+        "id": 343,
+        "cryptocurrency_id": 1,
+        "price_usd": "4942.75622771",
+        "snapshot_at": "2018-05-13 05:32:33"
+    },
+    {
+        "id": 344,
+        "cryptocurrency_id": 1,
+        "price_usd": "4774.78320563",
+        "snapshot_at": "2018-05-13 04:32:33"
+    },
+    {
+        "id": 345,
+        "cryptocurrency_id": 1,
+        "price_usd": "4596.12745957",
+        "snapshot_at": "2018-05-13 03:32:33"
+    },
+    {
+        "id": 346,
+        "cryptocurrency_id": 1,
+        "price_usd": "4414.14634645",
+        "snapshot_at": "2018-05-13 02:32:33"
+    },
+    {
+        "id": 347,
+        "cryptocurrency_id": 1,
+        "price_usd": "4609.62651554",
+        "snapshot_at": "2018-05-13 01:32:33"
+    },
+    {
+        "id": 348,
+        "cryptocurrency_id": 1,
+        "price_usd": "4437.83759191",
+        "snapshot_at": "2018-05-13 00:32:33"
+    },
+    {
+        "id": 349,
+        "cryptocurrency_id": 1,
+        "price_usd": "4625.71301124",
+        "snapshot_at": "2018-05-12 23:32:33"
+    },
+    {
+        "id": 350,
+        "cryptocurrency_id": 1,
+        "price_usd": "4504.37943430",
+        "snapshot_at": "2018-05-12 22:32:33"
+    },
+    {
+        "id": 351,
+        "cryptocurrency_id": 1,
+        "price_usd": "4697.56212996",
+        "snapshot_at": "2018-05-12 21:32:33"
+    },
+    {
+        "id": 352,
+        "cryptocurrency_id": 1,
+        "price_usd": "4857.16865639",
+        "snapshot_at": "2018-05-12 20:32:33"
+    },
+    {
+        "id": 353,
+        "cryptocurrency_id": 1,
+        "price_usd": "5001.67309157",
+        "snapshot_at": "2018-05-12 19:32:33"
+    },
+    {
+        "id": 354,
+        "cryptocurrency_id": 1,
+        "price_usd": "5073.49648950",
+        "snapshot_at": "2018-05-12 18:32:33"
+    },
+    {
+        "id": 355,
+        "cryptocurrency_id": 1,
+        "price_usd": "4922.61621540",
+        "snapshot_at": "2018-05-12 17:32:33"
+    },
+    {
+        "id": 356,
+        "cryptocurrency_id": 1,
+        "price_usd": "4767.28725594",
+        "snapshot_at": "2018-05-12 16:32:33"
+    },
+    {
+        "id": 357,
+        "cryptocurrency_id": 1,
+        "price_usd": "4834.18104570",
+        "snapshot_at": "2018-05-12 15:32:33"
+    },
+    {
+        "id": 358,
+        "cryptocurrency_id": 1,
+        "price_usd": "4619.77853251",
+        "snapshot_at": "2018-05-12 14:32:33"
+    },
+    {
+        "id": 359,
+        "cryptocurrency_id": 1,
+        "price_usd": "4836.47013586",
+        "snapshot_at": "2018-05-12 13:32:33"
+    },
+    {
+        "id": 360,
+        "cryptocurrency_id": 1,
+        "price_usd": "4837.47318843",
+        "snapshot_at": "2018-05-12 12:32:33"
+    },
+    {
+        "id": 361,
+        "cryptocurrency_id": 1,
+        "price_usd": "4674.73683478",
+        "snapshot_at": "2018-05-12 11:32:33"
+    },
+    {
+        "id": 362,
+        "cryptocurrency_id": 1,
+        "price_usd": "4880.33514746",
+        "snapshot_at": "2018-05-12 10:32:33"
+    },
+    {
+        "id": 363,
+        "cryptocurrency_id": 1,
+        "price_usd": "4980.47740997",
+        "snapshot_at": "2018-05-12 09:32:33"
+    },
+    {
+        "id": 364,
+        "cryptocurrency_id": 1,
+        "price_usd": "4850.41440882",
+        "snapshot_at": "2018-05-12 08:32:33"
+    },
+    {
+        "id": 365,
+        "cryptocurrency_id": 1,
+        "price_usd": "4991.11837303",
+        "snapshot_at": "2018-05-12 07:32:33"
+    },
+    {
+        "id": 366,
+        "cryptocurrency_id": 1,
+        "price_usd": "4785.89565308",
+        "snapshot_at": "2018-05-12 06:32:33"
+    },
+    {
+        "id": 367,
+        "cryptocurrency_id": 1,
+        "price_usd": "4620.15276933",
+        "snapshot_at": "2018-05-12 05:32:33"
+    },
+    {
+        "id": 368,
+        "cryptocurrency_id": 1,
+        "price_usd": "4440.10993250",
+        "snapshot_at": "2018-05-12 04:32:33"
+    },
+    {
+        "id": 369,
+        "cryptocurrency_id": 1,
+        "price_usd": "4439.61958036",
+        "snapshot_at": "2018-05-12 03:32:33"
+    },
+    {
+        "id": 370,
+        "cryptocurrency_id": 1,
+        "price_usd": "4661.13245802",
+        "snapshot_at": "2018-05-12 02:32:33"
+    },
+    {
+        "id": 371,
+        "cryptocurrency_id": 1,
+        "price_usd": "4853.22302115",
+        "snapshot_at": "2018-05-12 01:32:33"
+    },
+    {
+        "id": 372,
+        "cryptocurrency_id": 1,
+        "price_usd": "4720.64766064",
+        "snapshot_at": "2018-05-12 00:32:33"
+    },
+    {
+        "id": 373,
+        "cryptocurrency_id": 1,
+        "price_usd": "4955.75397608",
+        "snapshot_at": "2018-05-11 23:32:33"
+    },
+    {
+        "id": 374,
+        "cryptocurrency_id": 1,
+        "price_usd": "4979.17582587",
+        "snapshot_at": "2018-05-11 22:32:33"
+    },
+    {
+        "id": 375,
+        "cryptocurrency_id": 1,
+        "price_usd": "5097.20383809",
+        "snapshot_at": "2018-05-11 21:32:33"
+    },
+    {
+        "id": 376,
+        "cryptocurrency_id": 1,
+        "price_usd": "5275.28570227",
+        "snapshot_at": "2018-05-11 20:32:33"
+    },
+    {
+        "id": 377,
+        "cryptocurrency_id": 1,
+        "price_usd": "5230.55331615",
+        "snapshot_at": "2018-05-11 19:32:33"
+    },
+    {
+        "id": 378,
+        "cryptocurrency_id": 1,
+        "price_usd": "5151.20689343",
+        "snapshot_at": "2018-05-11 18:32:33"
+    },
+    {
+        "id": 379,
+        "cryptocurrency_id": 1,
+        "price_usd": "5402.73433420",
+        "snapshot_at": "2018-05-11 17:32:33"
+    },
+    {
+        "id": 380,
+        "cryptocurrency_id": 1,
+        "price_usd": "5256.55091285",
+        "snapshot_at": "2018-05-11 16:32:33"
+    },
+    {
+        "id": 381,
+        "cryptocurrency_id": 1,
+        "price_usd": "5110.18462433",
+        "snapshot_at": "2018-05-11 15:32:33"
+    },
+    {
+        "id": 382,
+        "cryptocurrency_id": 1,
+        "price_usd": "4914.38058939",
+        "snapshot_at": "2018-05-11 14:32:33"
+    },
+    {
+        "id": 383,
+        "cryptocurrency_id": 1,
+        "price_usd": "4892.75093192",
+        "snapshot_at": "2018-05-11 13:32:33"
+    },
+    {
+        "id": 384,
+        "cryptocurrency_id": 1,
+        "price_usd": "4895.66316268",
+        "snapshot_at": "2018-05-11 12:32:33"
+    },
+    {
+        "id": 385,
+        "cryptocurrency_id": 1,
+        "price_usd": "4717.94486304",
+        "snapshot_at": "2018-05-11 11:32:33"
+    },
+    {
+        "id": 386,
+        "cryptocurrency_id": 1,
+        "price_usd": "4950.12256973",
+        "snapshot_at": "2018-05-11 10:32:33"
+    },
+    {
+        "id": 387,
+        "cryptocurrency_id": 1,
+        "price_usd": "4984.96895299",
+        "snapshot_at": "2018-05-11 09:32:33"
+    },
+    {
+        "id": 388,
+        "cryptocurrency_id": 1,
+        "price_usd": "4770.66285722",
+        "snapshot_at": "2018-05-11 08:32:33"
+    },
+    {
+        "id": 389,
+        "cryptocurrency_id": 1,
+        "price_usd": "4778.50834483",
+        "snapshot_at": "2018-05-11 07:32:33"
+    },
+    {
+        "id": 390,
+        "cryptocurrency_id": 1,
+        "price_usd": "4604.59868014",
+        "snapshot_at": "2018-05-11 06:32:33"
+    },
+    {
+        "id": 391,
+        "cryptocurrency_id": 1,
+        "price_usd": "4412.06948516",
+        "snapshot_at": "2018-05-11 05:32:33"
+    },
+    {
+        "id": 392,
+        "cryptocurrency_id": 1,
+        "price_usd": "4518.42337229",
+        "snapshot_at": "2018-05-11 04:32:33"
+    },
+    {
+        "id": 393,
+        "cryptocurrency_id": 1,
+        "price_usd": "4546.55046421",
+        "snapshot_at": "2018-05-11 03:32:33"
+    },
+    {
+        "id": 394,
+        "cryptocurrency_id": 1,
+        "price_usd": "4458.80758229",
+        "snapshot_at": "2018-05-11 02:32:33"
+    },
+    {
+        "id": 395,
+        "cryptocurrency_id": 1,
+        "price_usd": "4601.60161015",
+        "snapshot_at": "2018-05-11 01:32:33"
+    },
+    {
+        "id": 396,
+        "cryptocurrency_id": 1,
+        "price_usd": "4692.00043668",
+        "snapshot_at": "2018-05-11 00:32:33"
+    },
+    {
+        "id": 397,
+        "cryptocurrency_id": 1,
+        "price_usd": "4565.58790364",
+        "snapshot_at": "2018-05-10 23:32:33"
+    },
+    {
+        "id": 398,
+        "cryptocurrency_id": 1,
+        "price_usd": "4770.19359418",
+        "snapshot_at": "2018-05-10 22:32:33"
+    },
+    {
+        "id": 399,
+        "cryptocurrency_id": 1,
+        "price_usd": "4850.98079213",
+        "snapshot_at": "2018-05-10 21:32:33"
+    },
+    {
+        "id": 400,
+        "cryptocurrency_id": 1,
+        "price_usd": "4879.31321527",
+        "snapshot_at": "2018-05-10 20:32:33"
+    },
+    {
+        "id": 401,
+        "cryptocurrency_id": 1,
+        "price_usd": "5011.09575821",
+        "snapshot_at": "2018-05-10 19:32:33"
+    },
+    {
+        "id": 402,
+        "cryptocurrency_id": 1,
+        "price_usd": "5229.78274371",
+        "snapshot_at": "2018-05-10 18:32:33"
+    },
+    {
+        "id": 403,
+        "cryptocurrency_id": 1,
+        "price_usd": "5394.60752309",
+        "snapshot_at": "2018-05-10 17:32:33"
+    },
+    {
+        "id": 404,
+        "cryptocurrency_id": 1,
+        "price_usd": "5281.79962711",
+        "snapshot_at": "2018-05-10 16:32:33"
+    },
+    {
+        "id": 405,
+        "cryptocurrency_id": 1,
+        "price_usd": "5038.65900487",
+        "snapshot_at": "2018-05-10 15:32:33"
+    },
+    {
+        "id": 406,
+        "cryptocurrency_id": 1,
+        "price_usd": "4859.42055516",
+        "snapshot_at": "2018-05-10 14:32:33"
+    },
+    {
+        "id": 407,
+        "cryptocurrency_id": 1,
+        "price_usd": "4973.02647552",
+        "snapshot_at": "2018-05-10 13:32:33"
+    },
+    {
+        "id": 408,
+        "cryptocurrency_id": 1,
+        "price_usd": "5215.67122283",
+        "snapshot_at": "2018-05-10 12:32:33"
+    },
+    {
+        "id": 409,
+        "cryptocurrency_id": 1,
+        "price_usd": "5093.65687834",
+        "snapshot_at": "2018-05-10 11:32:33"
+    },
+    {
+        "id": 410,
+        "cryptocurrency_id": 1,
+        "price_usd": "5215.06189203",
+        "snapshot_at": "2018-05-10 10:32:33"
+    },
+    {
+        "id": 411,
+        "cryptocurrency_id": 1,
+        "price_usd": "5361.56168563",
+        "snapshot_at": "2018-05-10 09:32:33"
+    },
+    {
+        "id": 412,
+        "cryptocurrency_id": 1,
+        "price_usd": "5282.23785305",
+        "snapshot_at": "2018-05-10 08:32:33"
+    },
+    {
+        "id": 413,
+        "cryptocurrency_id": 1,
+        "price_usd": "5295.95112928",
+        "snapshot_at": "2018-05-10 07:32:33"
+    },
+    {
+        "id": 414,
+        "cryptocurrency_id": 1,
+        "price_usd": "5551.19356440",
+        "snapshot_at": "2018-05-10 06:32:33"
+    },
+    {
+        "id": 415,
+        "cryptocurrency_id": 1,
+        "price_usd": "5728.96338983",
+        "snapshot_at": "2018-05-10 05:32:33"
+    },
+    {
+        "id": 416,
+        "cryptocurrency_id": 1,
+        "price_usd": "5882.31129136",
+        "snapshot_at": "2018-05-10 04:32:33"
+    },
+    {
+        "id": 417,
+        "cryptocurrency_id": 1,
+        "price_usd": "5904.56063823",
+        "snapshot_at": "2018-05-10 03:32:33"
+    },
+    {
+        "id": 418,
+        "cryptocurrency_id": 1,
+        "price_usd": "5882.83319422",
+        "snapshot_at": "2018-05-10 02:32:33"
+    },
+    {
+        "id": 419,
+        "cryptocurrency_id": 1,
+        "price_usd": "6076.48436326",
+        "snapshot_at": "2018-05-10 01:32:33"
+    },
+    {
+        "id": 420,
+        "cryptocurrency_id": 1,
+        "price_usd": "6204.55209263",
+        "snapshot_at": "2018-05-10 00:32:33"
+    },
+    {
+        "id": 421,
+        "cryptocurrency_id": 1,
+        "price_usd": "6342.88934983",
+        "snapshot_at": "2018-05-09 23:32:33"
+    },
+    {
+        "id": 422,
+        "cryptocurrency_id": 1,
+        "price_usd": "6157.33777911",
+        "snapshot_at": "2018-05-09 22:32:33"
+    },
+    {
+        "id": 423,
+        "cryptocurrency_id": 1,
+        "price_usd": "5900.19557352",
+        "snapshot_at": "2018-05-09 21:32:33"
+    },
+    {
+        "id": 424,
+        "cryptocurrency_id": 1,
+        "price_usd": "6077.50114663",
+        "snapshot_at": "2018-05-09 20:32:33"
+    },
+    {
+        "id": 425,
+        "cryptocurrency_id": 1,
+        "price_usd": "5800.85522803",
+        "snapshot_at": "2018-05-09 19:32:33"
+    },
+    {
+        "id": 426,
+        "cryptocurrency_id": 1,
+        "price_usd": "6002.16541837",
+        "snapshot_at": "2018-05-09 18:32:33"
+    },
+    {
+        "id": 427,
+        "cryptocurrency_id": 1,
+        "price_usd": "5911.13359714",
+        "snapshot_at": "2018-05-09 17:32:33"
+    },
+    {
+        "id": 428,
+        "cryptocurrency_id": 1,
+        "price_usd": "5878.27678705",
+        "snapshot_at": "2018-05-09 16:32:33"
+    },
+    {
+        "id": 429,
+        "cryptocurrency_id": 1,
+        "price_usd": "6051.74061379",
+        "snapshot_at": "2018-05-09 15:32:33"
+    },
+    {
+        "id": 430,
+        "cryptocurrency_id": 1,
+        "price_usd": "6084.09432529",
+        "snapshot_at": "2018-05-09 14:32:33"
+    },
+    {
+        "id": 431,
+        "cryptocurrency_id": 1,
+        "price_usd": "6239.80656888",
+        "snapshot_at": "2018-05-09 13:32:33"
+    },
+    {
+        "id": 432,
+        "cryptocurrency_id": 1,
+        "price_usd": "6234.95610380",
+        "snapshot_at": "2018-05-09 12:32:33"
+    },
+    {
+        "id": 433,
+        "cryptocurrency_id": 1,
+        "price_usd": "6144.56721195",
+        "snapshot_at": "2018-05-09 11:32:33"
+    },
+    {
+        "id": 434,
+        "cryptocurrency_id": 1,
+        "price_usd": "5977.02117832",
+        "snapshot_at": "2018-05-09 10:32:33"
+    },
+    {
+        "id": 435,
+        "cryptocurrency_id": 1,
+        "price_usd": "6003.06839275",
+        "snapshot_at": "2018-05-09 09:32:33"
+    },
+    {
+        "id": 436,
+        "cryptocurrency_id": 1,
+        "price_usd": "5804.38441845",
+        "snapshot_at": "2018-05-09 08:32:33"
+    },
+    {
+        "id": 437,
+        "cryptocurrency_id": 1,
+        "price_usd": "5554.77134282",
+        "snapshot_at": "2018-05-09 07:32:33"
+    },
+    {
+        "id": 438,
+        "cryptocurrency_id": 1,
+        "price_usd": "5545.37730960",
+        "snapshot_at": "2018-05-09 06:32:33"
+    },
+    {
+        "id": 439,
+        "cryptocurrency_id": 1,
+        "price_usd": "5414.60035641",
+        "snapshot_at": "2018-05-09 05:32:33"
+    },
+    {
+        "id": 440,
+        "cryptocurrency_id": 1,
+        "price_usd": "5319.38671217",
+        "snapshot_at": "2018-05-09 04:32:33"
+    },
+    {
+        "id": 441,
+        "cryptocurrency_id": 1,
+        "price_usd": "5138.02062875",
+        "snapshot_at": "2018-05-09 03:32:33"
+    },
+    {
+        "id": 442,
+        "cryptocurrency_id": 1,
+        "price_usd": "5295.53457772",
+        "snapshot_at": "2018-05-09 02:32:33"
+    },
+    {
+        "id": 443,
+        "cryptocurrency_id": 1,
+        "price_usd": "5110.15090465",
+        "snapshot_at": "2018-05-09 01:32:33"
+    },
+    {
+        "id": 444,
+        "cryptocurrency_id": 1,
+        "price_usd": "5250.44126990",
+        "snapshot_at": "2018-05-09 00:32:33"
+    },
+    {
+        "id": 445,
+        "cryptocurrency_id": 1,
+        "price_usd": "5264.34070832",
+        "snapshot_at": "2018-05-08 23:32:33"
+    },
+    {
+        "id": 446,
+        "cryptocurrency_id": 1,
+        "price_usd": "5256.78395977",
+        "snapshot_at": "2018-05-08 22:32:33"
+    },
+    {
+        "id": 447,
+        "cryptocurrency_id": 1,
+        "price_usd": "5169.11500034",
+        "snapshot_at": "2018-05-08 21:32:33"
+    },
+    {
+        "id": 448,
+        "cryptocurrency_id": 1,
+        "price_usd": "5067.76854342",
+        "snapshot_at": "2018-05-08 20:32:33"
+    },
+    {
+        "id": 449,
+        "cryptocurrency_id": 1,
+        "price_usd": "4870.95326014",
+        "snapshot_at": "2018-05-08 19:32:33"
+    },
+    {
+        "id": 450,
+        "cryptocurrency_id": 1,
+        "price_usd": "4882.72850261",
+        "snapshot_at": "2018-05-08 18:32:33"
+    },
+    {
+        "id": 451,
+        "cryptocurrency_id": 1,
+        "price_usd": "4681.71742505",
+        "snapshot_at": "2018-05-08 17:32:33"
+    },
+    {
+        "id": 452,
+        "cryptocurrency_id": 1,
+        "price_usd": "4764.56659665",
+        "snapshot_at": "2018-05-08 16:32:33"
+    },
+    {
+        "id": 453,
+        "cryptocurrency_id": 1,
+        "price_usd": "4545.61138266",
+        "snapshot_at": "2018-05-08 15:32:33"
+    },
+    {
+        "id": 454,
+        "cryptocurrency_id": 1,
+        "price_usd": "4672.12722154",
+        "snapshot_at": "2018-05-08 14:32:33"
+    },
+    {
+        "id": 455,
+        "cryptocurrency_id": 1,
+        "price_usd": "4691.62324443",
+        "snapshot_at": "2018-05-08 13:32:33"
+    },
+    {
+        "id": 456,
+        "cryptocurrency_id": 1,
+        "price_usd": "4889.06721128",
+        "snapshot_at": "2018-05-08 12:32:33"
+    },
+    {
+        "id": 457,
+        "cryptocurrency_id": 1,
+        "price_usd": "4930.38934079",
+        "snapshot_at": "2018-05-08 11:32:33"
+    },
+    {
+        "id": 458,
+        "cryptocurrency_id": 1,
+        "price_usd": "4844.51682801",
+        "snapshot_at": "2018-05-08 10:32:33"
+    },
+    {
+        "id": 459,
+        "cryptocurrency_id": 1,
+        "price_usd": "4924.35452406",
+        "snapshot_at": "2018-05-08 09:32:33"
+    },
+    {
+        "id": 460,
+        "cryptocurrency_id": 1,
+        "price_usd": "4972.82092096",
+        "snapshot_at": "2018-05-08 08:32:33"
+    },
+    {
+        "id": 461,
+        "cryptocurrency_id": 1,
+        "price_usd": "4813.24414220",
+        "snapshot_at": "2018-05-08 07:32:33"
+    },
+    {
+        "id": 462,
+        "cryptocurrency_id": 1,
+        "price_usd": "5023.63917523",
+        "snapshot_at": "2018-05-08 06:32:33"
+    },
+    {
+        "id": 463,
+        "cryptocurrency_id": 1,
+        "price_usd": "5218.44443787",
+        "snapshot_at": "2018-05-08 05:32:33"
+    },
+    {
+        "id": 464,
+        "cryptocurrency_id": 1,
+        "price_usd": "5009.45513818",
+        "snapshot_at": "2018-05-08 04:32:33"
+    },
+    {
+        "id": 465,
+        "cryptocurrency_id": 1,
+        "price_usd": "5222.99286226",
+        "snapshot_at": "2018-05-08 03:32:33"
+    },
+    {
+        "id": 466,
+        "cryptocurrency_id": 1,
+        "price_usd": "5331.91290378",
+        "snapshot_at": "2018-05-08 02:32:33"
+    },
+    {
+        "id": 467,
+        "cryptocurrency_id": 1,
+        "price_usd": "5102.22092277",
+        "snapshot_at": "2018-05-08 01:32:33"
+    },
+    {
+        "id": 468,
+        "cryptocurrency_id": 1,
+        "price_usd": "5162.08760708",
+        "snapshot_at": "2018-05-08 00:32:33"
+    },
+    {
+        "id": 469,
+        "cryptocurrency_id": 1,
+        "price_usd": "5188.42855466",
+        "snapshot_at": "2018-05-07 23:32:33"
+    },
+    {
+        "id": 470,
+        "cryptocurrency_id": 1,
+        "price_usd": "5082.88906458",
+        "snapshot_at": "2018-05-07 22:32:33"
+    },
+    {
+        "id": 471,
+        "cryptocurrency_id": 1,
+        "price_usd": "5003.28053735",
+        "snapshot_at": "2018-05-07 21:32:33"
+    },
+    {
+        "id": 472,
+        "cryptocurrency_id": 1,
+        "price_usd": "4861.16274563",
+        "snapshot_at": "2018-05-07 20:32:33"
+    },
+    {
+        "id": 473,
+        "cryptocurrency_id": 1,
+        "price_usd": "4888.09036071",
+        "snapshot_at": "2018-05-07 19:32:33"
+    },
+    {
+        "id": 474,
+        "cryptocurrency_id": 1,
+        "price_usd": "4950.56998009",
+        "snapshot_at": "2018-05-07 18:32:33"
+    },
+    {
+        "id": 475,
+        "cryptocurrency_id": 1,
+        "price_usd": "4843.71383309",
+        "snapshot_at": "2018-05-07 17:32:33"
+    },
+    {
+        "id": 476,
+        "cryptocurrency_id": 1,
+        "price_usd": "5085.72864305",
+        "snapshot_at": "2018-05-07 16:32:33"
+    },
+    {
+        "id": 477,
+        "cryptocurrency_id": 1,
+        "price_usd": "5057.97971657",
+        "snapshot_at": "2018-05-07 15:32:33"
+    },
+    {
+        "id": 478,
+        "cryptocurrency_id": 1,
+        "price_usd": "5157.62116948",
+        "snapshot_at": "2018-05-07 14:32:33"
+    },
+    {
+        "id": 479,
+        "cryptocurrency_id": 1,
+        "price_usd": "5259.54122034",
+        "snapshot_at": "2018-05-07 13:32:33"
+    },
+    {
+        "id": 480,
+        "cryptocurrency_id": 1,
+        "price_usd": "5247.18277855",
+        "snapshot_at": "2018-05-07 12:32:33"
+    },
+    {
+        "id": 481,
+        "cryptocurrency_id": 1,
+        "price_usd": "5337.52335479",
+        "snapshot_at": "2018-05-07 11:32:33"
+    },
+    {
+        "id": 482,
+        "cryptocurrency_id": 1,
+        "price_usd": "5576.08907849",
+        "snapshot_at": "2018-05-07 10:32:33"
+    },
+    {
+        "id": 483,
+        "cryptocurrency_id": 1,
+        "price_usd": "5470.30350174",
+        "snapshot_at": "2018-05-07 09:32:33"
+    },
+    {
+        "id": 484,
+        "cryptocurrency_id": 1,
+        "price_usd": "5638.05527845",
+        "snapshot_at": "2018-05-07 08:32:33"
+    },
+    {
+        "id": 485,
+        "cryptocurrency_id": 1,
+        "price_usd": "5649.35916284",
+        "snapshot_at": "2018-05-07 07:32:33"
+    },
+    {
+        "id": 486,
+        "cryptocurrency_id": 1,
+        "price_usd": "5529.27363056",
+        "snapshot_at": "2018-05-07 06:32:33"
+    },
+    {
+        "id": 487,
+        "cryptocurrency_id": 1,
+        "price_usd": "5551.84894790",
+        "snapshot_at": "2018-05-07 05:32:33"
+    },
+    {
+        "id": 488,
+        "cryptocurrency_id": 1,
+        "price_usd": "5416.51005239",
+        "snapshot_at": "2018-05-07 04:32:33"
+    },
+    {
+        "id": 489,
+        "cryptocurrency_id": 1,
+        "price_usd": "5503.64125506",
+        "snapshot_at": "2018-05-07 03:32:33"
+    },
+    {
+        "id": 490,
+        "cryptocurrency_id": 1,
+        "price_usd": "5262.76672715",
+        "snapshot_at": "2018-05-07 02:32:33"
+    },
+    {
+        "id": 491,
+        "cryptocurrency_id": 1,
+        "price_usd": "5375.61426558",
+        "snapshot_at": "2018-05-07 01:32:33"
+    },
+    {
+        "id": 492,
+        "cryptocurrency_id": 1,
+        "price_usd": "5225.71285662",
+        "snapshot_at": "2018-05-07 00:32:33"
+    },
+    {
+        "id": 493,
+        "cryptocurrency_id": 1,
+        "price_usd": "5002.23800129",
+        "snapshot_at": "2018-05-06 23:32:33"
+    },
+    {
+        "id": 494,
+        "cryptocurrency_id": 1,
+        "price_usd": "5170.88905590",
+        "snapshot_at": "2018-05-06 22:32:33"
+    },
+    {
+        "id": 495,
+        "cryptocurrency_id": 1,
+        "price_usd": "5058.89997834",
+        "snapshot_at": "2018-05-06 21:32:33"
+    },
+    {
+        "id": 496,
+        "cryptocurrency_id": 1,
+        "price_usd": "5071.12417885",
+        "snapshot_at": "2018-05-06 20:32:33"
+    },
+    {
+        "id": 497,
+        "cryptocurrency_id": 1,
+        "price_usd": "5078.56455093",
+        "snapshot_at": "2018-05-06 19:32:33"
+    },
+    {
+        "id": 498,
+        "cryptocurrency_id": 1,
+        "price_usd": "4849.57170743",
+        "snapshot_at": "2018-05-06 18:32:33"
+    },
+    {
+        "id": 499,
+        "cryptocurrency_id": 1,
+        "price_usd": "4874.12478012",
+        "snapshot_at": "2018-05-06 17:32:33"
+    },
+    {
+        "id": 500,
+        "cryptocurrency_id": 1,
+        "price_usd": "5060.87933798",
+        "snapshot_at": "2018-05-06 16:32:33"
+    },
+    {
+        "id": 501,
+        "cryptocurrency_id": 1,
+        "price_usd": "5156.21317518",
+        "snapshot_at": "2018-05-06 15:32:33"
+    },
+    {
+        "id": 502,
+        "cryptocurrency_id": 1,
+        "price_usd": "5223.82588873",
+        "snapshot_at": "2018-05-06 14:32:33"
+    },
+    {
+        "id": 503,
+        "cryptocurrency_id": 1,
+        "price_usd": "5155.23819020",
+        "snapshot_at": "2018-05-06 13:32:33"
+    },
+    {
+        "id": 504,
+        "cryptocurrency_id": 1,
+        "price_usd": "5040.40198342",
+        "snapshot_at": "2018-05-06 12:32:33"
+    },
+    {
+        "id": 505,
+        "cryptocurrency_id": 1,
+        "price_usd": "5076.20559825",
+        "snapshot_at": "2018-05-06 11:32:33"
+    },
+    {
+        "id": 506,
+        "cryptocurrency_id": 1,
+        "price_usd": "5042.56752734",
+        "snapshot_at": "2018-05-06 10:32:33"
+    },
+    {
+        "id": 507,
+        "cryptocurrency_id": 1,
+        "price_usd": "4851.65789149",
+        "snapshot_at": "2018-05-06 09:32:33"
+    },
+    {
+        "id": 508,
+        "cryptocurrency_id": 1,
+        "price_usd": "5072.61071958",
+        "snapshot_at": "2018-05-06 08:32:33"
+    },
+    {
+        "id": 509,
+        "cryptocurrency_id": 1,
+        "price_usd": "5240.78950431",
+        "snapshot_at": "2018-05-06 07:32:33"
+    },
+    {
+        "id": 510,
+        "cryptocurrency_id": 1,
+        "price_usd": "5147.66674217",
+        "snapshot_at": "2018-05-06 06:32:33"
+    },
+    {
+        "id": 511,
+        "cryptocurrency_id": 1,
+        "price_usd": "5205.99292080",
+        "snapshot_at": "2018-05-06 05:32:33"
+    },
+    {
+        "id": 512,
+        "cryptocurrency_id": 1,
+        "price_usd": "5107.83900356",
+        "snapshot_at": "2018-05-06 04:32:33"
+    },
+    {
+        "id": 513,
+        "cryptocurrency_id": 1,
+        "price_usd": "4935.21404171",
+        "snapshot_at": "2018-05-06 03:32:33"
+    },
+    {
+        "id": 514,
+        "cryptocurrency_id": 1,
+        "price_usd": "4828.03500380",
+        "snapshot_at": "2018-05-06 02:32:33"
+    },
+    {
+        "id": 515,
+        "cryptocurrency_id": 1,
+        "price_usd": "5033.22646569",
+        "snapshot_at": "2018-05-06 01:32:33"
+    },
+    {
+        "id": 516,
+        "cryptocurrency_id": 1,
+        "price_usd": "5212.06257481",
+        "snapshot_at": "2018-05-06 00:32:33"
+    },
+    {
+        "id": 517,
+        "cryptocurrency_id": 1,
+        "price_usd": "5470.46611218",
+        "snapshot_at": "2018-05-05 23:32:33"
+    },
+    {
+        "id": 518,
+        "cryptocurrency_id": 1,
+        "price_usd": "5579.76102524",
+        "snapshot_at": "2018-05-05 22:32:33"
+    },
+    {
+        "id": 519,
+        "cryptocurrency_id": 1,
+        "price_usd": "5398.81735082",
+        "snapshot_at": "2018-05-05 21:32:33"
+    },
+    {
+        "id": 520,
+        "cryptocurrency_id": 1,
+        "price_usd": "5525.55710381",
+        "snapshot_at": "2018-05-05 20:32:33"
+    },
+    {
+        "id": 521,
+        "cryptocurrency_id": 1,
+        "price_usd": "5444.78977445",
+        "snapshot_at": "2018-05-05 19:32:33"
+    },
+    {
+        "id": 522,
+        "cryptocurrency_id": 1,
+        "price_usd": "5636.05806675",
+        "snapshot_at": "2018-05-05 18:32:33"
+    },
+    {
+        "id": 523,
+        "cryptocurrency_id": 1,
+        "price_usd": "5574.77257020",
+        "snapshot_at": "2018-05-05 17:32:33"
+    },
+    {
+        "id": 524,
+        "cryptocurrency_id": 1,
+        "price_usd": "5722.78790639",
+        "snapshot_at": "2018-05-05 16:32:33"
+    },
+    {
+        "id": 525,
+        "cryptocurrency_id": 1,
+        "price_usd": "5990.51308551",
+        "snapshot_at": "2018-05-05 15:32:33"
+    },
+    {
+        "id": 526,
+        "cryptocurrency_id": 1,
+        "price_usd": "6036.89160632",
+        "snapshot_at": "2018-05-05 14:32:33"
+    },
+    {
+        "id": 527,
+        "cryptocurrency_id": 1,
+        "price_usd": "6063.70174721",
+        "snapshot_at": "2018-05-05 13:32:33"
+    },
+    {
+        "id": 528,
+        "cryptocurrency_id": 1,
+        "price_usd": "6053.40474718",
+        "snapshot_at": "2018-05-05 12:32:33"
+    },
+    {
+        "id": 529,
+        "cryptocurrency_id": 1,
+        "price_usd": "5782.16147793",
+        "snapshot_at": "2018-05-05 11:32:33"
+    },
+    {
+        "id": 530,
+        "cryptocurrency_id": 1,
+        "price_usd": "5867.47965404",
+        "snapshot_at": "2018-05-05 10:32:33"
+    },
+    {
+        "id": 531,
+        "cryptocurrency_id": 1,
+        "price_usd": "5842.81431912",
+        "snapshot_at": "2018-05-05 09:32:33"
+    },
+    {
+        "id": 532,
+        "cryptocurrency_id": 1,
+        "price_usd": "5585.28994938",
+        "snapshot_at": "2018-05-05 08:32:33"
+    },
+    {
+        "id": 533,
+        "cryptocurrency_id": 1,
+        "price_usd": "5863.00960130",
+        "snapshot_at": "2018-05-05 07:32:33"
+    },
+    {
+        "id": 534,
+        "cryptocurrency_id": 1,
+        "price_usd": "5698.44350368",
+        "snapshot_at": "2018-05-05 06:32:33"
+    },
+    {
+        "id": 535,
+        "cryptocurrency_id": 1,
+        "price_usd": "5568.69723527",
+        "snapshot_at": "2018-05-05 05:32:33"
+    },
+    {
+        "id": 536,
+        "cryptocurrency_id": 1,
+        "price_usd": "5321.23577751",
+        "snapshot_at": "2018-05-05 04:32:33"
+    },
+    {
+        "id": 537,
+        "cryptocurrency_id": 1,
+        "price_usd": "5371.70034675",
+        "snapshot_at": "2018-05-05 03:32:33"
+    },
+    {
+        "id": 538,
+        "cryptocurrency_id": 1,
+        "price_usd": "5412.36795558",
+        "snapshot_at": "2018-05-05 02:32:33"
+    },
+    {
+        "id": 539,
+        "cryptocurrency_id": 1,
+        "price_usd": "5503.47242183",
+        "snapshot_at": "2018-05-05 01:32:33"
+    },
+    {
+        "id": 540,
+        "cryptocurrency_id": 1,
+        "price_usd": "5370.75783447",
+        "snapshot_at": "2018-05-05 00:32:33"
+    },
+    {
+        "id": 541,
+        "cryptocurrency_id": 1,
+        "price_usd": "5599.04742345",
+        "snapshot_at": "2018-05-04 23:32:33"
+    },
+    {
+        "id": 542,
+        "cryptocurrency_id": 1,
+        "price_usd": "5699.89323115",
+        "snapshot_at": "2018-05-04 22:32:33"
+    },
+    {
+        "id": 543,
+        "cryptocurrency_id": 1,
+        "price_usd": "5960.81609303",
+        "snapshot_at": "2018-05-04 21:32:33"
+    },
+    {
+        "id": 544,
+        "cryptocurrency_id": 1,
+        "price_usd": "5984.66527337",
+        "snapshot_at": "2018-05-04 20:32:33"
+    },
+    {
+        "id": 545,
+        "cryptocurrency_id": 1,
+        "price_usd": "5995.60001551",
+        "snapshot_at": "2018-05-04 19:32:33"
+    },
+    {
+        "id": 546,
+        "cryptocurrency_id": 1,
+        "price_usd": "5701.17917675",
+        "snapshot_at": "2018-05-04 18:32:33"
+    },
+    {
+        "id": 547,
+        "cryptocurrency_id": 1,
+        "price_usd": "5480.18693457",
+        "snapshot_at": "2018-05-04 17:32:33"
+    },
+    {
+        "id": 548,
+        "cryptocurrency_id": 1,
+        "price_usd": "5640.80859682",
+        "snapshot_at": "2018-05-04 16:32:33"
+    },
+    {
+        "id": 549,
+        "cryptocurrency_id": 1,
+        "price_usd": "5877.63710244",
+        "snapshot_at": "2018-05-04 15:32:33"
+    },
+    {
+        "id": 550,
+        "cryptocurrency_id": 1,
+        "price_usd": "5876.57531729",
+        "snapshot_at": "2018-05-04 14:32:33"
+    },
+    {
+        "id": 551,
+        "cryptocurrency_id": 1,
+        "price_usd": "6143.51932070",
+        "snapshot_at": "2018-05-04 13:32:33"
+    },
+    {
+        "id": 552,
+        "cryptocurrency_id": 1,
+        "price_usd": "6254.90481603",
+        "snapshot_at": "2018-05-04 12:32:33"
+    },
+    {
+        "id": 553,
+        "cryptocurrency_id": 1,
+        "price_usd": "6342.80366332",
+        "snapshot_at": "2018-05-04 11:32:33"
+    },
+    {
+        "id": 554,
+        "cryptocurrency_id": 1,
+        "price_usd": "6581.95299408",
+        "snapshot_at": "2018-05-04 10:32:33"
+    },
+    {
+        "id": 555,
+        "cryptocurrency_id": 1,
+        "price_usd": "6731.89859427",
+        "snapshot_at": "2018-05-04 09:32:33"
+    },
+    {
+        "id": 556,
+        "cryptocurrency_id": 1,
+        "price_usd": "6406.58094955",
+        "snapshot_at": "2018-05-04 08:32:33"
+    },
+    {
+        "id": 557,
+        "cryptocurrency_id": 1,
+        "price_usd": "6237.23027044",
+        "snapshot_at": "2018-05-04 07:32:33"
+    },
+    {
+        "id": 558,
+        "cryptocurrency_id": 1,
+        "price_usd": "6215.98288379",
+        "snapshot_at": "2018-05-04 06:32:33"
+    },
+    {
+        "id": 559,
+        "cryptocurrency_id": 1,
+        "price_usd": "6442.58540726",
+        "snapshot_at": "2018-05-04 05:32:33"
+    },
+    {
+        "id": 560,
+        "cryptocurrency_id": 1,
+        "price_usd": "6262.20636361",
+        "snapshot_at": "2018-05-04 04:32:33"
+    },
+    {
+        "id": 561,
+        "cryptocurrency_id": 1,
+        "price_usd": "6498.72032084",
+        "snapshot_at": "2018-05-04 03:32:33"
+    },
+    {
+        "id": 562,
+        "cryptocurrency_id": 1,
+        "price_usd": "6330.54103166",
+        "snapshot_at": "2018-05-04 02:32:33"
+    },
+    {
+        "id": 563,
+        "cryptocurrency_id": 1,
+        "price_usd": "6321.11131330",
+        "snapshot_at": "2018-05-04 01:32:33"
+    },
+    {
+        "id": 564,
+        "cryptocurrency_id": 1,
+        "price_usd": "6131.44555003",
+        "snapshot_at": "2018-05-04 00:32:33"
+    },
+    {
+        "id": 565,
+        "cryptocurrency_id": 1,
+        "price_usd": "5912.68075914",
+        "snapshot_at": "2018-05-03 23:32:33"
+    },
+    {
+        "id": 566,
+        "cryptocurrency_id": 1,
+        "price_usd": "5882.32870807",
+        "snapshot_at": "2018-05-03 22:32:33"
+    },
+    {
+        "id": 567,
+        "cryptocurrency_id": 1,
+        "price_usd": "5926.75583406",
+        "snapshot_at": "2018-05-03 21:32:33"
+    },
+    {
+        "id": 568,
+        "cryptocurrency_id": 1,
+        "price_usd": "5762.70888780",
+        "snapshot_at": "2018-05-03 20:32:33"
+    },
+    {
+        "id": 569,
+        "cryptocurrency_id": 1,
+        "price_usd": "6010.94270006",
+        "snapshot_at": "2018-05-03 19:32:33"
+    },
+    {
+        "id": 570,
+        "cryptocurrency_id": 1,
+        "price_usd": "6182.01878706",
+        "snapshot_at": "2018-05-03 18:32:33"
+    },
+    {
+        "id": 571,
+        "cryptocurrency_id": 1,
+        "price_usd": "6371.19506602",
+        "snapshot_at": "2018-05-03 17:32:33"
+    },
+    {
+        "id": 572,
+        "cryptocurrency_id": 1,
+        "price_usd": "6306.97633990",
+        "snapshot_at": "2018-05-03 16:32:33"
+    },
+    {
+        "id": 573,
+        "cryptocurrency_id": 1,
+        "price_usd": "6319.78223819",
+        "snapshot_at": "2018-05-03 15:32:33"
+    },
+    {
+        "id": 574,
+        "cryptocurrency_id": 1,
+        "price_usd": "6182.51768376",
+        "snapshot_at": "2018-05-03 14:32:33"
+    },
+    {
+        "id": 575,
+        "cryptocurrency_id": 1,
+        "price_usd": "6171.55306231",
+        "snapshot_at": "2018-05-03 13:32:33"
+    },
+    {
+        "id": 576,
+        "cryptocurrency_id": 1,
+        "price_usd": "6159.53743943",
+        "snapshot_at": "2018-05-03 12:32:33"
+    },
+    {
+        "id": 577,
+        "cryptocurrency_id": 1,
+        "price_usd": "6387.15960585",
+        "snapshot_at": "2018-05-03 11:32:33"
+    },
+    {
+        "id": 578,
+        "cryptocurrency_id": 1,
+        "price_usd": "6337.43976806",
+        "snapshot_at": "2018-05-03 10:32:33"
+    },
+    {
+        "id": 579,
+        "cryptocurrency_id": 1,
+        "price_usd": "6445.88298026",
+        "snapshot_at": "2018-05-03 09:32:33"
+    },
+    {
+        "id": 580,
+        "cryptocurrency_id": 1,
+        "price_usd": "6716.58996744",
+        "snapshot_at": "2018-05-03 08:32:33"
+    },
+    {
+        "id": 581,
+        "cryptocurrency_id": 1,
+        "price_usd": "7035.82078898",
+        "snapshot_at": "2018-05-03 07:32:33"
+    },
+    {
+        "id": 582,
+        "cryptocurrency_id": 1,
+        "price_usd": "7110.51701777",
+        "snapshot_at": "2018-05-03 06:32:33"
+    },
+    {
+        "id": 583,
+        "cryptocurrency_id": 1,
+        "price_usd": "6795.72246746",
+        "snapshot_at": "2018-05-03 05:32:33"
+    },
+    {
+        "id": 584,
+        "cryptocurrency_id": 1,
+        "price_usd": "6717.37420907",
+        "snapshot_at": "2018-05-03 04:32:33"
+    },
+    {
+        "id": 585,
+        "cryptocurrency_id": 1,
+        "price_usd": "6804.18274555",
+        "snapshot_at": "2018-05-03 03:32:33"
+    },
+    {
+        "id": 586,
+        "cryptocurrency_id": 1,
+        "price_usd": "6930.55694632",
+        "snapshot_at": "2018-05-03 02:32:33"
+    },
+    {
+        "id": 587,
+        "cryptocurrency_id": 1,
+        "price_usd": "6787.13888089",
+        "snapshot_at": "2018-05-03 01:32:33"
+    },
+    {
+        "id": 588,
+        "cryptocurrency_id": 1,
+        "price_usd": "6977.84335088",
+        "snapshot_at": "2018-05-03 00:32:33"
+    },
+    {
+        "id": 589,
+        "cryptocurrency_id": 1,
+        "price_usd": "6669.95103661",
+        "snapshot_at": "2018-05-02 23:32:33"
+    },
+    {
+        "id": 590,
+        "cryptocurrency_id": 1,
+        "price_usd": "6700.47389033",
+        "snapshot_at": "2018-05-02 22:32:33"
+    },
+    {
+        "id": 591,
+        "cryptocurrency_id": 1,
+        "price_usd": "6435.78440830",
+        "snapshot_at": "2018-05-02 21:32:33"
+    },
+    {
+        "id": 592,
+        "cryptocurrency_id": 1,
+        "price_usd": "6510.91259959",
+        "snapshot_at": "2018-05-02 20:32:33"
+    },
+    {
+        "id": 593,
+        "cryptocurrency_id": 1,
+        "price_usd": "6446.95019662",
+        "snapshot_at": "2018-05-02 19:32:33"
+    },
+    {
+        "id": 594,
+        "cryptocurrency_id": 1,
+        "price_usd": "6415.36197467",
+        "snapshot_at": "2018-05-02 18:32:33"
+    },
+    {
+        "id": 595,
+        "cryptocurrency_id": 1,
+        "price_usd": "6449.87463400",
+        "snapshot_at": "2018-05-02 17:32:33"
+    },
+    {
+        "id": 596,
+        "cryptocurrency_id": 1,
+        "price_usd": "6530.45750486",
+        "snapshot_at": "2018-05-02 16:32:33"
+    },
+    {
+        "id": 597,
+        "cryptocurrency_id": 1,
+        "price_usd": "6215.87265782",
+        "snapshot_at": "2018-05-02 15:32:33"
+    },
+    {
+        "id": 598,
+        "cryptocurrency_id": 1,
+        "price_usd": "5940.95946487",
+        "snapshot_at": "2018-05-02 14:32:33"
+    },
+    {
+        "id": 599,
+        "cryptocurrency_id": 1,
+        "price_usd": "6237.14649434",
+        "snapshot_at": "2018-05-02 13:32:33"
+    },
+    {
+        "id": 600,
+        "cryptocurrency_id": 1,
+        "price_usd": "6102.26716921",
+        "snapshot_at": "2018-05-02 12:32:33"
+    },
+    {
+        "id": 601,
+        "cryptocurrency_id": 1,
+        "price_usd": "6359.45234411",
+        "snapshot_at": "2018-05-02 11:32:33"
+    },
+    {
+        "id": 602,
+        "cryptocurrency_id": 1,
+        "price_usd": "6547.53829794",
+        "snapshot_at": "2018-05-02 10:32:33"
+    },
+    {
+        "id": 603,
+        "cryptocurrency_id": 1,
+        "price_usd": "6707.99558428",
+        "snapshot_at": "2018-05-02 09:32:33"
+    },
+    {
+        "id": 604,
+        "cryptocurrency_id": 1,
+        "price_usd": "6714.52354035",
+        "snapshot_at": "2018-05-02 08:32:33"
+    },
+    {
+        "id": 605,
+        "cryptocurrency_id": 1,
+        "price_usd": "6519.55218824",
+        "snapshot_at": "2018-05-02 07:32:33"
+    },
+    {
+        "id": 606,
+        "cryptocurrency_id": 1,
+        "price_usd": "6308.21868447",
+        "snapshot_at": "2018-05-02 06:32:33"
+    },
+    {
+        "id": 607,
+        "cryptocurrency_id": 1,
+        "price_usd": "6061.39579443",
+        "snapshot_at": "2018-05-02 05:32:33"
+    },
+    {
+        "id": 608,
+        "cryptocurrency_id": 1,
+        "price_usd": "5947.06988534",
+        "snapshot_at": "2018-05-02 04:32:33"
+    },
+    {
+        "id": 609,
+        "cryptocurrency_id": 1,
+        "price_usd": "5832.89933633",
+        "snapshot_at": "2018-05-02 03:32:33"
+    },
+    {
+        "id": 610,
+        "cryptocurrency_id": 1,
+        "price_usd": "5546.07426238",
+        "snapshot_at": "2018-05-02 02:32:33"
+    },
+    {
+        "id": 611,
+        "cryptocurrency_id": 1,
+        "price_usd": "5282.04636727",
+        "snapshot_at": "2018-05-02 01:32:33"
+    },
+    {
+        "id": 612,
+        "cryptocurrency_id": 1,
+        "price_usd": "5276.21337543",
+        "snapshot_at": "2018-05-02 00:32:33"
+    },
+    {
+        "id": 613,
+        "cryptocurrency_id": 1,
+        "price_usd": "5479.94646968",
+        "snapshot_at": "2018-05-01 23:32:33"
+    },
+    {
+        "id": 614,
+        "cryptocurrency_id": 1,
+        "price_usd": "5478.05380709",
+        "snapshot_at": "2018-05-01 22:32:33"
+    },
+    {
+        "id": 615,
+        "cryptocurrency_id": 1,
+        "price_usd": "5481.18087651",
+        "snapshot_at": "2018-05-01 21:32:33"
+    },
+    {
+        "id": 616,
+        "cryptocurrency_id": 1,
+        "price_usd": "5634.40594165",
+        "snapshot_at": "2018-05-01 20:32:33"
+    },
+    {
+        "id": 617,
+        "cryptocurrency_id": 1,
+        "price_usd": "5390.23173730",
+        "snapshot_at": "2018-05-01 19:32:33"
+    },
+    {
+        "id": 618,
+        "cryptocurrency_id": 1,
+        "price_usd": "5330.83068894",
+        "snapshot_at": "2018-05-01 18:32:33"
+    },
+    {
+        "id": 619,
+        "cryptocurrency_id": 1,
+        "price_usd": "5588.27138011",
+        "snapshot_at": "2018-05-01 17:32:33"
+    },
+    {
+        "id": 620,
+        "cryptocurrency_id": 1,
+        "price_usd": "5484.13385587",
+        "snapshot_at": "2018-05-01 16:32:33"
+    },
+    {
+        "id": 621,
+        "cryptocurrency_id": 1,
+        "price_usd": "5673.19598079",
+        "snapshot_at": "2018-05-01 15:32:33"
+    },
+    {
+        "id": 622,
+        "cryptocurrency_id": 1,
+        "price_usd": "5581.75194939",
+        "snapshot_at": "2018-05-01 14:32:33"
+    },
+    {
+        "id": 623,
+        "cryptocurrency_id": 1,
+        "price_usd": "5471.47159031",
+        "snapshot_at": "2018-05-01 13:32:33"
+    },
+    {
+        "id": 624,
+        "cryptocurrency_id": 1,
+        "price_usd": "5324.63149734",
+        "snapshot_at": "2018-05-01 12:32:33"
+    },
+    {
+        "id": 625,
+        "cryptocurrency_id": 1,
+        "price_usd": "5501.53616827",
+        "snapshot_at": "2018-05-01 11:32:33"
+    },
+    {
+        "id": 626,
+        "cryptocurrency_id": 1,
+        "price_usd": "5335.92699712",
+        "snapshot_at": "2018-05-01 10:32:33"
+    },
+    {
+        "id": 627,
+        "cryptocurrency_id": 1,
+        "price_usd": "5264.89184616",
+        "snapshot_at": "2018-05-01 09:32:33"
+    },
+    {
+        "id": 628,
+        "cryptocurrency_id": 1,
+        "price_usd": "5106.24059549",
+        "snapshot_at": "2018-05-01 08:32:33"
+    },
+    {
+        "id": 629,
+        "cryptocurrency_id": 1,
+        "price_usd": "5219.03990936",
+        "snapshot_at": "2018-05-01 07:32:33"
+    },
+    {
+        "id": 630,
+        "cryptocurrency_id": 1,
+        "price_usd": "5447.30468926",
+        "snapshot_at": "2018-05-01 06:32:33"
+    },
+    {
+        "id": 631,
+        "cryptocurrency_id": 1,
+        "price_usd": "5347.37641770",
+        "snapshot_at": "2018-05-01 05:32:33"
+    },
+    {
+        "id": 632,
+        "cryptocurrency_id": 1,
+        "price_usd": "5143.03886853",
+        "snapshot_at": "2018-05-01 04:32:33"
+    },
+    {
+        "id": 633,
+        "cryptocurrency_id": 1,
+        "price_usd": "4987.83205104",
+        "snapshot_at": "2018-05-01 03:32:33"
+    },
+    {
+        "id": 634,
+        "cryptocurrency_id": 1,
+        "price_usd": "5113.52524186",
+        "snapshot_at": "2018-05-01 02:32:33"
+    },
+    {
+        "id": 635,
+        "cryptocurrency_id": 1,
+        "price_usd": "5264.96779852",
+        "snapshot_at": "2018-05-01 01:32:33"
+    },
+    {
+        "id": 636,
+        "cryptocurrency_id": 1,
+        "price_usd": "5217.77764838",
+        "snapshot_at": "2018-05-01 00:32:33"
+    },
+    {
+        "id": 637,
+        "cryptocurrency_id": 1,
+        "price_usd": "5096.52900145",
+        "snapshot_at": "2018-04-30 23:32:33"
+    },
+    {
+        "id": 638,
+        "cryptocurrency_id": 1,
+        "price_usd": "5028.43988269",
+        "snapshot_at": "2018-04-30 22:32:33"
+    },
+    {
+        "id": 639,
+        "cryptocurrency_id": 1,
+        "price_usd": "4829.11419586",
+        "snapshot_at": "2018-04-30 21:32:33"
+    },
+    {
+        "id": 640,
+        "cryptocurrency_id": 1,
+        "price_usd": "5061.81713907",
+        "snapshot_at": "2018-04-30 20:32:33"
+    },
+    {
+        "id": 641,
+        "cryptocurrency_id": 1,
+        "price_usd": "5184.61528201",
+        "snapshot_at": "2018-04-30 19:32:33"
+    },
+    {
+        "id": 642,
+        "cryptocurrency_id": 1,
+        "price_usd": "4999.41088078",
+        "snapshot_at": "2018-04-30 18:32:33"
+    },
+    {
+        "id": 643,
+        "cryptocurrency_id": 1,
+        "price_usd": "4890.63243456",
+        "snapshot_at": "2018-04-30 17:32:33"
+    },
+    {
+        "id": 644,
+        "cryptocurrency_id": 1,
+        "price_usd": "4891.50570329",
+        "snapshot_at": "2018-04-30 16:32:33"
+    },
+    {
+        "id": 645,
+        "cryptocurrency_id": 1,
+        "price_usd": "4810.65704474",
+        "snapshot_at": "2018-04-30 15:32:33"
+    },
+    {
+        "id": 646,
+        "cryptocurrency_id": 1,
+        "price_usd": "4762.59440489",
+        "snapshot_at": "2018-04-30 14:32:33"
+    },
+    {
+        "id": 647,
+        "cryptocurrency_id": 1,
+        "price_usd": "4726.58618698",
+        "snapshot_at": "2018-04-30 13:32:33"
+    },
+    {
+        "id": 648,
+        "cryptocurrency_id": 1,
+        "price_usd": "4961.72232613",
+        "snapshot_at": "2018-04-30 12:32:33"
+    },
+    {
+        "id": 649,
+        "cryptocurrency_id": 1,
+        "price_usd": "5137.08223454",
+        "snapshot_at": "2018-04-30 11:32:33"
+    },
+    {
+        "id": 650,
+        "cryptocurrency_id": 1,
+        "price_usd": "5325.50970965",
+        "snapshot_at": "2018-04-30 10:32:33"
+    },
+    {
+        "id": 651,
+        "cryptocurrency_id": 1,
+        "price_usd": "5134.40433226",
+        "snapshot_at": "2018-04-30 09:32:33"
+    },
+    {
+        "id": 652,
+        "cryptocurrency_id": 1,
+        "price_usd": "5151.90366525",
+        "snapshot_at": "2018-04-30 08:32:33"
+    },
+    {
+        "id": 653,
+        "cryptocurrency_id": 1,
+        "price_usd": "5077.67336099",
+        "snapshot_at": "2018-04-30 07:32:33"
+    },
+    {
+        "id": 654,
+        "cryptocurrency_id": 1,
+        "price_usd": "5142.74005750",
+        "snapshot_at": "2018-04-30 06:32:33"
+    },
+    {
+        "id": 655,
+        "cryptocurrency_id": 1,
+        "price_usd": "5166.72833661",
+        "snapshot_at": "2018-04-30 05:32:33"
+    },
+    {
+        "id": 656,
+        "cryptocurrency_id": 1,
+        "price_usd": "5269.13305110",
+        "snapshot_at": "2018-04-30 04:32:33"
+    },
+    {
+        "id": 657,
+        "cryptocurrency_id": 1,
+        "price_usd": "5378.78133430",
+        "snapshot_at": "2018-04-30 03:32:33"
+    },
+    {
+        "id": 658,
+        "cryptocurrency_id": 1,
+        "price_usd": "5195.06212239",
+        "snapshot_at": "2018-04-30 02:32:33"
+    },
+    {
+        "id": 659,
+        "cryptocurrency_id": 1,
+        "price_usd": "5276.43227429",
+        "snapshot_at": "2018-04-30 01:32:33"
+    },
+    {
+        "id": 660,
+        "cryptocurrency_id": 1,
+        "price_usd": "5180.09342613",
+        "snapshot_at": "2018-04-30 00:32:33"
+    },
+    {
+        "id": 661,
+        "cryptocurrency_id": 1,
+        "price_usd": "5008.69807180",
+        "snapshot_at": "2018-04-29 23:32:33"
+    },
+    {
+        "id": 662,
+        "cryptocurrency_id": 1,
+        "price_usd": "4947.76128435",
+        "snapshot_at": "2018-04-29 22:32:33"
+    },
+    {
+        "id": 663,
+        "cryptocurrency_id": 1,
+        "price_usd": "5019.48759200",
+        "snapshot_at": "2018-04-29 21:32:33"
+    },
+    {
+        "id": 664,
+        "cryptocurrency_id": 1,
+        "price_usd": "5000.40512998",
+        "snapshot_at": "2018-04-29 20:32:33"
+    },
+    {
+        "id": 665,
+        "cryptocurrency_id": 1,
+        "price_usd": "4865.79980915",
+        "snapshot_at": "2018-04-29 19:32:33"
+    },
+    {
+        "id": 666,
+        "cryptocurrency_id": 1,
+        "price_usd": "4711.16554918",
+        "snapshot_at": "2018-04-29 18:32:33"
+    },
+    {
+        "id": 667,
+        "cryptocurrency_id": 1,
+        "price_usd": "4711.38536384",
+        "snapshot_at": "2018-04-29 17:32:33"
+    },
+    {
+        "id": 668,
+        "cryptocurrency_id": 1,
+        "price_usd": "4903.92534839",
+        "snapshot_at": "2018-04-29 16:32:33"
+    },
+    {
+        "id": 669,
+        "cryptocurrency_id": 1,
+        "price_usd": "4679.50435287",
+        "snapshot_at": "2018-04-29 15:32:33"
+    },
+    {
+        "id": 670,
+        "cryptocurrency_id": 1,
+        "price_usd": "4783.14347351",
+        "snapshot_at": "2018-04-29 14:32:33"
+    },
+    {
+        "id": 671,
+        "cryptocurrency_id": 1,
+        "price_usd": "4721.72099735",
+        "snapshot_at": "2018-04-29 13:32:33"
+    },
+    {
+        "id": 672,
+        "cryptocurrency_id": 1,
+        "price_usd": "4569.87655872",
+        "snapshot_at": "2018-04-29 12:32:33"
+    },
+    {
+        "id": 673,
+        "cryptocurrency_id": 1,
+        "price_usd": "4462.67662879",
+        "snapshot_at": "2018-04-29 11:32:33"
+    },
+    {
+        "id": 674,
+        "cryptocurrency_id": 1,
+        "price_usd": "4465.83058469",
+        "snapshot_at": "2018-04-29 10:32:33"
+    },
+    {
+        "id": 675,
+        "cryptocurrency_id": 1,
+        "price_usd": "4573.23216118",
+        "snapshot_at": "2018-04-29 09:32:33"
+    },
+    {
+        "id": 676,
+        "cryptocurrency_id": 1,
+        "price_usd": "4662.99368424",
+        "snapshot_at": "2018-04-29 08:32:33"
+    },
+    {
+        "id": 677,
+        "cryptocurrency_id": 1,
+        "price_usd": "4752.72619756",
+        "snapshot_at": "2018-04-29 07:32:33"
+    },
+    {
+        "id": 678,
+        "cryptocurrency_id": 1,
+        "price_usd": "4621.62545886",
+        "snapshot_at": "2018-04-29 06:32:33"
+    },
+    {
+        "id": 679,
+        "cryptocurrency_id": 1,
+        "price_usd": "4655.22271260",
+        "snapshot_at": "2018-04-29 05:32:33"
+    },
+    {
+        "id": 680,
+        "cryptocurrency_id": 1,
+        "price_usd": "4453.55347577",
+        "snapshot_at": "2018-04-29 04:32:33"
+    },
+    {
+        "id": 681,
+        "cryptocurrency_id": 1,
+        "price_usd": "4283.82439965",
+        "snapshot_at": "2018-04-29 03:32:33"
+    },
+    {
+        "id": 682,
+        "cryptocurrency_id": 1,
+        "price_usd": "4293.85893063",
+        "snapshot_at": "2018-04-29 02:32:33"
+    },
+    {
+        "id": 683,
+        "cryptocurrency_id": 1,
+        "price_usd": "4382.17759404",
+        "snapshot_at": "2018-04-29 01:32:33"
+    },
+    {
+        "id": 684,
+        "cryptocurrency_id": 1,
+        "price_usd": "4230.31166795",
+        "snapshot_at": "2018-04-29 00:32:33"
+    },
+    {
+        "id": 685,
+        "cryptocurrency_id": 1,
+        "price_usd": "4107.43430818",
+        "snapshot_at": "2018-04-28 23:32:33"
+    },
+    {
+        "id": 686,
+        "cryptocurrency_id": 1,
+        "price_usd": "4281.39226362",
+        "snapshot_at": "2018-04-28 22:32:33"
+    },
+    {
+        "id": 687,
+        "cryptocurrency_id": 1,
+        "price_usd": "4082.28377213",
+        "snapshot_at": "2018-04-28 21:32:33"
+    },
+    {
+        "id": 688,
+        "cryptocurrency_id": 1,
+        "price_usd": "3996.81832229",
+        "snapshot_at": "2018-04-28 20:32:33"
+    },
+    {
+        "id": 689,
+        "cryptocurrency_id": 1,
+        "price_usd": "3901.03086106",
+        "snapshot_at": "2018-04-28 19:32:33"
+    },
+    {
+        "id": 690,
+        "cryptocurrency_id": 1,
+        "price_usd": "3976.87393221",
+        "snapshot_at": "2018-04-28 18:32:33"
+    },
+    {
+        "id": 691,
+        "cryptocurrency_id": 1,
+        "price_usd": "4039.57261447",
+        "snapshot_at": "2018-04-28 17:32:33"
+    },
+    {
+        "id": 692,
+        "cryptocurrency_id": 1,
+        "price_usd": "3917.83409514",
+        "snapshot_at": "2018-04-28 16:32:33"
+    },
+    {
+        "id": 693,
+        "cryptocurrency_id": 1,
+        "price_usd": "4111.58368349",
+        "snapshot_at": "2018-04-28 15:32:33"
+    },
+    {
+        "id": 694,
+        "cryptocurrency_id": 1,
+        "price_usd": "4305.56191131",
+        "snapshot_at": "2018-04-28 14:32:33"
+    },
+    {
+        "id": 695,
+        "cryptocurrency_id": 1,
+        "price_usd": "4288.38353997",
+        "snapshot_at": "2018-04-28 13:32:33"
+    },
+    {
+        "id": 696,
+        "cryptocurrency_id": 1,
+        "price_usd": "4139.27759025",
+        "snapshot_at": "2018-04-28 12:32:33"
+    },
+    {
+        "id": 697,
+        "cryptocurrency_id": 1,
+        "price_usd": "4098.45744023",
+        "snapshot_at": "2018-04-28 11:32:33"
+    },
+    {
+        "id": 698,
+        "cryptocurrency_id": 1,
+        "price_usd": "4093.09739621",
+        "snapshot_at": "2018-04-28 10:32:33"
+    },
+    {
+        "id": 699,
+        "cryptocurrency_id": 1,
+        "price_usd": "4047.57127848",
+        "snapshot_at": "2018-04-28 09:32:33"
+    },
+    {
+        "id": 700,
+        "cryptocurrency_id": 1,
+        "price_usd": "4068.86357095",
+        "snapshot_at": "2018-04-28 08:32:33"
+    },
+    {
+        "id": 701,
+        "cryptocurrency_id": 1,
+        "price_usd": "4141.30993679",
+        "snapshot_at": "2018-04-28 07:32:33"
+    },
+    {
+        "id": 702,
+        "cryptocurrency_id": 1,
+        "price_usd": "4052.51465847",
+        "snapshot_at": "2018-04-28 06:32:33"
+    },
+    {
+        "id": 703,
+        "cryptocurrency_id": 1,
+        "price_usd": "3940.77864702",
+        "snapshot_at": "2018-04-28 05:32:33"
+    },
+    {
+        "id": 704,
+        "cryptocurrency_id": 1,
+        "price_usd": "3937.07538366",
+        "snapshot_at": "2018-04-28 04:32:33"
+    },
+    {
+        "id": 705,
+        "cryptocurrency_id": 1,
+        "price_usd": "3842.16213789",
+        "snapshot_at": "2018-04-28 03:32:33"
+    },
+    {
+        "id": 706,
+        "cryptocurrency_id": 1,
+        "price_usd": "3974.91804885",
+        "snapshot_at": "2018-04-28 02:32:33"
+    },
+    {
+        "id": 707,
+        "cryptocurrency_id": 1,
+        "price_usd": "4171.82664251",
+        "snapshot_at": "2018-04-28 01:32:33"
+    },
+    {
+        "id": 708,
+        "cryptocurrency_id": 1,
+        "price_usd": "4040.78716565",
+        "snapshot_at": "2018-04-28 00:32:33"
+    },
+    {
+        "id": 709,
+        "cryptocurrency_id": 1,
+        "price_usd": "4228.99350352",
+        "snapshot_at": "2018-04-27 23:32:33"
+    },
+    {
+        "id": 710,
+        "cryptocurrency_id": 1,
+        "price_usd": "4084.05100066",
+        "snapshot_at": "2018-04-27 22:32:33"
+    },
+    {
+        "id": 711,
+        "cryptocurrency_id": 1,
+        "price_usd": "3955.81746177",
+        "snapshot_at": "2018-04-27 21:32:33"
+    },
+    {
+        "id": 712,
+        "cryptocurrency_id": 1,
+        "price_usd": "3877.85983963",
+        "snapshot_at": "2018-04-27 20:32:33"
+    },
+    {
+        "id": 713,
+        "cryptocurrency_id": 1,
+        "price_usd": "4054.39974156",
+        "snapshot_at": "2018-04-27 19:32:33"
+    },
+    {
+        "id": 714,
+        "cryptocurrency_id": 1,
+        "price_usd": "4019.58578907",
+        "snapshot_at": "2018-04-27 18:32:33"
+    },
+    {
+        "id": 715,
+        "cryptocurrency_id": 1,
+        "price_usd": "4158.43828226",
+        "snapshot_at": "2018-04-27 17:32:33"
+    },
+    {
+        "id": 716,
+        "cryptocurrency_id": 1,
+        "price_usd": "4332.75292883",
+        "snapshot_at": "2018-04-27 16:32:33"
+    },
+    {
+        "id": 717,
+        "cryptocurrency_id": 1,
+        "price_usd": "4196.06446689",
+        "snapshot_at": "2018-04-27 15:32:33"
+    },
+    {
+        "id": 718,
+        "cryptocurrency_id": 1,
+        "price_usd": "4147.14887463",
+        "snapshot_at": "2018-04-27 14:32:33"
+    },
+    {
+        "id": 719,
+        "cryptocurrency_id": 1,
+        "price_usd": "4080.72478919",
+        "snapshot_at": "2018-04-27 13:32:33"
+    },
+    {
+        "id": 720,
+        "cryptocurrency_id": 1,
+        "price_usd": "4071.02502483",
+        "snapshot_at": "2018-04-27 12:32:33"
+    },
+    {
+        "id": 721,
+        "cryptocurrency_id": 1,
+        "price_usd": "4046.49729877",
+        "snapshot_at": "2018-04-27 11:32:33"
+    },
+    {
+        "id": 722,
+        "cryptocurrency_id": 1,
+        "price_usd": "4147.50337920",
+        "snapshot_at": "2018-04-27 10:32:33"
+    },
+    {
+        "id": 723,
+        "cryptocurrency_id": 1,
+        "price_usd": "4130.15966126",
+        "snapshot_at": "2018-04-27 09:32:33"
+    },
+    {
+        "id": 724,
+        "cryptocurrency_id": 1,
+        "price_usd": "3970.94622332",
+        "snapshot_at": "2018-04-27 08:32:33"
+    },
+    {
+        "id": 725,
+        "cryptocurrency_id": 1,
+        "price_usd": "4110.98724775",
+        "snapshot_at": "2018-04-27 07:32:33"
+    },
+    {
+        "id": 726,
+        "cryptocurrency_id": 1,
+        "price_usd": "3924.91655705",
+        "snapshot_at": "2018-04-27 06:32:33"
+    },
+    {
+        "id": 727,
+        "cryptocurrency_id": 1,
+        "price_usd": "3763.04141735",
+        "snapshot_at": "2018-04-27 05:32:33"
+    },
+    {
+        "id": 728,
+        "cryptocurrency_id": 1,
+        "price_usd": "3893.80159612",
+        "snapshot_at": "2018-04-27 04:32:33"
+    },
+    {
+        "id": 729,
+        "cryptocurrency_id": 1,
+        "price_usd": "4037.14421391",
+        "snapshot_at": "2018-04-27 03:32:33"
+    },
+    {
+        "id": 730,
+        "cryptocurrency_id": 1,
+        "price_usd": "4075.96511021",
+        "snapshot_at": "2018-04-27 02:32:33"
+    },
+    {
+        "id": 731,
+        "cryptocurrency_id": 1,
+        "price_usd": "4010.68425852",
+        "snapshot_at": "2018-04-27 01:32:33"
+    },
+    {
+        "id": 732,
+        "cryptocurrency_id": 1,
+        "price_usd": "4187.93349457",
+        "snapshot_at": "2018-04-27 00:32:33"
+    },
+    {
+        "id": 733,
+        "cryptocurrency_id": 1,
+        "price_usd": "4237.47340063",
+        "snapshot_at": "2018-04-26 23:32:33"
+    },
+    {
+        "id": 734,
+        "cryptocurrency_id": 1,
+        "price_usd": "4446.90856645",
+        "snapshot_at": "2018-04-26 22:32:33"
+    },
+    {
+        "id": 735,
+        "cryptocurrency_id": 1,
+        "price_usd": "4290.82670536",
+        "snapshot_at": "2018-04-26 21:32:33"
+    },
+    {
+        "id": 736,
+        "cryptocurrency_id": 1,
+        "price_usd": "4158.12557867",
+        "snapshot_at": "2018-04-26 20:32:33"
+    },
+    {
+        "id": 737,
+        "cryptocurrency_id": 1,
+        "price_usd": "4172.36458322",
+        "snapshot_at": "2018-04-26 19:32:33"
+    },
+    {
+        "id": 738,
+        "cryptocurrency_id": 1,
+        "price_usd": "4044.69098424",
+        "snapshot_at": "2018-04-26 18:32:33"
+    },
+    {
+        "id": 739,
+        "cryptocurrency_id": 1,
+        "price_usd": "4062.45794781",
+        "snapshot_at": "2018-04-26 17:32:33"
+    },
+    {
+        "id": 740,
+        "cryptocurrency_id": 1,
+        "price_usd": "4005.76448609",
+        "snapshot_at": "2018-04-26 16:32:33"
+    },
+    {
+        "id": 741,
+        "cryptocurrency_id": 1,
+        "price_usd": "4100.31769060",
+        "snapshot_at": "2018-04-26 15:32:33"
+    },
+    {
+        "id": 742,
+        "cryptocurrency_id": 1,
+        "price_usd": "4292.72936728",
+        "snapshot_at": "2018-04-26 14:32:33"
+    },
+    {
+        "id": 743,
+        "cryptocurrency_id": 1,
+        "price_usd": "4346.42767947",
+        "snapshot_at": "2018-04-26 13:32:33"
+    },
+    {
+        "id": 744,
+        "cryptocurrency_id": 1,
+        "price_usd": "4467.22626332",
+        "snapshot_at": "2018-04-26 12:32:33"
+    },
+    {
+        "id": 745,
+        "cryptocurrency_id": 1,
+        "price_usd": "4665.68326451",
+        "snapshot_at": "2018-04-26 11:32:33"
+    },
+    {
+        "id": 746,
+        "cryptocurrency_id": 1,
+        "price_usd": "4868.33407324",
+        "snapshot_at": "2018-04-26 10:32:33"
+    },
+    {
+        "id": 747,
+        "cryptocurrency_id": 1,
+        "price_usd": "4917.01345775",
+        "snapshot_at": "2018-04-26 09:32:33"
+    },
+    {
+        "id": 748,
+        "cryptocurrency_id": 1,
+        "price_usd": "5072.85391125",
+        "snapshot_at": "2018-04-26 08:32:33"
+    },
+    {
+        "id": 749,
+        "cryptocurrency_id": 1,
+        "price_usd": "5039.50383402",
+        "snapshot_at": "2018-04-26 07:32:33"
+    },
+    {
+        "id": 750,
+        "cryptocurrency_id": 1,
+        "price_usd": "5121.19202149",
+        "snapshot_at": "2018-04-26 06:32:33"
+    },
+    {
+        "id": 751,
+        "cryptocurrency_id": 1,
+        "price_usd": "5185.91467703",
+        "snapshot_at": "2018-04-26 05:32:33"
+    },
+    {
+        "id": 752,
+        "cryptocurrency_id": 1,
+        "price_usd": "5131.19791063",
+        "snapshot_at": "2018-04-26 04:32:33"
+    },
+    {
+        "id": 753,
+        "cryptocurrency_id": 1,
+        "price_usd": "5228.84193270",
+        "snapshot_at": "2018-04-26 03:32:33"
+    },
+    {
+        "id": 754,
+        "cryptocurrency_id": 1,
+        "price_usd": "5161.89464654",
+        "snapshot_at": "2018-04-26 02:32:33"
+    },
+    {
+        "id": 755,
+        "cryptocurrency_id": 1,
+        "price_usd": "5234.43941997",
+        "snapshot_at": "2018-04-26 01:32:33"
+    },
+    {
+        "id": 756,
+        "cryptocurrency_id": 1,
+        "price_usd": "5253.43814822",
+        "snapshot_at": "2018-04-26 00:32:33"
+    },
+    {
+        "id": 757,
+        "cryptocurrency_id": 1,
+        "price_usd": "5111.35690120",
+        "snapshot_at": "2018-04-25 23:32:33"
+    },
+    {
+        "id": 758,
+        "cryptocurrency_id": 1,
+        "price_usd": "4960.94466072",
+        "snapshot_at": "2018-04-25 22:32:33"
+    },
+    {
+        "id": 759,
+        "cryptocurrency_id": 1,
+        "price_usd": "4876.65506457",
+        "snapshot_at": "2018-04-25 21:32:33"
+    },
+    {
+        "id": 760,
+        "cryptocurrency_id": 1,
+        "price_usd": "4980.16699903",
+        "snapshot_at": "2018-04-25 20:32:33"
+    },
+    {
+        "id": 761,
+        "cryptocurrency_id": 1,
+        "price_usd": "5109.71810822",
+        "snapshot_at": "2018-04-25 19:32:33"
+    },
+    {
+        "id": 762,
+        "cryptocurrency_id": 1,
+        "price_usd": "5322.22277374",
+        "snapshot_at": "2018-04-25 18:32:33"
+    },
+    {
+        "id": 763,
+        "cryptocurrency_id": 1,
+        "price_usd": "5086.80519298",
+        "snapshot_at": "2018-04-25 17:32:33"
+    },
+    {
+        "id": 764,
+        "cryptocurrency_id": 1,
+        "price_usd": "4946.31880875",
+        "snapshot_at": "2018-04-25 16:32:33"
+    },
+    {
+        "id": 765,
+        "cryptocurrency_id": 1,
+        "price_usd": "5123.28561413",
+        "snapshot_at": "2018-04-25 15:32:33"
+    },
+    {
+        "id": 766,
+        "cryptocurrency_id": 1,
+        "price_usd": "5249.93733797",
+        "snapshot_at": "2018-04-25 14:32:33"
+    },
+    {
+        "id": 767,
+        "cryptocurrency_id": 1,
+        "price_usd": "5307.74037048",
+        "snapshot_at": "2018-04-25 13:32:33"
+    },
+    {
+        "id": 768,
+        "cryptocurrency_id": 1,
+        "price_usd": "5195.77277552",
+        "snapshot_at": "2018-04-25 12:32:33"
+    },
+    {
+        "id": 769,
+        "cryptocurrency_id": 1,
+        "price_usd": "5169.12756405",
+        "snapshot_at": "2018-04-25 11:32:33"
+    },
+    {
+        "id": 770,
+        "cryptocurrency_id": 1,
+        "price_usd": "5102.50816179",
+        "snapshot_at": "2018-04-25 10:32:33"
+    },
+    {
+        "id": 771,
+        "cryptocurrency_id": 1,
+        "price_usd": "5263.25257938",
+        "snapshot_at": "2018-04-25 09:32:33"
+    },
+    {
+        "id": 772,
+        "cryptocurrency_id": 1,
+        "price_usd": "5028.94717230",
+        "snapshot_at": "2018-04-25 08:32:33"
+    },
+    {
+        "id": 773,
+        "cryptocurrency_id": 1,
+        "price_usd": "4820.46284300",
+        "snapshot_at": "2018-04-25 07:32:33"
+    },
+    {
+        "id": 774,
+        "cryptocurrency_id": 1,
+        "price_usd": "4705.15602676",
+        "snapshot_at": "2018-04-25 06:32:33"
+    },
+    {
+        "id": 775,
+        "cryptocurrency_id": 1,
+        "price_usd": "4739.05061600",
+        "snapshot_at": "2018-04-25 05:32:33"
+    },
+    {
+        "id": 776,
+        "cryptocurrency_id": 1,
+        "price_usd": "4804.78673859",
+        "snapshot_at": "2018-04-25 04:32:33"
+    },
+    {
+        "id": 777,
+        "cryptocurrency_id": 1,
+        "price_usd": "4863.67837736",
+        "snapshot_at": "2018-04-25 03:32:33"
+    },
+    {
+        "id": 778,
+        "cryptocurrency_id": 1,
+        "price_usd": "4635.10677863",
+        "snapshot_at": "2018-04-25 02:32:33"
+    },
+    {
+        "id": 779,
+        "cryptocurrency_id": 1,
+        "price_usd": "4476.12630385",
+        "snapshot_at": "2018-04-25 01:32:33"
+    },
+    {
+        "id": 780,
+        "cryptocurrency_id": 1,
+        "price_usd": "4479.96195290",
+        "snapshot_at": "2018-04-25 00:32:33"
+    },
+    {
+        "id": 781,
+        "cryptocurrency_id": 1,
+        "price_usd": "4307.11308801",
+        "snapshot_at": "2018-04-24 23:32:33"
+    },
+    {
+        "id": 782,
+        "cryptocurrency_id": 1,
+        "price_usd": "4321.37014802",
+        "snapshot_at": "2018-04-24 22:32:33"
+    },
+    {
+        "id": 783,
+        "cryptocurrency_id": 1,
+        "price_usd": "4286.23723390",
+        "snapshot_at": "2018-04-24 21:32:33"
+    },
+    {
+        "id": 784,
+        "cryptocurrency_id": 1,
+        "price_usd": "4181.09094830",
+        "snapshot_at": "2018-04-24 20:32:33"
+    },
+    {
+        "id": 785,
+        "cryptocurrency_id": 1,
+        "price_usd": "4354.33206974",
+        "snapshot_at": "2018-04-24 19:32:33"
+    },
+    {
+        "id": 786,
+        "cryptocurrency_id": 1,
+        "price_usd": "4306.48027642",
+        "snapshot_at": "2018-04-24 18:32:33"
+    },
+    {
+        "id": 787,
+        "cryptocurrency_id": 1,
+        "price_usd": "4373.44656622",
+        "snapshot_at": "2018-04-24 17:32:33"
+    },
+    {
+        "id": 788,
+        "cryptocurrency_id": 1,
+        "price_usd": "4186.05835881",
+        "snapshot_at": "2018-04-24 16:32:33"
+    },
+    {
+        "id": 789,
+        "cryptocurrency_id": 1,
+        "price_usd": "4108.88775852",
+        "snapshot_at": "2018-04-24 15:32:33"
+    },
+    {
+        "id": 790,
+        "cryptocurrency_id": 1,
+        "price_usd": "4001.76410873",
+        "snapshot_at": "2018-04-24 14:32:33"
+    },
+    {
+        "id": 791,
+        "cryptocurrency_id": 1,
+        "price_usd": "4190.96647029",
+        "snapshot_at": "2018-04-24 13:32:33"
+    },
+    {
+        "id": 792,
+        "cryptocurrency_id": 1,
+        "price_usd": "4319.66879669",
+        "snapshot_at": "2018-04-24 12:32:33"
+    },
+    {
+        "id": 793,
+        "cryptocurrency_id": 1,
+        "price_usd": "4262.54053249",
+        "snapshot_at": "2018-04-24 11:32:33"
+    },
+    {
+        "id": 794,
+        "cryptocurrency_id": 1,
+        "price_usd": "4282.45027923",
+        "snapshot_at": "2018-04-24 10:32:33"
+    },
+    {
+        "id": 795,
+        "cryptocurrency_id": 1,
+        "price_usd": "4068.77056380",
+        "snapshot_at": "2018-04-24 09:32:33"
+    },
+    {
+        "id": 796,
+        "cryptocurrency_id": 1,
+        "price_usd": "3995.92228275",
+        "snapshot_at": "2018-04-24 08:32:33"
+    },
+    {
+        "id": 797,
+        "cryptocurrency_id": 1,
+        "price_usd": "3810.51964686",
+        "snapshot_at": "2018-04-24 07:32:33"
+    },
+    {
+        "id": 798,
+        "cryptocurrency_id": 1,
+        "price_usd": "3624.54499933",
+        "snapshot_at": "2018-04-24 06:32:33"
+    },
+    {
+        "id": 799,
+        "cryptocurrency_id": 1,
+        "price_usd": "3522.10182049",
+        "snapshot_at": "2018-04-24 05:32:33"
+    },
+    {
+        "id": 800,
+        "cryptocurrency_id": 1,
+        "price_usd": "3567.08121809",
+        "snapshot_at": "2018-04-24 04:32:33"
+    },
+    {
+        "id": 801,
+        "cryptocurrency_id": 1,
+        "price_usd": "3512.92157373",
+        "snapshot_at": "2018-04-24 03:32:33"
+    },
+    {
+        "id": 802,
+        "cryptocurrency_id": 1,
+        "price_usd": "3382.93657397",
+        "snapshot_at": "2018-04-24 02:32:33"
+    },
+    {
+        "id": 803,
+        "cryptocurrency_id": 1,
+        "price_usd": "3323.33540759",
+        "snapshot_at": "2018-04-24 01:32:33"
+    },
+    {
+        "id": 804,
+        "cryptocurrency_id": 1,
+        "price_usd": "3311.86153257",
+        "snapshot_at": "2018-04-24 00:32:33"
+    },
+    {
+        "id": 805,
+        "cryptocurrency_id": 1,
+        "price_usd": "3386.11435611",
+        "snapshot_at": "2018-04-23 23:32:33"
+    },
+    {
+        "id": 806,
+        "cryptocurrency_id": 1,
+        "price_usd": "3358.32739941",
+        "snapshot_at": "2018-04-23 22:32:33"
+    },
+    {
+        "id": 807,
+        "cryptocurrency_id": 1,
+        "price_usd": "3466.69361387",
+        "snapshot_at": "2018-04-23 21:32:33"
+    },
+    {
+        "id": 808,
+        "cryptocurrency_id": 1,
+        "price_usd": "3615.48563625",
+        "snapshot_at": "2018-04-23 20:32:33"
+    },
+    {
+        "id": 809,
+        "cryptocurrency_id": 1,
+        "price_usd": "3711.02832900",
+        "snapshot_at": "2018-04-23 19:32:33"
+    },
+    {
+        "id": 810,
+        "cryptocurrency_id": 1,
+        "price_usd": "3714.45019519",
+        "snapshot_at": "2018-04-23 18:32:33"
+    },
+    {
+        "id": 811,
+        "cryptocurrency_id": 1,
+        "price_usd": "3801.02820451",
+        "snapshot_at": "2018-04-23 17:32:33"
+    },
+    {
+        "id": 812,
+        "cryptocurrency_id": 1,
+        "price_usd": "3652.74731598",
+        "snapshot_at": "2018-04-23 16:32:33"
+    },
+    {
+        "id": 813,
+        "cryptocurrency_id": 1,
+        "price_usd": "3787.33009981",
+        "snapshot_at": "2018-04-23 15:32:33"
+    },
+    {
+        "id": 814,
+        "cryptocurrency_id": 1,
+        "price_usd": "3659.45470261",
+        "snapshot_at": "2018-04-23 14:32:33"
+    },
+    {
+        "id": 815,
+        "cryptocurrency_id": 1,
+        "price_usd": "3502.40229523",
+        "snapshot_at": "2018-04-23 13:32:33"
+    },
+    {
+        "id": 816,
+        "cryptocurrency_id": 1,
+        "price_usd": "3616.71334085",
+        "snapshot_at": "2018-04-23 12:32:33"
+    },
+    {
+        "id": 817,
+        "cryptocurrency_id": 1,
+        "price_usd": "3522.88368585",
+        "snapshot_at": "2018-04-23 11:32:33"
+    },
+    {
+        "id": 818,
+        "cryptocurrency_id": 1,
+        "price_usd": "3377.42123347",
+        "snapshot_at": "2018-04-23 10:32:33"
+    },
+    {
+        "id": 819,
+        "cryptocurrency_id": 1,
+        "price_usd": "3535.30353753",
+        "snapshot_at": "2018-04-23 09:32:33"
+    },
+    {
+        "id": 820,
+        "cryptocurrency_id": 1,
+        "price_usd": "3689.57552052",
+        "snapshot_at": "2018-04-23 08:32:33"
+    },
+    {
+        "id": 821,
+        "cryptocurrency_id": 1,
+        "price_usd": "3518.33224665",
+        "snapshot_at": "2018-04-23 07:32:33"
+    },
+    {
+        "id": 822,
+        "cryptocurrency_id": 1,
+        "price_usd": "3573.50259934",
+        "snapshot_at": "2018-04-23 06:32:33"
+    },
+    {
+        "id": 823,
+        "cryptocurrency_id": 1,
+        "price_usd": "3623.80252207",
+        "snapshot_at": "2018-04-23 05:32:33"
+    },
+    {
+        "id": 824,
+        "cryptocurrency_id": 1,
+        "price_usd": "3545.00115234",
+        "snapshot_at": "2018-04-23 04:32:33"
+    },
+    {
+        "id": 825,
+        "cryptocurrency_id": 1,
+        "price_usd": "3660.59642138",
+        "snapshot_at": "2018-04-23 03:32:33"
+    },
+    {
+        "id": 826,
+        "cryptocurrency_id": 1,
+        "price_usd": "3820.49604832",
+        "snapshot_at": "2018-04-23 02:32:33"
+    },
+    {
+        "id": 827,
+        "cryptocurrency_id": 1,
+        "price_usd": "3908.65872432",
+        "snapshot_at": "2018-04-23 01:32:33"
+    },
+    {
+        "id": 828,
+        "cryptocurrency_id": 1,
+        "price_usd": "3917.54498222",
+        "snapshot_at": "2018-04-23 00:32:33"
+    },
+    {
+        "id": 829,
+        "cryptocurrency_id": 1,
+        "price_usd": "3871.29233703",
+        "snapshot_at": "2018-04-22 23:32:33"
+    },
+    {
+        "id": 830,
+        "cryptocurrency_id": 1,
+        "price_usd": "3767.58067985",
+        "snapshot_at": "2018-04-22 22:32:33"
+    },
+    {
+        "id": 831,
+        "cryptocurrency_id": 1,
+        "price_usd": "3920.10413193",
+        "snapshot_at": "2018-04-22 21:32:33"
+    },
+    {
+        "id": 832,
+        "cryptocurrency_id": 1,
+        "price_usd": "3950.98389913",
+        "snapshot_at": "2018-04-22 20:32:33"
+    },
+    {
+        "id": 833,
+        "cryptocurrency_id": 1,
+        "price_usd": "3854.24567075",
+        "snapshot_at": "2018-04-22 19:32:33"
+    },
+    {
+        "id": 834,
+        "cryptocurrency_id": 1,
+        "price_usd": "3785.24609838",
+        "snapshot_at": "2018-04-22 18:32:33"
+    },
+    {
+        "id": 835,
+        "cryptocurrency_id": 1,
+        "price_usd": "3668.15940311",
+        "snapshot_at": "2018-04-22 17:32:33"
+    },
+    {
+        "id": 836,
+        "cryptocurrency_id": 1,
+        "price_usd": "3709.31269802",
+        "snapshot_at": "2018-04-22 16:32:33"
+    },
+    {
+        "id": 837,
+        "cryptocurrency_id": 1,
+        "price_usd": "3594.76301638",
+        "snapshot_at": "2018-04-22 15:32:33"
+    },
+    {
+        "id": 838,
+        "cryptocurrency_id": 1,
+        "price_usd": "3717.43063852",
+        "snapshot_at": "2018-04-22 14:32:33"
+    },
+    {
+        "id": 839,
+        "cryptocurrency_id": 1,
+        "price_usd": "3801.87357750",
+        "snapshot_at": "2018-04-22 13:32:33"
+    },
+    {
+        "id": 840,
+        "cryptocurrency_id": 1,
+        "price_usd": "3694.84094433",
+        "snapshot_at": "2018-04-22 12:32:33"
+    },
+    {
+        "id": 841,
+        "cryptocurrency_id": 1,
+        "price_usd": "3598.88630011",
+        "snapshot_at": "2018-04-22 11:32:33"
+    },
+    {
+        "id": 842,
+        "cryptocurrency_id": 1,
+        "price_usd": "3645.12534612",
+        "snapshot_at": "2018-04-22 10:32:33"
+    },
+    {
+        "id": 843,
+        "cryptocurrency_id": 1,
+        "price_usd": "3552.81064638",
+        "snapshot_at": "2018-04-22 09:32:33"
+    },
+    {
+        "id": 844,
+        "cryptocurrency_id": 1,
+        "price_usd": "3683.79676639",
+        "snapshot_at": "2018-04-22 08:32:33"
+    },
+    {
+        "id": 845,
+        "cryptocurrency_id": 1,
+        "price_usd": "3726.32258908",
+        "snapshot_at": "2018-04-22 07:32:33"
+    },
+    {
+        "id": 846,
+        "cryptocurrency_id": 1,
+        "price_usd": "3882.43636097",
+        "snapshot_at": "2018-04-22 06:32:33"
+    },
+    {
+        "id": 847,
+        "cryptocurrency_id": 1,
+        "price_usd": "3837.56622033",
+        "snapshot_at": "2018-04-22 05:32:33"
+    },
+    {
+        "id": 848,
+        "cryptocurrency_id": 1,
+        "price_usd": "3654.85339732",
+        "snapshot_at": "2018-04-22 04:32:33"
+    },
+    {
+        "id": 849,
+        "cryptocurrency_id": 1,
+        "price_usd": "3696.14473115",
+        "snapshot_at": "2018-04-22 03:32:33"
+    },
+    {
+        "id": 850,
+        "cryptocurrency_id": 1,
+        "price_usd": "3864.35747231",
+        "snapshot_at": "2018-04-22 02:32:33"
+    },
+    {
+        "id": 851,
+        "cryptocurrency_id": 1,
+        "price_usd": "3710.91454316",
+        "snapshot_at": "2018-04-22 01:32:33"
+    },
+    {
+        "id": 852,
+        "cryptocurrency_id": 1,
+        "price_usd": "3661.80561289",
+        "snapshot_at": "2018-04-22 00:32:33"
+    },
+    {
+        "id": 853,
+        "cryptocurrency_id": 1,
+        "price_usd": "3513.84310019",
+        "snapshot_at": "2018-04-21 23:32:33"
+    },
+    {
+        "id": 854,
+        "cryptocurrency_id": 1,
+        "price_usd": "3675.57056562",
+        "snapshot_at": "2018-04-21 22:32:33"
+    },
+    {
+        "id": 855,
+        "cryptocurrency_id": 1,
+        "price_usd": "3780.18931570",
+        "snapshot_at": "2018-04-21 21:32:33"
+    },
+    {
+        "id": 856,
+        "cryptocurrency_id": 1,
+        "price_usd": "3604.61643857",
+        "snapshot_at": "2018-04-21 20:32:33"
+    },
+    {
+        "id": 857,
+        "cryptocurrency_id": 1,
+        "price_usd": "3487.14381614",
+        "snapshot_at": "2018-04-21 19:32:33"
+    },
+    {
+        "id": 858,
+        "cryptocurrency_id": 1,
+        "price_usd": "3586.01410772",
+        "snapshot_at": "2018-04-21 18:32:33"
+    },
+    {
+        "id": 859,
+        "cryptocurrency_id": 1,
+        "price_usd": "3678.81982886",
+        "snapshot_at": "2018-04-21 17:32:33"
+    },
+    {
+        "id": 860,
+        "cryptocurrency_id": 1,
+        "price_usd": "3741.97107610",
+        "snapshot_at": "2018-04-21 16:32:33"
+    },
+    {
+        "id": 861,
+        "cryptocurrency_id": 1,
+        "price_usd": "3661.71583621",
+        "snapshot_at": "2018-04-21 15:32:33"
+    },
+    {
+        "id": 862,
+        "cryptocurrency_id": 1,
+        "price_usd": "3585.40217190",
+        "snapshot_at": "2018-04-21 14:32:33"
+    },
+    {
+        "id": 863,
+        "cryptocurrency_id": 1,
+        "price_usd": "3647.08610215",
+        "snapshot_at": "2018-04-21 13:32:33"
+    },
+    {
+        "id": 864,
+        "cryptocurrency_id": 1,
+        "price_usd": "3645.93446818",
+        "snapshot_at": "2018-04-21 12:32:33"
+    },
+    {
+        "id": 865,
+        "cryptocurrency_id": 1,
+        "price_usd": "3743.92362468",
+        "snapshot_at": "2018-04-21 11:32:33"
+    },
+    {
+        "id": 866,
+        "cryptocurrency_id": 1,
+        "price_usd": "3661.62122739",
+        "snapshot_at": "2018-04-21 10:32:33"
+    },
+    {
+        "id": 867,
+        "cryptocurrency_id": 1,
+        "price_usd": "3841.76946127",
+        "snapshot_at": "2018-04-21 09:32:33"
+    },
+    {
+        "id": 868,
+        "cryptocurrency_id": 1,
+        "price_usd": "3997.36392165",
+        "snapshot_at": "2018-04-21 08:32:33"
+    },
+    {
+        "id": 869,
+        "cryptocurrency_id": 1,
+        "price_usd": "3800.66885998",
+        "snapshot_at": "2018-04-21 07:32:33"
+    },
+    {
+        "id": 870,
+        "cryptocurrency_id": 1,
+        "price_usd": "3885.04672774",
+        "snapshot_at": "2018-04-21 06:32:33"
+    },
+    {
+        "id": 871,
+        "cryptocurrency_id": 1,
+        "price_usd": "3890.78400141",
+        "snapshot_at": "2018-04-21 05:32:33"
+    },
+    {
+        "id": 872,
+        "cryptocurrency_id": 1,
+        "price_usd": "4060.02509850",
+        "snapshot_at": "2018-04-21 04:32:33"
+    },
+    {
+        "id": 873,
+        "cryptocurrency_id": 1,
+        "price_usd": "4069.06662122",
+        "snapshot_at": "2018-04-21 03:32:33"
+    },
+    {
+        "id": 874,
+        "cryptocurrency_id": 1,
+        "price_usd": "3993.84623531",
+        "snapshot_at": "2018-04-21 02:32:33"
+    },
+    {
+        "id": 875,
+        "cryptocurrency_id": 1,
+        "price_usd": "4086.08454758",
+        "snapshot_at": "2018-04-21 01:32:33"
+    },
+    {
+        "id": 876,
+        "cryptocurrency_id": 1,
+        "price_usd": "4267.46059533",
+        "snapshot_at": "2018-04-21 00:32:33"
+    },
+    {
+        "id": 877,
+        "cryptocurrency_id": 1,
+        "price_usd": "4463.04454688",
+        "snapshot_at": "2018-04-20 23:32:33"
+    },
+    {
+        "id": 878,
+        "cryptocurrency_id": 1,
+        "price_usd": "4275.03765210",
+        "snapshot_at": "2018-04-20 22:32:33"
+    },
+    {
+        "id": 879,
+        "cryptocurrency_id": 1,
+        "price_usd": "4425.27784811",
+        "snapshot_at": "2018-04-20 21:32:33"
+    },
+    {
+        "id": 880,
+        "cryptocurrency_id": 1,
+        "price_usd": "4313.97042990",
+        "snapshot_at": "2018-04-20 20:32:33"
+    },
+    {
+        "id": 881,
+        "cryptocurrency_id": 1,
+        "price_usd": "4132.50420107",
+        "snapshot_at": "2018-04-20 19:32:33"
+    },
+    {
+        "id": 882,
+        "cryptocurrency_id": 1,
+        "price_usd": "4337.17783156",
+        "snapshot_at": "2018-04-20 18:32:33"
+    },
+    {
+        "id": 883,
+        "cryptocurrency_id": 1,
+        "price_usd": "4228.49649994",
+        "snapshot_at": "2018-04-20 17:32:33"
+    },
+    {
+        "id": 884,
+        "cryptocurrency_id": 1,
+        "price_usd": "4180.06966596",
+        "snapshot_at": "2018-04-20 16:32:33"
+    },
+    {
+        "id": 885,
+        "cryptocurrency_id": 1,
+        "price_usd": "4304.26300123",
+        "snapshot_at": "2018-04-20 15:32:33"
+    },
+    {
+        "id": 886,
+        "cryptocurrency_id": 1,
+        "price_usd": "4250.23466887",
+        "snapshot_at": "2018-04-20 14:32:33"
+    },
+    {
+        "id": 887,
+        "cryptocurrency_id": 1,
+        "price_usd": "4063.18608675",
+        "snapshot_at": "2018-04-20 13:32:33"
+    },
+    {
+        "id": 888,
+        "cryptocurrency_id": 1,
+        "price_usd": "4035.35438049",
+        "snapshot_at": "2018-04-20 12:32:33"
+    },
+    {
+        "id": 889,
+        "cryptocurrency_id": 1,
+        "price_usd": "4129.97744294",
+        "snapshot_at": "2018-04-20 11:32:33"
+    },
+    {
+        "id": 890,
+        "cryptocurrency_id": 1,
+        "price_usd": "4196.10379165",
+        "snapshot_at": "2018-04-20 10:32:33"
+    },
+    {
+        "id": 891,
+        "cryptocurrency_id": 1,
+        "price_usd": "4269.32731284",
+        "snapshot_at": "2018-04-20 09:32:33"
+    },
+    {
+        "id": 892,
+        "cryptocurrency_id": 1,
+        "price_usd": "4250.55940454",
+        "snapshot_at": "2018-04-20 08:32:33"
+    },
+    {
+        "id": 893,
+        "cryptocurrency_id": 1,
+        "price_usd": "4211.90911715",
+        "snapshot_at": "2018-04-20 07:32:33"
+    },
+    {
+        "id": 894,
+        "cryptocurrency_id": 1,
+        "price_usd": "4334.47043848",
+        "snapshot_at": "2018-04-20 06:32:33"
+    },
+    {
+        "id": 895,
+        "cryptocurrency_id": 1,
+        "price_usd": "4164.76162177",
+        "snapshot_at": "2018-04-20 05:32:33"
+    },
+    {
+        "id": 896,
+        "cryptocurrency_id": 1,
+        "price_usd": "4019.08906018",
+        "snapshot_at": "2018-04-20 04:32:33"
+    },
+    {
+        "id": 897,
+        "cryptocurrency_id": 1,
+        "price_usd": "3862.99923397",
+        "snapshot_at": "2018-04-20 03:32:33"
+    },
+    {
+        "id": 898,
+        "cryptocurrency_id": 1,
+        "price_usd": "3738.78444697",
+        "snapshot_at": "2018-04-20 02:32:33"
+    },
+    {
+        "id": 899,
+        "cryptocurrency_id": 1,
+        "price_usd": "3742.19648240",
+        "snapshot_at": "2018-04-20 01:32:33"
+    },
+    {
+        "id": 900,
+        "cryptocurrency_id": 1,
+        "price_usd": "3844.58306565",
+        "snapshot_at": "2018-04-20 00:32:33"
+    },
+    {
+        "id": 901,
+        "cryptocurrency_id": 1,
+        "price_usd": "4032.51819566",
+        "snapshot_at": "2018-04-19 23:32:33"
+    },
+    {
+        "id": 902,
+        "cryptocurrency_id": 1,
+        "price_usd": "4002.80271773",
+        "snapshot_at": "2018-04-19 22:32:33"
+    },
+    {
+        "id": 903,
+        "cryptocurrency_id": 1,
+        "price_usd": "4018.34699630",
+        "snapshot_at": "2018-04-19 21:32:33"
+    },
+    {
+        "id": 904,
+        "cryptocurrency_id": 1,
+        "price_usd": "4198.73566012",
+        "snapshot_at": "2018-04-19 20:32:33"
+    },
+    {
+        "id": 905,
+        "cryptocurrency_id": 1,
+        "price_usd": "4088.93302382",
+        "snapshot_at": "2018-04-19 19:32:33"
+    },
+    {
+        "id": 906,
+        "cryptocurrency_id": 1,
+        "price_usd": "4038.22956209",
+        "snapshot_at": "2018-04-19 18:32:33"
+    },
+    {
+        "id": 907,
+        "cryptocurrency_id": 1,
+        "price_usd": "4238.76621675",
+        "snapshot_at": "2018-04-19 17:32:33"
+    },
+    {
+        "id": 908,
+        "cryptocurrency_id": 1,
+        "price_usd": "4347.35760386",
+        "snapshot_at": "2018-04-19 16:32:33"
+    },
+    {
+        "id": 909,
+        "cryptocurrency_id": 1,
+        "price_usd": "4227.37274849",
+        "snapshot_at": "2018-04-19 15:32:33"
+    },
+    {
+        "id": 910,
+        "cryptocurrency_id": 1,
+        "price_usd": "4370.34897282",
+        "snapshot_at": "2018-04-19 14:32:33"
+    },
+    {
+        "id": 911,
+        "cryptocurrency_id": 1,
+        "price_usd": "4466.48242561",
+        "snapshot_at": "2018-04-19 13:32:33"
+    },
+    {
+        "id": 912,
+        "cryptocurrency_id": 1,
+        "price_usd": "4684.89500355",
+        "snapshot_at": "2018-04-19 12:32:33"
+    },
+    {
+        "id": 913,
+        "cryptocurrency_id": 1,
+        "price_usd": "4519.83743880",
+        "snapshot_at": "2018-04-19 11:32:33"
+    },
+    {
+        "id": 914,
+        "cryptocurrency_id": 1,
+        "price_usd": "4529.30830542",
+        "snapshot_at": "2018-04-19 10:32:33"
+    },
+    {
+        "id": 915,
+        "cryptocurrency_id": 1,
+        "price_usd": "4694.23728819",
+        "snapshot_at": "2018-04-19 09:32:33"
+    },
+    {
+        "id": 916,
+        "cryptocurrency_id": 1,
+        "price_usd": "4851.29377686",
+        "snapshot_at": "2018-04-19 08:32:33"
+    },
+    {
+        "id": 917,
+        "cryptocurrency_id": 1,
+        "price_usd": "5022.47878513",
+        "snapshot_at": "2018-04-19 07:32:33"
+    },
+    {
+        "id": 918,
+        "cryptocurrency_id": 1,
+        "price_usd": "4824.14182861",
+        "snapshot_at": "2018-04-19 06:32:33"
+    },
+    {
+        "id": 919,
+        "cryptocurrency_id": 1,
+        "price_usd": "4709.17012765",
+        "snapshot_at": "2018-04-19 05:32:33"
+    },
+    {
+        "id": 920,
+        "cryptocurrency_id": 1,
+        "price_usd": "4550.36373803",
+        "snapshot_at": "2018-04-19 04:32:33"
+    },
+    {
+        "id": 921,
+        "cryptocurrency_id": 1,
+        "price_usd": "4407.07907184",
+        "snapshot_at": "2018-04-19 03:32:33"
+    },
+    {
+        "id": 922,
+        "cryptocurrency_id": 1,
+        "price_usd": "4337.48716800",
+        "snapshot_at": "2018-04-19 02:32:33"
+    },
+    {
+        "id": 923,
+        "cryptocurrency_id": 1,
+        "price_usd": "4534.94765005",
+        "snapshot_at": "2018-04-19 01:32:33"
+    },
+    {
+        "id": 924,
+        "cryptocurrency_id": 1,
+        "price_usd": "4733.12392342",
+        "snapshot_at": "2018-04-19 00:32:33"
+    },
+    {
+        "id": 925,
+        "cryptocurrency_id": 1,
+        "price_usd": "4872.12215487",
+        "snapshot_at": "2018-04-18 23:32:33"
+    },
+    {
+        "id": 926,
+        "cryptocurrency_id": 1,
+        "price_usd": "4982.11969159",
+        "snapshot_at": "2018-04-18 22:32:33"
+    },
+    {
+        "id": 927,
+        "cryptocurrency_id": 1,
+        "price_usd": "4819.78864749",
+        "snapshot_at": "2018-04-18 21:32:33"
+    },
+    {
+        "id": 928,
+        "cryptocurrency_id": 1,
+        "price_usd": "4906.09725335",
+        "snapshot_at": "2018-04-18 20:32:33"
+    },
+    {
+        "id": 929,
+        "cryptocurrency_id": 1,
+        "price_usd": "5072.11670575",
+        "snapshot_at": "2018-04-18 19:32:33"
+    },
+    {
+        "id": 930,
+        "cryptocurrency_id": 1,
+        "price_usd": "4880.48066567",
+        "snapshot_at": "2018-04-18 18:32:33"
+    },
+    {
+        "id": 931,
+        "cryptocurrency_id": 1,
+        "price_usd": "5023.54594184",
+        "snapshot_at": "2018-04-18 17:32:33"
+    },
+    {
+        "id": 932,
+        "cryptocurrency_id": 1,
+        "price_usd": "5123.31206202",
+        "snapshot_at": "2018-04-18 16:32:33"
+    },
+    {
+        "id": 933,
+        "cryptocurrency_id": 1,
+        "price_usd": "5141.68837173",
+        "snapshot_at": "2018-04-18 15:32:33"
+    },
+    {
+        "id": 934,
+        "cryptocurrency_id": 1,
+        "price_usd": "5068.29764070",
+        "snapshot_at": "2018-04-18 14:32:33"
+    },
+    {
+        "id": 935,
+        "cryptocurrency_id": 1,
+        "price_usd": "4893.08572717",
+        "snapshot_at": "2018-04-18 13:32:33"
+    },
+    {
+        "id": 936,
+        "cryptocurrency_id": 1,
+        "price_usd": "5001.56807840",
+        "snapshot_at": "2018-04-18 12:32:33"
+    },
+    {
+        "id": 937,
+        "cryptocurrency_id": 1,
+        "price_usd": "4859.95337780",
+        "snapshot_at": "2018-04-18 11:32:33"
+    },
+    {
+        "id": 938,
+        "cryptocurrency_id": 1,
+        "price_usd": "5019.51135290",
+        "snapshot_at": "2018-04-18 10:32:33"
+    },
+    {
+        "id": 939,
+        "cryptocurrency_id": 1,
+        "price_usd": "4975.28229789",
+        "snapshot_at": "2018-04-18 09:32:33"
+    },
+    {
+        "id": 940,
+        "cryptocurrency_id": 1,
+        "price_usd": "4759.11476234",
+        "snapshot_at": "2018-04-18 08:32:33"
+    },
+    {
+        "id": 941,
+        "cryptocurrency_id": 1,
+        "price_usd": "4814.22936306",
+        "snapshot_at": "2018-04-18 07:32:33"
+    },
+    {
+        "id": 942,
+        "cryptocurrency_id": 1,
+        "price_usd": "4775.95939647",
+        "snapshot_at": "2018-04-18 06:32:33"
+    },
+    {
+        "id": 943,
+        "cryptocurrency_id": 1,
+        "price_usd": "4990.96343774",
+        "snapshot_at": "2018-04-18 05:32:33"
+    },
+    {
+        "id": 944,
+        "cryptocurrency_id": 1,
+        "price_usd": "5013.02376692",
+        "snapshot_at": "2018-04-18 04:32:33"
+    },
+    {
+        "id": 945,
+        "cryptocurrency_id": 1,
+        "price_usd": "4800.19903829",
+        "snapshot_at": "2018-04-18 03:32:33"
+    },
+    {
+        "id": 946,
+        "cryptocurrency_id": 1,
+        "price_usd": "4757.91370727",
+        "snapshot_at": "2018-04-18 02:32:33"
+    },
+    {
+        "id": 947,
+        "cryptocurrency_id": 1,
+        "price_usd": "4801.33603418",
+        "snapshot_at": "2018-04-18 01:32:33"
+    },
+    {
+        "id": 948,
+        "cryptocurrency_id": 1,
+        "price_usd": "4697.45681572",
+        "snapshot_at": "2018-04-18 00:32:33"
+    },
+    {
+        "id": 949,
+        "cryptocurrency_id": 1,
+        "price_usd": "4791.12446007",
+        "snapshot_at": "2018-04-17 23:32:33"
+    },
+    {
+        "id": 950,
+        "cryptocurrency_id": 1,
+        "price_usd": "4949.45853548",
+        "snapshot_at": "2018-04-17 22:32:33"
+    },
+    {
+        "id": 951,
+        "cryptocurrency_id": 1,
+        "price_usd": "4866.78196697",
+        "snapshot_at": "2018-04-17 21:32:33"
+    },
+    {
+        "id": 952,
+        "cryptocurrency_id": 1,
+        "price_usd": "4666.79674752",
+        "snapshot_at": "2018-04-17 20:32:33"
+    },
+    {
+        "id": 953,
+        "cryptocurrency_id": 1,
+        "price_usd": "4543.04703173",
+        "snapshot_at": "2018-04-17 19:32:33"
+    },
+    {
+        "id": 954,
+        "cryptocurrency_id": 1,
+        "price_usd": "4442.31677799",
+        "snapshot_at": "2018-04-17 18:32:33"
+    },
+    {
+        "id": 955,
+        "cryptocurrency_id": 1,
+        "price_usd": "4332.14867772",
+        "snapshot_at": "2018-04-17 17:32:33"
+    },
+    {
+        "id": 956,
+        "cryptocurrency_id": 1,
+        "price_usd": "4237.17062671",
+        "snapshot_at": "2018-04-17 16:32:33"
+    },
+    {
+        "id": 957,
+        "cryptocurrency_id": 1,
+        "price_usd": "4293.60591135",
+        "snapshot_at": "2018-04-17 15:32:33"
+    },
+    {
+        "id": 958,
+        "cryptocurrency_id": 1,
+        "price_usd": "4089.13168920",
+        "snapshot_at": "2018-04-17 14:32:33"
+    },
+    {
+        "id": 959,
+        "cryptocurrency_id": 1,
+        "price_usd": "4042.43966517",
+        "snapshot_at": "2018-04-17 13:32:33"
+    },
+    {
+        "id": 960,
+        "cryptocurrency_id": 1,
+        "price_usd": "4164.89075327",
+        "snapshot_at": "2018-04-17 12:32:33"
+    },
+    {
+        "id": 961,
+        "cryptocurrency_id": 1,
+        "price_usd": "4311.88133457",
+        "snapshot_at": "2018-04-17 11:32:33"
+    },
+    {
+        "id": 962,
+        "cryptocurrency_id": 1,
+        "price_usd": "4251.76302004",
+        "snapshot_at": "2018-04-17 10:32:33"
+    },
+    {
+        "id": 963,
+        "cryptocurrency_id": 1,
+        "price_usd": "4103.78821810",
+        "snapshot_at": "2018-04-17 09:32:33"
+    },
+    {
+        "id": 964,
+        "cryptocurrency_id": 1,
+        "price_usd": "4270.69864612",
+        "snapshot_at": "2018-04-17 08:32:33"
+    },
+    {
+        "id": 965,
+        "cryptocurrency_id": 1,
+        "price_usd": "4448.49073556",
+        "snapshot_at": "2018-04-17 07:32:33"
+    },
+    {
+        "id": 966,
+        "cryptocurrency_id": 1,
+        "price_usd": "4351.56226691",
+        "snapshot_at": "2018-04-17 06:32:33"
+    },
+    {
+        "id": 967,
+        "cryptocurrency_id": 1,
+        "price_usd": "4242.95499846",
+        "snapshot_at": "2018-04-17 05:32:33"
+    },
+    {
+        "id": 968,
+        "cryptocurrency_id": 1,
+        "price_usd": "4265.35278683",
+        "snapshot_at": "2018-04-17 04:32:33"
+    },
+    {
+        "id": 969,
+        "cryptocurrency_id": 1,
+        "price_usd": "4172.85950519",
+        "snapshot_at": "2018-04-17 03:32:33"
+    },
+    {
+        "id": 970,
+        "cryptocurrency_id": 1,
+        "price_usd": "4081.27159307",
+        "snapshot_at": "2018-04-17 02:32:33"
+    },
+    {
+        "id": 971,
+        "cryptocurrency_id": 1,
+        "price_usd": "3919.34039476",
+        "snapshot_at": "2018-04-17 01:32:33"
+    },
+    {
+        "id": 972,
+        "cryptocurrency_id": 1,
+        "price_usd": "4079.41513163",
+        "snapshot_at": "2018-04-17 00:32:33"
+    },
+    {
+        "id": 973,
+        "cryptocurrency_id": 1,
+        "price_usd": "4112.00125058",
+        "snapshot_at": "2018-04-16 23:32:33"
+    },
+    {
+        "id": 974,
+        "cryptocurrency_id": 1,
+        "price_usd": "4033.07758694",
+        "snapshot_at": "2018-04-16 22:32:33"
+    },
+    {
+        "id": 975,
+        "cryptocurrency_id": 1,
+        "price_usd": "4123.74938046",
+        "snapshot_at": "2018-04-16 21:32:33"
+    },
+    {
+        "id": 976,
+        "cryptocurrency_id": 1,
+        "price_usd": "4213.87131898",
+        "snapshot_at": "2018-04-16 20:32:33"
+    },
+    {
+        "id": 977,
+        "cryptocurrency_id": 1,
+        "price_usd": "4136.68886797",
+        "snapshot_at": "2018-04-16 19:32:33"
+    },
+    {
+        "id": 978,
+        "cryptocurrency_id": 1,
+        "price_usd": "4301.05070871",
+        "snapshot_at": "2018-04-16 18:32:33"
+    },
+    {
+        "id": 979,
+        "cryptocurrency_id": 1,
+        "price_usd": "4308.86909216",
+        "snapshot_at": "2018-04-16 17:32:33"
+    },
+    {
+        "id": 980,
+        "cryptocurrency_id": 1,
+        "price_usd": "4139.34911370",
+        "snapshot_at": "2018-04-16 16:32:33"
+    },
+    {
+        "id": 981,
+        "cryptocurrency_id": 1,
+        "price_usd": "4215.91717895",
+        "snapshot_at": "2018-04-16 15:32:33"
+    },
+    {
+        "id": 982,
+        "cryptocurrency_id": 1,
+        "price_usd": "4177.21498447",
+        "snapshot_at": "2018-04-16 14:32:33"
+    },
+    {
+        "id": 983,
+        "cryptocurrency_id": 1,
+        "price_usd": "4326.78027529",
+        "snapshot_at": "2018-04-16 13:32:33"
+    },
+    {
+        "id": 984,
+        "cryptocurrency_id": 1,
+        "price_usd": "4390.94473441",
+        "snapshot_at": "2018-04-16 12:32:33"
+    },
+    {
+        "id": 985,
+        "cryptocurrency_id": 1,
+        "price_usd": "4207.63983769",
+        "snapshot_at": "2018-04-16 11:32:33"
+    },
+    {
+        "id": 986,
+        "cryptocurrency_id": 1,
+        "price_usd": "4297.36360246",
+        "snapshot_at": "2018-04-16 10:32:33"
+    },
+    {
+        "id": 987,
+        "cryptocurrency_id": 1,
+        "price_usd": "4392.50191177",
+        "snapshot_at": "2018-04-16 09:32:33"
+    },
+    {
+        "id": 988,
+        "cryptocurrency_id": 1,
+        "price_usd": "4506.64516063",
+        "snapshot_at": "2018-04-16 08:32:33"
+    },
+    {
+        "id": 989,
+        "cryptocurrency_id": 1,
+        "price_usd": "4299.55571300",
+        "snapshot_at": "2018-04-16 07:32:33"
+    },
+    {
+        "id": 990,
+        "cryptocurrency_id": 1,
+        "price_usd": "4277.20391554",
+        "snapshot_at": "2018-04-16 06:32:33"
+    },
+    {
+        "id": 991,
+        "cryptocurrency_id": 1,
+        "price_usd": "4347.92036836",
+        "snapshot_at": "2018-04-16 05:32:33"
+    },
+    {
+        "id": 992,
+        "cryptocurrency_id": 1,
+        "price_usd": "4442.66007612",
+        "snapshot_at": "2018-04-16 04:32:33"
+    },
+    {
+        "id": 993,
+        "cryptocurrency_id": 1,
+        "price_usd": "4304.37477937",
+        "snapshot_at": "2018-04-16 03:32:33"
+    },
+    {
+        "id": 994,
+        "cryptocurrency_id": 1,
+        "price_usd": "4212.03164637",
+        "snapshot_at": "2018-04-16 02:32:33"
+    },
+    {
+        "id": 995,
+        "cryptocurrency_id": 1,
+        "price_usd": "4257.19246175",
+        "snapshot_at": "2018-04-16 01:32:33"
+    },
+    {
+        "id": 996,
+        "cryptocurrency_id": 1,
+        "price_usd": "4082.89683310",
+        "snapshot_at": "2018-04-16 00:32:33"
+    },
+    {
+        "id": 997,
+        "cryptocurrency_id": 1,
+        "price_usd": "3945.45305408",
+        "snapshot_at": "2018-04-15 23:32:33"
+    },
+    {
+        "id": 998,
+        "cryptocurrency_id": 1,
+        "price_usd": "3770.69967999",
+        "snapshot_at": "2018-04-15 22:32:33"
+    },
+    {
+        "id": 999,
+        "cryptocurrency_id": 1,
+        "price_usd": "3670.35416954",
+        "snapshot_at": "2018-04-15 21:32:33"
+    },
+    {
+        "id": 1000,
+        "cryptocurrency_id": 1,
+        "price_usd": "3501.59913636",
+        "snapshot_at": "2018-04-15 20:32:33"
+    },
+    {
+        "id": 1001,
+        "cryptocurrency_id": 1,
+        "price_usd": "3541.16879801",
+        "snapshot_at": "2018-04-15 19:32:33"
+    },
+    {
+        "id": 1002,
+        "cryptocurrency_id": 1,
+        "price_usd": "3670.01747021",
+        "snapshot_at": "2018-04-15 18:32:33"
+    },
+    {
+        "id": 1003,
+        "cryptocurrency_id": 1,
+        "price_usd": "3550.47566135",
+        "snapshot_at": "2018-04-15 17:32:33"
+    },
+    {
+        "id": 1004,
+        "cryptocurrency_id": 1,
+        "price_usd": "3686.34495745",
+        "snapshot_at": "2018-04-15 16:32:33"
+    },
+    {
+        "id": 1005,
+        "cryptocurrency_id": 1,
+        "price_usd": "3581.27557539",
+        "snapshot_at": "2018-04-15 15:32:33"
+    },
+    {
+        "id": 1006,
+        "cryptocurrency_id": 1,
+        "price_usd": "3526.24735486",
+        "snapshot_at": "2018-04-15 14:32:33"
+    },
+    {
+        "id": 1007,
+        "cryptocurrency_id": 1,
+        "price_usd": "3663.83620601",
+        "snapshot_at": "2018-04-15 13:32:33"
+    },
+    {
+        "id": 1008,
+        "cryptocurrency_id": 1,
+        "price_usd": "3701.87573889",
+        "snapshot_at": "2018-04-15 12:32:33"
+    },
+    {
+        "id": 1009,
+        "cryptocurrency_id": 1,
+        "price_usd": "3702.47211282",
+        "snapshot_at": "2018-04-15 11:32:33"
+    },
+    {
+        "id": 1010,
+        "cryptocurrency_id": 1,
+        "price_usd": "3838.30241289",
+        "snapshot_at": "2018-04-15 10:32:33"
+    },
+    {
+        "id": 1011,
+        "cryptocurrency_id": 1,
+        "price_usd": "3802.22973962",
+        "snapshot_at": "2018-04-15 09:32:33"
+    },
+    {
+        "id": 1012,
+        "cryptocurrency_id": 1,
+        "price_usd": "3979.73442885",
+        "snapshot_at": "2018-04-15 08:32:33"
+    },
+    {
+        "id": 1013,
+        "cryptocurrency_id": 1,
+        "price_usd": "3892.01160816",
+        "snapshot_at": "2018-04-15 07:32:33"
+    },
+    {
+        "id": 1014,
+        "cryptocurrency_id": 1,
+        "price_usd": "4023.74652174",
+        "snapshot_at": "2018-04-15 06:32:33"
+    },
+    {
+        "id": 1015,
+        "cryptocurrency_id": 1,
+        "price_usd": "3891.01470875",
+        "snapshot_at": "2018-04-15 05:32:33"
+    },
+    {
+        "id": 1016,
+        "cryptocurrency_id": 1,
+        "price_usd": "4076.26387634",
+        "snapshot_at": "2018-04-15 04:32:33"
+    },
+    {
+        "id": 1017,
+        "cryptocurrency_id": 1,
+        "price_usd": "4248.50359690",
+        "snapshot_at": "2018-04-15 03:32:33"
+    },
+    {
+        "id": 1018,
+        "cryptocurrency_id": 1,
+        "price_usd": "4364.13121408",
+        "snapshot_at": "2018-04-15 02:32:33"
+    },
+    {
+        "id": 1019,
+        "cryptocurrency_id": 1,
+        "price_usd": "4422.08553644",
+        "snapshot_at": "2018-04-15 01:32:33"
+    },
+    {
+        "id": 1020,
+        "cryptocurrency_id": 1,
+        "price_usd": "4517.34789485",
+        "snapshot_at": "2018-04-15 00:32:33"
+    },
+    {
+        "id": 1021,
+        "cryptocurrency_id": 1,
+        "price_usd": "4732.59624176",
+        "snapshot_at": "2018-04-14 23:32:33"
+    },
+    {
+        "id": 1022,
+        "cryptocurrency_id": 1,
+        "price_usd": "4836.19497231",
+        "snapshot_at": "2018-04-14 22:32:33"
+    },
+    {
+        "id": 1023,
+        "cryptocurrency_id": 1,
+        "price_usd": "4637.61307994",
+        "snapshot_at": "2018-04-14 21:32:33"
+    },
+    {
+        "id": 1024,
+        "cryptocurrency_id": 1,
+        "price_usd": "4790.68524463",
+        "snapshot_at": "2018-04-14 20:32:33"
+    },
+    {
+        "id": 1025,
+        "cryptocurrency_id": 1,
+        "price_usd": "4874.00529222",
+        "snapshot_at": "2018-04-14 19:32:33"
+    },
+    {
+        "id": 1026,
+        "cryptocurrency_id": 1,
+        "price_usd": "4638.27089430",
+        "snapshot_at": "2018-04-14 18:32:33"
+    },
+    {
+        "id": 1027,
+        "cryptocurrency_id": 1,
+        "price_usd": "4808.41203948",
+        "snapshot_at": "2018-04-14 17:32:33"
+    },
+    {
+        "id": 1028,
+        "cryptocurrency_id": 1,
+        "price_usd": "4822.83798714",
+        "snapshot_at": "2018-04-14 16:32:33"
+    },
+    {
+        "id": 1029,
+        "cryptocurrency_id": 1,
+        "price_usd": "4648.55355966",
+        "snapshot_at": "2018-04-14 15:32:33"
+    },
+    {
+        "id": 1030,
+        "cryptocurrency_id": 1,
+        "price_usd": "4665.03824742",
+        "snapshot_at": "2018-04-14 14:32:33"
+    },
+    {
+        "id": 1031,
+        "cryptocurrency_id": 1,
+        "price_usd": "4729.26980498",
+        "snapshot_at": "2018-04-14 13:32:33"
+    },
+    {
+        "id": 1032,
+        "cryptocurrency_id": 1,
+        "price_usd": "4834.52367094",
+        "snapshot_at": "2018-04-14 12:32:33"
+    },
+    {
+        "id": 1033,
+        "cryptocurrency_id": 1,
+        "price_usd": "5009.08428126",
+        "snapshot_at": "2018-04-14 11:32:33"
+    },
+    {
+        "id": 1034,
+        "cryptocurrency_id": 1,
+        "price_usd": "5156.00649067",
+        "snapshot_at": "2018-04-14 10:32:33"
+    },
+    {
+        "id": 1035,
+        "cryptocurrency_id": 1,
+        "price_usd": "5018.76646923",
+        "snapshot_at": "2018-04-14 09:32:33"
+    },
+    {
+        "id": 1036,
+        "cryptocurrency_id": 1,
+        "price_usd": "4968.17373532",
+        "snapshot_at": "2018-04-14 08:32:33"
+    },
+    {
+        "id": 1037,
+        "cryptocurrency_id": 1,
+        "price_usd": "5061.76126395",
+        "snapshot_at": "2018-04-14 07:32:33"
+    },
+    {
+        "id": 1038,
+        "cryptocurrency_id": 1,
+        "price_usd": "4822.06381281",
+        "snapshot_at": "2018-04-14 06:32:33"
+    },
+    {
+        "id": 1039,
+        "cryptocurrency_id": 1,
+        "price_usd": "4879.38318557",
+        "snapshot_at": "2018-04-14 05:32:33"
+    },
+    {
+        "id": 1040,
+        "cryptocurrency_id": 1,
+        "price_usd": "4763.56797528",
+        "snapshot_at": "2018-04-14 04:32:33"
+    },
+    {
+        "id": 1041,
+        "cryptocurrency_id": 1,
+        "price_usd": "4836.08884843",
+        "snapshot_at": "2018-04-14 03:32:33"
+    },
+    {
+        "id": 1042,
+        "cryptocurrency_id": 1,
+        "price_usd": "4643.26171445",
+        "snapshot_at": "2018-04-14 02:32:33"
+    },
+    {
+        "id": 1043,
+        "cryptocurrency_id": 1,
+        "price_usd": "4869.75523226",
+        "snapshot_at": "2018-04-14 01:32:33"
+    },
+    {
+        "id": 1044,
+        "cryptocurrency_id": 1,
+        "price_usd": "4696.00000466",
+        "snapshot_at": "2018-04-14 00:32:33"
+    },
+    {
+        "id": 1045,
+        "cryptocurrency_id": 1,
+        "price_usd": "4804.02270560",
+        "snapshot_at": "2018-04-13 23:32:33"
+    },
+    {
+        "id": 1046,
+        "cryptocurrency_id": 1,
+        "price_usd": "4731.08061537",
+        "snapshot_at": "2018-04-13 22:32:33"
+    },
+    {
+        "id": 1047,
+        "cryptocurrency_id": 1,
+        "price_usd": "4549.99670849",
+        "snapshot_at": "2018-04-13 21:32:33"
+    },
+    {
+        "id": 1048,
+        "cryptocurrency_id": 1,
+        "price_usd": "4328.97809451",
+        "snapshot_at": "2018-04-13 20:32:33"
+    },
+    {
+        "id": 1049,
+        "cryptocurrency_id": 1,
+        "price_usd": "4483.07281481",
+        "snapshot_at": "2018-04-13 19:32:33"
+    },
+    {
+        "id": 1050,
+        "cryptocurrency_id": 1,
+        "price_usd": "4641.79705916",
+        "snapshot_at": "2018-04-13 18:32:33"
+    },
+    {
+        "id": 1051,
+        "cryptocurrency_id": 1,
+        "price_usd": "4638.70497229",
+        "snapshot_at": "2018-04-13 17:32:33"
+    },
+    {
+        "id": 1052,
+        "cryptocurrency_id": 1,
+        "price_usd": "4642.77362203",
+        "snapshot_at": "2018-04-13 16:32:33"
+    },
+    {
+        "id": 1053,
+        "cryptocurrency_id": 1,
+        "price_usd": "4859.08555624",
+        "snapshot_at": "2018-04-13 15:32:33"
+    },
+    {
+        "id": 1054,
+        "cryptocurrency_id": 1,
+        "price_usd": "4823.43114921",
+        "snapshot_at": "2018-04-13 14:32:33"
+    },
+    {
+        "id": 1055,
+        "cryptocurrency_id": 1,
+        "price_usd": "5002.78850183",
+        "snapshot_at": "2018-04-13 13:32:33"
+    },
+    {
+        "id": 1056,
+        "cryptocurrency_id": 1,
+        "price_usd": "4856.87857106",
+        "snapshot_at": "2018-04-13 12:32:33"
+    },
+    {
+        "id": 1057,
+        "cryptocurrency_id": 1,
+        "price_usd": "4622.65608155",
+        "snapshot_at": "2018-04-13 11:32:33"
+    },
+    {
+        "id": 1058,
+        "cryptocurrency_id": 1,
+        "price_usd": "4493.99816933",
+        "snapshot_at": "2018-04-13 10:32:33"
+    },
+    {
+        "id": 1059,
+        "cryptocurrency_id": 1,
+        "price_usd": "4644.44661612",
+        "snapshot_at": "2018-04-13 09:32:33"
+    },
+    {
+        "id": 1060,
+        "cryptocurrency_id": 1,
+        "price_usd": "4617.18340923",
+        "snapshot_at": "2018-04-13 08:32:33"
+    },
+    {
+        "id": 1061,
+        "cryptocurrency_id": 1,
+        "price_usd": "4437.22125200",
+        "snapshot_at": "2018-04-13 07:32:33"
+    },
+    {
+        "id": 1062,
+        "cryptocurrency_id": 1,
+        "price_usd": "4629.41053767",
+        "snapshot_at": "2018-04-13 06:32:33"
+    },
+    {
+        "id": 1063,
+        "cryptocurrency_id": 1,
+        "price_usd": "4681.01767754",
+        "snapshot_at": "2018-04-13 05:32:33"
+    },
+    {
+        "id": 1064,
+        "cryptocurrency_id": 1,
+        "price_usd": "4777.26725914",
+        "snapshot_at": "2018-04-13 04:32:33"
+    },
+    {
+        "id": 1065,
+        "cryptocurrency_id": 1,
+        "price_usd": "4671.37053086",
+        "snapshot_at": "2018-04-13 03:32:33"
+    },
+    {
+        "id": 1066,
+        "cryptocurrency_id": 1,
+        "price_usd": "4880.72491520",
+        "snapshot_at": "2018-04-13 02:32:33"
+    },
+    {
+        "id": 1067,
+        "cryptocurrency_id": 1,
+        "price_usd": "5032.81072137",
+        "snapshot_at": "2018-04-13 01:32:33"
+    },
+    {
+        "id": 1068,
+        "cryptocurrency_id": 1,
+        "price_usd": "4962.98798113",
+        "snapshot_at": "2018-04-13 00:32:33"
+    },
+    {
+        "id": 1069,
+        "cryptocurrency_id": 1,
+        "price_usd": "5006.25516722",
+        "snapshot_at": "2018-04-12 23:32:33"
+    },
+    {
+        "id": 1070,
+        "cryptocurrency_id": 1,
+        "price_usd": "4998.09342683",
+        "snapshot_at": "2018-04-12 22:32:33"
+    },
+    {
+        "id": 1071,
+        "cryptocurrency_id": 1,
+        "price_usd": "4918.94858075",
+        "snapshot_at": "2018-04-12 21:32:33"
+    },
+    {
+        "id": 1072,
+        "cryptocurrency_id": 1,
+        "price_usd": "5130.61355570",
+        "snapshot_at": "2018-04-12 20:32:33"
+    },
+    {
+        "id": 1073,
+        "cryptocurrency_id": 1,
+        "price_usd": "5015.31219511",
+        "snapshot_at": "2018-04-12 19:32:33"
+    },
+    {
+        "id": 1074,
+        "cryptocurrency_id": 1,
+        "price_usd": "4849.54819470",
+        "snapshot_at": "2018-04-12 18:32:33"
+    },
+    {
+        "id": 1075,
+        "cryptocurrency_id": 1,
+        "price_usd": "4665.79938305",
+        "snapshot_at": "2018-04-12 17:32:33"
+    },
+    {
+        "id": 1076,
+        "cryptocurrency_id": 1,
+        "price_usd": "4864.49112820",
+        "snapshot_at": "2018-04-12 16:32:33"
+    },
+    {
+        "id": 1077,
+        "cryptocurrency_id": 1,
+        "price_usd": "4987.81440626",
+        "snapshot_at": "2018-04-12 15:32:33"
+    },
+    {
+        "id": 1078,
+        "cryptocurrency_id": 1,
+        "price_usd": "5058.11779488",
+        "snapshot_at": "2018-04-12 14:32:33"
+    },
+    {
+        "id": 1079,
+        "cryptocurrency_id": 1,
+        "price_usd": "4913.55890446",
+        "snapshot_at": "2018-04-12 13:32:33"
+    },
+    {
+        "id": 1080,
+        "cryptocurrency_id": 1,
+        "price_usd": "5150.91852207",
+        "snapshot_at": "2018-04-12 12:32:33"
+    },
+    {
+        "id": 1081,
+        "cryptocurrency_id": 1,
+        "price_usd": "5116.75072472",
+        "snapshot_at": "2018-04-12 11:32:33"
+    },
+    {
+        "id": 1082,
+        "cryptocurrency_id": 1,
+        "price_usd": "4960.14600593",
+        "snapshot_at": "2018-04-12 10:32:33"
+    },
+    {
+        "id": 1083,
+        "cryptocurrency_id": 1,
+        "price_usd": "5078.28980555",
+        "snapshot_at": "2018-04-12 09:32:33"
+    },
+    {
+        "id": 1084,
+        "cryptocurrency_id": 1,
+        "price_usd": "5049.54479957",
+        "snapshot_at": "2018-04-12 08:32:33"
+    },
+    {
+        "id": 1085,
+        "cryptocurrency_id": 1,
+        "price_usd": "5143.60912536",
+        "snapshot_at": "2018-04-12 07:32:33"
+    },
+    {
+        "id": 1086,
+        "cryptocurrency_id": 1,
+        "price_usd": "5291.20018047",
+        "snapshot_at": "2018-04-12 06:32:33"
+    },
+    {
+        "id": 1087,
+        "cryptocurrency_id": 1,
+        "price_usd": "5079.94943223",
+        "snapshot_at": "2018-04-12 05:32:33"
+    },
+    {
+        "id": 1088,
+        "cryptocurrency_id": 1,
+        "price_usd": "5167.94528315",
+        "snapshot_at": "2018-04-12 04:32:33"
+    },
+    {
+        "id": 1089,
+        "cryptocurrency_id": 1,
+        "price_usd": "5010.20283066",
+        "snapshot_at": "2018-04-12 03:32:33"
+    },
+    {
+        "id": 1090,
+        "cryptocurrency_id": 1,
+        "price_usd": "5012.68346961",
+        "snapshot_at": "2018-04-12 02:32:33"
+    },
+    {
+        "id": 1091,
+        "cryptocurrency_id": 1,
+        "price_usd": "4879.67853894",
+        "snapshot_at": "2018-04-12 01:32:33"
+    },
+    {
+        "id": 1092,
+        "cryptocurrency_id": 1,
+        "price_usd": "5046.03855495",
+        "snapshot_at": "2018-04-12 00:32:33"
+    },
+    {
+        "id": 1093,
+        "cryptocurrency_id": 1,
+        "price_usd": "5015.39114068",
+        "snapshot_at": "2018-04-11 23:32:33"
+    },
+    {
+        "id": 1094,
+        "cryptocurrency_id": 1,
+        "price_usd": "4874.25048874",
+        "snapshot_at": "2018-04-11 22:32:33"
+    },
+    {
+        "id": 1095,
+        "cryptocurrency_id": 1,
+        "price_usd": "4885.77801915",
+        "snapshot_at": "2018-04-11 21:32:33"
+    },
+    {
+        "id": 1096,
+        "cryptocurrency_id": 1,
+        "price_usd": "4644.38598119",
+        "snapshot_at": "2018-04-11 20:32:33"
+    },
+    {
+        "id": 1097,
+        "cryptocurrency_id": 1,
+        "price_usd": "4562.12777037",
+        "snapshot_at": "2018-04-11 19:32:33"
+    },
+    {
+        "id": 1098,
+        "cryptocurrency_id": 1,
+        "price_usd": "4689.32949473",
+        "snapshot_at": "2018-04-11 18:32:33"
+    },
+    {
+        "id": 1099,
+        "cryptocurrency_id": 1,
+        "price_usd": "4481.17483730",
+        "snapshot_at": "2018-04-11 17:32:33"
+    },
+    {
+        "id": 1100,
+        "cryptocurrency_id": 1,
+        "price_usd": "4417.75838286",
+        "snapshot_at": "2018-04-11 16:32:33"
+    },
+    {
+        "id": 1101,
+        "cryptocurrency_id": 1,
+        "price_usd": "4271.34603259",
+        "snapshot_at": "2018-04-11 15:32:33"
+    },
+    {
+        "id": 1102,
+        "cryptocurrency_id": 1,
+        "price_usd": "4119.52277045",
+        "snapshot_at": "2018-04-11 14:32:33"
+    },
+    {
+        "id": 1103,
+        "cryptocurrency_id": 1,
+        "price_usd": "4218.68407269",
+        "snapshot_at": "2018-04-11 13:32:33"
+    },
+    {
+        "id": 1104,
+        "cryptocurrency_id": 1,
+        "price_usd": "4070.73524868",
+        "snapshot_at": "2018-04-11 12:32:33"
+    },
+    {
+        "id": 1105,
+        "cryptocurrency_id": 1,
+        "price_usd": "4259.71957165",
+        "snapshot_at": "2018-04-11 11:32:33"
+    },
+    {
+        "id": 1106,
+        "cryptocurrency_id": 1,
+        "price_usd": "4442.79726939",
+        "snapshot_at": "2018-04-11 10:32:33"
+    },
+    {
+        "id": 1107,
+        "cryptocurrency_id": 1,
+        "price_usd": "4621.39867158",
+        "snapshot_at": "2018-04-11 09:32:33"
+    },
+    {
+        "id": 1108,
+        "cryptocurrency_id": 1,
+        "price_usd": "4678.10387893",
+        "snapshot_at": "2018-04-11 08:32:33"
+    },
+    {
+        "id": 1109,
+        "cryptocurrency_id": 1,
+        "price_usd": "4830.48421008",
+        "snapshot_at": "2018-04-11 07:32:33"
+    },
+    {
+        "id": 1110,
+        "cryptocurrency_id": 1,
+        "price_usd": "4942.89894813",
+        "snapshot_at": "2018-04-11 06:32:33"
+    },
+    {
+        "id": 1111,
+        "cryptocurrency_id": 1,
+        "price_usd": "4743.96383142",
+        "snapshot_at": "2018-04-11 05:32:33"
+    },
+    {
+        "id": 1112,
+        "cryptocurrency_id": 1,
+        "price_usd": "4618.51567080",
+        "snapshot_at": "2018-04-11 04:32:33"
+    },
+    {
+        "id": 1113,
+        "cryptocurrency_id": 1,
+        "price_usd": "4461.92217778",
+        "snapshot_at": "2018-04-11 03:32:33"
+    },
+    {
+        "id": 1114,
+        "cryptocurrency_id": 1,
+        "price_usd": "4526.01334709",
+        "snapshot_at": "2018-04-11 02:32:33"
+    },
+    {
+        "id": 1115,
+        "cryptocurrency_id": 1,
+        "price_usd": "4441.11352854",
+        "snapshot_at": "2018-04-11 01:32:33"
+    },
+    {
+        "id": 1116,
+        "cryptocurrency_id": 1,
+        "price_usd": "4506.41501629",
+        "snapshot_at": "2018-04-11 00:32:33"
+    },
+    {
+        "id": 1117,
+        "cryptocurrency_id": 1,
+        "price_usd": "4384.62570121",
+        "snapshot_at": "2018-04-10 23:32:33"
+    },
+    {
+        "id": 1118,
+        "cryptocurrency_id": 1,
+        "price_usd": "4347.68148277",
+        "snapshot_at": "2018-04-10 22:32:33"
+    },
+    {
+        "id": 1119,
+        "cryptocurrency_id": 1,
+        "price_usd": "4405.60162576",
+        "snapshot_at": "2018-04-10 21:32:33"
+    },
+    {
+        "id": 1120,
+        "cryptocurrency_id": 1,
+        "price_usd": "4417.48837629",
+        "snapshot_at": "2018-04-10 20:32:33"
+    },
+    {
+        "id": 1121,
+        "cryptocurrency_id": 1,
+        "price_usd": "4614.37489750",
+        "snapshot_at": "2018-04-10 19:32:33"
+    },
+    {
+        "id": 1122,
+        "cryptocurrency_id": 1,
+        "price_usd": "4458.06989199",
+        "snapshot_at": "2018-04-10 18:32:33"
+    },
+    {
+        "id": 1123,
+        "cryptocurrency_id": 1,
+        "price_usd": "4373.63469668",
+        "snapshot_at": "2018-04-10 17:32:33"
+    },
+    {
+        "id": 1124,
+        "cryptocurrency_id": 1,
+        "price_usd": "4337.08338985",
+        "snapshot_at": "2018-04-10 16:32:33"
+    },
+    {
+        "id": 1125,
+        "cryptocurrency_id": 1,
+        "price_usd": "4384.62036427",
+        "snapshot_at": "2018-04-10 15:32:33"
+    },
+    {
+        "id": 1126,
+        "cryptocurrency_id": 1,
+        "price_usd": "4415.59352826",
+        "snapshot_at": "2018-04-10 14:32:33"
+    },
+    {
+        "id": 1127,
+        "cryptocurrency_id": 1,
+        "price_usd": "4626.58469664",
+        "snapshot_at": "2018-04-10 13:32:33"
+    },
+    {
+        "id": 1128,
+        "cryptocurrency_id": 1,
+        "price_usd": "4844.00804136",
+        "snapshot_at": "2018-04-10 12:32:33"
+    },
+    {
+        "id": 1129,
+        "cryptocurrency_id": 1,
+        "price_usd": "4747.79589729",
+        "snapshot_at": "2018-04-10 11:32:33"
+    },
+    {
+        "id": 1130,
+        "cryptocurrency_id": 1,
+        "price_usd": "4654.48424468",
+        "snapshot_at": "2018-04-10 10:32:33"
+    },
+    {
+        "id": 1131,
+        "cryptocurrency_id": 1,
+        "price_usd": "4870.90633547",
+        "snapshot_at": "2018-04-10 09:32:33"
+    },
+    {
+        "id": 1132,
+        "cryptocurrency_id": 1,
+        "price_usd": "4789.04954427",
+        "snapshot_at": "2018-04-10 08:32:33"
+    },
+    {
+        "id": 1133,
+        "cryptocurrency_id": 1,
+        "price_usd": "5005.36387329",
+        "snapshot_at": "2018-04-10 07:32:33"
+    },
+    {
+        "id": 1134,
+        "cryptocurrency_id": 1,
+        "price_usd": "4755.52493170",
+        "snapshot_at": "2018-04-10 06:32:33"
+    },
+    {
+        "id": 1135,
+        "cryptocurrency_id": 1,
+        "price_usd": "4885.85085570",
+        "snapshot_at": "2018-04-10 05:32:33"
+    },
+    {
+        "id": 1136,
+        "cryptocurrency_id": 1,
+        "price_usd": "4775.89040106",
+        "snapshot_at": "2018-04-10 04:32:33"
+    },
+    {
+        "id": 1137,
+        "cryptocurrency_id": 1,
+        "price_usd": "4889.89538338",
+        "snapshot_at": "2018-04-10 03:32:33"
+    },
+    {
+        "id": 1138,
+        "cryptocurrency_id": 1,
+        "price_usd": "5035.60557555",
+        "snapshot_at": "2018-04-10 02:32:33"
+    },
+    {
+        "id": 1139,
+        "cryptocurrency_id": 1,
+        "price_usd": "5184.82987954",
+        "snapshot_at": "2018-04-10 01:32:33"
+    },
+    {
+        "id": 1140,
+        "cryptocurrency_id": 1,
+        "price_usd": "5043.16912550",
+        "snapshot_at": "2018-04-10 00:32:33"
+    },
+    {
+        "id": 1141,
+        "cryptocurrency_id": 1,
+        "price_usd": "5123.05399659",
+        "snapshot_at": "2018-04-09 23:32:33"
+    },
+    {
+        "id": 1142,
+        "cryptocurrency_id": 1,
+        "price_usd": "5054.27704679",
+        "snapshot_at": "2018-04-09 22:32:33"
+    },
+    {
+        "id": 1143,
+        "cryptocurrency_id": 1,
+        "price_usd": "4897.72493539",
+        "snapshot_at": "2018-04-09 21:32:33"
+    },
+    {
+        "id": 1144,
+        "cryptocurrency_id": 1,
+        "price_usd": "4797.32334272",
+        "snapshot_at": "2018-04-09 20:32:33"
+    },
+    {
+        "id": 1145,
+        "cryptocurrency_id": 1,
+        "price_usd": "4673.40909037",
+        "snapshot_at": "2018-04-09 19:32:33"
+    },
+    {
+        "id": 1146,
+        "cryptocurrency_id": 1,
+        "price_usd": "4650.37824146",
+        "snapshot_at": "2018-04-09 18:32:33"
+    },
+    {
+        "id": 1147,
+        "cryptocurrency_id": 1,
+        "price_usd": "4653.61976878",
+        "snapshot_at": "2018-04-09 17:32:33"
+    },
+    {
+        "id": 1148,
+        "cryptocurrency_id": 1,
+        "price_usd": "4763.54140976",
+        "snapshot_at": "2018-04-09 16:32:33"
+    },
+    {
+        "id": 1149,
+        "cryptocurrency_id": 1,
+        "price_usd": "4842.75316467",
+        "snapshot_at": "2018-04-09 15:32:33"
+    },
+    {
+        "id": 1150,
+        "cryptocurrency_id": 1,
+        "price_usd": "4717.41257080",
+        "snapshot_at": "2018-04-09 14:32:33"
+    },
+    {
+        "id": 1151,
+        "cryptocurrency_id": 1,
+        "price_usd": "4730.69611352",
+        "snapshot_at": "2018-04-09 13:32:33"
+    },
+    {
+        "id": 1152,
+        "cryptocurrency_id": 1,
+        "price_usd": "4513.98559948",
+        "snapshot_at": "2018-04-09 12:32:33"
+    },
+    {
+        "id": 1153,
+        "cryptocurrency_id": 1,
+        "price_usd": "4666.99714107",
+        "snapshot_at": "2018-04-09 11:32:33"
+    },
+    {
+        "id": 1154,
+        "cryptocurrency_id": 1,
+        "price_usd": "4501.96804607",
+        "snapshot_at": "2018-04-09 10:32:33"
+    },
+    {
+        "id": 1155,
+        "cryptocurrency_id": 1,
+        "price_usd": "4532.80697088",
+        "snapshot_at": "2018-04-09 09:32:33"
+    },
+    {
+        "id": 1156,
+        "cryptocurrency_id": 1,
+        "price_usd": "4541.74022391",
+        "snapshot_at": "2018-04-09 08:32:33"
+    },
+    {
+        "id": 1157,
+        "cryptocurrency_id": 1,
+        "price_usd": "4591.97622478",
+        "snapshot_at": "2018-04-09 07:32:33"
+    },
+    {
+        "id": 1158,
+        "cryptocurrency_id": 1,
+        "price_usd": "4612.35903588",
+        "snapshot_at": "2018-04-09 06:32:33"
+    },
+    {
+        "id": 1159,
+        "cryptocurrency_id": 1,
+        "price_usd": "4770.21678179",
+        "snapshot_at": "2018-04-09 05:32:33"
+    },
+    {
+        "id": 1160,
+        "cryptocurrency_id": 1,
+        "price_usd": "4877.74132296",
+        "snapshot_at": "2018-04-09 04:32:33"
+    },
+    {
+        "id": 1161,
+        "cryptocurrency_id": 1,
+        "price_usd": "4985.85320806",
+        "snapshot_at": "2018-04-09 03:32:33"
+    },
+    {
+        "id": 1162,
+        "cryptocurrency_id": 1,
+        "price_usd": "4746.80531595",
+        "snapshot_at": "2018-04-09 02:32:33"
+    },
+    {
+        "id": 1163,
+        "cryptocurrency_id": 1,
+        "price_usd": "4581.78520312",
+        "snapshot_at": "2018-04-09 01:32:33"
+    },
+    {
+        "id": 1164,
+        "cryptocurrency_id": 1,
+        "price_usd": "4694.73210131",
+        "snapshot_at": "2018-04-09 00:32:33"
+    },
+    {
+        "id": 1165,
+        "cryptocurrency_id": 1,
+        "price_usd": "4679.00287198",
+        "snapshot_at": "2018-04-08 23:32:33"
+    },
+    {
+        "id": 1166,
+        "cryptocurrency_id": 1,
+        "price_usd": "4756.03753214",
+        "snapshot_at": "2018-04-08 22:32:33"
+    },
+    {
+        "id": 1167,
+        "cryptocurrency_id": 1,
+        "price_usd": "4840.63069130",
+        "snapshot_at": "2018-04-08 21:32:33"
+    },
+    {
+        "id": 1168,
+        "cryptocurrency_id": 1,
+        "price_usd": "4972.67471216",
+        "snapshot_at": "2018-04-08 20:32:33"
+    },
+    {
+        "id": 1169,
+        "cryptocurrency_id": 1,
+        "price_usd": "4772.96707621",
+        "snapshot_at": "2018-04-08 19:32:33"
+    },
+    {
+        "id": 1170,
+        "cryptocurrency_id": 1,
+        "price_usd": "4627.69973527",
+        "snapshot_at": "2018-04-08 18:32:33"
+    },
+    {
+        "id": 1171,
+        "cryptocurrency_id": 1,
+        "price_usd": "4667.67561571",
+        "snapshot_at": "2018-04-08 17:32:33"
+    },
+    {
+        "id": 1172,
+        "cryptocurrency_id": 1,
+        "price_usd": "4850.45984634",
+        "snapshot_at": "2018-04-08 16:32:33"
+    },
+    {
+        "id": 1173,
+        "cryptocurrency_id": 1,
+        "price_usd": "4969.48071051",
+        "snapshot_at": "2018-04-08 15:32:33"
+    },
+    {
+        "id": 1174,
+        "cryptocurrency_id": 1,
+        "price_usd": "4851.21803560",
+        "snapshot_at": "2018-04-08 14:32:33"
+    },
+    {
+        "id": 1175,
+        "cryptocurrency_id": 1,
+        "price_usd": "4891.51995595",
+        "snapshot_at": "2018-04-08 13:32:33"
+    },
+    {
+        "id": 1176,
+        "cryptocurrency_id": 1,
+        "price_usd": "4969.67847810",
+        "snapshot_at": "2018-04-08 12:32:33"
+    },
+    {
+        "id": 1177,
+        "cryptocurrency_id": 1,
+        "price_usd": "5184.26004150",
+        "snapshot_at": "2018-04-08 11:32:33"
+    },
+    {
+        "id": 1178,
+        "cryptocurrency_id": 1,
+        "price_usd": "5231.04914152",
+        "snapshot_at": "2018-04-08 10:32:33"
+    },
+    {
+        "id": 1179,
+        "cryptocurrency_id": 1,
+        "price_usd": "5252.36158978",
+        "snapshot_at": "2018-04-08 09:32:33"
+    },
+    {
+        "id": 1180,
+        "cryptocurrency_id": 1,
+        "price_usd": "5413.38560363",
+        "snapshot_at": "2018-04-08 08:32:33"
+    },
+    {
+        "id": 1181,
+        "cryptocurrency_id": 1,
+        "price_usd": "5554.00975810",
+        "snapshot_at": "2018-04-08 07:32:33"
+    },
+    {
+        "id": 1182,
+        "cryptocurrency_id": 1,
+        "price_usd": "5398.01598440",
+        "snapshot_at": "2018-04-08 06:32:33"
+    },
+    {
+        "id": 1183,
+        "cryptocurrency_id": 1,
+        "price_usd": "5155.15214094",
+        "snapshot_at": "2018-04-08 05:32:33"
+    },
+    {
+        "id": 1184,
+        "cryptocurrency_id": 1,
+        "price_usd": "4934.72173340",
+        "snapshot_at": "2018-04-08 04:32:33"
+    },
+    {
+        "id": 1185,
+        "cryptocurrency_id": 1,
+        "price_usd": "4709.27272423",
+        "snapshot_at": "2018-04-08 03:32:33"
+    },
+    {
+        "id": 1186,
+        "cryptocurrency_id": 1,
+        "price_usd": "4860.42627991",
+        "snapshot_at": "2018-04-08 02:32:33"
+    },
+    {
+        "id": 1187,
+        "cryptocurrency_id": 1,
+        "price_usd": "5097.28212186",
+        "snapshot_at": "2018-04-08 01:32:33"
+    },
+    {
+        "id": 1188,
+        "cryptocurrency_id": 1,
+        "price_usd": "5319.99045756",
+        "snapshot_at": "2018-04-08 00:32:33"
+    },
+    {
+        "id": 1189,
+        "cryptocurrency_id": 1,
+        "price_usd": "5567.37689124",
+        "snapshot_at": "2018-04-07 23:32:33"
+    },
+    {
+        "id": 1190,
+        "cryptocurrency_id": 1,
+        "price_usd": "5765.40687740",
+        "snapshot_at": "2018-04-07 22:32:33"
+    },
+    {
+        "id": 1191,
+        "cryptocurrency_id": 1,
+        "price_usd": "5837.00768377",
+        "snapshot_at": "2018-04-07 21:32:33"
+    },
+    {
+        "id": 1192,
+        "cryptocurrency_id": 1,
+        "price_usd": "5884.14775499",
+        "snapshot_at": "2018-04-07 20:32:33"
+    },
+    {
+        "id": 1193,
+        "cryptocurrency_id": 1,
+        "price_usd": "5632.54545621",
+        "snapshot_at": "2018-04-07 19:32:33"
+    },
+    {
+        "id": 1194,
+        "cryptocurrency_id": 1,
+        "price_usd": "5887.24822668",
+        "snapshot_at": "2018-04-07 18:32:33"
+    },
+    {
+        "id": 1195,
+        "cryptocurrency_id": 1,
+        "price_usd": "5607.07483834",
+        "snapshot_at": "2018-04-07 17:32:33"
+    },
+    {
+        "id": 1196,
+        "cryptocurrency_id": 1,
+        "price_usd": "5476.23184544",
+        "snapshot_at": "2018-04-07 16:32:33"
+    },
+    {
+        "id": 1197,
+        "cryptocurrency_id": 1,
+        "price_usd": "5449.11724538",
+        "snapshot_at": "2018-04-07 15:32:33"
+    },
+    {
+        "id": 1198,
+        "cryptocurrency_id": 1,
+        "price_usd": "5592.11951225",
+        "snapshot_at": "2018-04-07 14:32:33"
+    },
+    {
+        "id": 1199,
+        "cryptocurrency_id": 1,
+        "price_usd": "5357.43967538",
+        "snapshot_at": "2018-04-07 13:32:33"
+    },
+    {
+        "id": 1200,
+        "cryptocurrency_id": 1,
+        "price_usd": "5566.53842459",
+        "snapshot_at": "2018-04-07 12:32:33"
+    },
+    {
+        "id": 1201,
+        "cryptocurrency_id": 1,
+        "price_usd": "5805.35766418",
+        "snapshot_at": "2018-04-07 11:32:33"
+    },
+    {
+        "id": 1202,
+        "cryptocurrency_id": 1,
+        "price_usd": "5629.36016278",
+        "snapshot_at": "2018-04-07 10:32:33"
+    },
+    {
+        "id": 1203,
+        "cryptocurrency_id": 1,
+        "price_usd": "5605.04956406",
+        "snapshot_at": "2018-04-07 09:32:33"
+    },
+    {
+        "id": 1204,
+        "cryptocurrency_id": 1,
+        "price_usd": "5657.57121250",
+        "snapshot_at": "2018-04-07 08:32:33"
+    },
+    {
+        "id": 1205,
+        "cryptocurrency_id": 1,
+        "price_usd": "5673.65155819",
+        "snapshot_at": "2018-04-07 07:32:33"
+    },
+    {
+        "id": 1206,
+        "cryptocurrency_id": 1,
+        "price_usd": "5915.80180928",
+        "snapshot_at": "2018-04-07 06:32:33"
+    },
+    {
+        "id": 1207,
+        "cryptocurrency_id": 1,
+        "price_usd": "5865.38316933",
+        "snapshot_at": "2018-04-07 05:32:33"
+    },
+    {
+        "id": 1208,
+        "cryptocurrency_id": 1,
+        "price_usd": "5857.75248976",
+        "snapshot_at": "2018-04-07 04:32:33"
+    },
+    {
+        "id": 1209,
+        "cryptocurrency_id": 1,
+        "price_usd": "6025.33242181",
+        "snapshot_at": "2018-04-07 03:32:33"
+    },
+    {
+        "id": 1210,
+        "cryptocurrency_id": 1,
+        "price_usd": "5930.96538992",
+        "snapshot_at": "2018-04-07 02:32:33"
+    },
+    {
+        "id": 1211,
+        "cryptocurrency_id": 1,
+        "price_usd": "5810.77023022",
+        "snapshot_at": "2018-04-07 01:32:33"
+    },
+    {
+        "id": 1212,
+        "cryptocurrency_id": 1,
+        "price_usd": "5657.38087608",
+        "snapshot_at": "2018-04-07 00:32:33"
+    },
+    {
+        "id": 1213,
+        "cryptocurrency_id": 1,
+        "price_usd": "5484.74380398",
+        "snapshot_at": "2018-04-06 23:32:33"
+    },
+    {
+        "id": 1214,
+        "cryptocurrency_id": 1,
+        "price_usd": "5755.79891813",
+        "snapshot_at": "2018-04-06 22:32:33"
+    },
+    {
+        "id": 1215,
+        "cryptocurrency_id": 1,
+        "price_usd": "6010.54606912",
+        "snapshot_at": "2018-04-06 21:32:33"
+    },
+    {
+        "id": 1216,
+        "cryptocurrency_id": 1,
+        "price_usd": "5748.67188542",
+        "snapshot_at": "2018-04-06 20:32:33"
+    },
+    {
+        "id": 1217,
+        "cryptocurrency_id": 1,
+        "price_usd": "5907.97425874",
+        "snapshot_at": "2018-04-06 19:32:33"
+    },
+    {
+        "id": 1218,
+        "cryptocurrency_id": 1,
+        "price_usd": "5836.26746750",
+        "snapshot_at": "2018-04-06 18:32:33"
+    },
+    {
+        "id": 1219,
+        "cryptocurrency_id": 1,
+        "price_usd": "5637.41497251",
+        "snapshot_at": "2018-04-06 17:32:33"
+    },
+    {
+        "id": 1220,
+        "cryptocurrency_id": 1,
+        "price_usd": "5653.24066638",
+        "snapshot_at": "2018-04-06 16:32:33"
+    },
+    {
+        "id": 1221,
+        "cryptocurrency_id": 1,
+        "price_usd": "5489.26916318",
+        "snapshot_at": "2018-04-06 15:32:33"
+    },
+    {
+        "id": 1222,
+        "cryptocurrency_id": 1,
+        "price_usd": "5329.01760277",
+        "snapshot_at": "2018-04-06 14:32:33"
+    },
+    {
+        "id": 1223,
+        "cryptocurrency_id": 1,
+        "price_usd": "5563.63855055",
+        "snapshot_at": "2018-04-06 13:32:33"
+    },
+    {
+        "id": 1224,
+        "cryptocurrency_id": 1,
+        "price_usd": "5370.60207258",
+        "snapshot_at": "2018-04-06 12:32:33"
+    },
+    {
+        "id": 1225,
+        "cryptocurrency_id": 1,
+        "price_usd": "5247.60627908",
+        "snapshot_at": "2018-04-06 11:32:33"
+    },
+    {
+        "id": 1226,
+        "cryptocurrency_id": 1,
+        "price_usd": "5471.57452938",
+        "snapshot_at": "2018-04-06 10:32:33"
+    },
+    {
+        "id": 1227,
+        "cryptocurrency_id": 1,
+        "price_usd": "5705.59917775",
+        "snapshot_at": "2018-04-06 09:32:33"
+    },
+    {
+        "id": 1228,
+        "cryptocurrency_id": 1,
+        "price_usd": "5843.12051907",
+        "snapshot_at": "2018-04-06 08:32:33"
+    },
+    {
+        "id": 1229,
+        "cryptocurrency_id": 1,
+        "price_usd": "5623.97145998",
+        "snapshot_at": "2018-04-06 07:32:33"
+    },
+    {
+        "id": 1230,
+        "cryptocurrency_id": 1,
+        "price_usd": "5846.90909399",
+        "snapshot_at": "2018-04-06 06:32:33"
+    },
+    {
+        "id": 1231,
+        "cryptocurrency_id": 1,
+        "price_usd": "6025.43625202",
+        "snapshot_at": "2018-04-06 05:32:33"
+    },
+    {
+        "id": 1232,
+        "cryptocurrency_id": 1,
+        "price_usd": "6174.81574455",
+        "snapshot_at": "2018-04-06 04:32:33"
+    },
+    {
+        "id": 1233,
+        "cryptocurrency_id": 1,
+        "price_usd": "6020.92277864",
+        "snapshot_at": "2018-04-06 03:32:33"
+    },
+    {
+        "id": 1234,
+        "cryptocurrency_id": 1,
+        "price_usd": "5973.38995512",
+        "snapshot_at": "2018-04-06 02:32:33"
+    },
+    {
+        "id": 1235,
+        "cryptocurrency_id": 1,
+        "price_usd": "6254.52464453",
+        "snapshot_at": "2018-04-06 01:32:33"
+    },
+    {
+        "id": 1236,
+        "cryptocurrency_id": 1,
+        "price_usd": "6184.90767069",
+        "snapshot_at": "2018-04-06 00:32:33"
+    },
+    {
+        "id": 1237,
+        "cryptocurrency_id": 1,
+        "price_usd": "6224.02379922",
+        "snapshot_at": "2018-04-05 23:32:33"
+    },
+    {
+        "id": 1238,
+        "cryptocurrency_id": 1,
+        "price_usd": "6312.35602410",
+        "snapshot_at": "2018-04-05 22:32:33"
+    },
+    {
+        "id": 1239,
+        "cryptocurrency_id": 1,
+        "price_usd": "6471.98033663",
+        "snapshot_at": "2018-04-05 21:32:33"
+    },
+    {
+        "id": 1240,
+        "cryptocurrency_id": 1,
+        "price_usd": "6390.96770208",
+        "snapshot_at": "2018-04-05 20:32:33"
+    },
+    {
+        "id": 1241,
+        "cryptocurrency_id": 1,
+        "price_usd": "6665.28533183",
+        "snapshot_at": "2018-04-05 19:32:33"
+    },
+    {
+        "id": 1242,
+        "cryptocurrency_id": 1,
+        "price_usd": "6547.90324962",
+        "snapshot_at": "2018-04-05 18:32:33"
+    },
+    {
+        "id": 1243,
+        "cryptocurrency_id": 1,
+        "price_usd": "6359.74727837",
+        "snapshot_at": "2018-04-05 17:32:33"
+    },
+    {
+        "id": 1244,
+        "cryptocurrency_id": 1,
+        "price_usd": "6335.05688919",
+        "snapshot_at": "2018-04-05 16:32:33"
+    },
+    {
+        "id": 1245,
+        "cryptocurrency_id": 1,
+        "price_usd": "6481.60482151",
+        "snapshot_at": "2018-04-05 15:32:33"
+    },
+    {
+        "id": 1246,
+        "cryptocurrency_id": 1,
+        "price_usd": "6661.74512967",
+        "snapshot_at": "2018-04-05 14:32:33"
+    },
+    {
+        "id": 1247,
+        "cryptocurrency_id": 1,
+        "price_usd": "6367.46613949",
+        "snapshot_at": "2018-04-05 13:32:33"
+    },
+    {
+        "id": 1248,
+        "cryptocurrency_id": 1,
+        "price_usd": "6658.34313086",
+        "snapshot_at": "2018-04-05 12:32:33"
+    },
+    {
+        "id": 1249,
+        "cryptocurrency_id": 1,
+        "price_usd": "6329.71006412",
+        "snapshot_at": "2018-04-05 11:32:33"
+    },
+    {
+        "id": 1250,
+        "cryptocurrency_id": 1,
+        "price_usd": "6469.11143393",
+        "snapshot_at": "2018-04-05 10:32:33"
+    },
+    {
+        "id": 1251,
+        "cryptocurrency_id": 1,
+        "price_usd": "6153.04758914",
+        "snapshot_at": "2018-04-05 09:32:33"
+    },
+    {
+        "id": 1252,
+        "cryptocurrency_id": 1,
+        "price_usd": "5950.94725335",
+        "snapshot_at": "2018-04-05 08:32:33"
+    },
+    {
+        "id": 1253,
+        "cryptocurrency_id": 1,
+        "price_usd": "5659.26664354",
+        "snapshot_at": "2018-04-05 07:32:33"
+    },
+    {
+        "id": 1254,
+        "cryptocurrency_id": 1,
+        "price_usd": "5836.66119656",
+        "snapshot_at": "2018-04-05 06:32:33"
+    },
+    {
+        "id": 1255,
+        "cryptocurrency_id": 1,
+        "price_usd": "5732.83031596",
+        "snapshot_at": "2018-04-05 05:32:33"
+    },
+    {
+        "id": 1256,
+        "cryptocurrency_id": 1,
+        "price_usd": "5641.99830080",
+        "snapshot_at": "2018-04-05 04:32:33"
+    },
+    {
+        "id": 1257,
+        "cryptocurrency_id": 1,
+        "price_usd": "5909.64650921",
+        "snapshot_at": "2018-04-05 03:32:33"
+    },
+    {
+        "id": 1258,
+        "cryptocurrency_id": 1,
+        "price_usd": "5824.05674783",
+        "snapshot_at": "2018-04-05 02:32:33"
+    },
+    {
+        "id": 1259,
+        "cryptocurrency_id": 1,
+        "price_usd": "5548.07608702",
+        "snapshot_at": "2018-04-05 01:32:33"
+    },
+    {
+        "id": 1260,
+        "cryptocurrency_id": 1,
+        "price_usd": "5598.24193998",
+        "snapshot_at": "2018-04-05 00:32:33"
+    },
+    {
+        "id": 1261,
+        "cryptocurrency_id": 1,
+        "price_usd": "5799.75495110",
+        "snapshot_at": "2018-04-04 23:32:33"
+    },
+    {
+        "id": 1262,
+        "cryptocurrency_id": 1,
+        "price_usd": "5601.50208600",
+        "snapshot_at": "2018-04-04 22:32:33"
+    },
+    {
+        "id": 1263,
+        "cryptocurrency_id": 1,
+        "price_usd": "5719.25156842",
+        "snapshot_at": "2018-04-04 21:32:33"
+    },
+    {
+        "id": 1264,
+        "cryptocurrency_id": 1,
+        "price_usd": "5833.75173096",
+        "snapshot_at": "2018-04-04 20:32:33"
+    },
+    {
+        "id": 1265,
+        "cryptocurrency_id": 1,
+        "price_usd": "5572.84440366",
+        "snapshot_at": "2018-04-04 19:32:33"
+    },
+    {
+        "id": 1266,
+        "cryptocurrency_id": 1,
+        "price_usd": "5420.41715709",
+        "snapshot_at": "2018-04-04 18:32:33"
+    },
+    {
+        "id": 1267,
+        "cryptocurrency_id": 1,
+        "price_usd": "5177.45969792",
+        "snapshot_at": "2018-04-04 17:32:33"
+    },
+    {
+        "id": 1268,
+        "cryptocurrency_id": 1,
+        "price_usd": "5097.05689571",
+        "snapshot_at": "2018-04-04 16:32:33"
+    },
+    {
+        "id": 1269,
+        "cryptocurrency_id": 1,
+        "price_usd": "4958.88652835",
+        "snapshot_at": "2018-04-04 15:32:33"
+    },
+    {
+        "id": 1270,
+        "cryptocurrency_id": 1,
+        "price_usd": "5075.29057496",
+        "snapshot_at": "2018-04-04 14:32:33"
+    },
+    {
+        "id": 1271,
+        "cryptocurrency_id": 1,
+        "price_usd": "5257.09705728",
+        "snapshot_at": "2018-04-04 13:32:33"
+    },
+    {
+        "id": 1272,
+        "cryptocurrency_id": 1,
+        "price_usd": "5156.36211013",
+        "snapshot_at": "2018-04-04 12:32:33"
+    },
+    {
+        "id": 1273,
+        "cryptocurrency_id": 1,
+        "price_usd": "5229.94790456",
+        "snapshot_at": "2018-04-04 11:32:33"
+    },
+    {
+        "id": 1274,
+        "cryptocurrency_id": 1,
+        "price_usd": "5032.52743727",
+        "snapshot_at": "2018-04-04 10:32:33"
+    },
+    {
+        "id": 1275,
+        "cryptocurrency_id": 1,
+        "price_usd": "5202.80639297",
+        "snapshot_at": "2018-04-04 09:32:33"
+    },
+    {
+        "id": 1276,
+        "cryptocurrency_id": 1,
+        "price_usd": "5169.10187450",
+        "snapshot_at": "2018-04-04 08:32:33"
+    },
+    {
+        "id": 1277,
+        "cryptocurrency_id": 1,
+        "price_usd": "5408.31046515",
+        "snapshot_at": "2018-04-04 07:32:33"
+    },
+    {
+        "id": 1278,
+        "cryptocurrency_id": 1,
+        "price_usd": "5270.33803758",
+        "snapshot_at": "2018-04-04 06:32:33"
+    },
+    {
+        "id": 1279,
+        "cryptocurrency_id": 1,
+        "price_usd": "5464.75741681",
+        "snapshot_at": "2018-04-04 05:32:33"
+    },
+    {
+        "id": 1280,
+        "cryptocurrency_id": 1,
+        "price_usd": "5578.72383178",
+        "snapshot_at": "2018-04-04 04:32:33"
+    },
+    {
+        "id": 1281,
+        "cryptocurrency_id": 1,
+        "price_usd": "5465.11523943",
+        "snapshot_at": "2018-04-04 03:32:33"
+    },
+    {
+        "id": 1282,
+        "cryptocurrency_id": 1,
+        "price_usd": "5586.16762232",
+        "snapshot_at": "2018-04-04 02:32:33"
+    },
+    {
+        "id": 1283,
+        "cryptocurrency_id": 1,
+        "price_usd": "5770.86360984",
+        "snapshot_at": "2018-04-04 01:32:33"
+    },
+    {
+        "id": 1284,
+        "cryptocurrency_id": 1,
+        "price_usd": "5891.33685979",
+        "snapshot_at": "2018-04-04 00:32:33"
+    },
+    {
+        "id": 1285,
+        "cryptocurrency_id": 1,
+        "price_usd": "6115.02336471",
+        "snapshot_at": "2018-04-03 23:32:33"
+    },
+    {
+        "id": 1286,
+        "cryptocurrency_id": 1,
+        "price_usd": "6121.21368701",
+        "snapshot_at": "2018-04-03 22:32:33"
+    },
+    {
+        "id": 1287,
+        "cryptocurrency_id": 1,
+        "price_usd": "6209.61031970",
+        "snapshot_at": "2018-04-03 21:32:33"
+    },
+    {
+        "id": 1288,
+        "cryptocurrency_id": 1,
+        "price_usd": "6316.27789335",
+        "snapshot_at": "2018-04-03 20:32:33"
+    },
+    {
+        "id": 1289,
+        "cryptocurrency_id": 1,
+        "price_usd": "6505.68043441",
+        "snapshot_at": "2018-04-03 19:32:33"
+    },
+    {
+        "id": 1290,
+        "cryptocurrency_id": 1,
+        "price_usd": "6710.39119562",
+        "snapshot_at": "2018-04-03 18:32:33"
+    },
+    {
+        "id": 1291,
+        "cryptocurrency_id": 1,
+        "price_usd": "7019.29017953",
+        "snapshot_at": "2018-04-03 17:32:33"
+    },
+    {
+        "id": 1292,
+        "cryptocurrency_id": 1,
+        "price_usd": "6957.16691317",
+        "snapshot_at": "2018-04-03 16:32:33"
+    },
+    {
+        "id": 1293,
+        "cryptocurrency_id": 1,
+        "price_usd": "7209.63297023",
+        "snapshot_at": "2018-04-03 15:32:33"
+    },
+    {
+        "id": 1294,
+        "cryptocurrency_id": 1,
+        "price_usd": "7254.10267600",
+        "snapshot_at": "2018-04-03 14:32:33"
+    },
+    {
+        "id": 1295,
+        "cryptocurrency_id": 1,
+        "price_usd": "6898.40229379",
+        "snapshot_at": "2018-04-03 13:32:33"
+    },
+    {
+        "id": 1296,
+        "cryptocurrency_id": 1,
+        "price_usd": "6659.28240962",
+        "snapshot_at": "2018-04-03 12:32:33"
+    },
+    {
+        "id": 1297,
+        "cryptocurrency_id": 1,
+        "price_usd": "6496.90691072",
+        "snapshot_at": "2018-04-03 11:32:33"
+    },
+    {
+        "id": 1298,
+        "cryptocurrency_id": 1,
+        "price_usd": "6485.95177457",
+        "snapshot_at": "2018-04-03 10:32:33"
+    },
+    {
+        "id": 1299,
+        "cryptocurrency_id": 1,
+        "price_usd": "6426.70741434",
+        "snapshot_at": "2018-04-03 09:32:33"
+    },
+    {
+        "id": 1300,
+        "cryptocurrency_id": 1,
+        "price_usd": "6713.27073702",
+        "snapshot_at": "2018-04-03 08:32:33"
+    },
+    {
+        "id": 1301,
+        "cryptocurrency_id": 1,
+        "price_usd": "6643.84445827",
+        "snapshot_at": "2018-04-03 07:32:33"
+    },
+    {
+        "id": 1302,
+        "cryptocurrency_id": 1,
+        "price_usd": "6396.46536923",
+        "snapshot_at": "2018-04-03 06:32:33"
+    },
+    {
+        "id": 1303,
+        "cryptocurrency_id": 1,
+        "price_usd": "6675.23530301",
+        "snapshot_at": "2018-04-03 05:32:33"
+    },
+    {
+        "id": 1304,
+        "cryptocurrency_id": 1,
+        "price_usd": "6955.84056268",
+        "snapshot_at": "2018-04-03 04:32:33"
+    },
+    {
+        "id": 1305,
+        "cryptocurrency_id": 1,
+        "price_usd": "7106.86174018",
+        "snapshot_at": "2018-04-03 03:32:33"
+    },
+    {
+        "id": 1306,
+        "cryptocurrency_id": 1,
+        "price_usd": "7415.52911728",
+        "snapshot_at": "2018-04-03 02:32:33"
+    },
+    {
+        "id": 1307,
+        "cryptocurrency_id": 1,
+        "price_usd": "7611.96107966",
+        "snapshot_at": "2018-04-03 01:32:33"
+    },
+    {
+        "id": 1308,
+        "cryptocurrency_id": 1,
+        "price_usd": "7751.04163980",
+        "snapshot_at": "2018-04-03 00:32:33"
+    },
+    {
+        "id": 1309,
+        "cryptocurrency_id": 1,
+        "price_usd": "7975.59210624",
+        "snapshot_at": "2018-04-02 23:32:33"
+    },
+    {
+        "id": 1310,
+        "cryptocurrency_id": 1,
+        "price_usd": "7814.00848444",
+        "snapshot_at": "2018-04-02 22:32:33"
+    },
+    {
+        "id": 1311,
+        "cryptocurrency_id": 1,
+        "price_usd": "8180.63580004",
+        "snapshot_at": "2018-04-02 21:32:33"
+    },
+    {
+        "id": 1312,
+        "cryptocurrency_id": 1,
+        "price_usd": "8395.08623183",
+        "snapshot_at": "2018-04-02 20:32:33"
+    },
+    {
+        "id": 1313,
+        "cryptocurrency_id": 1,
+        "price_usd": "8774.36262521",
+        "snapshot_at": "2018-04-02 19:32:33"
+    },
+    {
+        "id": 1314,
+        "cryptocurrency_id": 1,
+        "price_usd": "8948.84482508",
+        "snapshot_at": "2018-04-02 18:32:33"
+    },
+    {
+        "id": 1315,
+        "cryptocurrency_id": 1,
+        "price_usd": "9164.67804149",
+        "snapshot_at": "2018-04-02 17:32:33"
+    },
+    {
+        "id": 1316,
+        "cryptocurrency_id": 1,
+        "price_usd": "9054.40226856",
+        "snapshot_at": "2018-04-02 16:32:33"
+    },
+    {
+        "id": 1317,
+        "cryptocurrency_id": 1,
+        "price_usd": "9221.16566230",
+        "snapshot_at": "2018-04-02 15:32:33"
+    },
+    {
+        "id": 1318,
+        "cryptocurrency_id": 1,
+        "price_usd": "8944.03730538",
+        "snapshot_at": "2018-04-02 14:32:33"
+    },
+    {
+        "id": 1319,
+        "cryptocurrency_id": 1,
+        "price_usd": "8528.02033754",
+        "snapshot_at": "2018-04-02 13:32:33"
+    },
+    {
+        "id": 1320,
+        "cryptocurrency_id": 1,
+        "price_usd": "8694.42354648",
+        "snapshot_at": "2018-04-02 12:32:33"
+    },
+    {
+        "id": 1321,
+        "cryptocurrency_id": 1,
+        "price_usd": "8583.35377583",
+        "snapshot_at": "2018-04-02 11:32:33"
+    },
+    {
+        "id": 1322,
+        "cryptocurrency_id": 1,
+        "price_usd": "8707.05934993",
+        "snapshot_at": "2018-04-02 10:32:33"
+    },
+    {
+        "id": 1323,
+        "cryptocurrency_id": 1,
+        "price_usd": "8937.44374644",
+        "snapshot_at": "2018-04-02 09:32:33"
+    },
+    {
+        "id": 1324,
+        "cryptocurrency_id": 1,
+        "price_usd": "8507.17229539",
+        "snapshot_at": "2018-04-02 08:32:33"
+    },
+    {
+        "id": 1325,
+        "cryptocurrency_id": 1,
+        "price_usd": "8112.65116740",
+        "snapshot_at": "2018-04-02 07:32:33"
+    },
+    {
+        "id": 1326,
+        "cryptocurrency_id": 1,
+        "price_usd": "8503.20208175",
+        "snapshot_at": "2018-04-02 06:32:33"
+    },
+    {
+        "id": 1327,
+        "cryptocurrency_id": 1,
+        "price_usd": "8462.66462893",
+        "snapshot_at": "2018-04-02 05:32:33"
+    },
+    {
+        "id": 1328,
+        "cryptocurrency_id": 1,
+        "price_usd": "8500.72593778",
+        "snapshot_at": "2018-04-02 04:32:33"
+    },
+    {
+        "id": 1329,
+        "cryptocurrency_id": 1,
+        "price_usd": "8769.78556691",
+        "snapshot_at": "2018-04-02 03:32:33"
+    },
+    {
+        "id": 1330,
+        "cryptocurrency_id": 1,
+        "price_usd": "8559.13194099",
+        "snapshot_at": "2018-04-02 02:32:33"
+    },
+    {
+        "id": 1331,
+        "cryptocurrency_id": 1,
+        "price_usd": "8651.67390086",
+        "snapshot_at": "2018-04-02 01:32:33"
+    },
+    {
+        "id": 1332,
+        "cryptocurrency_id": 1,
+        "price_usd": "8563.23699336",
+        "snapshot_at": "2018-04-02 00:32:33"
+    },
+    {
+        "id": 1333,
+        "cryptocurrency_id": 1,
+        "price_usd": "8387.02091802",
+        "snapshot_at": "2018-04-01 23:32:33"
+    },
+    {
+        "id": 1334,
+        "cryptocurrency_id": 1,
+        "price_usd": "8460.39253888",
+        "snapshot_at": "2018-04-01 22:32:33"
+    },
+    {
+        "id": 1335,
+        "cryptocurrency_id": 1,
+        "price_usd": "8505.21056765",
+        "snapshot_at": "2018-04-01 21:32:33"
+    },
+    {
+        "id": 1336,
+        "cryptocurrency_id": 1,
+        "price_usd": "8600.02510289",
+        "snapshot_at": "2018-04-01 20:32:33"
+    },
+    {
+        "id": 1337,
+        "cryptocurrency_id": 1,
+        "price_usd": "8793.65038027",
+        "snapshot_at": "2018-04-01 19:32:33"
+    },
+    {
+        "id": 1338,
+        "cryptocurrency_id": 1,
+        "price_usd": "9183.12832727",
+        "snapshot_at": "2018-04-01 18:32:33"
+    },
+    {
+        "id": 1339,
+        "cryptocurrency_id": 1,
+        "price_usd": "8977.28505624",
+        "snapshot_at": "2018-04-01 17:32:33"
+    },
+    {
+        "id": 1340,
+        "cryptocurrency_id": 1,
+        "price_usd": "8595.08210140",
+        "snapshot_at": "2018-04-01 16:32:33"
+    },
+    {
+        "id": 1341,
+        "cryptocurrency_id": 1,
+        "price_usd": "8454.07367011",
+        "snapshot_at": "2018-04-01 15:32:33"
+    },
+    {
+        "id": 1342,
+        "cryptocurrency_id": 1,
+        "price_usd": "8565.97791172",
+        "snapshot_at": "2018-04-01 14:32:33"
+    },
+    {
+        "id": 1343,
+        "cryptocurrency_id": 1,
+        "price_usd": "8372.34762892",
+        "snapshot_at": "2018-04-01 13:32:33"
+    },
+    {
+        "id": 1344,
+        "cryptocurrency_id": 1,
+        "price_usd": "8469.72077568",
+        "snapshot_at": "2018-04-01 12:32:33"
+    },
+    {
+        "id": 1345,
+        "cryptocurrency_id": 1,
+        "price_usd": "8350.30902469",
+        "snapshot_at": "2018-04-01 11:32:33"
+    },
+    {
+        "id": 1346,
+        "cryptocurrency_id": 1,
+        "price_usd": "8497.45358714",
+        "snapshot_at": "2018-04-01 10:32:33"
+    },
+    {
+        "id": 1347,
+        "cryptocurrency_id": 1,
+        "price_usd": "8791.66851753",
+        "snapshot_at": "2018-04-01 09:32:33"
+    },
+    {
+        "id": 1348,
+        "cryptocurrency_id": 1,
+        "price_usd": "8629.56855037",
+        "snapshot_at": "2018-04-01 08:32:33"
+    },
+    {
+        "id": 1349,
+        "cryptocurrency_id": 1,
+        "price_usd": "8637.29795158",
+        "snapshot_at": "2018-04-01 07:32:33"
+    },
+    {
+        "id": 1350,
+        "cryptocurrency_id": 1,
+        "price_usd": "8686.92627007",
+        "snapshot_at": "2018-04-01 06:32:33"
+    },
+    {
+        "id": 1351,
+        "cryptocurrency_id": 1,
+        "price_usd": "9067.26635122",
+        "snapshot_at": "2018-04-01 05:32:33"
+    },
+    {
+        "id": 1352,
+        "cryptocurrency_id": 1,
+        "price_usd": "9341.24037776",
+        "snapshot_at": "2018-04-01 04:32:33"
+    },
+    {
+        "id": 1353,
+        "cryptocurrency_id": 1,
+        "price_usd": "9667.60288502",
+        "snapshot_at": "2018-04-01 03:32:33"
+    },
+    {
+        "id": 1354,
+        "cryptocurrency_id": 1,
+        "price_usd": "9410.65367546",
+        "snapshot_at": "2018-04-01 02:32:33"
+    },
+    {
+        "id": 1355,
+        "cryptocurrency_id": 1,
+        "price_usd": "9260.76754725",
+        "snapshot_at": "2018-04-01 01:32:33"
+    },
+    {
+        "id": 1356,
+        "cryptocurrency_id": 1,
+        "price_usd": "8988.20182748",
+        "snapshot_at": "2018-04-01 00:32:33"
+    },
+    {
+        "id": 1357,
+        "cryptocurrency_id": 1,
+        "price_usd": "9247.41973516",
+        "snapshot_at": "2018-03-31 23:32:33"
+    },
+    {
+        "id": 1358,
+        "cryptocurrency_id": 1,
+        "price_usd": "9332.88994293",
+        "snapshot_at": "2018-03-31 22:32:33"
+    },
+    {
+        "id": 1359,
+        "cryptocurrency_id": 1,
+        "price_usd": "8895.09862155",
+        "snapshot_at": "2018-03-31 21:32:33"
+    },
+    {
+        "id": 1360,
+        "cryptocurrency_id": 1,
+        "price_usd": "9072.72315544",
+        "snapshot_at": "2018-03-31 20:32:33"
+    },
+    {
+        "id": 1361,
+        "cryptocurrency_id": 1,
+        "price_usd": "9272.64690160",
+        "snapshot_at": "2018-03-31 19:32:33"
+    },
+    {
+        "id": 1362,
+        "cryptocurrency_id": 1,
+        "price_usd": "9523.97071489",
+        "snapshot_at": "2018-03-31 18:32:33"
+    },
+    {
+        "id": 1363,
+        "cryptocurrency_id": 1,
+        "price_usd": "9830.34859451",
+        "snapshot_at": "2018-03-31 17:32:33"
+    },
+    {
+        "id": 1364,
+        "cryptocurrency_id": 1,
+        "price_usd": "9651.35289167",
+        "snapshot_at": "2018-03-31 16:32:33"
+    },
+    {
+        "id": 1365,
+        "cryptocurrency_id": 1,
+        "price_usd": "9894.15443666",
+        "snapshot_at": "2018-03-31 15:32:33"
+    },
+    {
+        "id": 1366,
+        "cryptocurrency_id": 1,
+        "price_usd": "9580.12235409",
+        "snapshot_at": "2018-03-31 14:32:33"
+    },
+    {
+        "id": 1367,
+        "cryptocurrency_id": 1,
+        "price_usd": "9881.35715099",
+        "snapshot_at": "2018-03-31 13:32:33"
+    },
+    {
+        "id": 1368,
+        "cryptocurrency_id": 1,
+        "price_usd": "9805.75829615",
+        "snapshot_at": "2018-03-31 12:32:33"
+    },
+    {
+        "id": 1369,
+        "cryptocurrency_id": 1,
+        "price_usd": "10285.37871756",
+        "snapshot_at": "2018-03-31 11:32:33"
+    },
+    {
+        "id": 1370,
+        "cryptocurrency_id": 1,
+        "price_usd": "10145.85098596",
+        "snapshot_at": "2018-03-31 10:32:33"
+    },
+    {
+        "id": 1371,
+        "cryptocurrency_id": 1,
+        "price_usd": "9975.42064682",
+        "snapshot_at": "2018-03-31 09:32:33"
+    },
+    {
+        "id": 1372,
+        "cryptocurrency_id": 1,
+        "price_usd": "10380.02865903",
+        "snapshot_at": "2018-03-31 08:32:33"
+    },
+    {
+        "id": 1373,
+        "cryptocurrency_id": 1,
+        "price_usd": "10075.97095082",
+        "snapshot_at": "2018-03-31 07:32:33"
+    },
+    {
+        "id": 1374,
+        "cryptocurrency_id": 1,
+        "price_usd": "9891.34005012",
+        "snapshot_at": "2018-03-31 06:32:33"
+    },
+    {
+        "id": 1375,
+        "cryptocurrency_id": 1,
+        "price_usd": "10379.94270687",
+        "snapshot_at": "2018-03-31 05:32:33"
+    },
+    {
+        "id": 1376,
+        "cryptocurrency_id": 1,
+        "price_usd": "10722.12232427",
+        "snapshot_at": "2018-03-31 04:32:33"
+    },
+    {
+        "id": 1377,
+        "cryptocurrency_id": 1,
+        "price_usd": "10556.00522820",
+        "snapshot_at": "2018-03-31 03:32:33"
+    },
+    {
+        "id": 1378,
+        "cryptocurrency_id": 1,
+        "price_usd": "10111.10600629",
+        "snapshot_at": "2018-03-31 02:32:33"
+    },
+    {
+        "id": 1379,
+        "cryptocurrency_id": 1,
+        "price_usd": "10140.36583421",
+        "snapshot_at": "2018-03-31 01:32:33"
+    },
+    {
+        "id": 1380,
+        "cryptocurrency_id": 1,
+        "price_usd": "10426.08726489",
+        "snapshot_at": "2018-03-31 00:32:33"
+    },
+    {
+        "id": 1381,
+        "cryptocurrency_id": 1,
+        "price_usd": "10090.50105326",
+        "snapshot_at": "2018-03-30 23:32:33"
+    },
+    {
+        "id": 1382,
+        "cryptocurrency_id": 1,
+        "price_usd": "9952.20256153",
+        "snapshot_at": "2018-03-30 22:32:33"
+    },
+    {
+        "id": 1383,
+        "cryptocurrency_id": 1,
+        "price_usd": "10068.50546125",
+        "snapshot_at": "2018-03-30 21:32:33"
+    },
+    {
+        "id": 1384,
+        "cryptocurrency_id": 1,
+        "price_usd": "10163.26021784",
+        "snapshot_at": "2018-03-30 20:32:33"
+    },
+    {
+        "id": 1385,
+        "cryptocurrency_id": 1,
+        "price_usd": "9850.83086013",
+        "snapshot_at": "2018-03-30 19:32:33"
+    },
+    {
+        "id": 1386,
+        "cryptocurrency_id": 1,
+        "price_usd": "9374.86572716",
+        "snapshot_at": "2018-03-30 18:32:33"
+    },
+    {
+        "id": 1387,
+        "cryptocurrency_id": 1,
+        "price_usd": "9196.85162265",
+        "snapshot_at": "2018-03-30 17:32:33"
+    },
+    {
+        "id": 1388,
+        "cryptocurrency_id": 1,
+        "price_usd": "9270.52344252",
+        "snapshot_at": "2018-03-30 16:32:33"
+    },
+    {
+        "id": 1389,
+        "cryptocurrency_id": 1,
+        "price_usd": "9148.69919202",
+        "snapshot_at": "2018-03-30 15:32:33"
+    },
+    {
+        "id": 1390,
+        "cryptocurrency_id": 1,
+        "price_usd": "9341.31058629",
+        "snapshot_at": "2018-03-30 14:32:33"
+    },
+    {
+        "id": 1391,
+        "cryptocurrency_id": 1,
+        "price_usd": "9148.61404689",
+        "snapshot_at": "2018-03-30 13:32:33"
+    },
+    {
+        "id": 1392,
+        "cryptocurrency_id": 1,
+        "price_usd": "9439.21107139",
+        "snapshot_at": "2018-03-30 12:32:33"
+    },
+    {
+        "id": 1393,
+        "cryptocurrency_id": 1,
+        "price_usd": "9538.73215878",
+        "snapshot_at": "2018-03-30 11:32:33"
+    },
+    {
+        "id": 1394,
+        "cryptocurrency_id": 1,
+        "price_usd": "9544.74527026",
+        "snapshot_at": "2018-03-30 10:32:33"
+    },
+    {
+        "id": 1395,
+        "cryptocurrency_id": 1,
+        "price_usd": "10001.86086729",
+        "snapshot_at": "2018-03-30 09:32:33"
+    },
+    {
+        "id": 1396,
+        "cryptocurrency_id": 1,
+        "price_usd": "9792.08929770",
+        "snapshot_at": "2018-03-30 08:32:33"
+    },
+    {
+        "id": 1397,
+        "cryptocurrency_id": 1,
+        "price_usd": "10138.88416665",
+        "snapshot_at": "2018-03-30 07:32:33"
+    },
+    {
+        "id": 1398,
+        "cryptocurrency_id": 1,
+        "price_usd": "10400.31528464",
+        "snapshot_at": "2018-03-30 06:32:33"
+    },
+    {
+        "id": 1399,
+        "cryptocurrency_id": 1,
+        "price_usd": "9944.50259881",
+        "snapshot_at": "2018-03-30 05:32:33"
+    },
+    {
+        "id": 1400,
+        "cryptocurrency_id": 1,
+        "price_usd": "9504.19991792",
+        "snapshot_at": "2018-03-30 04:32:33"
+    },
+    {
+        "id": 1401,
+        "cryptocurrency_id": 1,
+        "price_usd": "9948.57457790",
+        "snapshot_at": "2018-03-30 03:32:33"
+    },
+    {
+        "id": 1402,
+        "cryptocurrency_id": 1,
+        "price_usd": "10007.09551526",
+        "snapshot_at": "2018-03-30 02:32:33"
+    },
+    {
+        "id": 1403,
+        "cryptocurrency_id": 1,
+        "price_usd": "9749.54230609",
+        "snapshot_at": "2018-03-30 01:32:33"
+    },
+    {
+        "id": 1404,
+        "cryptocurrency_id": 1,
+        "price_usd": "9589.98479412",
+        "snapshot_at": "2018-03-30 00:32:33"
+    },
+    {
+        "id": 1405,
+        "cryptocurrency_id": 1,
+        "price_usd": "9920.10442252",
+        "snapshot_at": "2018-03-29 23:32:33"
+    },
+    {
+        "id": 1406,
+        "cryptocurrency_id": 1,
+        "price_usd": "9656.13235900",
+        "snapshot_at": "2018-03-29 22:32:33"
+    },
+    {
+        "id": 1407,
+        "cryptocurrency_id": 1,
+        "price_usd": "9849.23871917",
+        "snapshot_at": "2018-03-29 21:32:33"
+    },
+    {
+        "id": 1408,
+        "cryptocurrency_id": 1,
+        "price_usd": "10129.29640413",
+        "snapshot_at": "2018-03-29 20:32:33"
+    },
+    {
+        "id": 1409,
+        "cryptocurrency_id": 1,
+        "price_usd": "10473.89716368",
+        "snapshot_at": "2018-03-29 19:32:33"
+    },
+    {
+        "id": 1410,
+        "cryptocurrency_id": 1,
+        "price_usd": "10336.47203345",
+        "snapshot_at": "2018-03-29 18:32:33"
+    },
+    {
+        "id": 1411,
+        "cryptocurrency_id": 1,
+        "price_usd": "10809.88240345",
+        "snapshot_at": "2018-03-29 17:32:33"
+    },
+    {
+        "id": 1412,
+        "cryptocurrency_id": 1,
+        "price_usd": "10887.63155693",
+        "snapshot_at": "2018-03-29 16:32:33"
+    },
+    {
+        "id": 1413,
+        "cryptocurrency_id": 1,
+        "price_usd": "11295.35668357",
+        "snapshot_at": "2018-03-29 15:32:33"
+    },
+    {
+        "id": 1414,
+        "cryptocurrency_id": 1,
+        "price_usd": "10973.97608516",
+        "snapshot_at": "2018-03-29 14:32:33"
+    },
+    {
+        "id": 1415,
+        "cryptocurrency_id": 1,
+        "price_usd": "10981.70957668",
+        "snapshot_at": "2018-03-29 13:32:33"
+    },
+    {
+        "id": 1416,
+        "cryptocurrency_id": 1,
+        "price_usd": "10527.58833736",
+        "snapshot_at": "2018-03-29 12:32:33"
+    },
+    {
+        "id": 1417,
+        "cryptocurrency_id": 1,
+        "price_usd": "10011.13138631",
+        "snapshot_at": "2018-03-29 11:32:33"
+    },
+    {
+        "id": 1418,
+        "cryptocurrency_id": 1,
+        "price_usd": "10272.85342235",
+        "snapshot_at": "2018-03-29 10:32:33"
+    },
+    {
+        "id": 1419,
+        "cryptocurrency_id": 1,
+        "price_usd": "10192.92084867",
+        "snapshot_at": "2018-03-29 09:32:33"
+    },
+    {
+        "id": 1420,
+        "cryptocurrency_id": 1,
+        "price_usd": "9807.92838005",
+        "snapshot_at": "2018-03-29 08:32:33"
+    },
+    {
+        "id": 1421,
+        "cryptocurrency_id": 1,
+        "price_usd": "10205.30379911",
+        "snapshot_at": "2018-03-29 07:32:33"
+    },
+    {
+        "id": 1422,
+        "cryptocurrency_id": 1,
+        "price_usd": "10160.70722039",
+        "snapshot_at": "2018-03-29 06:32:33"
+    },
+    {
+        "id": 1423,
+        "cryptocurrency_id": 1,
+        "price_usd": "10431.46885429",
+        "snapshot_at": "2018-03-29 05:32:33"
+    },
+    {
+        "id": 1424,
+        "cryptocurrency_id": 1,
+        "price_usd": "9915.55815574",
+        "snapshot_at": "2018-03-29 04:32:33"
+    },
+    {
+        "id": 1425,
+        "cryptocurrency_id": 1,
+        "price_usd": "9437.06579076",
+        "snapshot_at": "2018-03-29 03:32:33"
+    },
+    {
+        "id": 1426,
+        "cryptocurrency_id": 1,
+        "price_usd": "9265.93069850",
+        "snapshot_at": "2018-03-29 02:32:33"
+    },
+    {
+        "id": 1427,
+        "cryptocurrency_id": 1,
+        "price_usd": "9079.06037859",
+        "snapshot_at": "2018-03-29 01:32:33"
+    },
+    {
+        "id": 1428,
+        "cryptocurrency_id": 1,
+        "price_usd": "9245.28035575",
+        "snapshot_at": "2018-03-29 00:32:33"
+    },
+    {
+        "id": 1429,
+        "cryptocurrency_id": 1,
+        "price_usd": "9400.34945415",
+        "snapshot_at": "2018-03-28 23:32:33"
+    },
+    {
+        "id": 1430,
+        "cryptocurrency_id": 1,
+        "price_usd": "9524.43426229",
+        "snapshot_at": "2018-03-28 22:32:33"
+    },
+    {
+        "id": 1431,
+        "cryptocurrency_id": 1,
+        "price_usd": "9671.79725145",
+        "snapshot_at": "2018-03-28 21:32:33"
+    },
+    {
+        "id": 1432,
+        "cryptocurrency_id": 1,
+        "price_usd": "9394.03190849",
+        "snapshot_at": "2018-03-28 20:32:33"
+    },
+    {
+        "id": 1433,
+        "cryptocurrency_id": 1,
+        "price_usd": "9555.64477063",
+        "snapshot_at": "2018-03-28 19:32:33"
+    },
+    {
+        "id": 1434,
+        "cryptocurrency_id": 1,
+        "price_usd": "9544.82250275",
+        "snapshot_at": "2018-03-28 18:32:33"
+    },
+    {
+        "id": 1435,
+        "cryptocurrency_id": 1,
+        "price_usd": "9649.05740557",
+        "snapshot_at": "2018-03-28 17:32:33"
+    },
+    {
+        "id": 1436,
+        "cryptocurrency_id": 1,
+        "price_usd": "9626.12928968",
+        "snapshot_at": "2018-03-28 16:32:33"
+    },
+    {
+        "id": 1437,
+        "cryptocurrency_id": 1,
+        "price_usd": "9857.24865877",
+        "snapshot_at": "2018-03-28 15:32:33"
+    },
+    {
+        "id": 1438,
+        "cryptocurrency_id": 1,
+        "price_usd": "9926.36486463",
+        "snapshot_at": "2018-03-28 14:32:33"
+    },
+    {
+        "id": 1439,
+        "cryptocurrency_id": 1,
+        "price_usd": "9655.55294332",
+        "snapshot_at": "2018-03-28 13:32:33"
+    },
+    {
+        "id": 1440,
+        "cryptocurrency_id": 1,
+        "price_usd": "9336.47956580",
+        "snapshot_at": "2018-03-28 12:32:33"
+    },
+    {
+        "id": 1441,
+        "cryptocurrency_id": 1,
+        "price_usd": "9223.62211235",
+        "snapshot_at": "2018-03-28 11:32:33"
+    },
+    {
+        "id": 1442,
+        "cryptocurrency_id": 1,
+        "price_usd": "8812.40755001",
+        "snapshot_at": "2018-03-28 10:32:33"
+    },
+    {
+        "id": 1443,
+        "cryptocurrency_id": 1,
+        "price_usd": "9100.41925684",
+        "snapshot_at": "2018-03-28 09:32:33"
+    },
+    {
+        "id": 1444,
+        "cryptocurrency_id": 1,
+        "price_usd": "8756.75590247",
+        "snapshot_at": "2018-03-28 08:32:33"
+    },
+    {
+        "id": 1445,
+        "cryptocurrency_id": 1,
+        "price_usd": "8490.73007920",
+        "snapshot_at": "2018-03-28 07:32:33"
+    },
+    {
+        "id": 1446,
+        "cryptocurrency_id": 1,
+        "price_usd": "8072.38049060",
+        "snapshot_at": "2018-03-28 06:32:33"
+    },
+    {
+        "id": 1447,
+        "cryptocurrency_id": 1,
+        "price_usd": "7988.48468560",
+        "snapshot_at": "2018-03-28 05:32:33"
+    },
+    {
+        "id": 1448,
+        "cryptocurrency_id": 1,
+        "price_usd": "8334.09430661",
+        "snapshot_at": "2018-03-28 04:32:33"
+    },
+    {
+        "id": 1449,
+        "cryptocurrency_id": 1,
+        "price_usd": "8111.38756109",
+        "snapshot_at": "2018-03-28 03:32:33"
+    },
+    {
+        "id": 1450,
+        "cryptocurrency_id": 1,
+        "price_usd": "7878.66507223",
+        "snapshot_at": "2018-03-28 02:32:33"
+    },
+    {
+        "id": 1451,
+        "cryptocurrency_id": 1,
+        "price_usd": "8226.93546533",
+        "snapshot_at": "2018-03-28 01:32:33"
+    },
+    {
+        "id": 1452,
+        "cryptocurrency_id": 1,
+        "price_usd": "7895.37119883",
+        "snapshot_at": "2018-03-28 00:32:33"
+    },
+    {
+        "id": 1453,
+        "cryptocurrency_id": 1,
+        "price_usd": "8138.32758653",
+        "snapshot_at": "2018-03-27 23:32:33"
+    },
+    {
+        "id": 1454,
+        "cryptocurrency_id": 1,
+        "price_usd": "8451.32961947",
+        "snapshot_at": "2018-03-27 22:32:33"
+    },
+    {
+        "id": 1455,
+        "cryptocurrency_id": 1,
+        "price_usd": "8776.83512939",
+        "snapshot_at": "2018-03-27 21:32:33"
+    },
+    {
+        "id": 1456,
+        "cryptocurrency_id": 1,
+        "price_usd": "8656.06223717",
+        "snapshot_at": "2018-03-27 20:32:33"
+    },
+    {
+        "id": 1457,
+        "cryptocurrency_id": 1,
+        "price_usd": "8759.26429616",
+        "snapshot_at": "2018-03-27 19:32:33"
+    },
+    {
+        "id": 1458,
+        "cryptocurrency_id": 1,
+        "price_usd": "9176.53423361",
+        "snapshot_at": "2018-03-27 18:32:33"
+    },
+    {
+        "id": 1459,
+        "cryptocurrency_id": 1,
+        "price_usd": "9224.72481327",
+        "snapshot_at": "2018-03-27 17:32:33"
+    },
+    {
+        "id": 1460,
+        "cryptocurrency_id": 1,
+        "price_usd": "9679.17552523",
+        "snapshot_at": "2018-03-27 16:32:33"
+    },
+    {
+        "id": 1461,
+        "cryptocurrency_id": 1,
+        "price_usd": "9349.62057766",
+        "snapshot_at": "2018-03-27 15:32:33"
+    },
+    {
+        "id": 1462,
+        "cryptocurrency_id": 1,
+        "price_usd": "9376.62917335",
+        "snapshot_at": "2018-03-27 14:32:33"
+    },
+    {
+        "id": 1463,
+        "cryptocurrency_id": 1,
+        "price_usd": "8912.36181357",
+        "snapshot_at": "2018-03-27 13:32:33"
+    },
+    {
+        "id": 1464,
+        "cryptocurrency_id": 1,
+        "price_usd": "8834.26621512",
+        "snapshot_at": "2018-03-27 12:32:33"
+    },
+    {
+        "id": 1465,
+        "cryptocurrency_id": 1,
+        "price_usd": "9148.12601940",
+        "snapshot_at": "2018-03-27 11:32:33"
+    },
+    {
+        "id": 1466,
+        "cryptocurrency_id": 1,
+        "price_usd": "9209.62577768",
+        "snapshot_at": "2018-03-27 10:32:33"
+    },
+    {
+        "id": 1467,
+        "cryptocurrency_id": 1,
+        "price_usd": "8860.96691185",
+        "snapshot_at": "2018-03-27 09:32:33"
+    },
+    {
+        "id": 1468,
+        "cryptocurrency_id": 1,
+        "price_usd": "9240.62052899",
+        "snapshot_at": "2018-03-27 08:32:33"
+    },
+    {
+        "id": 1469,
+        "cryptocurrency_id": 1,
+        "price_usd": "8780.45845905",
+        "snapshot_at": "2018-03-27 07:32:33"
+    },
+    {
+        "id": 1470,
+        "cryptocurrency_id": 1,
+        "price_usd": "8810.12655631",
+        "snapshot_at": "2018-03-27 06:32:33"
+    },
+    {
+        "id": 1471,
+        "cryptocurrency_id": 1,
+        "price_usd": "8532.37543011",
+        "snapshot_at": "2018-03-27 05:32:33"
+    },
+    {
+        "id": 1472,
+        "cryptocurrency_id": 1,
+        "price_usd": "8312.50151919",
+        "snapshot_at": "2018-03-27 04:32:33"
+    },
+    {
+        "id": 1473,
+        "cryptocurrency_id": 1,
+        "price_usd": "8281.92161983",
+        "snapshot_at": "2018-03-27 03:32:33"
+    },
+    {
+        "id": 1474,
+        "cryptocurrency_id": 1,
+        "price_usd": "8129.14718586",
+        "snapshot_at": "2018-03-27 02:32:33"
+    },
+    {
+        "id": 1475,
+        "cryptocurrency_id": 1,
+        "price_usd": "7999.74487730",
+        "snapshot_at": "2018-03-27 01:32:33"
+    },
+    {
+        "id": 1476,
+        "cryptocurrency_id": 1,
+        "price_usd": "7836.82954970",
+        "snapshot_at": "2018-03-27 00:32:33"
+    },
+    {
+        "id": 1477,
+        "cryptocurrency_id": 1,
+        "price_usd": "7709.62067201",
+        "snapshot_at": "2018-03-26 23:32:33"
+    },
+    {
+        "id": 1478,
+        "cryptocurrency_id": 1,
+        "price_usd": "7502.37319949",
+        "snapshot_at": "2018-03-26 22:32:33"
+    },
+    {
+        "id": 1479,
+        "cryptocurrency_id": 1,
+        "price_usd": "7691.61364792",
+        "snapshot_at": "2018-03-26 21:32:33"
+    },
+    {
+        "id": 1480,
+        "cryptocurrency_id": 1,
+        "price_usd": "7359.99170190",
+        "snapshot_at": "2018-03-26 20:32:33"
+    },
+    {
+        "id": 1481,
+        "cryptocurrency_id": 1,
+        "price_usd": "7156.80214615",
+        "snapshot_at": "2018-03-26 19:32:33"
+    },
+    {
+        "id": 1482,
+        "cryptocurrency_id": 1,
+        "price_usd": "6964.34807839",
+        "snapshot_at": "2018-03-26 18:32:33"
+    },
+    {
+        "id": 1483,
+        "cryptocurrency_id": 1,
+        "price_usd": "7218.79837996",
+        "snapshot_at": "2018-03-26 17:32:33"
+    },
+    {
+        "id": 1484,
+        "cryptocurrency_id": 1,
+        "price_usd": "6923.28628188",
+        "snapshot_at": "2018-03-26 16:32:33"
+    },
+    {
+        "id": 1485,
+        "cryptocurrency_id": 1,
+        "price_usd": "6749.94432455",
+        "snapshot_at": "2018-03-26 15:32:33"
+    },
+    {
+        "id": 1486,
+        "cryptocurrency_id": 1,
+        "price_usd": "6609.60263650",
+        "snapshot_at": "2018-03-26 14:32:33"
+    },
+    {
+        "id": 1487,
+        "cryptocurrency_id": 1,
+        "price_usd": "6491.70137312",
+        "snapshot_at": "2018-03-26 13:32:33"
+    },
+    {
+        "id": 1488,
+        "cryptocurrency_id": 1,
+        "price_usd": "6260.39190299",
+        "snapshot_at": "2018-03-26 12:32:33"
+    },
+    {
+        "id": 1489,
+        "cryptocurrency_id": 1,
+        "price_usd": "6028.74275573",
+        "snapshot_at": "2018-03-26 11:32:33"
+    },
+    {
+        "id": 1490,
+        "cryptocurrency_id": 1,
+        "price_usd": "6322.46058519",
+        "snapshot_at": "2018-03-26 10:32:33"
+    },
+    {
+        "id": 1491,
+        "cryptocurrency_id": 1,
+        "price_usd": "6630.01098613",
+        "snapshot_at": "2018-03-26 09:32:33"
+    },
+    {
+        "id": 1492,
+        "cryptocurrency_id": 1,
+        "price_usd": "6415.87148594",
+        "snapshot_at": "2018-03-26 08:32:33"
+    },
+    {
+        "id": 1493,
+        "cryptocurrency_id": 1,
+        "price_usd": "6643.89974333",
+        "snapshot_at": "2018-03-26 07:32:33"
+    },
+    {
+        "id": 1494,
+        "cryptocurrency_id": 1,
+        "price_usd": "6690.12025795",
+        "snapshot_at": "2018-03-26 06:32:33"
+    },
+    {
+        "id": 1495,
+        "cryptocurrency_id": 1,
+        "price_usd": "6911.91969374",
+        "snapshot_at": "2018-03-26 05:32:33"
+    },
+    {
+        "id": 1496,
+        "cryptocurrency_id": 1,
+        "price_usd": "6830.77227112",
+        "snapshot_at": "2018-03-26 04:32:33"
+    },
+    {
+        "id": 1497,
+        "cryptocurrency_id": 1,
+        "price_usd": "6685.32072784",
+        "snapshot_at": "2018-03-26 03:32:33"
+    },
+    {
+        "id": 1498,
+        "cryptocurrency_id": 1,
+        "price_usd": "6936.68578173",
+        "snapshot_at": "2018-03-26 02:32:33"
+    },
+    {
+        "id": 1499,
+        "cryptocurrency_id": 1,
+        "price_usd": "6969.32756323",
+        "snapshot_at": "2018-03-26 01:32:33"
+    },
+    {
+        "id": 1500,
+        "cryptocurrency_id": 1,
+        "price_usd": "6929.22093014",
+        "snapshot_at": "2018-03-26 00:32:33"
+    },
+    {
+        "id": 1501,
+        "cryptocurrency_id": 1,
+        "price_usd": "7264.47879610",
+        "snapshot_at": "2018-03-25 23:32:33"
+    },
+    {
+        "id": 1502,
+        "cryptocurrency_id": 1,
+        "price_usd": "7185.66201933",
+        "snapshot_at": "2018-03-25 22:32:33"
+    },
+    {
+        "id": 1503,
+        "cryptocurrency_id": 1,
+        "price_usd": "7289.99081273",
+        "snapshot_at": "2018-03-25 21:32:33"
+    },
+    {
+        "id": 1504,
+        "cryptocurrency_id": 1,
+        "price_usd": "7253.60022771",
+        "snapshot_at": "2018-03-25 20:32:33"
+    },
+    {
+        "id": 1505,
+        "cryptocurrency_id": 1,
+        "price_usd": "7242.78193263",
+        "snapshot_at": "2018-03-25 19:32:33"
+    },
+    {
+        "id": 1506,
+        "cryptocurrency_id": 1,
+        "price_usd": "6887.76840216",
+        "snapshot_at": "2018-03-25 18:32:33"
+    },
+    {
+        "id": 1507,
+        "cryptocurrency_id": 1,
+        "price_usd": "7169.76811058",
+        "snapshot_at": "2018-03-25 17:32:33"
+    },
+    {
+        "id": 1508,
+        "cryptocurrency_id": 1,
+        "price_usd": "6946.68197120",
+        "snapshot_at": "2018-03-25 16:32:33"
+    },
+    {
+        "id": 1509,
+        "cryptocurrency_id": 1,
+        "price_usd": "7243.52282212",
+        "snapshot_at": "2018-03-25 15:32:33"
+    },
+    {
+        "id": 1510,
+        "cryptocurrency_id": 1,
+        "price_usd": "7277.65767504",
+        "snapshot_at": "2018-03-25 14:32:33"
+    },
+    {
+        "id": 1511,
+        "cryptocurrency_id": 1,
+        "price_usd": "7363.39450284",
+        "snapshot_at": "2018-03-25 13:32:33"
+    },
+    {
+        "id": 1512,
+        "cryptocurrency_id": 1,
+        "price_usd": "7599.14609935",
+        "snapshot_at": "2018-03-25 12:32:33"
+    },
+    {
+        "id": 1513,
+        "cryptocurrency_id": 1,
+        "price_usd": "7840.76389499",
+        "snapshot_at": "2018-03-25 11:32:33"
+    },
+    {
+        "id": 1514,
+        "cryptocurrency_id": 1,
+        "price_usd": "7797.60766138",
+        "snapshot_at": "2018-03-25 10:32:33"
+    },
+    {
+        "id": 1515,
+        "cryptocurrency_id": 1,
+        "price_usd": "7552.47451396",
+        "snapshot_at": "2018-03-25 09:32:33"
+    },
+    {
+        "id": 1516,
+        "cryptocurrency_id": 1,
+        "price_usd": "7274.86450625",
+        "snapshot_at": "2018-03-25 08:32:33"
+    },
+    {
+        "id": 1517,
+        "cryptocurrency_id": 1,
+        "price_usd": "7359.93575681",
+        "snapshot_at": "2018-03-25 07:32:33"
+    },
+    {
+        "id": 1518,
+        "cryptocurrency_id": 1,
+        "price_usd": "7578.20257290",
+        "snapshot_at": "2018-03-25 06:32:33"
+    },
+    {
+        "id": 1519,
+        "cryptocurrency_id": 1,
+        "price_usd": "7499.67798395",
+        "snapshot_at": "2018-03-25 05:32:33"
+    },
+    {
+        "id": 1520,
+        "cryptocurrency_id": 1,
+        "price_usd": "7813.14120731",
+        "snapshot_at": "2018-03-25 04:32:33"
+    },
+    {
+        "id": 1521,
+        "cryptocurrency_id": 1,
+        "price_usd": "8186.85602287",
+        "snapshot_at": "2018-03-25 03:32:33"
+    },
+    {
+        "id": 1522,
+        "cryptocurrency_id": 1,
+        "price_usd": "7882.48435856",
+        "snapshot_at": "2018-03-25 02:32:33"
+    },
+    {
+        "id": 1523,
+        "cryptocurrency_id": 1,
+        "price_usd": "7572.62864490",
+        "snapshot_at": "2018-03-25 01:32:33"
+    },
+    {
+        "id": 1524,
+        "cryptocurrency_id": 1,
+        "price_usd": "7490.12925631",
+        "snapshot_at": "2018-03-25 00:32:33"
+    },
+    {
+        "id": 1525,
+        "cryptocurrency_id": 1,
+        "price_usd": "7395.89453742",
+        "snapshot_at": "2018-03-24 23:32:33"
+    },
+    {
+        "id": 1526,
+        "cryptocurrency_id": 1,
+        "price_usd": "7706.30785256",
+        "snapshot_at": "2018-03-24 22:32:33"
+    },
+    {
+        "id": 1527,
+        "cryptocurrency_id": 1,
+        "price_usd": "7780.50422460",
+        "snapshot_at": "2018-03-24 21:32:33"
+    },
+    {
+        "id": 1528,
+        "cryptocurrency_id": 1,
+        "price_usd": "8139.73242901",
+        "snapshot_at": "2018-03-24 20:32:33"
+    },
+    {
+        "id": 1529,
+        "cryptocurrency_id": 1,
+        "price_usd": "8496.44940871",
+        "snapshot_at": "2018-03-24 19:32:33"
+    },
+    {
+        "id": 1530,
+        "cryptocurrency_id": 1,
+        "price_usd": "8478.30120456",
+        "snapshot_at": "2018-03-24 18:32:33"
+    },
+    {
+        "id": 1531,
+        "cryptocurrency_id": 1,
+        "price_usd": "8568.81295512",
+        "snapshot_at": "2018-03-24 17:32:33"
+    },
+    {
+        "id": 1532,
+        "cryptocurrency_id": 1,
+        "price_usd": "8306.97549441",
+        "snapshot_at": "2018-03-24 16:32:33"
+    },
+    {
+        "id": 1533,
+        "cryptocurrency_id": 1,
+        "price_usd": "7909.46618265",
+        "snapshot_at": "2018-03-24 15:32:33"
+    },
+    {
+        "id": 1534,
+        "cryptocurrency_id": 1,
+        "price_usd": "7738.09802476",
+        "snapshot_at": "2018-03-24 14:32:33"
+    },
+    {
+        "id": 1535,
+        "cryptocurrency_id": 1,
+        "price_usd": "7829.60292472",
+        "snapshot_at": "2018-03-24 13:32:33"
+    },
+    {
+        "id": 1536,
+        "cryptocurrency_id": 1,
+        "price_usd": "7739.93597724",
+        "snapshot_at": "2018-03-24 12:32:33"
+    },
+    {
+        "id": 1537,
+        "cryptocurrency_id": 1,
+        "price_usd": "7792.21293770",
+        "snapshot_at": "2018-03-24 11:32:33"
+    },
+    {
+        "id": 1538,
+        "cryptocurrency_id": 1,
+        "price_usd": "7855.97325429",
+        "snapshot_at": "2018-03-24 10:32:33"
+    },
+    {
+        "id": 1539,
+        "cryptocurrency_id": 1,
+        "price_usd": "8106.18610144",
+        "snapshot_at": "2018-03-24 09:32:33"
+    },
+    {
+        "id": 1540,
+        "cryptocurrency_id": 1,
+        "price_usd": "8430.34956844",
+        "snapshot_at": "2018-03-24 08:32:33"
+    },
+    {
+        "id": 1541,
+        "cryptocurrency_id": 1,
+        "price_usd": "8507.64101336",
+        "snapshot_at": "2018-03-24 07:32:33"
+    },
+    {
+        "id": 1542,
+        "cryptocurrency_id": 1,
+        "price_usd": "8840.59903694",
+        "snapshot_at": "2018-03-24 06:32:33"
+    },
+    {
+        "id": 1543,
+        "cryptocurrency_id": 1,
+        "price_usd": "8677.16244802",
+        "snapshot_at": "2018-03-24 05:32:33"
+    },
+    {
+        "id": 1544,
+        "cryptocurrency_id": 1,
+        "price_usd": "8844.39425078",
+        "snapshot_at": "2018-03-24 04:32:33"
+    },
+    {
+        "id": 1545,
+        "cryptocurrency_id": 1,
+        "price_usd": "9031.69894947",
+        "snapshot_at": "2018-03-24 03:32:33"
+    },
+    {
+        "id": 1546,
+        "cryptocurrency_id": 1,
+        "price_usd": "9054.36581612",
+        "snapshot_at": "2018-03-24 02:32:33"
+    },
+    {
+        "id": 1547,
+        "cryptocurrency_id": 1,
+        "price_usd": "8847.02792100",
+        "snapshot_at": "2018-03-24 01:32:33"
+    },
+    {
+        "id": 1548,
+        "cryptocurrency_id": 1,
+        "price_usd": "8789.91457897",
+        "snapshot_at": "2018-03-24 00:32:33"
+    },
+    {
+        "id": 1549,
+        "cryptocurrency_id": 1,
+        "price_usd": "9136.71754972",
+        "snapshot_at": "2018-03-23 23:32:33"
+    },
+    {
+        "id": 1550,
+        "cryptocurrency_id": 1,
+        "price_usd": "9059.15336623",
+        "snapshot_at": "2018-03-23 22:32:33"
+    },
+    {
+        "id": 1551,
+        "cryptocurrency_id": 1,
+        "price_usd": "8796.01933678",
+        "snapshot_at": "2018-03-23 21:32:33"
+    },
+    {
+        "id": 1552,
+        "cryptocurrency_id": 1,
+        "price_usd": "8617.66469630",
+        "snapshot_at": "2018-03-23 20:32:33"
+    },
+    {
+        "id": 1553,
+        "cryptocurrency_id": 1,
+        "price_usd": "8602.61922552",
+        "snapshot_at": "2018-03-23 19:32:33"
+    },
+    {
+        "id": 1554,
+        "cryptocurrency_id": 1,
+        "price_usd": "9014.86096957",
+        "snapshot_at": "2018-03-23 18:32:33"
+    },
+    {
+        "id": 1555,
+        "cryptocurrency_id": 1,
+        "price_usd": "8615.95321169",
+        "snapshot_at": "2018-03-23 17:32:33"
+    },
+    {
+        "id": 1556,
+        "cryptocurrency_id": 1,
+        "price_usd": "8291.47884010",
+        "snapshot_at": "2018-03-23 16:32:33"
+    },
+    {
+        "id": 1557,
+        "cryptocurrency_id": 1,
+        "price_usd": "8659.81000406",
+        "snapshot_at": "2018-03-23 15:32:33"
+    },
+    {
+        "id": 1558,
+        "cryptocurrency_id": 1,
+        "price_usd": "9070.67008793",
+        "snapshot_at": "2018-03-23 14:32:33"
+    },
+    {
+        "id": 1559,
+        "cryptocurrency_id": 1,
+        "price_usd": "9210.39203345",
+        "snapshot_at": "2018-03-23 13:32:33"
+    },
+    {
+        "id": 1560,
+        "cryptocurrency_id": 1,
+        "price_usd": "9437.19216863",
+        "snapshot_at": "2018-03-23 12:32:33"
+    },
+    {
+        "id": 1561,
+        "cryptocurrency_id": 1,
+        "price_usd": "9368.92766504",
+        "snapshot_at": "2018-03-23 11:32:33"
+    },
+    {
+        "id": 1562,
+        "cryptocurrency_id": 1,
+        "price_usd": "9305.66823037",
+        "snapshot_at": "2018-03-23 10:32:33"
+    },
+    {
+        "id": 1563,
+        "cryptocurrency_id": 1,
+        "price_usd": "9091.16488603",
+        "snapshot_at": "2018-03-23 09:32:33"
+    },
+    {
+        "id": 1564,
+        "cryptocurrency_id": 1,
+        "price_usd": "9488.38623369",
+        "snapshot_at": "2018-03-23 08:32:33"
+    },
+    {
+        "id": 1565,
+        "cryptocurrency_id": 1,
+        "price_usd": "9235.21065826",
+        "snapshot_at": "2018-03-23 07:32:33"
+    },
+    {
+        "id": 1566,
+        "cryptocurrency_id": 1,
+        "price_usd": "9475.46967946",
+        "snapshot_at": "2018-03-23 06:32:33"
+    },
+    {
+        "id": 1567,
+        "cryptocurrency_id": 1,
+        "price_usd": "9839.89411358",
+        "snapshot_at": "2018-03-23 05:32:33"
+    },
+    {
+        "id": 1568,
+        "cryptocurrency_id": 1,
+        "price_usd": "9463.73415995",
+        "snapshot_at": "2018-03-23 04:32:33"
+    },
+    {
+        "id": 1569,
+        "cryptocurrency_id": 1,
+        "price_usd": "9775.47122290",
+        "snapshot_at": "2018-03-23 03:32:33"
+    },
+    {
+        "id": 1570,
+        "cryptocurrency_id": 1,
+        "price_usd": "10086.06489914",
+        "snapshot_at": "2018-03-23 02:32:33"
+    },
+    {
+        "id": 1571,
+        "cryptocurrency_id": 1,
+        "price_usd": "9705.18496784",
+        "snapshot_at": "2018-03-23 01:32:33"
+    },
+    {
+        "id": 1572,
+        "cryptocurrency_id": 1,
+        "price_usd": "9514.15171880",
+        "snapshot_at": "2018-03-23 00:32:33"
+    },
+    {
+        "id": 1573,
+        "cryptocurrency_id": 1,
+        "price_usd": "9263.79640170",
+        "snapshot_at": "2018-03-22 23:32:33"
+    },
+    {
+        "id": 1574,
+        "cryptocurrency_id": 1,
+        "price_usd": "9636.05397530",
+        "snapshot_at": "2018-03-22 22:32:33"
+    },
+    {
+        "id": 1575,
+        "cryptocurrency_id": 1,
+        "price_usd": "9633.10828425",
+        "snapshot_at": "2018-03-22 21:32:33"
+    },
+    {
+        "id": 1576,
+        "cryptocurrency_id": 1,
+        "price_usd": "9236.39303396",
+        "snapshot_at": "2018-03-22 20:32:33"
+    },
+    {
+        "id": 1577,
+        "cryptocurrency_id": 1,
+        "price_usd": "9471.79689106",
+        "snapshot_at": "2018-03-22 19:32:33"
+    },
+    {
+        "id": 1578,
+        "cryptocurrency_id": 1,
+        "price_usd": "9691.79382549",
+        "snapshot_at": "2018-03-22 18:32:33"
+    },
+    {
+        "id": 1579,
+        "cryptocurrency_id": 1,
+        "price_usd": "9455.17779358",
+        "snapshot_at": "2018-03-22 17:32:33"
+    },
+    {
+        "id": 1580,
+        "cryptocurrency_id": 1,
+        "price_usd": "9319.60619401",
+        "snapshot_at": "2018-03-22 16:32:33"
+    },
+    {
+        "id": 1581,
+        "cryptocurrency_id": 1,
+        "price_usd": "9270.25921412",
+        "snapshot_at": "2018-03-22 15:32:33"
+    },
+    {
+        "id": 1582,
+        "cryptocurrency_id": 1,
+        "price_usd": "8988.47756088",
+        "snapshot_at": "2018-03-22 14:32:33"
+    },
+    {
+        "id": 1583,
+        "cryptocurrency_id": 1,
+        "price_usd": "8630.93178108",
+        "snapshot_at": "2018-03-22 13:32:33"
+    },
+    {
+        "id": 1584,
+        "cryptocurrency_id": 1,
+        "price_usd": "8817.13565584",
+        "snapshot_at": "2018-03-22 12:32:33"
+    },
+    {
+        "id": 1585,
+        "cryptocurrency_id": 1,
+        "price_usd": "9031.11259342",
+        "snapshot_at": "2018-03-22 11:32:33"
+    },
+    {
+        "id": 1586,
+        "cryptocurrency_id": 1,
+        "price_usd": "8965.22069790",
+        "snapshot_at": "2018-03-22 10:32:33"
+    },
+    {
+        "id": 1587,
+        "cryptocurrency_id": 1,
+        "price_usd": "9406.27923266",
+        "snapshot_at": "2018-03-22 09:32:33"
+    },
+    {
+        "id": 1588,
+        "cryptocurrency_id": 1,
+        "price_usd": "9784.76289187",
+        "snapshot_at": "2018-03-22 08:32:33"
+    },
+    {
+        "id": 1589,
+        "cryptocurrency_id": 1,
+        "price_usd": "9329.15471023",
+        "snapshot_at": "2018-03-22 07:32:33"
+    },
+    {
+        "id": 1590,
+        "cryptocurrency_id": 1,
+        "price_usd": "9492.95165042",
+        "snapshot_at": "2018-03-22 06:32:33"
+    },
+    {
+        "id": 1591,
+        "cryptocurrency_id": 1,
+        "price_usd": "9390.95542565",
+        "snapshot_at": "2018-03-22 05:32:33"
+    },
+    {
+        "id": 1592,
+        "cryptocurrency_id": 1,
+        "price_usd": "9049.79434816",
+        "snapshot_at": "2018-03-22 04:32:33"
+    },
+    {
+        "id": 1593,
+        "cryptocurrency_id": 1,
+        "price_usd": "8781.78626768",
+        "snapshot_at": "2018-03-22 03:32:33"
+    },
+    {
+        "id": 1594,
+        "cryptocurrency_id": 1,
+        "price_usd": "8556.58445425",
+        "snapshot_at": "2018-03-22 02:32:33"
+    },
+    {
+        "id": 1595,
+        "cryptocurrency_id": 1,
+        "price_usd": "8704.32412735",
+        "snapshot_at": "2018-03-22 01:32:33"
+    },
+    {
+        "id": 1596,
+        "cryptocurrency_id": 1,
+        "price_usd": "8652.48273459",
+        "snapshot_at": "2018-03-22 00:32:33"
+    },
+    {
+        "id": 1597,
+        "cryptocurrency_id": 1,
+        "price_usd": "8806.24219847",
+        "snapshot_at": "2018-03-21 23:32:33"
+    },
+    {
+        "id": 1598,
+        "cryptocurrency_id": 1,
+        "price_usd": "8556.59327981",
+        "snapshot_at": "2018-03-21 22:32:33"
+    },
+    {
+        "id": 1599,
+        "cryptocurrency_id": 1,
+        "price_usd": "8688.45282964",
+        "snapshot_at": "2018-03-21 21:32:33"
+    },
+    {
+        "id": 1600,
+        "cryptocurrency_id": 1,
+        "price_usd": "8936.96676181",
+        "snapshot_at": "2018-03-21 20:32:33"
+    },
+    {
+        "id": 1601,
+        "cryptocurrency_id": 1,
+        "price_usd": "9216.61348750",
+        "snapshot_at": "2018-03-21 19:32:33"
+    },
+    {
+        "id": 1602,
+        "cryptocurrency_id": 1,
+        "price_usd": "9278.31241854",
+        "snapshot_at": "2018-03-21 18:32:33"
+    },
+    {
+        "id": 1603,
+        "cryptocurrency_id": 1,
+        "price_usd": "8967.85019389",
+        "snapshot_at": "2018-03-21 17:32:33"
+    },
+    {
+        "id": 1604,
+        "cryptocurrency_id": 1,
+        "price_usd": "9277.63247400",
+        "snapshot_at": "2018-03-21 16:32:33"
+    },
+    {
+        "id": 1605,
+        "cryptocurrency_id": 1,
+        "price_usd": "9010.31215753",
+        "snapshot_at": "2018-03-21 15:32:33"
+    },
+    {
+        "id": 1606,
+        "cryptocurrency_id": 1,
+        "price_usd": "8911.58506356",
+        "snapshot_at": "2018-03-21 14:32:33"
+    },
+    {
+        "id": 1607,
+        "cryptocurrency_id": 1,
+        "price_usd": "8919.28994509",
+        "snapshot_at": "2018-03-21 13:32:33"
+    },
+    {
+        "id": 1608,
+        "cryptocurrency_id": 1,
+        "price_usd": "9158.00474523",
+        "snapshot_at": "2018-03-21 12:32:33"
+    },
+    {
+        "id": 1609,
+        "cryptocurrency_id": 1,
+        "price_usd": "9235.14228955",
+        "snapshot_at": "2018-03-21 11:32:33"
+    },
+    {
+        "id": 1610,
+        "cryptocurrency_id": 1,
+        "price_usd": "9503.50274469",
+        "snapshot_at": "2018-03-21 10:32:33"
+    },
+    {
+        "id": 1611,
+        "cryptocurrency_id": 1,
+        "price_usd": "9037.05876598",
+        "snapshot_at": "2018-03-21 09:32:33"
+    },
+    {
+        "id": 1612,
+        "cryptocurrency_id": 1,
+        "price_usd": "9186.78991956",
+        "snapshot_at": "2018-03-21 08:32:33"
+    },
+    {
+        "id": 1613,
+        "cryptocurrency_id": 1,
+        "price_usd": "8996.73590567",
+        "snapshot_at": "2018-03-21 07:32:33"
+    },
+    {
+        "id": 1614,
+        "cryptocurrency_id": 1,
+        "price_usd": "9378.95258729",
+        "snapshot_at": "2018-03-21 06:32:33"
+    },
+    {
+        "id": 1615,
+        "cryptocurrency_id": 1,
+        "price_usd": "9391.94580613",
+        "snapshot_at": "2018-03-21 05:32:33"
+    },
+    {
+        "id": 1616,
+        "cryptocurrency_id": 1,
+        "price_usd": "9751.52133015",
+        "snapshot_at": "2018-03-21 04:32:33"
+    },
+    {
+        "id": 1617,
+        "cryptocurrency_id": 1,
+        "price_usd": "9824.56767538",
+        "snapshot_at": "2018-03-21 03:32:33"
+    },
+    {
+        "id": 1618,
+        "cryptocurrency_id": 1,
+        "price_usd": "10108.41193635",
+        "snapshot_at": "2018-03-21 02:32:33"
+    },
+    {
+        "id": 1619,
+        "cryptocurrency_id": 1,
+        "price_usd": "9941.63730618",
+        "snapshot_at": "2018-03-21 01:32:33"
+    },
+    {
+        "id": 1620,
+        "cryptocurrency_id": 1,
+        "price_usd": "10366.00040237",
+        "snapshot_at": "2018-03-21 00:32:33"
+    },
+    {
+        "id": 1621,
+        "cryptocurrency_id": 1,
+        "price_usd": "10488.44146104",
+        "snapshot_at": "2018-03-20 23:32:33"
+    },
+    {
+        "id": 1622,
+        "cryptocurrency_id": 1,
+        "price_usd": "10013.13275613",
+        "snapshot_at": "2018-03-20 22:32:33"
+    },
+    {
+        "id": 1623,
+        "cryptocurrency_id": 1,
+        "price_usd": "9833.41759667",
+        "snapshot_at": "2018-03-20 21:32:33"
+    },
+    {
+        "id": 1624,
+        "cryptocurrency_id": 1,
+        "price_usd": "9517.25910607",
+        "snapshot_at": "2018-03-20 20:32:33"
+    },
+    {
+        "id": 1625,
+        "cryptocurrency_id": 1,
+        "price_usd": "9083.20108630",
+        "snapshot_at": "2018-03-20 19:32:33"
+    },
+    {
+        "id": 1626,
+        "cryptocurrency_id": 1,
+        "price_usd": "9158.31980679",
+        "snapshot_at": "2018-03-20 18:32:33"
+    },
+    {
+        "id": 1627,
+        "cryptocurrency_id": 1,
+        "price_usd": "9016.86128807",
+        "snapshot_at": "2018-03-20 17:32:33"
+    },
+    {
+        "id": 1628,
+        "cryptocurrency_id": 1,
+        "price_usd": "9435.01530507",
+        "snapshot_at": "2018-03-20 16:32:33"
+    },
+    {
+        "id": 1629,
+        "cryptocurrency_id": 1,
+        "price_usd": "9333.03429565",
+        "snapshot_at": "2018-03-20 15:32:33"
+    },
+    {
+        "id": 1630,
+        "cryptocurrency_id": 1,
+        "price_usd": "9535.44785460",
+        "snapshot_at": "2018-03-20 14:32:33"
+    },
+    {
+        "id": 1631,
+        "cryptocurrency_id": 1,
+        "price_usd": "9557.63416536",
+        "snapshot_at": "2018-03-20 13:32:33"
+    },
+    {
+        "id": 1632,
+        "cryptocurrency_id": 1,
+        "price_usd": "9822.74137268",
+        "snapshot_at": "2018-03-20 12:32:33"
+    },
+    {
+        "id": 1633,
+        "cryptocurrency_id": 1,
+        "price_usd": "9778.16068724",
+        "snapshot_at": "2018-03-20 11:32:33"
+    },
+    {
+        "id": 1634,
+        "cryptocurrency_id": 1,
+        "price_usd": "9947.92872681",
+        "snapshot_at": "2018-03-20 10:32:33"
+    },
+    {
+        "id": 1635,
+        "cryptocurrency_id": 1,
+        "price_usd": "9797.89010426",
+        "snapshot_at": "2018-03-20 09:32:33"
+    },
+    {
+        "id": 1636,
+        "cryptocurrency_id": 1,
+        "price_usd": "9483.42182069",
+        "snapshot_at": "2018-03-20 08:32:33"
+    },
+    {
+        "id": 1637,
+        "cryptocurrency_id": 1,
+        "price_usd": "9113.25890417",
+        "snapshot_at": "2018-03-20 07:32:33"
+    },
+    {
+        "id": 1638,
+        "cryptocurrency_id": 1,
+        "price_usd": "8689.76898449",
+        "snapshot_at": "2018-03-20 06:32:33"
+    },
+    {
+        "id": 1639,
+        "cryptocurrency_id": 1,
+        "price_usd": "8811.56586858",
+        "snapshot_at": "2018-03-20 05:32:33"
+    },
+    {
+        "id": 1640,
+        "cryptocurrency_id": 1,
+        "price_usd": "8555.05219898",
+        "snapshot_at": "2018-03-20 04:32:33"
+    },
+    {
+        "id": 1641,
+        "cryptocurrency_id": 1,
+        "price_usd": "8423.33184492",
+        "snapshot_at": "2018-03-20 03:32:33"
+    },
+    {
+        "id": 1642,
+        "cryptocurrency_id": 1,
+        "price_usd": "8417.93180858",
+        "snapshot_at": "2018-03-20 02:32:33"
+    },
+    {
+        "id": 1643,
+        "cryptocurrency_id": 1,
+        "price_usd": "7999.29732203",
+        "snapshot_at": "2018-03-20 01:32:33"
+    },
+    {
+        "id": 1644,
+        "cryptocurrency_id": 1,
+        "price_usd": "7614.76126316",
+        "snapshot_at": "2018-03-20 00:32:33"
+    },
+    {
+        "id": 1645,
+        "cryptocurrency_id": 1,
+        "price_usd": "7855.74141937",
+        "snapshot_at": "2018-03-19 23:32:33"
+    },
+    {
+        "id": 1646,
+        "cryptocurrency_id": 1,
+        "price_usd": "8158.51668010",
+        "snapshot_at": "2018-03-19 22:32:33"
+    },
+    {
+        "id": 1647,
+        "cryptocurrency_id": 1,
+        "price_usd": "8097.83879773",
+        "snapshot_at": "2018-03-19 21:32:33"
+    },
+    {
+        "id": 1648,
+        "cryptocurrency_id": 1,
+        "price_usd": "8336.38880420",
+        "snapshot_at": "2018-03-19 20:32:33"
+    },
+    {
+        "id": 1649,
+        "cryptocurrency_id": 1,
+        "price_usd": "8746.31766448",
+        "snapshot_at": "2018-03-19 19:32:33"
+    },
+    {
+        "id": 1650,
+        "cryptocurrency_id": 1,
+        "price_usd": "8388.66954837",
+        "snapshot_at": "2018-03-19 18:32:33"
+    },
+    {
+        "id": 1651,
+        "cryptocurrency_id": 1,
+        "price_usd": "8204.98903515",
+        "snapshot_at": "2018-03-19 17:32:33"
+    },
+    {
+        "id": 1652,
+        "cryptocurrency_id": 1,
+        "price_usd": "8138.20319758",
+        "snapshot_at": "2018-03-19 16:32:33"
+    },
+    {
+        "id": 1653,
+        "cryptocurrency_id": 1,
+        "price_usd": "7816.90455827",
+        "snapshot_at": "2018-03-19 15:32:33"
+    },
+    {
+        "id": 1654,
+        "cryptocurrency_id": 1,
+        "price_usd": "7468.85608439",
+        "snapshot_at": "2018-03-19 14:32:33"
+    },
+    {
+        "id": 1655,
+        "cryptocurrency_id": 1,
+        "price_usd": "7474.24793349",
+        "snapshot_at": "2018-03-19 13:32:33"
+    },
+    {
+        "id": 1656,
+        "cryptocurrency_id": 1,
+        "price_usd": "7628.33825036",
+        "snapshot_at": "2018-03-19 12:32:33"
+    },
+    {
+        "id": 1657,
+        "cryptocurrency_id": 1,
+        "price_usd": "7948.32267573",
+        "snapshot_at": "2018-03-19 11:32:33"
+    },
+    {
+        "id": 1658,
+        "cryptocurrency_id": 1,
+        "price_usd": "7917.24672953",
+        "snapshot_at": "2018-03-19 10:32:33"
+    },
+    {
+        "id": 1659,
+        "cryptocurrency_id": 1,
+        "price_usd": "8182.85612747",
+        "snapshot_at": "2018-03-19 09:32:33"
+    },
+    {
+        "id": 1660,
+        "cryptocurrency_id": 1,
+        "price_usd": "7950.10646366",
+        "snapshot_at": "2018-03-19 08:32:33"
+    },
+    {
+        "id": 1661,
+        "cryptocurrency_id": 1,
+        "price_usd": "8146.49002232",
+        "snapshot_at": "2018-03-19 07:32:33"
+    },
+    {
+        "id": 1662,
+        "cryptocurrency_id": 1,
+        "price_usd": "8188.15183199",
+        "snapshot_at": "2018-03-19 06:32:33"
+    },
+    {
+        "id": 1663,
+        "cryptocurrency_id": 1,
+        "price_usd": "8124.86415460",
+        "snapshot_at": "2018-03-19 05:32:33"
+    },
+    {
+        "id": 1664,
+        "cryptocurrency_id": 1,
+        "price_usd": "8352.49282451",
+        "snapshot_at": "2018-03-19 04:32:33"
+    },
+    {
+        "id": 1665,
+        "cryptocurrency_id": 1,
+        "price_usd": "7939.31995958",
+        "snapshot_at": "2018-03-19 03:32:33"
+    },
+    {
+        "id": 1666,
+        "cryptocurrency_id": 1,
+        "price_usd": "8108.49311502",
+        "snapshot_at": "2018-03-19 02:32:33"
+    },
+    {
+        "id": 1667,
+        "cryptocurrency_id": 1,
+        "price_usd": "8063.60535313",
+        "snapshot_at": "2018-03-19 01:32:33"
+    },
+    {
+        "id": 1668,
+        "cryptocurrency_id": 1,
+        "price_usd": "7842.75300035",
+        "snapshot_at": "2018-03-19 00:32:33"
+    },
+    {
+        "id": 1669,
+        "cryptocurrency_id": 1,
+        "price_usd": "7721.51136924",
+        "snapshot_at": "2018-03-18 23:32:33"
+    },
+    {
+        "id": 1670,
+        "cryptocurrency_id": 1,
+        "price_usd": "7819.35535267",
+        "snapshot_at": "2018-03-18 22:32:33"
+    },
+    {
+        "id": 1671,
+        "cryptocurrency_id": 1,
+        "price_usd": "7669.05734931",
+        "snapshot_at": "2018-03-18 21:32:33"
+    },
+    {
+        "id": 1672,
+        "cryptocurrency_id": 1,
+        "price_usd": "7649.48972310",
+        "snapshot_at": "2018-03-18 20:32:33"
+    },
+    {
+        "id": 1673,
+        "cryptocurrency_id": 1,
+        "price_usd": "7699.92229467",
+        "snapshot_at": "2018-03-18 19:32:33"
+    },
+    {
+        "id": 1674,
+        "cryptocurrency_id": 1,
+        "price_usd": "7748.78454894",
+        "snapshot_at": "2018-03-18 18:32:33"
+    },
+    {
+        "id": 1675,
+        "cryptocurrency_id": 1,
+        "price_usd": "7605.21624113",
+        "snapshot_at": "2018-03-18 17:32:33"
+    },
+    {
+        "id": 1676,
+        "cryptocurrency_id": 1,
+        "price_usd": "7743.87466346",
+        "snapshot_at": "2018-03-18 16:32:33"
+    },
+    {
+        "id": 1677,
+        "cryptocurrency_id": 1,
+        "price_usd": "7376.58287651",
+        "snapshot_at": "2018-03-18 15:32:33"
+    },
+    {
+        "id": 1678,
+        "cryptocurrency_id": 1,
+        "price_usd": "7010.45931089",
+        "snapshot_at": "2018-03-18 14:32:33"
+    },
+    {
+        "id": 1679,
+        "cryptocurrency_id": 1,
+        "price_usd": "6929.47538301",
+        "snapshot_at": "2018-03-18 13:32:33"
+    },
+    {
+        "id": 1680,
+        "cryptocurrency_id": 1,
+        "price_usd": "7217.41532880",
+        "snapshot_at": "2018-03-18 12:32:33"
+    },
+    {
+        "id": 1681,
+        "cryptocurrency_id": 1,
+        "price_usd": "7094.47967880",
+        "snapshot_at": "2018-03-18 11:32:33"
+    },
+    {
+        "id": 1682,
+        "cryptocurrency_id": 1,
+        "price_usd": "6980.13221276",
+        "snapshot_at": "2018-03-18 10:32:33"
+    },
+    {
+        "id": 1683,
+        "cryptocurrency_id": 1,
+        "price_usd": "7131.70654528",
+        "snapshot_at": "2018-03-18 09:32:33"
+    },
+    {
+        "id": 1684,
+        "cryptocurrency_id": 1,
+        "price_usd": "7481.01509043",
+        "snapshot_at": "2018-03-18 08:32:33"
+    },
+    {
+        "id": 1685,
+        "cryptocurrency_id": 1,
+        "price_usd": "7253.04562251",
+        "snapshot_at": "2018-03-18 07:32:33"
+    },
+    {
+        "id": 1686,
+        "cryptocurrency_id": 1,
+        "price_usd": "7212.10608149",
+        "snapshot_at": "2018-03-18 06:32:33"
+    },
+    {
+        "id": 1687,
+        "cryptocurrency_id": 1,
+        "price_usd": "7092.68450334",
+        "snapshot_at": "2018-03-18 05:32:33"
+    },
+    {
+        "id": 1688,
+        "cryptocurrency_id": 1,
+        "price_usd": "7314.67854718",
+        "snapshot_at": "2018-03-18 04:32:33"
+    },
+    {
+        "id": 1689,
+        "cryptocurrency_id": 1,
+        "price_usd": "6966.94298946",
+        "snapshot_at": "2018-03-18 03:32:33"
+    },
+    {
+        "id": 1690,
+        "cryptocurrency_id": 1,
+        "price_usd": "6966.48697255",
+        "snapshot_at": "2018-03-18 02:32:33"
+    },
+    {
+        "id": 1691,
+        "cryptocurrency_id": 1,
+        "price_usd": "7215.97005413",
+        "snapshot_at": "2018-03-18 01:32:33"
+    },
+    {
+        "id": 1692,
+        "cryptocurrency_id": 1,
+        "price_usd": "7180.89802397",
+        "snapshot_at": "2018-03-18 00:32:33"
+    },
+    {
+        "id": 1693,
+        "cryptocurrency_id": 1,
+        "price_usd": "7095.54697551",
+        "snapshot_at": "2018-03-17 23:32:33"
+    },
+    {
+        "id": 1694,
+        "cryptocurrency_id": 1,
+        "price_usd": "7262.18000580",
+        "snapshot_at": "2018-03-17 22:32:33"
+    },
+    {
+        "id": 1695,
+        "cryptocurrency_id": 1,
+        "price_usd": "7582.18672888",
+        "snapshot_at": "2018-03-17 21:32:33"
+    },
+    {
+        "id": 1696,
+        "cryptocurrency_id": 1,
+        "price_usd": "7521.64051131",
+        "snapshot_at": "2018-03-17 20:32:33"
+    },
+    {
+        "id": 1697,
+        "cryptocurrency_id": 1,
+        "price_usd": "7445.54235456",
+        "snapshot_at": "2018-03-17 19:32:33"
+    },
+    {
+        "id": 1698,
+        "cryptocurrency_id": 1,
+        "price_usd": "7117.24072636",
+        "snapshot_at": "2018-03-17 18:32:33"
+    },
+    {
+        "id": 1699,
+        "cryptocurrency_id": 1,
+        "price_usd": "7177.44981554",
+        "snapshot_at": "2018-03-17 17:32:33"
+    },
+    {
+        "id": 1700,
+        "cryptocurrency_id": 1,
+        "price_usd": "6821.76638820",
+        "snapshot_at": "2018-03-17 16:32:33"
+    },
+    {
+        "id": 1701,
+        "cryptocurrency_id": 1,
+        "price_usd": "6944.89959858",
+        "snapshot_at": "2018-03-17 15:32:33"
+    },
+    {
+        "id": 1702,
+        "cryptocurrency_id": 1,
+        "price_usd": "7030.95649022",
+        "snapshot_at": "2018-03-17 14:32:33"
+    },
+    {
+        "id": 1703,
+        "cryptocurrency_id": 1,
+        "price_usd": "6832.40351540",
+        "snapshot_at": "2018-03-17 13:32:33"
+    },
+    {
+        "id": 1704,
+        "cryptocurrency_id": 1,
+        "price_usd": "6874.29914701",
+        "snapshot_at": "2018-03-17 12:32:33"
+    },
+    {
+        "id": 1705,
+        "cryptocurrency_id": 1,
+        "price_usd": "6664.96689648",
+        "snapshot_at": "2018-03-17 11:32:33"
+    },
+    {
+        "id": 1706,
+        "cryptocurrency_id": 1,
+        "price_usd": "6593.03964263",
+        "snapshot_at": "2018-03-17 10:32:33"
+    },
+    {
+        "id": 1707,
+        "cryptocurrency_id": 1,
+        "price_usd": "6411.72176230",
+        "snapshot_at": "2018-03-17 09:32:33"
+    },
+    {
+        "id": 1708,
+        "cryptocurrency_id": 1,
+        "price_usd": "6415.26419517",
+        "snapshot_at": "2018-03-17 08:32:33"
+    },
+    {
+        "id": 1709,
+        "cryptocurrency_id": 1,
+        "price_usd": "6457.35635834",
+        "snapshot_at": "2018-03-17 07:32:33"
+    },
+    {
+        "id": 1710,
+        "cryptocurrency_id": 1,
+        "price_usd": "6482.50550456",
+        "snapshot_at": "2018-03-17 06:32:33"
+    },
+    {
+        "id": 1711,
+        "cryptocurrency_id": 1,
+        "price_usd": "6448.17063426",
+        "snapshot_at": "2018-03-17 05:32:33"
+    },
+    {
+        "id": 1712,
+        "cryptocurrency_id": 1,
+        "price_usd": "6636.37004204",
+        "snapshot_at": "2018-03-17 04:32:33"
+    },
+    {
+        "id": 1713,
+        "cryptocurrency_id": 1,
+        "price_usd": "6521.58635307",
+        "snapshot_at": "2018-03-17 03:32:33"
+    },
+    {
+        "id": 1714,
+        "cryptocurrency_id": 1,
+        "price_usd": "6375.27155785",
+        "snapshot_at": "2018-03-17 02:32:33"
+    },
+    {
+        "id": 1715,
+        "cryptocurrency_id": 1,
+        "price_usd": "6621.50984040",
+        "snapshot_at": "2018-03-17 01:32:33"
+    },
+    {
+        "id": 1716,
+        "cryptocurrency_id": 1,
+        "price_usd": "6835.64386727",
+        "snapshot_at": "2018-03-17 00:32:33"
+    },
+    {
+        "id": 1717,
+        "cryptocurrency_id": 1,
+        "price_usd": "6497.39650163",
+        "snapshot_at": "2018-03-16 23:32:33"
+    },
+    {
+        "id": 1718,
+        "cryptocurrency_id": 1,
+        "price_usd": "6587.88592388",
+        "snapshot_at": "2018-03-16 22:32:33"
+    },
+    {
+        "id": 1719,
+        "cryptocurrency_id": 1,
+        "price_usd": "6752.80099063",
+        "snapshot_at": "2018-03-16 21:32:33"
+    },
+    {
+        "id": 1720,
+        "cryptocurrency_id": 1,
+        "price_usd": "6557.91980559",
+        "snapshot_at": "2018-03-16 20:32:33"
+    },
+    {
+        "id": 1721,
+        "cryptocurrency_id": 1,
+        "price_usd": "6351.84439118",
+        "snapshot_at": "2018-03-16 19:32:33"
+    },
+    {
+        "id": 1722,
+        "cryptocurrency_id": 1,
+        "price_usd": "6467.17342838",
+        "snapshot_at": "2018-03-16 18:32:33"
+    },
+    {
+        "id": 1723,
+        "cryptocurrency_id": 1,
+        "price_usd": "6784.97082534",
+        "snapshot_at": "2018-03-16 17:32:33"
+    },
+    {
+        "id": 1724,
+        "cryptocurrency_id": 1,
+        "price_usd": "6607.83849903",
+        "snapshot_at": "2018-03-16 16:32:33"
+    },
+    {
+        "id": 1725,
+        "cryptocurrency_id": 1,
+        "price_usd": "6758.83306434",
+        "snapshot_at": "2018-03-16 15:32:33"
+    },
+    {
+        "id": 1726,
+        "cryptocurrency_id": 1,
+        "price_usd": "6443.17311430",
+        "snapshot_at": "2018-03-16 14:32:33"
+    },
+    {
+        "id": 1727,
+        "cryptocurrency_id": 1,
+        "price_usd": "6463.98356784",
+        "snapshot_at": "2018-03-16 13:32:33"
+    },
+    {
+        "id": 1728,
+        "cryptocurrency_id": 1,
+        "price_usd": "6180.52263818",
+        "snapshot_at": "2018-03-16 12:32:33"
+    },
+    {
+        "id": 1729,
+        "cryptocurrency_id": 1,
+        "price_usd": "6279.57414746",
+        "snapshot_at": "2018-03-16 11:32:33"
+    },
+    {
+        "id": 1730,
+        "cryptocurrency_id": 1,
+        "price_usd": "6351.03661906",
+        "snapshot_at": "2018-03-16 10:32:33"
+    },
+    {
+        "id": 1731,
+        "cryptocurrency_id": 1,
+        "price_usd": "6395.60326324",
+        "snapshot_at": "2018-03-16 09:32:33"
+    },
+    {
+        "id": 1732,
+        "cryptocurrency_id": 1,
+        "price_usd": "6556.77688166",
+        "snapshot_at": "2018-03-16 08:32:33"
+    },
+    {
+        "id": 1733,
+        "cryptocurrency_id": 1,
+        "price_usd": "6567.57898765",
+        "snapshot_at": "2018-03-16 07:32:33"
+    },
+    {
+        "id": 1734,
+        "cryptocurrency_id": 1,
+        "price_usd": "6691.33082525",
+        "snapshot_at": "2018-03-16 06:32:33"
+    },
+    {
+        "id": 1735,
+        "cryptocurrency_id": 1,
+        "price_usd": "7023.79125127",
+        "snapshot_at": "2018-03-16 05:32:33"
+    },
+    {
+        "id": 1736,
+        "cryptocurrency_id": 1,
+        "price_usd": "7084.39872918",
+        "snapshot_at": "2018-03-16 04:32:33"
+    },
+    {
+        "id": 1737,
+        "cryptocurrency_id": 1,
+        "price_usd": "6805.36168982",
+        "snapshot_at": "2018-03-16 03:32:33"
+    },
+    {
+        "id": 1738,
+        "cryptocurrency_id": 1,
+        "price_usd": "7136.32884412",
+        "snapshot_at": "2018-03-16 02:32:33"
+    },
+    {
+        "id": 1739,
+        "cryptocurrency_id": 1,
+        "price_usd": "7415.84326174",
+        "snapshot_at": "2018-03-16 01:32:33"
+    },
+    {
+        "id": 1740,
+        "cryptocurrency_id": 1,
+        "price_usd": "7348.05171038",
+        "snapshot_at": "2018-03-16 00:32:33"
+    },
+    {
+        "id": 1741,
+        "cryptocurrency_id": 1,
+        "price_usd": "7683.31150948",
+        "snapshot_at": "2018-03-15 23:32:33"
+    },
+    {
+        "id": 1742,
+        "cryptocurrency_id": 1,
+        "price_usd": "7958.54296191",
+        "snapshot_at": "2018-03-15 22:32:33"
+    },
+    {
+        "id": 1743,
+        "cryptocurrency_id": 1,
+        "price_usd": "7633.03495613",
+        "snapshot_at": "2018-03-15 21:32:33"
+    },
+    {
+        "id": 1744,
+        "cryptocurrency_id": 1,
+        "price_usd": "7897.50058194",
+        "snapshot_at": "2018-03-15 20:32:33"
+    },
+    {
+        "id": 1745,
+        "cryptocurrency_id": 1,
+        "price_usd": "7844.58522842",
+        "snapshot_at": "2018-03-15 19:32:33"
+    },
+    {
+        "id": 1746,
+        "cryptocurrency_id": 1,
+        "price_usd": "7460.56235831",
+        "snapshot_at": "2018-03-15 18:32:33"
+    },
+    {
+        "id": 1747,
+        "cryptocurrency_id": 1,
+        "price_usd": "7747.39599352",
+        "snapshot_at": "2018-03-15 17:32:33"
+    },
+    {
+        "id": 1748,
+        "cryptocurrency_id": 1,
+        "price_usd": "7487.07935199",
+        "snapshot_at": "2018-03-15 16:32:33"
+    },
+    {
+        "id": 1749,
+        "cryptocurrency_id": 1,
+        "price_usd": "7259.42554372",
+        "snapshot_at": "2018-03-15 15:32:33"
+    },
+    {
+        "id": 1750,
+        "cryptocurrency_id": 1,
+        "price_usd": "7044.03658643",
+        "snapshot_at": "2018-03-15 14:32:33"
+    },
+    {
+        "id": 1751,
+        "cryptocurrency_id": 1,
+        "price_usd": "7238.22638701",
+        "snapshot_at": "2018-03-15 13:32:33"
+    },
+    {
+        "id": 1752,
+        "cryptocurrency_id": 1,
+        "price_usd": "7075.38954765",
+        "snapshot_at": "2018-03-15 12:32:33"
+    },
+    {
+        "id": 1753,
+        "cryptocurrency_id": 1,
+        "price_usd": "6908.31164685",
+        "snapshot_at": "2018-03-15 11:32:33"
+    },
+    {
+        "id": 1754,
+        "cryptocurrency_id": 1,
+        "price_usd": "6743.43901169",
+        "snapshot_at": "2018-03-15 10:32:33"
+    },
+    {
+        "id": 1755,
+        "cryptocurrency_id": 1,
+        "price_usd": "6750.63307890",
+        "snapshot_at": "2018-03-15 09:32:33"
+    },
+    {
+        "id": 1756,
+        "cryptocurrency_id": 1,
+        "price_usd": "6751.35292301",
+        "snapshot_at": "2018-03-15 08:32:33"
+    },
+    {
+        "id": 1757,
+        "cryptocurrency_id": 1,
+        "price_usd": "6630.15627074",
+        "snapshot_at": "2018-03-15 07:32:33"
+    },
+    {
+        "id": 1758,
+        "cryptocurrency_id": 1,
+        "price_usd": "6857.96839950",
+        "snapshot_at": "2018-03-15 06:32:33"
+    },
+    {
+        "id": 1759,
+        "cryptocurrency_id": 1,
+        "price_usd": "6933.03006293",
+        "snapshot_at": "2018-03-15 05:32:33"
+    },
+    {
+        "id": 1760,
+        "cryptocurrency_id": 1,
+        "price_usd": "7017.99345819",
+        "snapshot_at": "2018-03-15 04:32:33"
+    },
+    {
+        "id": 1761,
+        "cryptocurrency_id": 1,
+        "price_usd": "6920.70474020",
+        "snapshot_at": "2018-03-15 03:32:33"
+    },
+    {
+        "id": 1762,
+        "cryptocurrency_id": 1,
+        "price_usd": "6755.21191723",
+        "snapshot_at": "2018-03-15 02:32:33"
+    },
+    {
+        "id": 1763,
+        "cryptocurrency_id": 1,
+        "price_usd": "6496.96221358",
+        "snapshot_at": "2018-03-15 01:32:33"
+    },
+    {
+        "id": 1764,
+        "cryptocurrency_id": 1,
+        "price_usd": "6275.15993325",
+        "snapshot_at": "2018-03-15 00:32:33"
+    },
+    {
+        "id": 1765,
+        "cryptocurrency_id": 1,
+        "price_usd": "6139.67119174",
+        "snapshot_at": "2018-03-14 23:32:33"
+    },
+    {
+        "id": 1766,
+        "cryptocurrency_id": 1,
+        "price_usd": "6399.59115608",
+        "snapshot_at": "2018-03-14 22:32:33"
+    },
+    {
+        "id": 1767,
+        "cryptocurrency_id": 1,
+        "price_usd": "6354.58388402",
+        "snapshot_at": "2018-03-14 21:32:33"
+    },
+    {
+        "id": 1768,
+        "cryptocurrency_id": 1,
+        "price_usd": "6473.13019782",
+        "snapshot_at": "2018-03-14 20:32:33"
+    },
+    {
+        "id": 1769,
+        "cryptocurrency_id": 1,
+        "price_usd": "6474.64260248",
+        "snapshot_at": "2018-03-14 19:32:33"
+    },
+    {
+        "id": 1770,
+        "cryptocurrency_id": 1,
+        "price_usd": "6664.94004373",
+        "snapshot_at": "2018-03-14 18:32:33"
+    },
+    {
+        "id": 1771,
+        "cryptocurrency_id": 1,
+        "price_usd": "6702.88101884",
+        "snapshot_at": "2018-03-14 17:32:33"
+    },
+    {
+        "id": 1772,
+        "cryptocurrency_id": 1,
+        "price_usd": "6614.81635158",
+        "snapshot_at": "2018-03-14 16:32:33"
+    },
+    {
+        "id": 1773,
+        "cryptocurrency_id": 1,
+        "price_usd": "6448.38097723",
+        "snapshot_at": "2018-03-14 15:32:33"
+    },
+    {
+        "id": 1774,
+        "cryptocurrency_id": 1,
+        "price_usd": "6692.98277693",
+        "snapshot_at": "2018-03-14 14:32:33"
+    },
+    {
+        "id": 1775,
+        "cryptocurrency_id": 1,
+        "price_usd": "6666.23408984",
+        "snapshot_at": "2018-03-14 13:32:33"
+    },
+    {
+        "id": 1776,
+        "cryptocurrency_id": 1,
+        "price_usd": "6544.61652246",
+        "snapshot_at": "2018-03-14 12:32:33"
+    },
+    {
+        "id": 1777,
+        "cryptocurrency_id": 1,
+        "price_usd": "6682.69451643",
+        "snapshot_at": "2018-03-14 11:32:33"
+    },
+    {
+        "id": 1778,
+        "cryptocurrency_id": 1,
+        "price_usd": "6411.10610263",
+        "snapshot_at": "2018-03-14 10:32:33"
+    },
+    {
+        "id": 1779,
+        "cryptocurrency_id": 1,
+        "price_usd": "6101.29698954",
+        "snapshot_at": "2018-03-14 09:32:33"
+    },
+    {
+        "id": 1780,
+        "cryptocurrency_id": 1,
+        "price_usd": "5852.16473955",
+        "snapshot_at": "2018-03-14 08:32:33"
+    },
+    {
+        "id": 1781,
+        "cryptocurrency_id": 1,
+        "price_usd": "5746.10293876",
+        "snapshot_at": "2018-03-14 07:32:33"
+    },
+    {
+        "id": 1782,
+        "cryptocurrency_id": 1,
+        "price_usd": "5619.21056161",
+        "snapshot_at": "2018-03-14 06:32:33"
+    },
+    {
+        "id": 1783,
+        "cryptocurrency_id": 1,
+        "price_usd": "5813.16760464",
+        "snapshot_at": "2018-03-14 05:32:33"
+    },
+    {
+        "id": 1784,
+        "cryptocurrency_id": 1,
+        "price_usd": "6097.43495612",
+        "snapshot_at": "2018-03-14 04:32:33"
+    },
+    {
+        "id": 1785,
+        "cryptocurrency_id": 1,
+        "price_usd": "6013.15185306",
+        "snapshot_at": "2018-03-14 03:32:33"
+    },
+    {
+        "id": 1786,
+        "cryptocurrency_id": 1,
+        "price_usd": "5881.91700122",
+        "snapshot_at": "2018-03-14 02:32:33"
+    },
+    {
+        "id": 1787,
+        "cryptocurrency_id": 1,
+        "price_usd": "5681.58685009",
+        "snapshot_at": "2018-03-14 01:32:33"
+    },
+    {
+        "id": 1788,
+        "cryptocurrency_id": 1,
+        "price_usd": "5658.15206000",
+        "snapshot_at": "2018-03-14 00:32:33"
+    },
+    {
+        "id": 1789,
+        "cryptocurrency_id": 1,
+        "price_usd": "5467.19954988",
+        "snapshot_at": "2018-03-13 23:32:33"
+    },
+    {
+        "id": 1790,
+        "cryptocurrency_id": 1,
+        "price_usd": "5672.08619266",
+        "snapshot_at": "2018-03-13 22:32:33"
+    },
+    {
+        "id": 1791,
+        "cryptocurrency_id": 1,
+        "price_usd": "5521.35355727",
+        "snapshot_at": "2018-03-13 21:32:33"
+    },
+    {
+        "id": 1792,
+        "cryptocurrency_id": 1,
+        "price_usd": "5350.83066413",
+        "snapshot_at": "2018-03-13 20:32:33"
+    },
+    {
+        "id": 1793,
+        "cryptocurrency_id": 1,
+        "price_usd": "5536.69880950",
+        "snapshot_at": "2018-03-13 19:32:33"
+    },
+    {
+        "id": 1794,
+        "cryptocurrency_id": 1,
+        "price_usd": "5561.16065292",
+        "snapshot_at": "2018-03-13 18:32:33"
+    },
+    {
+        "id": 1795,
+        "cryptocurrency_id": 1,
+        "price_usd": "5315.78895413",
+        "snapshot_at": "2018-03-13 17:32:33"
+    },
+    {
+        "id": 1796,
+        "cryptocurrency_id": 1,
+        "price_usd": "5528.53484547",
+        "snapshot_at": "2018-03-13 16:32:33"
+    },
+    {
+        "id": 1797,
+        "cryptocurrency_id": 1,
+        "price_usd": "5387.94074655",
+        "snapshot_at": "2018-03-13 15:32:33"
+    },
+    {
+        "id": 1798,
+        "cryptocurrency_id": 1,
+        "price_usd": "5139.40731575",
+        "snapshot_at": "2018-03-13 14:32:33"
+    },
+    {
+        "id": 1799,
+        "cryptocurrency_id": 1,
+        "price_usd": "5030.88902742",
+        "snapshot_at": "2018-03-13 13:32:33"
+    },
+    {
+        "id": 1800,
+        "cryptocurrency_id": 1,
+        "price_usd": "5115.29654222",
+        "snapshot_at": "2018-03-13 12:32:33"
+    },
+    {
+        "id": 1801,
+        "cryptocurrency_id": 1,
+        "price_usd": "5153.42594974",
+        "snapshot_at": "2018-03-13 11:32:33"
+    },
+    {
+        "id": 1802,
+        "cryptocurrency_id": 1,
+        "price_usd": "5391.46162995",
+        "snapshot_at": "2018-03-13 10:32:33"
+    },
+    {
+        "id": 1803,
+        "cryptocurrency_id": 1,
+        "price_usd": "5547.48296453",
+        "snapshot_at": "2018-03-13 09:32:33"
+    },
+    {
+        "id": 1804,
+        "cryptocurrency_id": 1,
+        "price_usd": "5655.77742841",
+        "snapshot_at": "2018-03-13 08:32:33"
+    },
+    {
+        "id": 1805,
+        "cryptocurrency_id": 1,
+        "price_usd": "5872.46202098",
+        "snapshot_at": "2018-03-13 07:32:33"
+    },
+    {
+        "id": 1806,
+        "cryptocurrency_id": 1,
+        "price_usd": "6149.30810140",
+        "snapshot_at": "2018-03-13 06:32:33"
+    },
+    {
+        "id": 1807,
+        "cryptocurrency_id": 1,
+        "price_usd": "5864.70028090",
+        "snapshot_at": "2018-03-13 05:32:33"
+    },
+    {
+        "id": 1808,
+        "cryptocurrency_id": 1,
+        "price_usd": "6150.40093356",
+        "snapshot_at": "2018-03-13 04:32:33"
+    },
+    {
+        "id": 1809,
+        "cryptocurrency_id": 1,
+        "price_usd": "6451.20380455",
+        "snapshot_at": "2018-03-13 03:32:33"
+    },
+    {
+        "id": 1810,
+        "cryptocurrency_id": 1,
+        "price_usd": "6136.19584585",
+        "snapshot_at": "2018-03-13 02:32:33"
+    },
+    {
+        "id": 1811,
+        "cryptocurrency_id": 1,
+        "price_usd": "6229.39305471",
+        "snapshot_at": "2018-03-13 01:32:33"
+    },
+    {
+        "id": 1812,
+        "cryptocurrency_id": 1,
+        "price_usd": "6172.16566995",
+        "snapshot_at": "2018-03-13 00:32:33"
+    },
+    {
+        "id": 1813,
+        "cryptocurrency_id": 1,
+        "price_usd": "5960.60399561",
+        "snapshot_at": "2018-03-12 23:32:33"
+    },
+    {
+        "id": 1814,
+        "cryptocurrency_id": 1,
+        "price_usd": "6253.00934165",
+        "snapshot_at": "2018-03-12 22:32:33"
+    },
+    {
+        "id": 1815,
+        "cryptocurrency_id": 1,
+        "price_usd": "5989.31457451",
+        "snapshot_at": "2018-03-12 21:32:33"
+    },
+    {
+        "id": 1816,
+        "cryptocurrency_id": 1,
+        "price_usd": "5762.61310677",
+        "snapshot_at": "2018-03-12 20:32:33"
+    },
+    {
+        "id": 1817,
+        "cryptocurrency_id": 1,
+        "price_usd": "5802.36955657",
+        "snapshot_at": "2018-03-12 19:32:33"
+    },
+    {
+        "id": 1818,
+        "cryptocurrency_id": 1,
+        "price_usd": "6035.13759478",
+        "snapshot_at": "2018-03-12 18:32:33"
+    },
+    {
+        "id": 1819,
+        "cryptocurrency_id": 1,
+        "price_usd": "6316.21043408",
+        "snapshot_at": "2018-03-12 17:32:33"
+    },
+    {
+        "id": 1820,
+        "cryptocurrency_id": 1,
+        "price_usd": "6117.66615390",
+        "snapshot_at": "2018-03-12 16:32:33"
+    },
+    {
+        "id": 1821,
+        "cryptocurrency_id": 1,
+        "price_usd": "6251.80602371",
+        "snapshot_at": "2018-03-12 15:32:33"
+    },
+    {
+        "id": 1822,
+        "cryptocurrency_id": 1,
+        "price_usd": "6345.79696341",
+        "snapshot_at": "2018-03-12 14:32:33"
+    },
+    {
+        "id": 1823,
+        "cryptocurrency_id": 1,
+        "price_usd": "6037.04164674",
+        "snapshot_at": "2018-03-12 13:32:33"
+    },
+    {
+        "id": 1824,
+        "cryptocurrency_id": 1,
+        "price_usd": "6045.07417540",
+        "snapshot_at": "2018-03-12 12:32:33"
+    },
+    {
+        "id": 1825,
+        "cryptocurrency_id": 1,
+        "price_usd": "5905.53173038",
+        "snapshot_at": "2018-03-12 11:32:33"
+    },
+    {
+        "id": 1826,
+        "cryptocurrency_id": 1,
+        "price_usd": "6046.80129071",
+        "snapshot_at": "2018-03-12 10:32:33"
+    },
+    {
+        "id": 1827,
+        "cryptocurrency_id": 1,
+        "price_usd": "5995.82391896",
+        "snapshot_at": "2018-03-12 09:32:33"
+    },
+    {
+        "id": 1828,
+        "cryptocurrency_id": 1,
+        "price_usd": "6035.32582610",
+        "snapshot_at": "2018-03-12 08:32:33"
+    },
+    {
+        "id": 1829,
+        "cryptocurrency_id": 1,
+        "price_usd": "5899.53173318",
+        "snapshot_at": "2018-03-12 07:32:33"
+    },
+    {
+        "id": 1830,
+        "cryptocurrency_id": 1,
+        "price_usd": "5898.50891317",
+        "snapshot_at": "2018-03-12 06:32:33"
+    },
+    {
+        "id": 1831,
+        "cryptocurrency_id": 1,
+        "price_usd": "5944.85248925",
+        "snapshot_at": "2018-03-12 05:32:33"
+    },
+    {
+        "id": 1832,
+        "cryptocurrency_id": 1,
+        "price_usd": "6084.73727374",
+        "snapshot_at": "2018-03-12 04:32:33"
+    },
+    {
+        "id": 1833,
+        "cryptocurrency_id": 1,
+        "price_usd": "6111.65146175",
+        "snapshot_at": "2018-03-12 03:32:33"
+    },
+    {
+        "id": 1834,
+        "cryptocurrency_id": 1,
+        "price_usd": "5937.78311030",
+        "snapshot_at": "2018-03-12 02:32:33"
+    },
+    {
+        "id": 1835,
+        "cryptocurrency_id": 1,
+        "price_usd": "5890.38151308",
+        "snapshot_at": "2018-03-12 01:32:33"
+    },
+    {
+        "id": 1836,
+        "cryptocurrency_id": 1,
+        "price_usd": "5876.07316801",
+        "snapshot_at": "2018-03-12 00:32:33"
+    },
+    {
+        "id": 1837,
+        "cryptocurrency_id": 1,
+        "price_usd": "5887.78096863",
+        "snapshot_at": "2018-03-11 23:32:33"
+    },
+    {
+        "id": 1838,
+        "cryptocurrency_id": 1,
+        "price_usd": "5722.39588207",
+        "snapshot_at": "2018-03-11 22:32:33"
+    },
+    {
+        "id": 1839,
+        "cryptocurrency_id": 1,
+        "price_usd": "5830.98186494",
+        "snapshot_at": "2018-03-11 21:32:33"
+    },
+    {
+        "id": 1840,
+        "cryptocurrency_id": 1,
+        "price_usd": "5746.42121368",
+        "snapshot_at": "2018-03-11 20:32:33"
+    },
+    {
+        "id": 1841,
+        "cryptocurrency_id": 1,
+        "price_usd": "5764.69315656",
+        "snapshot_at": "2018-03-11 19:32:33"
+    },
+    {
+        "id": 1842,
+        "cryptocurrency_id": 1,
+        "price_usd": "5749.79618835",
+        "snapshot_at": "2018-03-11 18:32:33"
+    },
+    {
+        "id": 1843,
+        "cryptocurrency_id": 1,
+        "price_usd": "5835.36723955",
+        "snapshot_at": "2018-03-11 17:32:33"
+    },
+    {
+        "id": 1844,
+        "cryptocurrency_id": 1,
+        "price_usd": "5822.26729428",
+        "snapshot_at": "2018-03-11 16:32:33"
+    },
+    {
+        "id": 1845,
+        "cryptocurrency_id": 1,
+        "price_usd": "5883.80104933",
+        "snapshot_at": "2018-03-11 15:32:33"
+    },
+    {
+        "id": 1846,
+        "cryptocurrency_id": 1,
+        "price_usd": "5741.29620370",
+        "snapshot_at": "2018-03-11 14:32:33"
+    },
+    {
+        "id": 1847,
+        "cryptocurrency_id": 1,
+        "price_usd": "5818.42135030",
+        "snapshot_at": "2018-03-11 13:32:33"
+    },
+    {
+        "id": 1848,
+        "cryptocurrency_id": 1,
+        "price_usd": "5971.03265219",
+        "snapshot_at": "2018-03-11 12:32:33"
+    },
+    {
+        "id": 1849,
+        "cryptocurrency_id": 1,
+        "price_usd": "6092.48301617",
+        "snapshot_at": "2018-03-11 11:32:33"
+    },
+    {
+        "id": 1850,
+        "cryptocurrency_id": 1,
+        "price_usd": "6195.73797478",
+        "snapshot_at": "2018-03-11 10:32:33"
+    },
+    {
+        "id": 1851,
+        "cryptocurrency_id": 1,
+        "price_usd": "6000.68044343",
+        "snapshot_at": "2018-03-11 09:32:33"
+    },
+    {
+        "id": 1852,
+        "cryptocurrency_id": 1,
+        "price_usd": "5834.98973972",
+        "snapshot_at": "2018-03-11 08:32:33"
+    },
+    {
+        "id": 1853,
+        "cryptocurrency_id": 1,
+        "price_usd": "5583.82672855",
+        "snapshot_at": "2018-03-11 07:32:33"
+    },
+    {
+        "id": 1854,
+        "cryptocurrency_id": 1,
+        "price_usd": "5353.39641370",
+        "snapshot_at": "2018-03-11 06:32:33"
+    },
+    {
+        "id": 1855,
+        "cryptocurrency_id": 1,
+        "price_usd": "5146.45499518",
+        "snapshot_at": "2018-03-11 05:32:33"
+    },
+    {
+        "id": 1856,
+        "cryptocurrency_id": 1,
+        "price_usd": "5179.41335858",
+        "snapshot_at": "2018-03-11 04:32:33"
+    },
+    {
+        "id": 1857,
+        "cryptocurrency_id": 1,
+        "price_usd": "5180.99700589",
+        "snapshot_at": "2018-03-11 03:32:33"
+    },
+    {
+        "id": 1858,
+        "cryptocurrency_id": 1,
+        "price_usd": "5136.68709711",
+        "snapshot_at": "2018-03-11 02:32:33"
+    },
+    {
+        "id": 1859,
+        "cryptocurrency_id": 1,
+        "price_usd": "4959.76607305",
+        "snapshot_at": "2018-03-11 01:32:33"
+    },
+    {
+        "id": 1860,
+        "cryptocurrency_id": 1,
+        "price_usd": "5041.62826604",
+        "snapshot_at": "2018-03-11 00:32:33"
+    },
+    {
+        "id": 1861,
+        "cryptocurrency_id": 1,
+        "price_usd": "4914.68269239",
+        "snapshot_at": "2018-03-10 23:32:33"
+    },
+    {
+        "id": 1862,
+        "cryptocurrency_id": 1,
+        "price_usd": "5099.06201103",
+        "snapshot_at": "2018-03-10 22:32:33"
+    },
+    {
+        "id": 1863,
+        "cryptocurrency_id": 1,
+        "price_usd": "5310.51769055",
+        "snapshot_at": "2018-03-10 21:32:33"
+    },
+    {
+        "id": 1864,
+        "cryptocurrency_id": 1,
+        "price_usd": "5479.02983976",
+        "snapshot_at": "2018-03-10 20:32:33"
+    },
+    {
+        "id": 1865,
+        "cryptocurrency_id": 1,
+        "price_usd": "5480.12273315",
+        "snapshot_at": "2018-03-10 19:32:33"
+    },
+    {
+        "id": 1866,
+        "cryptocurrency_id": 1,
+        "price_usd": "5468.87927676",
+        "snapshot_at": "2018-03-10 18:32:33"
+    },
+    {
+        "id": 1867,
+        "cryptocurrency_id": 1,
+        "price_usd": "5585.80272627",
+        "snapshot_at": "2018-03-10 17:32:33"
+    },
+    {
+        "id": 1868,
+        "cryptocurrency_id": 1,
+        "price_usd": "5670.48322018",
+        "snapshot_at": "2018-03-10 16:32:33"
+    },
+    {
+        "id": 1869,
+        "cryptocurrency_id": 1,
+        "price_usd": "5502.90949728",
+        "snapshot_at": "2018-03-10 15:32:33"
+    },
+    {
+        "id": 1870,
+        "cryptocurrency_id": 1,
+        "price_usd": "5273.79048747",
+        "snapshot_at": "2018-03-10 14:32:33"
+    },
+    {
+        "id": 1871,
+        "cryptocurrency_id": 1,
+        "price_usd": "5311.08333677",
+        "snapshot_at": "2018-03-10 13:32:33"
+    },
+    {
+        "id": 1872,
+        "cryptocurrency_id": 1,
+        "price_usd": "5533.41894844",
+        "snapshot_at": "2018-03-10 12:32:33"
+    },
+    {
+        "id": 1873,
+        "cryptocurrency_id": 1,
+        "price_usd": "5623.10474418",
+        "snapshot_at": "2018-03-10 11:32:33"
+    },
+    {
+        "id": 1874,
+        "cryptocurrency_id": 1,
+        "price_usd": "5827.96768725",
+        "snapshot_at": "2018-03-10 10:32:33"
+    },
+    {
+        "id": 1875,
+        "cryptocurrency_id": 1,
+        "price_usd": "6110.79407351",
+        "snapshot_at": "2018-03-10 09:32:33"
+    },
+    {
+        "id": 1876,
+        "cryptocurrency_id": 1,
+        "price_usd": "5913.40319901",
+        "snapshot_at": "2018-03-10 08:32:33"
+    },
+    {
+        "id": 1877,
+        "cryptocurrency_id": 1,
+        "price_usd": "5929.58523996",
+        "snapshot_at": "2018-03-10 07:32:33"
+    },
+    {
+        "id": 1878,
+        "cryptocurrency_id": 1,
+        "price_usd": "6092.23863969",
+        "snapshot_at": "2018-03-10 06:32:33"
+    },
+    {
+        "id": 1879,
+        "cryptocurrency_id": 1,
+        "price_usd": "5995.41520137",
+        "snapshot_at": "2018-03-10 05:32:33"
+    },
+    {
+        "id": 1880,
+        "cryptocurrency_id": 1,
+        "price_usd": "5749.28906654",
+        "snapshot_at": "2018-03-10 04:32:33"
+    },
+    {
+        "id": 1881,
+        "cryptocurrency_id": 1,
+        "price_usd": "5800.26231668",
+        "snapshot_at": "2018-03-10 03:32:33"
+    },
+    {
+        "id": 1882,
+        "cryptocurrency_id": 1,
+        "price_usd": "5569.69547402",
+        "snapshot_at": "2018-03-10 02:32:33"
+    },
+    {
+        "id": 1883,
+        "cryptocurrency_id": 1,
+        "price_usd": "5664.55531899",
+        "snapshot_at": "2018-03-10 01:32:33"
+    },
+    {
+        "id": 1884,
+        "cryptocurrency_id": 1,
+        "price_usd": "5934.33085196",
+        "snapshot_at": "2018-03-10 00:32:33"
+    },
+    {
+        "id": 1885,
+        "cryptocurrency_id": 1,
+        "price_usd": "6147.95673531",
+        "snapshot_at": "2018-03-09 23:32:33"
+    },
+    {
+        "id": 1886,
+        "cryptocurrency_id": 1,
+        "price_usd": "6194.84052328",
+        "snapshot_at": "2018-03-09 22:32:33"
+    },
+    {
+        "id": 1887,
+        "cryptocurrency_id": 1,
+        "price_usd": "6043.97845176",
+        "snapshot_at": "2018-03-09 21:32:33"
+    },
+    {
+        "id": 1888,
+        "cryptocurrency_id": 1,
+        "price_usd": "6229.72917369",
+        "snapshot_at": "2018-03-09 20:32:33"
+    },
+    {
+        "id": 1889,
+        "cryptocurrency_id": 1,
+        "price_usd": "6093.39085812",
+        "snapshot_at": "2018-03-09 19:32:33"
+    },
+    {
+        "id": 1890,
+        "cryptocurrency_id": 1,
+        "price_usd": "6233.54479764",
+        "snapshot_at": "2018-03-09 18:32:33"
+    },
+    {
+        "id": 1891,
+        "cryptocurrency_id": 1,
+        "price_usd": "6082.23721445",
+        "snapshot_at": "2018-03-09 17:32:33"
+    },
+    {
+        "id": 1892,
+        "cryptocurrency_id": 1,
+        "price_usd": "6181.27611547",
+        "snapshot_at": "2018-03-09 16:32:33"
+    },
+    {
+        "id": 1893,
+        "cryptocurrency_id": 1,
+        "price_usd": "6424.54131743",
+        "snapshot_at": "2018-03-09 15:32:33"
+    },
+    {
+        "id": 1894,
+        "cryptocurrency_id": 1,
+        "price_usd": "6724.42733116",
+        "snapshot_at": "2018-03-09 14:32:33"
+    },
+    {
+        "id": 1895,
+        "cryptocurrency_id": 1,
+        "price_usd": "6596.89366547",
+        "snapshot_at": "2018-03-09 13:32:33"
+    },
+    {
+        "id": 1896,
+        "cryptocurrency_id": 1,
+        "price_usd": "6507.73463379",
+        "snapshot_at": "2018-03-09 12:32:33"
+    },
+    {
+        "id": 1897,
+        "cryptocurrency_id": 1,
+        "price_usd": "6487.62045935",
+        "snapshot_at": "2018-03-09 11:32:33"
+    },
+    {
+        "id": 1898,
+        "cryptocurrency_id": 1,
+        "price_usd": "6338.97218766",
+        "snapshot_at": "2018-03-09 10:32:33"
+    },
+    {
+        "id": 1899,
+        "cryptocurrency_id": 1,
+        "price_usd": "6517.53129504",
+        "snapshot_at": "2018-03-09 09:32:33"
+    },
+    {
+        "id": 1900,
+        "cryptocurrency_id": 1,
+        "price_usd": "6791.95642905",
+        "snapshot_at": "2018-03-09 08:32:33"
+    },
+    {
+        "id": 1901,
+        "cryptocurrency_id": 1,
+        "price_usd": "7038.46286972",
+        "snapshot_at": "2018-03-09 07:32:33"
+    },
+    {
+        "id": 1902,
+        "cryptocurrency_id": 1,
+        "price_usd": "7212.06048651",
+        "snapshot_at": "2018-03-09 06:32:33"
+    },
+    {
+        "id": 1903,
+        "cryptocurrency_id": 1,
+        "price_usd": "7353.87960770",
+        "snapshot_at": "2018-03-09 05:32:33"
+    },
+    {
+        "id": 1904,
+        "cryptocurrency_id": 1,
+        "price_usd": "7405.09466716",
+        "snapshot_at": "2018-03-09 04:32:33"
+    },
+    {
+        "id": 1905,
+        "cryptocurrency_id": 1,
+        "price_usd": "7303.60204341",
+        "snapshot_at": "2018-03-09 03:32:33"
+    },
+    {
+        "id": 1906,
+        "cryptocurrency_id": 1,
+        "price_usd": "7499.31948621",
+        "snapshot_at": "2018-03-09 02:32:33"
+    },
+    {
+        "id": 1907,
+        "cryptocurrency_id": 1,
+        "price_usd": "7479.65070625",
+        "snapshot_at": "2018-03-09 01:32:33"
+    },
+    {
+        "id": 1908,
+        "cryptocurrency_id": 1,
+        "price_usd": "7617.85692365",
+        "snapshot_at": "2018-03-09 00:32:33"
+    },
+    {
+        "id": 1909,
+        "cryptocurrency_id": 1,
+        "price_usd": "7467.31161073",
+        "snapshot_at": "2018-03-08 23:32:33"
+    },
+    {
+        "id": 1910,
+        "cryptocurrency_id": 1,
+        "price_usd": "7334.26499183",
+        "snapshot_at": "2018-03-08 22:32:33"
+    },
+    {
+        "id": 1911,
+        "cryptocurrency_id": 1,
+        "price_usd": "7384.55126082",
+        "snapshot_at": "2018-03-08 21:32:33"
+    },
+    {
+        "id": 1912,
+        "cryptocurrency_id": 1,
+        "price_usd": "7216.74587584",
+        "snapshot_at": "2018-03-08 20:32:33"
+    },
+    {
+        "id": 1913,
+        "cryptocurrency_id": 1,
+        "price_usd": "7188.21639133",
+        "snapshot_at": "2018-03-08 19:32:33"
+    },
+    {
+        "id": 1914,
+        "cryptocurrency_id": 1,
+        "price_usd": "7280.26006315",
+        "snapshot_at": "2018-03-08 18:32:33"
+    },
+    {
+        "id": 1915,
+        "cryptocurrency_id": 1,
+        "price_usd": "7424.79670347",
+        "snapshot_at": "2018-03-08 17:32:33"
+    },
+    {
+        "id": 1916,
+        "cryptocurrency_id": 1,
+        "price_usd": "7094.28855105",
+        "snapshot_at": "2018-03-08 16:32:33"
+    },
+    {
+        "id": 1917,
+        "cryptocurrency_id": 1,
+        "price_usd": "6879.13012198",
+        "snapshot_at": "2018-03-08 15:32:33"
+    },
+    {
+        "id": 1918,
+        "cryptocurrency_id": 1,
+        "price_usd": "6924.87939575",
+        "snapshot_at": "2018-03-08 14:32:33"
+    },
+    {
+        "id": 1919,
+        "cryptocurrency_id": 1,
+        "price_usd": "6865.26496460",
+        "snapshot_at": "2018-03-08 13:32:33"
+    },
+    {
+        "id": 1920,
+        "cryptocurrency_id": 1,
+        "price_usd": "6629.30515731",
+        "snapshot_at": "2018-03-08 12:32:33"
+    },
+    {
+        "id": 1921,
+        "cryptocurrency_id": 1,
+        "price_usd": "6360.25145215",
+        "snapshot_at": "2018-03-08 11:32:33"
+    },
+    {
+        "id": 1922,
+        "cryptocurrency_id": 1,
+        "price_usd": "6287.40262803",
+        "snapshot_at": "2018-03-08 10:32:33"
+    },
+    {
+        "id": 1923,
+        "cryptocurrency_id": 1,
+        "price_usd": "6317.88738290",
+        "snapshot_at": "2018-03-08 09:32:33"
+    },
+    {
+        "id": 1924,
+        "cryptocurrency_id": 1,
+        "price_usd": "6569.16796271",
+        "snapshot_at": "2018-03-08 08:32:33"
+    },
+    {
+        "id": 1925,
+        "cryptocurrency_id": 1,
+        "price_usd": "6664.67251806",
+        "snapshot_at": "2018-03-08 07:32:33"
+    },
+    {
+        "id": 1926,
+        "cryptocurrency_id": 1,
+        "price_usd": "6342.89705840",
+        "snapshot_at": "2018-03-08 06:32:33"
+    },
+    {
+        "id": 1927,
+        "cryptocurrency_id": 1,
+        "price_usd": "6533.01780740",
+        "snapshot_at": "2018-03-08 05:32:33"
+    },
+    {
+        "id": 1928,
+        "cryptocurrency_id": 1,
+        "price_usd": "6543.20499317",
+        "snapshot_at": "2018-03-08 04:32:33"
+    },
+    {
+        "id": 1929,
+        "cryptocurrency_id": 1,
+        "price_usd": "6689.65352261",
+        "snapshot_at": "2018-03-08 03:32:33"
+    },
+    {
+        "id": 1930,
+        "cryptocurrency_id": 1,
+        "price_usd": "6680.98951093",
+        "snapshot_at": "2018-03-08 02:32:33"
+    },
+    {
+        "id": 1931,
+        "cryptocurrency_id": 1,
+        "price_usd": "6589.11622924",
+        "snapshot_at": "2018-03-08 01:32:33"
+    },
+    {
+        "id": 1932,
+        "cryptocurrency_id": 1,
+        "price_usd": "6838.37196308",
+        "snapshot_at": "2018-03-08 00:32:33"
+    },
+    {
+        "id": 1933,
+        "cryptocurrency_id": 1,
+        "price_usd": "6767.60321833",
+        "snapshot_at": "2018-03-07 23:32:33"
+    },
+    {
+        "id": 1934,
+        "cryptocurrency_id": 1,
+        "price_usd": "6649.66864808",
+        "snapshot_at": "2018-03-07 22:32:33"
+    },
+    {
+        "id": 1935,
+        "cryptocurrency_id": 1,
+        "price_usd": "6668.09683400",
+        "snapshot_at": "2018-03-07 21:32:33"
+    },
+    {
+        "id": 1936,
+        "cryptocurrency_id": 1,
+        "price_usd": "6400.69129610",
+        "snapshot_at": "2018-03-07 20:32:33"
+    },
+    {
+        "id": 1937,
+        "cryptocurrency_id": 1,
+        "price_usd": "6220.92246912",
+        "snapshot_at": "2018-03-07 19:32:33"
+    },
+    {
+        "id": 1938,
+        "cryptocurrency_id": 1,
+        "price_usd": "6067.59794568",
+        "snapshot_at": "2018-03-07 18:32:33"
+    },
+    {
+        "id": 1939,
+        "cryptocurrency_id": 1,
+        "price_usd": "6158.66432873",
+        "snapshot_at": "2018-03-07 17:32:33"
+    },
+    {
+        "id": 1940,
+        "cryptocurrency_id": 1,
+        "price_usd": "6414.13381365",
+        "snapshot_at": "2018-03-07 16:32:33"
+    },
+    {
+        "id": 1941,
+        "cryptocurrency_id": 1,
+        "price_usd": "6171.89676967",
+        "snapshot_at": "2018-03-07 15:32:33"
+    },
+    {
+        "id": 1942,
+        "cryptocurrency_id": 1,
+        "price_usd": "6314.26683099",
+        "snapshot_at": "2018-03-07 14:32:33"
+    },
+    {
+        "id": 1943,
+        "cryptocurrency_id": 1,
+        "price_usd": "6166.45813738",
+        "snapshot_at": "2018-03-07 13:32:33"
+    },
+    {
+        "id": 1944,
+        "cryptocurrency_id": 1,
+        "price_usd": "5963.52785617",
+        "snapshot_at": "2018-03-07 12:32:33"
+    },
+    {
+        "id": 1945,
+        "cryptocurrency_id": 1,
+        "price_usd": "5805.15649094",
+        "snapshot_at": "2018-03-07 11:32:33"
+    },
+    {
+        "id": 1946,
+        "cryptocurrency_id": 1,
+        "price_usd": "5942.53792218",
+        "snapshot_at": "2018-03-07 10:32:33"
+    },
+    {
+        "id": 1947,
+        "cryptocurrency_id": 1,
+        "price_usd": "6075.31191407",
+        "snapshot_at": "2018-03-07 09:32:33"
+    },
+    {
+        "id": 1948,
+        "cryptocurrency_id": 1,
+        "price_usd": "6197.63019556",
+        "snapshot_at": "2018-03-07 08:32:33"
+    },
+    {
+        "id": 1949,
+        "cryptocurrency_id": 1,
+        "price_usd": "6271.28104224",
+        "snapshot_at": "2018-03-07 07:32:33"
+    },
+    {
+        "id": 1950,
+        "cryptocurrency_id": 1,
+        "price_usd": "6505.56771062",
+        "snapshot_at": "2018-03-07 06:32:33"
+    },
+    {
+        "id": 1951,
+        "cryptocurrency_id": 1,
+        "price_usd": "6755.90244371",
+        "snapshot_at": "2018-03-07 05:32:33"
+    },
+    {
+        "id": 1952,
+        "cryptocurrency_id": 1,
+        "price_usd": "6847.88699699",
+        "snapshot_at": "2018-03-07 04:32:33"
+    },
+    {
+        "id": 1953,
+        "cryptocurrency_id": 1,
+        "price_usd": "6861.20118604",
+        "snapshot_at": "2018-03-07 03:32:33"
+    },
+    {
+        "id": 1954,
+        "cryptocurrency_id": 1,
+        "price_usd": "6723.02772127",
+        "snapshot_at": "2018-03-07 02:32:33"
+    },
+    {
+        "id": 1955,
+        "cryptocurrency_id": 1,
+        "price_usd": "6469.53428266",
+        "snapshot_at": "2018-03-07 01:32:33"
+    },
+    {
+        "id": 1956,
+        "cryptocurrency_id": 1,
+        "price_usd": "6313.48618940",
+        "snapshot_at": "2018-03-07 00:32:33"
+    },
+    {
+        "id": 1957,
+        "cryptocurrency_id": 1,
+        "price_usd": "6504.00107848",
+        "snapshot_at": "2018-03-06 23:32:33"
+    },
+    {
+        "id": 1958,
+        "cryptocurrency_id": 1,
+        "price_usd": "6285.16681954",
+        "snapshot_at": "2018-03-06 22:32:33"
+    },
+    {
+        "id": 1959,
+        "cryptocurrency_id": 1,
+        "price_usd": "6566.57855591",
+        "snapshot_at": "2018-03-06 21:32:33"
+    },
+    {
+        "id": 1960,
+        "cryptocurrency_id": 1,
+        "price_usd": "6557.78511155",
+        "snapshot_at": "2018-03-06 20:32:33"
+    },
+    {
+        "id": 1961,
+        "cryptocurrency_id": 1,
+        "price_usd": "6639.61393686",
+        "snapshot_at": "2018-03-06 19:32:33"
+    },
+    {
+        "id": 1962,
+        "cryptocurrency_id": 1,
+        "price_usd": "6759.17815109",
+        "snapshot_at": "2018-03-06 18:32:33"
+    },
+    {
+        "id": 1963,
+        "cryptocurrency_id": 1,
+        "price_usd": "6433.80602009",
+        "snapshot_at": "2018-03-06 17:32:33"
+    },
+    {
+        "id": 1964,
+        "cryptocurrency_id": 1,
+        "price_usd": "6550.87298408",
+        "snapshot_at": "2018-03-06 16:32:33"
+    },
+    {
+        "id": 1965,
+        "cryptocurrency_id": 1,
+        "price_usd": "6715.53734118",
+        "snapshot_at": "2018-03-06 15:32:33"
+    },
+    {
+        "id": 1966,
+        "cryptocurrency_id": 1,
+        "price_usd": "6893.26052719",
+        "snapshot_at": "2018-03-06 14:32:33"
+    },
+    {
+        "id": 1967,
+        "cryptocurrency_id": 1,
+        "price_usd": "6820.53445471",
+        "snapshot_at": "2018-03-06 13:32:33"
+    },
+    {
+        "id": 1968,
+        "cryptocurrency_id": 1,
+        "price_usd": "6617.07355583",
+        "snapshot_at": "2018-03-06 12:32:33"
+    },
+    {
+        "id": 1969,
+        "cryptocurrency_id": 1,
+        "price_usd": "6614.32409979",
+        "snapshot_at": "2018-03-06 11:32:33"
+    },
+    {
+        "id": 1970,
+        "cryptocurrency_id": 1,
+        "price_usd": "6468.40426889",
+        "snapshot_at": "2018-03-06 10:32:33"
+    },
+    {
+        "id": 1971,
+        "cryptocurrency_id": 1,
+        "price_usd": "6184.62654836",
+        "snapshot_at": "2018-03-06 09:32:33"
+    },
+    {
+        "id": 1972,
+        "cryptocurrency_id": 1,
+        "price_usd": "6177.89207698",
+        "snapshot_at": "2018-03-06 08:32:33"
+    },
+    {
+        "id": 1973,
+        "cryptocurrency_id": 1,
+        "price_usd": "6113.47920647",
+        "snapshot_at": "2018-03-06 07:32:33"
+    },
+    {
+        "id": 1974,
+        "cryptocurrency_id": 1,
+        "price_usd": "6073.63040316",
+        "snapshot_at": "2018-03-06 06:32:33"
+    },
+    {
+        "id": 1975,
+        "cryptocurrency_id": 1,
+        "price_usd": "6326.67097854",
+        "snapshot_at": "2018-03-06 05:32:33"
+    },
+    {
+        "id": 1976,
+        "cryptocurrency_id": 1,
+        "price_usd": "6537.08120187",
+        "snapshot_at": "2018-03-06 04:32:33"
+    },
+    {
+        "id": 1977,
+        "cryptocurrency_id": 1,
+        "price_usd": "6836.84664282",
+        "snapshot_at": "2018-03-06 03:32:33"
+    },
+    {
+        "id": 1978,
+        "cryptocurrency_id": 1,
+        "price_usd": "6703.86488814",
+        "snapshot_at": "2018-03-06 02:32:33"
+    },
+    {
+        "id": 1979,
+        "cryptocurrency_id": 1,
+        "price_usd": "6914.48196439",
+        "snapshot_at": "2018-03-06 01:32:33"
+    },
+    {
+        "id": 1980,
+        "cryptocurrency_id": 1,
+        "price_usd": "7196.43290697",
+        "snapshot_at": "2018-03-06 00:32:33"
+    },
+    {
+        "id": 1981,
+        "cryptocurrency_id": 1,
+        "price_usd": "7322.44630184",
+        "snapshot_at": "2018-03-05 23:32:33"
+    },
+    {
+        "id": 1982,
+        "cryptocurrency_id": 1,
+        "price_usd": "7506.33402227",
+        "snapshot_at": "2018-03-05 22:32:33"
+    },
+    {
+        "id": 1983,
+        "cryptocurrency_id": 1,
+        "price_usd": "7680.41883184",
+        "snapshot_at": "2018-03-05 21:32:33"
+    },
+    {
+        "id": 1984,
+        "cryptocurrency_id": 1,
+        "price_usd": "8026.11831492",
+        "snapshot_at": "2018-03-05 20:32:33"
+    },
+    {
+        "id": 1985,
+        "cryptocurrency_id": 1,
+        "price_usd": "7968.07800564",
+        "snapshot_at": "2018-03-05 19:32:33"
+    },
+    {
+        "id": 1986,
+        "cryptocurrency_id": 1,
+        "price_usd": "7756.74843625",
+        "snapshot_at": "2018-03-05 18:32:33"
+    },
+    {
+        "id": 1987,
+        "cryptocurrency_id": 1,
+        "price_usd": "8109.72956120",
+        "snapshot_at": "2018-03-05 17:32:33"
+    },
+    {
+        "id": 1988,
+        "cryptocurrency_id": 1,
+        "price_usd": "8308.50119077",
+        "snapshot_at": "2018-03-05 16:32:33"
+    },
+    {
+        "id": 1989,
+        "cryptocurrency_id": 1,
+        "price_usd": "8586.18699912",
+        "snapshot_at": "2018-03-05 15:32:33"
+    },
+    {
+        "id": 1990,
+        "cryptocurrency_id": 1,
+        "price_usd": "8171.58656022",
+        "snapshot_at": "2018-03-05 14:32:33"
+    },
+    {
+        "id": 1991,
+        "cryptocurrency_id": 1,
+        "price_usd": "8505.19205280",
+        "snapshot_at": "2018-03-05 13:32:33"
+    },
+    {
+        "id": 1992,
+        "cryptocurrency_id": 1,
+        "price_usd": "8638.18583384",
+        "snapshot_at": "2018-03-05 12:32:33"
+    },
+    {
+        "id": 1993,
+        "cryptocurrency_id": 1,
+        "price_usd": "8339.00686635",
+        "snapshot_at": "2018-03-05 11:32:33"
+    },
+    {
+        "id": 1994,
+        "cryptocurrency_id": 1,
+        "price_usd": "8032.38223109",
+        "snapshot_at": "2018-03-05 10:32:33"
+    },
+    {
+        "id": 1995,
+        "cryptocurrency_id": 1,
+        "price_usd": "7996.31390257",
+        "snapshot_at": "2018-03-05 09:32:33"
+    },
+    {
+        "id": 1996,
+        "cryptocurrency_id": 1,
+        "price_usd": "7965.75566290",
+        "snapshot_at": "2018-03-05 08:32:33"
+    },
+    {
+        "id": 1997,
+        "cryptocurrency_id": 1,
+        "price_usd": "7896.33552276",
+        "snapshot_at": "2018-03-05 07:32:33"
+    },
+    {
+        "id": 1998,
+        "cryptocurrency_id": 1,
+        "price_usd": "8142.94137489",
+        "snapshot_at": "2018-03-05 06:32:33"
+    },
+    {
+        "id": 1999,
+        "cryptocurrency_id": 1,
+        "price_usd": "8311.86535465",
+        "snapshot_at": "2018-03-05 05:32:33"
+    },
+    {
+        "id": 2000,
+        "cryptocurrency_id": 1,
+        "price_usd": "7898.34897301",
+        "snapshot_at": "2018-03-05 04:32:33"
+    },
+    {
+        "id": 2001,
+        "cryptocurrency_id": 1,
+        "price_usd": "7785.63462977",
+        "snapshot_at": "2018-03-05 03:32:33"
+    },
+    {
+        "id": 2002,
+        "cryptocurrency_id": 1,
+        "price_usd": "8160.85178350",
+        "snapshot_at": "2018-03-05 02:32:33"
+    },
+    {
+        "id": 2003,
+        "cryptocurrency_id": 1,
+        "price_usd": "7898.80794163",
+        "snapshot_at": "2018-03-05 01:32:33"
+    },
+    {
+        "id": 2004,
+        "cryptocurrency_id": 1,
+        "price_usd": "8184.82678914",
+        "snapshot_at": "2018-03-05 00:32:33"
+    },
+    {
+        "id": 2005,
+        "cryptocurrency_id": 1,
+        "price_usd": "8031.26526422",
+        "snapshot_at": "2018-03-04 23:32:33"
+    },
+    {
+        "id": 2006,
+        "cryptocurrency_id": 1,
+        "price_usd": "8372.56162274",
+        "snapshot_at": "2018-03-04 22:32:33"
+    },
+    {
+        "id": 2007,
+        "cryptocurrency_id": 1,
+        "price_usd": "8623.49607892",
+        "snapshot_at": "2018-03-04 21:32:33"
+    },
+    {
+        "id": 2008,
+        "cryptocurrency_id": 1,
+        "price_usd": "8213.21295244",
+        "snapshot_at": "2018-03-04 20:32:33"
+    },
+    {
+        "id": 2009,
+        "cryptocurrency_id": 1,
+        "price_usd": "8542.36540565",
+        "snapshot_at": "2018-03-04 19:32:33"
+    },
+    {
+        "id": 2010,
+        "cryptocurrency_id": 1,
+        "price_usd": "8335.88026043",
+        "snapshot_at": "2018-03-04 18:32:33"
+    },
+    {
+        "id": 2011,
+        "cryptocurrency_id": 1,
+        "price_usd": "8273.53539336",
+        "snapshot_at": "2018-03-04 17:32:33"
+    },
+    {
+        "id": 2012,
+        "cryptocurrency_id": 1,
+        "price_usd": "8611.21005723",
+        "snapshot_at": "2018-03-04 16:32:33"
+    },
+    {
+        "id": 2013,
+        "cryptocurrency_id": 1,
+        "price_usd": "8977.71873206",
+        "snapshot_at": "2018-03-04 15:32:33"
+    },
+    {
+        "id": 2014,
+        "cryptocurrency_id": 1,
+        "price_usd": "9370.63309770",
+        "snapshot_at": "2018-03-04 14:32:33"
+    },
+    {
+        "id": 2015,
+        "cryptocurrency_id": 1,
+        "price_usd": "9793.50531300",
+        "snapshot_at": "2018-03-04 13:32:33"
+    },
+    {
+        "id": 2016,
+        "cryptocurrency_id": 1,
+        "price_usd": "9722.97224251",
+        "snapshot_at": "2018-03-04 12:32:33"
+    },
+    {
+        "id": 2017,
+        "cryptocurrency_id": 1,
+        "price_usd": "9895.14267983",
+        "snapshot_at": "2018-03-04 11:32:33"
+    },
+    {
+        "id": 2018,
+        "cryptocurrency_id": 1,
+        "price_usd": "9625.93304138",
+        "snapshot_at": "2018-03-04 10:32:33"
+    },
+    {
+        "id": 2019,
+        "cryptocurrency_id": 1,
+        "price_usd": "10105.61071512",
+        "snapshot_at": "2018-03-04 09:32:33"
+    },
+    {
+        "id": 2020,
+        "cryptocurrency_id": 1,
+        "price_usd": "10205.31238005",
+        "snapshot_at": "2018-03-04 08:32:33"
+    },
+    {
+        "id": 2021,
+        "cryptocurrency_id": 1,
+        "price_usd": "10603.32080659",
+        "snapshot_at": "2018-03-04 07:32:33"
+    },
+    {
+        "id": 2022,
+        "cryptocurrency_id": 1,
+        "price_usd": "10183.12382488",
+        "snapshot_at": "2018-03-04 06:32:33"
+    },
+    {
+        "id": 2023,
+        "cryptocurrency_id": 1,
+        "price_usd": "9769.20046896",
+        "snapshot_at": "2018-03-04 05:32:33"
+    },
+    {
+        "id": 2024,
+        "cryptocurrency_id": 1,
+        "price_usd": "10111.76796816",
+        "snapshot_at": "2018-03-04 04:32:33"
+    },
+    {
+        "id": 2025,
+        "cryptocurrency_id": 1,
+        "price_usd": "10321.07269746",
+        "snapshot_at": "2018-03-04 03:32:33"
+    },
+    {
+        "id": 2026,
+        "cryptocurrency_id": 1,
+        "price_usd": "10276.37343670",
+        "snapshot_at": "2018-03-04 02:32:33"
+    },
+    {
+        "id": 2027,
+        "cryptocurrency_id": 1,
+        "price_usd": "10399.31751853",
+        "snapshot_at": "2018-03-04 01:32:33"
+    },
+    {
+        "id": 2028,
+        "cryptocurrency_id": 1,
+        "price_usd": "10851.31748369",
+        "snapshot_at": "2018-03-04 00:32:33"
+    },
+    {
+        "id": 2029,
+        "cryptocurrency_id": 1,
+        "price_usd": "11347.49086760",
+        "snapshot_at": "2018-03-03 23:32:33"
+    },
+    {
+        "id": 2030,
+        "cryptocurrency_id": 1,
+        "price_usd": "11795.51737454",
+        "snapshot_at": "2018-03-03 22:32:33"
+    },
+    {
+        "id": 2031,
+        "cryptocurrency_id": 1,
+        "price_usd": "11385.84984388",
+        "snapshot_at": "2018-03-03 21:32:33"
+    },
+    {
+        "id": 2032,
+        "cryptocurrency_id": 1,
+        "price_usd": "11948.44504413",
+        "snapshot_at": "2018-03-03 20:32:33"
+    },
+    {
+        "id": 2033,
+        "cryptocurrency_id": 1,
+        "price_usd": "11775.29210353",
+        "snapshot_at": "2018-03-03 19:32:33"
+    },
+    {
+        "id": 2034,
+        "cryptocurrency_id": 1,
+        "price_usd": "12349.09693865",
+        "snapshot_at": "2018-03-03 18:32:33"
+    },
+    {
+        "id": 2035,
+        "cryptocurrency_id": 1,
+        "price_usd": "12550.59812120",
+        "snapshot_at": "2018-03-03 17:32:33"
+    },
+    {
+        "id": 2036,
+        "cryptocurrency_id": 1,
+        "price_usd": "12417.75814551",
+        "snapshot_at": "2018-03-03 16:32:33"
+    },
+    {
+        "id": 2037,
+        "cryptocurrency_id": 1,
+        "price_usd": "12321.61097607",
+        "snapshot_at": "2018-03-03 15:32:33"
+    },
+    {
+        "id": 2038,
+        "cryptocurrency_id": 1,
+        "price_usd": "12704.19652286",
+        "snapshot_at": "2018-03-03 14:32:33"
+    },
+    {
+        "id": 2039,
+        "cryptocurrency_id": 1,
+        "price_usd": "12241.12261611",
+        "snapshot_at": "2018-03-03 13:32:33"
+    },
+    {
+        "id": 2040,
+        "cryptocurrency_id": 1,
+        "price_usd": "12449.29347953",
+        "snapshot_at": "2018-03-03 12:32:33"
+    },
+    {
+        "id": 2041,
+        "cryptocurrency_id": 1,
+        "price_usd": "12535.81944460",
+        "snapshot_at": "2018-03-03 11:32:33"
+    },
+    {
+        "id": 2042,
+        "cryptocurrency_id": 1,
+        "price_usd": "12080.83495739",
+        "snapshot_at": "2018-03-03 10:32:33"
+    },
+    {
+        "id": 2043,
+        "cryptocurrency_id": 1,
+        "price_usd": "11651.79254328",
+        "snapshot_at": "2018-03-03 09:32:33"
+    },
+    {
+        "id": 2044,
+        "cryptocurrency_id": 1,
+        "price_usd": "11478.02361650",
+        "snapshot_at": "2018-03-03 08:32:33"
+    },
+    {
+        "id": 2045,
+        "cryptocurrency_id": 1,
+        "price_usd": "11952.28187636",
+        "snapshot_at": "2018-03-03 07:32:33"
+    },
+    {
+        "id": 2046,
+        "cryptocurrency_id": 1,
+        "price_usd": "12113.87712347",
+        "snapshot_at": "2018-03-03 06:32:33"
+    },
+    {
+        "id": 2047,
+        "cryptocurrency_id": 1,
+        "price_usd": "12249.86024856",
+        "snapshot_at": "2018-03-03 05:32:33"
+    },
+    {
+        "id": 2048,
+        "cryptocurrency_id": 1,
+        "price_usd": "12169.27682263",
+        "snapshot_at": "2018-03-03 04:32:33"
+    },
+    {
+        "id": 2049,
+        "cryptocurrency_id": 1,
+        "price_usd": "12678.23947605",
+        "snapshot_at": "2018-03-03 03:32:33"
+    },
+    {
+        "id": 2050,
+        "cryptocurrency_id": 1,
+        "price_usd": "13134.89889124",
+        "snapshot_at": "2018-03-03 02:32:33"
+    },
+    {
+        "id": 2051,
+        "cryptocurrency_id": 1,
+        "price_usd": "13253.02812614",
+        "snapshot_at": "2018-03-03 01:32:33"
+    },
+    {
+        "id": 2052,
+        "cryptocurrency_id": 1,
+        "price_usd": "13493.89594540",
+        "snapshot_at": "2018-03-03 00:32:33"
+    },
+    {
+        "id": 2053,
+        "cryptocurrency_id": 1,
+        "price_usd": "13539.66463577",
+        "snapshot_at": "2018-03-02 23:32:33"
+    },
+    {
+        "id": 2054,
+        "cryptocurrency_id": 1,
+        "price_usd": "14109.51921894",
+        "snapshot_at": "2018-03-02 22:32:33"
+    },
+    {
+        "id": 2055,
+        "cryptocurrency_id": 1,
+        "price_usd": "14333.48517696",
+        "snapshot_at": "2018-03-02 21:32:33"
+    },
+    {
+        "id": 2056,
+        "cryptocurrency_id": 1,
+        "price_usd": "14846.30124538",
+        "snapshot_at": "2018-03-02 20:32:33"
+    },
+    {
+        "id": 2057,
+        "cryptocurrency_id": 1,
+        "price_usd": "15325.45076648",
+        "snapshot_at": "2018-03-02 19:32:33"
+    },
+    {
+        "id": 2058,
+        "cryptocurrency_id": 1,
+        "price_usd": "14989.56279767",
+        "snapshot_at": "2018-03-02 18:32:33"
+    },
+    {
+        "id": 2059,
+        "cryptocurrency_id": 1,
+        "price_usd": "14487.59080151",
+        "snapshot_at": "2018-03-02 17:32:33"
+    },
+    {
+        "id": 2060,
+        "cryptocurrency_id": 1,
+        "price_usd": "15007.99196203",
+        "snapshot_at": "2018-03-02 16:32:33"
+    },
+    {
+        "id": 2061,
+        "cryptocurrency_id": 1,
+        "price_usd": "14360.67404330",
+        "snapshot_at": "2018-03-02 15:32:33"
+    },
+    {
+        "id": 2062,
+        "cryptocurrency_id": 1,
+        "price_usd": "14853.55165974",
+        "snapshot_at": "2018-03-02 14:32:33"
+    },
+    {
+        "id": 2063,
+        "cryptocurrency_id": 1,
+        "price_usd": "14419.10918609",
+        "snapshot_at": "2018-03-02 13:32:33"
+    },
+    {
+        "id": 2064,
+        "cryptocurrency_id": 1,
+        "price_usd": "14864.75219104",
+        "snapshot_at": "2018-03-02 12:32:33"
+    },
+    {
+        "id": 2065,
+        "cryptocurrency_id": 1,
+        "price_usd": "15520.05555604",
+        "snapshot_at": "2018-03-02 11:32:33"
+    },
+    {
+        "id": 2066,
+        "cryptocurrency_id": 1,
+        "price_usd": "15831.57701487",
+        "snapshot_at": "2018-03-02 10:32:33"
+    },
+    {
+        "id": 2067,
+        "cryptocurrency_id": 1,
+        "price_usd": "15060.66651441",
+        "snapshot_at": "2018-03-02 09:32:33"
+    },
+    {
+        "id": 2068,
+        "cryptocurrency_id": 1,
+        "price_usd": "14667.82127314",
+        "snapshot_at": "2018-03-02 08:32:33"
+    },
+    {
+        "id": 2069,
+        "cryptocurrency_id": 1,
+        "price_usd": "15278.42685765",
+        "snapshot_at": "2018-03-02 07:32:33"
+    },
+    {
+        "id": 2070,
+        "cryptocurrency_id": 1,
+        "price_usd": "15311.54170180",
+        "snapshot_at": "2018-03-02 06:32:33"
+    },
+    {
+        "id": 2071,
+        "cryptocurrency_id": 1,
+        "price_usd": "14988.35876220",
+        "snapshot_at": "2018-03-02 05:32:33"
+    },
+    {
+        "id": 2072,
+        "cryptocurrency_id": 1,
+        "price_usd": "15445.70867669",
+        "snapshot_at": "2018-03-02 04:32:33"
+    },
+    {
+        "id": 2073,
+        "cryptocurrency_id": 1,
+        "price_usd": "15389.25598263",
+        "snapshot_at": "2018-03-02 03:32:33"
+    },
+    {
+        "id": 2074,
+        "cryptocurrency_id": 1,
+        "price_usd": "15515.29240815",
+        "snapshot_at": "2018-03-02 02:32:33"
+    },
+    {
+        "id": 2075,
+        "cryptocurrency_id": 1,
+        "price_usd": "15851.44366224",
+        "snapshot_at": "2018-03-02 01:32:33"
+    },
+    {
+        "id": 2076,
+        "cryptocurrency_id": 1,
+        "price_usd": "16251.86063931",
+        "snapshot_at": "2018-03-02 00:32:33"
+    },
+    {
+        "id": 2077,
+        "cryptocurrency_id": 1,
+        "price_usd": "15584.29263223",
+        "snapshot_at": "2018-03-01 23:32:33"
+    },
+    {
+        "id": 2078,
+        "cryptocurrency_id": 1,
+        "price_usd": "15098.54265536",
+        "snapshot_at": "2018-03-01 22:32:33"
+    },
+    {
+        "id": 2079,
+        "cryptocurrency_id": 1,
+        "price_usd": "15239.27300428",
+        "snapshot_at": "2018-03-01 21:32:33"
+    },
+    {
+        "id": 2080,
+        "cryptocurrency_id": 1,
+        "price_usd": "14964.22111115",
+        "snapshot_at": "2018-03-01 20:32:33"
+    },
+    {
+        "id": 2081,
+        "cryptocurrency_id": 1,
+        "price_usd": "14608.22091688",
+        "snapshot_at": "2018-03-01 19:32:33"
+    },
+    {
+        "id": 2082,
+        "cryptocurrency_id": 1,
+        "price_usd": "15142.88223930",
+        "snapshot_at": "2018-03-01 18:32:33"
+    },
+    {
+        "id": 2083,
+        "cryptocurrency_id": 1,
+        "price_usd": "15642.00437244",
+        "snapshot_at": "2018-03-01 17:32:33"
+    },
+    {
+        "id": 2084,
+        "cryptocurrency_id": 1,
+        "price_usd": "15886.28856703",
+        "snapshot_at": "2018-03-01 16:32:33"
+    },
+    {
+        "id": 2085,
+        "cryptocurrency_id": 1,
+        "price_usd": "16510.97551650",
+        "snapshot_at": "2018-03-01 15:32:33"
+    },
+    {
+        "id": 2086,
+        "cryptocurrency_id": 1,
+        "price_usd": "17288.86450532",
+        "snapshot_at": "2018-03-01 14:32:33"
+    },
+    {
+        "id": 2087,
+        "cryptocurrency_id": 1,
+        "price_usd": "17430.01547970",
+        "snapshot_at": "2018-03-01 13:32:33"
+    },
+    {
+        "id": 2088,
+        "cryptocurrency_id": 1,
+        "price_usd": "18150.55858074",
+        "snapshot_at": "2018-03-01 12:32:33"
+    },
+    {
+        "id": 2089,
+        "cryptocurrency_id": 1,
+        "price_usd": "18259.52528439",
+        "snapshot_at": "2018-03-01 11:32:33"
+    },
+    {
+        "id": 2090,
+        "cryptocurrency_id": 1,
+        "price_usd": "17684.88706961",
+        "snapshot_at": "2018-03-01 10:32:33"
+    },
+    {
+        "id": 2091,
+        "cryptocurrency_id": 1,
+        "price_usd": "17956.83417860",
+        "snapshot_at": "2018-03-01 09:32:33"
+    },
+    {
+        "id": 2092,
+        "cryptocurrency_id": 1,
+        "price_usd": "18555.75802039",
+        "snapshot_at": "2018-03-01 08:32:33"
+    },
+    {
+        "id": 2093,
+        "cryptocurrency_id": 1,
+        "price_usd": "19121.18583132",
+        "snapshot_at": "2018-03-01 07:32:33"
+    },
+    {
+        "id": 2094,
+        "cryptocurrency_id": 1,
+        "price_usd": "19709.71210448",
+        "snapshot_at": "2018-03-01 06:32:33"
+    },
+    {
+        "id": 2095,
+        "cryptocurrency_id": 1,
+        "price_usd": "19231.79094165",
+        "snapshot_at": "2018-03-01 05:32:33"
+    },
+    {
+        "id": 2096,
+        "cryptocurrency_id": 1,
+        "price_usd": "18747.45512351",
+        "snapshot_at": "2018-03-01 04:32:33"
+    },
+    {
+        "id": 2097,
+        "cryptocurrency_id": 1,
+        "price_usd": "19446.97268765",
+        "snapshot_at": "2018-03-01 03:32:33"
+    },
+    {
+        "id": 2098,
+        "cryptocurrency_id": 1,
+        "price_usd": "20067.22406098",
+        "snapshot_at": "2018-03-01 02:32:33"
+    },
+    {
+        "id": 2099,
+        "cryptocurrency_id": 1,
+        "price_usd": "20158.98573105",
+        "snapshot_at": "2018-03-01 01:32:33"
+    },
+    {
+        "id": 2100,
+        "cryptocurrency_id": 1,
+        "price_usd": "20154.21946257",
+        "snapshot_at": "2018-03-01 00:32:33"
+    },
+    {
+        "id": 2101,
+        "cryptocurrency_id": 1,
+        "price_usd": "20900.71684852",
+        "snapshot_at": "2018-02-28 23:32:33"
+    },
+    {
+        "id": 2102,
+        "cryptocurrency_id": 1,
+        "price_usd": "21411.21009754",
+        "snapshot_at": "2018-02-28 22:32:33"
+    },
+    {
+        "id": 2103,
+        "cryptocurrency_id": 1,
+        "price_usd": "20709.24041012",
+        "snapshot_at": "2018-02-28 21:32:33"
+    },
+    {
+        "id": 2104,
+        "cryptocurrency_id": 1,
+        "price_usd": "19965.20554772",
+        "snapshot_at": "2018-02-28 20:32:33"
+    },
+    {
+        "id": 2105,
+        "cryptocurrency_id": 1,
+        "price_usd": "19047.87377724",
+        "snapshot_at": "2018-02-28 19:32:33"
+    },
+    {
+        "id": 2106,
+        "cryptocurrency_id": 1,
+        "price_usd": "19593.09538984",
+        "snapshot_at": "2018-02-28 18:32:33"
+    },
+    {
+        "id": 2107,
+        "cryptocurrency_id": 1,
+        "price_usd": "19886.90500047",
+        "snapshot_at": "2018-02-28 17:32:33"
+    },
+    {
+        "id": 2108,
+        "cryptocurrency_id": 1,
+        "price_usd": "19796.97851202",
+        "snapshot_at": "2018-02-28 16:32:33"
+    },
+    {
+        "id": 2109,
+        "cryptocurrency_id": 1,
+        "price_usd": "19867.49427102",
+        "snapshot_at": "2018-02-28 15:32:33"
+    },
+    {
+        "id": 2110,
+        "cryptocurrency_id": 1,
+        "price_usd": "19777.27725423",
+        "snapshot_at": "2018-02-28 14:32:33"
+    },
+    {
+        "id": 2111,
+        "cryptocurrency_id": 1,
+        "price_usd": "20340.27910125",
+        "snapshot_at": "2018-02-28 13:32:33"
+    },
+    {
+        "id": 2112,
+        "cryptocurrency_id": 1,
+        "price_usd": "20626.61496763",
+        "snapshot_at": "2018-02-28 12:32:33"
+    },
+    {
+        "id": 2113,
+        "cryptocurrency_id": 1,
+        "price_usd": "21530.67453585",
+        "snapshot_at": "2018-02-28 11:32:33"
+    },
+    {
+        "id": 2114,
+        "cryptocurrency_id": 1,
+        "price_usd": "22401.76316569",
+        "snapshot_at": "2018-02-28 10:32:33"
+    },
+    {
+        "id": 2115,
+        "cryptocurrency_id": 1,
+        "price_usd": "23117.76530425",
+        "snapshot_at": "2018-02-28 09:32:33"
+    },
+    {
+        "id": 2116,
+        "cryptocurrency_id": 1,
+        "price_usd": "23213.17405350",
+        "snapshot_at": "2018-02-28 08:32:33"
+    },
+    {
+        "id": 2117,
+        "cryptocurrency_id": 1,
+        "price_usd": "23540.52759560",
+        "snapshot_at": "2018-02-28 07:32:33"
+    },
+    {
+        "id": 2118,
+        "cryptocurrency_id": 1,
+        "price_usd": "24628.10061621",
+        "snapshot_at": "2018-02-28 06:32:33"
+    },
+    {
+        "id": 2119,
+        "cryptocurrency_id": 1,
+        "price_usd": "23933.74071246",
+        "snapshot_at": "2018-02-28 05:32:33"
+    },
+    {
+        "id": 2120,
+        "cryptocurrency_id": 1,
+        "price_usd": "24514.32409062",
+        "snapshot_at": "2018-02-28 04:32:33"
+    },
+    {
+        "id": 2121,
+        "cryptocurrency_id": 1,
+        "price_usd": "25115.26774259",
+        "snapshot_at": "2018-02-28 03:32:33"
+    },
+    {
+        "id": 2122,
+        "cryptocurrency_id": 1,
+        "price_usd": "25767.48341775",
+        "snapshot_at": "2018-02-28 02:32:33"
+    },
+    {
+        "id": 2123,
+        "cryptocurrency_id": 1,
+        "price_usd": "26831.80372780",
+        "snapshot_at": "2018-02-28 01:32:33"
+    },
+    {
+        "id": 2124,
+        "cryptocurrency_id": 1,
+        "price_usd": "27862.13376503",
+        "snapshot_at": "2018-02-28 00:32:33"
+    },
+    {
+        "id": 2125,
+        "cryptocurrency_id": 1,
+        "price_usd": "28585.45725203",
+        "snapshot_at": "2018-02-27 23:32:33"
+    },
+    {
+        "id": 2126,
+        "cryptocurrency_id": 1,
+        "price_usd": "27816.72162190",
+        "snapshot_at": "2018-02-27 22:32:33"
+    },
+    {
+        "id": 2127,
+        "cryptocurrency_id": 1,
+        "price_usd": "27753.41194108",
+        "snapshot_at": "2018-02-27 21:32:33"
+    },
+    {
+        "id": 2128,
+        "cryptocurrency_id": 1,
+        "price_usd": "29017.04904882",
+        "snapshot_at": "2018-02-27 20:32:33"
+    },
+    {
+        "id": 2129,
+        "cryptocurrency_id": 1,
+        "price_usd": "28019.89111862",
+        "snapshot_at": "2018-02-27 19:32:33"
+    },
+    {
+        "id": 2130,
+        "cryptocurrency_id": 1,
+        "price_usd": "26897.49554989",
+        "snapshot_at": "2018-02-27 18:32:33"
+    },
+    {
+        "id": 2131,
+        "cryptocurrency_id": 1,
+        "price_usd": "25696.68955117",
+        "snapshot_at": "2018-02-27 17:32:33"
+    },
+    {
+        "id": 2132,
+        "cryptocurrency_id": 1,
+        "price_usd": "26713.85427817",
+        "snapshot_at": "2018-02-27 16:32:33"
+    },
+    {
+        "id": 2133,
+        "cryptocurrency_id": 1,
+        "price_usd": "27830.63276634",
+        "snapshot_at": "2018-02-27 15:32:33"
+    },
+    {
+        "id": 2134,
+        "cryptocurrency_id": 1,
+        "price_usd": "28526.18282673",
+        "snapshot_at": "2018-02-27 14:32:33"
+    },
+    {
+        "id": 2135,
+        "cryptocurrency_id": 1,
+        "price_usd": "27452.01954140",
+        "snapshot_at": "2018-02-27 13:32:33"
+    },
+    {
+        "id": 2136,
+        "cryptocurrency_id": 1,
+        "price_usd": "27650.68256779",
+        "snapshot_at": "2018-02-27 12:32:33"
+    },
+    {
+        "id": 2137,
+        "cryptocurrency_id": 1,
+        "price_usd": "28101.74702259",
+        "snapshot_at": "2018-02-27 11:32:33"
+    },
+    {
+        "id": 2138,
+        "cryptocurrency_id": 1,
+        "price_usd": "27291.40765915",
+        "snapshot_at": "2018-02-27 10:32:33"
+    },
+    {
+        "id": 2139,
+        "cryptocurrency_id": 1,
+        "price_usd": "26358.55223035",
+        "snapshot_at": "2018-02-27 09:32:33"
+    },
+    {
+        "id": 2140,
+        "cryptocurrency_id": 1,
+        "price_usd": "25234.62933544",
+        "snapshot_at": "2018-02-27 08:32:33"
+    },
+    {
+        "id": 2141,
+        "cryptocurrency_id": 1,
+        "price_usd": "23975.83625779",
+        "snapshot_at": "2018-02-27 07:32:33"
+    },
+    {
+        "id": 2142,
+        "cryptocurrency_id": 1,
+        "price_usd": "24648.12928659",
+        "snapshot_at": "2018-02-27 06:32:33"
+    },
+    {
+        "id": 2143,
+        "cryptocurrency_id": 1,
+        "price_usd": "25471.84881696",
+        "snapshot_at": "2018-02-27 05:32:33"
+    },
+    {
+        "id": 2144,
+        "cryptocurrency_id": 1,
+        "price_usd": "25176.28937328",
+        "snapshot_at": "2018-02-27 04:32:33"
+    },
+    {
+        "id": 2145,
+        "cryptocurrency_id": 1,
+        "price_usd": "26281.63859825",
+        "snapshot_at": "2018-02-27 03:32:33"
+    },
+    {
+        "id": 2146,
+        "cryptocurrency_id": 1,
+        "price_usd": "27307.32592715",
+        "snapshot_at": "2018-02-27 02:32:33"
+    },
+    {
+        "id": 2147,
+        "cryptocurrency_id": 1,
+        "price_usd": "28351.55480792",
+        "snapshot_at": "2018-02-27 01:32:33"
+    },
+    {
+        "id": 2148,
+        "cryptocurrency_id": 1,
+        "price_usd": "29011.03281113",
+        "snapshot_at": "2018-02-27 00:32:33"
+    },
+    {
+        "id": 2149,
+        "cryptocurrency_id": 1,
+        "price_usd": "28783.73342219",
+        "snapshot_at": "2018-02-26 23:32:33"
+    },
+    {
+        "id": 2150,
+        "cryptocurrency_id": 1,
+        "price_usd": "29774.49146066",
+        "snapshot_at": "2018-02-26 22:32:33"
+    },
+    {
+        "id": 2151,
+        "cryptocurrency_id": 1,
+        "price_usd": "29515.54571724",
+        "snapshot_at": "2018-02-26 21:32:33"
+    },
+    {
+        "id": 2152,
+        "cryptocurrency_id": 1,
+        "price_usd": "30813.70417124",
+        "snapshot_at": "2018-02-26 20:32:33"
+    },
+    {
+        "id": 2153,
+        "cryptocurrency_id": 1,
+        "price_usd": "29746.67790355",
+        "snapshot_at": "2018-02-26 19:32:33"
+    },
+    {
+        "id": 2154,
+        "cryptocurrency_id": 1,
+        "price_usd": "29647.59395616",
+        "snapshot_at": "2018-02-26 18:32:33"
+    },
+    {
+        "id": 2155,
+        "cryptocurrency_id": 1,
+        "price_usd": "29743.89512012",
+        "snapshot_at": "2018-02-26 17:32:33"
+    },
+    {
+        "id": 2156,
+        "cryptocurrency_id": 1,
+        "price_usd": "29968.04571862",
+        "snapshot_at": "2018-02-26 16:32:33"
+    },
+    {
+        "id": 2157,
+        "cryptocurrency_id": 1,
+        "price_usd": "29118.11097316",
+        "snapshot_at": "2018-02-26 15:32:33"
+    },
+    {
+        "id": 2158,
+        "cryptocurrency_id": 1,
+        "price_usd": "30252.02960065",
+        "snapshot_at": "2018-02-26 14:32:33"
+    },
+    {
+        "id": 2159,
+        "cryptocurrency_id": 1,
+        "price_usd": "29746.98701768",
+        "snapshot_at": "2018-02-26 13:32:33"
+    },
+    {
+        "id": 2160,
+        "cryptocurrency_id": 1,
+        "price_usd": "29267.40476950",
+        "snapshot_at": "2018-02-26 12:32:33"
+    },
+    {
+        "id": 2161,
+        "cryptocurrency_id": 1,
+        "price_usd": "28864.05453919",
+        "snapshot_at": "2018-02-26 11:32:33"
+    },
+    {
+        "id": 2162,
+        "cryptocurrency_id": 1,
+        "price_usd": "28714.77880019",
+        "snapshot_at": "2018-02-26 10:32:33"
+    },
+    {
+        "id": 2163,
+        "cryptocurrency_id": 1,
+        "price_usd": "27635.98450434",
+        "snapshot_at": "2018-02-26 09:32:33"
+    },
+    {
+        "id": 2164,
+        "cryptocurrency_id": 1,
+        "price_usd": "26609.83162520",
+        "snapshot_at": "2018-02-26 08:32:33"
+    },
+    {
+        "id": 2165,
+        "cryptocurrency_id": 1,
+        "price_usd": "27829.68730009",
+        "snapshot_at": "2018-02-26 07:32:33"
+    },
+    {
+        "id": 2166,
+        "cryptocurrency_id": 1,
+        "price_usd": "27446.53180346",
+        "snapshot_at": "2018-02-26 06:32:33"
+    },
+    {
+        "id": 2167,
+        "cryptocurrency_id": 1,
+        "price_usd": "28698.84379190",
+        "snapshot_at": "2018-02-26 05:32:33"
+    },
+    {
+        "id": 2168,
+        "cryptocurrency_id": 1,
+        "price_usd": "28603.61537010",
+        "snapshot_at": "2018-02-26 04:32:33"
+    },
+    {
+        "id": 2169,
+        "cryptocurrency_id": 1,
+        "price_usd": "29748.18089859",
+        "snapshot_at": "2018-02-26 03:32:33"
+    },
+    {
+        "id": 2170,
+        "cryptocurrency_id": 1,
+        "price_usd": "30216.23011297",
+        "snapshot_at": "2018-02-26 02:32:33"
+    },
+    {
+        "id": 2171,
+        "cryptocurrency_id": 1,
+        "price_usd": "29341.44821025",
+        "snapshot_at": "2018-02-26 01:32:33"
+    },
+    {
+        "id": 2172,
+        "cryptocurrency_id": 1,
+        "price_usd": "30440.70358907",
+        "snapshot_at": "2018-02-26 00:32:33"
+    },
+    {
+        "id": 2173,
+        "cryptocurrency_id": 1,
+        "price_usd": "31593.85747149",
+        "snapshot_at": "2018-02-25 23:32:33"
+    },
+    {
+        "id": 2174,
+        "cryptocurrency_id": 1,
+        "price_usd": "30776.71854641",
+        "snapshot_at": "2018-02-25 22:32:33"
+    },
+    {
+        "id": 2175,
+        "cryptocurrency_id": 1,
+        "price_usd": "29446.17707668",
+        "snapshot_at": "2018-02-25 21:32:33"
+    },
+    {
+        "id": 2176,
+        "cryptocurrency_id": 1,
+        "price_usd": "29729.17112149",
+        "snapshot_at": "2018-02-25 20:32:33"
+    },
+    {
+        "id": 2177,
+        "cryptocurrency_id": 1,
+        "price_usd": "29001.71584126",
+        "snapshot_at": "2018-02-25 19:32:33"
+    },
+    {
+        "id": 2178,
+        "cryptocurrency_id": 1,
+        "price_usd": "27579.16117726",
+        "snapshot_at": "2018-02-25 18:32:33"
+    },
+    {
+        "id": 2179,
+        "cryptocurrency_id": 1,
+        "price_usd": "27763.38285196",
+        "snapshot_at": "2018-02-25 17:32:33"
+    },
+    {
+        "id": 2180,
+        "cryptocurrency_id": 1,
+        "price_usd": "28708.92790531",
+        "snapshot_at": "2018-02-25 16:32:33"
+    },
+    {
+        "id": 2181,
+        "cryptocurrency_id": 1,
+        "price_usd": "28248.05204108",
+        "snapshot_at": "2018-02-25 15:32:33"
+    },
+    {
+        "id": 2182,
+        "cryptocurrency_id": 1,
+        "price_usd": "29073.74765016",
+        "snapshot_at": "2018-02-25 14:32:33"
+    },
+    {
+        "id": 2183,
+        "cryptocurrency_id": 1,
+        "price_usd": "29033.72380044",
+        "snapshot_at": "2018-02-25 13:32:33"
+    },
+    {
+        "id": 2184,
+        "cryptocurrency_id": 1,
+        "price_usd": "29857.87366731",
+        "snapshot_at": "2018-02-25 12:32:33"
+    },
+    {
+        "id": 2185,
+        "cryptocurrency_id": 1,
+        "price_usd": "30803.94672699",
+        "snapshot_at": "2018-02-25 11:32:33"
+    },
+    {
+        "id": 2186,
+        "cryptocurrency_id": 1,
+        "price_usd": "30071.84038914",
+        "snapshot_at": "2018-02-25 10:32:33"
+    },
+    {
+        "id": 2187,
+        "cryptocurrency_id": 1,
+        "price_usd": "29098.37836425",
+        "snapshot_at": "2018-02-25 09:32:33"
+    },
+    {
+        "id": 2188,
+        "cryptocurrency_id": 1,
+        "price_usd": "27675.32946895",
+        "snapshot_at": "2018-02-25 08:32:33"
+    },
+    {
+        "id": 2189,
+        "cryptocurrency_id": 1,
+        "price_usd": "27620.84475545",
+        "snapshot_at": "2018-02-25 07:32:33"
+    },
+    {
+        "id": 2190,
+        "cryptocurrency_id": 1,
+        "price_usd": "26363.96081299",
+        "snapshot_at": "2018-02-25 06:32:33"
+    },
+    {
+        "id": 2191,
+        "cryptocurrency_id": 1,
+        "price_usd": "26773.93900266",
+        "snapshot_at": "2018-02-25 05:32:33"
+    },
+    {
+        "id": 2192,
+        "cryptocurrency_id": 1,
+        "price_usd": "27738.37825035",
+        "snapshot_at": "2018-02-25 04:32:33"
+    },
+    {
+        "id": 2193,
+        "cryptocurrency_id": 1,
+        "price_usd": "28944.34038900",
+        "snapshot_at": "2018-02-25 03:32:33"
+    },
+    {
+        "id": 2194,
+        "cryptocurrency_id": 1,
+        "price_usd": "27771.26881593",
+        "snapshot_at": "2018-02-25 02:32:33"
+    },
+    {
+        "id": 2195,
+        "cryptocurrency_id": 1,
+        "price_usd": "28592.94818755",
+        "snapshot_at": "2018-02-25 01:32:33"
+    },
+    {
+        "id": 2196,
+        "cryptocurrency_id": 1,
+        "price_usd": "29756.86430583",
+        "snapshot_at": "2018-02-25 00:32:33"
+    },
+    {
+        "id": 2197,
+        "cryptocurrency_id": 1,
+        "price_usd": "28824.51111609",
+        "snapshot_at": "2018-02-24 23:32:33"
+    },
+    {
+        "id": 2198,
+        "cryptocurrency_id": 1,
+        "price_usd": "28475.26127122",
+        "snapshot_at": "2018-02-24 22:32:33"
+    },
+    {
+        "id": 2199,
+        "cryptocurrency_id": 1,
+        "price_usd": "29638.89498444",
+        "snapshot_at": "2018-02-24 21:32:33"
+    },
+    {
+        "id": 2200,
+        "cryptocurrency_id": 1,
+        "price_usd": "29510.14993410",
+        "snapshot_at": "2018-02-24 20:32:33"
+    },
+    {
+        "id": 2201,
+        "cryptocurrency_id": 1,
+        "price_usd": "29426.98366109",
+        "snapshot_at": "2018-02-24 19:32:33"
+    },
+    {
+        "id": 2202,
+        "cryptocurrency_id": 1,
+        "price_usd": "30114.24589897",
+        "snapshot_at": "2018-02-24 18:32:33"
+    },
+    {
+        "id": 2203,
+        "cryptocurrency_id": 1,
+        "price_usd": "30382.46729727",
+        "snapshot_at": "2018-02-24 17:32:33"
+    },
+    {
+        "id": 2204,
+        "cryptocurrency_id": 1,
+        "price_usd": "31722.98527029",
+        "snapshot_at": "2018-02-24 16:32:33"
+    },
+    {
+        "id": 2205,
+        "cryptocurrency_id": 1,
+        "price_usd": "32746.29788113",
+        "snapshot_at": "2018-02-24 15:32:33"
+    },
+    {
+        "id": 2206,
+        "cryptocurrency_id": 1,
+        "price_usd": "32901.12639589",
+        "snapshot_at": "2018-02-24 14:32:33"
+    },
+    {
+        "id": 2207,
+        "cryptocurrency_id": 1,
+        "price_usd": "33362.41566895",
+        "snapshot_at": "2018-02-24 13:32:33"
+    },
+    {
+        "id": 2208,
+        "cryptocurrency_id": 1,
+        "price_usd": "34288.35721466",
+        "snapshot_at": "2018-02-24 12:32:33"
+    },
+    {
+        "id": 2209,
+        "cryptocurrency_id": 1,
+        "price_usd": "34439.33573393",
+        "snapshot_at": "2018-02-24 11:32:33"
+    },
+    {
+        "id": 2210,
+        "cryptocurrency_id": 1,
+        "price_usd": "33322.71600209",
+        "snapshot_at": "2018-02-24 10:32:33"
+    },
+    {
+        "id": 2211,
+        "cryptocurrency_id": 1,
+        "price_usd": "34917.71347967",
+        "snapshot_at": "2018-02-24 09:32:33"
+    },
+    {
+        "id": 2212,
+        "cryptocurrency_id": 1,
+        "price_usd": "34136.83214469",
+        "snapshot_at": "2018-02-24 08:32:33"
+    },
+    {
+        "id": 2213,
+        "cryptocurrency_id": 1,
+        "price_usd": "35378.02499451",
+        "snapshot_at": "2018-02-24 07:32:33"
+    },
+    {
+        "id": 2214,
+        "cryptocurrency_id": 1,
+        "price_usd": "36802.86402533",
+        "snapshot_at": "2018-02-24 06:32:33"
+    },
+    {
+        "id": 2215,
+        "cryptocurrency_id": 1,
+        "price_usd": "37629.25878866",
+        "snapshot_at": "2018-02-24 05:32:33"
+    },
+    {
+        "id": 2216,
+        "cryptocurrency_id": 1,
+        "price_usd": "36812.19278020",
+        "snapshot_at": "2018-02-24 04:32:33"
+    },
+    {
+        "id": 2217,
+        "cryptocurrency_id": 1,
+        "price_usd": "35918.94430682",
+        "snapshot_at": "2018-02-24 03:32:33"
+    },
+    {
+        "id": 2218,
+        "cryptocurrency_id": 1,
+        "price_usd": "37559.21225461",
+        "snapshot_at": "2018-02-24 02:32:33"
+    },
+    {
+        "id": 2219,
+        "cryptocurrency_id": 1,
+        "price_usd": "38164.29752050",
+        "snapshot_at": "2018-02-24 01:32:33"
+    },
+    {
+        "id": 2220,
+        "cryptocurrency_id": 1,
+        "price_usd": "37873.20547031",
+        "snapshot_at": "2018-02-24 00:32:33"
+    },
+    {
+        "id": 2221,
+        "cryptocurrency_id": 1,
+        "price_usd": "39520.08245847",
+        "snapshot_at": "2018-02-23 23:32:33"
+    },
+    {
+        "id": 2222,
+        "cryptocurrency_id": 1,
+        "price_usd": "40827.71528822",
+        "snapshot_at": "2018-02-23 22:32:33"
+    },
+    {
+        "id": 2223,
+        "cryptocurrency_id": 1,
+        "price_usd": "39336.91526998",
+        "snapshot_at": "2018-02-23 21:32:33"
+    },
+    {
+        "id": 2224,
+        "cryptocurrency_id": 1,
+        "price_usd": "39753.67678855",
+        "snapshot_at": "2018-02-23 20:32:33"
+    },
+    {
+        "id": 2225,
+        "cryptocurrency_id": 1,
+        "price_usd": "37998.59885673",
+        "snapshot_at": "2018-02-23 19:32:33"
+    },
+    {
+        "id": 2226,
+        "cryptocurrency_id": 1,
+        "price_usd": "39569.80846779",
+        "snapshot_at": "2018-02-23 18:32:33"
+    },
+    {
+        "id": 2227,
+        "cryptocurrency_id": 1,
+        "price_usd": "40848.08899467",
+        "snapshot_at": "2018-02-23 17:32:33"
+    },
+    {
+        "id": 2228,
+        "cryptocurrency_id": 1,
+        "price_usd": "39915.85275059",
+        "snapshot_at": "2018-02-23 16:32:33"
+    },
+    {
+        "id": 2229,
+        "cryptocurrency_id": 1,
+        "price_usd": "40188.95929822",
+        "snapshot_at": "2018-02-23 15:32:33"
+    },
+    {
+        "id": 2230,
+        "cryptocurrency_id": 1,
+        "price_usd": "41350.07816612",
+        "snapshot_at": "2018-02-23 14:32:33"
+    },
+    {
+        "id": 2231,
+        "cryptocurrency_id": 1,
+        "price_usd": "39754.68543299",
+        "snapshot_at": "2018-02-23 13:32:33"
+    },
+    {
+        "id": 2232,
+        "cryptocurrency_id": 1,
+        "price_usd": "39341.39413663",
+        "snapshot_at": "2018-02-23 12:32:33"
+    },
+    {
+        "id": 2233,
+        "cryptocurrency_id": 1,
+        "price_usd": "40470.36807163",
+        "snapshot_at": "2018-02-23 11:32:33"
+    },
+    {
+        "id": 2234,
+        "cryptocurrency_id": 1,
+        "price_usd": "42010.75964247",
+        "snapshot_at": "2018-02-23 10:32:33"
+    },
+    {
+        "id": 2235,
+        "cryptocurrency_id": 1,
+        "price_usd": "40409.58361079",
+        "snapshot_at": "2018-02-23 09:32:33"
+    },
+    {
+        "id": 2236,
+        "cryptocurrency_id": 1,
+        "price_usd": "41139.24112304",
+        "snapshot_at": "2018-02-23 08:32:33"
+    },
+    {
+        "id": 2237,
+        "cryptocurrency_id": 1,
+        "price_usd": "40658.09729507",
+        "snapshot_at": "2018-02-23 07:32:33"
+    },
+    {
+        "id": 2238,
+        "cryptocurrency_id": 1,
+        "price_usd": "40696.59821245",
+        "snapshot_at": "2018-02-23 06:32:33"
+    },
+    {
+        "id": 2239,
+        "cryptocurrency_id": 1,
+        "price_usd": "41493.38457453",
+        "snapshot_at": "2018-02-23 05:32:33"
+    },
+    {
+        "id": 2240,
+        "cryptocurrency_id": 1,
+        "price_usd": "40999.20613358",
+        "snapshot_at": "2018-02-23 04:32:33"
+    },
+    {
+        "id": 2241,
+        "cryptocurrency_id": 1,
+        "price_usd": "39486.98008125",
+        "snapshot_at": "2018-02-23 03:32:33"
+    },
+    {
+        "id": 2242,
+        "cryptocurrency_id": 1,
+        "price_usd": "40513.54746252",
+        "snapshot_at": "2018-02-23 02:32:33"
+    },
+    {
+        "id": 2243,
+        "cryptocurrency_id": 1,
+        "price_usd": "41588.23576312",
+        "snapshot_at": "2018-02-23 01:32:33"
+    },
+    {
+        "id": 2244,
+        "cryptocurrency_id": 1,
+        "price_usd": "43592.46680308",
+        "snapshot_at": "2018-02-23 00:32:33"
+    },
+    {
+        "id": 2245,
+        "cryptocurrency_id": 1,
+        "price_usd": "43819.70957367",
+        "snapshot_at": "2018-02-22 23:32:33"
+    },
+    {
+        "id": 2246,
+        "cryptocurrency_id": 1,
+        "price_usd": "45171.38655526",
+        "snapshot_at": "2018-02-22 22:32:33"
+    },
+    {
+        "id": 2247,
+        "cryptocurrency_id": 1,
+        "price_usd": "47074.09340640",
+        "snapshot_at": "2018-02-22 21:32:33"
+    },
+    {
+        "id": 2248,
+        "cryptocurrency_id": 1,
+        "price_usd": "45337.92654851",
+        "snapshot_at": "2018-02-22 20:32:33"
+    },
+    {
+        "id": 2249,
+        "cryptocurrency_id": 1,
+        "price_usd": "43426.95264973",
+        "snapshot_at": "2018-02-22 19:32:33"
+    },
+    {
+        "id": 2250,
+        "cryptocurrency_id": 1,
+        "price_usd": "44991.20815708",
+        "snapshot_at": "2018-02-22 18:32:33"
+    },
+    {
+        "id": 2251,
+        "cryptocurrency_id": 1,
+        "price_usd": "43041.49983440",
+        "snapshot_at": "2018-02-22 17:32:33"
+    },
+    {
+        "id": 2252,
+        "cryptocurrency_id": 1,
+        "price_usd": "41740.79210642",
+        "snapshot_at": "2018-02-22 16:32:33"
+    },
+    {
+        "id": 2253,
+        "cryptocurrency_id": 1,
+        "price_usd": "41202.98750506",
+        "snapshot_at": "2018-02-22 15:32:33"
+    },
+    {
+        "id": 2254,
+        "cryptocurrency_id": 1,
+        "price_usd": "41699.42365261",
+        "snapshot_at": "2018-02-22 14:32:33"
+    },
+    {
+        "id": 2255,
+        "cryptocurrency_id": 1,
+        "price_usd": "40006.14339523",
+        "snapshot_at": "2018-02-22 13:32:33"
+    },
+    {
+        "id": 2256,
+        "cryptocurrency_id": 1,
+        "price_usd": "39222.68970904",
+        "snapshot_at": "2018-02-22 12:32:33"
+    },
+    {
+        "id": 2257,
+        "cryptocurrency_id": 1,
+        "price_usd": "38588.72696048",
+        "snapshot_at": "2018-02-22 11:32:33"
+    },
+    {
+        "id": 2258,
+        "cryptocurrency_id": 1,
+        "price_usd": "38768.35518773",
+        "snapshot_at": "2018-02-22 10:32:33"
+    },
+    {
+        "id": 2259,
+        "cryptocurrency_id": 1,
+        "price_usd": "38123.19757488",
+        "snapshot_at": "2018-02-22 09:32:33"
+    },
+    {
+        "id": 2260,
+        "cryptocurrency_id": 1,
+        "price_usd": "37724.38670352",
+        "snapshot_at": "2018-02-22 08:32:33"
+    },
+    {
+        "id": 2261,
+        "cryptocurrency_id": 1,
+        "price_usd": "39430.95194959",
+        "snapshot_at": "2018-02-22 07:32:33"
+    },
+    {
+        "id": 2262,
+        "cryptocurrency_id": 1,
+        "price_usd": "40120.38823124",
+        "snapshot_at": "2018-02-22 06:32:33"
+    },
+    {
+        "id": 2263,
+        "cryptocurrency_id": 1,
+        "price_usd": "41395.10535591",
+        "snapshot_at": "2018-02-22 05:32:33"
+    },
+    {
+        "id": 2264,
+        "cryptocurrency_id": 1,
+        "price_usd": "41702.53745956",
+        "snapshot_at": "2018-02-22 04:32:33"
+    },
+    {
+        "id": 2265,
+        "cryptocurrency_id": 1,
+        "price_usd": "40122.22687127",
+        "snapshot_at": "2018-02-22 03:32:33"
+    },
+    {
+        "id": 2266,
+        "cryptocurrency_id": 1,
+        "price_usd": "38776.99845059",
+        "snapshot_at": "2018-02-22 02:32:33"
+    },
+    {
+        "id": 2267,
+        "cryptocurrency_id": 1,
+        "price_usd": "39553.42124051",
+        "snapshot_at": "2018-02-22 01:32:33"
+    },
+    {
+        "id": 2268,
+        "cryptocurrency_id": 1,
+        "price_usd": "38492.84298041",
+        "snapshot_at": "2018-02-22 00:32:33"
+    },
+    {
+        "id": 2269,
+        "cryptocurrency_id": 1,
+        "price_usd": "39040.18743367",
+        "snapshot_at": "2018-02-21 23:32:33"
+    },
+    {
+        "id": 2270,
+        "cryptocurrency_id": 1,
+        "price_usd": "40940.83309853",
+        "snapshot_at": "2018-02-21 22:32:33"
+    },
+    {
+        "id": 2271,
+        "cryptocurrency_id": 1,
+        "price_usd": "39776.51530295",
+        "snapshot_at": "2018-02-21 21:32:33"
+    },
+    {
+        "id": 2272,
+        "cryptocurrency_id": 1,
+        "price_usd": "41521.59457798",
+        "snapshot_at": "2018-02-21 20:32:33"
+    },
+    {
+        "id": 2273,
+        "cryptocurrency_id": 1,
+        "price_usd": "39674.52728534",
+        "snapshot_at": "2018-02-21 19:32:33"
+    },
+    {
+        "id": 2274,
+        "cryptocurrency_id": 1,
+        "price_usd": "40209.90451906",
+        "snapshot_at": "2018-02-21 18:32:33"
+    },
+    {
+        "id": 2275,
+        "cryptocurrency_id": 1,
+        "price_usd": "38838.42039719",
+        "snapshot_at": "2018-02-21 17:32:33"
+    },
+    {
+        "id": 2276,
+        "cryptocurrency_id": 1,
+        "price_usd": "37598.16189915",
+        "snapshot_at": "2018-02-21 16:32:33"
+    },
+    {
+        "id": 2277,
+        "cryptocurrency_id": 1,
+        "price_usd": "36125.19093355",
+        "snapshot_at": "2018-02-21 15:32:33"
+    },
+    {
+        "id": 2278,
+        "cryptocurrency_id": 1,
+        "price_usd": "35577.21025933",
+        "snapshot_at": "2018-02-21 14:32:33"
+    },
+    {
+        "id": 2279,
+        "cryptocurrency_id": 1,
+        "price_usd": "34583.09776341",
+        "snapshot_at": "2018-02-21 13:32:33"
+    },
+    {
+        "id": 2280,
+        "cryptocurrency_id": 1,
+        "price_usd": "33351.70212901",
+        "snapshot_at": "2018-02-21 12:32:33"
+    },
+    {
+        "id": 2281,
+        "cryptocurrency_id": 1,
+        "price_usd": "34892.97448947",
+        "snapshot_at": "2018-02-21 11:32:33"
+    },
+    {
+        "id": 2282,
+        "cryptocurrency_id": 1,
+        "price_usd": "34029.45787568",
+        "snapshot_at": "2018-02-21 10:32:33"
+    },
+    {
+        "id": 2283,
+        "cryptocurrency_id": 1,
+        "price_usd": "32956.94063197",
+        "snapshot_at": "2018-02-21 09:32:33"
+    },
+    {
+        "id": 2284,
+        "cryptocurrency_id": 1,
+        "price_usd": "31997.56098385",
+        "snapshot_at": "2018-02-21 08:32:33"
+    },
+    {
+        "id": 2285,
+        "cryptocurrency_id": 1,
+        "price_usd": "32280.22318246",
+        "snapshot_at": "2018-02-21 07:32:33"
+    },
+    {
+        "id": 2286,
+        "cryptocurrency_id": 1,
+        "price_usd": "30992.08255335",
+        "snapshot_at": "2018-02-21 06:32:33"
+    },
+    {
+        "id": 2287,
+        "cryptocurrency_id": 1,
+        "price_usd": "32503.72503097",
+        "snapshot_at": "2018-02-21 05:32:33"
+    },
+    {
+        "id": 2288,
+        "cryptocurrency_id": 1,
+        "price_usd": "30986.91426548",
+        "snapshot_at": "2018-02-21 04:32:33"
+    },
+    {
+        "id": 2289,
+        "cryptocurrency_id": 1,
+        "price_usd": "30775.32054431",
+        "snapshot_at": "2018-02-21 03:32:33"
+    },
+    {
+        "id": 2290,
+        "cryptocurrency_id": 1,
+        "price_usd": "32192.18801544",
+        "snapshot_at": "2018-02-21 02:32:33"
+    },
+    {
+        "id": 2291,
+        "cryptocurrency_id": 1,
+        "price_usd": "31643.57560557",
+        "snapshot_at": "2018-02-21 01:32:33"
+    },
+    {
+        "id": 2292,
+        "cryptocurrency_id": 1,
+        "price_usd": "32449.72796440",
+        "snapshot_at": "2018-02-21 00:32:33"
+    },
+    {
+        "id": 2293,
+        "cryptocurrency_id": 1,
+        "price_usd": "32410.79151935",
+        "snapshot_at": "2018-02-20 23:32:33"
+    },
+    {
+        "id": 2294,
+        "cryptocurrency_id": 1,
+        "price_usd": "33724.67091636",
+        "snapshot_at": "2018-02-20 22:32:33"
+    },
+    {
+        "id": 2295,
+        "cryptocurrency_id": 1,
+        "price_usd": "33447.33056062",
+        "snapshot_at": "2018-02-20 21:32:33"
+    },
+    {
+        "id": 2296,
+        "cryptocurrency_id": 1,
+        "price_usd": "33775.49761915",
+        "snapshot_at": "2018-02-20 20:32:33"
+    },
+    {
+        "id": 2297,
+        "cryptocurrency_id": 1,
+        "price_usd": "33650.27644143",
+        "snapshot_at": "2018-02-20 19:32:33"
+    },
+    {
+        "id": 2298,
+        "cryptocurrency_id": 1,
+        "price_usd": "33613.40136652",
+        "snapshot_at": "2018-02-20 18:32:33"
+    },
+    {
+        "id": 2299,
+        "cryptocurrency_id": 1,
+        "price_usd": "33308.06845662",
+        "snapshot_at": "2018-02-20 17:32:33"
+    },
+    {
+        "id": 2300,
+        "cryptocurrency_id": 1,
+        "price_usd": "34739.23065096",
+        "snapshot_at": "2018-02-20 16:32:33"
+    },
+    {
+        "id": 2301,
+        "cryptocurrency_id": 1,
+        "price_usd": "33821.40402249",
+        "snapshot_at": "2018-02-20 15:32:33"
+    },
+    {
+        "id": 2302,
+        "cryptocurrency_id": 1,
+        "price_usd": "34561.35423002",
+        "snapshot_at": "2018-02-20 14:32:33"
+    },
+    {
+        "id": 2303,
+        "cryptocurrency_id": 1,
+        "price_usd": "33891.81354186",
+        "snapshot_at": "2018-02-20 13:32:33"
+    },
+    {
+        "id": 2304,
+        "cryptocurrency_id": 1,
+        "price_usd": "35286.15641330",
+        "snapshot_at": "2018-02-20 12:32:33"
+    },
+    {
+        "id": 2305,
+        "cryptocurrency_id": 1,
+        "price_usd": "34855.71377958",
+        "snapshot_at": "2018-02-20 11:32:33"
+    },
+    {
+        "id": 2306,
+        "cryptocurrency_id": 1,
+        "price_usd": "35512.68218781",
+        "snapshot_at": "2018-02-20 10:32:33"
+    },
+    {
+        "id": 2307,
+        "cryptocurrency_id": 1,
+        "price_usd": "35319.78869872",
+        "snapshot_at": "2018-02-20 09:32:33"
+    },
+    {
+        "id": 2308,
+        "cryptocurrency_id": 1,
+        "price_usd": "35266.17159437",
+        "snapshot_at": "2018-02-20 08:32:33"
+    },
+    {
+        "id": 2309,
+        "cryptocurrency_id": 1,
+        "price_usd": "33745.51225643",
+        "snapshot_at": "2018-02-20 07:32:33"
+    },
+    {
+        "id": 2310,
+        "cryptocurrency_id": 1,
+        "price_usd": "33401.54422203",
+        "snapshot_at": "2018-02-20 06:32:33"
+    },
+    {
+        "id": 2311,
+        "cryptocurrency_id": 1,
+        "price_usd": "34671.06923954",
+        "snapshot_at": "2018-02-20 05:32:33"
+    },
+    {
+        "id": 2312,
+        "cryptocurrency_id": 1,
+        "price_usd": "33780.79477817",
+        "snapshot_at": "2018-02-20 04:32:33"
+    },
+    {
+        "id": 2313,
+        "cryptocurrency_id": 1,
+        "price_usd": "35265.68833196",
+        "snapshot_at": "2018-02-20 03:32:33"
+    },
+    {
+        "id": 2314,
+        "cryptocurrency_id": 1,
+        "price_usd": "35632.22500185",
+        "snapshot_at": "2018-02-20 02:32:33"
+    },
+    {
+        "id": 2315,
+        "cryptocurrency_id": 1,
+        "price_usd": "36575.56442510",
+        "snapshot_at": "2018-02-20 01:32:33"
+    },
+    {
+        "id": 2316,
+        "cryptocurrency_id": 1,
+        "price_usd": "37976.36970372",
+        "snapshot_at": "2018-02-20 00:32:33"
+    },
+    {
+        "id": 2317,
+        "cryptocurrency_id": 1,
+        "price_usd": "36557.61049707",
+        "snapshot_at": "2018-02-19 23:32:33"
+    },
+    {
+        "id": 2318,
+        "cryptocurrency_id": 1,
+        "price_usd": "35008.80051544",
+        "snapshot_at": "2018-02-19 22:32:33"
+    },
+    {
+        "id": 2319,
+        "cryptocurrency_id": 1,
+        "price_usd": "34936.08825476",
+        "snapshot_at": "2018-02-19 21:32:33"
+    },
+    {
+        "id": 2320,
+        "cryptocurrency_id": 1,
+        "price_usd": "34969.66422359",
+        "snapshot_at": "2018-02-19 20:32:33"
+    },
+    {
+        "id": 2321,
+        "cryptocurrency_id": 1,
+        "price_usd": "36217.65357524",
+        "snapshot_at": "2018-02-19 19:32:33"
+    },
+    {
+        "id": 2322,
+        "cryptocurrency_id": 1,
+        "price_usd": "37968.02064943",
+        "snapshot_at": "2018-02-19 18:32:33"
+    },
+    {
+        "id": 2323,
+        "cryptocurrency_id": 1,
+        "price_usd": "37026.28701793",
+        "snapshot_at": "2018-02-19 17:32:33"
+    },
+    {
+        "id": 2324,
+        "cryptocurrency_id": 1,
+        "price_usd": "36852.64923892",
+        "snapshot_at": "2018-02-19 16:32:33"
+    },
+    {
+        "id": 2325,
+        "cryptocurrency_id": 1,
+        "price_usd": "36636.72718102",
+        "snapshot_at": "2018-02-19 15:32:33"
+    },
+    {
+        "id": 2326,
+        "cryptocurrency_id": 1,
+        "price_usd": "36548.13426939",
+        "snapshot_at": "2018-02-19 14:32:33"
+    },
+    {
+        "id": 2327,
+        "cryptocurrency_id": 1,
+        "price_usd": "35198.14027950",
+        "snapshot_at": "2018-02-19 13:32:33"
+    },
+    {
+        "id": 2328,
+        "cryptocurrency_id": 1,
+        "price_usd": "34061.20934624",
+        "snapshot_at": "2018-02-19 12:32:33"
+    },
+    {
+        "id": 2329,
+        "cryptocurrency_id": 1,
+        "price_usd": "33603.47767012",
+        "snapshot_at": "2018-02-19 11:32:33"
+    },
+    {
+        "id": 2330,
+        "cryptocurrency_id": 1,
+        "price_usd": "35255.90517347",
+        "snapshot_at": "2018-02-19 10:32:33"
+    },
+    {
+        "id": 2331,
+        "cryptocurrency_id": 1,
+        "price_usd": "35136.45469828",
+        "snapshot_at": "2018-02-19 09:32:33"
+    },
+    {
+        "id": 2332,
+        "cryptocurrency_id": 1,
+        "price_usd": "36824.09666974",
+        "snapshot_at": "2018-02-19 08:32:33"
+    },
+    {
+        "id": 2333,
+        "cryptocurrency_id": 1,
+        "price_usd": "37963.40495266",
+        "snapshot_at": "2018-02-19 07:32:33"
+    },
+    {
+        "id": 2334,
+        "cryptocurrency_id": 1,
+        "price_usd": "37776.31320673",
+        "snapshot_at": "2018-02-19 06:32:33"
+    },
+    {
+        "id": 2335,
+        "cryptocurrency_id": 1,
+        "price_usd": "37930.92089997",
+        "snapshot_at": "2018-02-19 05:32:33"
+    },
+    {
+        "id": 2336,
+        "cryptocurrency_id": 1,
+        "price_usd": "39245.51803326",
+        "snapshot_at": "2018-02-19 04:32:33"
+    },
+    {
+        "id": 2337,
+        "cryptocurrency_id": 1,
+        "price_usd": "39155.90320204",
+        "snapshot_at": "2018-02-19 03:32:33"
+    },
+    {
+        "id": 2338,
+        "cryptocurrency_id": 1,
+        "price_usd": "40682.84112446",
+        "snapshot_at": "2018-02-19 02:32:33"
+    },
+    {
+        "id": 2339,
+        "cryptocurrency_id": 1,
+        "price_usd": "38722.88303857",
+        "snapshot_at": "2018-02-19 01:32:33"
+    },
+    {
+        "id": 2340,
+        "cryptocurrency_id": 1,
+        "price_usd": "38882.05338160",
+        "snapshot_at": "2018-02-19 00:32:33"
+    },
+    {
+        "id": 2341,
+        "cryptocurrency_id": 1,
+        "price_usd": "39860.82513151",
+        "snapshot_at": "2018-02-18 23:32:33"
+    },
+    {
+        "id": 2342,
+        "cryptocurrency_id": 1,
+        "price_usd": "39257.49365033",
+        "snapshot_at": "2018-02-18 22:32:33"
+    },
+    {
+        "id": 2343,
+        "cryptocurrency_id": 1,
+        "price_usd": "40473.72338512",
+        "snapshot_at": "2018-02-18 21:32:33"
+    },
+    {
+        "id": 2344,
+        "cryptocurrency_id": 1,
+        "price_usd": "41426.60635826",
+        "snapshot_at": "2018-02-18 20:32:33"
+    },
+    {
+        "id": 2345,
+        "cryptocurrency_id": 1,
+        "price_usd": "40664.04480032",
+        "snapshot_at": "2018-02-18 19:32:33"
+    },
+    {
+        "id": 2346,
+        "cryptocurrency_id": 1,
+        "price_usd": "41318.36026198",
+        "snapshot_at": "2018-02-18 18:32:33"
+    },
+    {
+        "id": 2347,
+        "cryptocurrency_id": 1,
+        "price_usd": "39316.95209244",
+        "snapshot_at": "2018-02-18 17:32:33"
+    },
+    {
+        "id": 2348,
+        "cryptocurrency_id": 1,
+        "price_usd": "39022.83475324",
+        "snapshot_at": "2018-02-18 16:32:33"
+    },
+    {
+        "id": 2349,
+        "cryptocurrency_id": 1,
+        "price_usd": "38270.17139245",
+        "snapshot_at": "2018-02-18 15:32:33"
+    },
+    {
+        "id": 2350,
+        "cryptocurrency_id": 1,
+        "price_usd": "36995.60806844",
+        "snapshot_at": "2018-02-18 14:32:33"
+    },
+    {
+        "id": 2351,
+        "cryptocurrency_id": 1,
+        "price_usd": "38501.93041037",
+        "snapshot_at": "2018-02-18 13:32:33"
+    },
+    {
+        "id": 2352,
+        "cryptocurrency_id": 1,
+        "price_usd": "36627.67912204",
+        "snapshot_at": "2018-02-18 12:32:33"
+    },
+    {
+        "id": 2353,
+        "cryptocurrency_id": 1,
+        "price_usd": "37769.22917585",
+        "snapshot_at": "2018-02-18 11:32:33"
+    },
+    {
+        "id": 2354,
+        "cryptocurrency_id": 1,
+        "price_usd": "37884.35425128",
+        "snapshot_at": "2018-02-18 10:32:33"
+    },
+    {
+        "id": 2355,
+        "cryptocurrency_id": 1,
+        "price_usd": "37816.42882302",
+        "snapshot_at": "2018-02-18 09:32:33"
+    },
+    {
+        "id": 2356,
+        "cryptocurrency_id": 1,
+        "price_usd": "39531.72084553",
+        "snapshot_at": "2018-02-18 08:32:33"
+    },
+    {
+        "id": 2357,
+        "cryptocurrency_id": 1,
+        "price_usd": "38416.64038267",
+        "snapshot_at": "2018-02-18 07:32:33"
+    },
+    {
+        "id": 2358,
+        "cryptocurrency_id": 1,
+        "price_usd": "39404.17851911",
+        "snapshot_at": "2018-02-18 06:32:33"
+    },
+    {
+        "id": 2359,
+        "cryptocurrency_id": 1,
+        "price_usd": "41085.61326801",
+        "snapshot_at": "2018-02-18 05:32:33"
+    },
+    {
+        "id": 2360,
+        "cryptocurrency_id": 1,
+        "price_usd": "41705.61456471",
+        "snapshot_at": "2018-02-18 04:32:33"
+    },
+    {
+        "id": 2361,
+        "cryptocurrency_id": 1,
+        "price_usd": "41738.11771128",
+        "snapshot_at": "2018-02-18 03:32:33"
+    },
+    {
+        "id": 2362,
+        "cryptocurrency_id": 1,
+        "price_usd": "40924.88964501",
+        "snapshot_at": "2018-02-18 02:32:33"
+    },
+    {
+        "id": 2363,
+        "cryptocurrency_id": 1,
+        "price_usd": "42478.02968093",
+        "snapshot_at": "2018-02-18 01:32:33"
+    },
+    {
+        "id": 2364,
+        "cryptocurrency_id": 1,
+        "price_usd": "44035.54923548",
+        "snapshot_at": "2018-02-18 00:32:33"
+    },
+    {
+        "id": 2365,
+        "cryptocurrency_id": 1,
+        "price_usd": "44016.74263730",
+        "snapshot_at": "2018-02-17 23:32:33"
+    },
+    {
+        "id": 2366,
+        "cryptocurrency_id": 1,
+        "price_usd": "43957.16859828",
+        "snapshot_at": "2018-02-17 22:32:33"
+    },
+    {
+        "id": 2367,
+        "cryptocurrency_id": 1,
+        "price_usd": "42244.53103378",
+        "snapshot_at": "2018-02-17 21:32:33"
+    },
+    {
+        "id": 2368,
+        "cryptocurrency_id": 1,
+        "price_usd": "41807.00504355",
+        "snapshot_at": "2018-02-17 20:32:33"
+    },
+    {
+        "id": 2369,
+        "cryptocurrency_id": 1,
+        "price_usd": "39869.91360238",
+        "snapshot_at": "2018-02-17 19:32:33"
+    },
+    {
+        "id": 2370,
+        "cryptocurrency_id": 1,
+        "price_usd": "40434.34047434",
+        "snapshot_at": "2018-02-17 18:32:33"
+    },
+    {
+        "id": 2371,
+        "cryptocurrency_id": 1,
+        "price_usd": "39450.50413247",
+        "snapshot_at": "2018-02-17 17:32:33"
+    },
+    {
+        "id": 2372,
+        "cryptocurrency_id": 1,
+        "price_usd": "41092.61251364",
+        "snapshot_at": "2018-02-17 16:32:33"
+    },
+    {
+        "id": 2373,
+        "cryptocurrency_id": 1,
+        "price_usd": "39775.04373765",
+        "snapshot_at": "2018-02-17 15:32:33"
+    },
+    {
+        "id": 2374,
+        "cryptocurrency_id": 1,
+        "price_usd": "39103.75479505",
+        "snapshot_at": "2018-02-17 14:32:33"
+    },
+    {
+        "id": 2375,
+        "cryptocurrency_id": 1,
+        "price_usd": "37808.57548335",
+        "snapshot_at": "2018-02-17 13:32:33"
+    },
+    {
+        "id": 2376,
+        "cryptocurrency_id": 1,
+        "price_usd": "35918.24779118",
+        "snapshot_at": "2018-02-17 12:32:33"
+    },
+    {
+        "id": 2377,
+        "cryptocurrency_id": 1,
+        "price_usd": "37059.44563894",
+        "snapshot_at": "2018-02-17 11:32:33"
+    },
+    {
+        "id": 2378,
+        "cryptocurrency_id": 1,
+        "price_usd": "36297.92900622",
+        "snapshot_at": "2018-02-17 10:32:33"
+    },
+    {
+        "id": 2379,
+        "cryptocurrency_id": 1,
+        "price_usd": "34537.08394950",
+        "snapshot_at": "2018-02-17 09:32:33"
+    },
+    {
+        "id": 2380,
+        "cryptocurrency_id": 1,
+        "price_usd": "33992.26577585",
+        "snapshot_at": "2018-02-17 08:32:33"
+    },
+    {
+        "id": 2381,
+        "cryptocurrency_id": 1,
+        "price_usd": "34602.54658730",
+        "snapshot_at": "2018-02-17 07:32:33"
+    },
+    {
+        "id": 2382,
+        "cryptocurrency_id": 1,
+        "price_usd": "33171.67534736",
+        "snapshot_at": "2018-02-17 06:32:33"
+    },
+    {
+        "id": 2383,
+        "cryptocurrency_id": 1,
+        "price_usd": "34590.24142392",
+        "snapshot_at": "2018-02-17 05:32:33"
+    },
+    {
+        "id": 2384,
+        "cryptocurrency_id": 1,
+        "price_usd": "35528.38524822",
+        "snapshot_at": "2018-02-17 04:32:33"
+    },
+    {
+        "id": 2385,
+        "cryptocurrency_id": 1,
+        "price_usd": "36618.27225909",
+        "snapshot_at": "2018-02-17 03:32:33"
+    },
+    {
+        "id": 2386,
+        "cryptocurrency_id": 1,
+        "price_usd": "34916.06547416",
+        "snapshot_at": "2018-02-17 02:32:33"
+    },
+    {
+        "id": 2387,
+        "cryptocurrency_id": 1,
+        "price_usd": "33766.22572099",
+        "snapshot_at": "2018-02-17 01:32:33"
+    },
+    {
+        "id": 2388,
+        "cryptocurrency_id": 1,
+        "price_usd": "33267.14616429",
+        "snapshot_at": "2018-02-17 00:32:33"
+    },
+    {
+        "id": 2389,
+        "cryptocurrency_id": 1,
+        "price_usd": "33637.83689134",
+        "snapshot_at": "2018-02-16 23:32:33"
+    },
+    {
+        "id": 2390,
+        "cryptocurrency_id": 1,
+        "price_usd": "33459.65822305",
+        "snapshot_at": "2018-02-16 22:32:33"
+    },
+    {
+        "id": 2391,
+        "cryptocurrency_id": 1,
+        "price_usd": "32609.42929219",
+        "snapshot_at": "2018-02-16 21:32:33"
+    },
+    {
+        "id": 2392,
+        "cryptocurrency_id": 1,
+        "price_usd": "33498.70333366",
+        "snapshot_at": "2018-02-16 20:32:33"
+    },
+    {
+        "id": 2393,
+        "cryptocurrency_id": 1,
+        "price_usd": "32804.05073493",
+        "snapshot_at": "2018-02-16 19:32:33"
+    },
+    {
+        "id": 2394,
+        "cryptocurrency_id": 1,
+        "price_usd": "33984.13821159",
+        "snapshot_at": "2018-02-16 18:32:33"
+    },
+    {
+        "id": 2395,
+        "cryptocurrency_id": 1,
+        "price_usd": "33807.72893975",
+        "snapshot_at": "2018-02-16 17:32:33"
+    },
+    {
+        "id": 2396,
+        "cryptocurrency_id": 1,
+        "price_usd": "32617.06592184",
+        "snapshot_at": "2018-02-16 16:32:33"
+    },
+    {
+        "id": 2397,
+        "cryptocurrency_id": 1,
+        "price_usd": "34093.78193962",
+        "snapshot_at": "2018-02-16 15:32:33"
+    },
+    {
+        "id": 2398,
+        "cryptocurrency_id": 1,
+        "price_usd": "35550.52803302",
+        "snapshot_at": "2018-02-16 14:32:33"
+    },
+    {
+        "id": 2399,
+        "cryptocurrency_id": 1,
+        "price_usd": "34222.40900454",
+        "snapshot_at": "2018-02-16 13:32:33"
+    },
+    {
+        "id": 2400,
+        "cryptocurrency_id": 1,
+        "price_usd": "34453.58475608",
+        "snapshot_at": "2018-02-16 12:32:33"
+    },
+    {
+        "id": 2401,
+        "cryptocurrency_id": 1,
+        "price_usd": "32836.65788492",
+        "snapshot_at": "2018-02-16 11:32:33"
+    },
+    {
+        "id": 2402,
+        "cryptocurrency_id": 1,
+        "price_usd": "33167.64506169",
+        "snapshot_at": "2018-02-16 10:32:33"
+    },
+    {
+        "id": 2403,
+        "cryptocurrency_id": 1,
+        "price_usd": "33587.65902415",
+        "snapshot_at": "2018-02-16 09:32:33"
+    },
+    {
+        "id": 2404,
+        "cryptocurrency_id": 1,
+        "price_usd": "32316.41907225",
+        "snapshot_at": "2018-02-16 08:32:33"
+    },
+    {
+        "id": 2405,
+        "cryptocurrency_id": 1,
+        "price_usd": "33030.14789283",
+        "snapshot_at": "2018-02-16 07:32:33"
+    },
+    {
+        "id": 2406,
+        "cryptocurrency_id": 1,
+        "price_usd": "33498.09491259",
+        "snapshot_at": "2018-02-16 06:32:33"
+    },
+    {
+        "id": 2407,
+        "cryptocurrency_id": 1,
+        "price_usd": "32337.39453317",
+        "snapshot_at": "2018-02-16 05:32:33"
+    },
+    {
+        "id": 2408,
+        "cryptocurrency_id": 1,
+        "price_usd": "32185.92700798",
+        "snapshot_at": "2018-02-16 04:32:33"
+    },
+    {
+        "id": 2409,
+        "cryptocurrency_id": 1,
+        "price_usd": "31468.12279932",
+        "snapshot_at": "2018-02-16 03:32:33"
+    },
+    {
+        "id": 2410,
+        "cryptocurrency_id": 1,
+        "price_usd": "31755.42210140",
+        "snapshot_at": "2018-02-16 02:32:33"
+    },
+    {
+        "id": 2411,
+        "cryptocurrency_id": 1,
+        "price_usd": "33232.68570323",
+        "snapshot_at": "2018-02-16 01:32:33"
+    },
+    {
+        "id": 2412,
+        "cryptocurrency_id": 1,
+        "price_usd": "33269.17737491",
+        "snapshot_at": "2018-02-16 00:32:33"
+    },
+    {
+        "id": 2413,
+        "cryptocurrency_id": 1,
+        "price_usd": "31977.46344498",
+        "snapshot_at": "2018-02-15 23:32:33"
+    },
+    {
+        "id": 2414,
+        "cryptocurrency_id": 1,
+        "price_usd": "32163.07611740",
+        "snapshot_at": "2018-02-15 22:32:33"
+    },
+    {
+        "id": 2415,
+        "cryptocurrency_id": 1,
+        "price_usd": "31904.30020412",
+        "snapshot_at": "2018-02-15 21:32:33"
+    },
+    {
+        "id": 2416,
+        "cryptocurrency_id": 1,
+        "price_usd": "32951.56275075",
+        "snapshot_at": "2018-02-15 20:32:33"
+    },
+    {
+        "id": 2417,
+        "cryptocurrency_id": 1,
+        "price_usd": "33596.53783287",
+        "snapshot_at": "2018-02-15 19:32:33"
+    },
+    {
+        "id": 2418,
+        "cryptocurrency_id": 1,
+        "price_usd": "32493.88863358",
+        "snapshot_at": "2018-02-15 18:32:33"
+    },
+    {
+        "id": 2419,
+        "cryptocurrency_id": 1,
+        "price_usd": "31148.47829219",
+        "snapshot_at": "2018-02-15 17:32:33"
+    },
+    {
+        "id": 2420,
+        "cryptocurrency_id": 1,
+        "price_usd": "31849.59998564",
+        "snapshot_at": "2018-02-15 16:32:33"
+    },
+    {
+        "id": 2421,
+        "cryptocurrency_id": 1,
+        "price_usd": "32698.33087944",
+        "snapshot_at": "2018-02-15 15:32:33"
+    },
+    {
+        "id": 2422,
+        "cryptocurrency_id": 1,
+        "price_usd": "31771.68113061",
+        "snapshot_at": "2018-02-15 14:32:33"
+    },
+    {
+        "id": 2423,
+        "cryptocurrency_id": 1,
+        "price_usd": "31342.21935828",
+        "snapshot_at": "2018-02-15 13:32:33"
+    },
+    {
+        "id": 2424,
+        "cryptocurrency_id": 1,
+        "price_usd": "30484.04566719",
+        "snapshot_at": "2018-02-15 12:32:33"
+    },
+    {
+        "id": 2425,
+        "cryptocurrency_id": 1,
+        "price_usd": "29370.01339677",
+        "snapshot_at": "2018-02-15 11:32:33"
+    },
+    {
+        "id": 2426,
+        "cryptocurrency_id": 1,
+        "price_usd": "29795.46957334",
+        "snapshot_at": "2018-02-15 10:32:33"
+    },
+    {
+        "id": 2427,
+        "cryptocurrency_id": 1,
+        "price_usd": "28874.64721048",
+        "snapshot_at": "2018-02-15 09:32:33"
+    },
+    {
+        "id": 2428,
+        "cryptocurrency_id": 1,
+        "price_usd": "29439.77571144",
+        "snapshot_at": "2018-02-15 08:32:33"
+    },
+    {
+        "id": 2429,
+        "cryptocurrency_id": 1,
+        "price_usd": "29525.35179882",
+        "snapshot_at": "2018-02-15 07:32:33"
+    },
+    {
+        "id": 2430,
+        "cryptocurrency_id": 1,
+        "price_usd": "30365.72135179",
+        "snapshot_at": "2018-02-15 06:32:33"
+    },
+    {
+        "id": 2431,
+        "cryptocurrency_id": 1,
+        "price_usd": "31463.35123695",
+        "snapshot_at": "2018-02-15 05:32:33"
+    },
+    {
+        "id": 2432,
+        "cryptocurrency_id": 1,
+        "price_usd": "30291.34588207",
+        "snapshot_at": "2018-02-15 04:32:33"
+    },
+    {
+        "id": 2433,
+        "cryptocurrency_id": 1,
+        "price_usd": "30091.81657000",
+        "snapshot_at": "2018-02-15 03:32:33"
+    },
+    {
+        "id": 2434,
+        "cryptocurrency_id": 1,
+        "price_usd": "31333.46498086",
+        "snapshot_at": "2018-02-15 02:32:33"
+    },
+    {
+        "id": 2435,
+        "cryptocurrency_id": 1,
+        "price_usd": "32663.37101513",
+        "snapshot_at": "2018-02-15 01:32:33"
+    },
+    {
+        "id": 2436,
+        "cryptocurrency_id": 1,
+        "price_usd": "31203.11976804",
+        "snapshot_at": "2018-02-15 00:32:33"
+    },
+    {
+        "id": 2437,
+        "cryptocurrency_id": 1,
+        "price_usd": "32660.50547999",
+        "snapshot_at": "2018-02-14 23:32:33"
+    },
+    {
+        "id": 2438,
+        "cryptocurrency_id": 1,
+        "price_usd": "33457.38590053",
+        "snapshot_at": "2018-02-14 22:32:33"
+    },
+    {
+        "id": 2439,
+        "cryptocurrency_id": 1,
+        "price_usd": "35036.79148655",
+        "snapshot_at": "2018-02-14 21:32:33"
+    },
+    {
+        "id": 2440,
+        "cryptocurrency_id": 1,
+        "price_usd": "35946.41573892",
+        "snapshot_at": "2018-02-14 20:32:33"
+    },
+    {
+        "id": 2441,
+        "cryptocurrency_id": 1,
+        "price_usd": "34878.44356492",
+        "snapshot_at": "2018-02-14 19:32:33"
+    },
+    {
+        "id": 2442,
+        "cryptocurrency_id": 1,
+        "price_usd": "34660.15604025",
+        "snapshot_at": "2018-02-14 18:32:33"
+    },
+    {
+        "id": 2443,
+        "cryptocurrency_id": 1,
+        "price_usd": "33958.50301132",
+        "snapshot_at": "2018-02-14 17:32:33"
+    },
+    {
+        "id": 2444,
+        "cryptocurrency_id": 1,
+        "price_usd": "32712.61140948",
+        "snapshot_at": "2018-02-14 16:32:33"
+    },
+    {
+        "id": 2445,
+        "cryptocurrency_id": 1,
+        "price_usd": "31603.25610057",
+        "snapshot_at": "2018-02-14 15:32:33"
+    },
+    {
+        "id": 2446,
+        "cryptocurrency_id": 1,
+        "price_usd": "31474.73039939",
+        "snapshot_at": "2018-02-14 14:32:33"
+    },
+    {
+        "id": 2447,
+        "cryptocurrency_id": 1,
+        "price_usd": "31564.26129474",
+        "snapshot_at": "2018-02-14 13:32:33"
+    },
+    {
+        "id": 2448,
+        "cryptocurrency_id": 1,
+        "price_usd": "31584.57797116",
+        "snapshot_at": "2018-02-14 12:32:33"
+    },
+    {
+        "id": 2449,
+        "cryptocurrency_id": 1,
+        "price_usd": "32664.26050294",
+        "snapshot_at": "2018-02-14 11:32:33"
+    },
+    {
+        "id": 2450,
+        "cryptocurrency_id": 1,
+        "price_usd": "32229.26886797",
+        "snapshot_at": "2018-02-14 10:32:33"
+    },
+    {
+        "id": 2451,
+        "cryptocurrency_id": 1,
+        "price_usd": "33215.04097154",
+        "snapshot_at": "2018-02-14 09:32:33"
+    },
+    {
+        "id": 2452,
+        "cryptocurrency_id": 1,
+        "price_usd": "33919.46871316",
+        "snapshot_at": "2018-02-14 08:32:33"
+    },
+    {
+        "id": 2453,
+        "cryptocurrency_id": 1,
+        "price_usd": "33252.78276595",
+        "snapshot_at": "2018-02-14 07:32:33"
+    },
+    {
+        "id": 2454,
+        "cryptocurrency_id": 1,
+        "price_usd": "33235.48223789",
+        "snapshot_at": "2018-02-14 06:32:33"
+    },
+    {
+        "id": 2455,
+        "cryptocurrency_id": 1,
+        "price_usd": "33320.45468825",
+        "snapshot_at": "2018-02-14 05:32:33"
+    },
+    {
+        "id": 2456,
+        "cryptocurrency_id": 1,
+        "price_usd": "34516.88824839",
+        "snapshot_at": "2018-02-14 04:32:33"
+    },
+    {
+        "id": 2457,
+        "cryptocurrency_id": 1,
+        "price_usd": "34447.52676846",
+        "snapshot_at": "2018-02-14 03:32:33"
+    },
+    {
+        "id": 2458,
+        "cryptocurrency_id": 1,
+        "price_usd": "33939.11491979",
+        "snapshot_at": "2018-02-14 02:32:33"
+    },
+    {
+        "id": 2459,
+        "cryptocurrency_id": 1,
+        "price_usd": "33247.45990961",
+        "snapshot_at": "2018-02-14 01:32:33"
+    },
+    {
+        "id": 2460,
+        "cryptocurrency_id": 1,
+        "price_usd": "33746.14917833",
+        "snapshot_at": "2018-02-14 00:32:33"
+    },
+    {
+        "id": 2461,
+        "cryptocurrency_id": 1,
+        "price_usd": "34367.94437683",
+        "snapshot_at": "2018-02-13 23:32:33"
+    },
+    {
+        "id": 2462,
+        "cryptocurrency_id": 1,
+        "price_usd": "35923.33466504",
+        "snapshot_at": "2018-02-13 22:32:33"
+    },
+    {
+        "id": 2463,
+        "cryptocurrency_id": 1,
+        "price_usd": "34541.74404228",
+        "snapshot_at": "2018-02-13 21:32:33"
+    },
+    {
+        "id": 2464,
+        "cryptocurrency_id": 1,
+        "price_usd": "35341.29815144",
+        "snapshot_at": "2018-02-13 20:32:33"
+    },
+    {
+        "id": 2465,
+        "cryptocurrency_id": 1,
+        "price_usd": "35396.11089937",
+        "snapshot_at": "2018-02-13 19:32:33"
+    },
+    {
+        "id": 2466,
+        "cryptocurrency_id": 1,
+        "price_usd": "34626.67704967",
+        "snapshot_at": "2018-02-13 18:32:33"
+    },
+    {
+        "id": 2467,
+        "cryptocurrency_id": 1,
+        "price_usd": "33318.12117795",
+        "snapshot_at": "2018-02-13 17:32:33"
+    },
+    {
+        "id": 2468,
+        "cryptocurrency_id": 1,
+        "price_usd": "33025.02986164",
+        "snapshot_at": "2018-02-13 16:32:33"
+    },
+    {
+        "id": 2469,
+        "cryptocurrency_id": 1,
+        "price_usd": "32483.45117461",
+        "snapshot_at": "2018-02-13 15:32:33"
+    },
+    {
+        "id": 2470,
+        "cryptocurrency_id": 1,
+        "price_usd": "33280.42378326",
+        "snapshot_at": "2018-02-13 14:32:33"
+    },
+    {
+        "id": 2471,
+        "cryptocurrency_id": 1,
+        "price_usd": "31870.76039188",
+        "snapshot_at": "2018-02-13 13:32:33"
+    },
+    {
+        "id": 2472,
+        "cryptocurrency_id": 1,
+        "price_usd": "32910.54469194",
+        "snapshot_at": "2018-02-13 12:32:33"
+    },
+    {
+        "id": 2473,
+        "cryptocurrency_id": 1,
+        "price_usd": "33960.56560656",
+        "snapshot_at": "2018-02-13 11:32:33"
+    },
+    {
+        "id": 2474,
+        "cryptocurrency_id": 1,
+        "price_usd": "33693.44080367",
+        "snapshot_at": "2018-02-13 10:32:33"
+    },
+    {
+        "id": 2475,
+        "cryptocurrency_id": 1,
+        "price_usd": "33263.53030816",
+        "snapshot_at": "2018-02-13 09:32:33"
+    },
+    {
+        "id": 2476,
+        "cryptocurrency_id": 1,
+        "price_usd": "31737.40362337",
+        "snapshot_at": "2018-02-13 08:32:33"
+    },
+    {
+        "id": 2477,
+        "cryptocurrency_id": 1,
+        "price_usd": "31301.75383663",
+        "snapshot_at": "2018-02-13 07:32:33"
+    },
+    {
+        "id": 2478,
+        "cryptocurrency_id": 1,
+        "price_usd": "31367.43655900",
+        "snapshot_at": "2018-02-13 06:32:33"
+    },
+    {
+        "id": 2479,
+        "cryptocurrency_id": 1,
+        "price_usd": "32312.37758092",
+        "snapshot_at": "2018-02-13 05:32:33"
+    },
+    {
+        "id": 2480,
+        "cryptocurrency_id": 1,
+        "price_usd": "33000.09046343",
+        "snapshot_at": "2018-02-13 04:32:33"
+    },
+    {
+        "id": 2481,
+        "cryptocurrency_id": 1,
+        "price_usd": "33398.13202998",
+        "snapshot_at": "2018-02-13 03:32:33"
+    },
+    {
+        "id": 2482,
+        "cryptocurrency_id": 1,
+        "price_usd": "34867.78849213",
+        "snapshot_at": "2018-02-13 02:32:33"
+    },
+    {
+        "id": 2483,
+        "cryptocurrency_id": 1,
+        "price_usd": "36412.15353389",
+        "snapshot_at": "2018-02-13 01:32:33"
+    },
+    {
+        "id": 2484,
+        "cryptocurrency_id": 1,
+        "price_usd": "37376.12010886",
+        "snapshot_at": "2018-02-13 00:32:33"
+    },
+    {
+        "id": 2485,
+        "cryptocurrency_id": 1,
+        "price_usd": "37511.66575374",
+        "snapshot_at": "2018-02-12 23:32:33"
+    },
+    {
+        "id": 2486,
+        "cryptocurrency_id": 1,
+        "price_usd": "38392.18100012",
+        "snapshot_at": "2018-02-12 22:32:33"
+    },
+    {
+        "id": 2487,
+        "cryptocurrency_id": 1,
+        "price_usd": "39413.48463246",
+        "snapshot_at": "2018-02-12 21:32:33"
+    },
+    {
+        "id": 2488,
+        "cryptocurrency_id": 1,
+        "price_usd": "41350.64654820",
+        "snapshot_at": "2018-02-12 20:32:33"
+    },
+    {
+        "id": 2489,
+        "cryptocurrency_id": 1,
+        "price_usd": "41628.96974965",
+        "snapshot_at": "2018-02-12 19:32:33"
+    },
+    {
+        "id": 2490,
+        "cryptocurrency_id": 1,
+        "price_usd": "42023.22141882",
+        "snapshot_at": "2018-02-12 18:32:33"
+    },
+    {
+        "id": 2491,
+        "cryptocurrency_id": 1,
+        "price_usd": "40689.19636637",
+        "snapshot_at": "2018-02-12 17:32:33"
+    },
+    {
+        "id": 2492,
+        "cryptocurrency_id": 1,
+        "price_usd": "39204.07086964",
+        "snapshot_at": "2018-02-12 16:32:33"
+    },
+    {
+        "id": 2493,
+        "cryptocurrency_id": 1,
+        "price_usd": "39999.38916431",
+        "snapshot_at": "2018-02-12 15:32:33"
+    },
+    {
+        "id": 2494,
+        "cryptocurrency_id": 1,
+        "price_usd": "41586.26453945",
+        "snapshot_at": "2018-02-12 14:32:33"
+    },
+    {
+        "id": 2495,
+        "cryptocurrency_id": 1,
+        "price_usd": "40689.04127906",
+        "snapshot_at": "2018-02-12 13:32:33"
+    },
+    {
+        "id": 2496,
+        "cryptocurrency_id": 1,
+        "price_usd": "41854.86677336",
+        "snapshot_at": "2018-02-12 12:32:33"
+    },
+    {
+        "id": 2497,
+        "cryptocurrency_id": 1,
+        "price_usd": "43065.54881159",
+        "snapshot_at": "2018-02-12 11:32:33"
+    },
+    {
+        "id": 2498,
+        "cryptocurrency_id": 1,
+        "price_usd": "44733.70160671",
+        "snapshot_at": "2018-02-12 10:32:33"
+    },
+    {
+        "id": 2499,
+        "cryptocurrency_id": 1,
+        "price_usd": "44885.07499221",
+        "snapshot_at": "2018-02-12 09:32:33"
+    },
+    {
+        "id": 2500,
+        "cryptocurrency_id": 1,
+        "price_usd": "46841.65438870",
+        "snapshot_at": "2018-02-12 08:32:33"
+    },
+    {
+        "id": 2501,
+        "cryptocurrency_id": 1,
+        "price_usd": "48955.97944162",
+        "snapshot_at": "2018-02-12 07:32:33"
+    },
+    {
+        "id": 2502,
+        "cryptocurrency_id": 1,
+        "price_usd": "47185.10037592",
+        "snapshot_at": "2018-02-12 06:32:33"
+    },
+    {
+        "id": 2503,
+        "cryptocurrency_id": 1,
+        "price_usd": "47481.03668295",
+        "snapshot_at": "2018-02-12 05:32:33"
+    },
+    {
+        "id": 2504,
+        "cryptocurrency_id": 1,
+        "price_usd": "45969.82998655",
+        "snapshot_at": "2018-02-12 04:32:33"
+    },
+    {
+        "id": 2505,
+        "cryptocurrency_id": 1,
+        "price_usd": "44285.27585347",
+        "snapshot_at": "2018-02-12 03:32:33"
+    },
+    {
+        "id": 2506,
+        "cryptocurrency_id": 1,
+        "price_usd": "44757.68367453",
+        "snapshot_at": "2018-02-12 02:32:33"
+    },
+    {
+        "id": 2507,
+        "cryptocurrency_id": 1,
+        "price_usd": "44106.71201776",
+        "snapshot_at": "2018-02-12 01:32:33"
+    },
+    {
+        "id": 2508,
+        "cryptocurrency_id": 1,
+        "price_usd": "42775.69796242",
+        "snapshot_at": "2018-02-12 00:32:33"
+    },
+    {
+        "id": 2509,
+        "cryptocurrency_id": 1,
+        "price_usd": "41443.45893838",
+        "snapshot_at": "2018-02-11 23:32:33"
+    },
+    {
+        "id": 2510,
+        "cryptocurrency_id": 1,
+        "price_usd": "42354.31858916",
+        "snapshot_at": "2018-02-11 22:32:33"
+    },
+    {
+        "id": 2511,
+        "cryptocurrency_id": 1,
+        "price_usd": "43022.72072398",
+        "snapshot_at": "2018-02-11 21:32:33"
+    },
+    {
+        "id": 2512,
+        "cryptocurrency_id": 1,
+        "price_usd": "43649.34075972",
+        "snapshot_at": "2018-02-11 20:32:33"
+    },
+    {
+        "id": 2513,
+        "cryptocurrency_id": 1,
+        "price_usd": "45411.40484013",
+        "snapshot_at": "2018-02-11 19:32:33"
+    },
+    {
+        "id": 2514,
+        "cryptocurrency_id": 1,
+        "price_usd": "44971.06104951",
+        "snapshot_at": "2018-02-11 18:32:33"
+    },
+    {
+        "id": 2515,
+        "cryptocurrency_id": 1,
+        "price_usd": "43417.37989321",
+        "snapshot_at": "2018-02-11 17:32:33"
+    },
+    {
+        "id": 2516,
+        "cryptocurrency_id": 1,
+        "price_usd": "44627.57213249",
+        "snapshot_at": "2018-02-11 16:32:33"
+    },
+    {
+        "id": 2517,
+        "cryptocurrency_id": 1,
+        "price_usd": "43617.59292872",
+        "snapshot_at": "2018-02-11 15:32:33"
+    },
+    {
+        "id": 2518,
+        "cryptocurrency_id": 1,
+        "price_usd": "45658.52127598",
+        "snapshot_at": "2018-02-11 14:32:33"
+    },
+    {
+        "id": 2519,
+        "cryptocurrency_id": 1,
+        "price_usd": "46133.78060018",
+        "snapshot_at": "2018-02-11 13:32:33"
+    },
+    {
+        "id": 2520,
+        "cryptocurrency_id": 1,
+        "price_usd": "44012.29187303",
+        "snapshot_at": "2018-02-11 12:32:33"
+    },
+    {
+        "id": 2521,
+        "cryptocurrency_id": 1,
+        "price_usd": "42483.74318402",
+        "snapshot_at": "2018-02-11 11:32:33"
+    },
+    {
+        "id": 2522,
+        "cryptocurrency_id": 1,
+        "price_usd": "41795.14597348",
+        "snapshot_at": "2018-02-11 10:32:33"
+    },
+    {
+        "id": 2523,
+        "cryptocurrency_id": 1,
+        "price_usd": "43211.52366177",
+        "snapshot_at": "2018-02-11 09:32:33"
+    },
+    {
+        "id": 2524,
+        "cryptocurrency_id": 1,
+        "price_usd": "44168.68650857",
+        "snapshot_at": "2018-02-11 08:32:33"
+    },
+    {
+        "id": 2525,
+        "cryptocurrency_id": 1,
+        "price_usd": "43356.72611880",
+        "snapshot_at": "2018-02-11 07:32:33"
+    },
+    {
+        "id": 2526,
+        "cryptocurrency_id": 1,
+        "price_usd": "43360.61113513",
+        "snapshot_at": "2018-02-11 06:32:33"
+    },
+    {
+        "id": 2527,
+        "cryptocurrency_id": 1,
+        "price_usd": "44639.99241428",
+        "snapshot_at": "2018-02-11 05:32:33"
+    },
+    {
+        "id": 2528,
+        "cryptocurrency_id": 1,
+        "price_usd": "43547.28267282",
+        "snapshot_at": "2018-02-11 04:32:33"
+    },
+    {
+        "id": 2529,
+        "cryptocurrency_id": 1,
+        "price_usd": "45446.05116429",
+        "snapshot_at": "2018-02-11 03:32:33"
+    },
+    {
+        "id": 2530,
+        "cryptocurrency_id": 1,
+        "price_usd": "47654.52367574",
+        "snapshot_at": "2018-02-11 02:32:33"
+    },
+    {
+        "id": 2531,
+        "cryptocurrency_id": 1,
+        "price_usd": "46391.66299364",
+        "snapshot_at": "2018-02-11 01:32:33"
+    },
+    {
+        "id": 2532,
+        "cryptocurrency_id": 1,
+        "price_usd": "46628.40626708",
+        "snapshot_at": "2018-02-11 00:32:33"
+    },
+    {
+        "id": 2533,
+        "cryptocurrency_id": 1,
+        "price_usd": "45713.94913051",
+        "snapshot_at": "2018-02-10 23:32:33"
+    },
+    {
+        "id": 2534,
+        "cryptocurrency_id": 1,
+        "price_usd": "47833.40008738",
+        "snapshot_at": "2018-02-10 22:32:33"
+    },
+    {
+        "id": 2535,
+        "cryptocurrency_id": 1,
+        "price_usd": "47282.92817905",
+        "snapshot_at": "2018-02-10 21:32:33"
+    },
+    {
+        "id": 2536,
+        "cryptocurrency_id": 1,
+        "price_usd": "48588.01039232",
+        "snapshot_at": "2018-02-10 20:32:33"
+    },
+    {
+        "id": 2537,
+        "cryptocurrency_id": 1,
+        "price_usd": "49714.03913298",
+        "snapshot_at": "2018-02-10 19:32:33"
+    },
+    {
+        "id": 2538,
+        "cryptocurrency_id": 1,
+        "price_usd": "50255.40156031",
+        "snapshot_at": "2018-02-10 18:32:33"
+    },
+    {
+        "id": 2539,
+        "cryptocurrency_id": 1,
+        "price_usd": "52687.29915719",
+        "snapshot_at": "2018-02-10 17:32:33"
+    },
+    {
+        "id": 2540,
+        "cryptocurrency_id": 1,
+        "price_usd": "50504.99663918",
+        "snapshot_at": "2018-02-10 16:32:33"
+    },
+    {
+        "id": 2541,
+        "cryptocurrency_id": 1,
+        "price_usd": "52721.32948276",
+        "snapshot_at": "2018-02-10 15:32:33"
+    },
+    {
+        "id": 2542,
+        "cryptocurrency_id": 1,
+        "price_usd": "51290.55042773",
+        "snapshot_at": "2018-02-10 14:32:33"
+    },
+    {
+        "id": 2543,
+        "cryptocurrency_id": 1,
+        "price_usd": "51152.50599643",
+        "snapshot_at": "2018-02-10 13:32:33"
+    },
+    {
+        "id": 2544,
+        "cryptocurrency_id": 1,
+        "price_usd": "52421.85308517",
+        "snapshot_at": "2018-02-10 12:32:33"
+    },
+    {
+        "id": 2545,
+        "cryptocurrency_id": 1,
+        "price_usd": "55019.42558548",
+        "snapshot_at": "2018-02-10 11:32:33"
+    },
+    {
+        "id": 2546,
+        "cryptocurrency_id": 1,
+        "price_usd": "55092.93606967",
+        "snapshot_at": "2018-02-10 10:32:33"
+    },
+    {
+        "id": 2547,
+        "cryptocurrency_id": 1,
+        "price_usd": "56372.43940454",
+        "snapshot_at": "2018-02-10 09:32:33"
+    },
+    {
+        "id": 2548,
+        "cryptocurrency_id": 1,
+        "price_usd": "55936.88602132",
+        "snapshot_at": "2018-02-10 08:32:33"
+    },
+    {
+        "id": 2549,
+        "cryptocurrency_id": 1,
+        "price_usd": "56131.96426240",
+        "snapshot_at": "2018-02-10 07:32:33"
+    },
+    {
+        "id": 2550,
+        "cryptocurrency_id": 1,
+        "price_usd": "53597.76751322",
+        "snapshot_at": "2018-02-10 06:32:33"
+    },
+    {
+        "id": 2551,
+        "cryptocurrency_id": 1,
+        "price_usd": "54485.93335100",
+        "snapshot_at": "2018-02-10 05:32:33"
+    },
+    {
+        "id": 2552,
+        "cryptocurrency_id": 1,
+        "price_usd": "51876.81021133",
+        "snapshot_at": "2018-02-10 04:32:33"
+    },
+    {
+        "id": 2553,
+        "cryptocurrency_id": 1,
+        "price_usd": "54375.67308973",
+        "snapshot_at": "2018-02-10 03:32:33"
+    },
+    {
+        "id": 2554,
+        "cryptocurrency_id": 1,
+        "price_usd": "55180.12669474",
+        "snapshot_at": "2018-02-10 02:32:33"
+    },
+    {
+        "id": 2555,
+        "cryptocurrency_id": 1,
+        "price_usd": "57498.51106838",
+        "snapshot_at": "2018-02-10 01:32:33"
+    },
+    {
+        "id": 2556,
+        "cryptocurrency_id": 1,
+        "price_usd": "56040.92100684",
+        "snapshot_at": "2018-02-10 00:32:33"
+    },
+    {
+        "id": 2557,
+        "cryptocurrency_id": 1,
+        "price_usd": "58090.54508511",
+        "snapshot_at": "2018-02-09 23:32:33"
+    },
+    {
+        "id": 2558,
+        "cryptocurrency_id": 1,
+        "price_usd": "56514.12483276",
+        "snapshot_at": "2018-02-09 22:32:33"
+    },
+    {
+        "id": 2559,
+        "cryptocurrency_id": 1,
+        "price_usd": "58683.67215644",
+        "snapshot_at": "2018-02-09 21:32:33"
+    },
+    {
+        "id": 2560,
+        "cryptocurrency_id": 1,
+        "price_usd": "59278.28479172",
+        "snapshot_at": "2018-02-09 20:32:33"
+    },
+    {
+        "id": 2561,
+        "cryptocurrency_id": 1,
+        "price_usd": "60822.01284554",
+        "snapshot_at": "2018-02-09 19:32:33"
+    },
+    {
+        "id": 2562,
+        "cryptocurrency_id": 1,
+        "price_usd": "61751.28044395",
+        "snapshot_at": "2018-02-09 18:32:33"
+    },
+    {
+        "id": 2563,
+        "cryptocurrency_id": 1,
+        "price_usd": "60356.82595960",
+        "snapshot_at": "2018-02-09 17:32:33"
+    },
+    {
+        "id": 2564,
+        "cryptocurrency_id": 1,
+        "price_usd": "61064.45013186",
+        "snapshot_at": "2018-02-09 16:32:33"
+    },
+    {
+        "id": 2565,
+        "cryptocurrency_id": 1,
+        "price_usd": "58107.71901873",
+        "snapshot_at": "2018-02-09 15:32:33"
+    },
+    {
+        "id": 2566,
+        "cryptocurrency_id": 1,
+        "price_usd": "57863.43190417",
+        "snapshot_at": "2018-02-09 14:32:33"
+    },
+    {
+        "id": 2567,
+        "cryptocurrency_id": 1,
+        "price_usd": "59344.19323478",
+        "snapshot_at": "2018-02-09 13:32:33"
+    },
+    {
+        "id": 2568,
+        "cryptocurrency_id": 1,
+        "price_usd": "61997.60901002",
+        "snapshot_at": "2018-02-09 12:32:33"
+    },
+    {
+        "id": 2569,
+        "cryptocurrency_id": 1,
+        "price_usd": "62307.45880426",
+        "snapshot_at": "2018-02-09 11:32:33"
+    },
+    {
+        "id": 2570,
+        "cryptocurrency_id": 1,
+        "price_usd": "60241.85953129",
+        "snapshot_at": "2018-02-09 10:32:33"
+    },
+    {
+        "id": 2571,
+        "cryptocurrency_id": 1,
+        "price_usd": "62505.26807246",
+        "snapshot_at": "2018-02-09 09:32:33"
+    },
+    {
+        "id": 2572,
+        "cryptocurrency_id": 1,
+        "price_usd": "60448.20608841",
+        "snapshot_at": "2018-02-09 08:32:33"
+    },
+    {
+        "id": 2573,
+        "cryptocurrency_id": 1,
+        "price_usd": "60167.28688173",
+        "snapshot_at": "2018-02-09 07:32:33"
+    },
+    {
+        "id": 2574,
+        "cryptocurrency_id": 1,
+        "price_usd": "58901.49683439",
+        "snapshot_at": "2018-02-09 06:32:33"
+    },
+    {
+        "id": 2575,
+        "cryptocurrency_id": 1,
+        "price_usd": "60240.04615423",
+        "snapshot_at": "2018-02-09 05:32:33"
+    },
+    {
+        "id": 2576,
+        "cryptocurrency_id": 1,
+        "price_usd": "62219.83309985",
+        "snapshot_at": "2018-02-09 04:32:33"
+    },
+    {
+        "id": 2577,
+        "cryptocurrency_id": 1,
+        "price_usd": "63384.76232092",
+        "snapshot_at": "2018-02-09 03:32:33"
+    },
+    {
+        "id": 2578,
+        "cryptocurrency_id": 1,
+        "price_usd": "66217.99630949",
+        "snapshot_at": "2018-02-09 02:32:33"
+    },
+    {
+        "id": 2579,
+        "cryptocurrency_id": 1,
+        "price_usd": "68969.71519806",
+        "snapshot_at": "2018-02-09 01:32:33"
+    },
+    {
+        "id": 2580,
+        "cryptocurrency_id": 1,
+        "price_usd": "66110.13741772",
+        "snapshot_at": "2018-02-09 00:32:33"
+    },
+    {
+        "id": 2581,
+        "cryptocurrency_id": 1,
+        "price_usd": "66352.99077279",
+        "snapshot_at": "2018-02-08 23:32:33"
+    },
+    {
+        "id": 2582,
+        "cryptocurrency_id": 1,
+        "price_usd": "63927.03661618",
+        "snapshot_at": "2018-02-08 22:32:33"
+    },
+    {
+        "id": 2583,
+        "cryptocurrency_id": 1,
+        "price_usd": "60988.55659950",
+        "snapshot_at": "2018-02-08 21:32:33"
+    },
+    {
+        "id": 2584,
+        "cryptocurrency_id": 1,
+        "price_usd": "61805.94137835",
+        "snapshot_at": "2018-02-08 20:32:33"
+    },
+    {
+        "id": 2585,
+        "cryptocurrency_id": 1,
+        "price_usd": "62234.53897627",
+        "snapshot_at": "2018-02-08 19:32:33"
+    },
+    {
+        "id": 2586,
+        "cryptocurrency_id": 1,
+        "price_usd": "64236.70123238",
+        "snapshot_at": "2018-02-08 18:32:33"
+    },
+    {
+        "id": 2587,
+        "cryptocurrency_id": 1,
+        "price_usd": "66611.27571473",
+        "snapshot_at": "2018-02-08 17:32:33"
+    },
+    {
+        "id": 2588,
+        "cryptocurrency_id": 1,
+        "price_usd": "63683.05361766",
+        "snapshot_at": "2018-02-08 16:32:33"
+    },
+    {
+        "id": 2589,
+        "cryptocurrency_id": 1,
+        "price_usd": "63696.97770808",
+        "snapshot_at": "2018-02-08 15:32:33"
+    },
+    {
+        "id": 2590,
+        "cryptocurrency_id": 1,
+        "price_usd": "66247.34366018",
+        "snapshot_at": "2018-02-08 14:32:33"
+    },
+    {
+        "id": 2591,
+        "cryptocurrency_id": 1,
+        "price_usd": "65776.15287759",
+        "snapshot_at": "2018-02-08 13:32:33"
+    },
+    {
+        "id": 2592,
+        "cryptocurrency_id": 1,
+        "price_usd": "63808.48422072",
+        "snapshot_at": "2018-02-08 12:32:33"
+    },
+    {
+        "id": 2593,
+        "cryptocurrency_id": 1,
+        "price_usd": "64700.63391378",
+        "snapshot_at": "2018-02-08 11:32:33"
+    },
+    {
+        "id": 2594,
+        "cryptocurrency_id": 1,
+        "price_usd": "64804.88791213",
+        "snapshot_at": "2018-02-08 10:32:33"
+    },
+    {
+        "id": 2595,
+        "cryptocurrency_id": 1,
+        "price_usd": "66561.84660803",
+        "snapshot_at": "2018-02-08 09:32:33"
+    },
+    {
+        "id": 2596,
+        "cryptocurrency_id": 1,
+        "price_usd": "63858.37589299",
+        "snapshot_at": "2018-02-08 08:32:33"
+    },
+    {
+        "id": 2597,
+        "cryptocurrency_id": 1,
+        "price_usd": "61689.00870964",
+        "snapshot_at": "2018-02-08 07:32:33"
+    },
+    {
+        "id": 2598,
+        "cryptocurrency_id": 1,
+        "price_usd": "60004.39110372",
+        "snapshot_at": "2018-02-08 06:32:33"
+    },
+    {
+        "id": 2599,
+        "cryptocurrency_id": 1,
+        "price_usd": "62347.35866031",
+        "snapshot_at": "2018-02-08 05:32:33"
+    },
+    {
+        "id": 2600,
+        "cryptocurrency_id": 1,
+        "price_usd": "62331.62124822",
+        "snapshot_at": "2018-02-08 04:32:33"
+    },
+    {
+        "id": 2601,
+        "cryptocurrency_id": 1,
+        "price_usd": "63854.21849632",
+        "snapshot_at": "2018-02-08 03:32:33"
+    },
+    {
+        "id": 2602,
+        "cryptocurrency_id": 1,
+        "price_usd": "61613.55920194",
+        "snapshot_at": "2018-02-08 02:32:33"
+    },
+    {
+        "id": 2603,
+        "cryptocurrency_id": 1,
+        "price_usd": "63301.84699806",
+        "snapshot_at": "2018-02-08 01:32:33"
+    },
+    {
+        "id": 2604,
+        "cryptocurrency_id": 1,
+        "price_usd": "66338.99950761",
+        "snapshot_at": "2018-02-08 00:32:33"
+    },
+    {
+        "id": 2605,
+        "cryptocurrency_id": 1,
+        "price_usd": "63203.28742127",
+        "snapshot_at": "2018-02-07 23:32:33"
+    },
+    {
+        "id": 2606,
+        "cryptocurrency_id": 1,
+        "price_usd": "66060.42321954",
+        "snapshot_at": "2018-02-07 22:32:33"
+    },
+    {
+        "id": 2607,
+        "cryptocurrency_id": 1,
+        "price_usd": "67213.06162406",
+        "snapshot_at": "2018-02-07 21:32:33"
+    },
+    {
+        "id": 2608,
+        "cryptocurrency_id": 1,
+        "price_usd": "68602.64209900",
+        "snapshot_at": "2018-02-07 20:32:33"
+    },
+    {
+        "id": 2609,
+        "cryptocurrency_id": 1,
+        "price_usd": "65235.80815880",
+        "snapshot_at": "2018-02-07 19:32:33"
+    },
+    {
+        "id": 2610,
+        "cryptocurrency_id": 1,
+        "price_usd": "66285.93678131",
+        "snapshot_at": "2018-02-07 18:32:33"
+    },
+    {
+        "id": 2611,
+        "cryptocurrency_id": 1,
+        "price_usd": "67798.56529755",
+        "snapshot_at": "2018-02-07 17:32:33"
+    },
+    {
+        "id": 2612,
+        "cryptocurrency_id": 1,
+        "price_usd": "69522.71566414",
+        "snapshot_at": "2018-02-07 16:32:33"
+    },
+    {
+        "id": 2613,
+        "cryptocurrency_id": 1,
+        "price_usd": "72011.31462444",
+        "snapshot_at": "2018-02-07 15:32:33"
+    },
+    {
+        "id": 2614,
+        "cryptocurrency_id": 1,
+        "price_usd": "74822.94458405",
+        "snapshot_at": "2018-02-07 14:32:33"
+    },
+    {
+        "id": 2615,
+        "cryptocurrency_id": 1,
+        "price_usd": "71702.84322653",
+        "snapshot_at": "2018-02-07 13:32:33"
+    },
+    {
+        "id": 2616,
+        "cryptocurrency_id": 1,
+        "price_usd": "71145.56064974",
+        "snapshot_at": "2018-02-07 12:32:33"
+    },
+    {
+        "id": 2617,
+        "cryptocurrency_id": 1,
+        "price_usd": "70279.77497266",
+        "snapshot_at": "2018-02-07 11:32:33"
+    },
+    {
+        "id": 2618,
+        "cryptocurrency_id": 1,
+        "price_usd": "72932.02107307",
+        "snapshot_at": "2018-02-07 10:32:33"
+    },
+    {
+        "id": 2619,
+        "cryptocurrency_id": 1,
+        "price_usd": "73756.31938440",
+        "snapshot_at": "2018-02-07 09:32:33"
+    },
+    {
+        "id": 2620,
+        "cryptocurrency_id": 1,
+        "price_usd": "70900.11146249",
+        "snapshot_at": "2018-02-07 08:32:33"
+    },
+    {
+        "id": 2621,
+        "cryptocurrency_id": 1,
+        "price_usd": "72037.55560554",
+        "snapshot_at": "2018-02-07 07:32:33"
+    },
+    {
+        "id": 2622,
+        "cryptocurrency_id": 1,
+        "price_usd": "71221.72040226",
+        "snapshot_at": "2018-02-07 06:32:33"
+    },
+    {
+        "id": 2623,
+        "cryptocurrency_id": 1,
+        "price_usd": "68785.78920964",
+        "snapshot_at": "2018-02-07 05:32:33"
+    },
+    {
+        "id": 2624,
+        "cryptocurrency_id": 1,
+        "price_usd": "69922.10238829",
+        "snapshot_at": "2018-02-07 04:32:33"
+    },
+    {
+        "id": 2625,
+        "cryptocurrency_id": 1,
+        "price_usd": "73234.86759817",
+        "snapshot_at": "2018-02-07 03:32:33"
+    },
+    {
+        "id": 2626,
+        "cryptocurrency_id": 1,
+        "price_usd": "74001.17969088",
+        "snapshot_at": "2018-02-07 02:32:33"
+    },
+    {
+        "id": 2627,
+        "cryptocurrency_id": 1,
+        "price_usd": "75514.10894919",
+        "snapshot_at": "2018-02-07 01:32:33"
+    },
+    {
+        "id": 2628,
+        "cryptocurrency_id": 1,
+        "price_usd": "76120.27228088",
+        "snapshot_at": "2018-02-07 00:32:33"
+    },
+    {
+        "id": 2629,
+        "cryptocurrency_id": 1,
+        "price_usd": "78879.63993756",
+        "snapshot_at": "2018-02-06 23:32:33"
+    },
+    {
+        "id": 2630,
+        "cryptocurrency_id": 1,
+        "price_usd": "75126.01855007",
+        "snapshot_at": "2018-02-06 22:32:33"
+    },
+    {
+        "id": 2631,
+        "cryptocurrency_id": 1,
+        "price_usd": "78792.56479458",
+        "snapshot_at": "2018-02-06 21:32:33"
+    },
+    {
+        "id": 2632,
+        "cryptocurrency_id": 1,
+        "price_usd": "74945.55080970",
+        "snapshot_at": "2018-02-06 20:32:33"
+    },
+    {
+        "id": 2633,
+        "cryptocurrency_id": 1,
+        "price_usd": "74868.91193817",
+        "snapshot_at": "2018-02-06 19:32:33"
+    },
+    {
+        "id": 2634,
+        "cryptocurrency_id": 1,
+        "price_usd": "77174.21071248",
+        "snapshot_at": "2018-02-06 18:32:33"
+    },
+    {
+        "id": 2635,
+        "cryptocurrency_id": 1,
+        "price_usd": "73447.68453537",
+        "snapshot_at": "2018-02-06 17:32:33"
+    },
+    {
+        "id": 2636,
+        "cryptocurrency_id": 1,
+        "price_usd": "74208.06252868",
+        "snapshot_at": "2018-02-06 16:32:33"
+    },
+    {
+        "id": 2637,
+        "cryptocurrency_id": 1,
+        "price_usd": "77601.62619609",
+        "snapshot_at": "2018-02-06 15:32:33"
+    },
+    {
+        "id": 2638,
+        "cryptocurrency_id": 1,
+        "price_usd": "76679.73730731",
+        "snapshot_at": "2018-02-06 14:32:33"
+    },
+    {
+        "id": 2639,
+        "cryptocurrency_id": 1,
+        "price_usd": "75968.55396039",
+        "snapshot_at": "2018-02-06 13:32:33"
+    },
+    {
+        "id": 2640,
+        "cryptocurrency_id": 1,
+        "price_usd": "77239.39763034",
+        "snapshot_at": "2018-02-06 12:32:33"
+    },
+    {
+        "id": 2641,
+        "cryptocurrency_id": 1,
+        "price_usd": "79512.69004608",
+        "snapshot_at": "2018-02-06 11:32:33"
+    },
+    {
+        "id": 2642,
+        "cryptocurrency_id": 1,
+        "price_usd": "83355.99699828",
+        "snapshot_at": "2018-02-06 10:32:33"
+    },
+    {
+        "id": 2643,
+        "cryptocurrency_id": 1,
+        "price_usd": "82585.93047164",
+        "snapshot_at": "2018-02-06 09:32:33"
+    },
+    {
+        "id": 2644,
+        "cryptocurrency_id": 1,
+        "price_usd": "82824.69666452",
+        "snapshot_at": "2018-02-06 08:32:33"
+    },
+    {
+        "id": 2645,
+        "cryptocurrency_id": 1,
+        "price_usd": "83485.83441278",
+        "snapshot_at": "2018-02-06 07:32:33"
+    },
+    {
+        "id": 2646,
+        "cryptocurrency_id": 1,
+        "price_usd": "86759.14067356",
+        "snapshot_at": "2018-02-06 06:32:33"
+    },
+    {
+        "id": 2647,
+        "cryptocurrency_id": 1,
+        "price_usd": "84705.19059671",
+        "snapshot_at": "2018-02-06 05:32:33"
+    },
+    {
+        "id": 2648,
+        "cryptocurrency_id": 1,
+        "price_usd": "87770.74610753",
+        "snapshot_at": "2018-02-06 04:32:33"
+    },
+    {
+        "id": 2649,
+        "cryptocurrency_id": 1,
+        "price_usd": "91801.60139289",
+        "snapshot_at": "2018-02-06 03:32:33"
+    },
+    {
+        "id": 2650,
+        "cryptocurrency_id": 1,
+        "price_usd": "93220.01333789",
+        "snapshot_at": "2018-02-06 02:32:33"
+    },
+    {
+        "id": 2651,
+        "cryptocurrency_id": 1,
+        "price_usd": "89118.63469182",
+        "snapshot_at": "2018-02-06 01:32:33"
+    },
+    {
+        "id": 2652,
+        "cryptocurrency_id": 1,
+        "price_usd": "93321.85871520",
+        "snapshot_at": "2018-02-06 00:32:33"
+    },
+    {
+        "id": 2653,
+        "cryptocurrency_id": 1,
+        "price_usd": "93580.09028211",
+        "snapshot_at": "2018-02-05 23:32:33"
+    },
+    {
+        "id": 2654,
+        "cryptocurrency_id": 1,
+        "price_usd": "92214.20610539",
+        "snapshot_at": "2018-02-05 22:32:33"
+    },
+    {
+        "id": 2655,
+        "cryptocurrency_id": 1,
+        "price_usd": "96486.04607086",
+        "snapshot_at": "2018-02-05 21:32:33"
+    },
+    {
+        "id": 2656,
+        "cryptocurrency_id": 1,
+        "price_usd": "96650.13271782",
+        "snapshot_at": "2018-02-05 20:32:33"
+    },
+    {
+        "id": 2657,
+        "cryptocurrency_id": 1,
+        "price_usd": "98038.79946799",
+        "snapshot_at": "2018-02-05 19:32:33"
+    },
+    {
+        "id": 2658,
+        "cryptocurrency_id": 1,
+        "price_usd": "98103.20148939",
+        "snapshot_at": "2018-02-05 18:32:33"
+    },
+    {
+        "id": 2659,
+        "cryptocurrency_id": 1,
+        "price_usd": "94478.64898558",
+        "snapshot_at": "2018-02-05 17:32:33"
+    },
+    {
+        "id": 2660,
+        "cryptocurrency_id": 1,
+        "price_usd": "93226.98319811",
+        "snapshot_at": "2018-02-05 16:32:33"
+    },
+    {
+        "id": 2661,
+        "cryptocurrency_id": 1,
+        "price_usd": "97404.65102656",
+        "snapshot_at": "2018-02-05 15:32:33"
+    },
+    {
+        "id": 2662,
+        "cryptocurrency_id": 1,
+        "price_usd": "94415.80043618",
+        "snapshot_at": "2018-02-05 14:32:33"
+    },
+    {
+        "id": 2663,
+        "cryptocurrency_id": 1,
+        "price_usd": "98879.22618472",
+        "snapshot_at": "2018-02-05 13:32:33"
+    },
+    {
+        "id": 2664,
+        "cryptocurrency_id": 1,
+        "price_usd": "101764.03629156",
+        "snapshot_at": "2018-02-05 12:32:33"
+    },
+    {
+        "id": 2665,
+        "cryptocurrency_id": 1,
+        "price_usd": "98863.75412349",
+        "snapshot_at": "2018-02-05 11:32:33"
+    },
+    {
+        "id": 2666,
+        "cryptocurrency_id": 1,
+        "price_usd": "98134.53685274",
+        "snapshot_at": "2018-02-05 10:32:33"
+    },
+    {
+        "id": 2667,
+        "cryptocurrency_id": 1,
+        "price_usd": "97800.18677127",
+        "snapshot_at": "2018-02-05 09:32:33"
+    },
+    {
+        "id": 2668,
+        "cryptocurrency_id": 1,
+        "price_usd": "98639.25130286",
+        "snapshot_at": "2018-02-05 08:32:33"
+    },
+    {
+        "id": 2669,
+        "cryptocurrency_id": 1,
+        "price_usd": "98878.40591036",
+        "snapshot_at": "2018-02-05 07:32:33"
+    },
+    {
+        "id": 2670,
+        "cryptocurrency_id": 1,
+        "price_usd": "94571.18743353",
+        "snapshot_at": "2018-02-05 06:32:33"
+    },
+    {
+        "id": 2671,
+        "cryptocurrency_id": 1,
+        "price_usd": "95651.34320821",
+        "snapshot_at": "2018-02-05 05:32:33"
+    },
+    {
+        "id": 2672,
+        "cryptocurrency_id": 1,
+        "price_usd": "96908.94042285",
+        "snapshot_at": "2018-02-05 04:32:33"
+    },
+    {
+        "id": 2673,
+        "cryptocurrency_id": 1,
+        "price_usd": "101694.27137403",
+        "snapshot_at": "2018-02-05 03:32:33"
+    },
+    {
+        "id": 2674,
+        "cryptocurrency_id": 1,
+        "price_usd": "97851.96050769",
+        "snapshot_at": "2018-02-05 02:32:33"
+    },
+    {
+        "id": 2675,
+        "cryptocurrency_id": 1,
+        "price_usd": "95142.87720613",
+        "snapshot_at": "2018-02-05 01:32:33"
+    },
+    {
+        "id": 2676,
+        "cryptocurrency_id": 1,
+        "price_usd": "94897.24014787",
+        "snapshot_at": "2018-02-05 00:32:33"
+    },
+    {
+        "id": 2677,
+        "cryptocurrency_id": 1,
+        "price_usd": "96459.39946050",
+        "snapshot_at": "2018-02-04 23:32:33"
+    },
+    {
+        "id": 2678,
+        "cryptocurrency_id": 1,
+        "price_usd": "97254.63664635",
+        "snapshot_at": "2018-02-04 22:32:33"
+    },
+    {
+        "id": 2679,
+        "cryptocurrency_id": 1,
+        "price_usd": "100988.93732007",
+        "snapshot_at": "2018-02-04 21:32:33"
+    },
+    {
+        "id": 2680,
+        "cryptocurrency_id": 1,
+        "price_usd": "104715.64606966",
+        "snapshot_at": "2018-02-04 20:32:33"
+    },
+    {
+        "id": 2681,
+        "cryptocurrency_id": 1,
+        "price_usd": "101330.38358435",
+        "snapshot_at": "2018-02-04 19:32:33"
+    },
+    {
+        "id": 2682,
+        "cryptocurrency_id": 1,
+        "price_usd": "99295.48634734",
+        "snapshot_at": "2018-02-04 18:32:33"
+    },
+    {
+        "id": 2683,
+        "cryptocurrency_id": 1,
+        "price_usd": "96704.10778788",
+        "snapshot_at": "2018-02-04 17:32:33"
+    },
+    {
+        "id": 2684,
+        "cryptocurrency_id": 1,
+        "price_usd": "91941.66262239",
+        "snapshot_at": "2018-02-04 16:32:33"
+    },
+    {
+        "id": 2685,
+        "cryptocurrency_id": 1,
+        "price_usd": "89685.13528363",
+        "snapshot_at": "2018-02-04 15:32:33"
+    },
+    {
+        "id": 2686,
+        "cryptocurrency_id": 1,
+        "price_usd": "87673.27799137",
+        "snapshot_at": "2018-02-04 14:32:33"
+    },
+    {
+        "id": 2687,
+        "cryptocurrency_id": 1,
+        "price_usd": "88880.54355479",
+        "snapshot_at": "2018-02-04 13:32:33"
+    },
+    {
+        "id": 2688,
+        "cryptocurrency_id": 1,
+        "price_usd": "89528.70076435",
+        "snapshot_at": "2018-02-04 12:32:33"
+    },
+    {
+        "id": 2689,
+        "cryptocurrency_id": 1,
+        "price_usd": "89992.85972171",
+        "snapshot_at": "2018-02-04 11:32:33"
+    },
+    {
+        "id": 2690,
+        "cryptocurrency_id": 1,
+        "price_usd": "93122.07949769",
+        "snapshot_at": "2018-02-04 10:32:33"
+    },
+    {
+        "id": 2691,
+        "cryptocurrency_id": 1,
+        "price_usd": "93546.44955960",
+        "snapshot_at": "2018-02-04 09:32:33"
+    },
+    {
+        "id": 2692,
+        "cryptocurrency_id": 1,
+        "price_usd": "89193.55891052",
+        "snapshot_at": "2018-02-04 08:32:33"
+    },
+    {
+        "id": 2693,
+        "cryptocurrency_id": 1,
+        "price_usd": "90197.98408896",
+        "snapshot_at": "2018-02-04 07:32:33"
+    },
+    {
+        "id": 2694,
+        "cryptocurrency_id": 1,
+        "price_usd": "89642.51951812",
+        "snapshot_at": "2018-02-04 06:32:33"
+    },
+    {
+        "id": 2695,
+        "cryptocurrency_id": 1,
+        "price_usd": "93149.77595304",
+        "snapshot_at": "2018-02-04 05:32:33"
+    },
+    {
+        "id": 2696,
+        "cryptocurrency_id": 1,
+        "price_usd": "94703.26873863",
+        "snapshot_at": "2018-02-04 04:32:33"
+    },
+    {
+        "id": 2697,
+        "cryptocurrency_id": 1,
+        "price_usd": "96774.66615531",
+        "snapshot_at": "2018-02-04 03:32:33"
+    },
+    {
+        "id": 2698,
+        "cryptocurrency_id": 1,
+        "price_usd": "98462.46870599",
+        "snapshot_at": "2018-02-04 02:32:33"
+    },
+    {
+        "id": 2699,
+        "cryptocurrency_id": 1,
+        "price_usd": "98526.29336082",
+        "snapshot_at": "2018-02-04 01:32:33"
+    },
+    {
+        "id": 2700,
+        "cryptocurrency_id": 1,
+        "price_usd": "101164.98447454",
+        "snapshot_at": "2018-02-04 00:32:33"
+    },
+    {
+        "id": 2701,
+        "cryptocurrency_id": 1,
+        "price_usd": "97367.44021567",
+        "snapshot_at": "2018-02-03 23:32:33"
+    },
+    {
+        "id": 2702,
+        "cryptocurrency_id": 1,
+        "price_usd": "99406.23958359",
+        "snapshot_at": "2018-02-03 22:32:33"
+    },
+    {
+        "id": 2703,
+        "cryptocurrency_id": 1,
+        "price_usd": "97564.00581099",
+        "snapshot_at": "2018-02-03 21:32:33"
+    },
+    {
+        "id": 2704,
+        "cryptocurrency_id": 1,
+        "price_usd": "98440.39183673",
+        "snapshot_at": "2018-02-03 20:32:33"
+    },
+    {
+        "id": 2705,
+        "cryptocurrency_id": 1,
+        "price_usd": "101197.00818568",
+        "snapshot_at": "2018-02-03 19:32:33"
+    },
+    {
+        "id": 2706,
+        "cryptocurrency_id": 1,
+        "price_usd": "104119.77462624",
+        "snapshot_at": "2018-02-03 18:32:33"
+    },
+    {
+        "id": 2707,
+        "cryptocurrency_id": 1,
+        "price_usd": "104522.64241551",
+        "snapshot_at": "2018-02-03 17:32:33"
+    },
+    {
+        "id": 2708,
+        "cryptocurrency_id": 1,
+        "price_usd": "108727.05394542",
+        "snapshot_at": "2018-02-03 16:32:33"
+    },
+    {
+        "id": 2709,
+        "cryptocurrency_id": 1,
+        "price_usd": "110599.79780610",
+        "snapshot_at": "2018-02-03 15:32:33"
+    },
+    {
+        "id": 2710,
+        "cryptocurrency_id": 1,
+        "price_usd": "114131.75732985",
+        "snapshot_at": "2018-02-03 14:32:33"
+    },
+    {
+        "id": 2711,
+        "cryptocurrency_id": 1,
+        "price_usd": "114126.44437181",
+        "snapshot_at": "2018-02-03 13:32:33"
+    },
+    {
+        "id": 2712,
+        "cryptocurrency_id": 1,
+        "price_usd": "109277.70181298",
+        "snapshot_at": "2018-02-03 12:32:33"
+    },
+    {
+        "id": 2713,
+        "cryptocurrency_id": 1,
+        "price_usd": "109813.88130971",
+        "snapshot_at": "2018-02-03 11:32:33"
+    },
+    {
+        "id": 2714,
+        "cryptocurrency_id": 1,
+        "price_usd": "105768.08313603",
+        "snapshot_at": "2018-02-03 10:32:33"
+    },
+    {
+        "id": 2715,
+        "cryptocurrency_id": 1,
+        "price_usd": "100931.75849273",
+        "snapshot_at": "2018-02-03 09:32:33"
+    },
+    {
+        "id": 2716,
+        "cryptocurrency_id": 1,
+        "price_usd": "100245.59051863",
+        "snapshot_at": "2018-02-03 08:32:33"
+    },
+    {
+        "id": 2717,
+        "cryptocurrency_id": 1,
+        "price_usd": "102555.31959073",
+        "snapshot_at": "2018-02-03 07:32:33"
+    },
+    {
+        "id": 2718,
+        "cryptocurrency_id": 1,
+        "price_usd": "106736.26689974",
+        "snapshot_at": "2018-02-03 06:32:33"
+    },
+    {
+        "id": 2719,
+        "cryptocurrency_id": 1,
+        "price_usd": "108374.04539872",
+        "snapshot_at": "2018-02-03 05:32:33"
+    },
+    {
+        "id": 2720,
+        "cryptocurrency_id": 1,
+        "price_usd": "105173.57199518",
+        "snapshot_at": "2018-02-03 04:32:33"
+    },
+    {
+        "id": 2721,
+        "cryptocurrency_id": 1,
+        "price_usd": "107482.86953296",
+        "snapshot_at": "2018-02-03 03:32:33"
+    },
+    {
+        "id": 2722,
+        "cryptocurrency_id": 1,
+        "price_usd": "111617.72645738",
+        "snapshot_at": "2018-02-03 02:32:33"
+    },
+    {
+        "id": 2723,
+        "cryptocurrency_id": 1,
+        "price_usd": "110437.50775496",
+        "snapshot_at": "2018-02-03 01:32:33"
+    },
+    {
+        "id": 2724,
+        "cryptocurrency_id": 1,
+        "price_usd": "108161.41157424",
+        "snapshot_at": "2018-02-03 00:32:33"
+    },
+    {
+        "id": 2725,
+        "cryptocurrency_id": 1,
+        "price_usd": "111325.78219498",
+        "snapshot_at": "2018-02-02 23:32:33"
+    },
+    {
+        "id": 2726,
+        "cryptocurrency_id": 1,
+        "price_usd": "109407.14283928",
+        "snapshot_at": "2018-02-02 22:32:33"
+    },
+    {
+        "id": 2727,
+        "cryptocurrency_id": 1,
+        "price_usd": "105919.94063531",
+        "snapshot_at": "2018-02-02 21:32:33"
+    },
+    {
+        "id": 2728,
+        "cryptocurrency_id": 1,
+        "price_usd": "107435.18848413",
+        "snapshot_at": "2018-02-02 20:32:33"
+    },
+    {
+        "id": 2729,
+        "cryptocurrency_id": 1,
+        "price_usd": "111633.52812482",
+        "snapshot_at": "2018-02-02 19:32:33"
+    },
+    {
+        "id": 2730,
+        "cryptocurrency_id": 1,
+        "price_usd": "114235.05263780",
+        "snapshot_at": "2018-02-02 18:32:33"
+    },
+    {
+        "id": 2731,
+        "cryptocurrency_id": 1,
+        "price_usd": "109984.22370751",
+        "snapshot_at": "2018-02-02 17:32:33"
+    },
+    {
+        "id": 2732,
+        "cryptocurrency_id": 1,
+        "price_usd": "114145.00129649",
+        "snapshot_at": "2018-02-02 16:32:33"
+    },
+    {
+        "id": 2733,
+        "cryptocurrency_id": 1,
+        "price_usd": "110771.88489812",
+        "snapshot_at": "2018-02-02 15:32:33"
+    },
+    {
+        "id": 2734,
+        "cryptocurrency_id": 1,
+        "price_usd": "106176.87158353",
+        "snapshot_at": "2018-02-02 14:32:33"
+    },
+    {
+        "id": 2735,
+        "cryptocurrency_id": 1,
+        "price_usd": "106356.25056196",
+        "snapshot_at": "2018-02-02 13:32:33"
+    },
+    {
+        "id": 2736,
+        "cryptocurrency_id": 1,
+        "price_usd": "102320.01453691",
+        "snapshot_at": "2018-02-02 12:32:33"
+    },
+    {
+        "id": 2737,
+        "cryptocurrency_id": 1,
+        "price_usd": "100939.64760634",
+        "snapshot_at": "2018-02-02 11:32:33"
+    },
+    {
+        "id": 2738,
+        "cryptocurrency_id": 1,
+        "price_usd": "96629.18066033",
+        "snapshot_at": "2018-02-02 10:32:33"
+    },
+    {
+        "id": 2739,
+        "cryptocurrency_id": 1,
+        "price_usd": "100302.68981548",
+        "snapshot_at": "2018-02-02 09:32:33"
+    },
+    {
+        "id": 2740,
+        "cryptocurrency_id": 1,
+        "price_usd": "102000.67093146",
+        "snapshot_at": "2018-02-02 08:32:33"
+    },
+    {
+        "id": 2741,
+        "cryptocurrency_id": 1,
+        "price_usd": "104222.53443863",
+        "snapshot_at": "2018-02-02 07:32:33"
+    },
+    {
+        "id": 2742,
+        "cryptocurrency_id": 1,
+        "price_usd": "107562.67388459",
+        "snapshot_at": "2018-02-02 06:32:33"
+    },
+    {
+        "id": 2743,
+        "cryptocurrency_id": 1,
+        "price_usd": "111651.15860607",
+        "snapshot_at": "2018-02-02 05:32:33"
+    },
+    {
+        "id": 2744,
+        "cryptocurrency_id": 1,
+        "price_usd": "109425.07325565",
+        "snapshot_at": "2018-02-02 04:32:33"
+    },
+    {
+        "id": 2745,
+        "cryptocurrency_id": 1,
+        "price_usd": "109696.66286940",
+        "snapshot_at": "2018-02-02 03:32:33"
+    },
+    {
+        "id": 2746,
+        "cryptocurrency_id": 1,
+        "price_usd": "109749.39324109",
+        "snapshot_at": "2018-02-02 02:32:33"
+    },
+    {
+        "id": 2747,
+        "cryptocurrency_id": 1,
+        "price_usd": "104860.57372776",
+        "snapshot_at": "2018-02-02 01:32:33"
+    },
+    {
+        "id": 2748,
+        "cryptocurrency_id": 1,
+        "price_usd": "109424.49792218",
+        "snapshot_at": "2018-02-02 00:32:33"
+    },
+    {
+        "id": 2749,
+        "cryptocurrency_id": 1,
+        "price_usd": "105500.51092103",
+        "snapshot_at": "2018-02-01 23:32:33"
+    },
+    {
+        "id": 2750,
+        "cryptocurrency_id": 1,
+        "price_usd": "104767.17259117",
+        "snapshot_at": "2018-02-01 22:32:33"
+    },
+    {
+        "id": 2751,
+        "cryptocurrency_id": 1,
+        "price_usd": "100610.50137139",
+        "snapshot_at": "2018-02-01 21:32:33"
+    },
+    {
+        "id": 2752,
+        "cryptocurrency_id": 1,
+        "price_usd": "104463.85020854",
+        "snapshot_at": "2018-02-01 20:32:33"
+    },
+    {
+        "id": 2753,
+        "cryptocurrency_id": 1,
+        "price_usd": "107338.80680894",
+        "snapshot_at": "2018-02-01 19:32:33"
+    },
+    {
+        "id": 2754,
+        "cryptocurrency_id": 1,
+        "price_usd": "106287.94498460",
+        "snapshot_at": "2018-02-01 18:32:33"
+    },
+    {
+        "id": 2755,
+        "cryptocurrency_id": 1,
+        "price_usd": "107661.11583619",
+        "snapshot_at": "2018-02-01 17:32:33"
+    },
+    {
+        "id": 2756,
+        "cryptocurrency_id": 1,
+        "price_usd": "111732.00849594",
+        "snapshot_at": "2018-02-01 16:32:33"
+    },
+    {
+        "id": 2757,
+        "cryptocurrency_id": 1,
+        "price_usd": "108761.41296722",
+        "snapshot_at": "2018-02-01 15:32:33"
+    },
+    {
+        "id": 2758,
+        "cryptocurrency_id": 1,
+        "price_usd": "107095.49947689",
+        "snapshot_at": "2018-02-01 14:32:33"
+    },
+    {
+        "id": 2759,
+        "cryptocurrency_id": 1,
+        "price_usd": "110840.29202950",
+        "snapshot_at": "2018-02-01 13:32:33"
+    },
+    {
+        "id": 2760,
+        "cryptocurrency_id": 1,
+        "price_usd": "106914.28659174",
+        "snapshot_at": "2018-02-01 12:32:33"
+    },
+    {
+        "id": 2761,
+        "cryptocurrency_id": 1,
+        "price_usd": "103941.81369999",
+        "snapshot_at": "2018-02-01 11:32:33"
+    },
+    {
+        "id": 2762,
+        "cryptocurrency_id": 1,
+        "price_usd": "99750.68211259",
+        "snapshot_at": "2018-02-01 10:32:33"
+    },
+    {
+        "id": 2763,
+        "cryptocurrency_id": 1,
+        "price_usd": "98329.81127735",
+        "snapshot_at": "2018-02-01 09:32:33"
+    },
+    {
+        "id": 2764,
+        "cryptocurrency_id": 1,
+        "price_usd": "99246.69947607",
+        "snapshot_at": "2018-02-01 08:32:33"
+    },
+    {
+        "id": 2765,
+        "cryptocurrency_id": 1,
+        "price_usd": "98533.42254938",
+        "snapshot_at": "2018-02-01 07:32:33"
+    },
+    {
+        "id": 2766,
+        "cryptocurrency_id": 1,
+        "price_usd": "99133.23000505",
+        "snapshot_at": "2018-02-01 06:32:33"
+    },
+    {
+        "id": 2767,
+        "cryptocurrency_id": 1,
+        "price_usd": "97540.34477365",
+        "snapshot_at": "2018-02-01 05:32:33"
+    },
+    {
+        "id": 2768,
+        "cryptocurrency_id": 1,
+        "price_usd": "96700.45311518",
+        "snapshot_at": "2018-02-01 04:32:33"
+    },
+    {
+        "id": 2769,
+        "cryptocurrency_id": 1,
+        "price_usd": "101532.41096418",
+        "snapshot_at": "2018-02-01 03:32:33"
+    },
+    {
+        "id": 2770,
+        "cryptocurrency_id": 1,
+        "price_usd": "102171.20819298",
+        "snapshot_at": "2018-02-01 02:32:33"
+    },
+    {
+        "id": 2771,
+        "cryptocurrency_id": 1,
+        "price_usd": "104883.45575070",
+        "snapshot_at": "2018-02-01 01:32:33"
+    },
+    {
+        "id": 2772,
+        "cryptocurrency_id": 1,
+        "price_usd": "105642.85644224",
+        "snapshot_at": "2018-02-01 00:32:33"
+    },
+    {
+        "id": 2773,
+        "cryptocurrency_id": 1,
+        "price_usd": "109833.91476660",
+        "snapshot_at": "2018-01-31 23:32:33"
+    },
+    {
+        "id": 2774,
+        "cryptocurrency_id": 1,
+        "price_usd": "111944.81190309",
+        "snapshot_at": "2018-01-31 22:32:33"
+    },
+    {
+        "id": 2775,
+        "cryptocurrency_id": 1,
+        "price_usd": "108943.35730430",
+        "snapshot_at": "2018-01-31 21:32:33"
+    },
+    {
+        "id": 2776,
+        "cryptocurrency_id": 1,
+        "price_usd": "111917.84680652",
+        "snapshot_at": "2018-01-31 20:32:33"
+    },
+    {
+        "id": 2777,
+        "cryptocurrency_id": 1,
+        "price_usd": "106543.71113991",
+        "snapshot_at": "2018-01-31 19:32:33"
+    },
+    {
+        "id": 2778,
+        "cryptocurrency_id": 1,
+        "price_usd": "101848.88213410",
+        "snapshot_at": "2018-01-31 18:32:33"
+    },
+    {
+        "id": 2779,
+        "cryptocurrency_id": 1,
+        "price_usd": "106121.74321978",
+        "snapshot_at": "2018-01-31 17:32:33"
+    },
+    {
+        "id": 2780,
+        "cryptocurrency_id": 1,
+        "price_usd": "101067.05674800",
+        "snapshot_at": "2018-01-31 16:32:33"
+    },
+    {
+        "id": 2781,
+        "cryptocurrency_id": 1,
+        "price_usd": "105066.33183492",
+        "snapshot_at": "2018-01-31 15:32:33"
+    },
+    {
+        "id": 2782,
+        "cryptocurrency_id": 1,
+        "price_usd": "106869.42842330",
+        "snapshot_at": "2018-01-31 14:32:33"
+    },
+    {
+        "id": 2783,
+        "cryptocurrency_id": 1,
+        "price_usd": "105436.23729539",
+        "snapshot_at": "2018-01-31 13:32:33"
+    },
+    {
+        "id": 2784,
+        "cryptocurrency_id": 1,
+        "price_usd": "104550.98875282",
+        "snapshot_at": "2018-01-31 12:32:33"
+    },
+    {
+        "id": 2785,
+        "cryptocurrency_id": 1,
+        "price_usd": "106384.17514975",
+        "snapshot_at": "2018-01-31 11:32:33"
+    },
+    {
+        "id": 2786,
+        "cryptocurrency_id": 1,
+        "price_usd": "109273.87082909",
+        "snapshot_at": "2018-01-31 10:32:33"
+    },
+    {
+        "id": 2787,
+        "cryptocurrency_id": 1,
+        "price_usd": "110901.06154725",
+        "snapshot_at": "2018-01-31 09:32:33"
+    },
+    {
+        "id": 2788,
+        "cryptocurrency_id": 1,
+        "price_usd": "107183.30430174",
+        "snapshot_at": "2018-01-31 08:32:33"
+    },
+    {
+        "id": 2789,
+        "cryptocurrency_id": 1,
+        "price_usd": "111192.12791989",
+        "snapshot_at": "2018-01-31 07:32:33"
+    },
+    {
+        "id": 2790,
+        "cryptocurrency_id": 1,
+        "price_usd": "109597.36498313",
+        "snapshot_at": "2018-01-31 06:32:33"
+    },
+    {
+        "id": 2791,
+        "cryptocurrency_id": 1,
+        "price_usd": "105187.51357602",
+        "snapshot_at": "2018-01-31 05:32:33"
+    },
+    {
+        "id": 2792,
+        "cryptocurrency_id": 1,
+        "price_usd": "103493.14016252",
+        "snapshot_at": "2018-01-31 04:32:33"
+    },
+    {
+        "id": 2793,
+        "cryptocurrency_id": 1,
+        "price_usd": "105910.61301636",
+        "snapshot_at": "2018-01-31 03:32:33"
+    },
+    {
+        "id": 2794,
+        "cryptocurrency_id": 1,
+        "price_usd": "104884.82838960",
+        "snapshot_at": "2018-01-31 02:32:33"
+    },
+    {
+        "id": 2795,
+        "cryptocurrency_id": 1,
+        "price_usd": "107775.10711347",
+        "snapshot_at": "2018-01-31 01:32:33"
+    },
+    {
+        "id": 2796,
+        "cryptocurrency_id": 1,
+        "price_usd": "105774.34006487",
+        "snapshot_at": "2018-01-31 00:32:33"
+    },
+    {
+        "id": 2797,
+        "cryptocurrency_id": 1,
+        "price_usd": "102811.92583642",
+        "snapshot_at": "2018-01-30 23:32:33"
+    },
+    {
+        "id": 2798,
+        "cryptocurrency_id": 1,
+        "price_usd": "104445.43983574",
+        "snapshot_at": "2018-01-30 22:32:33"
+    },
+    {
+        "id": 2799,
+        "cryptocurrency_id": 1,
+        "price_usd": "108410.97836025",
+        "snapshot_at": "2018-01-30 21:32:33"
+    },
+    {
+        "id": 2800,
+        "cryptocurrency_id": 1,
+        "price_usd": "103273.64024093",
+        "snapshot_at": "2018-01-30 20:32:33"
+    },
+    {
+        "id": 2801,
+        "cryptocurrency_id": 1,
+        "price_usd": "102958.74260765",
+        "snapshot_at": "2018-01-30 19:32:33"
+    },
+    {
+        "id": 2802,
+        "cryptocurrency_id": 1,
+        "price_usd": "105859.36862520",
+        "snapshot_at": "2018-01-30 18:32:33"
+    },
+    {
+        "id": 2803,
+        "cryptocurrency_id": 1,
+        "price_usd": "104098.96298601",
+        "snapshot_at": "2018-01-30 17:32:33"
+    },
+    {
+        "id": 2804,
+        "cryptocurrency_id": 1,
+        "price_usd": "101947.11160943",
+        "snapshot_at": "2018-01-30 16:32:33"
+    },
+    {
+        "id": 2805,
+        "cryptocurrency_id": 1,
+        "price_usd": "103225.21863966",
+        "snapshot_at": "2018-01-30 15:32:33"
+    },
+    {
+        "id": 2806,
+        "cryptocurrency_id": 1,
+        "price_usd": "99485.13663478",
+        "snapshot_at": "2018-01-30 14:32:33"
+    },
+    {
+        "id": 2807,
+        "cryptocurrency_id": 1,
+        "price_usd": "102106.27318943",
+        "snapshot_at": "2018-01-30 13:32:33"
+    },
+    {
+        "id": 2808,
+        "cryptocurrency_id": 1,
+        "price_usd": "100687.75483854",
+        "snapshot_at": "2018-01-30 12:32:33"
+    },
+    {
+        "id": 2809,
+        "cryptocurrency_id": 1,
+        "price_usd": "102555.52503340",
+        "snapshot_at": "2018-01-30 11:32:33"
+    },
+    {
+        "id": 2810,
+        "cryptocurrency_id": 1,
+        "price_usd": "100501.80305067",
+        "snapshot_at": "2018-01-30 10:32:33"
+    },
+    {
+        "id": 2811,
+        "cryptocurrency_id": 1,
+        "price_usd": "103027.90361986",
+        "snapshot_at": "2018-01-30 09:32:33"
+    },
+    {
+        "id": 2812,
+        "cryptocurrency_id": 1,
+        "price_usd": "100098.45352172",
+        "snapshot_at": "2018-01-30 08:32:33"
+    },
+    {
+        "id": 2813,
+        "cryptocurrency_id": 1,
+        "price_usd": "102908.98278937",
+        "snapshot_at": "2018-01-30 07:32:33"
+    },
+    {
+        "id": 2814,
+        "cryptocurrency_id": 1,
+        "price_usd": "105958.22470525",
+        "snapshot_at": "2018-01-30 06:32:33"
+    },
+    {
+        "id": 2815,
+        "cryptocurrency_id": 1,
+        "price_usd": "104013.90018925",
+        "snapshot_at": "2018-01-30 05:32:33"
+    },
+    {
+        "id": 2816,
+        "cryptocurrency_id": 1,
+        "price_usd": "105849.10807710",
+        "snapshot_at": "2018-01-30 04:32:33"
+    },
+    {
+        "id": 2817,
+        "cryptocurrency_id": 1,
+        "price_usd": "111140.94938044",
+        "snapshot_at": "2018-01-30 03:32:33"
+    },
+    {
+        "id": 2818,
+        "cryptocurrency_id": 1,
+        "price_usd": "109897.54163065",
+        "snapshot_at": "2018-01-30 02:32:33"
+    },
+    {
+        "id": 2819,
+        "cryptocurrency_id": 1,
+        "price_usd": "106534.46314704",
+        "snapshot_at": "2018-01-30 01:32:33"
+    },
+    {
+        "id": 2820,
+        "cryptocurrency_id": 1,
+        "price_usd": "105305.19124827",
+        "snapshot_at": "2018-01-30 00:32:33"
+    },
+    {
+        "id": 2821,
+        "cryptocurrency_id": 1,
+        "price_usd": "100049.55881239",
+        "snapshot_at": "2018-01-29 23:32:33"
+    },
+    {
+        "id": 2822,
+        "cryptocurrency_id": 1,
+        "price_usd": "97563.65836669",
+        "snapshot_at": "2018-01-29 22:32:33"
+    },
+    {
+        "id": 2823,
+        "cryptocurrency_id": 1,
+        "price_usd": "96943.97087775",
+        "snapshot_at": "2018-01-29 21:32:33"
+    },
+    {
+        "id": 2824,
+        "cryptocurrency_id": 1,
+        "price_usd": "92338.49791777",
+        "snapshot_at": "2018-01-29 20:32:33"
+    },
+    {
+        "id": 2825,
+        "cryptocurrency_id": 1,
+        "price_usd": "91530.23119975",
+        "snapshot_at": "2018-01-29 19:32:33"
+    },
+    {
+        "id": 2826,
+        "cryptocurrency_id": 1,
+        "price_usd": "90249.62510362",
+        "snapshot_at": "2018-01-29 18:32:33"
+    },
+    {
+        "id": 2827,
+        "cryptocurrency_id": 1,
+        "price_usd": "88260.20678505",
+        "snapshot_at": "2018-01-29 17:32:33"
+    },
+    {
+        "id": 2828,
+        "cryptocurrency_id": 1,
+        "price_usd": "84289.37426079",
+        "snapshot_at": "2018-01-29 16:32:33"
+    },
+    {
+        "id": 2829,
+        "cryptocurrency_id": 1,
+        "price_usd": "82136.78512373",
+        "snapshot_at": "2018-01-29 15:32:33"
+    },
+    {
+        "id": 2830,
+        "cryptocurrency_id": 1,
+        "price_usd": "81383.32771994",
+        "snapshot_at": "2018-01-29 14:32:33"
+    },
+    {
+        "id": 2831,
+        "cryptocurrency_id": 1,
+        "price_usd": "83655.47231410",
+        "snapshot_at": "2018-01-29 13:32:33"
+    },
+    {
+        "id": 2832,
+        "cryptocurrency_id": 1,
+        "price_usd": "86275.84890517",
+        "snapshot_at": "2018-01-29 12:32:33"
+    },
+    {
+        "id": 2833,
+        "cryptocurrency_id": 1,
+        "price_usd": "87459.36388677",
+        "snapshot_at": "2018-01-29 11:32:33"
+    },
+    {
+        "id": 2834,
+        "cryptocurrency_id": 1,
+        "price_usd": "87049.80022820",
+        "snapshot_at": "2018-01-29 10:32:33"
+    },
+    {
+        "id": 2835,
+        "cryptocurrency_id": 1,
+        "price_usd": "91384.91927481",
+        "snapshot_at": "2018-01-29 09:32:33"
+    },
+    {
+        "id": 2836,
+        "cryptocurrency_id": 1,
+        "price_usd": "87600.93049266",
+        "snapshot_at": "2018-01-29 08:32:33"
+    },
+    {
+        "id": 2837,
+        "cryptocurrency_id": 1,
+        "price_usd": "91011.49383223",
+        "snapshot_at": "2018-01-29 07:32:33"
+    },
+    {
+        "id": 2838,
+        "cryptocurrency_id": 1,
+        "price_usd": "89141.76950978",
+        "snapshot_at": "2018-01-29 06:32:33"
+    },
+    {
+        "id": 2839,
+        "cryptocurrency_id": 1,
+        "price_usd": "85739.17836796",
+        "snapshot_at": "2018-01-29 05:32:33"
+    },
+    {
+        "id": 2840,
+        "cryptocurrency_id": 1,
+        "price_usd": "83472.67582900",
+        "snapshot_at": "2018-01-29 04:32:33"
+    },
+    {
+        "id": 2841,
+        "cryptocurrency_id": 1,
+        "price_usd": "80113.80787461",
+        "snapshot_at": "2018-01-29 03:32:33"
+    },
+    {
+        "id": 2842,
+        "cryptocurrency_id": 1,
+        "price_usd": "83547.78456474",
+        "snapshot_at": "2018-01-29 02:32:33"
+    },
+    {
+        "id": 2843,
+        "cryptocurrency_id": 1,
+        "price_usd": "84781.82044510",
+        "snapshot_at": "2018-01-29 01:32:33"
+    },
+    {
+        "id": 2844,
+        "cryptocurrency_id": 1,
+        "price_usd": "83454.05348641",
+        "snapshot_at": "2018-01-29 00:32:33"
+    },
+    {
+        "id": 2845,
+        "cryptocurrency_id": 1,
+        "price_usd": "83814.01386241",
+        "snapshot_at": "2018-01-28 23:32:33"
+    },
+    {
+        "id": 2846,
+        "cryptocurrency_id": 1,
+        "price_usd": "81351.04770339",
+        "snapshot_at": "2018-01-28 22:32:33"
+    },
+    {
+        "id": 2847,
+        "cryptocurrency_id": 1,
+        "price_usd": "77439.75246729",
+        "snapshot_at": "2018-01-28 21:32:33"
+    },
+    {
+        "id": 2848,
+        "cryptocurrency_id": 1,
+        "price_usd": "75886.91098266",
+        "snapshot_at": "2018-01-28 20:32:33"
+    },
+    {
+        "id": 2849,
+        "cryptocurrency_id": 1,
+        "price_usd": "77829.65994934",
+        "snapshot_at": "2018-01-28 19:32:33"
+    },
+    {
+        "id": 2850,
+        "cryptocurrency_id": 1,
+        "price_usd": "78576.62087478",
+        "snapshot_at": "2018-01-28 18:32:33"
+    },
+    {
+        "id": 2851,
+        "cryptocurrency_id": 1,
+        "price_usd": "75352.79646975",
+        "snapshot_at": "2018-01-28 17:32:33"
+    },
+    {
+        "id": 2852,
+        "cryptocurrency_id": 1,
+        "price_usd": "78909.05455368",
+        "snapshot_at": "2018-01-28 16:32:33"
+    },
+    {
+        "id": 2853,
+        "cryptocurrency_id": 1,
+        "price_usd": "79588.43119195",
+        "snapshot_at": "2018-01-28 15:32:33"
+    },
+    {
+        "id": 2854,
+        "cryptocurrency_id": 1,
+        "price_usd": "78916.97168895",
+        "snapshot_at": "2018-01-28 14:32:33"
+    },
+    {
+        "id": 2855,
+        "cryptocurrency_id": 1,
+        "price_usd": "82085.43076462",
+        "snapshot_at": "2018-01-28 13:32:33"
+    },
+    {
+        "id": 2856,
+        "cryptocurrency_id": 1,
+        "price_usd": "84345.68791847",
+        "snapshot_at": "2018-01-28 12:32:33"
+    },
+    {
+        "id": 2857,
+        "cryptocurrency_id": 1,
+        "price_usd": "84129.80588868",
+        "snapshot_at": "2018-01-28 11:32:33"
+    },
+    {
+        "id": 2858,
+        "cryptocurrency_id": 1,
+        "price_usd": "81820.45099930",
+        "snapshot_at": "2018-01-28 10:32:33"
+    },
+    {
+        "id": 2859,
+        "cryptocurrency_id": 1,
+        "price_usd": "80927.87859651",
+        "snapshot_at": "2018-01-28 09:32:33"
+    },
+    {
+        "id": 2860,
+        "cryptocurrency_id": 1,
+        "price_usd": "81130.88695947",
+        "snapshot_at": "2018-01-28 08:32:33"
+    },
+    {
+        "id": 2861,
+        "cryptocurrency_id": 1,
+        "price_usd": "77987.76737805",
+        "snapshot_at": "2018-01-28 07:32:33"
+    },
+    {
+        "id": 2862,
+        "cryptocurrency_id": 1,
+        "price_usd": "79465.93474797",
+        "snapshot_at": "2018-01-28 06:32:33"
+    },
+    {
+        "id": 2863,
+        "cryptocurrency_id": 1,
+        "price_usd": "77872.68980846",
+        "snapshot_at": "2018-01-28 05:32:33"
+    },
+    {
+        "id": 2864,
+        "cryptocurrency_id": 1,
+        "price_usd": "78413.72109416",
+        "snapshot_at": "2018-01-28 04:32:33"
+    },
+    {
+        "id": 2865,
+        "cryptocurrency_id": 1,
+        "price_usd": "80292.47392410",
+        "snapshot_at": "2018-01-28 03:32:33"
+    },
+    {
+        "id": 2866,
+        "cryptocurrency_id": 1,
+        "price_usd": "76283.55877755",
+        "snapshot_at": "2018-01-28 02:32:33"
+    },
+    {
+        "id": 2867,
+        "cryptocurrency_id": 1,
+        "price_usd": "74989.05988055",
+        "snapshot_at": "2018-01-28 01:32:33"
+    },
+    {
+        "id": 2868,
+        "cryptocurrency_id": 1,
+        "price_usd": "72900.89014756",
+        "snapshot_at": "2018-01-28 00:32:33"
+    },
+    {
+        "id": 2869,
+        "cryptocurrency_id": 1,
+        "price_usd": "70847.97102677",
+        "snapshot_at": "2018-01-27 23:32:33"
+    },
+    {
+        "id": 2870,
+        "cryptocurrency_id": 1,
+        "price_usd": "69004.28434796",
+        "snapshot_at": "2018-01-27 22:32:33"
+    },
+    {
+        "id": 2871,
+        "cryptocurrency_id": 1,
+        "price_usd": "66073.06521249",
+        "snapshot_at": "2018-01-27 21:32:33"
+    },
+    {
+        "id": 2872,
+        "cryptocurrency_id": 1,
+        "price_usd": "66401.93842548",
+        "snapshot_at": "2018-01-27 20:32:33"
+    },
+    {
+        "id": 2873,
+        "cryptocurrency_id": 1,
+        "price_usd": "64519.68918648",
+        "snapshot_at": "2018-01-27 19:32:33"
+    },
+    {
+        "id": 2874,
+        "cryptocurrency_id": 1,
+        "price_usd": "67536.99614612",
+        "snapshot_at": "2018-01-27 18:32:33"
+    },
+    {
+        "id": 2875,
+        "cryptocurrency_id": 1,
+        "price_usd": "67918.44186116",
+        "snapshot_at": "2018-01-27 17:32:33"
+    },
+    {
+        "id": 2876,
+        "cryptocurrency_id": 1,
+        "price_usd": "65854.13624892",
+        "snapshot_at": "2018-01-27 16:32:33"
+    },
+    {
+        "id": 2877,
+        "cryptocurrency_id": 1,
+        "price_usd": "66999.21281403",
+        "snapshot_at": "2018-01-27 15:32:33"
+    },
+    {
+        "id": 2878,
+        "cryptocurrency_id": 1,
+        "price_usd": "64206.01375004",
+        "snapshot_at": "2018-01-27 14:32:33"
+    },
+    {
+        "id": 2879,
+        "cryptocurrency_id": 1,
+        "price_usd": "66249.63490447",
+        "snapshot_at": "2018-01-27 13:32:33"
+    },
+    {
+        "id": 2880,
+        "cryptocurrency_id": 1,
+        "price_usd": "68706.56792185",
+        "snapshot_at": "2018-01-27 12:32:33"
+    },
+    {
+        "id": 2881,
+        "cryptocurrency_id": 1,
+        "price_usd": "71486.72058240",
+        "snapshot_at": "2018-01-27 11:32:33"
+    },
+    {
+        "id": 2882,
+        "cryptocurrency_id": 1,
+        "price_usd": "69834.55908969",
+        "snapshot_at": "2018-01-27 10:32:33"
+    },
+    {
+        "id": 2883,
+        "cryptocurrency_id": 1,
+        "price_usd": "72050.72438682",
+        "snapshot_at": "2018-01-27 09:32:33"
+    },
+    {
+        "id": 2884,
+        "cryptocurrency_id": 1,
+        "price_usd": "68655.42843190",
+        "snapshot_at": "2018-01-27 08:32:33"
+    },
+    {
+        "id": 2885,
+        "cryptocurrency_id": 1,
+        "price_usd": "71875.90538062",
+        "snapshot_at": "2018-01-27 07:32:33"
+    },
+    {
+        "id": 2886,
+        "cryptocurrency_id": 1,
+        "price_usd": "72163.67830009",
+        "snapshot_at": "2018-01-27 06:32:33"
+    },
+    {
+        "id": 2887,
+        "cryptocurrency_id": 1,
+        "price_usd": "73062.79923616",
+        "snapshot_at": "2018-01-27 05:32:33"
+    },
+    {
+        "id": 2888,
+        "cryptocurrency_id": 1,
+        "price_usd": "73350.37569987",
+        "snapshot_at": "2018-01-27 04:32:33"
+    },
+    {
+        "id": 2889,
+        "cryptocurrency_id": 1,
+        "price_usd": "69856.48719745",
+        "snapshot_at": "2018-01-27 03:32:33"
+    },
+    {
+        "id": 2890,
+        "cryptocurrency_id": 1,
+        "price_usd": "67264.28761000",
+        "snapshot_at": "2018-01-27 02:32:33"
+    },
+    {
+        "id": 2891,
+        "cryptocurrency_id": 1,
+        "price_usd": "68631.55859159",
+        "snapshot_at": "2018-01-27 01:32:33"
+    },
+    {
+        "id": 2892,
+        "cryptocurrency_id": 1,
+        "price_usd": "70836.63189413",
+        "snapshot_at": "2018-01-27 00:32:33"
+    },
+    {
+        "id": 2893,
+        "cryptocurrency_id": 1,
+        "price_usd": "69795.68282692",
+        "snapshot_at": "2018-01-26 23:32:33"
+    },
+    {
+        "id": 2894,
+        "cryptocurrency_id": 1,
+        "price_usd": "70354.37723016",
+        "snapshot_at": "2018-01-26 22:32:33"
+    },
+    {
+        "id": 2895,
+        "cryptocurrency_id": 1,
+        "price_usd": "69161.38556384",
+        "snapshot_at": "2018-01-26 21:32:33"
+    },
+    {
+        "id": 2896,
+        "cryptocurrency_id": 1,
+        "price_usd": "72277.88418997",
+        "snapshot_at": "2018-01-26 20:32:33"
+    },
+    {
+        "id": 2897,
+        "cryptocurrency_id": 1,
+        "price_usd": "69474.07453568",
+        "snapshot_at": "2018-01-26 19:32:33"
+    },
+    {
+        "id": 2898,
+        "cryptocurrency_id": 1,
+        "price_usd": "70241.79232127",
+        "snapshot_at": "2018-01-26 18:32:33"
+    },
+    {
+        "id": 2899,
+        "cryptocurrency_id": 1,
+        "price_usd": "70604.68283728",
+        "snapshot_at": "2018-01-26 17:32:33"
+    },
+    {
+        "id": 2900,
+        "cryptocurrency_id": 1,
+        "price_usd": "71144.56513491",
+        "snapshot_at": "2018-01-26 16:32:33"
+    },
+    {
+        "id": 2901,
+        "cryptocurrency_id": 1,
+        "price_usd": "70570.76014138",
+        "snapshot_at": "2018-01-26 15:32:33"
+    },
+    {
+        "id": 2902,
+        "cryptocurrency_id": 1,
+        "price_usd": "69047.87277594",
+        "snapshot_at": "2018-01-26 14:32:33"
+    },
+    {
+        "id": 2903,
+        "cryptocurrency_id": 1,
+        "price_usd": "67414.95098924",
+        "snapshot_at": "2018-01-26 13:32:33"
+    },
+    {
+        "id": 2904,
+        "cryptocurrency_id": 1,
+        "price_usd": "70319.55565805",
+        "snapshot_at": "2018-01-26 12:32:33"
+    },
+    {
+        "id": 2905,
+        "cryptocurrency_id": 1,
+        "price_usd": "72100.64222401",
+        "snapshot_at": "2018-01-26 11:32:33"
+    },
+    {
+        "id": 2906,
+        "cryptocurrency_id": 1,
+        "price_usd": "68999.96768624",
+        "snapshot_at": "2018-01-26 10:32:33"
+    },
+    {
+        "id": 2907,
+        "cryptocurrency_id": 1,
+        "price_usd": "69165.21154967",
+        "snapshot_at": "2018-01-26 09:32:33"
+    },
+    {
+        "id": 2908,
+        "cryptocurrency_id": 1,
+        "price_usd": "67605.41723804",
+        "snapshot_at": "2018-01-26 08:32:33"
+    },
+    {
+        "id": 2909,
+        "cryptocurrency_id": 1,
+        "price_usd": "67347.06862276",
+        "snapshot_at": "2018-01-26 07:32:33"
+    },
+    {
+        "id": 2910,
+        "cryptocurrency_id": 1,
+        "price_usd": "64793.31594518",
+        "snapshot_at": "2018-01-26 06:32:33"
+    },
+    {
+        "id": 2911,
+        "cryptocurrency_id": 1,
+        "price_usd": "64785.12454289",
+        "snapshot_at": "2018-01-26 05:32:33"
+    },
+    {
+        "id": 2912,
+        "cryptocurrency_id": 1,
+        "price_usd": "61785.86075030",
+        "snapshot_at": "2018-01-26 04:32:33"
+    },
+    {
+        "id": 2913,
+        "cryptocurrency_id": 1,
+        "price_usd": "63125.37185968",
+        "snapshot_at": "2018-01-26 03:32:33"
+    },
+    {
+        "id": 2914,
+        "cryptocurrency_id": 1,
+        "price_usd": "63006.64467934",
+        "snapshot_at": "2018-01-26 02:32:33"
+    },
+    {
+        "id": 2915,
+        "cryptocurrency_id": 1,
+        "price_usd": "65639.26074354",
+        "snapshot_at": "2018-01-26 01:32:33"
+    },
+    {
+        "id": 2916,
+        "cryptocurrency_id": 1,
+        "price_usd": "65767.76913932",
+        "snapshot_at": "2018-01-26 00:32:33"
+    },
+    {
+        "id": 2917,
+        "cryptocurrency_id": 1,
+        "price_usd": "66553.27904505",
+        "snapshot_at": "2018-01-25 23:32:33"
+    },
+    {
+        "id": 2918,
+        "cryptocurrency_id": 1,
+        "price_usd": "66320.60818316",
+        "snapshot_at": "2018-01-25 22:32:33"
+    },
+    {
+        "id": 2919,
+        "cryptocurrency_id": 1,
+        "price_usd": "64291.20916779",
+        "snapshot_at": "2018-01-25 21:32:33"
+    },
+    {
+        "id": 2920,
+        "cryptocurrency_id": 1,
+        "price_usd": "62699.95757347",
+        "snapshot_at": "2018-01-25 20:32:33"
+    },
+    {
+        "id": 2921,
+        "cryptocurrency_id": 1,
+        "price_usd": "64364.82102234",
+        "snapshot_at": "2018-01-25 19:32:33"
+    },
+    {
+        "id": 2922,
+        "cryptocurrency_id": 1,
+        "price_usd": "66302.92996276",
+        "snapshot_at": "2018-01-25 18:32:33"
+    },
+    {
+        "id": 2923,
+        "cryptocurrency_id": 1,
+        "price_usd": "68772.20109030",
+        "snapshot_at": "2018-01-25 17:32:33"
+    },
+    {
+        "id": 2924,
+        "cryptocurrency_id": 1,
+        "price_usd": "70724.09393565",
+        "snapshot_at": "2018-01-25 16:32:33"
+    },
+    {
+        "id": 2925,
+        "cryptocurrency_id": 1,
+        "price_usd": "70446.92055976",
+        "snapshot_at": "2018-01-25 15:32:33"
+    },
+    {
+        "id": 2926,
+        "cryptocurrency_id": 1,
+        "price_usd": "71535.47320305",
+        "snapshot_at": "2018-01-25 14:32:33"
+    },
+    {
+        "id": 2927,
+        "cryptocurrency_id": 1,
+        "price_usd": "68567.26551823",
+        "snapshot_at": "2018-01-25 13:32:33"
+    },
+    {
+        "id": 2928,
+        "cryptocurrency_id": 1,
+        "price_usd": "66408.47055845",
+        "snapshot_at": "2018-01-25 12:32:33"
+    },
+    {
+        "id": 2929,
+        "cryptocurrency_id": 1,
+        "price_usd": "68922.37699190",
+        "snapshot_at": "2018-01-25 11:32:33"
+    },
+    {
+        "id": 2930,
+        "cryptocurrency_id": 1,
+        "price_usd": "67422.18512002",
+        "snapshot_at": "2018-01-25 10:32:33"
+    },
+    {
+        "id": 2931,
+        "cryptocurrency_id": 1,
+        "price_usd": "65350.21413591",
+        "snapshot_at": "2018-01-25 09:32:33"
+    },
+    {
+        "id": 2932,
+        "cryptocurrency_id": 1,
+        "price_usd": "65237.03371498",
+        "snapshot_at": "2018-01-25 08:32:33"
+    },
+    {
+        "id": 2933,
+        "cryptocurrency_id": 1,
+        "price_usd": "66299.18173141",
+        "snapshot_at": "2018-01-25 07:32:33"
+    },
+    {
+        "id": 2934,
+        "cryptocurrency_id": 1,
+        "price_usd": "63230.22404289",
+        "snapshot_at": "2018-01-25 06:32:33"
+    },
+    {
+        "id": 2935,
+        "cryptocurrency_id": 1,
+        "price_usd": "64145.79148614",
+        "snapshot_at": "2018-01-25 05:32:33"
+    },
+    {
+        "id": 2936,
+        "cryptocurrency_id": 1,
+        "price_usd": "61279.22503812",
+        "snapshot_at": "2018-01-25 04:32:33"
+    },
+    {
+        "id": 2937,
+        "cryptocurrency_id": 1,
+        "price_usd": "63176.82167630",
+        "snapshot_at": "2018-01-25 03:32:33"
+    },
+    {
+        "id": 2938,
+        "cryptocurrency_id": 1,
+        "price_usd": "63231.39726323",
+        "snapshot_at": "2018-01-25 02:32:33"
+    },
+    {
+        "id": 2939,
+        "cryptocurrency_id": 1,
+        "price_usd": "60911.79302940",
+        "snapshot_at": "2018-01-25 01:32:33"
+    },
+    {
+        "id": 2940,
+        "cryptocurrency_id": 1,
+        "price_usd": "60742.43018844",
+        "snapshot_at": "2018-01-25 00:32:33"
+    },
+    {
+        "id": 2941,
+        "cryptocurrency_id": 1,
+        "price_usd": "58998.00854000",
+        "snapshot_at": "2018-01-24 23:32:33"
+    },
+    {
+        "id": 2942,
+        "cryptocurrency_id": 1,
+        "price_usd": "59442.88022056",
+        "snapshot_at": "2018-01-24 22:32:33"
+    },
+    {
+        "id": 2943,
+        "cryptocurrency_id": 1,
+        "price_usd": "59517.33455907",
+        "snapshot_at": "2018-01-24 21:32:33"
+    },
+    {
+        "id": 2944,
+        "cryptocurrency_id": 1,
+        "price_usd": "61662.73047275",
+        "snapshot_at": "2018-01-24 20:32:33"
+    },
+    {
+        "id": 2945,
+        "cryptocurrency_id": 1,
+        "price_usd": "64115.73757069",
+        "snapshot_at": "2018-01-24 19:32:33"
+    },
+    {
+        "id": 2946,
+        "cryptocurrency_id": 1,
+        "price_usd": "60911.63773068",
+        "snapshot_at": "2018-01-24 18:32:33"
+    },
+    {
+        "id": 2947,
+        "cryptocurrency_id": 1,
+        "price_usd": "61586.35954848",
+        "snapshot_at": "2018-01-24 17:32:33"
+    },
+    {
+        "id": 2948,
+        "cryptocurrency_id": 1,
+        "price_usd": "59286.71222120",
+        "snapshot_at": "2018-01-24 16:32:33"
+    },
+    {
+        "id": 2949,
+        "cryptocurrency_id": 1,
+        "price_usd": "58344.02307919",
+        "snapshot_at": "2018-01-24 15:32:33"
+    },
+    {
+        "id": 2950,
+        "cryptocurrency_id": 1,
+        "price_usd": "58486.33188765",
+        "snapshot_at": "2018-01-24 14:32:33"
+    },
+    {
+        "id": 2951,
+        "cryptocurrency_id": 1,
+        "price_usd": "57786.87083602",
+        "snapshot_at": "2018-01-24 13:32:33"
+    },
+    {
+        "id": 2952,
+        "cryptocurrency_id": 1,
+        "price_usd": "59318.09751829",
+        "snapshot_at": "2018-01-24 12:32:33"
+    },
+    {
+        "id": 2953,
+        "cryptocurrency_id": 1,
+        "price_usd": "61553.76840947",
+        "snapshot_at": "2018-01-24 11:32:33"
+    },
+    {
+        "id": 2954,
+        "cryptocurrency_id": 1,
+        "price_usd": "59739.25808407",
+        "snapshot_at": "2018-01-24 10:32:33"
+    },
+    {
+        "id": 2955,
+        "cryptocurrency_id": 1,
+        "price_usd": "62334.60742932",
+        "snapshot_at": "2018-01-24 09:32:33"
+    },
+    {
+        "id": 2956,
+        "cryptocurrency_id": 1,
+        "price_usd": "61605.99297641",
+        "snapshot_at": "2018-01-24 08:32:33"
+    },
+    {
+        "id": 2957,
+        "cryptocurrency_id": 1,
+        "price_usd": "64319.10767882",
+        "snapshot_at": "2018-01-24 07:32:33"
+    },
+    {
+        "id": 2958,
+        "cryptocurrency_id": 1,
+        "price_usd": "67505.86842719",
+        "snapshot_at": "2018-01-24 06:32:33"
+    },
+    {
+        "id": 2959,
+        "cryptocurrency_id": 1,
+        "price_usd": "64799.82482998",
+        "snapshot_at": "2018-01-24 05:32:33"
+    },
+    {
+        "id": 2960,
+        "cryptocurrency_id": 1,
+        "price_usd": "67408.29896410",
+        "snapshot_at": "2018-01-24 04:32:33"
+    },
+    {
+        "id": 2961,
+        "cryptocurrency_id": 1,
+        "price_usd": "68880.77880379",
+        "snapshot_at": "2018-01-24 03:32:33"
+    },
+    {
+        "id": 2962,
+        "cryptocurrency_id": 1,
+        "price_usd": "71233.09922178",
+        "snapshot_at": "2018-01-24 02:32:33"
+    },
+    {
+        "id": 2963,
+        "cryptocurrency_id": 1,
+        "price_usd": "67734.26202398",
+        "snapshot_at": "2018-01-24 01:32:33"
+    },
+    {
+        "id": 2964,
+        "cryptocurrency_id": 1,
+        "price_usd": "65565.10617294",
+        "snapshot_at": "2018-01-24 00:32:33"
+    },
+    {
+        "id": 2965,
+        "cryptocurrency_id": 1,
+        "price_usd": "63857.08072262",
+        "snapshot_at": "2018-01-23 23:32:33"
+    },
+    {
+        "id": 2966,
+        "cryptocurrency_id": 1,
+        "price_usd": "64121.14153882",
+        "snapshot_at": "2018-01-23 22:32:33"
+    },
+    {
+        "id": 2967,
+        "cryptocurrency_id": 1,
+        "price_usd": "66508.15525567",
+        "snapshot_at": "2018-01-23 21:32:33"
+    },
+    {
+        "id": 2968,
+        "cryptocurrency_id": 1,
+        "price_usd": "68870.67066938",
+        "snapshot_at": "2018-01-23 20:32:33"
+    },
+    {
+        "id": 2969,
+        "cryptocurrency_id": 1,
+        "price_usd": "70836.00220559",
+        "snapshot_at": "2018-01-23 19:32:33"
+    },
+    {
+        "id": 2970,
+        "cryptocurrency_id": 1,
+        "price_usd": "70335.26180825",
+        "snapshot_at": "2018-01-23 18:32:33"
+    },
+    {
+        "id": 2971,
+        "cryptocurrency_id": 1,
+        "price_usd": "71981.76168653",
+        "snapshot_at": "2018-01-23 17:32:33"
+    },
+    {
+        "id": 2972,
+        "cryptocurrency_id": 1,
+        "price_usd": "68918.43260998",
+        "snapshot_at": "2018-01-23 16:32:33"
+    },
+    {
+        "id": 2973,
+        "cryptocurrency_id": 1,
+        "price_usd": "68926.25295422",
+        "snapshot_at": "2018-01-23 15:32:33"
+    },
+    {
+        "id": 2974,
+        "cryptocurrency_id": 1,
+        "price_usd": "70185.70336848",
+        "snapshot_at": "2018-01-23 14:32:33"
+    },
+    {
+        "id": 2975,
+        "cryptocurrency_id": 1,
+        "price_usd": "67058.64749265",
+        "snapshot_at": "2018-01-23 13:32:33"
+    },
+    {
+        "id": 2976,
+        "cryptocurrency_id": 1,
+        "price_usd": "66202.83230523",
+        "snapshot_at": "2018-01-23 12:32:33"
+    },
+    {
+        "id": 2977,
+        "cryptocurrency_id": 1,
+        "price_usd": "64702.25535904",
+        "snapshot_at": "2018-01-23 11:32:33"
+    },
+    {
+        "id": 2978,
+        "cryptocurrency_id": 1,
+        "price_usd": "61571.66703954",
+        "snapshot_at": "2018-01-23 10:32:33"
+    },
+    {
+        "id": 2979,
+        "cryptocurrency_id": 1,
+        "price_usd": "61476.88439680",
+        "snapshot_at": "2018-01-23 09:32:33"
+    },
+    {
+        "id": 2980,
+        "cryptocurrency_id": 1,
+        "price_usd": "61342.70895982",
+        "snapshot_at": "2018-01-23 08:32:33"
+    },
+    {
+        "id": 2981,
+        "cryptocurrency_id": 1,
+        "price_usd": "59125.10212841",
+        "snapshot_at": "2018-01-23 07:32:33"
+    },
+    {
+        "id": 2982,
+        "cryptocurrency_id": 1,
+        "price_usd": "58134.21558667",
+        "snapshot_at": "2018-01-23 06:32:33"
+    },
+    {
+        "id": 2983,
+        "cryptocurrency_id": 1,
+        "price_usd": "60167.20726294",
+        "snapshot_at": "2018-01-23 05:32:33"
+    },
+    {
+        "id": 2984,
+        "cryptocurrency_id": 1,
+        "price_usd": "58542.68276938",
+        "snapshot_at": "2018-01-23 04:32:33"
+    },
+    {
+        "id": 2985,
+        "cryptocurrency_id": 1,
+        "price_usd": "56920.52228311",
+        "snapshot_at": "2018-01-23 03:32:33"
+    },
+    {
+        "id": 2986,
+        "cryptocurrency_id": 1,
+        "price_usd": "59171.60717372",
+        "snapshot_at": "2018-01-23 02:32:33"
+    },
+    {
+        "id": 2987,
+        "cryptocurrency_id": 1,
+        "price_usd": "59026.36163491",
+        "snapshot_at": "2018-01-23 01:32:33"
+    },
+    {
+        "id": 2988,
+        "cryptocurrency_id": 1,
+        "price_usd": "58485.82292674",
+        "snapshot_at": "2018-01-23 00:32:33"
+    },
+    {
+        "id": 2989,
+        "cryptocurrency_id": 1,
+        "price_usd": "59022.28666582",
+        "snapshot_at": "2018-01-22 23:32:33"
+    },
+    {
+        "id": 2990,
+        "cryptocurrency_id": 1,
+        "price_usd": "60538.67751655",
+        "snapshot_at": "2018-01-22 22:32:33"
+    },
+    {
+        "id": 2991,
+        "cryptocurrency_id": 1,
+        "price_usd": "58941.27757420",
+        "snapshot_at": "2018-01-22 21:32:33"
+    },
+    {
+        "id": 2992,
+        "cryptocurrency_id": 1,
+        "price_usd": "57057.05821675",
+        "snapshot_at": "2018-01-22 20:32:33"
+    },
+    {
+        "id": 2993,
+        "cryptocurrency_id": 1,
+        "price_usd": "55393.26786323",
+        "snapshot_at": "2018-01-22 19:32:33"
+    },
+    {
+        "id": 2994,
+        "cryptocurrency_id": 1,
+        "price_usd": "54728.62064850",
+        "snapshot_at": "2018-01-22 18:32:33"
+    },
+    {
+        "id": 2995,
+        "cryptocurrency_id": 1,
+        "price_usd": "53167.05574899",
+        "snapshot_at": "2018-01-22 17:32:33"
+    },
+    {
+        "id": 2996,
+        "cryptocurrency_id": 1,
+        "price_usd": "50966.84915196",
+        "snapshot_at": "2018-01-22 16:32:33"
+    },
+    {
+        "id": 2997,
+        "cryptocurrency_id": 1,
+        "price_usd": "52966.67150199",
+        "snapshot_at": "2018-01-22 15:32:33"
+    },
+    {
+        "id": 2998,
+        "cryptocurrency_id": 1,
+        "price_usd": "54841.83892811",
+        "snapshot_at": "2018-01-22 14:32:33"
+    },
+    {
+        "id": 2999,
+        "cryptocurrency_id": 1,
+        "price_usd": "52534.68454019",
+        "snapshot_at": "2018-01-22 13:32:33"
+    },
+    {
+        "id": 3000,
+        "cryptocurrency_id": 1,
+        "price_usd": "51467.40463087",
+        "snapshot_at": "2018-01-22 12:32:33"
+    },
+    {
+        "id": 3001,
+        "cryptocurrency_id": 1,
+        "price_usd": "50067.88358819",
+        "snapshot_at": "2018-01-22 11:32:33"
+    },
+    {
+        "id": 3002,
+        "cryptocurrency_id": 1,
+        "price_usd": "49693.79288708",
+        "snapshot_at": "2018-01-22 10:32:33"
+    },
+    {
+        "id": 3003,
+        "cryptocurrency_id": 1,
+        "price_usd": "48707.91805693",
+        "snapshot_at": "2018-01-22 09:32:33"
+    },
+    {
+        "id": 3004,
+        "cryptocurrency_id": 1,
+        "price_usd": "50838.54614330",
+        "snapshot_at": "2018-01-22 08:32:33"
+    },
+    {
+        "id": 3005,
+        "cryptocurrency_id": 1,
+        "price_usd": "51697.70859435",
+        "snapshot_at": "2018-01-22 07:32:33"
+    },
+    {
+        "id": 3006,
+        "cryptocurrency_id": 1,
+        "price_usd": "52793.99114176",
+        "snapshot_at": "2018-01-22 06:32:33"
+    },
+    {
+        "id": 3007,
+        "cryptocurrency_id": 1,
+        "price_usd": "52567.37050967",
+        "snapshot_at": "2018-01-22 05:32:33"
+    },
+    {
+        "id": 3008,
+        "cryptocurrency_id": 1,
+        "price_usd": "54362.23749465",
+        "snapshot_at": "2018-01-22 04:32:33"
+    },
+    {
+        "id": 3009,
+        "cryptocurrency_id": 1,
+        "price_usd": "54094.07204146",
+        "snapshot_at": "2018-01-22 03:32:33"
+    },
+    {
+        "id": 3010,
+        "cryptocurrency_id": 1,
+        "price_usd": "53229.33399380",
+        "snapshot_at": "2018-01-22 02:32:33"
+    },
+    {
+        "id": 3011,
+        "cryptocurrency_id": 1,
+        "price_usd": "54760.80960457",
+        "snapshot_at": "2018-01-22 01:32:33"
+    },
+    {
+        "id": 3012,
+        "cryptocurrency_id": 1,
+        "price_usd": "55928.74904151",
+        "snapshot_at": "2018-01-22 00:32:33"
+    },
+    {
+        "id": 3013,
+        "cryptocurrency_id": 1,
+        "price_usd": "57099.71385283",
+        "snapshot_at": "2018-01-21 23:32:33"
+    },
+    {
+        "id": 3014,
+        "cryptocurrency_id": 1,
+        "price_usd": "59412.25321143",
+        "snapshot_at": "2018-01-21 22:32:33"
+    },
+    {
+        "id": 3015,
+        "cryptocurrency_id": 1,
+        "price_usd": "60846.31858653",
+        "snapshot_at": "2018-01-21 21:32:33"
+    },
+    {
+        "id": 3016,
+        "cryptocurrency_id": 1,
+        "price_usd": "62815.46918589",
+        "snapshot_at": "2018-01-21 20:32:33"
+    },
+    {
+        "id": 3017,
+        "cryptocurrency_id": 1,
+        "price_usd": "64318.72729509",
+        "snapshot_at": "2018-01-21 19:32:33"
+    },
+    {
+        "id": 3018,
+        "cryptocurrency_id": 1,
+        "price_usd": "65898.36315203",
+        "snapshot_at": "2018-01-21 18:32:33"
+    },
+    {
+        "id": 3019,
+        "cryptocurrency_id": 1,
+        "price_usd": "65252.35184187",
+        "snapshot_at": "2018-01-21 17:32:33"
+    },
+    {
+        "id": 3020,
+        "cryptocurrency_id": 1,
+        "price_usd": "67872.41619421",
+        "snapshot_at": "2018-01-21 16:32:33"
+    },
+    {
+        "id": 3021,
+        "cryptocurrency_id": 1,
+        "price_usd": "69607.06823721",
+        "snapshot_at": "2018-01-21 15:32:33"
+    },
+    {
+        "id": 3022,
+        "cryptocurrency_id": 1,
+        "price_usd": "67205.21953664",
+        "snapshot_at": "2018-01-21 14:32:33"
+    },
+    {
+        "id": 3023,
+        "cryptocurrency_id": 1,
+        "price_usd": "67379.39503394",
+        "snapshot_at": "2018-01-21 13:32:33"
+    },
+    {
+        "id": 3024,
+        "cryptocurrency_id": 1,
+        "price_usd": "69293.56401975",
+        "snapshot_at": "2018-01-21 12:32:33"
+    },
+    {
+        "id": 3025,
+        "cryptocurrency_id": 1,
+        "price_usd": "69000.44706645",
+        "snapshot_at": "2018-01-21 11:32:33"
+    },
+    {
+        "id": 3026,
+        "cryptocurrency_id": 1,
+        "price_usd": "65724.47196260",
+        "snapshot_at": "2018-01-21 10:32:33"
+    },
+    {
+        "id": 3027,
+        "cryptocurrency_id": 1,
+        "price_usd": "66427.92308055",
+        "snapshot_at": "2018-01-21 09:32:33"
+    },
+    {
+        "id": 3028,
+        "cryptocurrency_id": 1,
+        "price_usd": "69101.13506660",
+        "snapshot_at": "2018-01-21 08:32:33"
+    },
+    {
+        "id": 3029,
+        "cryptocurrency_id": 1,
+        "price_usd": "71602.45374341",
+        "snapshot_at": "2018-01-21 07:32:33"
+    },
+    {
+        "id": 3030,
+        "cryptocurrency_id": 1,
+        "price_usd": "73728.76732450",
+        "snapshot_at": "2018-01-21 06:32:33"
+    },
+    {
+        "id": 3031,
+        "cryptocurrency_id": 1,
+        "price_usd": "70164.62440015",
+        "snapshot_at": "2018-01-21 05:32:33"
+    },
+    {
+        "id": 3032,
+        "cryptocurrency_id": 1,
+        "price_usd": "68573.42026403",
+        "snapshot_at": "2018-01-21 04:32:33"
+    },
+    {
+        "id": 3033,
+        "cryptocurrency_id": 1,
+        "price_usd": "67751.23382288",
+        "snapshot_at": "2018-01-21 03:32:33"
+    },
+    {
+        "id": 3034,
+        "cryptocurrency_id": 1,
+        "price_usd": "69023.77779492",
+        "snapshot_at": "2018-01-21 02:32:33"
+    },
+    {
+        "id": 3035,
+        "cryptocurrency_id": 1,
+        "price_usd": "68945.81469149",
+        "snapshot_at": "2018-01-21 01:32:33"
+    },
+    {
+        "id": 3036,
+        "cryptocurrency_id": 1,
+        "price_usd": "71880.23446622",
+        "snapshot_at": "2018-01-21 00:32:33"
+    },
+    {
+        "id": 3037,
+        "cryptocurrency_id": 1,
+        "price_usd": "73501.55618397",
+        "snapshot_at": "2018-01-20 23:32:33"
+    },
+    {
+        "id": 3038,
+        "cryptocurrency_id": 1,
+        "price_usd": "74526.13040420",
+        "snapshot_at": "2018-01-20 22:32:33"
+    },
+    {
+        "id": 3039,
+        "cryptocurrency_id": 1,
+        "price_usd": "72880.50052465",
+        "snapshot_at": "2018-01-20 21:32:33"
+    },
+    {
+        "id": 3040,
+        "cryptocurrency_id": 1,
+        "price_usd": "75232.38672000",
+        "snapshot_at": "2018-01-20 20:32:33"
+    },
+    {
+        "id": 3041,
+        "cryptocurrency_id": 1,
+        "price_usd": "78630.17138868",
+        "snapshot_at": "2018-01-20 19:32:33"
+    },
+    {
+        "id": 3042,
+        "cryptocurrency_id": 1,
+        "price_usd": "74898.58477346",
+        "snapshot_at": "2018-01-20 18:32:33"
+    },
+    {
+        "id": 3043,
+        "cryptocurrency_id": 1,
+        "price_usd": "77085.36767262",
+        "snapshot_at": "2018-01-20 17:32:33"
+    },
+    {
+        "id": 3044,
+        "cryptocurrency_id": 1,
+        "price_usd": "79077.95910486",
+        "snapshot_at": "2018-01-20 16:32:33"
+    },
+    {
+        "id": 3045,
+        "cryptocurrency_id": 1,
+        "price_usd": "76935.35925305",
+        "snapshot_at": "2018-01-20 15:32:33"
+    },
+    {
+        "id": 3046,
+        "cryptocurrency_id": 1,
+        "price_usd": "78699.84140940",
+        "snapshot_at": "2018-01-20 14:32:33"
+    },
+    {
+        "id": 3047,
+        "cryptocurrency_id": 1,
+        "price_usd": "76695.65693968",
+        "snapshot_at": "2018-01-20 13:32:33"
+    },
+    {
+        "id": 3048,
+        "cryptocurrency_id": 1,
+        "price_usd": "73320.97630681",
+        "snapshot_at": "2018-01-20 12:32:33"
+    },
+    {
+        "id": 3049,
+        "cryptocurrency_id": 1,
+        "price_usd": "70140.20754240",
+        "snapshot_at": "2018-01-20 11:32:33"
+    },
+    {
+        "id": 3050,
+        "cryptocurrency_id": 1,
+        "price_usd": "70989.34031079",
+        "snapshot_at": "2018-01-20 10:32:33"
+    },
+    {
+        "id": 3051,
+        "cryptocurrency_id": 1,
+        "price_usd": "70022.70815885",
+        "snapshot_at": "2018-01-20 09:32:33"
+    },
+    {
+        "id": 3052,
+        "cryptocurrency_id": 1,
+        "price_usd": "71088.47908351",
+        "snapshot_at": "2018-01-20 08:32:33"
+    },
+    {
+        "id": 3053,
+        "cryptocurrency_id": 1,
+        "price_usd": "68963.18180200",
+        "snapshot_at": "2018-01-20 07:32:33"
+    },
+    {
+        "id": 3054,
+        "cryptocurrency_id": 1,
+        "price_usd": "68976.13413835",
+        "snapshot_at": "2018-01-20 06:32:33"
+    },
+    {
+        "id": 3055,
+        "cryptocurrency_id": 1,
+        "price_usd": "66191.12737364",
+        "snapshot_at": "2018-01-20 05:32:33"
+    },
+    {
+        "id": 3056,
+        "cryptocurrency_id": 1,
+        "price_usd": "69111.42592193",
+        "snapshot_at": "2018-01-20 04:32:33"
+    },
+    {
+        "id": 3057,
+        "cryptocurrency_id": 1,
+        "price_usd": "66954.31479990",
+        "snapshot_at": "2018-01-20 03:32:33"
+    },
+    {
+        "id": 3058,
+        "cryptocurrency_id": 1,
+        "price_usd": "67157.24703598",
+        "snapshot_at": "2018-01-20 02:32:33"
+    },
+    {
+        "id": 3059,
+        "cryptocurrency_id": 1,
+        "price_usd": "64226.76876165",
+        "snapshot_at": "2018-01-20 01:32:33"
+    },
+    {
+        "id": 3060,
+        "cryptocurrency_id": 1,
+        "price_usd": "66372.22713233",
+        "snapshot_at": "2018-01-20 00:32:33"
+    },
+    {
+        "id": 3061,
+        "cryptocurrency_id": 1,
+        "price_usd": "69081.74058268",
+        "snapshot_at": "2018-01-19 23:32:33"
+    },
+    {
+        "id": 3062,
+        "cryptocurrency_id": 1,
+        "price_usd": "68396.91798107",
+        "snapshot_at": "2018-01-19 22:32:33"
+    },
+    {
+        "id": 3063,
+        "cryptocurrency_id": 1,
+        "price_usd": "69243.33625616",
+        "snapshot_at": "2018-01-19 21:32:33"
+    },
+    {
+        "id": 3064,
+        "cryptocurrency_id": 1,
+        "price_usd": "66322.81465178",
+        "snapshot_at": "2018-01-19 20:32:33"
+    },
+    {
+        "id": 3065,
+        "cryptocurrency_id": 1,
+        "price_usd": "63272.49453867",
+        "snapshot_at": "2018-01-19 19:32:33"
+    },
+    {
+        "id": 3066,
+        "cryptocurrency_id": 1,
+        "price_usd": "63089.92692218",
+        "snapshot_at": "2018-01-19 18:32:33"
+    },
+    {
+        "id": 3067,
+        "cryptocurrency_id": 1,
+        "price_usd": "64333.26773274",
+        "snapshot_at": "2018-01-19 17:32:33"
+    },
+    {
+        "id": 3068,
+        "cryptocurrency_id": 1,
+        "price_usd": "67416.90429606",
+        "snapshot_at": "2018-01-19 16:32:33"
+    },
+    {
+        "id": 3069,
+        "cryptocurrency_id": 1,
+        "price_usd": "66915.68647945",
+        "snapshot_at": "2018-01-19 15:32:33"
+    },
+    {
+        "id": 3070,
+        "cryptocurrency_id": 1,
+        "price_usd": "69228.43574314",
+        "snapshot_at": "2018-01-19 14:32:33"
+    },
+    {
+        "id": 3071,
+        "cryptocurrency_id": 1,
+        "price_usd": "67258.45052035",
+        "snapshot_at": "2018-01-19 13:32:33"
+    },
+    {
+        "id": 3072,
+        "cryptocurrency_id": 1,
+        "price_usd": "69415.02537415",
+        "snapshot_at": "2018-01-19 12:32:33"
+    },
+    {
+        "id": 3073,
+        "cryptocurrency_id": 1,
+        "price_usd": "71883.46099591",
+        "snapshot_at": "2018-01-19 11:32:33"
+    },
+    {
+        "id": 3074,
+        "cryptocurrency_id": 1,
+        "price_usd": "72696.01663192",
+        "snapshot_at": "2018-01-19 10:32:33"
+    },
+    {
+        "id": 3075,
+        "cryptocurrency_id": 1,
+        "price_usd": "75456.66512933",
+        "snapshot_at": "2018-01-19 09:32:33"
+    },
+    {
+        "id": 3076,
+        "cryptocurrency_id": 1,
+        "price_usd": "77658.93967274",
+        "snapshot_at": "2018-01-19 08:32:33"
+    },
+    {
+        "id": 3077,
+        "cryptocurrency_id": 1,
+        "price_usd": "75420.51668746",
+        "snapshot_at": "2018-01-19 07:32:33"
+    },
+    {
+        "id": 3078,
+        "cryptocurrency_id": 1,
+        "price_usd": "78511.58450312",
+        "snapshot_at": "2018-01-19 06:32:33"
+    },
+    {
+        "id": 3079,
+        "cryptocurrency_id": 1,
+        "price_usd": "80057.57495875",
+        "snapshot_at": "2018-01-19 05:32:33"
+    },
+    {
+        "id": 3080,
+        "cryptocurrency_id": 1,
+        "price_usd": "82306.74133879",
+        "snapshot_at": "2018-01-19 04:32:33"
+    },
+    {
+        "id": 3081,
+        "cryptocurrency_id": 1,
+        "price_usd": "82473.45884804",
+        "snapshot_at": "2018-01-19 03:32:33"
+    },
+    {
+        "id": 3082,
+        "cryptocurrency_id": 1,
+        "price_usd": "81591.58486558",
+        "snapshot_at": "2018-01-19 02:32:33"
+    },
+    {
+        "id": 3083,
+        "cryptocurrency_id": 1,
+        "price_usd": "81187.88305239",
+        "snapshot_at": "2018-01-19 01:32:33"
+    },
+    {
+        "id": 3084,
+        "cryptocurrency_id": 1,
+        "price_usd": "77292.04090514",
+        "snapshot_at": "2018-01-19 00:32:33"
+    },
+    {
+        "id": 3085,
+        "cryptocurrency_id": 1,
+        "price_usd": "75471.60568493",
+        "snapshot_at": "2018-01-18 23:32:33"
+    },
+    {
+        "id": 3086,
+        "cryptocurrency_id": 1,
+        "price_usd": "74154.49332262",
+        "snapshot_at": "2018-01-18 22:32:33"
+    },
+    {
+        "id": 3087,
+        "cryptocurrency_id": 1,
+        "price_usd": "75624.61000289",
+        "snapshot_at": "2018-01-18 21:32:33"
+    },
+    {
+        "id": 3088,
+        "cryptocurrency_id": 1,
+        "price_usd": "74099.78369092",
+        "snapshot_at": "2018-01-18 20:32:33"
+    },
+    {
+        "id": 3089,
+        "cryptocurrency_id": 1,
+        "price_usd": "75653.13606271",
+        "snapshot_at": "2018-01-18 19:32:33"
+    },
+    {
+        "id": 3090,
+        "cryptocurrency_id": 1,
+        "price_usd": "79344.57038009",
+        "snapshot_at": "2018-01-18 18:32:33"
+    },
+    {
+        "id": 3091,
+        "cryptocurrency_id": 1,
+        "price_usd": "80872.53151105",
+        "snapshot_at": "2018-01-18 17:32:33"
+    },
+    {
+        "id": 3092,
+        "cryptocurrency_id": 1,
+        "price_usd": "82665.08379743",
+        "snapshot_at": "2018-01-18 16:32:33"
+    },
+    {
+        "id": 3093,
+        "cryptocurrency_id": 1,
+        "price_usd": "84522.11157793",
+        "snapshot_at": "2018-01-18 15:32:33"
+    },
+    {
+        "id": 3094,
+        "cryptocurrency_id": 1,
+        "price_usd": "83330.63369267",
+        "snapshot_at": "2018-01-18 14:32:33"
+    },
+    {
+        "id": 3095,
+        "cryptocurrency_id": 1,
+        "price_usd": "84071.71134883",
+        "snapshot_at": "2018-01-18 13:32:33"
+    },
+    {
+        "id": 3096,
+        "cryptocurrency_id": 1,
+        "price_usd": "88144.61057409",
+        "snapshot_at": "2018-01-18 12:32:33"
+    },
+    {
+        "id": 3097,
+        "cryptocurrency_id": 1,
+        "price_usd": "92198.67411566",
+        "snapshot_at": "2018-01-18 11:32:33"
+    },
+    {
+        "id": 3098,
+        "cryptocurrency_id": 1,
+        "price_usd": "90914.74605658",
+        "snapshot_at": "2018-01-18 10:32:33"
+    },
+    {
+        "id": 3099,
+        "cryptocurrency_id": 1,
+        "price_usd": "90170.21741053",
+        "snapshot_at": "2018-01-18 09:32:33"
+    },
+    {
+        "id": 3100,
+        "cryptocurrency_id": 1,
+        "price_usd": "88307.21400141",
+        "snapshot_at": "2018-01-18 08:32:33"
+    },
+    {
+        "id": 3101,
+        "cryptocurrency_id": 1,
+        "price_usd": "84044.71405076",
+        "snapshot_at": "2018-01-18 07:32:33"
+    },
+    {
+        "id": 3102,
+        "cryptocurrency_id": 1,
+        "price_usd": "81896.06117585",
+        "snapshot_at": "2018-01-18 06:32:33"
+    },
+    {
+        "id": 3103,
+        "cryptocurrency_id": 1,
+        "price_usd": "78988.53567661",
+        "snapshot_at": "2018-01-18 05:32:33"
+    },
+    {
+        "id": 3104,
+        "cryptocurrency_id": 1,
+        "price_usd": "80419.66231331",
+        "snapshot_at": "2018-01-18 04:32:33"
+    },
+    {
+        "id": 3105,
+        "cryptocurrency_id": 1,
+        "price_usd": "80257.03529194",
+        "snapshot_at": "2018-01-18 03:32:33"
+    },
+    {
+        "id": 3106,
+        "cryptocurrency_id": 1,
+        "price_usd": "80838.74603379",
+        "snapshot_at": "2018-01-18 02:32:33"
+    },
+    {
+        "id": 3107,
+        "cryptocurrency_id": 1,
+        "price_usd": "77436.81652630",
+        "snapshot_at": "2018-01-18 01:32:33"
+    },
+    {
+        "id": 3108,
+        "cryptocurrency_id": 1,
+        "price_usd": "79941.68808206",
+        "snapshot_at": "2018-01-18 00:32:33"
+    },
+    {
+        "id": 3109,
+        "cryptocurrency_id": 1,
+        "price_usd": "82496.69253970",
+        "snapshot_at": "2018-01-17 23:32:33"
+    },
+    {
+        "id": 3110,
+        "cryptocurrency_id": 1,
+        "price_usd": "86307.84414156",
+        "snapshot_at": "2018-01-17 22:32:33"
+    },
+    {
+        "id": 3111,
+        "cryptocurrency_id": 1,
+        "price_usd": "88194.77928681",
+        "snapshot_at": "2018-01-17 21:32:33"
+    },
+    {
+        "id": 3112,
+        "cryptocurrency_id": 1,
+        "price_usd": "84300.81402429",
+        "snapshot_at": "2018-01-17 20:32:33"
+    },
+    {
+        "id": 3113,
+        "cryptocurrency_id": 1,
+        "price_usd": "86277.07773016",
+        "snapshot_at": "2018-01-17 19:32:33"
+    },
+    {
+        "id": 3114,
+        "cryptocurrency_id": 1,
+        "price_usd": "82276.81199398",
+        "snapshot_at": "2018-01-17 18:32:33"
+    },
+    {
+        "id": 3115,
+        "cryptocurrency_id": 1,
+        "price_usd": "82860.08581016",
+        "snapshot_at": "2018-01-17 17:32:33"
+    },
+    {
+        "id": 3116,
+        "cryptocurrency_id": 1,
+        "price_usd": "86501.55464302",
+        "snapshot_at": "2018-01-17 16:32:33"
+    },
+    {
+        "id": 3117,
+        "cryptocurrency_id": 1,
+        "price_usd": "89676.85915674",
+        "snapshot_at": "2018-01-17 15:32:33"
+    },
+    {
+        "id": 3118,
+        "cryptocurrency_id": 1,
+        "price_usd": "93133.26708885",
+        "snapshot_at": "2018-01-17 14:32:33"
+    },
+    {
+        "id": 3119,
+        "cryptocurrency_id": 1,
+        "price_usd": "89748.21478259",
+        "snapshot_at": "2018-01-17 13:32:33"
+    },
+    {
+        "id": 3120,
+        "cryptocurrency_id": 1,
+        "price_usd": "87538.44722940",
+        "snapshot_at": "2018-01-17 12:32:33"
+    },
+    {
+        "id": 3121,
+        "cryptocurrency_id": 1,
+        "price_usd": "87347.14847482",
+        "snapshot_at": "2018-01-17 11:32:33"
+    },
+    {
+        "id": 3122,
+        "cryptocurrency_id": 1,
+        "price_usd": "83091.94312588",
+        "snapshot_at": "2018-01-17 10:32:33"
+    },
+    {
+        "id": 3123,
+        "cryptocurrency_id": 1,
+        "price_usd": "85221.74826234",
+        "snapshot_at": "2018-01-17 09:32:33"
+    },
+    {
+        "id": 3124,
+        "cryptocurrency_id": 1,
+        "price_usd": "82518.94212468",
+        "snapshot_at": "2018-01-17 08:32:33"
+    },
+    {
+        "id": 3125,
+        "cryptocurrency_id": 1,
+        "price_usd": "83036.80818192",
+        "snapshot_at": "2018-01-17 07:32:33"
+    },
+    {
+        "id": 3126,
+        "cryptocurrency_id": 1,
+        "price_usd": "81322.91644410",
+        "snapshot_at": "2018-01-17 06:32:33"
+    },
+    {
+        "id": 3127,
+        "cryptocurrency_id": 1,
+        "price_usd": "80771.27543572",
+        "snapshot_at": "2018-01-17 05:32:33"
+    },
+    {
+        "id": 3128,
+        "cryptocurrency_id": 1,
+        "price_usd": "81241.96650390",
+        "snapshot_at": "2018-01-17 04:32:33"
+    },
+    {
+        "id": 3129,
+        "cryptocurrency_id": 1,
+        "price_usd": "78512.88639194",
+        "snapshot_at": "2018-01-17 03:32:33"
+    },
+    {
+        "id": 3130,
+        "cryptocurrency_id": 1,
+        "price_usd": "77453.65052721",
+        "snapshot_at": "2018-01-17 02:32:33"
+    },
+    {
+        "id": 3131,
+        "cryptocurrency_id": 1,
+        "price_usd": "74702.48672068",
+        "snapshot_at": "2018-01-17 01:32:33"
+    },
+    {
+        "id": 3132,
+        "cryptocurrency_id": 1,
+        "price_usd": "72604.62896501",
+        "snapshot_at": "2018-01-17 00:32:33"
+    },
+    {
+        "id": 3133,
+        "cryptocurrency_id": 1,
+        "price_usd": "70784.39916822",
+        "snapshot_at": "2018-01-16 23:32:33"
+    },
+    {
+        "id": 3134,
+        "cryptocurrency_id": 1,
+        "price_usd": "71706.22594974",
+        "snapshot_at": "2018-01-16 22:32:33"
+    },
+    {
+        "id": 3135,
+        "cryptocurrency_id": 1,
+        "price_usd": "70133.53164948",
+        "snapshot_at": "2018-01-16 21:32:33"
+    },
+    {
+        "id": 3136,
+        "cryptocurrency_id": 1,
+        "price_usd": "67059.61875162",
+        "snapshot_at": "2018-01-16 20:32:33"
+    },
+    {
+        "id": 3137,
+        "cryptocurrency_id": 1,
+        "price_usd": "64709.61775014",
+        "snapshot_at": "2018-01-16 19:32:33"
+    },
+    {
+        "id": 3138,
+        "cryptocurrency_id": 1,
+        "price_usd": "62236.40293689",
+        "snapshot_at": "2018-01-16 18:32:33"
+    },
+    {
+        "id": 3139,
+        "cryptocurrency_id": 1,
+        "price_usd": "64729.57819229",
+        "snapshot_at": "2018-01-16 17:32:33"
+    },
+    {
+        "id": 3140,
+        "cryptocurrency_id": 1,
+        "price_usd": "63502.41027931",
+        "snapshot_at": "2018-01-16 16:32:33"
+    },
+    {
+        "id": 3141,
+        "cryptocurrency_id": 1,
+        "price_usd": "66674.17962136",
+        "snapshot_at": "2018-01-16 15:32:33"
+    },
+    {
+        "id": 3142,
+        "cryptocurrency_id": 1,
+        "price_usd": "68181.52775138",
+        "snapshot_at": "2018-01-16 14:32:33"
+    },
+    {
+        "id": 3143,
+        "cryptocurrency_id": 1,
+        "price_usd": "67554.66144463",
+        "snapshot_at": "2018-01-16 13:32:33"
+    },
+    {
+        "id": 3144,
+        "cryptocurrency_id": 1,
+        "price_usd": "67753.96207663",
+        "snapshot_at": "2018-01-16 12:32:33"
+    },
+    {
+        "id": 3145,
+        "cryptocurrency_id": 1,
+        "price_usd": "67090.10271918",
+        "snapshot_at": "2018-01-16 11:32:33"
+    },
+    {
+        "id": 3146,
+        "cryptocurrency_id": 1,
+        "price_usd": "66075.31185714",
+        "snapshot_at": "2018-01-16 10:32:33"
+    },
+    {
+        "id": 3147,
+        "cryptocurrency_id": 1,
+        "price_usd": "67103.78016033",
+        "snapshot_at": "2018-01-16 09:32:33"
+    },
+    {
+        "id": 3148,
+        "cryptocurrency_id": 1,
+        "price_usd": "67813.53519662",
+        "snapshot_at": "2018-01-16 08:32:33"
+    },
+    {
+        "id": 3149,
+        "cryptocurrency_id": 1,
+        "price_usd": "68798.31526272",
+        "snapshot_at": "2018-01-16 07:32:33"
+    },
+    {
+        "id": 3150,
+        "cryptocurrency_id": 1,
+        "price_usd": "68531.62717119",
+        "snapshot_at": "2018-01-16 06:32:33"
+    },
+    {
+        "id": 3151,
+        "cryptocurrency_id": 1,
+        "price_usd": "69772.19356130",
+        "snapshot_at": "2018-01-16 05:32:33"
+    },
+    {
+        "id": 3152,
+        "cryptocurrency_id": 1,
+        "price_usd": "72267.59377432",
+        "snapshot_at": "2018-01-16 04:32:33"
+    },
+    {
+        "id": 3153,
+        "cryptocurrency_id": 1,
+        "price_usd": "69545.87172004",
+        "snapshot_at": "2018-01-16 03:32:33"
+    },
+    {
+        "id": 3154,
+        "cryptocurrency_id": 1,
+        "price_usd": "66344.45246716",
+        "snapshot_at": "2018-01-16 02:32:33"
+    },
+    {
+        "id": 3155,
+        "cryptocurrency_id": 1,
+        "price_usd": "66197.38259704",
+        "snapshot_at": "2018-01-16 01:32:33"
+    },
+    {
+        "id": 3156,
+        "cryptocurrency_id": 1,
+        "price_usd": "63369.72599427",
+        "snapshot_at": "2018-01-16 00:32:33"
+    },
+    {
+        "id": 3157,
+        "cryptocurrency_id": 1,
+        "price_usd": "64194.73298900",
+        "snapshot_at": "2018-01-15 23:32:33"
+    },
+    {
+        "id": 3158,
+        "cryptocurrency_id": 1,
+        "price_usd": "63528.40823175",
+        "snapshot_at": "2018-01-15 22:32:33"
+    },
+    {
+        "id": 3159,
+        "cryptocurrency_id": 1,
+        "price_usd": "64285.77004207",
+        "snapshot_at": "2018-01-15 21:32:33"
+    },
+    {
+        "id": 3160,
+        "cryptocurrency_id": 1,
+        "price_usd": "62984.51941066",
+        "snapshot_at": "2018-01-15 20:32:33"
+    },
+    {
+        "id": 3161,
+        "cryptocurrency_id": 1,
+        "price_usd": "61080.82909930",
+        "snapshot_at": "2018-01-15 19:32:33"
+    },
+    {
+        "id": 3162,
+        "cryptocurrency_id": 1,
+        "price_usd": "62599.06151274",
+        "snapshot_at": "2018-01-15 18:32:33"
+    },
+    {
+        "id": 3163,
+        "cryptocurrency_id": 1,
+        "price_usd": "65175.94401396",
+        "snapshot_at": "2018-01-15 17:32:33"
+    },
+    {
+        "id": 3164,
+        "cryptocurrency_id": 1,
+        "price_usd": "64545.08072872",
+        "snapshot_at": "2018-01-15 16:32:33"
+    },
+    {
+        "id": 3165,
+        "cryptocurrency_id": 1,
+        "price_usd": "63448.67048881",
+        "snapshot_at": "2018-01-15 15:32:33"
+    },
+    {
+        "id": 3166,
+        "cryptocurrency_id": 1,
+        "price_usd": "62297.74771750",
+        "snapshot_at": "2018-01-15 14:32:33"
+    },
+    {
+        "id": 3167,
+        "cryptocurrency_id": 1,
+        "price_usd": "62154.59604088",
+        "snapshot_at": "2018-01-15 13:32:33"
+    },
+    {
+        "id": 3168,
+        "cryptocurrency_id": 1,
+        "price_usd": "60920.52903486",
+        "snapshot_at": "2018-01-15 12:32:33"
+    },
+    {
+        "id": 3169,
+        "cryptocurrency_id": 1,
+        "price_usd": "61777.68989656",
+        "snapshot_at": "2018-01-15 11:32:33"
+    },
+    {
+        "id": 3170,
+        "cryptocurrency_id": 1,
+        "price_usd": "59900.25241992",
+        "snapshot_at": "2018-01-15 10:32:33"
+    },
+    {
+        "id": 3171,
+        "cryptocurrency_id": 1,
+        "price_usd": "61882.85267063",
+        "snapshot_at": "2018-01-15 09:32:33"
+    },
+    {
+        "id": 3172,
+        "cryptocurrency_id": 1,
+        "price_usd": "62571.52428824",
+        "snapshot_at": "2018-01-15 08:32:33"
+    },
+    {
+        "id": 3173,
+        "cryptocurrency_id": 1,
+        "price_usd": "65268.73226201",
+        "snapshot_at": "2018-01-15 07:32:33"
+    },
+    {
+        "id": 3174,
+        "cryptocurrency_id": 1,
+        "price_usd": "64470.64158007",
+        "snapshot_at": "2018-01-15 06:32:33"
+    },
+    {
+        "id": 3175,
+        "cryptocurrency_id": 1,
+        "price_usd": "65423.72758551",
+        "snapshot_at": "2018-01-15 05:32:33"
+    },
+    {
+        "id": 3176,
+        "cryptocurrency_id": 1,
+        "price_usd": "67799.48994215",
+        "snapshot_at": "2018-01-15 04:32:33"
+    },
+    {
+        "id": 3177,
+        "cryptocurrency_id": 1,
+        "price_usd": "66101.99700986",
+        "snapshot_at": "2018-01-15 03:32:33"
+    },
+    {
+        "id": 3178,
+        "cryptocurrency_id": 1,
+        "price_usd": "64789.28579633",
+        "snapshot_at": "2018-01-15 02:32:33"
+    },
+    {
+        "id": 3179,
+        "cryptocurrency_id": 1,
+        "price_usd": "62572.75194622",
+        "snapshot_at": "2018-01-15 01:32:33"
+    },
+    {
+        "id": 3180,
+        "cryptocurrency_id": 1,
+        "price_usd": "63372.53112011",
+        "snapshot_at": "2018-01-15 00:32:33"
+    },
+    {
+        "id": 3181,
+        "cryptocurrency_id": 1,
+        "price_usd": "65643.49648184",
+        "snapshot_at": "2018-01-14 23:32:33"
+    },
+    {
+        "id": 3182,
+        "cryptocurrency_id": 1,
+        "price_usd": "62818.90388368",
+        "snapshot_at": "2018-01-14 22:32:33"
+    },
+    {
+        "id": 3183,
+        "cryptocurrency_id": 1,
+        "price_usd": "60481.03710494",
+        "snapshot_at": "2018-01-14 21:32:33"
+    },
+    {
+        "id": 3184,
+        "cryptocurrency_id": 1,
+        "price_usd": "59271.35686772",
+        "snapshot_at": "2018-01-14 20:32:33"
+    },
+    {
+        "id": 3185,
+        "cryptocurrency_id": 1,
+        "price_usd": "59735.93633536",
+        "snapshot_at": "2018-01-14 19:32:33"
+    },
+    {
+        "id": 3186,
+        "cryptocurrency_id": 1,
+        "price_usd": "58317.57047117",
+        "snapshot_at": "2018-01-14 18:32:33"
+    },
+    {
+        "id": 3187,
+        "cryptocurrency_id": 1,
+        "price_usd": "60924.23040089",
+        "snapshot_at": "2018-01-14 17:32:33"
+    },
+    {
+        "id": 3188,
+        "cryptocurrency_id": 1,
+        "price_usd": "60275.38315348",
+        "snapshot_at": "2018-01-14 16:32:33"
+    },
+    {
+        "id": 3189,
+        "cryptocurrency_id": 1,
+        "price_usd": "60351.56185826",
+        "snapshot_at": "2018-01-14 15:32:33"
+    },
+    {
+        "id": 3190,
+        "cryptocurrency_id": 1,
+        "price_usd": "60069.58623790",
+        "snapshot_at": "2018-01-14 14:32:33"
+    },
+    {
+        "id": 3191,
+        "cryptocurrency_id": 1,
+        "price_usd": "58454.17496541",
+        "snapshot_at": "2018-01-14 13:32:33"
+    },
+    {
+        "id": 3192,
+        "cryptocurrency_id": 1,
+        "price_usd": "59996.13964717",
+        "snapshot_at": "2018-01-14 12:32:33"
+    },
+    {
+        "id": 3193,
+        "cryptocurrency_id": 1,
+        "price_usd": "57151.40424921",
+        "snapshot_at": "2018-01-14 11:32:33"
+    },
+    {
+        "id": 3194,
+        "cryptocurrency_id": 1,
+        "price_usd": "57657.27736391",
+        "snapshot_at": "2018-01-14 10:32:33"
+    },
+    {
+        "id": 3195,
+        "cryptocurrency_id": 1,
+        "price_usd": "57747.13876016",
+        "snapshot_at": "2018-01-14 09:32:33"
+    },
+    {
+        "id": 3196,
+        "cryptocurrency_id": 1,
+        "price_usd": "57496.34466132",
+        "snapshot_at": "2018-01-14 08:32:33"
+    },
+    {
+        "id": 3197,
+        "cryptocurrency_id": 1,
+        "price_usd": "56600.38720396",
+        "snapshot_at": "2018-01-14 07:32:33"
+    },
+    {
+        "id": 3198,
+        "cryptocurrency_id": 1,
+        "price_usd": "55486.46316975",
+        "snapshot_at": "2018-01-14 06:32:33"
+    },
+    {
+        "id": 3199,
+        "cryptocurrency_id": 1,
+        "price_usd": "57658.38913770",
+        "snapshot_at": "2018-01-14 05:32:33"
+    },
+    {
+        "id": 3200,
+        "cryptocurrency_id": 1,
+        "price_usd": "57077.10396340",
+        "snapshot_at": "2018-01-14 04:32:33"
+    },
+    {
+        "id": 3201,
+        "cryptocurrency_id": 1,
+        "price_usd": "58033.71254565",
+        "snapshot_at": "2018-01-14 03:32:33"
+    },
+    {
+        "id": 3202,
+        "cryptocurrency_id": 1,
+        "price_usd": "57409.05468560",
+        "snapshot_at": "2018-01-14 02:32:33"
+    },
+    {
+        "id": 3203,
+        "cryptocurrency_id": 1,
+        "price_usd": "55527.30912662",
+        "snapshot_at": "2018-01-14 01:32:33"
+    },
+    {
+        "id": 3204,
+        "cryptocurrency_id": 1,
+        "price_usd": "56822.94719543",
+        "snapshot_at": "2018-01-14 00:32:33"
+    },
+    {
+        "id": 3205,
+        "cryptocurrency_id": 1,
+        "price_usd": "55031.43408925",
+        "snapshot_at": "2018-01-13 23:32:33"
+    },
+    {
+        "id": 3206,
+        "cryptocurrency_id": 1,
+        "price_usd": "55175.35391318",
+        "snapshot_at": "2018-01-13 22:32:33"
+    },
+    {
+        "id": 3207,
+        "cryptocurrency_id": 1,
+        "price_usd": "55710.15829225",
+        "snapshot_at": "2018-01-13 21:32:33"
+    },
+    {
+        "id": 3208,
+        "cryptocurrency_id": 1,
+        "price_usd": "54515.29028097",
+        "snapshot_at": "2018-01-13 20:32:33"
+    },
+    {
+        "id": 3209,
+        "cryptocurrency_id": 1,
+        "price_usd": "56008.19177070",
+        "snapshot_at": "2018-01-13 19:32:33"
+    },
+    {
+        "id": 3210,
+        "cryptocurrency_id": 1,
+        "price_usd": "53894.88398805",
+        "snapshot_at": "2018-01-13 18:32:33"
+    },
+    {
+        "id": 3211,
+        "cryptocurrency_id": 1,
+        "price_usd": "55322.08974747",
+        "snapshot_at": "2018-01-13 17:32:33"
+    },
+    {
+        "id": 3212,
+        "cryptocurrency_id": 1,
+        "price_usd": "53196.45577403",
+        "snapshot_at": "2018-01-13 16:32:33"
+    },
+    {
+        "id": 3213,
+        "cryptocurrency_id": 1,
+        "price_usd": "54918.63791739",
+        "snapshot_at": "2018-01-13 15:32:33"
+    },
+    {
+        "id": 3214,
+        "cryptocurrency_id": 1,
+        "price_usd": "53026.69105910",
+        "snapshot_at": "2018-01-13 14:32:33"
+    },
+    {
+        "id": 3215,
+        "cryptocurrency_id": 1,
+        "price_usd": "51848.65659705",
+        "snapshot_at": "2018-01-13 13:32:33"
+    },
+    {
+        "id": 3216,
+        "cryptocurrency_id": 1,
+        "price_usd": "51260.30803217",
+        "snapshot_at": "2018-01-13 12:32:33"
+    },
+    {
+        "id": 3217,
+        "cryptocurrency_id": 1,
+        "price_usd": "51156.30995575",
+        "snapshot_at": "2018-01-13 11:32:33"
+    },
+    {
+        "id": 3218,
+        "cryptocurrency_id": 1,
+        "price_usd": "49087.38628011",
+        "snapshot_at": "2018-01-13 10:32:33"
+    },
+    {
+        "id": 3219,
+        "cryptocurrency_id": 1,
+        "price_usd": "49103.12812190",
+        "snapshot_at": "2018-01-13 09:32:33"
+    },
+    {
+        "id": 3220,
+        "cryptocurrency_id": 1,
+        "price_usd": "50572.17620540",
+        "snapshot_at": "2018-01-13 08:32:33"
+    },
+    {
+        "id": 3221,
+        "cryptocurrency_id": 1,
+        "price_usd": "48739.16864253",
+        "snapshot_at": "2018-01-13 07:32:33"
+    },
+    {
+        "id": 3222,
+        "cryptocurrency_id": 1,
+        "price_usd": "46911.05152922",
+        "snapshot_at": "2018-01-13 06:32:33"
+    },
+    {
+        "id": 3223,
+        "cryptocurrency_id": 1,
+        "price_usd": "48569.01244298",
+        "snapshot_at": "2018-01-13 05:32:33"
+    },
+    {
+        "id": 3224,
+        "cryptocurrency_id": 1,
+        "price_usd": "48203.83780594",
+        "snapshot_at": "2018-01-13 04:32:33"
+    },
+    {
+        "id": 3225,
+        "cryptocurrency_id": 1,
+        "price_usd": "46374.55555926",
+        "snapshot_at": "2018-01-13 03:32:33"
+    },
+    {
+        "id": 3226,
+        "cryptocurrency_id": 1,
+        "price_usd": "45049.46704359",
+        "snapshot_at": "2018-01-13 02:32:33"
+    },
+    {
+        "id": 3227,
+        "cryptocurrency_id": 1,
+        "price_usd": "44830.76959745",
+        "snapshot_at": "2018-01-13 01:32:33"
+    },
+    {
+        "id": 3228,
+        "cryptocurrency_id": 1,
+        "price_usd": "44019.90379818",
+        "snapshot_at": "2018-01-13 00:32:33"
+    },
+    {
+        "id": 3229,
+        "cryptocurrency_id": 1,
+        "price_usd": "45799.58882161",
+        "snapshot_at": "2018-01-12 23:32:33"
+    },
+    {
+        "id": 3230,
+        "cryptocurrency_id": 1,
+        "price_usd": "46360.78403710",
+        "snapshot_at": "2018-01-12 22:32:33"
+    },
+    {
+        "id": 3231,
+        "cryptocurrency_id": 1,
+        "price_usd": "47517.08847368",
+        "snapshot_at": "2018-01-12 21:32:33"
+    },
+    {
+        "id": 3232,
+        "cryptocurrency_id": 1,
+        "price_usd": "48744.65871822",
+        "snapshot_at": "2018-01-12 20:32:33"
+    },
+    {
+        "id": 3233,
+        "cryptocurrency_id": 1,
+        "price_usd": "47784.34036764",
+        "snapshot_at": "2018-01-12 19:32:33"
+    },
+    {
+        "id": 3234,
+        "cryptocurrency_id": 1,
+        "price_usd": "47712.99690481",
+        "snapshot_at": "2018-01-12 18:32:33"
+    },
+    {
+        "id": 3235,
+        "cryptocurrency_id": 1,
+        "price_usd": "50081.38116557",
+        "snapshot_at": "2018-01-12 17:32:33"
+    },
+    {
+        "id": 3236,
+        "cryptocurrency_id": 1,
+        "price_usd": "48430.68254144",
+        "snapshot_at": "2018-01-12 16:32:33"
+    },
+    {
+        "id": 3237,
+        "cryptocurrency_id": 1,
+        "price_usd": "48591.68633228",
+        "snapshot_at": "2018-01-12 15:32:33"
+    },
+    {
+        "id": 3238,
+        "cryptocurrency_id": 1,
+        "price_usd": "48784.35548390",
+        "snapshot_at": "2018-01-12 14:32:33"
+    },
+    {
+        "id": 3239,
+        "cryptocurrency_id": 1,
+        "price_usd": "50021.53143687",
+        "snapshot_at": "2018-01-12 13:32:33"
+    },
+    {
+        "id": 3240,
+        "cryptocurrency_id": 1,
+        "price_usd": "50296.65675156",
+        "snapshot_at": "2018-01-12 12:32:33"
+    },
+    {
+        "id": 3241,
+        "cryptocurrency_id": 1,
+        "price_usd": "47793.53878099",
+        "snapshot_at": "2018-01-12 11:32:33"
+    },
+    {
+        "id": 3242,
+        "cryptocurrency_id": 1,
+        "price_usd": "49750.42990394",
+        "snapshot_at": "2018-01-12 10:32:33"
+    },
+    {
+        "id": 3243,
+        "cryptocurrency_id": 1,
+        "price_usd": "48186.82419674",
+        "snapshot_at": "2018-01-12 09:32:33"
+    },
+    {
+        "id": 3244,
+        "cryptocurrency_id": 1,
+        "price_usd": "48858.30698411",
+        "snapshot_at": "2018-01-12 08:32:33"
+    },
+    {
+        "id": 3245,
+        "cryptocurrency_id": 1,
+        "price_usd": "50308.78273626",
+        "snapshot_at": "2018-01-12 07:32:33"
+    },
+    {
+        "id": 3246,
+        "cryptocurrency_id": 1,
+        "price_usd": "50405.04443252",
+        "snapshot_at": "2018-01-12 06:32:33"
+    },
+    {
+        "id": 3247,
+        "cryptocurrency_id": 1,
+        "price_usd": "48824.77118447",
+        "snapshot_at": "2018-01-12 05:32:33"
+    },
+    {
+        "id": 3248,
+        "cryptocurrency_id": 1,
+        "price_usd": "46486.83734241",
+        "snapshot_at": "2018-01-12 04:32:33"
+    },
+    {
+        "id": 3249,
+        "cryptocurrency_id": 1,
+        "price_usd": "46298.72944906",
+        "snapshot_at": "2018-01-12 03:32:33"
+    },
+    {
+        "id": 3250,
+        "cryptocurrency_id": 1,
+        "price_usd": "47628.25235202",
+        "snapshot_at": "2018-01-12 02:32:33"
+    },
+    {
+        "id": 3251,
+        "cryptocurrency_id": 1,
+        "price_usd": "47395.78929477",
+        "snapshot_at": "2018-01-12 01:32:33"
+    },
+    {
+        "id": 3252,
+        "cryptocurrency_id": 1,
+        "price_usd": "47685.94200418",
+        "snapshot_at": "2018-01-12 00:32:33"
+    },
+    {
+        "id": 3253,
+        "cryptocurrency_id": 1,
+        "price_usd": "48337.24598684",
+        "snapshot_at": "2018-01-11 23:32:33"
+    },
+    {
+        "id": 3254,
+        "cryptocurrency_id": 1,
+        "price_usd": "49007.26856451",
+        "snapshot_at": "2018-01-11 22:32:33"
+    },
+    {
+        "id": 3255,
+        "cryptocurrency_id": 1,
+        "price_usd": "46576.59985735",
+        "snapshot_at": "2018-01-11 21:32:33"
+    },
+    {
+        "id": 3256,
+        "cryptocurrency_id": 1,
+        "price_usd": "46749.95272731",
+        "snapshot_at": "2018-01-11 20:32:33"
+    },
+    {
+        "id": 3257,
+        "cryptocurrency_id": 1,
+        "price_usd": "46288.82708326",
+        "snapshot_at": "2018-01-11 19:32:33"
+    },
+    {
+        "id": 3258,
+        "cryptocurrency_id": 1,
+        "price_usd": "45971.86010181",
+        "snapshot_at": "2018-01-11 18:32:33"
+    },
+    {
+        "id": 3259,
+        "cryptocurrency_id": 1,
+        "price_usd": "45378.26398188",
+        "snapshot_at": "2018-01-11 17:32:33"
+    },
+    {
+        "id": 3260,
+        "cryptocurrency_id": 1,
+        "price_usd": "43199.22876361",
+        "snapshot_at": "2018-01-11 16:32:33"
+    },
+    {
+        "id": 3261,
+        "cryptocurrency_id": 1,
+        "price_usd": "42006.48204959",
+        "snapshot_at": "2018-01-11 15:32:33"
+    },
+    {
+        "id": 3262,
+        "cryptocurrency_id": 1,
+        "price_usd": "41787.29019713",
+        "snapshot_at": "2018-01-11 14:32:33"
+    },
+    {
+        "id": 3263,
+        "cryptocurrency_id": 1,
+        "price_usd": "42438.55605149",
+        "snapshot_at": "2018-01-11 13:32:33"
+    },
+    {
+        "id": 3264,
+        "cryptocurrency_id": 1,
+        "price_usd": "44416.12810069",
+        "snapshot_at": "2018-01-11 12:32:33"
+    },
+    {
+        "id": 3265,
+        "cryptocurrency_id": 1,
+        "price_usd": "44718.35796344",
+        "snapshot_at": "2018-01-11 11:32:33"
+    },
+    {
+        "id": 3266,
+        "cryptocurrency_id": 1,
+        "price_usd": "42617.01841578",
+        "snapshot_at": "2018-01-11 10:32:33"
+    },
+    {
+        "id": 3267,
+        "cryptocurrency_id": 1,
+        "price_usd": "41234.68376507",
+        "snapshot_at": "2018-01-11 09:32:33"
+    },
+    {
+        "id": 3268,
+        "cryptocurrency_id": 1,
+        "price_usd": "41634.14894948",
+        "snapshot_at": "2018-01-11 08:32:33"
+    },
+    {
+        "id": 3269,
+        "cryptocurrency_id": 1,
+        "price_usd": "39575.12251250",
+        "snapshot_at": "2018-01-11 07:32:33"
+    },
+    {
+        "id": 3270,
+        "cryptocurrency_id": 1,
+        "price_usd": "40652.84470751",
+        "snapshot_at": "2018-01-11 06:32:33"
+    },
+    {
+        "id": 3271,
+        "cryptocurrency_id": 1,
+        "price_usd": "42089.19202207",
+        "snapshot_at": "2018-01-11 05:32:33"
+    },
+    {
+        "id": 3272,
+        "cryptocurrency_id": 1,
+        "price_usd": "44122.38062027",
+        "snapshot_at": "2018-01-11 04:32:33"
+    },
+    {
+        "id": 3273,
+        "cryptocurrency_id": 1,
+        "price_usd": "45600.26627876",
+        "snapshot_at": "2018-01-11 03:32:33"
+    },
+    {
+        "id": 3274,
+        "cryptocurrency_id": 1,
+        "price_usd": "46467.61231980",
+        "snapshot_at": "2018-01-11 02:32:33"
+    },
+    {
+        "id": 3275,
+        "cryptocurrency_id": 1,
+        "price_usd": "45270.36109240",
+        "snapshot_at": "2018-01-11 01:32:33"
+    },
+    {
+        "id": 3276,
+        "cryptocurrency_id": 1,
+        "price_usd": "47298.45218574",
+        "snapshot_at": "2018-01-11 00:32:33"
+    },
+    {
+        "id": 3277,
+        "cryptocurrency_id": 1,
+        "price_usd": "48067.58892110",
+        "snapshot_at": "2018-01-10 23:32:33"
+    },
+    {
+        "id": 3278,
+        "cryptocurrency_id": 1,
+        "price_usd": "49128.37120011",
+        "snapshot_at": "2018-01-10 22:32:33"
+    },
+    {
+        "id": 3279,
+        "cryptocurrency_id": 1,
+        "price_usd": "47167.95956185",
+        "snapshot_at": "2018-01-10 21:32:33"
+    },
+    {
+        "id": 3280,
+        "cryptocurrency_id": 1,
+        "price_usd": "47172.44685456",
+        "snapshot_at": "2018-01-10 20:32:33"
+    },
+    {
+        "id": 3281,
+        "cryptocurrency_id": 1,
+        "price_usd": "49469.69609166",
+        "snapshot_at": "2018-01-10 19:32:33"
+    },
+    {
+        "id": 3282,
+        "cryptocurrency_id": 1,
+        "price_usd": "46999.78520445",
+        "snapshot_at": "2018-01-10 18:32:33"
+    },
+    {
+        "id": 3283,
+        "cryptocurrency_id": 1,
+        "price_usd": "49139.90062517",
+        "snapshot_at": "2018-01-10 17:32:33"
+    },
+    {
+        "id": 3284,
+        "cryptocurrency_id": 1,
+        "price_usd": "48611.21723159",
+        "snapshot_at": "2018-01-10 16:32:33"
+    },
+    {
+        "id": 3285,
+        "cryptocurrency_id": 1,
+        "price_usd": "47470.00886576",
+        "snapshot_at": "2018-01-10 15:32:33"
+    },
+    {
+        "id": 3286,
+        "cryptocurrency_id": 1,
+        "price_usd": "45115.67982314",
+        "snapshot_at": "2018-01-10 14:32:33"
+    },
+    {
+        "id": 3287,
+        "cryptocurrency_id": 1,
+        "price_usd": "45845.76380315",
+        "snapshot_at": "2018-01-10 13:32:33"
+    },
+    {
+        "id": 3288,
+        "cryptocurrency_id": 1,
+        "price_usd": "47581.43833582",
+        "snapshot_at": "2018-01-10 12:32:33"
+    },
+    {
+        "id": 3289,
+        "cryptocurrency_id": 1,
+        "price_usd": "48354.87605452",
+        "snapshot_at": "2018-01-10 11:32:33"
+    },
+    {
+        "id": 3290,
+        "cryptocurrency_id": 1,
+        "price_usd": "48371.22682567",
+        "snapshot_at": "2018-01-10 10:32:33"
+    },
+    {
+        "id": 3291,
+        "cryptocurrency_id": 1,
+        "price_usd": "49925.02444005",
+        "snapshot_at": "2018-01-10 09:32:33"
+    },
+    {
+        "id": 3292,
+        "cryptocurrency_id": 1,
+        "price_usd": "48182.33336499",
+        "snapshot_at": "2018-01-10 08:32:33"
+    },
+    {
+        "id": 3293,
+        "cryptocurrency_id": 1,
+        "price_usd": "48335.47602538",
+        "snapshot_at": "2018-01-10 07:32:33"
+    },
+    {
+        "id": 3294,
+        "cryptocurrency_id": 1,
+        "price_usd": "49399.36461853",
+        "snapshot_at": "2018-01-10 06:32:33"
+    },
+    {
+        "id": 3295,
+        "cryptocurrency_id": 1,
+        "price_usd": "50022.61696827",
+        "snapshot_at": "2018-01-10 05:32:33"
+    },
+    {
+        "id": 3296,
+        "cryptocurrency_id": 1,
+        "price_usd": "51587.30956098",
+        "snapshot_at": "2018-01-10 04:32:33"
+    },
+    {
+        "id": 3297,
+        "cryptocurrency_id": 1,
+        "price_usd": "51158.21508869",
+        "snapshot_at": "2018-01-10 03:32:33"
+    },
+    {
+        "id": 3298,
+        "cryptocurrency_id": 1,
+        "price_usd": "53627.27620975",
+        "snapshot_at": "2018-01-10 02:32:33"
+    },
+    {
+        "id": 3299,
+        "cryptocurrency_id": 1,
+        "price_usd": "52533.76309223",
+        "snapshot_at": "2018-01-10 01:32:33"
+    },
+    {
+        "id": 3300,
+        "cryptocurrency_id": 1,
+        "price_usd": "53415.66208947",
+        "snapshot_at": "2018-01-10 00:32:33"
+    },
+    {
+        "id": 3301,
+        "cryptocurrency_id": 1,
+        "price_usd": "51248.66562907",
+        "snapshot_at": "2018-01-09 23:32:33"
+    },
+    {
+        "id": 3302,
+        "cryptocurrency_id": 1,
+        "price_usd": "52987.18229580",
+        "snapshot_at": "2018-01-09 22:32:33"
+    },
+    {
+        "id": 3303,
+        "cryptocurrency_id": 1,
+        "price_usd": "53504.70512991",
+        "snapshot_at": "2018-01-09 21:32:33"
+    },
+    {
+        "id": 3304,
+        "cryptocurrency_id": 1,
+        "price_usd": "55257.90949064",
+        "snapshot_at": "2018-01-09 20:32:33"
+    },
+    {
+        "id": 3305,
+        "cryptocurrency_id": 1,
+        "price_usd": "53879.02108385",
+        "snapshot_at": "2018-01-09 19:32:33"
+    },
+    {
+        "id": 3306,
+        "cryptocurrency_id": 1,
+        "price_usd": "51338.38800580",
+        "snapshot_at": "2018-01-09 18:32:33"
+    },
+    {
+        "id": 3307,
+        "cryptocurrency_id": 1,
+        "price_usd": "51191.05098603",
+        "snapshot_at": "2018-01-09 17:32:33"
+    },
+    {
+        "id": 3308,
+        "cryptocurrency_id": 1,
+        "price_usd": "53180.50895691",
+        "snapshot_at": "2018-01-09 16:32:33"
+    },
+    {
+        "id": 3309,
+        "cryptocurrency_id": 1,
+        "price_usd": "50650.46768032",
+        "snapshot_at": "2018-01-09 15:32:33"
+    },
+    {
+        "id": 3310,
+        "cryptocurrency_id": 1,
+        "price_usd": "48679.31823411",
+        "snapshot_at": "2018-01-09 14:32:33"
+    },
+    {
+        "id": 3311,
+        "cryptocurrency_id": 1,
+        "price_usd": "50576.30697562",
+        "snapshot_at": "2018-01-09 13:32:33"
+    },
+    {
+        "id": 3312,
+        "cryptocurrency_id": 1,
+        "price_usd": "50911.15956623",
+        "snapshot_at": "2018-01-09 12:32:33"
+    },
+    {
+        "id": 3313,
+        "cryptocurrency_id": 1,
+        "price_usd": "51571.85838935",
+        "snapshot_at": "2018-01-09 11:32:33"
+    },
+    {
+        "id": 3314,
+        "cryptocurrency_id": 1,
+        "price_usd": "53690.82089159",
+        "snapshot_at": "2018-01-09 10:32:33"
+    },
+    {
+        "id": 3315,
+        "cryptocurrency_id": 1,
+        "price_usd": "52006.08095831",
+        "snapshot_at": "2018-01-09 09:32:33"
+    },
+    {
+        "id": 3316,
+        "cryptocurrency_id": 1,
+        "price_usd": "52135.70305926",
+        "snapshot_at": "2018-01-09 08:32:33"
+    },
+    {
+        "id": 3317,
+        "cryptocurrency_id": 1,
+        "price_usd": "50690.44338466",
+        "snapshot_at": "2018-01-09 07:32:33"
+    },
+    {
+        "id": 3318,
+        "cryptocurrency_id": 1,
+        "price_usd": "48998.27112555",
+        "snapshot_at": "2018-01-09 06:32:33"
+    },
+    {
+        "id": 3319,
+        "cryptocurrency_id": 1,
+        "price_usd": "46601.88688642",
+        "snapshot_at": "2018-01-09 05:32:33"
+    },
+    {
+        "id": 3320,
+        "cryptocurrency_id": 1,
+        "price_usd": "46289.75982835",
+        "snapshot_at": "2018-01-09 04:32:33"
+    },
+    {
+        "id": 3321,
+        "cryptocurrency_id": 1,
+        "price_usd": "47552.41302376",
+        "snapshot_at": "2018-01-09 03:32:33"
+    },
+    {
+        "id": 3322,
+        "cryptocurrency_id": 1,
+        "price_usd": "46849.40505369",
+        "snapshot_at": "2018-01-09 02:32:33"
+    },
+    {
+        "id": 3323,
+        "cryptocurrency_id": 1,
+        "price_usd": "46822.54062946",
+        "snapshot_at": "2018-01-09 01:32:33"
+    },
+    {
+        "id": 3324,
+        "cryptocurrency_id": 1,
+        "price_usd": "45110.36760737",
+        "snapshot_at": "2018-01-09 00:32:33"
+    },
+    {
+        "id": 3325,
+        "cryptocurrency_id": 1,
+        "price_usd": "43148.33912296",
+        "snapshot_at": "2018-01-08 23:32:33"
+    },
+    {
+        "id": 3326,
+        "cryptocurrency_id": 1,
+        "price_usd": "42071.72586478",
+        "snapshot_at": "2018-01-08 22:32:33"
+    },
+    {
+        "id": 3327,
+        "cryptocurrency_id": 1,
+        "price_usd": "40384.45348609",
+        "snapshot_at": "2018-01-08 21:32:33"
+    },
+    {
+        "id": 3328,
+        "cryptocurrency_id": 1,
+        "price_usd": "39862.64935139",
+        "snapshot_at": "2018-01-08 20:32:33"
+    },
+    {
+        "id": 3329,
+        "cryptocurrency_id": 1,
+        "price_usd": "40687.96160195",
+        "snapshot_at": "2018-01-08 19:32:33"
+    },
+    {
+        "id": 3330,
+        "cryptocurrency_id": 1,
+        "price_usd": "38991.14021309",
+        "snapshot_at": "2018-01-08 18:32:33"
+    },
+    {
+        "id": 3331,
+        "cryptocurrency_id": 1,
+        "price_usd": "38997.11989574",
+        "snapshot_at": "2018-01-08 17:32:33"
+    },
+    {
+        "id": 3332,
+        "cryptocurrency_id": 1,
+        "price_usd": "40372.45055612",
+        "snapshot_at": "2018-01-08 16:32:33"
+    },
+    {
+        "id": 3333,
+        "cryptocurrency_id": 1,
+        "price_usd": "39554.61757000",
+        "snapshot_at": "2018-01-08 15:32:33"
+    },
+    {
+        "id": 3334,
+        "cryptocurrency_id": 1,
+        "price_usd": "39809.77140871",
+        "snapshot_at": "2018-01-08 14:32:33"
+    },
+    {
+        "id": 3335,
+        "cryptocurrency_id": 1,
+        "price_usd": "38536.10196240",
+        "snapshot_at": "2018-01-08 13:32:33"
+    },
+    {
+        "id": 3336,
+        "cryptocurrency_id": 1,
+        "price_usd": "39739.61206955",
+        "snapshot_at": "2018-01-08 12:32:33"
+    },
+    {
+        "id": 3337,
+        "cryptocurrency_id": 1,
+        "price_usd": "39532.45887074",
+        "snapshot_at": "2018-01-08 11:32:33"
+    },
+    {
+        "id": 3338,
+        "cryptocurrency_id": 1,
+        "price_usd": "41190.05262957",
+        "snapshot_at": "2018-01-08 10:32:33"
+    },
+    {
+        "id": 3339,
+        "cryptocurrency_id": 1,
+        "price_usd": "42728.98044677",
+        "snapshot_at": "2018-01-08 09:32:33"
+    },
+    {
+        "id": 3340,
+        "cryptocurrency_id": 1,
+        "price_usd": "42711.01036102",
+        "snapshot_at": "2018-01-08 08:32:33"
+    },
+    {
+        "id": 3341,
+        "cryptocurrency_id": 1,
+        "price_usd": "43314.69033872",
+        "snapshot_at": "2018-01-08 07:32:33"
+    },
+    {
+        "id": 3342,
+        "cryptocurrency_id": 1,
+        "price_usd": "42572.24152005",
+        "snapshot_at": "2018-01-08 06:32:33"
+    },
+    {
+        "id": 3343,
+        "cryptocurrency_id": 1,
+        "price_usd": "43781.34329320",
+        "snapshot_at": "2018-01-08 05:32:33"
+    },
+    {
+        "id": 3344,
+        "cryptocurrency_id": 1,
+        "price_usd": "41971.01437370",
+        "snapshot_at": "2018-01-08 04:32:33"
+    },
+    {
+        "id": 3345,
+        "cryptocurrency_id": 1,
+        "price_usd": "42287.71341178",
+        "snapshot_at": "2018-01-08 03:32:33"
+    },
+    {
+        "id": 3346,
+        "cryptocurrency_id": 1,
+        "price_usd": "41489.36540814",
+        "snapshot_at": "2018-01-08 02:32:33"
+    },
+    {
+        "id": 3347,
+        "cryptocurrency_id": 1,
+        "price_usd": "41197.04155409",
+        "snapshot_at": "2018-01-08 01:32:33"
+    },
+    {
+        "id": 3348,
+        "cryptocurrency_id": 1,
+        "price_usd": "42801.37843700",
+        "snapshot_at": "2018-01-08 00:32:33"
+    },
+    {
+        "id": 3349,
+        "cryptocurrency_id": 1,
+        "price_usd": "42560.71881987",
+        "snapshot_at": "2018-01-07 23:32:33"
+    },
+    {
+        "id": 3350,
+        "cryptocurrency_id": 1,
+        "price_usd": "41130.01115336",
+        "snapshot_at": "2018-01-07 22:32:33"
+    },
+    {
+        "id": 3351,
+        "cryptocurrency_id": 1,
+        "price_usd": "39949.05740274",
+        "snapshot_at": "2018-01-07 21:32:33"
+    },
+    {
+        "id": 3352,
+        "cryptocurrency_id": 1,
+        "price_usd": "39283.73786554",
+        "snapshot_at": "2018-01-07 20:32:33"
+    },
+    {
+        "id": 3353,
+        "cryptocurrency_id": 1,
+        "price_usd": "38832.31227811",
+        "snapshot_at": "2018-01-07 19:32:33"
+    },
+    {
+        "id": 3354,
+        "cryptocurrency_id": 1,
+        "price_usd": "38364.77517950",
+        "snapshot_at": "2018-01-07 18:32:33"
+    },
+    {
+        "id": 3355,
+        "cryptocurrency_id": 1,
+        "price_usd": "37357.49789991",
+        "snapshot_at": "2018-01-07 17:32:33"
+    },
+    {
+        "id": 3356,
+        "cryptocurrency_id": 1,
+        "price_usd": "38873.79215234",
+        "snapshot_at": "2018-01-07 16:32:33"
+    },
+    {
+        "id": 3357,
+        "cryptocurrency_id": 1,
+        "price_usd": "39653.28054603",
+        "snapshot_at": "2018-01-07 15:32:33"
+    },
+    {
+        "id": 3358,
+        "cryptocurrency_id": 1,
+        "price_usd": "39867.67643953",
+        "snapshot_at": "2018-01-07 14:32:33"
+    },
+    {
+        "id": 3359,
+        "cryptocurrency_id": 1,
+        "price_usd": "39203.24337757",
+        "snapshot_at": "2018-01-07 13:32:33"
+    },
+    {
+        "id": 3360,
+        "cryptocurrency_id": 1,
+        "price_usd": "38036.17343864",
+        "snapshot_at": "2018-01-07 12:32:33"
+    },
+    {
+        "id": 3361,
+        "cryptocurrency_id": 1,
+        "price_usd": "38849.23836629",
+        "snapshot_at": "2018-01-07 11:32:33"
+    },
+    {
+        "id": 3362,
+        "cryptocurrency_id": 1,
+        "price_usd": "38184.35058786",
+        "snapshot_at": "2018-01-07 10:32:33"
+    },
+    {
+        "id": 3363,
+        "cryptocurrency_id": 1,
+        "price_usd": "37713.99326416",
+        "snapshot_at": "2018-01-07 09:32:33"
+    },
+    {
+        "id": 3364,
+        "cryptocurrency_id": 1,
+        "price_usd": "38872.34693192",
+        "snapshot_at": "2018-01-07 08:32:33"
+    },
+    {
+        "id": 3365,
+        "cryptocurrency_id": 1,
+        "price_usd": "38288.56512576",
+        "snapshot_at": "2018-01-07 07:32:33"
+    },
+    {
+        "id": 3366,
+        "cryptocurrency_id": 1,
+        "price_usd": "37275.17546042",
+        "snapshot_at": "2018-01-07 06:32:33"
+    },
+    {
+        "id": 3367,
+        "cryptocurrency_id": 1,
+        "price_usd": "35489.87433058",
+        "snapshot_at": "2018-01-07 05:32:33"
+    },
+    {
+        "id": 3368,
+        "cryptocurrency_id": 1,
+        "price_usd": "33719.62165417",
+        "snapshot_at": "2018-01-07 04:32:33"
+    },
+    {
+        "id": 3369,
+        "cryptocurrency_id": 1,
+        "price_usd": "35164.47485249",
+        "snapshot_at": "2018-01-07 03:32:33"
+    },
+    {
+        "id": 3370,
+        "cryptocurrency_id": 1,
+        "price_usd": "35327.71637710",
+        "snapshot_at": "2018-01-07 02:32:33"
+    },
+    {
+        "id": 3371,
+        "cryptocurrency_id": 1,
+        "price_usd": "35382.36723678",
+        "snapshot_at": "2018-01-07 01:32:33"
+    },
+    {
+        "id": 3372,
+        "cryptocurrency_id": 1,
+        "price_usd": "35463.28835934",
+        "snapshot_at": "2018-01-07 00:32:33"
+    },
+    {
+        "id": 3373,
+        "cryptocurrency_id": 1,
+        "price_usd": "35000.87703505",
+        "snapshot_at": "2018-01-06 23:32:33"
+    },
+    {
+        "id": 3374,
+        "cryptocurrency_id": 1,
+        "price_usd": "33361.24778704",
+        "snapshot_at": "2018-01-06 22:32:33"
+    },
+    {
+        "id": 3375,
+        "cryptocurrency_id": 1,
+        "price_usd": "34120.93608661",
+        "snapshot_at": "2018-01-06 21:32:33"
+    },
+    {
+        "id": 3376,
+        "cryptocurrency_id": 1,
+        "price_usd": "32442.74724910",
+        "snapshot_at": "2018-01-06 20:32:33"
+    },
+    {
+        "id": 3377,
+        "cryptocurrency_id": 1,
+        "price_usd": "32301.03042710",
+        "snapshot_at": "2018-01-06 19:32:33"
+    },
+    {
+        "id": 3378,
+        "cryptocurrency_id": 1,
+        "price_usd": "32522.16391861",
+        "snapshot_at": "2018-01-06 18:32:33"
+    },
+    {
+        "id": 3379,
+        "cryptocurrency_id": 1,
+        "price_usd": "31906.90646015",
+        "snapshot_at": "2018-01-06 17:32:33"
+    },
+    {
+        "id": 3380,
+        "cryptocurrency_id": 1,
+        "price_usd": "33130.21684423",
+        "snapshot_at": "2018-01-06 16:32:33"
+    },
+    {
+        "id": 3381,
+        "cryptocurrency_id": 1,
+        "price_usd": "32307.33910348",
+        "snapshot_at": "2018-01-06 15:32:33"
+    },
+    {
+        "id": 3382,
+        "cryptocurrency_id": 1,
+        "price_usd": "33124.89851680",
+        "snapshot_at": "2018-01-06 14:32:33"
+    },
+    {
+        "id": 3383,
+        "cryptocurrency_id": 1,
+        "price_usd": "34379.22919018",
+        "snapshot_at": "2018-01-06 13:32:33"
+    },
+    {
+        "id": 3384,
+        "cryptocurrency_id": 1,
+        "price_usd": "34689.49608858",
+        "snapshot_at": "2018-01-06 12:32:33"
+    },
+    {
+        "id": 3385,
+        "cryptocurrency_id": 1,
+        "price_usd": "34058.34896338",
+        "snapshot_at": "2018-01-06 11:32:33"
+    },
+    {
+        "id": 3386,
+        "cryptocurrency_id": 1,
+        "price_usd": "33563.88504130",
+        "snapshot_at": "2018-01-06 10:32:33"
+    },
+    {
+        "id": 3387,
+        "cryptocurrency_id": 1,
+        "price_usd": "33033.99332559",
+        "snapshot_at": "2018-01-06 09:32:33"
+    },
+    {
+        "id": 3388,
+        "cryptocurrency_id": 1,
+        "price_usd": "33421.08707598",
+        "snapshot_at": "2018-01-06 08:32:33"
+    },
+    {
+        "id": 3389,
+        "cryptocurrency_id": 1,
+        "price_usd": "32472.95688790",
+        "snapshot_at": "2018-01-06 07:32:33"
+    },
+    {
+        "id": 3390,
+        "cryptocurrency_id": 1,
+        "price_usd": "31915.71859431",
+        "snapshot_at": "2018-01-06 06:32:33"
+    },
+    {
+        "id": 3391,
+        "cryptocurrency_id": 1,
+        "price_usd": "31681.54602659",
+        "snapshot_at": "2018-01-06 05:32:33"
+    },
+    {
+        "id": 3392,
+        "cryptocurrency_id": 1,
+        "price_usd": "31571.18054653",
+        "snapshot_at": "2018-01-06 04:32:33"
+    },
+    {
+        "id": 3393,
+        "cryptocurrency_id": 1,
+        "price_usd": "31233.98400611",
+        "snapshot_at": "2018-01-06 03:32:33"
+    },
+    {
+        "id": 3394,
+        "cryptocurrency_id": 1,
+        "price_usd": "30836.14763600",
+        "snapshot_at": "2018-01-06 02:32:33"
+    },
+    {
+        "id": 3395,
+        "cryptocurrency_id": 1,
+        "price_usd": "29515.33100294",
+        "snapshot_at": "2018-01-06 01:32:33"
+    },
+    {
+        "id": 3396,
+        "cryptocurrency_id": 1,
+        "price_usd": "29539.29274386",
+        "snapshot_at": "2018-01-06 00:32:33"
+    },
+    {
+        "id": 3397,
+        "cryptocurrency_id": 1,
+        "price_usd": "28479.47106812",
+        "snapshot_at": "2018-01-05 23:32:33"
+    },
+    {
+        "id": 3398,
+        "cryptocurrency_id": 1,
+        "price_usd": "27902.75569529",
+        "snapshot_at": "2018-01-05 22:32:33"
+    },
+    {
+        "id": 3399,
+        "cryptocurrency_id": 1,
+        "price_usd": "26595.92113512",
+        "snapshot_at": "2018-01-05 21:32:33"
+    },
+    {
+        "id": 3400,
+        "cryptocurrency_id": 1,
+        "price_usd": "26800.23007446",
+        "snapshot_at": "2018-01-05 20:32:33"
+    },
+    {
+        "id": 3401,
+        "cryptocurrency_id": 1,
+        "price_usd": "26119.48458987",
+        "snapshot_at": "2018-01-05 19:32:33"
+    },
+    {
+        "id": 3402,
+        "cryptocurrency_id": 1,
+        "price_usd": "27076.59783395",
+        "snapshot_at": "2018-01-05 18:32:33"
+    },
+    {
+        "id": 3403,
+        "cryptocurrency_id": 1,
+        "price_usd": "25992.41297734",
+        "snapshot_at": "2018-01-05 17:32:33"
+    },
+    {
+        "id": 3404,
+        "cryptocurrency_id": 1,
+        "price_usd": "26396.67765764",
+        "snapshot_at": "2018-01-05 16:32:33"
+    },
+    {
+        "id": 3405,
+        "cryptocurrency_id": 1,
+        "price_usd": "26675.37085302",
+        "snapshot_at": "2018-01-05 15:32:33"
+    },
+    {
+        "id": 3406,
+        "cryptocurrency_id": 1,
+        "price_usd": "25476.52564532",
+        "snapshot_at": "2018-01-05 14:32:33"
+    },
+    {
+        "id": 3407,
+        "cryptocurrency_id": 1,
+        "price_usd": "25785.53672398",
+        "snapshot_at": "2018-01-05 13:32:33"
+    },
+    {
+        "id": 3408,
+        "cryptocurrency_id": 1,
+        "price_usd": "26868.36092952",
+        "snapshot_at": "2018-01-05 12:32:33"
+    },
+    {
+        "id": 3409,
+        "cryptocurrency_id": 1,
+        "price_usd": "27009.70352091",
+        "snapshot_at": "2018-01-05 11:32:33"
+    },
+    {
+        "id": 3410,
+        "cryptocurrency_id": 1,
+        "price_usd": "26777.65021234",
+        "snapshot_at": "2018-01-05 10:32:33"
+    },
+    {
+        "id": 3411,
+        "cryptocurrency_id": 1,
+        "price_usd": "26333.45120638",
+        "snapshot_at": "2018-01-05 09:32:33"
+    },
+    {
+        "id": 3412,
+        "cryptocurrency_id": 1,
+        "price_usd": "26517.21388936",
+        "snapshot_at": "2018-01-05 08:32:33"
+    },
+    {
+        "id": 3413,
+        "cryptocurrency_id": 1,
+        "price_usd": "26466.47448645",
+        "snapshot_at": "2018-01-05 07:32:33"
+    },
+    {
+        "id": 3414,
+        "cryptocurrency_id": 1,
+        "price_usd": "27239.41830981",
+        "snapshot_at": "2018-01-05 06:32:33"
+    },
+    {
+        "id": 3415,
+        "cryptocurrency_id": 1,
+        "price_usd": "26937.40669241",
+        "snapshot_at": "2018-01-05 05:32:33"
+    },
+    {
+        "id": 3416,
+        "cryptocurrency_id": 1,
+        "price_usd": "28236.33039689",
+        "snapshot_at": "2018-01-05 04:32:33"
+    },
+    {
+        "id": 3417,
+        "cryptocurrency_id": 1,
+        "price_usd": "27126.13658084",
+        "snapshot_at": "2018-01-05 03:32:33"
+    },
+    {
+        "id": 3418,
+        "cryptocurrency_id": 1,
+        "price_usd": "27404.29778969",
+        "snapshot_at": "2018-01-05 02:32:33"
+    },
+    {
+        "id": 3419,
+        "cryptocurrency_id": 1,
+        "price_usd": "26209.79314587",
+        "snapshot_at": "2018-01-05 01:32:33"
+    },
+    {
+        "id": 3420,
+        "cryptocurrency_id": 1,
+        "price_usd": "25442.63923809",
+        "snapshot_at": "2018-01-05 00:32:33"
+    },
+    {
+        "id": 3421,
+        "cryptocurrency_id": 1,
+        "price_usd": "25966.24213300",
+        "snapshot_at": "2018-01-04 23:32:33"
+    },
+    {
+        "id": 3422,
+        "cryptocurrency_id": 1,
+        "price_usd": "26546.61623145",
+        "snapshot_at": "2018-01-04 22:32:33"
+    },
+    {
+        "id": 3423,
+        "cryptocurrency_id": 1,
+        "price_usd": "27334.89316547",
+        "snapshot_at": "2018-01-04 21:32:33"
+    },
+    {
+        "id": 3424,
+        "cryptocurrency_id": 1,
+        "price_usd": "28410.28359978",
+        "snapshot_at": "2018-01-04 20:32:33"
+    },
+    {
+        "id": 3425,
+        "cryptocurrency_id": 1,
+        "price_usd": "29572.85449301",
+        "snapshot_at": "2018-01-04 19:32:33"
+    },
+    {
+        "id": 3426,
+        "cryptocurrency_id": 1,
+        "price_usd": "30187.42402176",
+        "snapshot_at": "2018-01-04 18:32:33"
+    },
+    {
+        "id": 3427,
+        "cryptocurrency_id": 1,
+        "price_usd": "29229.88421299",
+        "snapshot_at": "2018-01-04 17:32:33"
+    },
+    {
+        "id": 3428,
+        "cryptocurrency_id": 1,
+        "price_usd": "30371.66466806",
+        "snapshot_at": "2018-01-04 16:32:33"
+    },
+    {
+        "id": 3429,
+        "cryptocurrency_id": 1,
+        "price_usd": "29132.79674844",
+        "snapshot_at": "2018-01-04 15:32:33"
+    },
+    {
+        "id": 3430,
+        "cryptocurrency_id": 1,
+        "price_usd": "30056.35340823",
+        "snapshot_at": "2018-01-04 14:32:33"
+    },
+    {
+        "id": 3431,
+        "cryptocurrency_id": 1,
+        "price_usd": "30161.91351521",
+        "snapshot_at": "2018-01-04 13:32:33"
+    },
+    {
+        "id": 3432,
+        "cryptocurrency_id": 1,
+        "price_usd": "30147.37532876",
+        "snapshot_at": "2018-01-04 12:32:33"
+    },
+    {
+        "id": 3433,
+        "cryptocurrency_id": 1,
+        "price_usd": "30353.63424768",
+        "snapshot_at": "2018-01-04 11:32:33"
+    },
+    {
+        "id": 3434,
+        "cryptocurrency_id": 1,
+        "price_usd": "31747.89498874",
+        "snapshot_at": "2018-01-04 10:32:33"
+    },
+    {
+        "id": 3435,
+        "cryptocurrency_id": 1,
+        "price_usd": "30859.63803751",
+        "snapshot_at": "2018-01-04 09:32:33"
+    },
+    {
+        "id": 3436,
+        "cryptocurrency_id": 1,
+        "price_usd": "29539.42056374",
+        "snapshot_at": "2018-01-04 08:32:33"
+    },
+    {
+        "id": 3437,
+        "cryptocurrency_id": 1,
+        "price_usd": "28337.10383091",
+        "snapshot_at": "2018-01-04 07:32:33"
+    },
+    {
+        "id": 3438,
+        "cryptocurrency_id": 1,
+        "price_usd": "28553.28973559",
+        "snapshot_at": "2018-01-04 06:32:33"
+    },
+    {
+        "id": 3439,
+        "cryptocurrency_id": 1,
+        "price_usd": "29343.37542172",
+        "snapshot_at": "2018-01-04 05:32:33"
+    },
+    {
+        "id": 3440,
+        "cryptocurrency_id": 1,
+        "price_usd": "30115.62897333",
+        "snapshot_at": "2018-01-04 04:32:33"
+    },
+    {
+        "id": 3441,
+        "cryptocurrency_id": 1,
+        "price_usd": "30553.06295735",
+        "snapshot_at": "2018-01-04 03:32:33"
+    },
+    {
+        "id": 3442,
+        "cryptocurrency_id": 1,
+        "price_usd": "30782.19228110",
+        "snapshot_at": "2018-01-04 02:32:33"
+    },
+    {
+        "id": 3443,
+        "cryptocurrency_id": 1,
+        "price_usd": "31205.08312462",
+        "snapshot_at": "2018-01-04 01:32:33"
+    },
+    {
+        "id": 3444,
+        "cryptocurrency_id": 1,
+        "price_usd": "31362.44659299",
+        "snapshot_at": "2018-01-04 00:32:33"
+    },
+    {
+        "id": 3445,
+        "cryptocurrency_id": 1,
+        "price_usd": "29835.41655383",
+        "snapshot_at": "2018-01-03 23:32:33"
+    },
+    {
+        "id": 3446,
+        "cryptocurrency_id": 1,
+        "price_usd": "29934.49513279",
+        "snapshot_at": "2018-01-03 22:32:33"
+    },
+    {
+        "id": 3447,
+        "cryptocurrency_id": 1,
+        "price_usd": "30980.45040188",
+        "snapshot_at": "2018-01-03 21:32:33"
+    },
+    {
+        "id": 3448,
+        "cryptocurrency_id": 1,
+        "price_usd": "31153.51890697",
+        "snapshot_at": "2018-01-03 20:32:33"
+    },
+    {
+        "id": 3449,
+        "cryptocurrency_id": 1,
+        "price_usd": "31442.78970213",
+        "snapshot_at": "2018-01-03 19:32:33"
+    },
+    {
+        "id": 3450,
+        "cryptocurrency_id": 1,
+        "price_usd": "31868.43484159",
+        "snapshot_at": "2018-01-03 18:32:33"
+    },
+    {
+        "id": 3451,
+        "cryptocurrency_id": 1,
+        "price_usd": "31598.50889935",
+        "snapshot_at": "2018-01-03 17:32:33"
+    },
+    {
+        "id": 3452,
+        "cryptocurrency_id": 1,
+        "price_usd": "31767.91578076",
+        "snapshot_at": "2018-01-03 16:32:33"
+    },
+    {
+        "id": 3453,
+        "cryptocurrency_id": 1,
+        "price_usd": "32844.19369048",
+        "snapshot_at": "2018-01-03 15:32:33"
+    },
+    {
+        "id": 3454,
+        "cryptocurrency_id": 1,
+        "price_usd": "32138.29481643",
+        "snapshot_at": "2018-01-03 14:32:33"
+    },
+    {
+        "id": 3455,
+        "cryptocurrency_id": 1,
+        "price_usd": "31014.34915317",
+        "snapshot_at": "2018-01-03 13:32:33"
+    },
+    {
+        "id": 3456,
+        "cryptocurrency_id": 1,
+        "price_usd": "29766.16960821",
+        "snapshot_at": "2018-01-03 12:32:33"
+    },
+    {
+        "id": 3457,
+        "cryptocurrency_id": 1,
+        "price_usd": "30707.35145381",
+        "snapshot_at": "2018-01-03 11:32:33"
+    },
+    {
+        "id": 3458,
+        "cryptocurrency_id": 1,
+        "price_usd": "30603.64389725",
+        "snapshot_at": "2018-01-03 10:32:33"
+    },
+    {
+        "id": 3459,
+        "cryptocurrency_id": 1,
+        "price_usd": "31944.05746702",
+        "snapshot_at": "2018-01-03 09:32:33"
+    },
+    {
+        "id": 3460,
+        "cryptocurrency_id": 1,
+        "price_usd": "31982.15350838",
+        "snapshot_at": "2018-01-03 08:32:33"
+    },
+    {
+        "id": 3461,
+        "cryptocurrency_id": 1,
+        "price_usd": "32696.92064957",
+        "snapshot_at": "2018-01-03 07:32:33"
+    },
+    {
+        "id": 3462,
+        "cryptocurrency_id": 1,
+        "price_usd": "33181.37393089",
+        "snapshot_at": "2018-01-03 06:32:33"
+    },
+    {
+        "id": 3463,
+        "cryptocurrency_id": 1,
+        "price_usd": "34489.74497397",
+        "snapshot_at": "2018-01-03 05:32:33"
+    },
+    {
+        "id": 3464,
+        "cryptocurrency_id": 1,
+        "price_usd": "36182.72638931",
+        "snapshot_at": "2018-01-03 04:32:33"
+    },
+    {
+        "id": 3465,
+        "cryptocurrency_id": 1,
+        "price_usd": "34909.17339334",
+        "snapshot_at": "2018-01-03 03:32:33"
+    },
+    {
+        "id": 3466,
+        "cryptocurrency_id": 1,
+        "price_usd": "36237.21642642",
+        "snapshot_at": "2018-01-03 02:32:33"
+    },
+    {
+        "id": 3467,
+        "cryptocurrency_id": 1,
+        "price_usd": "37233.38155425",
+        "snapshot_at": "2018-01-03 01:32:33"
+    },
+    {
+        "id": 3468,
+        "cryptocurrency_id": 1,
+        "price_usd": "36876.59521033",
+        "snapshot_at": "2018-01-03 00:32:33"
+    },
+    {
+        "id": 3469,
+        "cryptocurrency_id": 1,
+        "price_usd": "38244.42271392",
+        "snapshot_at": "2018-01-02 23:32:33"
+    },
+    {
+        "id": 3470,
+        "cryptocurrency_id": 1,
+        "price_usd": "39000.53668472",
+        "snapshot_at": "2018-01-02 22:32:33"
+    },
+    {
+        "id": 3471,
+        "cryptocurrency_id": 1,
+        "price_usd": "39355.57255721",
+        "snapshot_at": "2018-01-02 21:32:33"
+    },
+    {
+        "id": 3472,
+        "cryptocurrency_id": 1,
+        "price_usd": "38704.17396911",
+        "snapshot_at": "2018-01-02 20:32:33"
+    },
+    {
+        "id": 3473,
+        "cryptocurrency_id": 1,
+        "price_usd": "38585.47193815",
+        "snapshot_at": "2018-01-02 19:32:33"
+    },
+    {
+        "id": 3474,
+        "cryptocurrency_id": 1,
+        "price_usd": "39516.78615316",
+        "snapshot_at": "2018-01-02 18:32:33"
+    },
+    {
+        "id": 3475,
+        "cryptocurrency_id": 1,
+        "price_usd": "37948.66629352",
+        "snapshot_at": "2018-01-02 17:32:33"
+    },
+    {
+        "id": 3476,
+        "cryptocurrency_id": 1,
+        "price_usd": "39329.75955575",
+        "snapshot_at": "2018-01-02 16:32:33"
+    },
+    {
+        "id": 3477,
+        "cryptocurrency_id": 1,
+        "price_usd": "37840.27340622",
+        "snapshot_at": "2018-01-02 15:32:33"
+    },
+    {
+        "id": 3478,
+        "cryptocurrency_id": 1,
+        "price_usd": "38960.76264018",
+        "snapshot_at": "2018-01-02 14:32:33"
+    },
+    {
+        "id": 3479,
+        "cryptocurrency_id": 1,
+        "price_usd": "38853.37897908",
+        "snapshot_at": "2018-01-02 13:32:33"
+    },
+    {
+        "id": 3480,
+        "cryptocurrency_id": 1,
+        "price_usd": "37115.24021934",
+        "snapshot_at": "2018-01-02 12:32:33"
+    },
+    {
+        "id": 3481,
+        "cryptocurrency_id": 1,
+        "price_usd": "36486.86526238",
+        "snapshot_at": "2018-01-02 11:32:33"
+    },
+    {
+        "id": 3482,
+        "cryptocurrency_id": 1,
+        "price_usd": "35675.36400490",
+        "snapshot_at": "2018-01-02 10:32:33"
+    },
+    {
+        "id": 3483,
+        "cryptocurrency_id": 1,
+        "price_usd": "35527.99313845",
+        "snapshot_at": "2018-01-02 09:32:33"
+    },
+    {
+        "id": 3484,
+        "cryptocurrency_id": 1,
+        "price_usd": "37009.12359703",
+        "snapshot_at": "2018-01-02 08:32:33"
+    },
+    {
+        "id": 3485,
+        "cryptocurrency_id": 1,
+        "price_usd": "37430.45512019",
+        "snapshot_at": "2018-01-02 07:32:33"
+    },
+    {
+        "id": 3486,
+        "cryptocurrency_id": 1,
+        "price_usd": "39159.42147667",
+        "snapshot_at": "2018-01-02 06:32:33"
+    },
+    {
+        "id": 3487,
+        "cryptocurrency_id": 1,
+        "price_usd": "39768.00462428",
+        "snapshot_at": "2018-01-02 05:32:33"
+    },
+    {
+        "id": 3488,
+        "cryptocurrency_id": 1,
+        "price_usd": "39013.62687049",
+        "snapshot_at": "2018-01-02 04:32:33"
+    },
+    {
+        "id": 3489,
+        "cryptocurrency_id": 1,
+        "price_usd": "38354.11105900",
+        "snapshot_at": "2018-01-02 03:32:33"
+    },
+    {
+        "id": 3490,
+        "cryptocurrency_id": 1,
+        "price_usd": "38820.69896748",
+        "snapshot_at": "2018-01-02 02:32:33"
+    },
+    {
+        "id": 3491,
+        "cryptocurrency_id": 1,
+        "price_usd": "40298.47644767",
+        "snapshot_at": "2018-01-02 01:32:33"
+    },
+    {
+        "id": 3492,
+        "cryptocurrency_id": 1,
+        "price_usd": "42045.95257989",
+        "snapshot_at": "2018-01-02 00:32:33"
+    },
+    {
+        "id": 3493,
+        "cryptocurrency_id": 1,
+        "price_usd": "43014.81822507",
+        "snapshot_at": "2018-01-01 23:32:33"
+    },
+    {
+        "id": 3494,
+        "cryptocurrency_id": 1,
+        "price_usd": "44396.83934339",
+        "snapshot_at": "2018-01-01 22:32:33"
+    },
+    {
+        "id": 3495,
+        "cryptocurrency_id": 1,
+        "price_usd": "43367.17188213",
+        "snapshot_at": "2018-01-01 21:32:33"
+    },
+    {
+        "id": 3496,
+        "cryptocurrency_id": 1,
+        "price_usd": "42269.73104935",
+        "snapshot_at": "2018-01-01 20:32:33"
+    },
+    {
+        "id": 3497,
+        "cryptocurrency_id": 1,
+        "price_usd": "42389.86047947",
+        "snapshot_at": "2018-01-01 19:32:33"
+    },
+    {
+        "id": 3498,
+        "cryptocurrency_id": 1,
+        "price_usd": "42259.28292464",
+        "snapshot_at": "2018-01-01 18:32:33"
+    },
+    {
+        "id": 3499,
+        "cryptocurrency_id": 1,
+        "price_usd": "40469.63353842",
+        "snapshot_at": "2018-01-01 17:32:33"
+    },
+    {
+        "id": 3500,
+        "cryptocurrency_id": 1,
+        "price_usd": "39096.67821066",
+        "snapshot_at": "2018-01-01 16:32:33"
+    },
+    {
+        "id": 3501,
+        "cryptocurrency_id": 1,
+        "price_usd": "37439.71006166",
+        "snapshot_at": "2018-01-01 15:32:33"
+    },
+    {
+        "id": 3502,
+        "cryptocurrency_id": 1,
+        "price_usd": "37664.53662073",
+        "snapshot_at": "2018-01-01 14:32:33"
+    },
+    {
+        "id": 3503,
+        "cryptocurrency_id": 1,
+        "price_usd": "38512.97412135",
+        "snapshot_at": "2018-01-01 13:32:33"
+    },
+    {
+        "id": 3504,
+        "cryptocurrency_id": 1,
+        "price_usd": "38465.43133511",
+        "snapshot_at": "2018-01-01 12:32:33"
+    },
+    {
+        "id": 3505,
+        "cryptocurrency_id": 1,
+        "price_usd": "40256.99941993",
+        "snapshot_at": "2018-01-01 11:32:33"
+    },
+    {
+        "id": 3506,
+        "cryptocurrency_id": 1,
+        "price_usd": "41658.61416328",
+        "snapshot_at": "2018-01-01 10:32:33"
+    },
+    {
+        "id": 3507,
+        "cryptocurrency_id": 1,
+        "price_usd": "43739.65359914",
+        "snapshot_at": "2018-01-01 09:32:33"
+    },
+    {
+        "id": 3508,
+        "cryptocurrency_id": 1,
+        "price_usd": "43640.92256901",
+        "snapshot_at": "2018-01-01 08:32:33"
+    },
+    {
+        "id": 3509,
+        "cryptocurrency_id": 1,
+        "price_usd": "45736.91355855",
+        "snapshot_at": "2018-01-01 07:32:33"
+    },
+    {
+        "id": 3510,
+        "cryptocurrency_id": 1,
+        "price_usd": "46039.69518095",
+        "snapshot_at": "2018-01-01 06:32:33"
+    },
+    {
+        "id": 3511,
+        "cryptocurrency_id": 1,
+        "price_usd": "47903.23588814",
+        "snapshot_at": "2018-01-01 05:32:33"
+    },
+    {
+        "id": 3512,
+        "cryptocurrency_id": 1,
+        "price_usd": "47495.90614500",
+        "snapshot_at": "2018-01-01 04:32:33"
+    },
+    {
+        "id": 3513,
+        "cryptocurrency_id": 1,
+        "price_usd": "45636.57804036",
+        "snapshot_at": "2018-01-01 03:32:33"
+    },
+    {
+        "id": 3514,
+        "cryptocurrency_id": 1,
+        "price_usd": "43487.29310426",
+        "snapshot_at": "2018-01-01 02:32:33"
+    },
+    {
+        "id": 3515,
+        "cryptocurrency_id": 1,
+        "price_usd": "43836.54121383",
+        "snapshot_at": "2018-01-01 01:32:33"
+    },
+    {
+        "id": 3516,
+        "cryptocurrency_id": 1,
+        "price_usd": "44559.26046070",
+        "snapshot_at": "2018-01-01 00:32:33"
+    },
+    {
+        "id": 3517,
+        "cryptocurrency_id": 1,
+        "price_usd": "44531.63461843",
+        "snapshot_at": "2017-12-31 23:32:33"
+    },
+    {
+        "id": 3518,
+        "cryptocurrency_id": 1,
+        "price_usd": "46585.20533271",
+        "snapshot_at": "2017-12-31 22:32:33"
+    },
+    {
+        "id": 3519,
+        "cryptocurrency_id": 1,
+        "price_usd": "47910.68493174",
+        "snapshot_at": "2017-12-31 21:32:33"
+    },
+    {
+        "id": 3520,
+        "cryptocurrency_id": 1,
+        "price_usd": "49701.19881368",
+        "snapshot_at": "2017-12-31 20:32:33"
+    },
+    {
+        "id": 3521,
+        "cryptocurrency_id": 1,
+        "price_usd": "48082.54017234",
+        "snapshot_at": "2017-12-31 19:32:33"
+    },
+    {
+        "id": 3522,
+        "cryptocurrency_id": 1,
+        "price_usd": "48625.96753750",
+        "snapshot_at": "2017-12-31 18:32:33"
+    },
+    {
+        "id": 3523,
+        "cryptocurrency_id": 1,
+        "price_usd": "50869.45418417",
+        "snapshot_at": "2017-12-31 17:32:33"
+    },
+    {
+        "id": 3524,
+        "cryptocurrency_id": 1,
+        "price_usd": "49540.96300415",
+        "snapshot_at": "2017-12-31 16:32:33"
+    },
+    {
+        "id": 3525,
+        "cryptocurrency_id": 1,
+        "price_usd": "48495.84526896",
+        "snapshot_at": "2017-12-31 15:32:33"
+    },
+    {
+        "id": 3526,
+        "cryptocurrency_id": 1,
+        "price_usd": "47090.04337731",
+        "snapshot_at": "2017-12-31 14:32:33"
+    },
+    {
+        "id": 3527,
+        "cryptocurrency_id": 1,
+        "price_usd": "47629.01787429",
+        "snapshot_at": "2017-12-31 13:32:33"
+    },
+    {
+        "id": 3528,
+        "cryptocurrency_id": 1,
+        "price_usd": "48232.72826975",
+        "snapshot_at": "2017-12-31 12:32:33"
+    },
+    {
+        "id": 3529,
+        "cryptocurrency_id": 1,
+        "price_usd": "49440.39299310",
+        "snapshot_at": "2017-12-31 11:32:33"
+    },
+    {
+        "id": 3530,
+        "cryptocurrency_id": 1,
+        "price_usd": "47841.49121927",
+        "snapshot_at": "2017-12-31 10:32:33"
+    },
+    {
+        "id": 3531,
+        "cryptocurrency_id": 1,
+        "price_usd": "46337.27811059",
+        "snapshot_at": "2017-12-31 09:32:33"
+    },
+    {
+        "id": 3532,
+        "cryptocurrency_id": 1,
+        "price_usd": "48258.88102104",
+        "snapshot_at": "2017-12-31 08:32:33"
+    },
+    {
+        "id": 3533,
+        "cryptocurrency_id": 1,
+        "price_usd": "45923.85141454",
+        "snapshot_at": "2017-12-31 07:32:33"
+    },
+    {
+        "id": 3534,
+        "cryptocurrency_id": 1,
+        "price_usd": "46592.36040099",
+        "snapshot_at": "2017-12-31 06:32:33"
+    },
+    {
+        "id": 3535,
+        "cryptocurrency_id": 1,
+        "price_usd": "48658.91554927",
+        "snapshot_at": "2017-12-31 05:32:33"
+    },
+    {
+        "id": 3536,
+        "cryptocurrency_id": 1,
+        "price_usd": "49643.40920071",
+        "snapshot_at": "2017-12-31 04:32:33"
+    },
+    {
+        "id": 3537,
+        "cryptocurrency_id": 1,
+        "price_usd": "51269.95712005",
+        "snapshot_at": "2017-12-31 03:32:33"
+    },
+    {
+        "id": 3538,
+        "cryptocurrency_id": 1,
+        "price_usd": "52618.50317057",
+        "snapshot_at": "2017-12-31 02:32:33"
+    },
+    {
+        "id": 3539,
+        "cryptocurrency_id": 1,
+        "price_usd": "54661.46390002",
+        "snapshot_at": "2017-12-31 01:32:33"
+    },
+    {
+        "id": 3540,
+        "cryptocurrency_id": 1,
+        "price_usd": "57335.71316246",
+        "snapshot_at": "2017-12-31 00:32:33"
+    },
+    {
+        "id": 3541,
+        "cryptocurrency_id": 1,
+        "price_usd": "59946.55701870",
+        "snapshot_at": "2017-12-30 23:32:33"
+    },
+    {
+        "id": 3542,
+        "cryptocurrency_id": 1,
+        "price_usd": "59341.06496927",
+        "snapshot_at": "2017-12-30 22:32:33"
+    },
+    {
+        "id": 3543,
+        "cryptocurrency_id": 1,
+        "price_usd": "59811.07742348",
+        "snapshot_at": "2017-12-30 21:32:33"
+    },
+    {
+        "id": 3544,
+        "cryptocurrency_id": 1,
+        "price_usd": "56956.33987553",
+        "snapshot_at": "2017-12-30 20:32:33"
+    },
+    {
+        "id": 3545,
+        "cryptocurrency_id": 1,
+        "price_usd": "55283.08669483",
+        "snapshot_at": "2017-12-30 19:32:33"
+    },
+    {
+        "id": 3546,
+        "cryptocurrency_id": 1,
+        "price_usd": "54480.17880046",
+        "snapshot_at": "2017-12-30 18:32:33"
+    },
+    {
+        "id": 3547,
+        "cryptocurrency_id": 1,
+        "price_usd": "56691.93507381",
+        "snapshot_at": "2017-12-30 17:32:33"
+    },
+    {
+        "id": 3548,
+        "cryptocurrency_id": 1,
+        "price_usd": "57343.89637093",
+        "snapshot_at": "2017-12-30 16:32:33"
+    },
+    {
+        "id": 3549,
+        "cryptocurrency_id": 1,
+        "price_usd": "57187.86627636",
+        "snapshot_at": "2017-12-30 15:32:33"
+    },
+    {
+        "id": 3550,
+        "cryptocurrency_id": 1,
+        "price_usd": "56815.15149197",
+        "snapshot_at": "2017-12-30 14:32:33"
+    },
+    {
+        "id": 3551,
+        "cryptocurrency_id": 1,
+        "price_usd": "55315.08924873",
+        "snapshot_at": "2017-12-30 13:32:33"
+    },
+    {
+        "id": 3552,
+        "cryptocurrency_id": 1,
+        "price_usd": "57880.49670961",
+        "snapshot_at": "2017-12-30 12:32:33"
+    },
+    {
+        "id": 3553,
+        "cryptocurrency_id": 1,
+        "price_usd": "56149.67778198",
+        "snapshot_at": "2017-12-30 11:32:33"
+    },
+    {
+        "id": 3554,
+        "cryptocurrency_id": 1,
+        "price_usd": "53604.54746965",
+        "snapshot_at": "2017-12-30 10:32:33"
+    },
+    {
+        "id": 3555,
+        "cryptocurrency_id": 1,
+        "price_usd": "54465.61724277",
+        "snapshot_at": "2017-12-30 09:32:33"
+    },
+    {
+        "id": 3556,
+        "cryptocurrency_id": 1,
+        "price_usd": "53259.66415354",
+        "snapshot_at": "2017-12-30 08:32:33"
+    },
+    {
+        "id": 3557,
+        "cryptocurrency_id": 1,
+        "price_usd": "51213.96996011",
+        "snapshot_at": "2017-12-30 07:32:33"
+    },
+    {
+        "id": 3558,
+        "cryptocurrency_id": 1,
+        "price_usd": "48839.39374387",
+        "snapshot_at": "2017-12-30 06:32:33"
+    },
+    {
+        "id": 3559,
+        "cryptocurrency_id": 1,
+        "price_usd": "49992.89276105",
+        "snapshot_at": "2017-12-30 05:32:33"
+    },
+    {
+        "id": 3560,
+        "cryptocurrency_id": 1,
+        "price_usd": "49553.01454061",
+        "snapshot_at": "2017-12-30 04:32:33"
+    },
+    {
+        "id": 3561,
+        "cryptocurrency_id": 1,
+        "price_usd": "47303.11510800",
+        "snapshot_at": "2017-12-30 03:32:33"
+    },
+    {
+        "id": 3562,
+        "cryptocurrency_id": 1,
+        "price_usd": "47562.28988889",
+        "snapshot_at": "2017-12-30 02:32:33"
+    },
+    {
+        "id": 3563,
+        "cryptocurrency_id": 1,
+        "price_usd": "47044.34870721",
+        "snapshot_at": "2017-12-30 01:32:33"
+    },
+    {
+        "id": 3564,
+        "cryptocurrency_id": 1,
+        "price_usd": "46151.62450686",
+        "snapshot_at": "2017-12-30 00:32:33"
+    },
+    {
+        "id": 3565,
+        "cryptocurrency_id": 1,
+        "price_usd": "46251.60771947",
+        "snapshot_at": "2017-12-29 23:32:33"
+    },
+    {
+        "id": 3566,
+        "cryptocurrency_id": 1,
+        "price_usd": "48471.53680784",
+        "snapshot_at": "2017-12-29 22:32:33"
+    },
+    {
+        "id": 3567,
+        "cryptocurrency_id": 1,
+        "price_usd": "48168.21041131",
+        "snapshot_at": "2017-12-29 21:32:33"
+    },
+    {
+        "id": 3568,
+        "cryptocurrency_id": 1,
+        "price_usd": "47289.28909388",
+        "snapshot_at": "2017-12-29 20:32:33"
+    },
+    {
+        "id": 3569,
+        "cryptocurrency_id": 1,
+        "price_usd": "47794.07739525",
+        "snapshot_at": "2017-12-29 19:32:33"
+    },
+    {
+        "id": 3570,
+        "cryptocurrency_id": 1,
+        "price_usd": "49929.00492314",
+        "snapshot_at": "2017-12-29 18:32:33"
+    },
+    {
+        "id": 3571,
+        "cryptocurrency_id": 1,
+        "price_usd": "52305.69776551",
+        "snapshot_at": "2017-12-29 17:32:33"
+    },
+    {
+        "id": 3572,
+        "cryptocurrency_id": 1,
+        "price_usd": "54710.15736223",
+        "snapshot_at": "2017-12-29 16:32:33"
+    },
+    {
+        "id": 3573,
+        "cryptocurrency_id": 1,
+        "price_usd": "57028.75212175",
+        "snapshot_at": "2017-12-29 15:32:33"
+    },
+    {
+        "id": 3574,
+        "cryptocurrency_id": 1,
+        "price_usd": "57738.32701475",
+        "snapshot_at": "2017-12-29 14:32:33"
+    },
+    {
+        "id": 3575,
+        "cryptocurrency_id": 1,
+        "price_usd": "57420.04998757",
+        "snapshot_at": "2017-12-29 13:32:33"
+    },
+    {
+        "id": 3576,
+        "cryptocurrency_id": 1,
+        "price_usd": "58915.73462447",
+        "snapshot_at": "2017-12-29 12:32:33"
+    },
+    {
+        "id": 3577,
+        "cryptocurrency_id": 1,
+        "price_usd": "56714.71557043",
+        "snapshot_at": "2017-12-29 11:32:33"
+    },
+    {
+        "id": 3578,
+        "cryptocurrency_id": 1,
+        "price_usd": "58219.79024046",
+        "snapshot_at": "2017-12-29 10:32:33"
+    },
+    {
+        "id": 3579,
+        "cryptocurrency_id": 1,
+        "price_usd": "59744.87199231",
+        "snapshot_at": "2017-12-29 09:32:33"
+    },
+    {
+        "id": 3580,
+        "cryptocurrency_id": 1,
+        "price_usd": "57725.15272441",
+        "snapshot_at": "2017-12-29 08:32:33"
+    },
+    {
+        "id": 3581,
+        "cryptocurrency_id": 1,
+        "price_usd": "59429.40854704",
+        "snapshot_at": "2017-12-29 07:32:33"
+    },
+    {
+        "id": 3582,
+        "cryptocurrency_id": 1,
+        "price_usd": "61569.08830560",
+        "snapshot_at": "2017-12-29 06:32:33"
+    },
+    {
+        "id": 3583,
+        "cryptocurrency_id": 1,
+        "price_usd": "62135.83575897",
+        "snapshot_at": "2017-12-29 05:32:33"
+    },
+    {
+        "id": 3584,
+        "cryptocurrency_id": 1,
+        "price_usd": "63305.13304842",
+        "snapshot_at": "2017-12-29 04:32:33"
+    },
+    {
+        "id": 3585,
+        "cryptocurrency_id": 1,
+        "price_usd": "63056.69692440",
+        "snapshot_at": "2017-12-29 03:32:33"
+    },
+    {
+        "id": 3586,
+        "cryptocurrency_id": 1,
+        "price_usd": "60278.66030821",
+        "snapshot_at": "2017-12-29 02:32:33"
+    },
+    {
+        "id": 3587,
+        "cryptocurrency_id": 1,
+        "price_usd": "58551.00513772",
+        "snapshot_at": "2017-12-29 01:32:33"
+    },
+    {
+        "id": 3588,
+        "cryptocurrency_id": 1,
+        "price_usd": "60808.71763766",
+        "snapshot_at": "2017-12-29 00:32:33"
+    },
+    {
+        "id": 3589,
+        "cryptocurrency_id": 1,
+        "price_usd": "63084.12871177",
+        "snapshot_at": "2017-12-28 23:32:33"
+    },
+    {
+        "id": 3590,
+        "cryptocurrency_id": 1,
+        "price_usd": "66117.61651483",
+        "snapshot_at": "2017-12-28 22:32:33"
+    },
+    {
+        "id": 3591,
+        "cryptocurrency_id": 1,
+        "price_usd": "67313.93653352",
+        "snapshot_at": "2017-12-28 21:32:33"
+    },
+    {
+        "id": 3592,
+        "cryptocurrency_id": 1,
+        "price_usd": "65247.01503138",
+        "snapshot_at": "2017-12-28 20:32:33"
+    },
+    {
+        "id": 3593,
+        "cryptocurrency_id": 1,
+        "price_usd": "62913.50207721",
+        "snapshot_at": "2017-12-28 19:32:33"
+    },
+    {
+        "id": 3594,
+        "cryptocurrency_id": 1,
+        "price_usd": "64857.04634892",
+        "snapshot_at": "2017-12-28 18:32:33"
+    },
+    {
+        "id": 3595,
+        "cryptocurrency_id": 1,
+        "price_usd": "67005.84387128",
+        "snapshot_at": "2017-12-28 17:32:33"
+    },
+    {
+        "id": 3596,
+        "cryptocurrency_id": 1,
+        "price_usd": "70029.59920532",
+        "snapshot_at": "2017-12-28 16:32:33"
+    },
+    {
+        "id": 3597,
+        "cryptocurrency_id": 1,
+        "price_usd": "73279.65872391",
+        "snapshot_at": "2017-12-28 15:32:33"
+    },
+    {
+        "id": 3598,
+        "cryptocurrency_id": 1,
+        "price_usd": "73026.08977330",
+        "snapshot_at": "2017-12-28 14:32:33"
+    },
+    {
+        "id": 3599,
+        "cryptocurrency_id": 1,
+        "price_usd": "76098.07807696",
+        "snapshot_at": "2017-12-28 13:32:33"
+    },
+    {
+        "id": 3600,
+        "cryptocurrency_id": 1,
+        "price_usd": "72459.12233331",
+        "snapshot_at": "2017-12-28 12:32:33"
+    },
+    {
+        "id": 3601,
+        "cryptocurrency_id": 1,
+        "price_usd": "74148.39853604",
+        "snapshot_at": "2017-12-28 11:32:33"
+    },
+    {
+        "id": 3602,
+        "cryptocurrency_id": 1,
+        "price_usd": "70893.80553422",
+        "snapshot_at": "2017-12-28 10:32:33"
+    },
+    {
+        "id": 3603,
+        "cryptocurrency_id": 1,
+        "price_usd": "72838.98933794",
+        "snapshot_at": "2017-12-28 09:32:33"
+    },
+    {
+        "id": 3604,
+        "cryptocurrency_id": 1,
+        "price_usd": "70753.57851039",
+        "snapshot_at": "2017-12-28 08:32:33"
+    },
+    {
+        "id": 3605,
+        "cryptocurrency_id": 1,
+        "price_usd": "68736.34591222",
+        "snapshot_at": "2017-12-28 07:32:33"
+    },
+    {
+        "id": 3606,
+        "cryptocurrency_id": 1,
+        "price_usd": "71994.58449103",
+        "snapshot_at": "2017-12-28 06:32:33"
+    },
+    {
+        "id": 3607,
+        "cryptocurrency_id": 1,
+        "price_usd": "75289.20441438",
+        "snapshot_at": "2017-12-28 05:32:33"
+    },
+    {
+        "id": 3608,
+        "cryptocurrency_id": 1,
+        "price_usd": "78587.22232946",
+        "snapshot_at": "2017-12-28 04:32:33"
+    },
+    {
+        "id": 3609,
+        "cryptocurrency_id": 1,
+        "price_usd": "82168.01116705",
+        "snapshot_at": "2017-12-28 03:32:33"
+    },
+    {
+        "id": 3610,
+        "cryptocurrency_id": 1,
+        "price_usd": "83746.25718823",
+        "snapshot_at": "2017-12-28 02:32:33"
+    },
+    {
+        "id": 3611,
+        "cryptocurrency_id": 1,
+        "price_usd": "81252.08623729",
+        "snapshot_at": "2017-12-28 01:32:33"
+    },
+    {
+        "id": 3612,
+        "cryptocurrency_id": 1,
+        "price_usd": "80262.20400587",
+        "snapshot_at": "2017-12-28 00:32:33"
+    },
+    {
+        "id": 3613,
+        "cryptocurrency_id": 1,
+        "price_usd": "80229.45893934",
+        "snapshot_at": "2017-12-27 23:32:33"
+    },
+    {
+        "id": 3614,
+        "cryptocurrency_id": 1,
+        "price_usd": "80292.54097225",
+        "snapshot_at": "2017-12-27 22:32:33"
+    },
+    {
+        "id": 3615,
+        "cryptocurrency_id": 1,
+        "price_usd": "78240.90849428",
+        "snapshot_at": "2017-12-27 21:32:33"
+    },
+    {
+        "id": 3616,
+        "cryptocurrency_id": 1,
+        "price_usd": "82039.25395955",
+        "snapshot_at": "2017-12-27 20:32:33"
+    },
+    {
+        "id": 3617,
+        "cryptocurrency_id": 1,
+        "price_usd": "79665.76101526",
+        "snapshot_at": "2017-12-27 19:32:33"
+    },
+    {
+        "id": 3618,
+        "cryptocurrency_id": 1,
+        "price_usd": "79919.53845991",
+        "snapshot_at": "2017-12-27 18:32:33"
+    },
+    {
+        "id": 3619,
+        "cryptocurrency_id": 1,
+        "price_usd": "79204.30868859",
+        "snapshot_at": "2017-12-27 17:32:33"
+    },
+    {
+        "id": 3620,
+        "cryptocurrency_id": 1,
+        "price_usd": "76673.50983006",
+        "snapshot_at": "2017-12-27 16:32:33"
+    },
+    {
+        "id": 3621,
+        "cryptocurrency_id": 1,
+        "price_usd": "73119.19559443",
+        "snapshot_at": "2017-12-27 15:32:33"
+    },
+    {
+        "id": 3622,
+        "cryptocurrency_id": 1,
+        "price_usd": "72475.08114743",
+        "snapshot_at": "2017-12-27 14:32:33"
+    },
+    {
+        "id": 3623,
+        "cryptocurrency_id": 1,
+        "price_usd": "73303.01753533",
+        "snapshot_at": "2017-12-27 13:32:33"
+    },
+    {
+        "id": 3624,
+        "cryptocurrency_id": 1,
+        "price_usd": "75578.78746562",
+        "snapshot_at": "2017-12-27 12:32:33"
+    },
+    {
+        "id": 3625,
+        "cryptocurrency_id": 1,
+        "price_usd": "78768.64649939",
+        "snapshot_at": "2017-12-27 11:32:33"
+    },
+    {
+        "id": 3626,
+        "cryptocurrency_id": 1,
+        "price_usd": "75230.25678200",
+        "snapshot_at": "2017-12-27 10:32:33"
+    },
+    {
+        "id": 3627,
+        "cryptocurrency_id": 1,
+        "price_usd": "75617.37410014",
+        "snapshot_at": "2017-12-27 09:32:33"
+    },
+    {
+        "id": 3628,
+        "cryptocurrency_id": 1,
+        "price_usd": "76415.71889345",
+        "snapshot_at": "2017-12-27 08:32:33"
+    },
+    {
+        "id": 3629,
+        "cryptocurrency_id": 1,
+        "price_usd": "80073.06954646",
+        "snapshot_at": "2017-12-27 07:32:33"
+    },
+    {
+        "id": 3630,
+        "cryptocurrency_id": 1,
+        "price_usd": "83020.32586548",
+        "snapshot_at": "2017-12-27 06:32:33"
+    },
+    {
+        "id": 3631,
+        "cryptocurrency_id": 1,
+        "price_usd": "79460.99447224",
+        "snapshot_at": "2017-12-27 05:32:33"
+    },
+    {
+        "id": 3632,
+        "cryptocurrency_id": 1,
+        "price_usd": "82822.59359590",
+        "snapshot_at": "2017-12-27 04:32:33"
+    },
+    {
+        "id": 3633,
+        "cryptocurrency_id": 1,
+        "price_usd": "84280.63464507",
+        "snapshot_at": "2017-12-27 03:32:33"
+    },
+    {
+        "id": 3634,
+        "cryptocurrency_id": 1,
+        "price_usd": "81159.66768897",
+        "snapshot_at": "2017-12-27 02:32:33"
+    },
+    {
+        "id": 3635,
+        "cryptocurrency_id": 1,
+        "price_usd": "78856.36627412",
+        "snapshot_at": "2017-12-27 01:32:33"
+    },
+    {
+        "id": 3636,
+        "cryptocurrency_id": 1,
+        "price_usd": "76560.87322021",
+        "snapshot_at": "2017-12-27 00:32:33"
+    },
+    {
+        "id": 3637,
+        "cryptocurrency_id": 1,
+        "price_usd": "79908.77545221",
+        "snapshot_at": "2017-12-26 23:32:33"
+    },
+    {
+        "id": 3638,
+        "cryptocurrency_id": 1,
+        "price_usd": "76892.53509517",
+        "snapshot_at": "2017-12-26 22:32:33"
+    },
+    {
+        "id": 3639,
+        "cryptocurrency_id": 1,
+        "price_usd": "77361.14014899",
+        "snapshot_at": "2017-12-26 21:32:33"
+    },
+    {
+        "id": 3640,
+        "cryptocurrency_id": 1,
+        "price_usd": "78011.42467046",
+        "snapshot_at": "2017-12-26 20:32:33"
+    },
+    {
+        "id": 3641,
+        "cryptocurrency_id": 1,
+        "price_usd": "78679.11947187",
+        "snapshot_at": "2017-12-26 19:32:33"
+    },
+    {
+        "id": 3642,
+        "cryptocurrency_id": 1,
+        "price_usd": "76652.41906886",
+        "snapshot_at": "2017-12-26 18:32:33"
+    },
+    {
+        "id": 3643,
+        "cryptocurrency_id": 1,
+        "price_usd": "74121.17222483",
+        "snapshot_at": "2017-12-26 17:32:33"
+    },
+    {
+        "id": 3644,
+        "cryptocurrency_id": 1,
+        "price_usd": "75422.55558931",
+        "snapshot_at": "2017-12-26 16:32:33"
+    },
+    {
+        "id": 3645,
+        "cryptocurrency_id": 1,
+        "price_usd": "71723.50392609",
+        "snapshot_at": "2017-12-26 15:32:33"
+    },
+    {
+        "id": 3646,
+        "cryptocurrency_id": 1,
+        "price_usd": "69362.92537090",
+        "snapshot_at": "2017-12-26 14:32:33"
+    },
+    {
+        "id": 3647,
+        "cryptocurrency_id": 1,
+        "price_usd": "71360.42595702",
+        "snapshot_at": "2017-12-26 13:32:33"
+    },
+    {
+        "id": 3648,
+        "cryptocurrency_id": 1,
+        "price_usd": "73929.36137282",
+        "snapshot_at": "2017-12-26 12:32:33"
+    },
+    {
+        "id": 3649,
+        "cryptocurrency_id": 1,
+        "price_usd": "70540.30917751",
+        "snapshot_at": "2017-12-26 11:32:33"
+    },
+    {
+        "id": 3650,
+        "cryptocurrency_id": 1,
+        "price_usd": "73327.71993780",
+        "snapshot_at": "2017-12-26 10:32:33"
+    },
+    {
+        "id": 3651,
+        "cryptocurrency_id": 1,
+        "price_usd": "73389.57407240",
+        "snapshot_at": "2017-12-26 09:32:33"
+    },
+    {
+        "id": 3652,
+        "cryptocurrency_id": 1,
+        "price_usd": "70755.98976684",
+        "snapshot_at": "2017-12-26 08:32:33"
+    },
+    {
+        "id": 3653,
+        "cryptocurrency_id": 1,
+        "price_usd": "72091.99525091",
+        "snapshot_at": "2017-12-26 07:32:33"
+    },
+    {
+        "id": 3654,
+        "cryptocurrency_id": 1,
+        "price_usd": "74289.04156310",
+        "snapshot_at": "2017-12-26 06:32:33"
+    },
+    {
+        "id": 3655,
+        "cryptocurrency_id": 1,
+        "price_usd": "77797.33736665",
+        "snapshot_at": "2017-12-26 05:32:33"
+    },
+    {
+        "id": 3656,
+        "cryptocurrency_id": 1,
+        "price_usd": "79667.43373554",
+        "snapshot_at": "2017-12-26 04:32:33"
+    },
+    {
+        "id": 3657,
+        "cryptocurrency_id": 1,
+        "price_usd": "78010.43625739",
+        "snapshot_at": "2017-12-26 03:32:33"
+    },
+    {
+        "id": 3658,
+        "cryptocurrency_id": 1,
+        "price_usd": "79533.92789633",
+        "snapshot_at": "2017-12-26 02:32:33"
+    },
+    {
+        "id": 3659,
+        "cryptocurrency_id": 1,
+        "price_usd": "81610.07320710",
+        "snapshot_at": "2017-12-26 01:32:33"
+    },
+    {
+        "id": 3660,
+        "cryptocurrency_id": 1,
+        "price_usd": "77878.76850899",
+        "snapshot_at": "2017-12-26 00:32:33"
+    },
+    {
+        "id": 3661,
+        "cryptocurrency_id": 1,
+        "price_usd": "75297.26227973",
+        "snapshot_at": "2017-12-25 23:32:33"
+    },
+    {
+        "id": 3662,
+        "cryptocurrency_id": 1,
+        "price_usd": "78380.01023503",
+        "snapshot_at": "2017-12-25 22:32:33"
+    },
+    {
+        "id": 3663,
+        "cryptocurrency_id": 1,
+        "price_usd": "80870.94528936",
+        "snapshot_at": "2017-12-25 21:32:33"
+    },
+    {
+        "id": 3664,
+        "cryptocurrency_id": 1,
+        "price_usd": "83931.84864743",
+        "snapshot_at": "2017-12-25 20:32:33"
+    },
+    {
+        "id": 3665,
+        "cryptocurrency_id": 1,
+        "price_usd": "86541.31583438",
+        "snapshot_at": "2017-12-25 19:32:33"
+    },
+    {
+        "id": 3666,
+        "cryptocurrency_id": 1,
+        "price_usd": "83969.24744589",
+        "snapshot_at": "2017-12-25 18:32:33"
+    },
+    {
+        "id": 3667,
+        "cryptocurrency_id": 1,
+        "price_usd": "86528.72408784",
+        "snapshot_at": "2017-12-25 17:32:33"
+    },
+    {
+        "id": 3668,
+        "cryptocurrency_id": 1,
+        "price_usd": "82482.54072111",
+        "snapshot_at": "2017-12-25 16:32:33"
+    },
+    {
+        "id": 3669,
+        "cryptocurrency_id": 1,
+        "price_usd": "80077.82424580",
+        "snapshot_at": "2017-12-25 15:32:33"
+    },
+    {
+        "id": 3670,
+        "cryptocurrency_id": 1,
+        "price_usd": "76740.23250715",
+        "snapshot_at": "2017-12-25 14:32:33"
+    },
+    {
+        "id": 3671,
+        "cryptocurrency_id": 1,
+        "price_usd": "73113.04866848",
+        "snapshot_at": "2017-12-25 13:32:33"
+    },
+    {
+        "id": 3672,
+        "cryptocurrency_id": 1,
+        "price_usd": "70826.32153871",
+        "snapshot_at": "2017-12-25 12:32:33"
+    },
+    {
+        "id": 3673,
+        "cryptocurrency_id": 1,
+        "price_usd": "69376.21451501",
+        "snapshot_at": "2017-12-25 11:32:33"
+    },
+    {
+        "id": 3674,
+        "cryptocurrency_id": 1,
+        "price_usd": "72378.69844791",
+        "snapshot_at": "2017-12-25 10:32:33"
+    },
+    {
+        "id": 3675,
+        "cryptocurrency_id": 1,
+        "price_usd": "74944.00479179",
+        "snapshot_at": "2017-12-25 09:32:33"
+    },
+    {
+        "id": 3676,
+        "cryptocurrency_id": 1,
+        "price_usd": "72006.14621385",
+        "snapshot_at": "2017-12-25 08:32:33"
+    },
+    {
+        "id": 3677,
+        "cryptocurrency_id": 1,
+        "price_usd": "71257.93957064",
+        "snapshot_at": "2017-12-25 07:32:33"
+    },
+    {
+        "id": 3678,
+        "cryptocurrency_id": 1,
+        "price_usd": "73996.22246641",
+        "snapshot_at": "2017-12-25 06:32:33"
+    },
+    {
+        "id": 3679,
+        "cryptocurrency_id": 1,
+        "price_usd": "70844.61361868",
+        "snapshot_at": "2017-12-25 05:32:33"
+    },
+    {
+        "id": 3680,
+        "cryptocurrency_id": 1,
+        "price_usd": "68298.22646172",
+        "snapshot_at": "2017-12-25 04:32:33"
+    },
+    {
+        "id": 3681,
+        "cryptocurrency_id": 1,
+        "price_usd": "65535.52939026",
+        "snapshot_at": "2017-12-25 03:32:33"
+    },
+    {
+        "id": 3682,
+        "cryptocurrency_id": 1,
+        "price_usd": "63439.86850522",
+        "snapshot_at": "2017-12-25 02:32:33"
+    },
+    {
+        "id": 3683,
+        "cryptocurrency_id": 1,
+        "price_usd": "61524.35297065",
+        "snapshot_at": "2017-12-25 01:32:33"
+    },
+    {
+        "id": 3684,
+        "cryptocurrency_id": 1,
+        "price_usd": "58528.19544409",
+        "snapshot_at": "2017-12-25 00:32:33"
+    },
+    {
+        "id": 3685,
+        "cryptocurrency_id": 1,
+        "price_usd": "56995.10312395",
+        "snapshot_at": "2017-12-24 23:32:33"
+    },
+    {
+        "id": 3686,
+        "cryptocurrency_id": 1,
+        "price_usd": "58650.84507108",
+        "snapshot_at": "2017-12-24 22:32:33"
+    },
+    {
+        "id": 3687,
+        "cryptocurrency_id": 1,
+        "price_usd": "58568.64390338",
+        "snapshot_at": "2017-12-24 21:32:33"
+    },
+    {
+        "id": 3688,
+        "cryptocurrency_id": 1,
+        "price_usd": "56156.01665979",
+        "snapshot_at": "2017-12-24 20:32:33"
+    },
+    {
+        "id": 3689,
+        "cryptocurrency_id": 1,
+        "price_usd": "53822.25966159",
+        "snapshot_at": "2017-12-24 19:32:33"
+    },
+    {
+        "id": 3690,
+        "cryptocurrency_id": 1,
+        "price_usd": "55942.93751438",
+        "snapshot_at": "2017-12-24 18:32:33"
+    },
+    {
+        "id": 3691,
+        "cryptocurrency_id": 1,
+        "price_usd": "54910.68619464",
+        "snapshot_at": "2017-12-24 17:32:33"
+    },
+    {
+        "id": 3692,
+        "cryptocurrency_id": 1,
+        "price_usd": "56051.61231209",
+        "snapshot_at": "2017-12-24 16:32:33"
+    },
+    {
+        "id": 3693,
+        "cryptocurrency_id": 1,
+        "price_usd": "54705.58259411",
+        "snapshot_at": "2017-12-24 15:32:33"
+    },
+    {
+        "id": 3694,
+        "cryptocurrency_id": 1,
+        "price_usd": "54024.81552039",
+        "snapshot_at": "2017-12-24 14:32:33"
+    },
+    {
+        "id": 3695,
+        "cryptocurrency_id": 1,
+        "price_usd": "56231.92858650",
+        "snapshot_at": "2017-12-24 13:32:33"
+    },
+    {
+        "id": 3696,
+        "cryptocurrency_id": 1,
+        "price_usd": "57338.42745849",
+        "snapshot_at": "2017-12-24 12:32:33"
+    },
+    {
+        "id": 3697,
+        "cryptocurrency_id": 1,
+        "price_usd": "56466.98289045",
+        "snapshot_at": "2017-12-24 11:32:33"
+    },
+    {
+        "id": 3698,
+        "cryptocurrency_id": 1,
+        "price_usd": "54266.93548142",
+        "snapshot_at": "2017-12-24 10:32:33"
+    },
+    {
+        "id": 3699,
+        "cryptocurrency_id": 1,
+        "price_usd": "54297.11258752",
+        "snapshot_at": "2017-12-24 09:32:33"
+    },
+    {
+        "id": 3700,
+        "cryptocurrency_id": 1,
+        "price_usd": "53595.42960059",
+        "snapshot_at": "2017-12-24 08:32:33"
+    },
+    {
+        "id": 3701,
+        "cryptocurrency_id": 1,
+        "price_usd": "54289.58899362",
+        "snapshot_at": "2017-12-24 07:32:33"
+    },
+    {
+        "id": 3702,
+        "cryptocurrency_id": 1,
+        "price_usd": "55396.87883484",
+        "snapshot_at": "2017-12-24 06:32:33"
+    },
+    {
+        "id": 3703,
+        "cryptocurrency_id": 1,
+        "price_usd": "52757.22901380",
+        "snapshot_at": "2017-12-24 05:32:33"
+    },
+    {
+        "id": 3704,
+        "cryptocurrency_id": 1,
+        "price_usd": "54192.38795076",
+        "snapshot_at": "2017-12-24 04:32:33"
+    },
+    {
+        "id": 3705,
+        "cryptocurrency_id": 1,
+        "price_usd": "53137.31600718",
+        "snapshot_at": "2017-12-24 03:32:33"
+    },
+    {
+        "id": 3706,
+        "cryptocurrency_id": 1,
+        "price_usd": "54128.93234174",
+        "snapshot_at": "2017-12-24 02:32:33"
+    },
+    {
+        "id": 3707,
+        "cryptocurrency_id": 1,
+        "price_usd": "51617.97088403",
+        "snapshot_at": "2017-12-24 01:32:33"
+    },
+    {
+        "id": 3708,
+        "cryptocurrency_id": 1,
+        "price_usd": "52420.86091678",
+        "snapshot_at": "2017-12-24 00:32:33"
+    },
+    {
+        "id": 3709,
+        "cryptocurrency_id": 1,
+        "price_usd": "55030.57721571",
+        "snapshot_at": "2017-12-23 23:32:33"
+    },
+    {
+        "id": 3710,
+        "cryptocurrency_id": 1,
+        "price_usd": "54294.13776521",
+        "snapshot_at": "2017-12-23 22:32:33"
+    },
+    {
+        "id": 3711,
+        "cryptocurrency_id": 1,
+        "price_usd": "54530.79704417",
+        "snapshot_at": "2017-12-23 21:32:33"
+    },
+    {
+        "id": 3712,
+        "cryptocurrency_id": 1,
+        "price_usd": "54498.52200337",
+        "snapshot_at": "2017-12-23 20:32:33"
+    },
+    {
+        "id": 3713,
+        "cryptocurrency_id": 1,
+        "price_usd": "56696.80979487",
+        "snapshot_at": "2017-12-23 19:32:33"
+    },
+    {
+        "id": 3714,
+        "cryptocurrency_id": 1,
+        "price_usd": "56316.69528778",
+        "snapshot_at": "2017-12-23 18:32:33"
+    },
+    {
+        "id": 3715,
+        "cryptocurrency_id": 1,
+        "price_usd": "57319.74207240",
+        "snapshot_at": "2017-12-23 17:32:33"
+    },
+    {
+        "id": 3716,
+        "cryptocurrency_id": 1,
+        "price_usd": "59575.26822358",
+        "snapshot_at": "2017-12-23 16:32:33"
+    },
+    {
+        "id": 3717,
+        "cryptocurrency_id": 1,
+        "price_usd": "57363.03500017",
+        "snapshot_at": "2017-12-23 15:32:33"
+    },
+    {
+        "id": 3718,
+        "cryptocurrency_id": 1,
+        "price_usd": "59480.90671228",
+        "snapshot_at": "2017-12-23 14:32:33"
+    },
+    {
+        "id": 3719,
+        "cryptocurrency_id": 1,
+        "price_usd": "57482.63528637",
+        "snapshot_at": "2017-12-23 13:32:33"
+    },
+    {
+        "id": 3720,
+        "cryptocurrency_id": 1,
+        "price_usd": "59204.34585336",
+        "snapshot_at": "2017-12-23 12:32:33"
+    },
+    {
+        "id": 3721,
+        "cryptocurrency_id": 1,
+        "price_usd": "56906.94362190",
+        "snapshot_at": "2017-12-23 11:32:33"
+    },
+    {
+        "id": 3722,
+        "cryptocurrency_id": 1,
+        "price_usd": "57920.11684082",
+        "snapshot_at": "2017-12-23 10:32:33"
+    },
+    {
+        "id": 3723,
+        "cryptocurrency_id": 1,
+        "price_usd": "60356.28746649",
+        "snapshot_at": "2017-12-23 09:32:33"
+    },
+    {
+        "id": 3724,
+        "cryptocurrency_id": 1,
+        "price_usd": "58390.26316401",
+        "snapshot_at": "2017-12-23 08:32:33"
+    },
+    {
+        "id": 3725,
+        "cryptocurrency_id": 1,
+        "price_usd": "55565.43689604",
+        "snapshot_at": "2017-12-23 07:32:33"
+    },
+    {
+        "id": 3726,
+        "cryptocurrency_id": 1,
+        "price_usd": "54132.42537373",
+        "snapshot_at": "2017-12-23 06:32:33"
+    },
+    {
+        "id": 3727,
+        "cryptocurrency_id": 1,
+        "price_usd": "51534.70625470",
+        "snapshot_at": "2017-12-23 05:32:33"
+    },
+    {
+        "id": 3728,
+        "cryptocurrency_id": 1,
+        "price_usd": "53182.60359821",
+        "snapshot_at": "2017-12-23 04:32:33"
+    },
+    {
+        "id": 3729,
+        "cryptocurrency_id": 1,
+        "price_usd": "53678.30592000",
+        "snapshot_at": "2017-12-23 03:32:33"
+    },
+    {
+        "id": 3730,
+        "cryptocurrency_id": 1,
+        "price_usd": "51842.98298909",
+        "snapshot_at": "2017-12-23 02:32:33"
+    },
+    {
+        "id": 3731,
+        "cryptocurrency_id": 1,
+        "price_usd": "50595.56523115",
+        "snapshot_at": "2017-12-23 01:32:33"
+    },
+    {
+        "id": 3732,
+        "cryptocurrency_id": 1,
+        "price_usd": "53053.72031824",
+        "snapshot_at": "2017-12-23 00:32:33"
+    },
+    {
+        "id": 3733,
+        "cryptocurrency_id": 1,
+        "price_usd": "53103.29584741",
+        "snapshot_at": "2017-12-22 23:32:33"
+    },
+    {
+        "id": 3734,
+        "cryptocurrency_id": 1,
+        "price_usd": "50899.09963913",
+        "snapshot_at": "2017-12-22 22:32:33"
+    },
+    {
+        "id": 3735,
+        "cryptocurrency_id": 1,
+        "price_usd": "51917.77518214",
+        "snapshot_at": "2017-12-22 21:32:33"
+    },
+    {
+        "id": 3736,
+        "cryptocurrency_id": 1,
+        "price_usd": "51788.09341810",
+        "snapshot_at": "2017-12-22 20:32:33"
+    },
+    {
+        "id": 3737,
+        "cryptocurrency_id": 1,
+        "price_usd": "49609.26901652",
+        "snapshot_at": "2017-12-22 19:32:33"
+    },
+    {
+        "id": 3738,
+        "cryptocurrency_id": 1,
+        "price_usd": "48836.03279047",
+        "snapshot_at": "2017-12-22 18:32:33"
+    },
+    {
+        "id": 3739,
+        "cryptocurrency_id": 1,
+        "price_usd": "50253.35944249",
+        "snapshot_at": "2017-12-22 17:32:33"
+    },
+    {
+        "id": 3740,
+        "cryptocurrency_id": 1,
+        "price_usd": "51665.66759514",
+        "snapshot_at": "2017-12-22 16:32:33"
+    },
+    {
+        "id": 3741,
+        "cryptocurrency_id": 1,
+        "price_usd": "51643.56917078",
+        "snapshot_at": "2017-12-22 15:32:33"
+    },
+    {
+        "id": 3742,
+        "cryptocurrency_id": 1,
+        "price_usd": "51419.70015904",
+        "snapshot_at": "2017-12-22 14:32:33"
+    },
+    {
+        "id": 3743,
+        "cryptocurrency_id": 1,
+        "price_usd": "49935.36570897",
+        "snapshot_at": "2017-12-22 13:32:33"
+    },
+    {
+        "id": 3744,
+        "cryptocurrency_id": 1,
+        "price_usd": "48229.60300651",
+        "snapshot_at": "2017-12-22 12:32:33"
+    },
+    {
+        "id": 3745,
+        "cryptocurrency_id": 1,
+        "price_usd": "46400.92077885",
+        "snapshot_at": "2017-12-22 11:32:33"
+    },
+    {
+        "id": 3746,
+        "cryptocurrency_id": 1,
+        "price_usd": "47211.42493977",
+        "snapshot_at": "2017-12-22 10:32:33"
+    },
+    {
+        "id": 3747,
+        "cryptocurrency_id": 1,
+        "price_usd": "49546.67611929",
+        "snapshot_at": "2017-12-22 09:32:33"
+    },
+    {
+        "id": 3748,
+        "cryptocurrency_id": 1,
+        "price_usd": "48066.02298414",
+        "snapshot_at": "2017-12-22 08:32:33"
+    },
+    {
+        "id": 3749,
+        "cryptocurrency_id": 1,
+        "price_usd": "49616.52071699",
+        "snapshot_at": "2017-12-22 07:32:33"
+    },
+    {
+        "id": 3750,
+        "cryptocurrency_id": 1,
+        "price_usd": "51209.83856391",
+        "snapshot_at": "2017-12-22 06:32:33"
+    },
+    {
+        "id": 3751,
+        "cryptocurrency_id": 1,
+        "price_usd": "51509.93441711",
+        "snapshot_at": "2017-12-22 05:32:33"
+    },
+    {
+        "id": 3752,
+        "cryptocurrency_id": 1,
+        "price_usd": "53753.33267431",
+        "snapshot_at": "2017-12-22 04:32:33"
+    },
+    {
+        "id": 3753,
+        "cryptocurrency_id": 1,
+        "price_usd": "51764.14883647",
+        "snapshot_at": "2017-12-22 03:32:33"
+    },
+    {
+        "id": 3754,
+        "cryptocurrency_id": 1,
+        "price_usd": "52441.12995878",
+        "snapshot_at": "2017-12-22 02:32:33"
+    },
+    {
+        "id": 3755,
+        "cryptocurrency_id": 1,
+        "price_usd": "50694.13978211",
+        "snapshot_at": "2017-12-22 01:32:33"
+    },
+    {
+        "id": 3756,
+        "cryptocurrency_id": 1,
+        "price_usd": "51418.92361947",
+        "snapshot_at": "2017-12-22 00:32:33"
+    },
+    {
+        "id": 3757,
+        "cryptocurrency_id": 1,
+        "price_usd": "53327.52516246",
+        "snapshot_at": "2017-12-21 23:32:33"
+    },
+    {
+        "id": 3758,
+        "cryptocurrency_id": 1,
+        "price_usd": "54724.87084115",
+        "snapshot_at": "2017-12-21 22:32:33"
+    },
+    {
+        "id": 3759,
+        "cryptocurrency_id": 1,
+        "price_usd": "57429.37538665",
+        "snapshot_at": "2017-12-21 21:32:33"
+    },
+    {
+        "id": 3760,
+        "cryptocurrency_id": 1,
+        "price_usd": "59065.98039415",
+        "snapshot_at": "2017-12-21 20:32:33"
+    },
+    {
+        "id": 3761,
+        "cryptocurrency_id": 1,
+        "price_usd": "61294.70123154",
+        "snapshot_at": "2017-12-21 19:32:33"
+    },
+    {
+        "id": 3762,
+        "cryptocurrency_id": 1,
+        "price_usd": "63150.84706759",
+        "snapshot_at": "2017-12-21 18:32:33"
+    },
+    {
+        "id": 3763,
+        "cryptocurrency_id": 1,
+        "price_usd": "65383.10199614",
+        "snapshot_at": "2017-12-21 17:32:33"
+    },
+    {
+        "id": 3764,
+        "cryptocurrency_id": 1,
+        "price_usd": "68339.07494279",
+        "snapshot_at": "2017-12-21 16:32:33"
+    },
+    {
+        "id": 3765,
+        "cryptocurrency_id": 1,
+        "price_usd": "68508.27439352",
+        "snapshot_at": "2017-12-21 15:32:33"
+    },
+    {
+        "id": 3766,
+        "cryptocurrency_id": 1,
+        "price_usd": "65457.29175025",
+        "snapshot_at": "2017-12-21 14:32:33"
+    },
+    {
+        "id": 3767,
+        "cryptocurrency_id": 1,
+        "price_usd": "64506.58483955",
+        "snapshot_at": "2017-12-21 13:32:33"
+    },
+    {
+        "id": 3768,
+        "cryptocurrency_id": 1,
+        "price_usd": "62243.62633260",
+        "snapshot_at": "2017-12-21 12:32:33"
+    },
+    {
+        "id": 3769,
+        "cryptocurrency_id": 1,
+        "price_usd": "60465.57026673",
+        "snapshot_at": "2017-12-21 11:32:33"
+    },
+    {
+        "id": 3770,
+        "cryptocurrency_id": 1,
+        "price_usd": "61359.73551584",
+        "snapshot_at": "2017-12-21 10:32:33"
+    },
+    {
+        "id": 3771,
+        "cryptocurrency_id": 1,
+        "price_usd": "59568.85743195",
+        "snapshot_at": "2017-12-21 09:32:33"
+    },
+    {
+        "id": 3772,
+        "cryptocurrency_id": 1,
+        "price_usd": "60109.46683959",
+        "snapshot_at": "2017-12-21 08:32:33"
+    },
+    {
+        "id": 3773,
+        "cryptocurrency_id": 1,
+        "price_usd": "60147.21768255",
+        "snapshot_at": "2017-12-21 07:32:33"
+    },
+    {
+        "id": 3774,
+        "cryptocurrency_id": 1,
+        "price_usd": "62114.64317488",
+        "snapshot_at": "2017-12-21 06:32:33"
+    },
+    {
+        "id": 3775,
+        "cryptocurrency_id": 1,
+        "price_usd": "63401.96043030",
+        "snapshot_at": "2017-12-21 05:32:33"
+    },
+    {
+        "id": 3776,
+        "cryptocurrency_id": 1,
+        "price_usd": "66106.86176808",
+        "snapshot_at": "2017-12-21 04:32:33"
+    },
+    {
+        "id": 3777,
+        "cryptocurrency_id": 1,
+        "price_usd": "64147.07548956",
+        "snapshot_at": "2017-12-21 03:32:33"
+    },
+    {
+        "id": 3778,
+        "cryptocurrency_id": 1,
+        "price_usd": "67296.81196220",
+        "snapshot_at": "2017-12-21 02:32:33"
+    },
+    {
+        "id": 3779,
+        "cryptocurrency_id": 1,
+        "price_usd": "69544.41013697",
+        "snapshot_at": "2017-12-21 01:32:33"
+    },
+    {
+        "id": 3780,
+        "cryptocurrency_id": 1,
+        "price_usd": "67002.84157044",
+        "snapshot_at": "2017-12-21 00:32:33"
+    },
+    {
+        "id": 3781,
+        "cryptocurrency_id": 1,
+        "price_usd": "65405.88619630",
+        "snapshot_at": "2017-12-20 23:32:33"
+    },
+    {
+        "id": 3782,
+        "cryptocurrency_id": 1,
+        "price_usd": "67233.67986457",
+        "snapshot_at": "2017-12-20 22:32:33"
+    },
+    {
+        "id": 3783,
+        "cryptocurrency_id": 1,
+        "price_usd": "68631.86095302",
+        "snapshot_at": "2017-12-20 21:32:33"
+    },
+    {
+        "id": 3784,
+        "cryptocurrency_id": 1,
+        "price_usd": "70865.81215499",
+        "snapshot_at": "2017-12-20 20:32:33"
+    },
+    {
+        "id": 3785,
+        "cryptocurrency_id": 1,
+        "price_usd": "68976.65323050",
+        "snapshot_at": "2017-12-20 19:32:33"
+    },
+    {
+        "id": 3786,
+        "cryptocurrency_id": 1,
+        "price_usd": "66716.13359204",
+        "snapshot_at": "2017-12-20 18:32:33"
+    },
+    {
+        "id": 3787,
+        "cryptocurrency_id": 1,
+        "price_usd": "64186.90209997",
+        "snapshot_at": "2017-12-20 17:32:33"
+    },
+    {
+        "id": 3788,
+        "cryptocurrency_id": 1,
+        "price_usd": "64531.22953633",
+        "snapshot_at": "2017-12-20 16:32:33"
+    },
+    {
+        "id": 3789,
+        "cryptocurrency_id": 1,
+        "price_usd": "65493.86260755",
+        "snapshot_at": "2017-12-20 15:32:33"
+    },
+    {
+        "id": 3790,
+        "cryptocurrency_id": 1,
+        "price_usd": "64043.55506674",
+        "snapshot_at": "2017-12-20 14:32:33"
+    },
+    {
+        "id": 3791,
+        "cryptocurrency_id": 1,
+        "price_usd": "66589.83726897",
+        "snapshot_at": "2017-12-20 13:32:33"
+    },
+    {
+        "id": 3792,
+        "cryptocurrency_id": 1,
+        "price_usd": "64522.86654859",
+        "snapshot_at": "2017-12-20 12:32:33"
+    },
+    {
+        "id": 3793,
+        "cryptocurrency_id": 1,
+        "price_usd": "65216.71661215",
+        "snapshot_at": "2017-12-20 11:32:33"
+    },
+    {
+        "id": 3794,
+        "cryptocurrency_id": 1,
+        "price_usd": "63591.27166310",
+        "snapshot_at": "2017-12-20 10:32:33"
+    },
+    {
+        "id": 3795,
+        "cryptocurrency_id": 1,
+        "price_usd": "62715.03634281",
+        "snapshot_at": "2017-12-20 09:32:33"
+    },
+    {
+        "id": 3796,
+        "cryptocurrency_id": 1,
+        "price_usd": "62299.83418064",
+        "snapshot_at": "2017-12-20 08:32:33"
+    },
+    {
+        "id": 3797,
+        "cryptocurrency_id": 1,
+        "price_usd": "63586.13458786",
+        "snapshot_at": "2017-12-20 07:32:33"
+    },
+    {
+        "id": 3798,
+        "cryptocurrency_id": 1,
+        "price_usd": "63995.09029604",
+        "snapshot_at": "2017-12-20 06:32:33"
+    },
+    {
+        "id": 3799,
+        "cryptocurrency_id": 1,
+        "price_usd": "66640.90084549",
+        "snapshot_at": "2017-12-20 05:32:33"
+    },
+    {
+        "id": 3800,
+        "cryptocurrency_id": 1,
+        "price_usd": "67541.10043347",
+        "snapshot_at": "2017-12-20 04:32:33"
+    },
+    {
+        "id": 3801,
+        "cryptocurrency_id": 1,
+        "price_usd": "67719.29423101",
+        "snapshot_at": "2017-12-20 03:32:33"
+    },
+    {
+        "id": 3802,
+        "cryptocurrency_id": 1,
+        "price_usd": "64691.42616126",
+        "snapshot_at": "2017-12-20 02:32:33"
+    },
+    {
+        "id": 3803,
+        "cryptocurrency_id": 1,
+        "price_usd": "66906.46994261",
+        "snapshot_at": "2017-12-20 01:32:33"
+    },
+    {
+        "id": 3804,
+        "cryptocurrency_id": 1,
+        "price_usd": "68826.82274999",
+        "snapshot_at": "2017-12-20 00:32:33"
+    },
+    {
+        "id": 3805,
+        "cryptocurrency_id": 1,
+        "price_usd": "72136.52236508",
+        "snapshot_at": "2017-12-19 23:32:33"
+    },
+    {
+        "id": 3806,
+        "cryptocurrency_id": 1,
+        "price_usd": "69744.46091321",
+        "snapshot_at": "2017-12-19 22:32:33"
+    },
+    {
+        "id": 3807,
+        "cryptocurrency_id": 1,
+        "price_usd": "68395.43928974",
+        "snapshot_at": "2017-12-19 21:32:33"
+    },
+    {
+        "id": 3808,
+        "cryptocurrency_id": 1,
+        "price_usd": "65328.83367718",
+        "snapshot_at": "2017-12-19 20:32:33"
+    },
+    {
+        "id": 3809,
+        "cryptocurrency_id": 1,
+        "price_usd": "64060.93400201",
+        "snapshot_at": "2017-12-19 19:32:33"
+    },
+    {
+        "id": 3810,
+        "cryptocurrency_id": 1,
+        "price_usd": "64736.47428277",
+        "snapshot_at": "2017-12-19 18:32:33"
+    },
+    {
+        "id": 3811,
+        "cryptocurrency_id": 1,
+        "price_usd": "67433.84864852",
+        "snapshot_at": "2017-12-19 17:32:33"
+    },
+    {
+        "id": 3812,
+        "cryptocurrency_id": 1,
+        "price_usd": "70683.87894125",
+        "snapshot_at": "2017-12-19 16:32:33"
+    },
+    {
+        "id": 3813,
+        "cryptocurrency_id": 1,
+        "price_usd": "70454.76656871",
+        "snapshot_at": "2017-12-19 15:32:33"
+    },
+    {
+        "id": 3814,
+        "cryptocurrency_id": 1,
+        "price_usd": "69191.82081330",
+        "snapshot_at": "2017-12-19 14:32:33"
+    },
+    {
+        "id": 3815,
+        "cryptocurrency_id": 1,
+        "price_usd": "70103.70899479",
+        "snapshot_at": "2017-12-19 13:32:33"
+    },
+    {
+        "id": 3816,
+        "cryptocurrency_id": 1,
+        "price_usd": "69012.67654528",
+        "snapshot_at": "2017-12-19 12:32:33"
+    },
+    {
+        "id": 3817,
+        "cryptocurrency_id": 1,
+        "price_usd": "67089.19316486",
+        "snapshot_at": "2017-12-19 11:32:33"
+    },
+    {
+        "id": 3818,
+        "cryptocurrency_id": 1,
+        "price_usd": "66905.50515278",
+        "snapshot_at": "2017-12-19 10:32:33"
+    },
+    {
+        "id": 3819,
+        "cryptocurrency_id": 1,
+        "price_usd": "65091.70169232",
+        "snapshot_at": "2017-12-19 09:32:33"
+    },
+    {
+        "id": 3820,
+        "cryptocurrency_id": 1,
+        "price_usd": "62048.63725468",
+        "snapshot_at": "2017-12-19 08:32:33"
+    },
+    {
+        "id": 3821,
+        "cryptocurrency_id": 1,
+        "price_usd": "61581.50762936",
+        "snapshot_at": "2017-12-19 07:32:33"
+    },
+    {
+        "id": 3822,
+        "cryptocurrency_id": 1,
+        "price_usd": "63816.49606510",
+        "snapshot_at": "2017-12-19 06:32:33"
+    },
+    {
+        "id": 3823,
+        "cryptocurrency_id": 1,
+        "price_usd": "63840.05222132",
+        "snapshot_at": "2017-12-19 05:32:33"
+    },
+    {
+        "id": 3824,
+        "cryptocurrency_id": 1,
+        "price_usd": "62108.13655330",
+        "snapshot_at": "2017-12-19 04:32:33"
+    },
+    {
+        "id": 3825,
+        "cryptocurrency_id": 1,
+        "price_usd": "61626.23960213",
+        "snapshot_at": "2017-12-19 03:32:33"
+    },
+    {
+        "id": 3826,
+        "cryptocurrency_id": 1,
+        "price_usd": "61629.11755373",
+        "snapshot_at": "2017-12-19 02:32:33"
+    },
+    {
+        "id": 3827,
+        "cryptocurrency_id": 1,
+        "price_usd": "63605.79020247",
+        "snapshot_at": "2017-12-19 01:32:33"
+    },
+    {
+        "id": 3828,
+        "cryptocurrency_id": 1,
+        "price_usd": "62563.60011040",
+        "snapshot_at": "2017-12-19 00:32:33"
+    },
+    {
+        "id": 3829,
+        "cryptocurrency_id": 1,
+        "price_usd": "59947.17641662",
+        "snapshot_at": "2017-12-18 23:32:33"
+    },
+    {
+        "id": 3830,
+        "cryptocurrency_id": 1,
+        "price_usd": "59564.87992747",
+        "snapshot_at": "2017-12-18 22:32:33"
+    },
+    {
+        "id": 3831,
+        "cryptocurrency_id": 1,
+        "price_usd": "56621.35131627",
+        "snapshot_at": "2017-12-18 21:32:33"
+    },
+    {
+        "id": 3832,
+        "cryptocurrency_id": 1,
+        "price_usd": "56190.30245238",
+        "snapshot_at": "2017-12-18 20:32:33"
+    },
+    {
+        "id": 3833,
+        "cryptocurrency_id": 1,
+        "price_usd": "55104.94346850",
+        "snapshot_at": "2017-12-18 19:32:33"
+    },
+    {
+        "id": 3834,
+        "cryptocurrency_id": 1,
+        "price_usd": "54996.94385821",
+        "snapshot_at": "2017-12-18 18:32:33"
+    },
+    {
+        "id": 3835,
+        "cryptocurrency_id": 1,
+        "price_usd": "55478.56199485",
+        "snapshot_at": "2017-12-18 17:32:33"
+    },
+    {
+        "id": 3836,
+        "cryptocurrency_id": 1,
+        "price_usd": "53853.22046495",
+        "snapshot_at": "2017-12-18 16:32:33"
+    },
+    {
+        "id": 3837,
+        "cryptocurrency_id": 1,
+        "price_usd": "51912.63548173",
+        "snapshot_at": "2017-12-18 15:32:33"
+    },
+    {
+        "id": 3838,
+        "cryptocurrency_id": 1,
+        "price_usd": "51532.19812168",
+        "snapshot_at": "2017-12-18 14:32:33"
+    },
+    {
+        "id": 3839,
+        "cryptocurrency_id": 1,
+        "price_usd": "50030.88462881",
+        "snapshot_at": "2017-12-18 13:32:33"
+    },
+    {
+        "id": 3840,
+        "cryptocurrency_id": 1,
+        "price_usd": "48386.47145423",
+        "snapshot_at": "2017-12-18 12:32:33"
+    },
+    {
+        "id": 3841,
+        "cryptocurrency_id": 1,
+        "price_usd": "49801.43728011",
+        "snapshot_at": "2017-12-18 11:32:33"
+    },
+    {
+        "id": 3842,
+        "cryptocurrency_id": 1,
+        "price_usd": "49692.09181910",
+        "snapshot_at": "2017-12-18 10:32:33"
+    },
+    {
+        "id": 3843,
+        "cryptocurrency_id": 1,
+        "price_usd": "49962.12617397",
+        "snapshot_at": "2017-12-18 09:32:33"
+    },
+    {
+        "id": 3844,
+        "cryptocurrency_id": 1,
+        "price_usd": "51835.18503364",
+        "snapshot_at": "2017-12-18 08:32:33"
+    },
+    {
+        "id": 3845,
+        "cryptocurrency_id": 1,
+        "price_usd": "49574.92558477",
+        "snapshot_at": "2017-12-18 07:32:33"
+    },
+    {
+        "id": 3846,
+        "cryptocurrency_id": 1,
+        "price_usd": "49547.41252306",
+        "snapshot_at": "2017-12-18 06:32:33"
+    },
+    {
+        "id": 3847,
+        "cryptocurrency_id": 1,
+        "price_usd": "49904.70956061",
+        "snapshot_at": "2017-12-18 05:32:33"
+    },
+    {
+        "id": 3848,
+        "cryptocurrency_id": 1,
+        "price_usd": "50477.84054338",
+        "snapshot_at": "2017-12-18 04:32:33"
+    },
+    {
+        "id": 3849,
+        "cryptocurrency_id": 1,
+        "price_usd": "52955.19303922",
+        "snapshot_at": "2017-12-18 03:32:33"
+    },
+    {
+        "id": 3850,
+        "cryptocurrency_id": 1,
+        "price_usd": "52266.68142713",
+        "snapshot_at": "2017-12-18 02:32:33"
+    },
+    {
+        "id": 3851,
+        "cryptocurrency_id": 1,
+        "price_usd": "52986.60494509",
+        "snapshot_at": "2017-12-18 01:32:33"
+    },
+    {
+        "id": 3852,
+        "cryptocurrency_id": 1,
+        "price_usd": "50633.77644496",
+        "snapshot_at": "2017-12-18 00:32:33"
+    },
+    {
+        "id": 3853,
+        "cryptocurrency_id": 1,
+        "price_usd": "48943.04826916",
+        "snapshot_at": "2017-12-17 23:32:33"
+    },
+    {
+        "id": 3854,
+        "cryptocurrency_id": 1,
+        "price_usd": "48394.31975919",
+        "snapshot_at": "2017-12-17 22:32:33"
+    },
+    {
+        "id": 3855,
+        "cryptocurrency_id": 1,
+        "price_usd": "46397.21830303",
+        "snapshot_at": "2017-12-17 21:32:33"
+    },
+    {
+        "id": 3856,
+        "cryptocurrency_id": 1,
+        "price_usd": "46683.38189571",
+        "snapshot_at": "2017-12-17 20:32:33"
+    },
+    {
+        "id": 3857,
+        "cryptocurrency_id": 1,
+        "price_usd": "45657.82887131",
+        "snapshot_at": "2017-12-17 19:32:33"
+    },
+    {
+        "id": 3858,
+        "cryptocurrency_id": 1,
+        "price_usd": "45180.33547689",
+        "snapshot_at": "2017-12-17 18:32:33"
+    },
+    {
+        "id": 3859,
+        "cryptocurrency_id": 1,
+        "price_usd": "43995.01643830",
+        "snapshot_at": "2017-12-17 17:32:33"
+    },
+    {
+        "id": 3860,
+        "cryptocurrency_id": 1,
+        "price_usd": "44177.66942230",
+        "snapshot_at": "2017-12-17 16:32:33"
+    },
+    {
+        "id": 3861,
+        "cryptocurrency_id": 1,
+        "price_usd": "44095.61516230",
+        "snapshot_at": "2017-12-17 15:32:33"
+    },
+    {
+        "id": 3862,
+        "cryptocurrency_id": 1,
+        "price_usd": "43215.62811698",
+        "snapshot_at": "2017-12-17 14:32:33"
+    },
+    {
+        "id": 3863,
+        "cryptocurrency_id": 1,
+        "price_usd": "41709.68700782",
+        "snapshot_at": "2017-12-17 13:32:33"
+    },
+    {
+        "id": 3864,
+        "cryptocurrency_id": 1,
+        "price_usd": "39698.67572870",
+        "snapshot_at": "2017-12-17 12:32:33"
+    },
+    {
+        "id": 3865,
+        "cryptocurrency_id": 1,
+        "price_usd": "37760.69106534",
+        "snapshot_at": "2017-12-17 11:32:33"
+    },
+    {
+        "id": 3866,
+        "cryptocurrency_id": 1,
+        "price_usd": "37911.60835111",
+        "snapshot_at": "2017-12-17 10:32:33"
+    },
+    {
+        "id": 3867,
+        "cryptocurrency_id": 1,
+        "price_usd": "38720.56859753",
+        "snapshot_at": "2017-12-17 09:32:33"
+    },
+    {
+        "id": 3868,
+        "cryptocurrency_id": 1,
+        "price_usd": "40399.90892007",
+        "snapshot_at": "2017-12-17 08:32:33"
+    },
+    {
+        "id": 3869,
+        "cryptocurrency_id": 1,
+        "price_usd": "40743.91910276",
+        "snapshot_at": "2017-12-17 07:32:33"
+    },
+    {
+        "id": 3870,
+        "cryptocurrency_id": 1,
+        "price_usd": "39375.56499830",
+        "snapshot_at": "2017-12-17 06:32:33"
+    },
+    {
+        "id": 3871,
+        "cryptocurrency_id": 1,
+        "price_usd": "38109.84872869",
+        "snapshot_at": "2017-12-17 05:32:33"
+    },
+    {
+        "id": 3872,
+        "cryptocurrency_id": 1,
+        "price_usd": "38534.05705382",
+        "snapshot_at": "2017-12-17 04:32:33"
+    },
+    {
+        "id": 3873,
+        "cryptocurrency_id": 1,
+        "price_usd": "37319.71846667",
+        "snapshot_at": "2017-12-17 03:32:33"
+    },
+    {
+        "id": 3874,
+        "cryptocurrency_id": 1,
+        "price_usd": "35608.50527990",
+        "snapshot_at": "2017-12-17 02:32:33"
+    },
+    {
+        "id": 3875,
+        "cryptocurrency_id": 1,
+        "price_usd": "35598.50405047",
+        "snapshot_at": "2017-12-17 01:32:33"
+    },
+    {
+        "id": 3876,
+        "cryptocurrency_id": 1,
+        "price_usd": "33822.69858213",
+        "snapshot_at": "2017-12-17 00:32:33"
+    },
+    {
+        "id": 3877,
+        "cryptocurrency_id": 1,
+        "price_usd": "33330.78404151",
+        "snapshot_at": "2017-12-16 23:32:33"
+    },
+    {
+        "id": 3878,
+        "cryptocurrency_id": 1,
+        "price_usd": "32329.33761365",
+        "snapshot_at": "2017-12-16 22:32:33"
+    },
+    {
+        "id": 3879,
+        "cryptocurrency_id": 1,
+        "price_usd": "33010.32131578",
+        "snapshot_at": "2017-12-16 21:32:33"
+    },
+    {
+        "id": 3880,
+        "cryptocurrency_id": 1,
+        "price_usd": "33210.74155408",
+        "snapshot_at": "2017-12-16 20:32:33"
+    },
+    {
+        "id": 3881,
+        "cryptocurrency_id": 1,
+        "price_usd": "32484.74152048",
+        "snapshot_at": "2017-12-16 19:32:33"
+    },
+    {
+        "id": 3882,
+        "cryptocurrency_id": 1,
+        "price_usd": "33294.93393494",
+        "snapshot_at": "2017-12-16 18:32:33"
+    },
+    {
+        "id": 3883,
+        "cryptocurrency_id": 1,
+        "price_usd": "33787.38151665",
+        "snapshot_at": "2017-12-16 17:32:33"
+    },
+    {
+        "id": 3884,
+        "cryptocurrency_id": 1,
+        "price_usd": "33639.71780702",
+        "snapshot_at": "2017-12-16 16:32:33"
+    },
+    {
+        "id": 3885,
+        "cryptocurrency_id": 1,
+        "price_usd": "34126.45517666",
+        "snapshot_at": "2017-12-16 15:32:33"
+    },
+    {
+        "id": 3886,
+        "cryptocurrency_id": 1,
+        "price_usd": "32528.40474466",
+        "snapshot_at": "2017-12-16 14:32:33"
+    },
+    {
+        "id": 3887,
+        "cryptocurrency_id": 1,
+        "price_usd": "33119.94902809",
+        "snapshot_at": "2017-12-16 13:32:33"
+    },
+    {
+        "id": 3888,
+        "cryptocurrency_id": 1,
+        "price_usd": "33689.70629424",
+        "snapshot_at": "2017-12-16 12:32:33"
+    },
+    {
+        "id": 3889,
+        "cryptocurrency_id": 1,
+        "price_usd": "33598.15581081",
+        "snapshot_at": "2017-12-16 11:32:33"
+    },
+    {
+        "id": 3890,
+        "cryptocurrency_id": 1,
+        "price_usd": "33139.29271886",
+        "snapshot_at": "2017-12-16 10:32:33"
+    },
+    {
+        "id": 3891,
+        "cryptocurrency_id": 1,
+        "price_usd": "31531.86911047",
+        "snapshot_at": "2017-12-16 09:32:33"
+    },
+    {
+        "id": 3892,
+        "cryptocurrency_id": 1,
+        "price_usd": "30351.94295714",
+        "snapshot_at": "2017-12-16 08:32:33"
+    },
+    {
+        "id": 3893,
+        "cryptocurrency_id": 1,
+        "price_usd": "31564.70316288",
+        "snapshot_at": "2017-12-16 07:32:33"
+    },
+    {
+        "id": 3894,
+        "cryptocurrency_id": 1,
+        "price_usd": "32533.89454908",
+        "snapshot_at": "2017-12-16 06:32:33"
+    },
+    {
+        "id": 3895,
+        "cryptocurrency_id": 1,
+        "price_usd": "32568.87311113",
+        "snapshot_at": "2017-12-16 05:32:33"
+    },
+    {
+        "id": 3896,
+        "cryptocurrency_id": 1,
+        "price_usd": "31771.13234355",
+        "snapshot_at": "2017-12-16 04:32:33"
+    },
+    {
+        "id": 3897,
+        "cryptocurrency_id": 1,
+        "price_usd": "32586.13724108",
+        "snapshot_at": "2017-12-16 03:32:33"
+    },
+    {
+        "id": 3898,
+        "cryptocurrency_id": 1,
+        "price_usd": "32693.72799490",
+        "snapshot_at": "2017-12-16 02:32:33"
+    },
+    {
+        "id": 3899,
+        "cryptocurrency_id": 1,
+        "price_usd": "33367.53744141",
+        "snapshot_at": "2017-12-16 01:32:33"
+    },
+    {
+        "id": 3900,
+        "cryptocurrency_id": 1,
+        "price_usd": "32693.76103041",
+        "snapshot_at": "2017-12-16 00:32:33"
+    },
+    {
+        "id": 3901,
+        "cryptocurrency_id": 1,
+        "price_usd": "32777.52600883",
+        "snapshot_at": "2017-12-15 23:32:33"
+    },
+    {
+        "id": 3902,
+        "cryptocurrency_id": 1,
+        "price_usd": "32918.57539860",
+        "snapshot_at": "2017-12-15 22:32:33"
+    },
+    {
+        "id": 3903,
+        "cryptocurrency_id": 1,
+        "price_usd": "31827.00551293",
+        "snapshot_at": "2017-12-15 21:32:33"
+    },
+    {
+        "id": 3904,
+        "cryptocurrency_id": 1,
+        "price_usd": "31672.42249470",
+        "snapshot_at": "2017-12-15 20:32:33"
+    },
+    {
+        "id": 3905,
+        "cryptocurrency_id": 1,
+        "price_usd": "31644.96662908",
+        "snapshot_at": "2017-12-15 19:32:33"
+    },
+    {
+        "id": 3906,
+        "cryptocurrency_id": 1,
+        "price_usd": "32239.83803271",
+        "snapshot_at": "2017-12-15 18:32:33"
+    },
+    {
+        "id": 3907,
+        "cryptocurrency_id": 1,
+        "price_usd": "31009.29896419",
+        "snapshot_at": "2017-12-15 17:32:33"
+    },
+    {
+        "id": 3908,
+        "cryptocurrency_id": 1,
+        "price_usd": "31318.50936728",
+        "snapshot_at": "2017-12-15 16:32:33"
+    },
+    {
+        "id": 3909,
+        "cryptocurrency_id": 1,
+        "price_usd": "30373.05633451",
+        "snapshot_at": "2017-12-15 15:32:33"
+    },
+    {
+        "id": 3910,
+        "cryptocurrency_id": 1,
+        "price_usd": "29871.93301244",
+        "snapshot_at": "2017-12-15 14:32:33"
+    },
+    {
+        "id": 3911,
+        "cryptocurrency_id": 1,
+        "price_usd": "29059.25661647",
+        "snapshot_at": "2017-12-15 13:32:33"
+    },
+    {
+        "id": 3912,
+        "cryptocurrency_id": 1,
+        "price_usd": "29225.86346324",
+        "snapshot_at": "2017-12-15 12:32:33"
+    },
+    {
+        "id": 3913,
+        "cryptocurrency_id": 1,
+        "price_usd": "27770.68258752",
+        "snapshot_at": "2017-12-15 11:32:33"
+    },
+    {
+        "id": 3914,
+        "cryptocurrency_id": 1,
+        "price_usd": "27027.46769077",
+        "snapshot_at": "2017-12-15 10:32:33"
+    },
+    {
+        "id": 3915,
+        "cryptocurrency_id": 1,
+        "price_usd": "26628.13376815",
+        "snapshot_at": "2017-12-15 09:32:33"
+    },
+    {
+        "id": 3916,
+        "cryptocurrency_id": 1,
+        "price_usd": "27225.43567591",
+        "snapshot_at": "2017-12-15 08:32:33"
+    },
+    {
+        "id": 3917,
+        "cryptocurrency_id": 1,
+        "price_usd": "27147.73385107",
+        "snapshot_at": "2017-12-15 07:32:33"
+    },
+    {
+        "id": 3918,
+        "cryptocurrency_id": 1,
+        "price_usd": "27722.77547759",
+        "snapshot_at": "2017-12-15 06:32:33"
+    },
+    {
+        "id": 3919,
+        "cryptocurrency_id": 1,
+        "price_usd": "26501.68539137",
+        "snapshot_at": "2017-12-15 05:32:33"
+    },
+    {
+        "id": 3920,
+        "cryptocurrency_id": 1,
+        "price_usd": "26782.33444624",
+        "snapshot_at": "2017-12-15 04:32:33"
+    },
+    {
+        "id": 3921,
+        "cryptocurrency_id": 1,
+        "price_usd": "28013.74772307",
+        "snapshot_at": "2017-12-15 03:32:33"
+    },
+    {
+        "id": 3922,
+        "cryptocurrency_id": 1,
+        "price_usd": "27556.34869410",
+        "snapshot_at": "2017-12-15 02:32:33"
+    },
+    {
+        "id": 3923,
+        "cryptocurrency_id": 1,
+        "price_usd": "26683.86978197",
+        "snapshot_at": "2017-12-15 01:32:33"
+    },
+    {
+        "id": 3924,
+        "cryptocurrency_id": 1,
+        "price_usd": "26491.53835768",
+        "snapshot_at": "2017-12-15 00:32:33"
+    },
+    {
+        "id": 3925,
+        "cryptocurrency_id": 1,
+        "price_usd": "25422.54017610",
+        "snapshot_at": "2017-12-14 23:32:33"
+    },
+    {
+        "id": 3926,
+        "cryptocurrency_id": 1,
+        "price_usd": "26208.75950827",
+        "snapshot_at": "2017-12-14 22:32:33"
+    },
+    {
+        "id": 3927,
+        "cryptocurrency_id": 1,
+        "price_usd": "25892.60931885",
+        "snapshot_at": "2017-12-14 21:32:33"
+    },
+    {
+        "id": 3928,
+        "cryptocurrency_id": 1,
+        "price_usd": "25710.21803901",
+        "snapshot_at": "2017-12-14 20:32:33"
+    },
+    {
+        "id": 3929,
+        "cryptocurrency_id": 1,
+        "price_usd": "25839.92006457",
+        "snapshot_at": "2017-12-14 19:32:33"
+    },
+    {
+        "id": 3930,
+        "cryptocurrency_id": 1,
+        "price_usd": "26525.75893040",
+        "snapshot_at": "2017-12-14 18:32:33"
+    },
+    {
+        "id": 3931,
+        "cryptocurrency_id": 1,
+        "price_usd": "27087.52898231",
+        "snapshot_at": "2017-12-14 17:32:33"
+    },
+    {
+        "id": 3932,
+        "cryptocurrency_id": 1,
+        "price_usd": "27310.52870988",
+        "snapshot_at": "2017-12-14 16:32:33"
+    },
+    {
+        "id": 3933,
+        "cryptocurrency_id": 1,
+        "price_usd": "28391.89684504",
+        "snapshot_at": "2017-12-14 15:32:33"
+    },
+    {
+        "id": 3934,
+        "cryptocurrency_id": 1,
+        "price_usd": "28794.50813645",
+        "snapshot_at": "2017-12-14 14:32:33"
+    },
+    {
+        "id": 3935,
+        "cryptocurrency_id": 1,
+        "price_usd": "27371.03302256",
+        "snapshot_at": "2017-12-14 13:32:33"
+    },
+    {
+        "id": 3936,
+        "cryptocurrency_id": 1,
+        "price_usd": "27262.91473688",
+        "snapshot_at": "2017-12-14 12:32:33"
+    },
+    {
+        "id": 3937,
+        "cryptocurrency_id": 1,
+        "price_usd": "28566.90032459",
+        "snapshot_at": "2017-12-14 11:32:33"
+    },
+    {
+        "id": 3938,
+        "cryptocurrency_id": 1,
+        "price_usd": "27533.35288948",
+        "snapshot_at": "2017-12-14 10:32:33"
+    },
+    {
+        "id": 3939,
+        "cryptocurrency_id": 1,
+        "price_usd": "27107.82633365",
+        "snapshot_at": "2017-12-14 09:32:33"
+    },
+    {
+        "id": 3940,
+        "cryptocurrency_id": 1,
+        "price_usd": "26061.03061283",
+        "snapshot_at": "2017-12-14 08:32:33"
+    },
+    {
+        "id": 3941,
+        "cryptocurrency_id": 1,
+        "price_usd": "26784.49632500",
+        "snapshot_at": "2017-12-14 07:32:33"
+    },
+    {
+        "id": 3942,
+        "cryptocurrency_id": 1,
+        "price_usd": "25521.57873455",
+        "snapshot_at": "2017-12-14 06:32:33"
+    },
+    {
+        "id": 3943,
+        "cryptocurrency_id": 1,
+        "price_usd": "26309.82016436",
+        "snapshot_at": "2017-12-14 05:32:33"
+    },
+    {
+        "id": 3944,
+        "cryptocurrency_id": 1,
+        "price_usd": "27233.58160298",
+        "snapshot_at": "2017-12-14 04:32:33"
+    },
+    {
+        "id": 3945,
+        "cryptocurrency_id": 1,
+        "price_usd": "27302.61923596",
+        "snapshot_at": "2017-12-14 03:32:33"
+    },
+    {
+        "id": 3946,
+        "cryptocurrency_id": 1,
+        "price_usd": "27238.85379490",
+        "snapshot_at": "2017-12-14 02:32:33"
+    },
+    {
+        "id": 3947,
+        "cryptocurrency_id": 1,
+        "price_usd": "28118.78723410",
+        "snapshot_at": "2017-12-14 01:32:33"
+    },
+    {
+        "id": 3948,
+        "cryptocurrency_id": 1,
+        "price_usd": "27285.25166968",
+        "snapshot_at": "2017-12-14 00:32:33"
+    },
+    {
+        "id": 3949,
+        "cryptocurrency_id": 1,
+        "price_usd": "27472.04048596",
+        "snapshot_at": "2017-12-13 23:32:33"
+    },
+    {
+        "id": 3950,
+        "cryptocurrency_id": 1,
+        "price_usd": "27397.11435076",
+        "snapshot_at": "2017-12-13 22:32:33"
+    },
+    {
+        "id": 3951,
+        "cryptocurrency_id": 1,
+        "price_usd": "27763.25694657",
+        "snapshot_at": "2017-12-13 21:32:33"
+    },
+    {
+        "id": 3952,
+        "cryptocurrency_id": 1,
+        "price_usd": "27171.01157270",
+        "snapshot_at": "2017-12-13 20:32:33"
+    },
+    {
+        "id": 3953,
+        "cryptocurrency_id": 1,
+        "price_usd": "26427.20550319",
+        "snapshot_at": "2017-12-13 19:32:33"
+    },
+    {
+        "id": 3954,
+        "cryptocurrency_id": 1,
+        "price_usd": "25595.52162282",
+        "snapshot_at": "2017-12-13 18:32:33"
+    },
+    {
+        "id": 3955,
+        "cryptocurrency_id": 1,
+        "price_usd": "26747.87846492",
+        "snapshot_at": "2017-12-13 17:32:33"
+    },
+    {
+        "id": 3956,
+        "cryptocurrency_id": 1,
+        "price_usd": "27133.71788646",
+        "snapshot_at": "2017-12-13 16:32:33"
+    },
+    {
+        "id": 3957,
+        "cryptocurrency_id": 1,
+        "price_usd": "27766.33035126",
+        "snapshot_at": "2017-12-13 15:32:33"
+    },
+    {
+        "id": 3958,
+        "cryptocurrency_id": 1,
+        "price_usd": "27015.97814712",
+        "snapshot_at": "2017-12-13 14:32:33"
+    },
+    {
+        "id": 3959,
+        "cryptocurrency_id": 1,
+        "price_usd": "26039.87689088",
+        "snapshot_at": "2017-12-13 13:32:33"
+    },
+    {
+        "id": 3960,
+        "cryptocurrency_id": 1,
+        "price_usd": "25716.70905423",
+        "snapshot_at": "2017-12-13 12:32:33"
+    },
+    {
+        "id": 3961,
+        "cryptocurrency_id": 1,
+        "price_usd": "26862.73327127",
+        "snapshot_at": "2017-12-13 11:32:33"
+    },
+    {
+        "id": 3962,
+        "cryptocurrency_id": 1,
+        "price_usd": "26240.38441362",
+        "snapshot_at": "2017-12-13 10:32:33"
+    },
+    {
+        "id": 3963,
+        "cryptocurrency_id": 1,
+        "price_usd": "27240.99834645",
+        "snapshot_at": "2017-12-13 09:32:33"
+    },
+    {
+        "id": 3964,
+        "cryptocurrency_id": 1,
+        "price_usd": "27453.59440846",
+        "snapshot_at": "2017-12-13 08:32:33"
+    },
+    {
+        "id": 3965,
+        "cryptocurrency_id": 1,
+        "price_usd": "27569.43161466",
+        "snapshot_at": "2017-12-13 07:32:33"
+    },
+    {
+        "id": 3966,
+        "cryptocurrency_id": 1,
+        "price_usd": "28803.43670789",
+        "snapshot_at": "2017-12-13 06:32:33"
+    },
+    {
+        "id": 3967,
+        "cryptocurrency_id": 1,
+        "price_usd": "28259.11421982",
+        "snapshot_at": "2017-12-13 05:32:33"
+    },
+    {
+        "id": 3968,
+        "cryptocurrency_id": 1,
+        "price_usd": "29257.09567032",
+        "snapshot_at": "2017-12-13 04:32:33"
+    },
+    {
+        "id": 3969,
+        "cryptocurrency_id": 1,
+        "price_usd": "27808.66410995",
+        "snapshot_at": "2017-12-13 03:32:33"
+    },
+    {
+        "id": 3970,
+        "cryptocurrency_id": 1,
+        "price_usd": "28391.84436304",
+        "snapshot_at": "2017-12-13 02:32:33"
+    },
+    {
+        "id": 3971,
+        "cryptocurrency_id": 1,
+        "price_usd": "27194.07760336",
+        "snapshot_at": "2017-12-13 01:32:33"
+    },
+    {
+        "id": 3972,
+        "cryptocurrency_id": 1,
+        "price_usd": "25931.96261842",
+        "snapshot_at": "2017-12-13 00:32:33"
+    },
+    {
+        "id": 3973,
+        "cryptocurrency_id": 1,
+        "price_usd": "25426.19092424",
+        "snapshot_at": "2017-12-12 23:32:33"
+    },
+    {
+        "id": 3974,
+        "cryptocurrency_id": 1,
+        "price_usd": "26385.17174680",
+        "snapshot_at": "2017-12-12 22:32:33"
+    },
+    {
+        "id": 3975,
+        "cryptocurrency_id": 1,
+        "price_usd": "25810.46192786",
+        "snapshot_at": "2017-12-12 21:32:33"
+    },
+    {
+        "id": 3976,
+        "cryptocurrency_id": 1,
+        "price_usd": "24619.77435820",
+        "snapshot_at": "2017-12-12 20:32:33"
+    },
+    {
+        "id": 3977,
+        "cryptocurrency_id": 1,
+        "price_usd": "24533.50138745",
+        "snapshot_at": "2017-12-12 19:32:33"
+    },
+    {
+        "id": 3978,
+        "cryptocurrency_id": 1,
+        "price_usd": "25350.02676955",
+        "snapshot_at": "2017-12-12 18:32:33"
+    },
+    {
+        "id": 3979,
+        "cryptocurrency_id": 1,
+        "price_usd": "25032.11384849",
+        "snapshot_at": "2017-12-12 17:32:33"
+    },
+    {
+        "id": 3980,
+        "cryptocurrency_id": 1,
+        "price_usd": "25451.27509764",
+        "snapshot_at": "2017-12-12 16:32:33"
+    },
+    {
+        "id": 3981,
+        "cryptocurrency_id": 1,
+        "price_usd": "25781.24342830",
+        "snapshot_at": "2017-12-12 15:32:33"
+    },
+    {
+        "id": 3982,
+        "cryptocurrency_id": 1,
+        "price_usd": "25874.18510393",
+        "snapshot_at": "2017-12-12 14:32:33"
+    },
+    {
+        "id": 3983,
+        "cryptocurrency_id": 1,
+        "price_usd": "26712.10778729",
+        "snapshot_at": "2017-12-12 13:32:33"
+    },
+    {
+        "id": 3984,
+        "cryptocurrency_id": 1,
+        "price_usd": "25802.39428847",
+        "snapshot_at": "2017-12-12 12:32:33"
+    },
+    {
+        "id": 3985,
+        "cryptocurrency_id": 1,
+        "price_usd": "26814.66660657",
+        "snapshot_at": "2017-12-12 11:32:33"
+    },
+    {
+        "id": 3986,
+        "cryptocurrency_id": 1,
+        "price_usd": "28083.43218182",
+        "snapshot_at": "2017-12-12 10:32:33"
+    },
+    {
+        "id": 3987,
+        "cryptocurrency_id": 1,
+        "price_usd": "28930.66384548",
+        "snapshot_at": "2017-12-12 09:32:33"
+    },
+    {
+        "id": 3988,
+        "cryptocurrency_id": 1,
+        "price_usd": "28860.77930677",
+        "snapshot_at": "2017-12-12 08:32:33"
+    },
+    {
+        "id": 3989,
+        "cryptocurrency_id": 1,
+        "price_usd": "28731.01069837",
+        "snapshot_at": "2017-12-12 07:32:33"
+    },
+    {
+        "id": 3990,
+        "cryptocurrency_id": 1,
+        "price_usd": "28119.83282903",
+        "snapshot_at": "2017-12-12 06:32:33"
+    },
+    {
+        "id": 3991,
+        "cryptocurrency_id": 1,
+        "price_usd": "27954.31210963",
+        "snapshot_at": "2017-12-12 05:32:33"
+    },
+    {
+        "id": 3992,
+        "cryptocurrency_id": 1,
+        "price_usd": "28792.87936683",
+        "snapshot_at": "2017-12-12 04:32:33"
+    },
+    {
+        "id": 3993,
+        "cryptocurrency_id": 1,
+        "price_usd": "28532.95838234",
+        "snapshot_at": "2017-12-12 03:32:33"
+    },
+    {
+        "id": 3994,
+        "cryptocurrency_id": 1,
+        "price_usd": "28255.39666111",
+        "snapshot_at": "2017-12-12 02:32:33"
+    },
+    {
+        "id": 3995,
+        "cryptocurrency_id": 1,
+        "price_usd": "29624.87267875",
+        "snapshot_at": "2017-12-12 01:32:33"
+    },
+    {
+        "id": 3996,
+        "cryptocurrency_id": 1,
+        "price_usd": "28616.37166591",
+        "snapshot_at": "2017-12-12 00:32:33"
+    },
+    {
+        "id": 3997,
+        "cryptocurrency_id": 1,
+        "price_usd": "28947.36431970",
+        "snapshot_at": "2017-12-11 23:32:33"
+    },
+    {
+        "id": 3998,
+        "cryptocurrency_id": 1,
+        "price_usd": "28253.15267510",
+        "snapshot_at": "2017-12-11 22:32:33"
+    },
+    {
+        "id": 3999,
+        "cryptocurrency_id": 1,
+        "price_usd": "29455.01343154",
+        "snapshot_at": "2017-12-11 21:32:33"
+    },
+    {
+        "id": 4000,
+        "cryptocurrency_id": 1,
+        "price_usd": "30779.05672341",
+        "snapshot_at": "2017-12-11 20:32:33"
+    },
+    {
+        "id": 4001,
+        "cryptocurrency_id": 1,
+        "price_usd": "31321.02274901",
+        "snapshot_at": "2017-12-11 19:32:33"
+    },
+    {
+        "id": 4002,
+        "cryptocurrency_id": 1,
+        "price_usd": "31148.55178711",
+        "snapshot_at": "2017-12-11 18:32:33"
+    },
+    {
+        "id": 4003,
+        "cryptocurrency_id": 1,
+        "price_usd": "30783.71574299",
+        "snapshot_at": "2017-12-11 17:32:33"
+    },
+    {
+        "id": 4004,
+        "cryptocurrency_id": 1,
+        "price_usd": "30829.30928528",
+        "snapshot_at": "2017-12-11 16:32:33"
+    },
+    {
+        "id": 4005,
+        "cryptocurrency_id": 1,
+        "price_usd": "30548.51972497",
+        "snapshot_at": "2017-12-11 15:32:33"
+    },
+    {
+        "id": 4006,
+        "cryptocurrency_id": 1,
+        "price_usd": "30145.45787017",
+        "snapshot_at": "2017-12-11 14:32:33"
+    },
+    {
+        "id": 4007,
+        "cryptocurrency_id": 1,
+        "price_usd": "29656.07406845",
+        "snapshot_at": "2017-12-11 13:32:33"
+    },
+    {
+        "id": 4008,
+        "cryptocurrency_id": 1,
+        "price_usd": "29171.41370757",
+        "snapshot_at": "2017-12-11 12:32:33"
+    },
+    {
+        "id": 4009,
+        "cryptocurrency_id": 1,
+        "price_usd": "29306.13972212",
+        "snapshot_at": "2017-12-11 11:32:33"
+    },
+    {
+        "id": 4010,
+        "cryptocurrency_id": 1,
+        "price_usd": "29720.08984817",
+        "snapshot_at": "2017-12-11 10:32:33"
+    },
+    {
+        "id": 4011,
+        "cryptocurrency_id": 1,
+        "price_usd": "30860.56682402",
+        "snapshot_at": "2017-12-11 09:32:33"
+    },
+    {
+        "id": 4012,
+        "cryptocurrency_id": 1,
+        "price_usd": "30405.80903029",
+        "snapshot_at": "2017-12-11 08:32:33"
+    },
+    {
+        "id": 4013,
+        "cryptocurrency_id": 1,
+        "price_usd": "29814.16516788",
+        "snapshot_at": "2017-12-11 07:32:33"
+    },
+    {
+        "id": 4014,
+        "cryptocurrency_id": 1,
+        "price_usd": "29741.49230133",
+        "snapshot_at": "2017-12-11 06:32:33"
+    },
+    {
+        "id": 4015,
+        "cryptocurrency_id": 1,
+        "price_usd": "28927.19767908",
+        "snapshot_at": "2017-12-11 05:32:33"
+    },
+    {
+        "id": 4016,
+        "cryptocurrency_id": 1,
+        "price_usd": "29187.69360138",
+        "snapshot_at": "2017-12-11 04:32:33"
+    },
+    {
+        "id": 4017,
+        "cryptocurrency_id": 1,
+        "price_usd": "27863.21076753",
+        "snapshot_at": "2017-12-11 03:32:33"
+    },
+    {
+        "id": 4018,
+        "cryptocurrency_id": 1,
+        "price_usd": "27367.17662992",
+        "snapshot_at": "2017-12-11 02:32:33"
+    },
+    {
+        "id": 4019,
+        "cryptocurrency_id": 1,
+        "price_usd": "28473.48094128",
+        "snapshot_at": "2017-12-11 01:32:33"
+    },
+    {
+        "id": 4020,
+        "cryptocurrency_id": 1,
+        "price_usd": "29870.99485577",
+        "snapshot_at": "2017-12-11 00:32:33"
+    },
+    {
+        "id": 4021,
+        "cryptocurrency_id": 1,
+        "price_usd": "31306.38058964",
+        "snapshot_at": "2017-12-10 23:32:33"
+    },
+    {
+        "id": 4022,
+        "cryptocurrency_id": 1,
+        "price_usd": "32866.47767979",
+        "snapshot_at": "2017-12-10 22:32:33"
+    },
+    {
+        "id": 4023,
+        "cryptocurrency_id": 1,
+        "price_usd": "31832.24833406",
+        "snapshot_at": "2017-12-10 21:32:33"
+    },
+    {
+        "id": 4024,
+        "cryptocurrency_id": 1,
+        "price_usd": "31772.47861731",
+        "snapshot_at": "2017-12-10 20:32:33"
+    },
+    {
+        "id": 4025,
+        "cryptocurrency_id": 1,
+        "price_usd": "31353.29315540",
+        "snapshot_at": "2017-12-10 19:32:33"
+    },
+    {
+        "id": 4026,
+        "cryptocurrency_id": 1,
+        "price_usd": "32187.23239879",
+        "snapshot_at": "2017-12-10 18:32:33"
+    },
+    {
+        "id": 4027,
+        "cryptocurrency_id": 1,
+        "price_usd": "33704.36991041",
+        "snapshot_at": "2017-12-10 17:32:33"
+    },
+    {
+        "id": 4028,
+        "cryptocurrency_id": 1,
+        "price_usd": "32208.89919530",
+        "snapshot_at": "2017-12-10 16:32:33"
+    },
+    {
+        "id": 4029,
+        "cryptocurrency_id": 1,
+        "price_usd": "31201.64694510",
+        "snapshot_at": "2017-12-10 15:32:33"
+    },
+    {
+        "id": 4030,
+        "cryptocurrency_id": 1,
+        "price_usd": "32666.35796076",
+        "snapshot_at": "2017-12-10 14:32:33"
+    },
+    {
+        "id": 4031,
+        "cryptocurrency_id": 1,
+        "price_usd": "31296.46887836",
+        "snapshot_at": "2017-12-10 13:32:33"
+    },
+    {
+        "id": 4032,
+        "cryptocurrency_id": 1,
+        "price_usd": "31937.48311062",
+        "snapshot_at": "2017-12-10 12:32:33"
+    },
+    {
+        "id": 4033,
+        "cryptocurrency_id": 1,
+        "price_usd": "30979.83266030",
+        "snapshot_at": "2017-12-10 11:32:33"
+    },
+    {
+        "id": 4034,
+        "cryptocurrency_id": 1,
+        "price_usd": "31267.19543925",
+        "snapshot_at": "2017-12-10 10:32:33"
+    },
+    {
+        "id": 4035,
+        "cryptocurrency_id": 1,
+        "price_usd": "31309.90790424",
+        "snapshot_at": "2017-12-10 09:32:33"
+    },
+    {
+        "id": 4036,
+        "cryptocurrency_id": 1,
+        "price_usd": "30095.95000782",
+        "snapshot_at": "2017-12-10 08:32:33"
+    },
+    {
+        "id": 4037,
+        "cryptocurrency_id": 1,
+        "price_usd": "31411.17696905",
+        "snapshot_at": "2017-12-10 07:32:33"
+    },
+    {
+        "id": 4038,
+        "cryptocurrency_id": 1,
+        "price_usd": "30741.97828777",
+        "snapshot_at": "2017-12-10 06:32:33"
+    },
+    {
+        "id": 4039,
+        "cryptocurrency_id": 1,
+        "price_usd": "31126.83147933",
+        "snapshot_at": "2017-12-10 05:32:33"
+    },
+    {
+        "id": 4040,
+        "cryptocurrency_id": 1,
+        "price_usd": "30371.11650768",
+        "snapshot_at": "2017-12-10 04:32:33"
+    },
+    {
+        "id": 4041,
+        "cryptocurrency_id": 1,
+        "price_usd": "29084.95143446",
+        "snapshot_at": "2017-12-10 03:32:33"
+    },
+    {
+        "id": 4042,
+        "cryptocurrency_id": 1,
+        "price_usd": "28193.32854357",
+        "snapshot_at": "2017-12-10 02:32:33"
+    },
+    {
+        "id": 4043,
+        "cryptocurrency_id": 1,
+        "price_usd": "28759.90253365",
+        "snapshot_at": "2017-12-10 01:32:33"
+    },
+    {
+        "id": 4044,
+        "cryptocurrency_id": 1,
+        "price_usd": "28523.63523408",
+        "snapshot_at": "2017-12-10 00:32:33"
+    },
+    {
+        "id": 4045,
+        "cryptocurrency_id": 1,
+        "price_usd": "29726.22138568",
+        "snapshot_at": "2017-12-09 23:32:33"
+    },
+    {
+        "id": 4046,
+        "cryptocurrency_id": 1,
+        "price_usd": "29024.73592864",
+        "snapshot_at": "2017-12-09 22:32:33"
+    },
+    {
+        "id": 4047,
+        "cryptocurrency_id": 1,
+        "price_usd": "27925.56928200",
+        "snapshot_at": "2017-12-09 21:32:33"
+    },
+    {
+        "id": 4048,
+        "cryptocurrency_id": 1,
+        "price_usd": "26906.59708458",
+        "snapshot_at": "2017-12-09 20:32:33"
+    },
+    {
+        "id": 4049,
+        "cryptocurrency_id": 1,
+        "price_usd": "27908.17155954",
+        "snapshot_at": "2017-12-09 19:32:33"
+    },
+    {
+        "id": 4050,
+        "cryptocurrency_id": 1,
+        "price_usd": "27603.54625519",
+        "snapshot_at": "2017-12-09 18:32:33"
+    },
+    {
+        "id": 4051,
+        "cryptocurrency_id": 1,
+        "price_usd": "26683.57078738",
+        "snapshot_at": "2017-12-09 17:32:33"
+    },
+    {
+        "id": 4052,
+        "cryptocurrency_id": 1,
+        "price_usd": "26518.28658337",
+        "snapshot_at": "2017-12-09 16:32:33"
+    },
+    {
+        "id": 4053,
+        "cryptocurrency_id": 1,
+        "price_usd": "27804.77799679",
+        "snapshot_at": "2017-12-09 15:32:33"
+    },
+    {
+        "id": 4054,
+        "cryptocurrency_id": 1,
+        "price_usd": "28458.81175073",
+        "snapshot_at": "2017-12-09 14:32:33"
+    },
+    {
+        "id": 4055,
+        "cryptocurrency_id": 1,
+        "price_usd": "29753.90424692",
+        "snapshot_at": "2017-12-09 13:32:33"
+    },
+    {
+        "id": 4056,
+        "cryptocurrency_id": 1,
+        "price_usd": "29368.74020164",
+        "snapshot_at": "2017-12-09 12:32:33"
+    },
+    {
+        "id": 4057,
+        "cryptocurrency_id": 1,
+        "price_usd": "28826.93522589",
+        "snapshot_at": "2017-12-09 11:32:33"
+    },
+    {
+        "id": 4058,
+        "cryptocurrency_id": 1,
+        "price_usd": "29431.83922006",
+        "snapshot_at": "2017-12-09 10:32:33"
+    },
+    {
+        "id": 4059,
+        "cryptocurrency_id": 1,
+        "price_usd": "29356.81850500",
+        "snapshot_at": "2017-12-09 09:32:33"
+    },
+    {
+        "id": 4060,
+        "cryptocurrency_id": 1,
+        "price_usd": "29723.23915808",
+        "snapshot_at": "2017-12-09 08:32:33"
+    },
+    {
+        "id": 4061,
+        "cryptocurrency_id": 1,
+        "price_usd": "29885.25167352",
+        "snapshot_at": "2017-12-09 07:32:33"
+    },
+    {
+        "id": 4062,
+        "cryptocurrency_id": 1,
+        "price_usd": "31074.37000477",
+        "snapshot_at": "2017-12-09 06:32:33"
+    },
+    {
+        "id": 4063,
+        "cryptocurrency_id": 1,
+        "price_usd": "29926.11482252",
+        "snapshot_at": "2017-12-09 05:32:33"
+    },
+    {
+        "id": 4064,
+        "cryptocurrency_id": 1,
+        "price_usd": "29328.58618982",
+        "snapshot_at": "2017-12-09 04:32:33"
+    },
+    {
+        "id": 4065,
+        "cryptocurrency_id": 1,
+        "price_usd": "28986.57249211",
+        "snapshot_at": "2017-12-09 03:32:33"
+    },
+    {
+        "id": 4066,
+        "cryptocurrency_id": 1,
+        "price_usd": "28269.99033556",
+        "snapshot_at": "2017-12-09 02:32:33"
+    },
+    {
+        "id": 4067,
+        "cryptocurrency_id": 1,
+        "price_usd": "29559.64070751",
+        "snapshot_at": "2017-12-09 01:32:33"
+    },
+    {
+        "id": 4068,
+        "cryptocurrency_id": 1,
+        "price_usd": "29709.20865007",
+        "snapshot_at": "2017-12-09 00:32:33"
+    },
+    {
+        "id": 4069,
+        "cryptocurrency_id": 1,
+        "price_usd": "30027.83234318",
+        "snapshot_at": "2017-12-08 23:32:33"
+    },
+    {
+        "id": 4070,
+        "cryptocurrency_id": 1,
+        "price_usd": "30444.45148487",
+        "snapshot_at": "2017-12-08 22:32:33"
+    },
+    {
+        "id": 4071,
+        "cryptocurrency_id": 1,
+        "price_usd": "28934.59167092",
+        "snapshot_at": "2017-12-08 21:32:33"
+    },
+    {
+        "id": 4072,
+        "cryptocurrency_id": 1,
+        "price_usd": "29190.31184266",
+        "snapshot_at": "2017-12-08 20:32:33"
+    },
+    {
+        "id": 4073,
+        "cryptocurrency_id": 1,
+        "price_usd": "29385.99186404",
+        "snapshot_at": "2017-12-08 19:32:33"
+    },
+    {
+        "id": 4074,
+        "cryptocurrency_id": 1,
+        "price_usd": "28119.69643732",
+        "snapshot_at": "2017-12-08 18:32:33"
+    },
+    {
+        "id": 4075,
+        "cryptocurrency_id": 1,
+        "price_usd": "27377.85698374",
+        "snapshot_at": "2017-12-08 17:32:33"
+    },
+    {
+        "id": 4076,
+        "cryptocurrency_id": 1,
+        "price_usd": "26308.59523863",
+        "snapshot_at": "2017-12-08 16:32:33"
+    },
+    {
+        "id": 4077,
+        "cryptocurrency_id": 1,
+        "price_usd": "25528.69256499",
+        "snapshot_at": "2017-12-08 15:32:33"
+    },
+    {
+        "id": 4078,
+        "cryptocurrency_id": 1,
+        "price_usd": "25860.69533472",
+        "snapshot_at": "2017-12-08 14:32:33"
+    },
+    {
+        "id": 4079,
+        "cryptocurrency_id": 1,
+        "price_usd": "24612.06694460",
+        "snapshot_at": "2017-12-08 13:32:33"
+    },
+    {
+        "id": 4080,
+        "cryptocurrency_id": 1,
+        "price_usd": "25066.23887479",
+        "snapshot_at": "2017-12-08 12:32:33"
+    },
+    {
+        "id": 4081,
+        "cryptocurrency_id": 1,
+        "price_usd": "26206.33704529",
+        "snapshot_at": "2017-12-08 11:32:33"
+    },
+    {
+        "id": 4082,
+        "cryptocurrency_id": 1,
+        "price_usd": "26164.47767461",
+        "snapshot_at": "2017-12-08 10:32:33"
+    },
+    {
+        "id": 4083,
+        "cryptocurrency_id": 1,
+        "price_usd": "25950.92006951",
+        "snapshot_at": "2017-12-08 09:32:33"
+    },
+    {
+        "id": 4084,
+        "cryptocurrency_id": 1,
+        "price_usd": "26779.40847156",
+        "snapshot_at": "2017-12-08 08:32:33"
+    },
+    {
+        "id": 4085,
+        "cryptocurrency_id": 1,
+        "price_usd": "26524.61027958",
+        "snapshot_at": "2017-12-08 07:32:33"
+    },
+    {
+        "id": 4086,
+        "cryptocurrency_id": 1,
+        "price_usd": "26074.90468818",
+        "snapshot_at": "2017-12-08 06:32:33"
+    },
+    {
+        "id": 4087,
+        "cryptocurrency_id": 1,
+        "price_usd": "24882.76444914",
+        "snapshot_at": "2017-12-08 05:32:33"
+    },
+    {
+        "id": 4088,
+        "cryptocurrency_id": 1,
+        "price_usd": "24054.79310408",
+        "snapshot_at": "2017-12-08 04:32:33"
+    },
+    {
+        "id": 4089,
+        "cryptocurrency_id": 1,
+        "price_usd": "24454.18955934",
+        "snapshot_at": "2017-12-08 03:32:33"
+    },
+    {
+        "id": 4090,
+        "cryptocurrency_id": 1,
+        "price_usd": "24308.60294970",
+        "snapshot_at": "2017-12-08 02:32:33"
+    },
+    {
+        "id": 4091,
+        "cryptocurrency_id": 1,
+        "price_usd": "24916.52054969",
+        "snapshot_at": "2017-12-08 01:32:33"
+    },
+    {
+        "id": 4092,
+        "cryptocurrency_id": 1,
+        "price_usd": "24654.86300229",
+        "snapshot_at": "2017-12-08 00:32:33"
+    },
+    {
+        "id": 4093,
+        "cryptocurrency_id": 1,
+        "price_usd": "24264.08904778",
+        "snapshot_at": "2017-12-07 23:32:33"
+    },
+    {
+        "id": 4094,
+        "cryptocurrency_id": 1,
+        "price_usd": "24353.36026146",
+        "snapshot_at": "2017-12-07 22:32:33"
+    },
+    {
+        "id": 4095,
+        "cryptocurrency_id": 1,
+        "price_usd": "25479.86891321",
+        "snapshot_at": "2017-12-07 21:32:33"
+    },
+    {
+        "id": 4096,
+        "cryptocurrency_id": 1,
+        "price_usd": "24696.25990875",
+        "snapshot_at": "2017-12-07 20:32:33"
+    },
+    {
+        "id": 4097,
+        "cryptocurrency_id": 1,
+        "price_usd": "25433.48246466",
+        "snapshot_at": "2017-12-07 19:32:33"
+    },
+    {
+        "id": 4098,
+        "cryptocurrency_id": 1,
+        "price_usd": "26614.57925678",
+        "snapshot_at": "2017-12-07 18:32:33"
+    },
+    {
+        "id": 4099,
+        "cryptocurrency_id": 1,
+        "price_usd": "25908.07475043",
+        "snapshot_at": "2017-12-07 17:32:33"
+    },
+    {
+        "id": 4100,
+        "cryptocurrency_id": 1,
+        "price_usd": "26986.40629308",
+        "snapshot_at": "2017-12-07 16:32:33"
+    },
+    {
+        "id": 4101,
+        "cryptocurrency_id": 1,
+        "price_usd": "26407.21120120",
+        "snapshot_at": "2017-12-07 15:32:33"
+    },
+    {
+        "id": 4102,
+        "cryptocurrency_id": 1,
+        "price_usd": "26926.17091834",
+        "snapshot_at": "2017-12-07 14:32:33"
+    },
+    {
+        "id": 4103,
+        "cryptocurrency_id": 1,
+        "price_usd": "25656.77985897",
+        "snapshot_at": "2017-12-07 13:32:33"
+    },
+    {
+        "id": 4104,
+        "cryptocurrency_id": 1,
+        "price_usd": "25483.66772703",
+        "snapshot_at": "2017-12-07 12:32:33"
+    },
+    {
+        "id": 4105,
+        "cryptocurrency_id": 1,
+        "price_usd": "24973.25413505",
+        "snapshot_at": "2017-12-07 11:32:33"
+    },
+    {
+        "id": 4106,
+        "cryptocurrency_id": 1,
+        "price_usd": "25614.63154838",
+        "snapshot_at": "2017-12-07 10:32:33"
+    },
+    {
+        "id": 4107,
+        "cryptocurrency_id": 1,
+        "price_usd": "25546.08335876",
+        "snapshot_at": "2017-12-07 09:32:33"
+    },
+    {
+        "id": 4108,
+        "cryptocurrency_id": 1,
+        "price_usd": "24560.82601919",
+        "snapshot_at": "2017-12-07 08:32:33"
+    },
+    {
+        "id": 4109,
+        "cryptocurrency_id": 1,
+        "price_usd": "25681.05843717",
+        "snapshot_at": "2017-12-07 07:32:33"
+    },
+    {
+        "id": 4110,
+        "cryptocurrency_id": 1,
+        "price_usd": "24698.27834949",
+        "snapshot_at": "2017-12-07 06:32:33"
+    },
+    {
+        "id": 4111,
+        "cryptocurrency_id": 1,
+        "price_usd": "24191.00851322",
+        "snapshot_at": "2017-12-07 05:32:33"
+    },
+    {
+        "id": 4112,
+        "cryptocurrency_id": 1,
+        "price_usd": "23743.58915299",
+        "snapshot_at": "2017-12-07 04:32:33"
+    },
+    {
+        "id": 4113,
+        "cryptocurrency_id": 1,
+        "price_usd": "22567.28658563",
+        "snapshot_at": "2017-12-07 03:32:33"
+    },
+    {
+        "id": 4114,
+        "cryptocurrency_id": 1,
+        "price_usd": "22457.04597343",
+        "snapshot_at": "2017-12-07 02:32:33"
+    },
+    {
+        "id": 4115,
+        "cryptocurrency_id": 1,
+        "price_usd": "22346.90274369",
+        "snapshot_at": "2017-12-07 01:32:33"
+    },
+    {
+        "id": 4116,
+        "cryptocurrency_id": 1,
+        "price_usd": "22758.49193176",
+        "snapshot_at": "2017-12-07 00:32:33"
+    },
+    {
+        "id": 4117,
+        "cryptocurrency_id": 1,
+        "price_usd": "21738.60327826",
+        "snapshot_at": "2017-12-06 23:32:33"
+    },
+    {
+        "id": 4118,
+        "cryptocurrency_id": 1,
+        "price_usd": "22144.97215133",
+        "snapshot_at": "2017-12-06 22:32:33"
+    },
+    {
+        "id": 4119,
+        "cryptocurrency_id": 1,
+        "price_usd": "21348.19479530",
+        "snapshot_at": "2017-12-06 21:32:33"
+    },
+    {
+        "id": 4120,
+        "cryptocurrency_id": 1,
+        "price_usd": "20910.51665066",
+        "snapshot_at": "2017-12-06 20:32:33"
+    },
+    {
+        "id": 4121,
+        "cryptocurrency_id": 1,
+        "price_usd": "20180.51260681",
+        "snapshot_at": "2017-12-06 19:32:33"
+    },
+    {
+        "id": 4122,
+        "cryptocurrency_id": 1,
+        "price_usd": "20611.09500837",
+        "snapshot_at": "2017-12-06 18:32:33"
+    },
+    {
+        "id": 4123,
+        "cryptocurrency_id": 1,
+        "price_usd": "21479.98793694",
+        "snapshot_at": "2017-12-06 17:32:33"
+    },
+    {
+        "id": 4124,
+        "cryptocurrency_id": 1,
+        "price_usd": "22195.03026758",
+        "snapshot_at": "2017-12-06 16:32:33"
+    },
+    {
+        "id": 4125,
+        "cryptocurrency_id": 1,
+        "price_usd": "22087.96720884",
+        "snapshot_at": "2017-12-06 15:32:33"
+    },
+    {
+        "id": 4126,
+        "cryptocurrency_id": 1,
+        "price_usd": "22249.74215270",
+        "snapshot_at": "2017-12-06 14:32:33"
+    },
+    {
+        "id": 4127,
+        "cryptocurrency_id": 1,
+        "price_usd": "22322.18265279",
+        "snapshot_at": "2017-12-06 13:32:33"
+    },
+    {
+        "id": 4128,
+        "cryptocurrency_id": 1,
+        "price_usd": "21235.84184921",
+        "snapshot_at": "2017-12-06 12:32:33"
+    },
+    {
+        "id": 4129,
+        "cryptocurrency_id": 1,
+        "price_usd": "21858.60577670",
+        "snapshot_at": "2017-12-06 11:32:33"
+    },
+    {
+        "id": 4130,
+        "cryptocurrency_id": 1,
+        "price_usd": "22675.88689479",
+        "snapshot_at": "2017-12-06 10:32:33"
+    },
+    {
+        "id": 4131,
+        "cryptocurrency_id": 1,
+        "price_usd": "23295.14366911",
+        "snapshot_at": "2017-12-06 09:32:33"
+    },
+    {
+        "id": 4132,
+        "cryptocurrency_id": 1,
+        "price_usd": "24427.26391868",
+        "snapshot_at": "2017-12-06 08:32:33"
+    },
+    {
+        "id": 4133,
+        "cryptocurrency_id": 1,
+        "price_usd": "24619.79841777",
+        "snapshot_at": "2017-12-06 07:32:33"
+    },
+    {
+        "id": 4134,
+        "cryptocurrency_id": 1,
+        "price_usd": "23407.64320043",
+        "snapshot_at": "2017-12-06 06:32:33"
+    },
+    {
+        "id": 4135,
+        "cryptocurrency_id": 1,
+        "price_usd": "24061.28512963",
+        "snapshot_at": "2017-12-06 05:32:33"
+    },
+    {
+        "id": 4136,
+        "cryptocurrency_id": 1,
+        "price_usd": "24351.39429302",
+        "snapshot_at": "2017-12-06 04:32:33"
+    },
+    {
+        "id": 4137,
+        "cryptocurrency_id": 1,
+        "price_usd": "25289.36537813",
+        "snapshot_at": "2017-12-06 03:32:33"
+    },
+    {
+        "id": 4138,
+        "cryptocurrency_id": 1,
+        "price_usd": "25914.24921695",
+        "snapshot_at": "2017-12-06 02:32:33"
+    },
+    {
+        "id": 4139,
+        "cryptocurrency_id": 1,
+        "price_usd": "26300.07412628",
+        "snapshot_at": "2017-12-06 01:32:33"
+    },
+    {
+        "id": 4140,
+        "cryptocurrency_id": 1,
+        "price_usd": "25393.25055779",
+        "snapshot_at": "2017-12-06 00:32:33"
+    },
+    {
+        "id": 4141,
+        "cryptocurrency_id": 1,
+        "price_usd": "24444.25444856",
+        "snapshot_at": "2017-12-05 23:32:33"
+    },
+    {
+        "id": 4142,
+        "cryptocurrency_id": 1,
+        "price_usd": "24130.21454977",
+        "snapshot_at": "2017-12-05 22:32:33"
+    },
+    {
+        "id": 4143,
+        "cryptocurrency_id": 1,
+        "price_usd": "23478.70672178",
+        "snapshot_at": "2017-12-05 21:32:33"
+    },
+    {
+        "id": 4144,
+        "cryptocurrency_id": 1,
+        "price_usd": "22869.60349969",
+        "snapshot_at": "2017-12-05 20:32:33"
+    },
+    {
+        "id": 4145,
+        "cryptocurrency_id": 1,
+        "price_usd": "23689.49026168",
+        "snapshot_at": "2017-12-05 19:32:33"
+    },
+    {
+        "id": 4146,
+        "cryptocurrency_id": 1,
+        "price_usd": "23429.37108796",
+        "snapshot_at": "2017-12-05 18:32:33"
+    },
+    {
+        "id": 4147,
+        "cryptocurrency_id": 1,
+        "price_usd": "23424.28462757",
+        "snapshot_at": "2017-12-05 17:32:33"
+    },
+    {
+        "id": 4148,
+        "cryptocurrency_id": 1,
+        "price_usd": "24547.22087191",
+        "snapshot_at": "2017-12-05 16:32:33"
+    },
+    {
+        "id": 4149,
+        "cryptocurrency_id": 1,
+        "price_usd": "24354.24462586",
+        "snapshot_at": "2017-12-05 15:32:33"
+    },
+    {
+        "id": 4150,
+        "cryptocurrency_id": 1,
+        "price_usd": "23217.74558820",
+        "snapshot_at": "2017-12-05 14:32:33"
+    },
+    {
+        "id": 4151,
+        "cryptocurrency_id": 1,
+        "price_usd": "24088.18739470",
+        "snapshot_at": "2017-12-05 13:32:33"
+    },
+    {
+        "id": 4152,
+        "cryptocurrency_id": 1,
+        "price_usd": "24295.05675585",
+        "snapshot_at": "2017-12-05 12:32:33"
+    },
+    {
+        "id": 4153,
+        "cryptocurrency_id": 1,
+        "price_usd": "24125.57189998",
+        "snapshot_at": "2017-12-05 11:32:33"
+    },
+    {
+        "id": 4154,
+        "cryptocurrency_id": 1,
+        "price_usd": "24258.51289604",
+        "snapshot_at": "2017-12-05 10:32:33"
+    },
+    {
+        "id": 4155,
+        "cryptocurrency_id": 1,
+        "price_usd": "24004.22663887",
+        "snapshot_at": "2017-12-05 09:32:33"
+    },
+    {
+        "id": 4156,
+        "cryptocurrency_id": 1,
+        "price_usd": "22830.02363817",
+        "snapshot_at": "2017-12-05 08:32:33"
+    },
+    {
+        "id": 4157,
+        "cryptocurrency_id": 1,
+        "price_usd": "22762.85802331",
+        "snapshot_at": "2017-12-05 07:32:33"
+    },
+    {
+        "id": 4158,
+        "cryptocurrency_id": 1,
+        "price_usd": "22653.65514451",
+        "snapshot_at": "2017-12-05 06:32:33"
+    },
+    {
+        "id": 4159,
+        "cryptocurrency_id": 1,
+        "price_usd": "22096.41587019",
+        "snapshot_at": "2017-12-05 05:32:33"
+    },
+    {
+        "id": 4160,
+        "cryptocurrency_id": 1,
+        "price_usd": "21533.87472222",
+        "snapshot_at": "2017-12-05 04:32:33"
+    },
+    {
+        "id": 4161,
+        "cryptocurrency_id": 1,
+        "price_usd": "22014.91409635",
+        "snapshot_at": "2017-12-05 03:32:33"
+    },
+    {
+        "id": 4162,
+        "cryptocurrency_id": 1,
+        "price_usd": "21368.59888120",
+        "snapshot_at": "2017-12-05 02:32:33"
+    },
+    {
+        "id": 4163,
+        "cryptocurrency_id": 1,
+        "price_usd": "22383.64071527",
+        "snapshot_at": "2017-12-05 01:32:33"
+    },
+    {
+        "id": 4164,
+        "cryptocurrency_id": 1,
+        "price_usd": "21660.27950168",
+        "snapshot_at": "2017-12-05 00:32:33"
+    },
+    {
+        "id": 4165,
+        "cryptocurrency_id": 1,
+        "price_usd": "22117.73276792",
+        "snapshot_at": "2017-12-04 23:32:33"
+    },
+    {
+        "id": 4166,
+        "cryptocurrency_id": 1,
+        "price_usd": "21027.89272973",
+        "snapshot_at": "2017-12-04 22:32:33"
+    },
+    {
+        "id": 4167,
+        "cryptocurrency_id": 1,
+        "price_usd": "21706.61734283",
+        "snapshot_at": "2017-12-04 21:32:33"
+    },
+    {
+        "id": 4168,
+        "cryptocurrency_id": 1,
+        "price_usd": "21745.35639826",
+        "snapshot_at": "2017-12-04 20:32:33"
+    },
+    {
+        "id": 4169,
+        "cryptocurrency_id": 1,
+        "price_usd": "20879.63758614",
+        "snapshot_at": "2017-12-04 19:32:33"
+    },
+    {
+        "id": 4170,
+        "cryptocurrency_id": 1,
+        "price_usd": "20558.23286589",
+        "snapshot_at": "2017-12-04 18:32:33"
+    },
+    {
+        "id": 4171,
+        "cryptocurrency_id": 1,
+        "price_usd": "21047.36823374",
+        "snapshot_at": "2017-12-04 17:32:33"
+    },
+    {
+        "id": 4172,
+        "cryptocurrency_id": 1,
+        "price_usd": "21482.71317718",
+        "snapshot_at": "2017-12-04 16:32:33"
+    },
+    {
+        "id": 4173,
+        "cryptocurrency_id": 1,
+        "price_usd": "21619.83991105",
+        "snapshot_at": "2017-12-04 15:32:33"
+    },
+    {
+        "id": 4174,
+        "cryptocurrency_id": 1,
+        "price_usd": "22223.51899159",
+        "snapshot_at": "2017-12-04 14:32:33"
+    },
+    {
+        "id": 4175,
+        "cryptocurrency_id": 1,
+        "price_usd": "22206.56979983",
+        "snapshot_at": "2017-12-04 13:32:33"
+    },
+    {
+        "id": 4176,
+        "cryptocurrency_id": 1,
+        "price_usd": "21157.06668221",
+        "snapshot_at": "2017-12-04 12:32:33"
+    },
+    {
+        "id": 4177,
+        "cryptocurrency_id": 1,
+        "price_usd": "21068.45027959",
+        "snapshot_at": "2017-12-04 11:32:33"
+    },
+    {
+        "id": 4178,
+        "cryptocurrency_id": 1,
+        "price_usd": "21611.91100037",
+        "snapshot_at": "2017-12-04 10:32:33"
+    },
+    {
+        "id": 4179,
+        "cryptocurrency_id": 1,
+        "price_usd": "21337.08397396",
+        "snapshot_at": "2017-12-04 09:32:33"
+    },
+    {
+        "id": 4180,
+        "cryptocurrency_id": 1,
+        "price_usd": "20939.43740889",
+        "snapshot_at": "2017-12-04 08:32:33"
+    },
+    {
+        "id": 4181,
+        "cryptocurrency_id": 1,
+        "price_usd": "20203.82893651",
+        "snapshot_at": "2017-12-04 07:32:33"
+    },
+    {
+        "id": 4182,
+        "cryptocurrency_id": 1,
+        "price_usd": "20263.73199155",
+        "snapshot_at": "2017-12-04 06:32:33"
+    },
+    {
+        "id": 4183,
+        "cryptocurrency_id": 1,
+        "price_usd": "19267.31874461",
+        "snapshot_at": "2017-12-04 05:32:33"
+    },
+    {
+        "id": 4184,
+        "cryptocurrency_id": 1,
+        "price_usd": "18936.63368747",
+        "snapshot_at": "2017-12-04 04:32:33"
+    },
+    {
+        "id": 4185,
+        "cryptocurrency_id": 1,
+        "price_usd": "19369.75476984",
+        "snapshot_at": "2017-12-04 03:32:33"
+    },
+    {
+        "id": 4186,
+        "cryptocurrency_id": 1,
+        "price_usd": "18590.05889199",
+        "snapshot_at": "2017-12-04 02:32:33"
+    },
+    {
+        "id": 4187,
+        "cryptocurrency_id": 1,
+        "price_usd": "18633.31003364",
+        "snapshot_at": "2017-12-04 01:32:33"
+    },
+    {
+        "id": 4188,
+        "cryptocurrency_id": 1,
+        "price_usd": "18393.83541862",
+        "snapshot_at": "2017-12-04 00:32:33"
+    },
+    {
+        "id": 4189,
+        "cryptocurrency_id": 1,
+        "price_usd": "17736.95021755",
+        "snapshot_at": "2017-12-03 23:32:33"
+    },
+    {
+        "id": 4190,
+        "cryptocurrency_id": 1,
+        "price_usd": "17677.97774418",
+        "snapshot_at": "2017-12-03 22:32:33"
+    },
+    {
+        "id": 4191,
+        "cryptocurrency_id": 1,
+        "price_usd": "18480.74177444",
+        "snapshot_at": "2017-12-03 21:32:33"
+    },
+    {
+        "id": 4192,
+        "cryptocurrency_id": 1,
+        "price_usd": "18382.42884429",
+        "snapshot_at": "2017-12-03 20:32:33"
+    },
+    {
+        "id": 4193,
+        "cryptocurrency_id": 1,
+        "price_usd": "19269.28086243",
+        "snapshot_at": "2017-12-03 19:32:33"
+    },
+    {
+        "id": 4194,
+        "cryptocurrency_id": 1,
+        "price_usd": "19292.65465879",
+        "snapshot_at": "2017-12-03 18:32:33"
+    },
+    {
+        "id": 4195,
+        "cryptocurrency_id": 1,
+        "price_usd": "19824.50204844",
+        "snapshot_at": "2017-12-03 17:32:33"
+    },
+    {
+        "id": 4196,
+        "cryptocurrency_id": 1,
+        "price_usd": "19550.82740731",
+        "snapshot_at": "2017-12-03 16:32:33"
+    },
+    {
+        "id": 4197,
+        "cryptocurrency_id": 1,
+        "price_usd": "20065.54116178",
+        "snapshot_at": "2017-12-03 15:32:33"
+    },
+    {
+        "id": 4198,
+        "cryptocurrency_id": 1,
+        "price_usd": "19293.34219589",
+        "snapshot_at": "2017-12-03 14:32:33"
+    },
+    {
+        "id": 4199,
+        "cryptocurrency_id": 1,
+        "price_usd": "18663.49843959",
+        "snapshot_at": "2017-12-03 13:32:33"
+    },
+    {
+        "id": 4200,
+        "cryptocurrency_id": 1,
+        "price_usd": "17970.94604955",
+        "snapshot_at": "2017-12-03 12:32:33"
+    },
+    {
+        "id": 4201,
+        "cryptocurrency_id": 1,
+        "price_usd": "17985.79604223",
+        "snapshot_at": "2017-12-03 11:32:33"
+    },
+    {
+        "id": 4202,
+        "cryptocurrency_id": 1,
+        "price_usd": "18425.93902523",
+        "snapshot_at": "2017-12-03 10:32:33"
+    },
+    {
+        "id": 4203,
+        "cryptocurrency_id": 1,
+        "price_usd": "17994.44559541",
+        "snapshot_at": "2017-12-03 09:32:33"
+    },
+    {
+        "id": 4204,
+        "cryptocurrency_id": 1,
+        "price_usd": "17372.61289696",
+        "snapshot_at": "2017-12-03 08:32:33"
+    },
+    {
+        "id": 4205,
+        "cryptocurrency_id": 1,
+        "price_usd": "17402.11334912",
+        "snapshot_at": "2017-12-03 07:32:33"
+    },
+    {
+        "id": 4206,
+        "cryptocurrency_id": 1,
+        "price_usd": "17934.71230371",
+        "snapshot_at": "2017-12-03 06:32:33"
+    },
+    {
+        "id": 4207,
+        "cryptocurrency_id": 1,
+        "price_usd": "17584.09474616",
+        "snapshot_at": "2017-12-03 05:32:33"
+    },
+    {
+        "id": 4208,
+        "cryptocurrency_id": 1,
+        "price_usd": "17477.81387123",
+        "snapshot_at": "2017-12-03 04:32:33"
+    },
+    {
+        "id": 4209,
+        "cryptocurrency_id": 1,
+        "price_usd": "18215.51588783",
+        "snapshot_at": "2017-12-03 03:32:33"
+    },
+    {
+        "id": 4210,
+        "cryptocurrency_id": 1,
+        "price_usd": "18344.26495703",
+        "snapshot_at": "2017-12-03 02:32:33"
+    },
+    {
+        "id": 4211,
+        "cryptocurrency_id": 1,
+        "price_usd": "17768.26764745",
+        "snapshot_at": "2017-12-03 01:32:33"
+    },
+    {
+        "id": 4212,
+        "cryptocurrency_id": 1,
+        "price_usd": "17594.30650433",
+        "snapshot_at": "2017-12-03 00:32:33"
+    },
+    {
+        "id": 4213,
+        "cryptocurrency_id": 1,
+        "price_usd": "17263.82354446",
+        "snapshot_at": "2017-12-02 23:32:33"
+    },
+    {
+        "id": 4214,
+        "cryptocurrency_id": 1,
+        "price_usd": "17077.26708795",
+        "snapshot_at": "2017-12-02 22:32:33"
+    },
+    {
+        "id": 4215,
+        "cryptocurrency_id": 1,
+        "price_usd": "16275.63908491",
+        "snapshot_at": "2017-12-02 21:32:33"
+    },
+    {
+        "id": 4216,
+        "cryptocurrency_id": 1,
+        "price_usd": "15502.92592211",
+        "snapshot_at": "2017-12-02 20:32:33"
+    },
+    {
+        "id": 4217,
+        "cryptocurrency_id": 1,
+        "price_usd": "15267.02070723",
+        "snapshot_at": "2017-12-02 19:32:33"
+    },
+    {
+        "id": 4218,
+        "cryptocurrency_id": 1,
+        "price_usd": "14980.69567932",
+        "snapshot_at": "2017-12-02 18:32:33"
+    },
+    {
+        "id": 4219,
+        "cryptocurrency_id": 1,
+        "price_usd": "15362.95175022",
+        "snapshot_at": "2017-12-02 17:32:33"
+    },
+    {
+        "id": 4220,
+        "cryptocurrency_id": 1,
+        "price_usd": "14621.03430653",
+        "snapshot_at": "2017-12-02 16:32:33"
+    },
+    {
+        "id": 4221,
+        "cryptocurrency_id": 1,
+        "price_usd": "14326.71361572",
+        "snapshot_at": "2017-12-02 15:32:33"
+    },
+    {
+        "id": 4222,
+        "cryptocurrency_id": 1,
+        "price_usd": "13656.75620143",
+        "snapshot_at": "2017-12-02 14:32:33"
+    },
+    {
+        "id": 4223,
+        "cryptocurrency_id": 1,
+        "price_usd": "14187.20540514",
+        "snapshot_at": "2017-12-02 13:32:33"
+    },
+    {
+        "id": 4224,
+        "cryptocurrency_id": 1,
+        "price_usd": "14326.94681593",
+        "snapshot_at": "2017-12-02 12:32:33"
+    },
+    {
+        "id": 4225,
+        "cryptocurrency_id": 1,
+        "price_usd": "13634.98484130",
+        "snapshot_at": "2017-12-02 11:32:33"
+    },
+    {
+        "id": 4226,
+        "cryptocurrency_id": 1,
+        "price_usd": "13446.51341421",
+        "snapshot_at": "2017-12-02 10:32:33"
+    },
+    {
+        "id": 4227,
+        "cryptocurrency_id": 1,
+        "price_usd": "13910.70879946",
+        "snapshot_at": "2017-12-02 09:32:33"
+    },
+    {
+        "id": 4228,
+        "cryptocurrency_id": 1,
+        "price_usd": "13835.51234135",
+        "snapshot_at": "2017-12-02 08:32:33"
+    },
+    {
+        "id": 4229,
+        "cryptocurrency_id": 1,
+        "price_usd": "13619.40362070",
+        "snapshot_at": "2017-12-02 07:32:33"
+    },
+    {
+        "id": 4230,
+        "cryptocurrency_id": 1,
+        "price_usd": "13938.98738045",
+        "snapshot_at": "2017-12-02 06:32:33"
+    },
+    {
+        "id": 4231,
+        "cryptocurrency_id": 1,
+        "price_usd": "14297.38247114",
+        "snapshot_at": "2017-12-02 05:32:33"
+    },
+    {
+        "id": 4232,
+        "cryptocurrency_id": 1,
+        "price_usd": "14356.22329121",
+        "snapshot_at": "2017-12-02 04:32:33"
+    },
+    {
+        "id": 4233,
+        "cryptocurrency_id": 1,
+        "price_usd": "13939.45544631",
+        "snapshot_at": "2017-12-02 03:32:33"
+    },
+    {
+        "id": 4234,
+        "cryptocurrency_id": 1,
+        "price_usd": "14383.55010250",
+        "snapshot_at": "2017-12-02 02:32:33"
+    },
+    {
+        "id": 4235,
+        "cryptocurrency_id": 1,
+        "price_usd": "14015.10110317",
+        "snapshot_at": "2017-12-02 01:32:33"
+    },
+    {
+        "id": 4236,
+        "cryptocurrency_id": 1,
+        "price_usd": "14322.96777419",
+        "snapshot_at": "2017-12-02 00:32:33"
+    },
+    {
+        "id": 4237,
+        "cryptocurrency_id": 1,
+        "price_usd": "14268.55165712",
+        "snapshot_at": "2017-12-01 23:32:33"
+    },
+    {
+        "id": 4238,
+        "cryptocurrency_id": 1,
+        "price_usd": "14800.14135830",
+        "snapshot_at": "2017-12-01 22:32:33"
+    },
+    {
+        "id": 4239,
+        "cryptocurrency_id": 1,
+        "price_usd": "14729.93330193",
+        "snapshot_at": "2017-12-01 21:32:33"
+    },
+    {
+        "id": 4240,
+        "cryptocurrency_id": 1,
+        "price_usd": "15081.05830641",
+        "snapshot_at": "2017-12-01 20:32:33"
+    },
+    {
+        "id": 4241,
+        "cryptocurrency_id": 1,
+        "price_usd": "15650.54320491",
+        "snapshot_at": "2017-12-01 19:32:33"
+    },
+    {
+        "id": 4242,
+        "cryptocurrency_id": 1,
+        "price_usd": "15651.23996993",
+        "snapshot_at": "2017-12-01 18:32:33"
+    },
+    {
+        "id": 4243,
+        "cryptocurrency_id": 1,
+        "price_usd": "15889.93482360",
+        "snapshot_at": "2017-12-01 17:32:33"
+    },
+    {
+        "id": 4244,
+        "cryptocurrency_id": 1,
+        "price_usd": "15571.95741101",
+        "snapshot_at": "2017-12-01 16:32:33"
+    },
+    {
+        "id": 4245,
+        "cryptocurrency_id": 1,
+        "price_usd": "16152.72929365",
+        "snapshot_at": "2017-12-01 15:32:33"
+    },
+    {
+        "id": 4246,
+        "cryptocurrency_id": 1,
+        "price_usd": "16092.08461333",
+        "snapshot_at": "2017-12-01 14:32:33"
+    },
+    {
+        "id": 4247,
+        "cryptocurrency_id": 1,
+        "price_usd": "15605.38873678",
+        "snapshot_at": "2017-12-01 13:32:33"
+    },
+    {
+        "id": 4248,
+        "cryptocurrency_id": 1,
+        "price_usd": "16085.22234892",
+        "snapshot_at": "2017-12-01 12:32:33"
+    },
+    {
+        "id": 4249,
+        "cryptocurrency_id": 1,
+        "price_usd": "15928.11631407",
+        "snapshot_at": "2017-12-01 11:32:33"
+    },
+    {
+        "id": 4250,
+        "cryptocurrency_id": 1,
+        "price_usd": "16654.69885839",
+        "snapshot_at": "2017-12-01 10:32:33"
+    },
+    {
+        "id": 4251,
+        "cryptocurrency_id": 1,
+        "price_usd": "16695.00817794",
+        "snapshot_at": "2017-12-01 09:32:33"
+    },
+    {
+        "id": 4252,
+        "cryptocurrency_id": 1,
+        "price_usd": "15875.54074605",
+        "snapshot_at": "2017-12-01 08:32:33"
+    },
+    {
+        "id": 4253,
+        "cryptocurrency_id": 1,
+        "price_usd": "15601.86697945",
+        "snapshot_at": "2017-12-01 07:32:33"
+    },
+    {
+        "id": 4254,
+        "cryptocurrency_id": 1,
+        "price_usd": "15436.58844000",
+        "snapshot_at": "2017-12-01 06:32:33"
+    },
+    {
+        "id": 4255,
+        "cryptocurrency_id": 1,
+        "price_usd": "15327.94675717",
+        "snapshot_at": "2017-12-01 05:32:33"
+    },
+    {
+        "id": 4256,
+        "cryptocurrency_id": 1,
+        "price_usd": "14702.71232315",
+        "snapshot_at": "2017-12-01 04:32:33"
+    },
+    {
+        "id": 4257,
+        "cryptocurrency_id": 1,
+        "price_usd": "14765.46655091",
+        "snapshot_at": "2017-12-01 03:32:33"
+    },
+    {
+        "id": 4258,
+        "cryptocurrency_id": 1,
+        "price_usd": "15450.74639741",
+        "snapshot_at": "2017-12-01 02:32:33"
+    },
+    {
+        "id": 4259,
+        "cryptocurrency_id": 1,
+        "price_usd": "15516.23818926",
+        "snapshot_at": "2017-12-01 01:32:33"
+    },
+    {
+        "id": 4260,
+        "cryptocurrency_id": 1,
+        "price_usd": "16150.44864821",
+        "snapshot_at": "2017-12-01 00:32:33"
+    },
+    {
+        "id": 4261,
+        "cryptocurrency_id": 1,
+        "price_usd": "16522.36287752",
+        "snapshot_at": "2017-11-30 23:32:33"
+    },
+    {
+        "id": 4262,
+        "cryptocurrency_id": 1,
+        "price_usd": "16300.49202309",
+        "snapshot_at": "2017-11-30 22:32:33"
+    },
+    {
+        "id": 4263,
+        "cryptocurrency_id": 1,
+        "price_usd": "16651.12177501",
+        "snapshot_at": "2017-11-30 21:32:33"
+    },
+    {
+        "id": 4264,
+        "cryptocurrency_id": 1,
+        "price_usd": "17482.40958045",
+        "snapshot_at": "2017-11-30 20:32:33"
+    },
+    {
+        "id": 4265,
+        "cryptocurrency_id": 1,
+        "price_usd": "16954.19563640",
+        "snapshot_at": "2017-11-30 19:32:33"
+    },
+    {
+        "id": 4266,
+        "cryptocurrency_id": 1,
+        "price_usd": "16230.60293479",
+        "snapshot_at": "2017-11-30 18:32:33"
+    },
+    {
+        "id": 4267,
+        "cryptocurrency_id": 1,
+        "price_usd": "16959.24056995",
+        "snapshot_at": "2017-11-30 17:32:33"
+    },
+    {
+        "id": 4268,
+        "cryptocurrency_id": 1,
+        "price_usd": "17622.22889897",
+        "snapshot_at": "2017-11-30 16:32:33"
+    },
+    {
+        "id": 4269,
+        "cryptocurrency_id": 1,
+        "price_usd": "17333.86137026",
+        "snapshot_at": "2017-11-30 15:32:33"
+    },
+    {
+        "id": 4270,
+        "cryptocurrency_id": 1,
+        "price_usd": "17895.18557066",
+        "snapshot_at": "2017-11-30 14:32:33"
+    },
+    {
+        "id": 4271,
+        "cryptocurrency_id": 1,
+        "price_usd": "17197.52213476",
+        "snapshot_at": "2017-11-30 13:32:33"
+    },
+    {
+        "id": 4272,
+        "cryptocurrency_id": 1,
+        "price_usd": "17312.27153608",
+        "snapshot_at": "2017-11-30 12:32:33"
+    },
+    {
+        "id": 4273,
+        "cryptocurrency_id": 1,
+        "price_usd": "16578.83674470",
+        "snapshot_at": "2017-11-30 11:32:33"
+    },
+    {
+        "id": 4274,
+        "cryptocurrency_id": 1,
+        "price_usd": "16721.03789474",
+        "snapshot_at": "2017-11-30 10:32:33"
+    },
+    {
+        "id": 4275,
+        "cryptocurrency_id": 1,
+        "price_usd": "17426.23074966",
+        "snapshot_at": "2017-11-30 09:32:33"
+    },
+    {
+        "id": 4276,
+        "cryptocurrency_id": 1,
+        "price_usd": "16727.09271047",
+        "snapshot_at": "2017-11-30 08:32:33"
+    },
+    {
+        "id": 4277,
+        "cryptocurrency_id": 1,
+        "price_usd": "17562.15383939",
+        "snapshot_at": "2017-11-30 07:32:33"
+    },
+    {
+        "id": 4278,
+        "cryptocurrency_id": 1,
+        "price_usd": "17919.29424763",
+        "snapshot_at": "2017-11-30 06:32:33"
+    },
+    {
+        "id": 4279,
+        "cryptocurrency_id": 1,
+        "price_usd": "18379.33943918",
+        "snapshot_at": "2017-11-30 05:32:33"
+    },
+    {
+        "id": 4280,
+        "cryptocurrency_id": 1,
+        "price_usd": "17702.59861914",
+        "snapshot_at": "2017-11-30 04:32:33"
+    },
+    {
+        "id": 4281,
+        "cryptocurrency_id": 1,
+        "price_usd": "18534.65269452",
+        "snapshot_at": "2017-11-30 03:32:33"
+    },
+    {
+        "id": 4282,
+        "cryptocurrency_id": 1,
+        "price_usd": "19030.48684438",
+        "snapshot_at": "2017-11-30 02:32:33"
+    },
+    {
+        "id": 4283,
+        "cryptocurrency_id": 1,
+        "price_usd": "19488.20923856",
+        "snapshot_at": "2017-11-30 01:32:33"
+    },
+    {
+        "id": 4284,
+        "cryptocurrency_id": 1,
+        "price_usd": "18866.55788626",
+        "snapshot_at": "2017-11-30 00:32:33"
+    },
+    {
+        "id": 4285,
+        "cryptocurrency_id": 1,
+        "price_usd": "18679.17107620",
+        "snapshot_at": "2017-11-29 23:32:33"
+    },
+    {
+        "id": 4286,
+        "cryptocurrency_id": 1,
+        "price_usd": "18377.08500913",
+        "snapshot_at": "2017-11-29 22:32:33"
+    },
+    {
+        "id": 4287,
+        "cryptocurrency_id": 1,
+        "price_usd": "17903.58035997",
+        "snapshot_at": "2017-11-29 21:32:33"
+    },
+    {
+        "id": 4288,
+        "cryptocurrency_id": 1,
+        "price_usd": "18793.05665521",
+        "snapshot_at": "2017-11-29 20:32:33"
+    },
+    {
+        "id": 4289,
+        "cryptocurrency_id": 1,
+        "price_usd": "19169.23996300",
+        "snapshot_at": "2017-11-29 19:32:33"
+    },
+    {
+        "id": 4290,
+        "cryptocurrency_id": 1,
+        "price_usd": "18738.28608846",
+        "snapshot_at": "2017-11-29 18:32:33"
+    },
+    {
+        "id": 4291,
+        "cryptocurrency_id": 1,
+        "price_usd": "18850.17626925",
+        "snapshot_at": "2017-11-29 17:32:33"
+    },
+    {
+        "id": 4292,
+        "cryptocurrency_id": 1,
+        "price_usd": "19494.84289495",
+        "snapshot_at": "2017-11-29 16:32:33"
+    },
+    {
+        "id": 4293,
+        "cryptocurrency_id": 1,
+        "price_usd": "19972.70540777",
+        "snapshot_at": "2017-11-29 15:32:33"
+    },
+    {
+        "id": 4294,
+        "cryptocurrency_id": 1,
+        "price_usd": "20420.37493213",
+        "snapshot_at": "2017-11-29 14:32:33"
+    },
+    {
+        "id": 4295,
+        "cryptocurrency_id": 1,
+        "price_usd": "19633.37672786",
+        "snapshot_at": "2017-11-29 13:32:33"
+    },
+    {
+        "id": 4296,
+        "cryptocurrency_id": 1,
+        "price_usd": "19129.64169431",
+        "snapshot_at": "2017-11-29 12:32:33"
+    },
+    {
+        "id": 4297,
+        "cryptocurrency_id": 1,
+        "price_usd": "18668.23770614",
+        "snapshot_at": "2017-11-29 11:32:33"
+    },
+    {
+        "id": 4298,
+        "cryptocurrency_id": 1,
+        "price_usd": "19073.93087438",
+        "snapshot_at": "2017-11-29 10:32:33"
+    },
+    {
+        "id": 4299,
+        "cryptocurrency_id": 1,
+        "price_usd": "19771.16598912",
+        "snapshot_at": "2017-11-29 09:32:33"
+    },
+    {
+        "id": 4300,
+        "cryptocurrency_id": 1,
+        "price_usd": "20320.61575868",
+        "snapshot_at": "2017-11-29 08:32:33"
+    },
+    {
+        "id": 4301,
+        "cryptocurrency_id": 1,
+        "price_usd": "20538.15536790",
+        "snapshot_at": "2017-11-29 07:32:33"
+    },
+    {
+        "id": 4302,
+        "cryptocurrency_id": 1,
+        "price_usd": "20428.56720408",
+        "snapshot_at": "2017-11-29 06:32:33"
+    },
+    {
+        "id": 4303,
+        "cryptocurrency_id": 1,
+        "price_usd": "20628.72345111",
+        "snapshot_at": "2017-11-29 05:32:33"
+    },
+    {
+        "id": 4304,
+        "cryptocurrency_id": 1,
+        "price_usd": "20088.60067284",
+        "snapshot_at": "2017-11-29 04:32:33"
+    },
+    {
+        "id": 4305,
+        "cryptocurrency_id": 1,
+        "price_usd": "20255.56918851",
+        "snapshot_at": "2017-11-29 03:32:33"
+    },
+    {
+        "id": 4306,
+        "cryptocurrency_id": 1,
+        "price_usd": "20707.77721774",
+        "snapshot_at": "2017-11-29 02:32:33"
+    },
+    {
+        "id": 4307,
+        "cryptocurrency_id": 1,
+        "price_usd": "20532.46891630",
+        "snapshot_at": "2017-11-29 01:32:33"
+    },
+    {
+        "id": 4308,
+        "cryptocurrency_id": 1,
+        "price_usd": "20189.25650509",
+        "snapshot_at": "2017-11-29 00:32:33"
+    },
+    {
+        "id": 4309,
+        "cryptocurrency_id": 1,
+        "price_usd": "21097.09043383",
+        "snapshot_at": "2017-11-28 23:32:33"
+    },
+    {
+        "id": 4310,
+        "cryptocurrency_id": 1,
+        "price_usd": "21251.98072083",
+        "snapshot_at": "2017-11-28 22:32:33"
+    },
+    {
+        "id": 4311,
+        "cryptocurrency_id": 1,
+        "price_usd": "20529.83303072",
+        "snapshot_at": "2017-11-28 21:32:33"
+    },
+    {
+        "id": 4312,
+        "cryptocurrency_id": 1,
+        "price_usd": "21035.36322712",
+        "snapshot_at": "2017-11-28 20:32:33"
+    },
+    {
+        "id": 4313,
+        "cryptocurrency_id": 1,
+        "price_usd": "20895.86604739",
+        "snapshot_at": "2017-11-28 19:32:33"
+    },
+    {
+        "id": 4314,
+        "cryptocurrency_id": 1,
+        "price_usd": "20314.72192343",
+        "snapshot_at": "2017-11-28 18:32:33"
+    },
+    {
+        "id": 4315,
+        "cryptocurrency_id": 1,
+        "price_usd": "19365.90272493",
+        "snapshot_at": "2017-11-28 17:32:33"
+    },
+    {
+        "id": 4316,
+        "cryptocurrency_id": 1,
+        "price_usd": "18421.18035938",
+        "snapshot_at": "2017-11-28 16:32:33"
+    },
+    {
+        "id": 4317,
+        "cryptocurrency_id": 1,
+        "price_usd": "18396.86291350",
+        "snapshot_at": "2017-11-28 15:32:33"
+    },
+    {
+        "id": 4318,
+        "cryptocurrency_id": 1,
+        "price_usd": "18197.94520411",
+        "snapshot_at": "2017-11-28 14:32:33"
+    },
+    {
+        "id": 4319,
+        "cryptocurrency_id": 1,
+        "price_usd": "18339.88506433",
+        "snapshot_at": "2017-11-28 13:32:33"
+    },
+    {
+        "id": 4320,
+        "cryptocurrency_id": 1,
+        "price_usd": "18999.38263253",
+        "snapshot_at": "2017-11-28 12:32:33"
+    },
+    {
+        "id": 4321,
+        "cryptocurrency_id": 1,
+        "price_usd": "19593.91303592",
+        "snapshot_at": "2017-11-28 11:32:33"
+    },
+    {
+        "id": 4322,
+        "cryptocurrency_id": 1,
+        "price_usd": "19239.90117418",
+        "snapshot_at": "2017-11-28 10:32:33"
+    },
+    {
+        "id": 4323,
+        "cryptocurrency_id": 1,
+        "price_usd": "18398.32087279",
+        "snapshot_at": "2017-11-28 09:32:33"
+    },
+    {
+        "id": 4324,
+        "cryptocurrency_id": 1,
+        "price_usd": "17483.64245368",
+        "snapshot_at": "2017-11-28 08:32:33"
+    },
+    {
+        "id": 4325,
+        "cryptocurrency_id": 1,
+        "price_usd": "17036.89914514",
+        "snapshot_at": "2017-11-28 07:32:33"
+    },
+    {
+        "id": 4326,
+        "cryptocurrency_id": 1,
+        "price_usd": "16566.97435211",
+        "snapshot_at": "2017-11-28 06:32:33"
+    },
+    {
+        "id": 4327,
+        "cryptocurrency_id": 1,
+        "price_usd": "16636.03733739",
+        "snapshot_at": "2017-11-28 05:32:33"
+    },
+    {
+        "id": 4328,
+        "cryptocurrency_id": 1,
+        "price_usd": "17010.12239412",
+        "snapshot_at": "2017-11-28 04:32:33"
+    },
+    {
+        "id": 4329,
+        "cryptocurrency_id": 1,
+        "price_usd": "17525.62625839",
+        "snapshot_at": "2017-11-28 03:32:33"
+    },
+    {
+        "id": 4330,
+        "cryptocurrency_id": 1,
+        "price_usd": "16835.94302906",
+        "snapshot_at": "2017-11-28 02:32:33"
+    },
+    {
+        "id": 4331,
+        "cryptocurrency_id": 1,
+        "price_usd": "17609.38319288",
+        "snapshot_at": "2017-11-28 01:32:33"
+    },
+    {
+        "id": 4332,
+        "cryptocurrency_id": 1,
+        "price_usd": "18347.43434952",
+        "snapshot_at": "2017-11-28 00:32:33"
+    },
+    {
+        "id": 4333,
+        "cryptocurrency_id": 1,
+        "price_usd": "17560.36415649",
+        "snapshot_at": "2017-11-27 23:32:33"
+    },
+    {
+        "id": 4334,
+        "cryptocurrency_id": 1,
+        "price_usd": "16964.16370604",
+        "snapshot_at": "2017-11-27 22:32:33"
+    },
+    {
+        "id": 4335,
+        "cryptocurrency_id": 1,
+        "price_usd": "16715.03763895",
+        "snapshot_at": "2017-11-27 21:32:33"
+    },
+    {
+        "id": 4336,
+        "cryptocurrency_id": 1,
+        "price_usd": "16965.33083755",
+        "snapshot_at": "2017-11-27 20:32:33"
+    },
+    {
+        "id": 4337,
+        "cryptocurrency_id": 1,
+        "price_usd": "17686.66798673",
+        "snapshot_at": "2017-11-27 19:32:33"
+    },
+    {
+        "id": 4338,
+        "cryptocurrency_id": 1,
+        "price_usd": "17397.22815932",
+        "snapshot_at": "2017-11-27 18:32:33"
+    },
+    {
+        "id": 4339,
+        "cryptocurrency_id": 1,
+        "price_usd": "17930.07733830",
+        "snapshot_at": "2017-11-27 17:32:33"
+    },
+    {
+        "id": 4340,
+        "cryptocurrency_id": 1,
+        "price_usd": "17312.94094679",
+        "snapshot_at": "2017-11-27 16:32:33"
+    },
+    {
+        "id": 4341,
+        "cryptocurrency_id": 1,
+        "price_usd": "18176.58334251",
+        "snapshot_at": "2017-11-27 15:32:33"
+    },
+    {
+        "id": 4342,
+        "cryptocurrency_id": 1,
+        "price_usd": "17357.97212974",
+        "snapshot_at": "2017-11-27 14:32:33"
+    },
+    {
+        "id": 4343,
+        "cryptocurrency_id": 1,
+        "price_usd": "17036.25679959",
+        "snapshot_at": "2017-11-27 13:32:33"
+    },
+    {
+        "id": 4344,
+        "cryptocurrency_id": 1,
+        "price_usd": "16735.87544595",
+        "snapshot_at": "2017-11-27 12:32:33"
+    }
+]
+```
+
+### HTTP Request
+`GET api/coins/{coin}/historical`
+
+`HEAD api/coins/{coin}/historical`
+
+
+<!-- END_58f2a86460279494610417ab322ff1f9 -->
+
+#Portfolio
+<!-- START_f29913c78a53c6645cc3437fd3f58eed -->
+## Get cryptocurrencies paginated
+
+> Example request:
+
+```bash
+curl -X GET "http://localhost/api/portfolio" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/portfolio",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+[
+    {
+        "id": 8,
+        "cryptocurrency_id": 5,
+        "user_id": 1,
+        "amount": "0.00000000",
+        "price_usd": "0.00000000",
+        "notes": "dsfsfs",
+        "traded_at": "2018-05-08 01:01:00",
+        "created_at": "2018-05-29 20:19:03",
+        "updated_at": "2018-05-29 20:19:03"
+    },
+    {
+        "id": 7,
+        "cryptocurrency_id": 60,
+        "user_id": 1,
+        "amount": "0.00000000",
+        "price_usd": "0.00000000",
+        "notes": "asfsaf",
+        "traded_at": "2018-05-08 05:05:00",
+        "created_at": "2018-05-29 20:15:10",
+        "updated_at": "2018-05-29 20:15:10"
+    },
+    {
+        "id": 6,
+        "cryptocurrency_id": 31,
+        "user_id": 1,
+        "amount": "0.00000000",
+        "price_usd": "0.00000000",
+        "notes": "dscdcasz",
+        "traded_at": "2018-05-08 02:02:00",
+        "created_at": "2018-05-29 19:37:32",
+        "updated_at": "2018-05-29 19:37:32"
+    },
+    {
+        "id": 5,
+        "cryptocurrency_id": 2,
+        "user_id": 1,
+        "amount": "0.00000000",
+        "price_usd": "0.00000000",
+        "notes": "wefwsf",
+        "traded_at": "2018-05-22 02:01:00",
+        "created_at": "2018-05-29 19:36:36",
+        "updated_at": "2018-05-29 19:36:36"
+    },
+    {
+        "id": 4,
+        "cryptocurrency_id": 5,
+        "user_id": 1,
+        "amount": "0.00000000",
+        "price_usd": "4.00000000",
+        "notes": "safdafaf",
+        "traded_at": "2018-05-21 20:20:00",
+        "created_at": "2018-05-29 19:12:26",
+        "updated_at": "2018-05-29 19:12:26"
+    },
+    {
+        "id": 3,
+        "cryptocurrency_id": 3,
+        "user_id": 1,
+        "amount": "0.00000000",
+        "price_usd": "0.00000000",
+        "notes": "",
+        "traded_at": "2018-05-10 01:04:00",
+        "created_at": "2018-05-29 19:10:13",
+        "updated_at": "2018-05-29 19:10:13"
+    },
+    {
+        "id": 2,
+        "cryptocurrency_id": 2,
+        "user_id": 1,
+        "amount": "0.00000000",
+        "price_usd": "0.00000000",
+        "notes": "dsfd",
+        "traded_at": "2018-05-23 01:01:00",
+        "created_at": "2018-05-29 19:06:02",
+        "updated_at": "2018-05-29 19:06:02"
+    },
+    {
+        "id": 1,
+        "cryptocurrency_id": 1,
+        "user_id": 1,
+        "amount": "500.00000000",
+        "price_usd": "5000.00000000",
+        "notes": "Puffff",
+        "traded_at": "2018-05-29 00:00:00",
+        "created_at": "2018-05-29 15:10:35",
+        "updated_at": "2018-05-29 15:10:35"
+    }
+]
+```
+
+### HTTP Request
+`GET api/portfolio`
+
+`HEAD api/portfolio`
+
+
+<!-- END_f29913c78a53c6645cc3437fd3f58eed -->
+
+<!-- START_ed06d70e6afb4546063108fd74883b7a -->
+## Store new user trade
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/portfolio" \
+-H "Accept: application/json" \
+    -d "cryptocurrency_id"="molestiae" \
+    -d "amount"="489256095" \
+    -d "price_usd"="1988883056" \
+    -d "traded_at"="2018-05-29 20:52:55" \
+
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/portfolio",
+    "method": "POST",
+    "data": {
+        "cryptocurrency_id": "molestiae",
+        "amount": 489256095,
+        "price_usd": 1988883056,
+        "traded_at": "2018-05-29 20:52:55"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+
+### HTTP Request
+`POST api/portfolio`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    cryptocurrency_id | string |  required  | Valid cryptocurrency id
+    amount | numeric |  required  | 
+    price_usd | numeric |  required  | Minimum: `0`
+    traded_at | date |  required  | Date format: `Y-m-d H:i:s`
+
+<!-- END_ed06d70e6afb4546063108fd74883b7a -->
+
+#Users
+<!-- START_21ff1203a9357ffbb000ef4dd551dfd3 -->
+## Login user
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/users/login" \
+-H "Accept: application/json" \
+    -d "email"="kiel71@example.com" \
+    -d "password"="omnis" \
+    -d "remember"="1" \
+
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/users/login",
+    "method": "POST",
+    "data": {
+        "email": "kiel71@example.com",
+        "password": "omnis",
+        "remember": true
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+
+### HTTP Request
+`POST api/users/login`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    email | email |  required  | 
+    password | string |  required  | Minimum: `6`
+    remember | boolean |  optional  | 
+
+<!-- END_21ff1203a9357ffbb000ef4dd551dfd3 -->
+

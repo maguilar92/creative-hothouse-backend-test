@@ -1,0 +1,45 @@
+{
+    "name": "Modules\\Core\\Providers\\ThemeServiceProvider",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Providers",
+    "file": "\/var\/www\/html\/modules\/Core\/Providers\/ThemeServiceProvider.php",
+    "relative_file": null,
+    "hash": "434d1f4c9489e62cfd78351e7a66628ad0be83b9",
+    "parent": "Illuminate\\Support\\ServiceProvider",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ServiceProvider": "Illuminate\\Support\\ServiceProvider"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "boot": {
+            "name": "boot",
+            "line": 13,
+            "short_desc": "Register the service provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

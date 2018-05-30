@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Modules\Cryptocurrency\Repositories\UserTradeRepository | Creativehothouse</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Modules_Cryptocurrency_Repositories_UserTradeRepository" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Creativehothouse</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Modules.html">Modules</a></li>
+                                        <li><a href="../../../Modules/Cryptocurrency.html">Cryptocurrency</a></li>
+                                        <li><a href="../../../Modules/Cryptocurrency/Repositories.html">Repositories</a></li>
+    
+                <li>UserTradeRepository</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            UserTradeRepository
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>UserTradeRepository</strong>        extends <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a>
+</p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_app">
+                                        protected                                        <abbr title="Illuminate\Container\Container">Container</abbr>
+                </td>
+                <td>$app</td>
+                <td class="last">Laravel Application</td>
+                <td><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#property_app"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_model">
+                                        protected                                        <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>
+                </td>
+                <td>$model</td>
+                <td class="last">Model</td>
+                <td><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#property_model"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all">all</a>(array $columns = [&#039;*&#039;])
+        
+                                            <p>Retrieve all data of repository</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_all"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(array $columns = [&#039;*&#039;])
+        
+                                            <p>Get data of repository</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_get"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pluck">pluck</a>(string $column, string|null $key = null)
+        
+                                            <p>Get an array with the values of a given column.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_pluck"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>()
+        
+                                            <p>Determine if any rows exist for the current query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_exists"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>(array $columns = [&#039;*&#039;])
+        
+                                            <p>Retrieve the "count" result of the query</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_count"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_min">min</a>(string $column)
+        
+                                            <p>Retrieve the minimum value of a given column.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_min"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_max">max</a>(string $column)
+        
+                                            <p>Retrieve the maximum value of a given column.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_max"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sum">sum</a>(string $column)
+        
+                                            <p>Retrieve the sum of the values of a given column.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_sum"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_avg">avg</a>(string $column)
+        
+                                            <p>Retrieve the average of the values of a given column.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_avg"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paginate">paginate</a>(int $limit = null, array $columns = [&#039;*&#039;])
+        
+                                            <p>Retrieve all data of repository, paginated</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_paginate"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_simplePaginate">simplePaginate</a>(int $limit = null, array $columns = [&#039;*&#039;])
+        
+                                            <p>Retrieve all data of repository, simple paginated</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_simplePaginate"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(int $id, array $columns = [&#039;*&#039;])
+        
+                                            <p>Find data by id</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_find"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOrFail">findOrFail</a>(int $id, array $columns = [&#039;*&#039;])
+        
+                                            <p>Find or fail data by id</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_findOrFail"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>(array $columns = [&#039;*&#039;])
+        
+                                            <p>Get first data by id</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_first"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrFail">firstOrFail</a>(array $columns = [&#039;*&#039;])
+        
+                                            <p>Get or fail first data by id</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_firstOrFail"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(array $attributes)
+        
+                                            <p>Save a new entity in repository</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_create"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(array $attributes)
+        
+                                            <p>Save a new/news entities in repository</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_insert"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(array $attributes, int $id = null)
+        
+                                            <p>Update a entity in repository by id or entities by conditionals</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_update"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateOrCreate">updateOrCreate</a>(array $attributes, array $values = [])
+        
+                                            <p>Update or Create an entity in repository</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_updateOrCreate"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restore">restore</a>(int $id = null)
+        
+                                            <p>Restore a entity in repository by id or entities by conditionals</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_restore"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_forceDelete">forceDelete</a>(int $id = null)
+        
+                                            <p>Force delete a entity in repository by id or entities by conditionals</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_forceDelete"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(int $id = null)
+        
+                                            <p>Delete a entity in repository by id or entities by conditionals</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_delete"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Container\Container">Container</abbr> $app)
+        
+                                            <p>Class constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method___construct"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Modules\Core\Support\Repository\Src\Contracts\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flushCache">flushCache</a>()
+        
+                                            <p>Flush cache of repository</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_flushCache"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Modules\Core\Support\Repository\Src\Contracts\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_skipCache">skipCache</a>(bool $status = true)
+        
+                                            <p>Skip Cache</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_skipCache"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModel">getModel</a>()
+        
+                                            <p>Get model</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_getModel"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p>Boot repository</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_boot"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetModel">resetModel</a>()
+        
+                                            <p>Reset model</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_resetModel"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_model">model</a>()
+        
+                                            <p>Specify Model class name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeModel">makeModel</a>()
+        
+                                            <p>Make app model</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_makeModel"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(mixed $method, mixed $arguments)
+        
+                                            <p>Overloading __call</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method___call"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_all"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 15</div>
+        <code>                    mixed
+    <strong>all</strong>(array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve all data of repository</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_get"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 32</div>
+        <code>                    mixed
+    <strong>get</strong>(array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get data of repository</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pluck">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_pluck"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 53</div>
+        <code>                    mixed
+    <strong>pluck</strong>(string $column, string|null $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get an array with the values of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_exists"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 68</div>
+        <code>                    bool
+    <strong>exists</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine if any rows exist for the current query.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_count"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 84</div>
+        <code>                    mixed
+    <strong>count</strong>(array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the "count" result of the query</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_min">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_min"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 100</div>
+        <code>                    mixed
+    <strong>min</strong>(string $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the minimum value of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_max">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_max"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 116</div>
+        <code>                    mixed
+    <strong>max</strong>(string $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the maximum value of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sum">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_sum"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 132</div>
+        <code>                    mixed
+    <strong>sum</strong>(string $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the sum of the values of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_avg">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_avg"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 148</div>
+        <code>                    mixed
+    <strong>avg</strong>(string $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the average of the values of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paginate">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_paginate"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 165</div>
+        <code>                    mixed
+    <strong>paginate</strong>(int $limit = null, array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve all data of repository, paginated</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_simplePaginate">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_simplePaginate"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 182</div>
+        <code>                    mixed
+    <strong>simplePaginate</strong>(int $limit = null, array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve all data of repository, simple paginated</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_find"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 194</div>
+        <code>                    mixed
+    <strong>find</strong>(int $id, array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find data by id</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOrFail">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_findOrFail"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 210</div>
+        <code>                    mixed
+    <strong>findOrFail</strong>(int $id, array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find or fail data by id</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_first"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 225</div>
+        <code>                    mixed
+    <strong>first</strong>(array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get first data by id</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrFail">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryRead.html#method_firstOrFail"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryRead">BaseRepositoryRead</abbr></a> at         line 240</div>
+        <code>                    mixed
+    <strong>firstOrFail</strong>(array $columns = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get or fail first data by id</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_create"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a> at         line 22</div>
+        <code>                    mixed
+    <strong>create</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save a new entity in repository</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_insert"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a> at         line 40</div>
+        <code>                    mixed
+    <strong>insert</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save a new/news entities in repository</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_update"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a> at         line 63</div>
+        <code>                    mixed
+    <strong>update</strong>(array $attributes, int $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update a entity in repository by id or entities by conditionals</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOrCreate">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_updateOrCreate"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a> at         line 94</div>
+        <code>                    mixed
+    <strong>updateOrCreate</strong>(array $attributes, array $values = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update or Create an entity in repository</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_restore"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a> at         line 111</div>
+        <code>                    int
+    <strong>restore</strong>(int $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Restore a entity in repository by id or entities by conditionals</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_forceDelete">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_forceDelete"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a> at         line 142</div>
+        <code>                    int
+    <strong>forceDelete</strong>(int $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Force delete a entity in repository by id or entities by conditionals</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Traits/BaseRepositoryWrite.html#method_delete"><abbr title="Modules\Core\Support\Repository\Src\Traits\BaseRepositoryWrite">BaseRepositoryWrite</abbr></a> at         line 172</div>
+        <code>                    int
+    <strong>delete</strong>(int $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a entity in repository by id or entities by conditionals</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method___construct"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 36</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Container\Container">Container</abbr> $app)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class constructor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Container\Container">Container</abbr></td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushCache">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_flushCache"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 48</div>
+        <code>                    <abbr title="Modules\Core\Support\Repository\Src\Contracts\$this">$this</abbr>
+    <strong>flushCache</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flush cache of repository</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Modules\Core\Support\Repository\Src\Contracts\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_skipCache">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_skipCache"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 59</div>
+        <code>                    <abbr title="Modules\Core\Support\Repository\Src\Contracts\$this">$this</abbr>
+    <strong>skipCache</strong>(bool $status = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Skip Cache</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Modules\Core\Support\Repository\Src\Contracts\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModel">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_getModel"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 69</div>
+        <code>                    mixed
+    <strong>getModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get model</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_boot">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_boot"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 79</div>
+        <code>                    void
+    <strong>boot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Boot repository</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetModel">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_resetModel"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 88</div>
+        <code>                    void
+    <strong>resetModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reset model</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_model">
+        <div class="location">at         line 14</div>
+        <code>                    string
+    <strong>model</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Specify Model class name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeModel">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method_makeModel"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 107</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>
+    <strong>makeModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Make app model</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Modules/Core/Support/Repository/Src/Exceptions/RepositoryException.html"><abbr title="Modules\Core\Support\Repository\Src\Exceptions\RepositoryException">RepositoryException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../Modules/Core/Support/Repository/Src/Eloquent/BaseRepository.html#method___call"><abbr title="Modules\Core\Support\Repository\Src\Eloquent\BaseRepository">BaseRepository</abbr></a> at         line 125</div>
+        <code>                    mixed
+    <strong>__call</strong>(mixed $method, mixed $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Overloading __call</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

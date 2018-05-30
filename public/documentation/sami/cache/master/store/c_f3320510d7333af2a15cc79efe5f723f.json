@@ -1,0 +1,204 @@
+{
+    "name": "Modules\\Core\\Console\\Installer\\Scripts\\SetPassport",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console\\Installer\\Scripts",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/Installer\/Scripts\/SetPassport.php",
+    "relative_file": null,
+    "hash": "0b1b8ac68151e2b90a04c58184a71096beb3257a",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command",
+        "ClientModelRepository": "Laravel\\Passport\\ClientRepository",
+        "SetupScript": "Modules\\Core\\Console\\Installer\\SetupScript",
+        "EnvFileWriter": "Modules\\Core\\Console\\Installer\\Writers\\EnvFileWriter"
+    },
+    "errors": [],
+    "interfaces": {
+        "Modules\\Core\\Console\\Installer\\SetupScript": "Modules\\Core\\Console\\Installer\\SetupScript"
+    },
+    "traits": [],
+    "properties": {
+        "env": {
+            "name": "env",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Core\\Console\\Installer\\Writers\\EnvFileWriter",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        },
+        "clients": {
+            "name": "clients",
+            "line": 22,
+            "short_desc": "The client model repository.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Laravel\\Passport\\ClientRepository",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 30,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "env": {
+                    "name": "env",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Core\\Console\\Installer\\Writers\\EnvFileWriter",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "Core",
+                            "Console",
+                            "Installer",
+                            "Writers",
+                            "EnvFileWriter"
+                        ],
+                        "attributes": {
+                            "startLine": 30,
+                            "endLine": 30
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "clients": {
+                    "name": "clients",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Laravel\\Passport\\ClientRepository",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Laravel",
+                            "Passport",
+                            "ClientRepository"
+                        ],
+                        "attributes": {
+                            "startLine": 30,
+                            "endLine": 30
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "fire": {
+            "name": "fire",
+            "line": 43,
+            "short_desc": "Fire the install script",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "command": {
+                    "name": "command",
+                    "line": 43,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Console\\Command",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Console",
+                            "Command"
+                        ],
+                        "attributes": {
+                            "startLine": 43,
+                            "endLine": 43
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setEnvironmentClient": {
+            "name": "setEnvironmentClient",
+            "line": 64,
+            "short_desc": "Set environment passport",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,153 @@
+{
+    "name": "Modules\\Core\\Console\\Installer\\Scripts\\ConfigureUser",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console\\Installer\\Scripts",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/Installer\/Scripts\/ConfigureUser.php",
+    "relative_file": null,
+    "hash": "31a262e0ad204fbeab806bf85117bb43b3da1eb8",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command",
+        "Hash": "Illuminate\\Support\\Facades\\Hash",
+        "SetupScript": "Modules\\Core\\Console\\Installer\\SetupScript",
+        "User": "Modules\\User\\Entities\\User"
+    },
+    "errors": [],
+    "interfaces": {
+        "Modules\\Core\\Console\\Installer\\SetupScript": "Modules\\Core\\Console\\Installer\\SetupScript"
+    },
+    "traits": [],
+    "properties": {
+        "command": {
+            "name": "command",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Console\\Command",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "fire": {
+            "name": "fire",
+            "line": 23,
+            "short_desc": "Fire the install script",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "command": {
+                    "name": "command",
+                    "line": 23,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Console\\Command",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Console",
+                            "Command"
+                        ],
+                        "attributes": {
+                            "startLine": 23,
+                            "endLine": 23
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "askUserName": {
+            "name": "askUserName",
+            "line": 47,
+            "short_desc": "Ask user admin name",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "askUserEmail": {
+            "name": "askUserEmail",
+            "line": 64,
+            "short_desc": "Ask user admin email",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "askUserPassword": {
+            "name": "askUserPassword",
+            "line": 81,
+            "short_desc": "Ask user admnin password",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

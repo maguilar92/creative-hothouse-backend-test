@@ -1,0 +1,88 @@
+{
+    "name": "Modules\\User\\Tests\\Feature\\CryptocurrencyTest",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\User\\Tests\\Feature",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Tests\/Feature\/CryptocurrencyTest.php",
+    "relative_file": null,
+    "hash": "e862fd51e4159974d10b71ba44c1fd60918d8e0a",
+    "parent": "Tests\\TestCase",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DatabaseMigrations": "Illuminate\\Foundation\\Testing\\DatabaseMigrations",
+        "Cryptocurrency": "Modules\\Cryptocurrency\\Entities\\Cryptocurrency",
+        "User": "Modules\\User\\Entities\\User",
+        "TestCase": "Tests\\TestCase"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Testing\\DatabaseMigrations": "Illuminate\\Foundation\\Testing\\DatabaseMigrations"
+    },
+    "properties": [],
+    "methods": {
+        "testCryptocurrencyIndex": {
+            "name": "testCryptocurrencyIndex",
+            "line": 19,
+            "short_desc": "Test cryptocurrency index",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testExistingCryptocurrencyShow": {
+            "name": "testExistingCryptocurrencyShow",
+            "line": 50,
+            "short_desc": "Test existing cryptocurrency show",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testUnexistingCryptocurrencyShow": {
+            "name": "testUnexistingCryptocurrencyShow",
+            "line": 68,
+            "short_desc": "Test unexisting cryptocurrency show",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

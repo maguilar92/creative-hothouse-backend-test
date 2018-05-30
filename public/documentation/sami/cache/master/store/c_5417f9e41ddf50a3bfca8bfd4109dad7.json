@@ -1,0 +1,310 @@
+{
+    "name": "Modules\\Core\\Providers\\CoreServiceProvider",
+    "line": 11,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Providers",
+    "file": "\/var\/www\/html\/modules\/Core\/Providers\/CoreServiceProvider.php",
+    "relative_file": null,
+    "hash": "66f43f94489244f8180364cebf553de02c9b7cd5",
+    "parent": "Illuminate\\Support\\ServiceProvider",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Factory": "Illuminate\\Database\\Eloquent\\Factory",
+        "Router": "Illuminate\\Routing\\Router",
+        "ServiceProvider": "Illuminate\\Support\\ServiceProvider",
+        "InstallCommand": "Modules\\Core\\Console\\InstallCommand",
+        "ThemeScaffoldCommand": "Modules\\Core\\Console\\ThemeScaffoldCommand"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "defer": {
+            "name": "defer",
+            "line": 18,
+            "short_desc": "Indicates if loading of the provider is deferred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "false"
+                    ],
+                    "attributes": {
+                        "startLine": 18,
+                        "endLine": 18,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "Modules",
+                                "Core",
+                                "Providers",
+                                "false"
+                            ],
+                            "attributes": {
+                                "startLine": 18,
+                                "endLine": 18
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 18,
+                    "endLine": 18
+                }
+            },
+            "errors": []
+        },
+        "middleware": {
+            "name": "middleware",
+            "line": 25,
+            "short_desc": "The filters base class name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "Core",
+                            "attributes": {
+                                "startLine": 26,
+                                "endLine": 26,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [],
+                            "attributes": {
+                                "startLine": 26,
+                                "endLine": 26,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 26,
+                            "endLine": 26
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 25,
+                    "endLine": 27,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "boot": {
+            "name": "boot",
+            "line": 34,
+            "short_desc": "Boot the application events.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerMiddleware": {
+            "name": "registerMiddleware",
+            "line": 51,
+            "short_desc": "Register the filters.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "router": {
+                    "name": "router",
+                    "line": 51,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Routing\\Router",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Routing",
+                            "Router"
+                        ],
+                        "attributes": {
+                            "startLine": 51,
+                            "endLine": 51
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "register": {
+            "name": "register",
+            "line": 66,
+            "short_desc": "Register the service provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerConfig": {
+            "name": "registerConfig",
+            "line": 76,
+            "short_desc": "Register config.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerViews": {
+            "name": "registerViews",
+            "line": 91,
+            "short_desc": "Register views.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerTranslations": {
+            "name": "registerTranslations",
+            "line": 111,
+            "short_desc": "Register translations.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "registerFactories": {
+            "name": "registerFactories",
+            "line": 126,
+            "short_desc": "Register an additional directory of factories.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "source": [
+                    [
+                        "https:\/\/github.com\/sebastiaanluca\/laravel-resource-flow\/blob\/develop\/src\/Modules\/ModuleServiceProvider.php#L66"
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "provides": {
+            "name": "provides",
+            "line": 148,
+            "short_desc": "Get the services provided by the provider.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

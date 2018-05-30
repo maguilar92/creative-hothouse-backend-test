@@ -1,0 +1,50 @@
+{
+    "name": "Modules\\Core\\Console\\Installer\\Traits\\SectionMessage",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Core\\Console\\Installer\\Traits",
+    "file": "\/var\/www\/html\/modules\/Core\/Console\/Installer\/Traits\/SectionMessage.php",
+    "relative_file": null,
+    "hash": "729f8b9762105ad3e0ce318c23086098c79472fb",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "sectionMessage": {
+            "name": "sectionMessage",
+            "line": 7,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "messages": {
+                    "name": "messages",
+                    "line": 7,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

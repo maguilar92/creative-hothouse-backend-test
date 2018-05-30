@@ -1,0 +1,65 @@
+{
+    "name": "CreativeHotHouse\\Providers\\AppServiceProvider",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "CreativeHotHouse\\Providers",
+    "file": "\/var\/www\/html\/app\/Providers\/AppServiceProvider.php",
+    "relative_file": null,
+    "hash": "572421ad41db62033a8fa2674db09d810cce15cd",
+    "parent": "Illuminate\\Support\\ServiceProvider",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ServiceProvider": "Illuminate\\Support\\ServiceProvider",
+        "Passport": "Laravel\\Passport\\Passport"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "boot": {
+            "name": "boot",
+            "line": 15,
+            "short_desc": "Bootstrap any application services.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "register": {
+            "name": "register",
+            "line": 25,
+            "short_desc": "Register any application services.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

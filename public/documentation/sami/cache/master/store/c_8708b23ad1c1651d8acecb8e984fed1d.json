@@ -1,0 +1,141 @@
+{
+    "name": "Modules\\Cryptocurrency\\Http\\Controllers\\Api\\PortfolioController",
+    "line": 14,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "resource": [
+            [
+                "Portfolio"
+            ]
+        ]
+    },
+    "namespace": "Modules\\Cryptocurrency\\Http\\Controllers\\Api",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Http\/Controllers\/Api\/PortfolioController.php",
+    "relative_file": null,
+    "hash": "860c89d8d71f6f9f156ea9dc388e78986afc6e37",
+    "parent": "Illuminate\\Routing\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Request": "Illuminate\\Http\\Request",
+        "Response": "Illuminate\\Http\\Response",
+        "Controller": "Illuminate\\Routing\\Controller",
+        "App": "Illuminate\\Support\\Facades\\App",
+        "PortfolioStoreRequest": "Modules\\Cryptocurrency\\Http\\Requests\\PortfolioStoreRequest"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "cryptocurrencyRepository": {
+            "name": "cryptocurrencyRepository",
+            "line": 21,
+            "short_desc": "Portfolio repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Cryptocurrency\\Http\\Controllers\\Api\\Modules\\Cryptocurrency\\Repositories\\PortfolioRepository",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 28,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "index": {
+            "name": "index",
+            "line": 38,
+            "short_desc": "Get cryptocurrencies paginated",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "store": {
+            "name": "store",
+            "line": 49,
+            "short_desc": "Store new user trade",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "JSON",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 49,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Modules\\Cryptocurrency\\Http\\Requests\\PortfolioStoreRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Modules",
+                            "Cryptocurrency",
+                            "Http",
+                            "Requests",
+                            "PortfolioStoreRequest"
+                        ],
+                        "attributes": {
+                            "startLine": 49,
+                            "endLine": 49
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

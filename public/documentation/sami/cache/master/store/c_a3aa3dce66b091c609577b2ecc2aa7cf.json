@@ -1,0 +1,186 @@
+{
+    "name": "Modules\\User\\Tests\\Feature\\Portfolio",
+    "line": 13,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\User\\Tests\\Feature",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Tests\/Feature\/PortfolioTest.php",
+    "relative_file": null,
+    "hash": "3a55c6b455df67162397ab89bb1b23c2d4275a87",
+    "parent": "Tests\\TestCase",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DatabaseMigrations": "Illuminate\\Foundation\\Testing\\DatabaseMigrations",
+        "Carbon": "Illuminate\\Support\\Carbon",
+        "Hash": "Illuminate\\Support\\Facades\\Hash",
+        "Cryptocurrency": "Modules\\Cryptocurrency\\Entities\\Cryptocurrency",
+        "UserTrade": "Modules\\Cryptocurrency\\Entities\\UserTrade",
+        "User": "Modules\\User\\Entities\\User",
+        "TestCase": "Tests\\TestCase"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Testing\\DatabaseMigrations": "Illuminate\\Foundation\\Testing\\DatabaseMigrations"
+    },
+    "properties": [],
+    "methods": {
+        "testPortfolioIndex": {
+            "name": "testPortfolioIndex",
+            "line": 22,
+            "short_desc": "Test cryptocurrency index",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testValidPortfolioStore": {
+            "name": "testValidPortfolioStore",
+            "line": 42,
+            "short_desc": "Test valid portfolio store",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testRequiredsPortfolioStore": {
+            "name": "testRequiredsPortfolioStore",
+            "line": 63,
+            "short_desc": "Test requireds portfolio store",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testNumericsPortfolioStore": {
+            "name": "testNumericsPortfolioStore",
+            "line": 94,
+            "short_desc": "Test numerics portfolio store",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testMinsPortfolioStore": {
+            "name": "testMinsPortfolioStore",
+            "line": 122,
+            "short_desc": "Test mins portfolio store",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testDateFormatsPortfolioStore": {
+            "name": "testDateFormatsPortfolioStore",
+            "line": 146,
+            "short_desc": "Test date formats portfolio store",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testBeforeOrEqualPortfolioStore": {
+            "name": "testBeforeOrEqualPortfolioStore",
+            "line": 170,
+            "short_desc": "Test before or equal portfolio store",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "testExistsOnPortfolioStore": {
+            "name": "testExistsOnPortfolioStore",
+            "line": 190,
+            "short_desc": "Test exists on portfolio store",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

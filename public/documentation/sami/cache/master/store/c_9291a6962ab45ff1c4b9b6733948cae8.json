@@ -1,0 +1,181 @@
+{
+    "name": "Modules\\User\\Entities\\User",
+    "line": 9,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\User\\Entities",
+    "file": "\/var\/www\/html\/modules\/User\/Entities\/User.php",
+    "relative_file": null,
+    "hash": "8d37338eb9d7e3429414a42bf52f5512827eccf5",
+    "parent": "Illuminate\\Foundation\\Auth\\User",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Authenticatable": "Illuminate\\Foundation\\Auth\\User",
+        "Notifiable": "Illuminate\\Notifications\\Notifiable",
+        "HasApiTokens": "Laravel\\Passport\\HasApiTokens"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Laravel\\Passport\\HasApiTokens": "Laravel\\Passport\\HasApiTokens",
+        "Illuminate\\Notifications\\Notifiable": "Illuminate\\Notifications\\Notifiable"
+    },
+    "properties": {
+        "table": {
+            "name": "table",
+            "line": 18,
+            "short_desc": "The database table used by the entity.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "users",
+                "attributes": {
+                    "startLine": 18,
+                    "endLine": 18,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "primaryKey": {
+            "name": "primaryKey",
+            "line": 25,
+            "short_desc": "The primary key for the entity.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "id",
+                "attributes": {
+                    "startLine": 25,
+                    "endLine": 25,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "guarded": {
+            "name": "guarded",
+            "line": 32,
+            "short_desc": "The attributes that aren't mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "id",
+                            "attributes": {
+                                "startLine": 32,
+                                "endLine": 32,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 32,
+                            "endLine": 32
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "created_at",
+                            "attributes": {
+                                "startLine": 32,
+                                "endLine": 32,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 32,
+                            "endLine": 32
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "updated_at",
+                            "attributes": {
+                                "startLine": 32,
+                                "endLine": 32,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 32,
+                            "endLine": 32
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 32,
+                    "endLine": 32,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "trades": {
+            "name": "trades",
+            "line": 39,
+            "short_desc": "Get user trades.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

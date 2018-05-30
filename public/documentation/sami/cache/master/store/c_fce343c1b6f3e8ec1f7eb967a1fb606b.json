@@ -1,0 +1,176 @@
+{
+    "name": "Modules\\Cryptocurrency\\Entities\\Cryptocurrency",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Cryptocurrency\\Entities",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Entities\/Cryptocurrency.php",
+    "relative_file": null,
+    "hash": "4bd743e70a276d5bd3832a7bc2ad19aff2408a53",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "table": {
+            "name": "table",
+            "line": 14,
+            "short_desc": "The database table used by the entity.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "cryptocurrencies",
+                "attributes": {
+                    "startLine": 14,
+                    "endLine": 14,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "primaryKey": {
+            "name": "primaryKey",
+            "line": 21,
+            "short_desc": "The primary key for the entity.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "id",
+                "attributes": {
+                    "startLine": 21,
+                    "endLine": 21,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "guarded": {
+            "name": "guarded",
+            "line": 28,
+            "short_desc": "The attributes that aren't mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "id",
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 28,
+                            "endLine": 28
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "created_at",
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 28,
+                            "endLine": 28
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "updated_at",
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 28,
+                            "endLine": 28
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "historical": {
+            "name": "historical",
+            "line": 35,
+            "short_desc": "Get cryptocurrency historical.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

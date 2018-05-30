@@ -1,0 +1,137 @@
+{
+    "name": "Modules\\Cryptocurrency\\Database\\Seeders\\CryptocurrenciesTableSeeder",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Modules\\Cryptocurrency\\Database\\Seeders",
+    "file": "\/var\/www\/html\/modules\/Cryptocurrency\/Database\/Seeders\/CryptocurrenciesTableSeeder.php",
+    "relative_file": null,
+    "hash": "5d9a0fe962b36c81c3b76efbf5807bbb16dd8ddb",
+    "parent": "Illuminate\\Database\\Seeder",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "RequestException": "GuzzleHttp\\Exception\\RequestException",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "Seeder": "Illuminate\\Database\\Seeder",
+        "App": "Illuminate\\Support\\Facades\\App"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "cryptocurrencyRepository": {
+            "name": "cryptocurrencyRepository",
+            "line": 17,
+            "short_desc": "Worker role repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Modules\\Worker\\Repositories\\WorkerRoleRepository",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 24,
+            "short_desc": "Class constructor",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getCoinMarketCapTickers": {
+            "name": "getCoinMarketCapTickers",
+            "line": 36,
+            "short_desc": "Get CoinMarketCap tickets",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "start": {
+                    "name": "start",
+                    "line": 36,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "limit": {
+                    "name": "limit",
+                    "line": 36,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "run": {
+            "name": "run",
+            "line": 61,
+            "short_desc": "Run the database seeds.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
