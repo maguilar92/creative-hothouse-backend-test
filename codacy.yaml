@@ -1,0 +1,10 @@
+---
+exclude_paths:
+  - assets/**
+  - docker/**
+  - public/**
+  - sami_themes/**
+  - sphinx_source/**
+  - storage/**
+  - tests/**
+  - vendor/**

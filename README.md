@@ -6,7 +6,9 @@
 Docker client
 
 [Docker for MAC](https://docs.docker.com/docker-for-mac/)
+
 [Docker for Linux](https://docs.docker.com/compose/install/)
+
 [Docker for windows](https://docs.docker.com/docker-for-windows/)
 
 # Installation
