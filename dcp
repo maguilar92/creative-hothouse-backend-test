@@ -47,10 +47,6 @@ if [ $# -gt 0 ]; then
         shift 1
         EXEC_CMD="cd /var/www/html && php artisan $SCRIPT"
         $COMPOSE exec app bash -c "$EXEC_CMD"
-    elif [ "$1" == "artcc" ]; then
-        shift 1
-        EXEC_CMD="cd /var/www/html php artisan clear-compiled && php artisan view:clear && php artisan route:clear && php artisan config:clear && php artisan debugbar:clear && composer dump && php artisan route:cache && php artisan config:cache $SCRIPT"
-        $COMPOSE exec app bash -c "$EXEC_CMD"
     elif [ "$1" == "bin/console" ]; then
         shift 1
         EXEC_CMD="cd /var/www/html/$DIRECTORY && php bin/console $SCRIPT"

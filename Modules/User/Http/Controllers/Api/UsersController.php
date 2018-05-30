@@ -5,7 +5,6 @@ namespace Modules\User\Http\Controllers\Api;
 use CreativeHotHouse\Http\Controllers\Controller;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Support\Facades\App;
-use Modules\User\Entities\User;
 use Modules\User\Http\Requests\UserLoginRequest;
 
 /**
@@ -42,7 +41,7 @@ class UsersController extends Controller
         try {
             // Attempt to log the user admin in
             $http = new \GuzzleHttp\Client([
-                    'verify' => !app()->isLocal(),
+                    'verify' => !in_array(env('APP_ENV'), ['local', 'testing']),
                 ]);
             $response = $http->post(url('oauth/token'), [
                     'form_params' => [

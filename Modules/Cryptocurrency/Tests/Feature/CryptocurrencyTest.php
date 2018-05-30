@@ -2,13 +2,13 @@
 
 namespace Modules\User\Tests\Feature;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Cryptocurrency\Entities\Cryptocurrency;
 use Tests\TestCase;
 
 class CryptocurrencyTest extends TestCase
 {
-    use DatabaseMigrations;
+    use RefreshDatabase;
 
     /**
      * Test cryptocurrency index.

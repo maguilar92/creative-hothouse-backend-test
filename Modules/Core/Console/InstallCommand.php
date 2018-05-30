@@ -55,7 +55,7 @@ class InstallCommand extends Command
         ])->install($this);
 
         if ($success) {
-            $this->info('Project ready! You can now login with your email and password at /es/intranet/login');
+            $this->info('Project ready! Now you can can go to '.env('APP_URL').'/coins');
         }
     }
 }
