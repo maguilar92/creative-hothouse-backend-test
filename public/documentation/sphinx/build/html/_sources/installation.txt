@@ -4,9 +4,15 @@ Installation
 
 Go to the project folder in the terminal and type::
 
-$ ./dcp composer install
+$ ./dcp composer install --no-autoloader
 $ ./dcp composer update
 $ ./dcp project:install
+$ ./dcp mysql
+$ CREATE SCHEMA IF NOT EXISTS creativehothouse
+$ DEFAULT CHARACTER SET utf8mb4 
+$ DEFAULT COLLATE utf8mb4_unicode_ci;
+$ exit
+$ ./dcp artisan project:install
 
 .. note::
 
