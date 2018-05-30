@@ -1,6 +1,5 @@
 ---
 exclude_paths:
-  - assets/**
   - docker/**
   - public/**
   - sami_themes/**
