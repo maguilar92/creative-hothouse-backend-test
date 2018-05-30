@@ -1,9 +1,0 @@
----
-exclude_paths:
-  - docker/**
-  - public/**
-  - sami_themes/**
-  - sphinx_source/**
-  - storage/**
-  - tests/**
-  - vendor/**
