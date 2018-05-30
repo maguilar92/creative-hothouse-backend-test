@@ -14,7 +14,7 @@ Docker client
 
 # Installation
 
-Start docker and execute this command on project root:
+Start docker and execute this commands on the project root:
 
 > cp .env.example .env
 
