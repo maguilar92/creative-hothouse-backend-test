@@ -18,6 +18,10 @@ Start docker and execute this command on project root:
 
 > cp .env.example .env
 
+> ./dcp build
+
+> ./dcp up
+
 > ./dcp composer install
 
 > ./dcp composer update
@@ -25,11 +29,19 @@ Start docker and execute this command on project root:
 > ./dcp mysql
 
 ````sql
-CREATE SCHEMA IF NOT EXISTS gcastings
+CREATE SCHEMA IF NOT EXISTS creativehothouse
 DEFAULT CHARACTER SET utf8mb4 
 DEFAULT COLLATE utf8mb4_unicode_ci;
 exit
 ````
 > ./dcp artisan project:install
 
-> ./dcp artcc
+# Documentation links
+
+When project is installed you can access to project documentation from these links.
+
+[Sphinx](https://localhost/documentation/sphinx/build/html/index.html)
+
+[Sami](https://localhost/documentation/sami/build/master/)
+
+[Api](https://localhost/documentation/api/)
