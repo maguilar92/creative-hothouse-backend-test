@@ -14,6 +14,10 @@ Docker client
 
 # Installation
 
+I recommend not running the seeder CryptocurrenciesHistorical for the hours it can take to insert millions of records. Execute it preferably using:
+
+> ./dcp art db:seed --class="Modules\\\Cryptocurrency\\\Database\\\Seeders\\\CryptocurrenciesHistoricalTableSeeder"
+
 Start docker and execute this commands on the project root:
 
 > cp .env.example .env
