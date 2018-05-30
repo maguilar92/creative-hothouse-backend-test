@@ -5,6 +5,7 @@ php:
   - "7.2"
 
 before_script:
+  - cp .env.example .env
   - curl -sS https://getcomposer.org/installer | php -- --filename=composer
   - chmod +x composer
   - composer install --no-autoloader
@@ -12,9 +13,6 @@ before_script:
 
 script:
   - php vendor/bin/phpunit
-
-after_script:
-  - php vendor/bin/codacycoverage clover build/logs/clover.xml
 
 branches:
   only:
