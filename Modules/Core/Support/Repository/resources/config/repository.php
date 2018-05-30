@@ -7,7 +7,7 @@ return [
      **************************************************************************
      */
     'pagination' => [
-        'limit' => 15
+        'limit' => 15,
     ],
 
     /*
@@ -70,15 +70,15 @@ return [
              *
              */
             'on'      => [
-                'create' => true,
-                'insert' => true,
-                'update' => true,
-                'delete' => true,
+                'create'  => true,
+                'insert'  => true,
+                'update'  => true,
+                'delete'  => true,
                 'restore' => true,
             ],
 
         ],
-        
+
         'params'     => [
             /*
             ***************************************************************************
@@ -89,7 +89,7 @@ return [
             * Ex: http://es.hoy*voy.com/?search=lorem&skipCache=true
             *
             */
-            'skipCache' => 'skipCache'
+            'skipCache' => 'skipCache',
         ],
 
         /*

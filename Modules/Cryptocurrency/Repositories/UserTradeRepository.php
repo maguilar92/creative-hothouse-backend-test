@@ -7,7 +7,7 @@ use Modules\Core\Support\Repository\Src\Eloquent\BaseRepository;
 class UserTradeRepository extends BaseRepository
 {
     /**
-     * Specify Model class name
+     * Specify Model class name.
      *
      * @return string
      */

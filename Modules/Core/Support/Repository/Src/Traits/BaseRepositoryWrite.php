@@ -14,16 +14,17 @@ use Modules\Core\Support\Repository\Src\Events\RepositoryEntityUpdated;
 trait BaseRepositoryWrite
 {
     /**
-     * Save a new entity in repository
+     * Save a new entity in repository.
      *
      * @param array $attributes
+     *
      * @return mixed
      */
     public function create(array $attributes)
     {
         $model = $this->model->create($attributes);
         $model->save();
-        
+
         $this->resetModel();
 
         event(new RepositoryEntityCreated($this, $model));
@@ -32,9 +33,10 @@ trait BaseRepositoryWrite
     }
 
     /**
-     * Save a new/news entities in repository
+     * Save a new/news entities in repository.
      *
      * @param array $attributes
+     *
      * @return mixed
      */
     public function insert(array $attributes)
@@ -54,10 +56,11 @@ trait BaseRepositoryWrite
     }
 
     /**
-     * Update a entity in repository by id or entities by conditionals
+     * Update a entity in repository by id or entities by conditionals.
      *
-     * @param array $attributes
+     * @param array    $attributes
      * @param int|null $id
+     *
      * @return mixed
      */
     public function update(array $attributes, int $id = null)
@@ -85,10 +88,11 @@ trait BaseRepositoryWrite
     }
 
     /**
-     * Update or Create an entity in repository
+     * Update or Create an entity in repository.
      *
      * @param array $attributes
      * @param array $values
+     *
      * @return mixed
      */
     public function updateOrCreate(array $attributes, array $values = [])
@@ -103,9 +107,10 @@ trait BaseRepositoryWrite
     }
 
     /**
-     * Restore a entity in repository by id or entities by conditionals
+     * Restore a entity in repository by id or entities by conditionals.
      *
      * @param int|null $id
+     *
      * @return int
      */
     public function restore(int $id = null)
@@ -134,9 +139,10 @@ trait BaseRepositoryWrite
     }
 
     /**
-     * Force delete a entity in repository by id or entities by conditionals
+     * Force delete a entity in repository by id or entities by conditionals.
      *
      * @param int|null $id
+     *
      * @return int
      */
     public function forceDelete(int $id = null)
@@ -164,9 +170,10 @@ trait BaseRepositoryWrite
     }
 
     /**
-     * Delete a entity in repository by id or entities by conditionals
+     * Delete a entity in repository by id or entities by conditionals.
      *
      * @param int|null $id
+     *
      * @return int
      */
     public function delete(int $id = null)

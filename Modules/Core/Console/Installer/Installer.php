@@ -13,7 +13,7 @@ class Installer
     protected $scripts = [];
 
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @param Application $app
      */
@@ -23,9 +23,10 @@ class Installer
     }
 
     /**
-     * Stack
+     * Stack.
      *
-     * @param  array $scripts
+     * @param array $scripts
+     *
      * @return $this
      */
     public function stack(array $scripts)
@@ -36,9 +37,10 @@ class Installer
     }
 
     /**
-     * Fire install scripts
+     * Fire install scripts.
      *
-     * @param  Command $command
+     * @param Command $command
+     *
      * @return bool
      */
     public function install(Command $command)

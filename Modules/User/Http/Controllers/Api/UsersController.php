@@ -4,7 +4,6 @@ namespace Modules\User\Http\Controllers\Api;
 
 use CreativeHotHouse\Http\Controllers\Controller;
 use GuzzleHttp\Exception\RequestException;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Modules\User\Entities\User;
 use Modules\User\Http\Requests\UserLoginRequest;
@@ -15,14 +14,14 @@ use Modules\User\Http\Requests\UserLoginRequest;
 class UsersController extends Controller
 {
     /**
-     * User repository
+     * User repository.
      *
      * @var Modules\User\Repositories\UserRepository
      */
     protected $userRepository;
 
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @return void
      */
@@ -32,9 +31,10 @@ class UsersController extends Controller
     }
 
     /**
-     * Login user
+     * Login user.
      *
      * @param UserLoginRequest $request
+     *
      * @return string JSON
      */
     public function login(UserLoginRequest $request)
@@ -42,18 +42,19 @@ class UsersController extends Controller
         try {
             // Attempt to log the user admin in
             $http = new \GuzzleHttp\Client([
-                    'verify' => !app()->isLocal()
+                    'verify' => !app()->isLocal(),
                 ]);
             $response = $http->post(url('oauth/token'), [
                     'form_params' => [
-                        'grant_type' => 'password',
-                        'client_id' => config('auth.auth.api_client_id'),
+                        'grant_type'    => 'password',
+                        'client_id'     => config('auth.auth.api_client_id'),
                         'client_secret' => config('auth.auth.api_client_secret'),
-                        'username' => $request->get('email'),
-                        'password' => $request->get('password'),
-                        'scope' => null,
+                        'username'      => $request->get('email'),
+                        'password'      => $request->get('password'),
+                        'scope'         => null,
                     ],
                 ]);
+
             return response($response->getBody()->getContents(), $response->getStatusCode());
         } catch (RequestException $e) {
             return response($e->getResponse()->getBody()->getContents(), $e->getResponse()->getStatusCode());

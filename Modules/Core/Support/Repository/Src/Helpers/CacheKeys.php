@@ -4,26 +4,26 @@ namespace Modules\Core\Support\Repository\Src\Helpers;
 
 class CacheKeys
 {
-
     /**
-     * File name for store cache keys
+     * File name for store cache keys.
      *
      * @var string
      */
-    protected static $storeFile = "repository-cache-keys.json";
+    protected static $storeFile = 'repository-cache-keys.json';
 
     /**
-     * Property with repositories keys
+     * Property with repositories keys.
      *
      * @var array
      */
     protected static $keys = null;
 
     /**
-     * Put new key
+     * Put new key.
      *
      * @param string $group
      * @param string $key
+     *
      * @return void
      */
     public static function putKey(string $group, string $key)
@@ -40,9 +40,10 @@ class CacheKeys
     }
 
     /**
-     * Remove group keys
+     * Remove group keys.
      *
      * @param string $group
+     *
      * @return void
      */
     public static function removeGroupKeys(string $group)
@@ -55,7 +56,7 @@ class CacheKeys
     }
 
     /**
-     * Load existing keys
+     * Load existing keys.
      *
      * @return array
      */
@@ -78,19 +79,19 @@ class CacheKeys
     }
 
     /**
-     * Get file keys
+     * Get file keys.
      *
      * @return string
      */
     public static function getFileKeys()
     {
-        $file = storage_path("framework/cache/" . self::$storeFile);
+        $file = storage_path('framework/cache/'.self::$storeFile);
 
         return $file;
     }
 
     /**
-     * Store keys
+     * Store keys.
      *
      * @return int
      */
@@ -104,9 +105,10 @@ class CacheKeys
     }
 
     /**
-     * Get key from group
+     * Get key from group.
      *
      * @param string $group
+     *
      * @return array|mixed
      */
     public static function getKeys(string $group)
@@ -118,36 +120,38 @@ class CacheKeys
     }
 
     /**
-     * Overloading __callStatic
+     * Overloading __callStatic.
      *
      * @param mixed $method
      * @param mixed $parameters
+     *
      * @return mixed
      */
     public static function __callStatic($method, $parameters)
     {
-        $instance = new static;
+        $instance = new static();
 
         return call_user_func_array([
             $instance,
-            $method
+            $method,
         ], $parameters);
     }
 
     /**
-     * Overloading __call
+     * Overloading __call.
      *
      * @param mixed $method
      * @param mixed $parameters
+     *
      * @return mixed
      */
     public function __call($method, $parameters)
     {
-        $instance = new static;
+        $instance = new static();
 
         return call_user_func_array([
             $instance,
-            $method
+            $method,
         ], $parameters);
     }
 }
