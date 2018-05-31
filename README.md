@@ -40,6 +40,12 @@ exit
 ````
 > ./dcp artisan project:install
 
+# Tests
+
+To execute the tests use the command:
+
+> ./dcp t
+
 # Documentation links
 
 When the project is installed you can access to project documentation from these links.
